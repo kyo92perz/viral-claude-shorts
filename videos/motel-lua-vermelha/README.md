@@ -5,6 +5,7 @@ lugar são originais. A bíblia está em [BIBLIA.md](BIBLIA.md).
 
 - **Vídeo:** `final.mp4` (gerado pelo render; os vídeos finais não entram no git)
 - **Thumbnail:** [thumbnail/thumb-motel-lua-vermelha.jpg](thumbnail/thumb-motel-lua-vermelha.jpg)
+- **Descrição pronta pro YouTube:** [descricao-youtube.txt](descricao-youtube.txt)
 - **Storyboard:** [storyboard.png](storyboard.png), um painel por cena (78 cenas)
 
 ## Para publicar
@@ -18,17 +19,17 @@ lugar são originais. A bíblia está em [BIBLIA.md](BIBLIA.md).
 > sombra só existe onde tem luz.
 >
 > 00:00 Prólogo: 1961
-> 00:26 A gerente
-> 01:19 O primeiro problema
+> 00:25 A gerente
+> 01:18 O primeiro problema
 > 02:25 O eclipse
 > 02:36 A primeira sombra
-> 03:10 A primeira luta
-> 04:11 A regra
-> 05:14 O plano
+> 03:09 A primeira luta
+> 04:01 A regra
+> 05:13 O plano
 > 06:03 O truque dos faróis
-> 07:09 A escolha do Kev
-> 07:55 A luta no letreiro
-> 08:58 Amanhecer
+> 07:08 A escolha do Kev
+> 07:54 A luta no letreiro
+> 09:02 Amanhecer
 >
 > #animação #terror #historiadeterror #luadesangue #suspense
 
