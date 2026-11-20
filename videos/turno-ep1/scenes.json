@@ -1,0 +1,614 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "format": "9:16",
+ "renderScale": 0.6667,
+ "notes": "Turno da Madrugada, ep. 1: Alguém Bateu no Vidro. Terror/suspense/ação/humor. Personagens originais.",
+ "music": {
+  "bpm": 76,
+  "key": "D"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "object",
+   "label": "TURNO DA MADRUGADA · EP. 1",
+   "title": "Três e sete da manhã",
+   "highlight": "manhã",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 0,
+   "t1": 3.63
+  },
+  {
+   "id": "s02",
+   "from": 9,
+   "type": "object",
+   "label": "Rota 9 · Virgínia Ocidental",
+   "title": "O único posto 24 horas",
+   "highlight": "posto",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 3.63,
+   "t1": 7.49
+  },
+  {
+   "id": "s03",
+   "from": 21,
+   "type": "object",
+   "label": "13 de novembro",
+   "title": "A noite em que os mortos voltaram",
+   "highlight": "mortos",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "mortos",
+     "at": 29,
+     "sfx": "sting",
+     "t": 9.16
+    }
+   ],
+   "t0": 7.49,
+   "t1": 11.01
+  },
+  {
+   "id": "s04",
+   "from": 33,
+   "type": "object",
+   "label": "A atendente",
+   "title": "Lola Reyes, ex-soldada",
+   "highlight": "Lola",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "shrug",
+     "at": 47,
+     "t": 15.48
+    }
+   ],
+   "t0": 11.01,
+   "t1": 17.75
+  },
+  {
+   "id": "s05",
+   "from": 53,
+   "type": "object",
+   "label": "O repositor",
+   "title": "Verdade Oca: o podcast",
+   "highlight": "podcast",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 17.75,
+   "t1": 23.17
+  },
+  {
+   "id": "s06",
+   "from": 72,
+   "type": "object",
+   "label": "Lola",
+   "title": "Gravando no estoque de novo?",
+   "highlight": "gravando",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 23.17,
+   "t1": 25.86
+  },
+  {
+   "id": "s07",
+   "from": 80,
+   "type": "object",
+   "label": "Tobby",
+   "title": "Aniversário do desabamento",
+   "highlight": "desabamento",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "mina",
+     "at": 90,
+     "sfx": "buzz",
+     "t": 29.4
+    }
+   ],
+   "t0": 25.86,
+   "t1": 32.19
+  },
+  {
+   "id": "s08",
+   "from": 98,
+   "type": "object",
+   "label": "Lá fora",
+   "title": "A neblina engoliu a estrada",
+   "highlight": "neblina",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 32.19,
+   "t1": 36.37
+  },
+  {
+   "id": "s09",
+   "from": 112,
+   "type": "object",
+   "label": "Toc. Toc. Toc.",
+   "title": "Tinha um homem no vidro",
+   "highlight": "vidro",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "knock",
+     "at": 112,
+     "sfx": "knock",
+     "t": 36.62
+    }
+   ],
+   "t0": 36.37,
+   "t1": 38.59
+  },
+  {
+   "id": "s10",
+   "from": 120,
+   "type": "object",
+   "label": "No vidro",
+   "title": "Capacete de mineiro",
+   "highlight": "mineiro",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "reveal",
+     "at": 121,
+     "sfx": "sting",
+     "t": 39.18
+    }
+   ],
+   "t0": 38.59,
+   "t1": 42.35
+  },
+  {
+   "id": "s11",
+   "from": 128,
+   "type": "object",
+   "label": "A voz do avô",
+   "title": "“Abre a porta, tá frio”",
+   "highlight": "porta",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 42.35,
+   "t1": 46.77
+  },
+  {
+   "id": "s12",
+   "from": 138,
+   "type": "object",
+   "label": "Tobby",
+   "title": "Meu avô morreu naquela mina",
+   "highlight": "avô",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 46.77,
+   "t1": 49.76
+  },
+  {
+   "id": "s13",
+   "from": 148,
+   "type": "object",
+   "label": "Faróis",
+   "title": "O xerife chegou",
+   "highlight": "xerife",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "car",
+     "at": 150,
+     "sfx": "siren",
+     "t": 50.94
+    },
+    {
+     "id": "gone",
+     "at": 163,
+     "sfx": "thump",
+     "t": 54.72
+    }
+   ],
+   "t0": 49.76,
+   "t1": 56.51
+  },
+  {
+   "id": "s14",
+   "from": 168,
+   "type": "object",
+   "label": "Xerife Earl Hatcher",
+   "title": "Café sem açúcar e sem história",
+   "highlight": "café",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 56.51,
+   "t1": 61.91
+  },
+  {
+   "id": "s15",
+   "from": 184,
+   "type": "object",
+   "label": "Mas…",
+   "title": "A mão não saiu do revólver",
+   "highlight": "mão",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 61.91,
+   "t1": 64.65
+  },
+  {
+   "id": "s16",
+   "from": 195,
+   "type": "object",
+   "label": "O caminhoneiro",
+   "title": "Ele andava torto e sorria demais",
+   "highlight": "sorria",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "door",
+     "at": 198,
+     "sfx": "tick",
+     "t": 65.24
+    }
+   ],
+   "t0": 64.65,
+   "t1": 70.77
+  },
+  {
+   "id": "s17",
+   "from": 214,
+   "type": "object",
+   "label": "Dale",
+   "title": "“A mina tá com fome”",
+   "highlight": "fome",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "fome",
+     "at": 219,
+     "sfx": "sting",
+     "t": 72.62
+    }
+   ],
+   "t0": 70.77,
+   "t1": 73.43
+  },
+  {
+   "id": "s18",
+   "from": 220,
+   "type": "object",
+   "label": "A primeira luta",
+   "title": "Jogada contra a prateleira",
+   "highlight": "prateleira",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "grab",
+     "at": 221,
+     "sfx": "whoosh",
+     "t": 74
+    },
+    {
+     "id": "slam",
+     "at": 230,
+     "sfx": "impact",
+     "t": 76.12
+    }
+   ],
+   "t0": 73.43,
+   "t1": 77.46
+  },
+  {
+   "id": "s19",
+   "from": 234,
+   "type": "object",
+   "label": "Treinamento do exército",
+   "title": "Punho, cotovelo, joelho",
+   "highlight": "cotovelo",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "wrist",
+     "at": 235,
+     "sfx": "crack",
+     "t": 78.02
+    },
+    {
+     "id": "elbow",
+     "at": 241,
+     "sfx": "hit",
+     "t": 79.52
+    },
+    {
+     "id": "knee",
+     "at": 244,
+     "sfx": "hit",
+     "t": 80.68
+    }
+   ],
+   "t0": 77.46,
+   "t1": 81.77
+  },
+  {
+   "id": "s20",
+   "from": 247,
+   "type": "object",
+   "label": "Não doeu",
+   "title": "Qualquer homem teria caído",
+   "highlight": "homem",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 81.77,
+   "t1": 84.31
+  },
+  {
+   "id": "s21",
+   "from": 254,
+   "type": "object",
+   "label": "Sem ar",
+   "title": "Erguida pelo pescoço",
+   "highlight": "pescoço",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "lift",
+     "at": 256,
+     "sfx": "whoosh",
+     "t": 84.86
+    }
+   ],
+   "t0": 84.31,
+   "t1": 86.41
+  },
+  {
+   "id": "s22",
+   "from": 261,
+   "type": "object",
+   "label": "Contra-ataque",
+   "title": "Ouvi estalar",
+   "highlight": "estalar",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "kick",
+     "at": 262,
+     "sfx": "hit",
+     "t": 86.76
+    },
+    {
+     "id": "snap",
+     "at": 269,
+     "sfx": "crack",
+     "t": 88.46
+    },
+    {
+     "id": "slam1",
+     "at": 271,
+     "sfx": "impact",
+     "t": 89.1
+    },
+    {
+     "id": "slam2",
+     "at": 277,
+     "sfx": "impact",
+     "t": 90.66
+    }
+   ],
+   "t0": 86.41,
+   "t1": 91.57
+  },
+  {
+   "id": "s23",
+   "from": 280,
+   "type": "object",
+   "label": "O que sai dele",
+   "title": "Ele sangrou carvão",
+   "highlight": "carvão",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "coal",
+     "at": 285,
+     "sfx": "thump",
+     "t": 93.18
+    }
+   ],
+   "t0": 91.57,
+   "t1": 94.03
+  },
+  {
+   "id": "s24",
+   "from": 288,
+   "type": "object",
+   "label": "Tobby",
+   "title": "O maior covarde que eu conheço",
+   "highlight": "covarde",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "yell",
+     "at": 288,
+     "t": 94.28
+    },
+    {
+     "id": "hit",
+     "at": 302,
+     "sfx": "impact",
+     "t": 98.24
+    },
+    {
+     "id": "fall",
+     "at": 306,
+     "sfx": "thump",
+     "t": 99.5
+    }
+   ],
+   "t0": 94.03,
+   "t1": 100.36
+  },
+  {
+   "id": "s25",
+   "from": 309,
+   "type": "object",
+   "label": "O xerife",
+   "title": "Isso não é o Dale",
+   "highlight": "Isso",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 100.36,
+   "t1": 103.96
+  },
+  {
+   "id": "s26",
+   "from": 323,
+   "type": "object",
+   "label": "Apagão",
+   "title": "A luz apagou",
+   "highlight": "apagou",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "off",
+     "at": 328,
+     "sfx": "off",
+     "t": 105.26
+    },
+    {
+     "id": "knock",
+     "at": 331,
+     "sfx": "knock",
+     "t": 106.38
+    }
+   ],
+   "t0": 103.96,
+   "t1": 108.99
+  },
+  {
+   "id": "s27",
+   "from": 339,
+   "type": "object",
+   "label": "No escuro",
+   "title": "“Lola… abre.”",
+   "highlight": "Lola",
+   "mood": "dark",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 108.99,
+   "t1": 111.01
+  },
+  {
+   "id": "s28",
+   "from": 341,
+   "type": "closing",
+   "label": "CONTINUA NO EP. 2",
+   "title": "Era a voz do meu irmão",
+   "highlight": "irmão",
+   "mood": "sad",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 111.01,
+   "t1": 116.012
+  }
+ ],
+ "duration": 116.012
+}

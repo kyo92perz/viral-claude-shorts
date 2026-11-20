@@ -1,0 +1,525 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "format": "9:16",
+ "renderScale": 0.6667,
+ "notes": "Turno da Madrugada, ep. 3: O Que Ficou na Mina.",
+ "music": {
+  "bpm": 78,
+  "key": "C"
+ },
+ "scenes": [
+  {
+   "id": "f01",
+   "type": "object",
+   "label": "TURNO DA MADRUGADA · EP. 3",
+   "title": "Catorze homens lá dentro. Vivos.",
+   "highlight": "homens",
+   "mood": "sad",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 0,
+   "t1": 4.58
+  },
+  {
+   "id": "f02",
+   "from": 13,
+   "type": "object",
+   "label": "13 de novembro de 1987",
+   "title": "Uma faísca e a cidade explodia",
+   "highlight": "faísca",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 4.58,
+   "t1": 7.54
+  },
+  {
+   "id": "f03",
+   "from": 22,
+   "type": "object",
+   "label": "A culpa do xerife",
+   "title": "Eu ouvi eles batendo na pedra",
+   "highlight": "batendo",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "knock",
+     "at": 30,
+     "sfx": "knock",
+     "t": 10.12
+    }
+   ],
+   "t0": 7.54,
+   "t1": 12.41
+  },
+  {
+   "id": "f04",
+   "from": 36,
+   "type": "object",
+   "label": "Tobby",
+   "title": "O meu avô tava lá dentro",
+   "highlight": "avô",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 12.41,
+   "t1": 14.21
+  },
+  {
+   "id": "f05",
+   "from": 42,
+   "type": "object",
+   "label": "O xerife",
+   "title": "Eles voltaram por mim",
+   "highlight": "voltaram",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 14.21,
+   "t1": 19.29
+  },
+  {
+   "id": "f06",
+   "from": 55,
+   "type": "object",
+   "label": "Silêncio",
+   "title": "Até o Dale cair do teto",
+   "highlight": "cair",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "drop",
+     "at": 61,
+     "sfx": "impact",
+     "t": 21.38
+    }
+   ],
+   "t0": 19.29,
+   "t1": 22.25
+  },
+  {
+   "id": "f07",
+   "from": 64,
+   "type": "object",
+   "label": "O que o Dale virou",
+   "title": "Os dedos virados em garras",
+   "highlight": "garras",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "reveal",
+     "at": 67,
+     "sfx": "sting",
+     "t": 23.76
+    }
+   ],
+   "t0": 22.25,
+   "t1": 27.35
+  },
+  {
+   "id": "f08",
+   "from": 77,
+   "type": "object",
+   "label": "A luta final",
+   "title": "Derrubou o xerife com um tapa",
+   "highlight": "tapa",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "slap",
+     "at": 83,
+     "sfx": "impact",
+     "t": 28.88
+    }
+   ],
+   "t0": 27.35,
+   "t1": 30.04
+  },
+  {
+   "id": "f09",
+   "from": 89,
+   "type": "object",
+   "label": "Lola",
+   "title": "Eu sei lutar",
+   "highlight": "lutar",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 30.04,
+   "t1": 32.57
+  },
+  {
+   "id": "f10",
+   "from": 97,
+   "type": "object",
+   "label": "A geladeira",
+   "title": "O vidro explodiu nas minhas costas",
+   "highlight": "vidro",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "throw",
+     "at": 98,
+     "sfx": "whoosh",
+     "t": 33
+    },
+    {
+     "id": "glass",
+     "at": 105,
+     "sfx": "glass",
+     "t": 34.62
+    }
+   ],
+   "t0": 32.57,
+   "t1": 36.43
+  },
+  {
+   "id": "f11",
+   "from": 110,
+   "type": "object",
+   "label": "Três socos",
+   "title": "Cada um parecia bater numa parede",
+   "highlight": "parede",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "p1",
+     "at": 111,
+     "sfx": "hit",
+     "t": 36.78
+    },
+    {
+     "id": "p2",
+     "at": 113,
+     "sfx": "hit",
+     "t": 37.48
+    },
+    {
+     "id": "p3",
+     "at": 116,
+     "sfx": "hit",
+     "t": 38.26
+    }
+   ],
+   "t0": 36.43,
+   "t1": 40.79
+  },
+  {
+   "id": "f12",
+   "from": 124,
+   "type": "object",
+   "label": "Sem ar",
+   "title": "Presa pelo pescoço",
+   "highlight": "pescoço",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "choke",
+     "at": 126,
+     "sfx": "whoosh",
+     "t": 41.36
+    }
+   ],
+   "t0": 40.79,
+   "t1": 43.93
+  },
+  {
+   "id": "f13",
+   "from": 134,
+   "type": "object",
+   "label": "Escurecendo",
+   "title": "Pelo menos eu morri trabalhando",
+   "highlight": "trabalhando",
+   "mood": "sad",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 43.93,
+   "t1": 50.29
+  },
+  {
+   "id": "f14",
+   "from": 152,
+   "type": "object",
+   "label": "Tobby",
+   "title": "Sorria pra câmera!",
+   "highlight": "câmera",
+   "mood": "triumphant",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 50.29,
+   "t1": 52.35
+  },
+  {
+   "id": "f15",
+   "from": 157,
+   "type": "object",
+   "label": "Ring light",
+   "title": "Dois mil lúmens",
+   "highlight": "mil",
+   "mood": "epic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "on",
+     "at": 159,
+     "sfx": "impact",
+     "t": 52.96
+    }
+   ],
+   "t0": 52.35,
+   "t1": 56.76
+  },
+  {
+   "id": "f16",
+   "from": 172,
+   "type": "object",
+   "label": "Luz queima",
+   "title": "Ele berrou e me soltou",
+   "highlight": "berrou",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "scream",
+     "at": 174,
+     "sfx": "scream",
+     "t": 57.3
+    }
+   ],
+   "t0": 56.76,
+   "t1": 58.37
+  },
+  {
+   "id": "f17",
+   "from": 178,
+   "type": "object",
+   "label": "O fim do Dale",
+   "title": "Um caco de vidro",
+   "highlight": "vidro",
+   "mood": "energetic",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "stab",
+     "at": 187,
+     "sfx": "impact",
+     "t": 60.48
+    }
+   ],
+   "t0": 58.37,
+   "t1": 62.15
+  },
+  {
+   "id": "f18",
+   "from": 194,
+   "type": "object",
+   "label": "O xerife",
+   "title": "A caixa de dinamite",
+   "highlight": "dinamite",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 62.15,
+   "t1": 68.03
+  },
+  {
+   "id": "f19",
+   "from": 215,
+   "type": "object",
+   "label": "Earl Hatcher",
+   "title": "Vou levar eles pra casa",
+   "highlight": "casa",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 68.03,
+   "t1": 71.45
+  },
+  {
+   "id": "f20",
+   "from": 226,
+   "type": "object",
+   "label": "A despedida",
+   "title": "Mais corajoso do que parece",
+   "highlight": "corajoso",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 71.45,
+   "t1": 76.91
+  },
+  {
+   "id": "f21",
+   "from": 239,
+   "type": "object",
+   "label": "Tobby",
+   "title": "Eu ainda tenho o rádio dele",
+   "highlight": "rádio",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "transition": "cut",
+   "t0": 76.91,
+   "t1": 83.83
+  },
+  {
+   "id": "f22",
+   "from": 262,
+   "type": "object",
+   "label": "5:30 da manhã",
+   "title": "Os Ocos foram atrás",
+   "highlight": "atrás",
+   "mood": "epic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "siren",
+     "at": 264,
+     "sfx": "siren",
+     "t": 84.84
+    }
+   ],
+   "t0": 83.83,
+   "t1": 89.67
+  },
+  {
+   "id": "f23",
+   "from": 278,
+   "type": "object",
+   "label": "A mina",
+   "title": "A montanha tremeu",
+   "highlight": "tremeu",
+   "mood": "epic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "boom",
+     "at": 283,
+     "sfx": "boom",
+     "t": 91.42
+    }
+   ],
+   "t0": 89.67,
+   "t1": 92.3
+  },
+  {
+   "id": "f24",
+   "from": 285,
+   "type": "object",
+   "label": "Amanhecer",
+   "title": "E o sol nasceu",
+   "highlight": "sol",
+   "mood": "wonder",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 92.3,
+   "t1": 94.37
+  },
+  {
+   "id": "f25",
+   "from": 292,
+   "type": "object",
+   "label": "Tobby e Lola",
+   "title": "Se você postar, eu te mato",
+   "highlight": "postar",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 94.37,
+   "t1": 99.01
+  },
+  {
+   "id": "f26",
+   "from": 305,
+   "type": "closing",
+   "label": "FIM? · TURNO DA MADRUGADA",
+   "title": "Alguém batendo no vidro",
+   "highlight": "batendo",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "knock",
+     "at": 320,
+     "sfx": "knock",
+     "t": 104.56
+    }
+   ],
+   "t0": 99.01,
+   "t1": 107.635
+  }
+ ],
+ "duration": 107.635
+}

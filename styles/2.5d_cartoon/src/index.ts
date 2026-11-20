@@ -19,12 +19,13 @@ import { ctex, rep, cloudHD, grassHD, cobbleHD, stoneHD, planksHD } from "./pain
 import { Batch, lam, house as houseB, addVeg, boxGeo, V, type VegKind } from "./build";
 
 export { Pen, NOINK, Batch, boxGeo };
-export { KID, PARENT, OFFICER, SKIN, SKINS, INK, townsfolk, soldier, mix, shade, mul } from "./toon";
+export { KID, PARENT, OFFICER, SKIN, SKINS, INK, townsfolk, soldier, mix, shade, mul, bodyRig, RIG_SCALE } from "./toon";
+export type { Rig, RigOutfit, RigProp, RigPropKind } from "./toon";
 export type { Outfit, Expr, FrontOpts, SideOpts, VegKind };
 export * as paint from "./paint";
 
 type V3 = [number, number, number];
-export type Light = "day" | "golden";
+export type Light = import("./lights").LightName;
 export const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
 const FPS = 30;
 
@@ -42,13 +43,14 @@ const postFor = (r: THREE.WebGLRenderer, scene: THREE.Scene, cam: THREE.Perspect
   let p = POSTS.get(r);
   if (p) return p;
   r.toneMapping = THREE.NoToneMapping;   // the chain tone-maps (NEUTRAL) before the grade
-  const composer = new EffectComposer(r, { multisampling: 4, frameBufferType: THREE.HalfFloatType });
+  const RS = (typeof SCENES === "undefined" ? 1 : SCENES.renderScale ?? 1);   // < 1: fast software render
+  const composer = new EffectComposer(r, { multisampling: RS < 1 ? 0 : 4, frameBufferType: THREE.HalfFloatType });
   const render = new RenderPass(scene, cam), ink = new InkPass(scene, cam), lens = new LensBlur({ maxCoC: 24, nearScale: 1.2 });
   const grade = new GradeEffect(GRADES.day, 1);
   composer.addPass(render); composer.addPass(ink);
   composer.addPass(new EffectPass(cam, lens.pre)); composer.addPass(new EffectPass(cam, lens.main));
   composer.addPass(new EffectPass(cam, makeBloom(), new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }), grade));
-  composer.setSize(1080, 1920);
+  composer.setSize(Math.round(1080 * RS), Math.round(1920 * RS));
   p = { composer, render, ink, lens, grade }; POSTS.set(r, p);
   return p;
 };
@@ -94,7 +96,7 @@ const lidAt = (t: number, i: number) => {
 };
 const toSrgb = (v: number) => { const c = clamp01(v); return c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055; };
 const hexOf = (c: V3, k: number) => "#" + c.map((v) => Math.round(255 * toSrgb(1 - (1 - v) * k)).toString(16).padStart(2, "0")).join("");
-const CONTACT: Record<Light, V3> = { day: [0.2, 0.21, 0.33], golden: [0.24, 0.2, 0.33] };
+const CONTACT: Record<Light, V3> = { day: [0.2, 0.21, 0.33], golden: [0.24, 0.2, 0.33], night: [0.05, 0.06, 0.1], store: [0.12, 0.13, 0.13], blackout: [0.02, 0.02, 0.04], emergency: [0.1, 0.01, 0.02] };
 const TAIL: V3 = [0.42, 0.44, 0.62];
 
 /** one character this frame. `who` = an outfit (KID, PARENT, townsfolk(i)…) or your own drawing in the 600 x 1000
@@ -157,13 +159,14 @@ export const stage = (w: World, o: StageOptions = {}): Stage => {
   disc.renderOrder = -0.5; halo.renderOrder = 5;
   for (const m of [disc, halo]) { m.frustumCulled = false; m.layers.set(NOINK); scene.add(m); }
   const hemi = new THREE.HemisphereLight("#cfe6ff", "#6c5c8c", 1.1), sun = new THREE.DirectionalLight("#fff0d6", 2.6);
-  sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
+  sun.castShadow = true; const RS = (typeof SCENES === "undefined" ? 1 : SCENES.renderScale ?? 1); sun.shadow.mapSize.setScalar(RS < 1 ? 2048 : 4096);
   scene.add(hemi, sun, sun.target);
   const fog = new THREE.Fog("#bccbec", 25, 420);
-  const clouds: THREE.Mesh[] = [], cloudMaps = { day: [0, 1, 2, 3].map((k) => cloudHD(k, LOOK.day.cloud)), golden: [0, 1, 2, 3].map((k) => cloudHD(k, LOOK.golden.cloud)) };
+  const clouds: THREE.Mesh[] = [], cloudCache: Partial<Record<Light, THREE.Texture[]>> = {};
+  const cloudMaps = (l: Light) => (cloudCache[l] ??= [0, 1, 2, 3].map((k) => cloudHD(k, LOOK[l].cloud)));   // painted on first use
   if (o.clouds !== false) for (let i = 0; i < 9; i++) {
     const a = (i / 9) * Math.PI * 2 + 0.3, d = 620 + (i % 3) * 60, s = 130 + (i % 4) * 30;
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: cloudMaps.day[i % 4], color: new THREE.Color(1.1, 1.1, 1.1), transparent: true, depthWrite: false, fog: false }));
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: cloudMaps("day")[i % 4], color: new THREE.Color(1.1, 1.1, 1.1), transparent: true, depthWrite: false, fog: false }));
     m.position.set(Math.cos(a) * d, 120 + (i % 4) * 38, Math.sin(a) * d); m.scale.set(s, s / 2, 1); m.layers.set(NOINK);
     clouds.push(m); scene.add(m);
   }
@@ -198,14 +201,15 @@ export const stage = (w: World, o: StageOptions = {}): Stage => {
     const e = K.sky.e.map((deg) => THREE.MathUtils.degToRad(deg)); su.e.value.set(e[1], e[2], e[3], e[4]);
     sky.position.copy(cam.position);
     untone(P.fog, fog.color); fog.near = P.fogNear; fog.far = P.fogFar; scene.fog = o.fog === false ? null : fog; scene.background = null;
-    disc.visible = halo.visible = L === "golden";
+    disc.visible = halo.visible = L === "golden" || L === "night";   // the sun at golden hour, the moon at night
+    (disc.material as THREE.SpriteMaterial).color.setRGB(...(L === "night" ? [2.2, 2.5, 3.0] as V3 : [6.0, 4.4, 2.4] as V3));
     if (disc.visible) {
       disc.position.copy(cam.position).addScaledVector(sunDir, 900); disc.scale.setScalar(2 * 900 * Math.tan(THREE.MathUtils.degToRad(1.7)));
       halo.position.copy(disc.position); halo.scale.setScalar(2 * 900 * Math.tan(THREE.MathUtils.degToRad(24)));
       (halo.material as THREE.SpriteMaterial).color.set(P.sunDisc).multiplyScalar(1.3);
     }
     for (let i = 0; i < clouds.length; i++) {
-      const m = clouds[i]; m.lookAt(cam.position.x, m.position.y, cam.position.z); (m.material as THREE.MeshBasicMaterial).map = cloudMaps[L][i % 4];
+      const m = clouds[i]; m.lookAt(cam.position.x, m.position.y, cam.position.z); (m.material as THREE.MeshBasicMaterial).map = cloudMaps(L)[i % 4];
     }
   };
   // canvas angle the sun comes FROM on an upright card facing the camera, in 45-degree steps (small texture cache)

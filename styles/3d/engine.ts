@@ -40,7 +40,8 @@ function buildTimeline(): gsap.core.Timeline {
 
 function build3D(tl: gsap.core.Timeline) {
   const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl') as HTMLCanvasElement, antialias: true, preserveDrawingBuffer: true });
-  renderer.setPixelRatio(1); renderer.setSize(1080, 1920, false);
+  const RS = SCENES.renderScale ?? 1;   // internal size (the canvas is still shown at 1080 x 1920)
+  renderer.setPixelRatio(1); renderer.setSize(Math.round(1080 * RS), Math.round(1920 * RS), false);
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   const worlds = SCENES.scenes.map((s) => {

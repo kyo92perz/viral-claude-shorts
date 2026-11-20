@@ -109,7 +109,7 @@ ${extra.map((f) => `    <script src="${f}"></script>\n`).join('')}    <script sr
   },
   video(v) {
     const out = path.join(v, 'render', 'silent.mp4'); fs.mkdirSync(path.dirname(out), { recursive: true });
-    const r = hf(['render', 'project', '--output', out, '--fps', String(JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')).fps || 30), '--quality', 'high'], { stdio: 'inherit' });
+    const r = hf(['render', 'project', '--output', out, '--fps', String(JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')).fps || 30), '--quality', 'high', ...(process.env.HF_WORKERS ? ['--workers', process.env.HF_WORKERS] : [])], { stdio: 'inherit' });
     if (r.status !== 0) throw new Error('the render failed');
     return out;
   },

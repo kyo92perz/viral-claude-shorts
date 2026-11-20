@@ -1,0 +1,159 @@
+{
+ "duration": 116.012,
+ "lines": [
+  {
+   "id": "l01",
+   "who": "lola",
+   "text": "Três e sete da manhã. Black Hollow, Virgínia Ocidental.",
+   "t0": 0.5,
+   "t1": 3.687
+  },
+  {
+   "id": "l02",
+   "who": "lola",
+   "text": "Eu trabalho no único posto vinte e quatro horas da Rota Nove. E essa foi a noite em que os mortos voltaram pra abastecer.",
+   "t0": 4.037,
+   "t1": 10.732
+  },
+  {
+   "id": "l03",
+   "who": "lola",
+   "text": "Meu nome é Lola Reyes. Dois anos de exército, seis meses de terapia, e agora eu vendo salgadinho pra caminhoneiro.",
+   "t0": 11.332,
+   "t1": 17.627
+  },
+  {
+   "id": "l04",
+   "who": "tobby",
+   "text": "Bem-vindos a mais um Verdade Oca, o podcast com onze ouvintes. Doze, se a minha mãe voltar.",
+   "t0": 18.077,
+   "t1": 23.138
+  },
+  {
+   "id": "l05",
+   "who": "lola",
+   "text": "Tobby, você tá gravando no estoque de novo?",
+   "t0": 23.488,
+   "t1": 25.981
+  },
+  {
+   "id": "l06",
+   "who": "tobby",
+   "text": "Lola, hoje é treze de novembro. Aniversário do desabamento da mina. Dizem que nessa noite os mineiros voltam.",
+   "t0": 26.281,
+   "t1": 31.953
+  },
+  {
+   "id": "l07",
+   "who": "lola",
+   "text": "Eu ri. Até a neblina engolir a estrada inteira em menos de um minuto.",
+   "t0": 32.453,
+   "t1": 36.061
+  },
+  {
+   "id": "l08",
+   "who": "lola",
+   "text": "Toc. Toc. Toc. Tinha um homem no vidro. Capacete de mineiro. Lanterna apagada. Pele cinza. Molhada.",
+   "t0": 36.761,
+   "t1": 42.094
+  },
+  {
+   "id": "l09",
+   "who": "oco",
+   "text": "Tobias. É o vovô. Abre a porta, tá frio aqui fora.",
+   "t0": 42.594,
+   "t1": 46.605
+  },
+  {
+   "id": "l10",
+   "who": "tobby",
+   "text": "Lola. Meu avô morreu naquela mina. Em oitenta e sete.",
+   "t0": 47.105,
+   "t1": 49.724
+  },
+  {
+   "id": "l11",
+   "who": "lola",
+   "text": "Faróis. O xerife Earl Hatcher estacionou, desceu com a lanterna, e o homem no vidro simplesmente não estava mais lá.",
+   "t0": 50.324,
+   "t1": 56.444
+  },
+  {
+   "id": "l12",
+   "who": "earl",
+   "text": "Vocês dois tão vendo fantasma de novo? Me dá um café. Sem açúcar e sem história.",
+   "t0": 56.844,
+   "t1": 61.819
+  },
+  {
+   "id": "l13",
+   "who": "lola",
+   "text": "Mas o Earl não tirou a mão do revólver nenhuma vez. E aí o Dale entrou. Caminhoneiro, cliente de toda noite. Só que hoje ele andava torto, e sorria demais.",
+   "t0": 62.219,
+   "t1": 70.666
+  },
+  {
+   "id": "l14",
+   "who": "dale",
+   "text": "Lola. A mina tá com fome.",
+   "t0": 71.066,
+   "t1": 73.486
+  },
+  {
+   "id": "l15",
+   "who": "lola",
+   "text": "Ele agarrou meu colarinho com as duas mãos e me jogou contra a prateleira. Eu torci o punho dele pra fora, cotovelo na mandíbula, joelho no estômago. Qualquer homem teria caído. O Dale riu.",
+   "t0": 73.886,
+   "t1": 84.247
+  },
+  {
+   "id": "l16",
+   "who": "lola",
+   "text": "Ele me ergueu do chão pelo pescoço. Eu chutei o joelho dele de lado, ouvi estalar, e bati a cabeça dele no balcão. Uma vez. Duas. Ele não sangrou sangue. Sangrou carvão.",
+   "t0": 84.597,
+   "t1": 94.017
+  },
+  {
+   "id": "l17",
+   "who": "tobby",
+   "text": "Sai de perto dela!",
+   "t0": 94.317,
+   "t1": 95.424
+  },
+  {
+   "id": "l18",
+   "who": "lola",
+   "text": "O Tobby, o maior covarde que eu conheço, acertou o extintor na nuca dele. O Dale caiu. E o xerife ficou branco.",
+   "t0": 95.724,
+   "t1": 101.708
+  },
+  {
+   "id": "l19",
+   "who": "earl",
+   "text": "Isso não é o Dale. Isso é um Oco.",
+   "t0": 102.058,
+   "t1": 103.996
+  },
+  {
+   "id": "l20",
+   "who": "lola",
+   "text": "Foi aí que a luz apagou. E alguém bateu em todas as janelas ao mesmo tempo.",
+   "t0": 104.596,
+   "t1": 108.626
+  },
+  {
+   "id": "l21",
+   "who": "oco_f",
+   "text": "Lola. Abre.",
+   "t0": 109.226,
+   "t1": 110.855
+  },
+  {
+   "id": "l22",
+   "who": "lola",
+   "text": "Era a voz do meu irmão. Ele morreu no Afeganistão.",
+   "t0": 111.555,
+   "t1": 114.312
+  }
+ ]
+}

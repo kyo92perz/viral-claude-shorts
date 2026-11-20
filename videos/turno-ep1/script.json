@@ -1,0 +1,30 @@
+{
+  "language": "pt",
+  "title": "Turno da Madrugada — Ep. 1: Alguém Bateu no Vidro",
+  "lead": 0.5,
+  "tail": 1.4,
+  "lines": [
+    { "id": "l01", "who": "lola", "text": "Três e sete da manhã. Black Hollow, Virgínia Ocidental.", "say": "Três e sete da manhã. Bléqui Rólou, Virgínia Ocidental.", "pause": 0.35 },
+    { "id": "l02", "who": "lola", "text": "Eu trabalho no único posto vinte e quatro horas da Rota Nove. E essa foi a noite em que os mortos voltaram pra abastecer.", "pause": 0.6 },
+    { "id": "l03", "who": "lola", "text": "Meu nome é Lola Reyes. Dois anos de exército, seis meses de terapia, e agora eu vendo salgadinho pra caminhoneiro.", "say": "Meu nome é Lola Rêies. Dois anos de exército, seis meses de terapia, e agora eu vendo salgadinho pra caminhoneiro.", "pause": 0.45 },
+    { "id": "l04", "who": "tobby", "text": "Bem-vindos a mais um Verdade Oca, o podcast com onze ouvintes. Doze, se a minha mãe voltar.", "say": "Bem-vindos a mais um Verdade Oca, o pódcast com onze ouvintes. Doze, se a minha mãe voltar.", "pause": 0.35 },
+    { "id": "l05", "who": "lola", "text": "Tobby, você tá gravando no estoque de novo?", "say": "Tóbi, você tá gravando no estoque de novo?", "pause": 0.3 },
+    { "id": "l06", "who": "tobby", "text": "Lola, hoje é treze de novembro. Aniversário do desabamento da mina. Dizem que nessa noite os mineiros voltam.", "pause": 0.5 },
+    { "id": "l07", "who": "lola", "text": "Eu ri. Até a neblina engolir a estrada inteira em menos de um minuto.", "pause": 0.7 },
+    { "id": "l08", "who": "lola", "text": "Toc. Toc. Toc. Tinha um homem no vidro. Capacete de mineiro. Lanterna apagada. Pele cinza. Molhada.", "pause": 0.5 },
+    { "id": "l09", "who": "oco", "text": "Tobias. É o vovô. Abre a porta, tá frio aqui fora.", "pause": 0.5 },
+    { "id": "l10", "who": "tobby", "text": "Lola. Meu avô morreu naquela mina. Em oitenta e sete.", "pause": 0.6 },
+    { "id": "l11", "who": "lola", "text": "Faróis. O xerife Earl Hatcher estacionou, desceu com a lanterna, e o homem no vidro simplesmente não estava mais lá.", "say": "Faróis. O xerife Ârl Rétcher estacionou, desceu com a lanterna, e o homem no vidro simplesmente não estava mais lá.", "pause": 0.4 },
+    { "id": "l12", "who": "earl", "text": "Vocês dois tão vendo fantasma de novo? Me dá um café. Sem açúcar e sem história.", "pause": 0.4 },
+    { "id": "l13", "who": "lola", "text": "Mas o Earl não tirou a mão do revólver nenhuma vez. E aí o Dale entrou. Caminhoneiro, cliente de toda noite. Só que hoje ele andava torto, e sorria demais.", "say": "Mas o Ârl não tirou a mão do revólver nenhuma vez. E aí o Dêil entrou. Caminhoneiro, cliente de toda noite. Só que hoje ele andava torto, e sorria demais.", "pause": 0.4 },
+    { "id": "l14", "who": "dale", "text": "Lola. A mina tá com fome.", "pause": 0.4 },
+    { "id": "l15", "who": "lola", "text": "Ele agarrou meu colarinho com as duas mãos e me jogou contra a prateleira. Eu torci o punho dele pra fora, cotovelo na mandíbula, joelho no estômago. Qualquer homem teria caído. O Dale riu.", "say": "Ele agarrou meu colarinho com as duas mãos e me jogou contra a prateleira. Eu torci o punho dele pra fora, cotovelo na mandíbula, joelho no estômago. Qualquer homem teria caído. O Dêil riu.", "pause": 0.35 },
+    { "id": "l16", "who": "lola", "text": "Ele me ergueu do chão pelo pescoço. Eu chutei o joelho dele de lado, ouvi estalar, e bati a cabeça dele no balcão. Uma vez. Duas. Ele não sangrou sangue. Sangrou carvão.", "pause": 0.3 },
+    { "id": "l17", "who": "tobby", "text": "Sai de perto dela!", "pause": 0.3 },
+    { "id": "l18", "who": "lola", "text": "O Tobby, o maior covarde que eu conheço, acertou o extintor na nuca dele. O Dale caiu. E o xerife ficou branco.", "say": "O Tóbi, o maior covarde que eu conheço, acertou o extintor na nuca dele. O Dêil caiu. E o xerife ficou branco.", "pause": 0.35 },
+    { "id": "l19", "who": "earl", "text": "Isso não é o Dale. Isso é um Oco.", "say": "Isso não é o Dêil. Isso é um Oco.", "pause": 0.6 },
+    { "id": "l20", "who": "lola", "text": "Foi aí que a luz apagou. E alguém bateu em todas as janelas ao mesmo tempo.", "pause": 0.6 },
+    { "id": "l21", "who": "oco_f", "text": "Lola. Abre.", "pause": 0.7 },
+    { "id": "l22", "who": "lola", "text": "Era a voz do meu irmão. Ele morreu no Afeganistão.", "pause": 0.3 }
+  ]
+}

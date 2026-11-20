@@ -41,6 +41,10 @@ export const SFX: Record<string, string> = {
   pop: 'something small appears or lights up', tick: 'a small click: a detail, a switch, a stop', riser: 'tension that grows into this moment (starts 1 s before)',
   shimmer: 'magic, insight, something shining', fail: 'a comic "wah-wah": a mistake or a letdown', scratch: 'a record scratch: a sudden stop or a twist',
   zip: 'a bullet or a laser flying by', thump: 'a soft low knock: a step, a drop, a heartbeat',
+  knock: 'three knuckle knocks on glass or a door', crack: 'a bone or a stick snapping', glass: 'glass shattering', gun: 'a shotgun blast',
+  sting: 'a horror stinger: a dissonant stab for a scare', scream: 'inhuman screams in the distance', buzz: 'a fluorescent tube flickering',
+  off: 'the power dies: a falling hum and a thud', siren: 'a police siren passing', boom: 'a huge explosion with a long rumble', heart: 'two heartbeats',
 };
 // background sound of a scene's place
-export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat' };
+export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat',
+  hum: 'fluorescent tubes buzzing', drone: 'a low dissonant horror drone', heartbeat: 'a slow heartbeat' };

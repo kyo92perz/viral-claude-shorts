@@ -1,0 +1,539 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "format": "9:16",
+ "renderScale": 0.6667,
+ "notes": "Turno da Madrugada, ep. 2: Apagão.",
+ "music": {
+  "bpm": 80,
+  "key": "E"
+ },
+ "scenes": [
+  {
+   "id": "e01",
+   "type": "object",
+   "label": "TURNO DA MADRUGADA · EP. 2",
+   "title": "No escuro, dá pra ouvir tudo",
+   "highlight": "escuro",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 0,
+   "t1": 3.48
+  },
+  {
+   "id": "e02",
+   "from": 11,
+   "type": "object",
+   "label": "O Dale",
+   "title": "Sem coração batendo",
+   "highlight": "coração",
+   "mood": "dark",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 3.48,
+   "t1": 6.43
+  },
+  {
+   "id": "e03",
+   "from": 19,
+   "type": "object",
+   "label": "Tobby",
+   "title": "Alguém continua o podcast?",
+   "highlight": "podcast",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 6.43,
+   "t1": 10.65
+  },
+  {
+   "id": "e04",
+   "from": 31,
+   "type": "object",
+   "label": "O plano do xerife",
+   "title": "Os Ocos odeiam luz",
+   "highlight": "luz",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "click",
+     "at": 32,
+     "sfx": "tick",
+     "t": 11.18
+    }
+   ],
+   "t0": 10.65,
+   "t1": 18.63
+  },
+  {
+   "id": "e05",
+   "from": 51,
+   "type": "object",
+   "label": "Lola",
+   "title": "Desde oitenta e sete, garota",
+   "highlight": "garota",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 18.63,
+   "t1": 25.07
+  },
+  {
+   "id": "e06",
+   "from": 68,
+   "type": "object",
+   "label": "3:58 da manhã",
+   "title": "Pela porta dos fundos",
+   "highlight": "porta",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 25.07,
+   "t1": 27.44
+  },
+  {
+   "id": "e07",
+   "from": 77,
+   "type": "object",
+   "label": "Enquanto isso…",
+   "title": "Um saco de batatinha na cabeça",
+   "highlight": "batatinha",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 27.44,
+   "t1": 33.59
+  },
+  {
+   "id": "e08",
+   "from": 96,
+   "type": "object",
+   "label": "No rádio",
+   "title": "Pediu batatinha de churrasco",
+   "highlight": "churrasco",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 33.59,
+   "t1": 37.43
+  },
+  {
+   "id": "e09",
+   "from": 108,
+   "type": "object",
+   "label": "Lola",
+   "title": "Com o extintor ou a batatinha?",
+   "highlight": "extintor",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 37.43,
+   "t1": 42.31
+  },
+  {
+   "id": "e10",
+   "from": 124,
+   "type": "object",
+   "label": "Na neblina",
+   "title": "Vinte metros",
+   "highlight": "metros",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 42.31,
+   "t1": 46.83
+  },
+  {
+   "id": "e11",
+   "from": 138,
+   "type": "object",
+   "label": "Ele estava lá",
+   "title": "Um Oco saiu da névoa",
+   "highlight": "névoa",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "pick",
+     "at": 139,
+     "sfx": "sting",
+     "t": 47.24
+    }
+   ],
+   "t0": 46.83,
+   "t1": 49.59
+  },
+  {
+   "id": "e12",
+   "from": 147,
+   "type": "object",
+   "label": "A segunda luta",
+   "title": "Raspando o meu cabelo",
+   "highlight": "cabelo",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "duck",
+     "at": 149,
+     "sfx": "whoosh",
+     "t": 50.08
+    },
+    {
+     "id": "stuck",
+     "at": 158,
+     "sfx": "impact",
+     "t": 52.44
+    }
+   ],
+   "t0": 49.59,
+   "t1": 53.8
+  },
+  {
+   "id": "e13",
+   "from": 163,
+   "type": "object",
+   "label": "Preso",
+   "title": "Meio segundo",
+   "highlight": "segundo",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "tug",
+     "at": 164,
+     "sfx": "scratch",
+     "t": 54.24
+    }
+   ],
+   "t0": 53.8,
+   "t1": 57.75
+  },
+  {
+   "id": "e14",
+   "from": 174,
+   "type": "object",
+   "label": "Pé de cabra",
+   "title": "O joelho dobrou pro lado errado",
+   "highlight": "joelho",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "strike",
+     "at": 177,
+     "sfx": "crack",
+     "t": 58.48
+    },
+    {
+     "id": "fall",
+     "at": 185,
+     "sfx": "thump",
+     "t": 60.46
+    }
+   ],
+   "t0": 57.75,
+   "t1": 61.84
+  },
+  {
+   "id": "e15",
+   "from": 188,
+   "type": "object",
+   "label": "Não para",
+   "title": "E continuou vindo",
+   "highlight": "continuou",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "claw",
+     "at": 195,
+     "sfx": "scratch",
+     "t": 64.02
+    }
+   ],
+   "t0": 61.84,
+   "t1": 65.43
+  },
+  {
+   "id": "e16",
+   "from": 199,
+   "type": "object",
+   "label": "No chão",
+   "title": "Agarrou o meu tornozelo",
+   "highlight": "tornozelo",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "grab",
+     "at": 200,
+     "sfx": "whoosh",
+     "t": 65.84
+    },
+    {
+     "id": "down",
+     "at": 206,
+     "sfx": "impact",
+     "t": 67.26
+    }
+   ],
+   "t0": 65.43,
+   "t1": 69.13
+  },
+  {
+   "id": "e17",
+   "from": 212,
+   "type": "object",
+   "label": "Os dentes",
+   "title": "A mandíbula abriu ao meio",
+   "highlight": "mandíbula",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "open",
+     "at": 215,
+     "sfx": "sting",
+     "t": 70.14
+    }
+   ],
+   "t0": 69.13,
+   "t1": 72.39
+  },
+  {
+   "id": "e18",
+   "from": 223,
+   "type": "object",
+   "label": "Sem saída",
+   "title": "Empurrei com tudo",
+   "highlight": "empurrei",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 72.39,
+   "t1": 77.45
+  },
+  {
+   "id": "e19",
+   "from": 240,
+   "type": "object",
+   "label": "Xerife Hatcher",
+   "title": "O tiro de doze",
+   "highlight": "doze",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "gun",
+     "at": 241,
+     "sfx": "gun",
+     "t": 78.08
+    }
+   ],
+   "t0": 77.45,
+   "t1": 80.1
+  },
+  {
+   "id": "e20",
+   "from": 249,
+   "type": "object",
+   "label": "O gerador",
+   "title": "Uma vez. Duas.",
+   "highlight": "vez",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "pull1",
+     "at": 252,
+     "sfx": "thump",
+     "t": 80.8
+    },
+    {
+     "id": "pull2",
+     "at": 259,
+     "sfx": "thump",
+     "t": 82.78
+    }
+   ],
+   "t0": 80.1,
+   "t1": 84.04
+  },
+  {
+   "id": "e21",
+   "from": 262,
+   "type": "object",
+   "label": "Luz",
+   "title": "Os Ocos gritaram",
+   "highlight": "gritaram",
+   "mood": "epic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "on",
+     "at": 266,
+     "sfx": "impact",
+     "t": 84.86
+    },
+    {
+     "id": "scream",
+     "at": 270,
+     "sfx": "scream",
+     "t": 85.9
+    }
+   ],
+   "t0": 84.04,
+   "t1": 88.63
+  },
+  {
+   "id": "e22",
+   "from": 275,
+   "type": "object",
+   "label": "Recuaram",
+   "title": "A luz queima eles",
+   "highlight": "luz",
+   "mood": "calm",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 88.63,
+   "t1": 93.13
+  },
+  {
+   "id": "e23",
+   "from": 287,
+   "type": "object",
+   "label": "No rádio",
+   "title": "Vou botar trilha sonora nisso!",
+   "highlight": "trilha",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 93.13,
+   "t1": 98.53
+  },
+  {
+   "id": "e24",
+   "from": 304,
+   "type": "object",
+   "label": "O xerife",
+   "title": "O que aconteceu em 87",
+   "highlight": "aconteceu",
+   "mood": "sad",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 98.53,
+   "t1": 102.57
+  },
+  {
+   "id": "e25",
+   "from": 316,
+   "type": "object",
+   "label": "O arranhão",
+   "title": "As veias estavam ficando pretas",
+   "highlight": "veias",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "veins",
+     "at": 328,
+     "sfx": "sting",
+     "t": 106.22
+    }
+   ],
+   "t0": 102.57,
+   "t1": 108.37
+  },
+  {
+   "id": "e26",
+   "from": 334,
+   "type": "closing",
+   "label": "CONTINUA NO EP. 3",
+   "title": "O Dale sumiu",
+   "highlight": "sumiu",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "gone",
+     "at": 336,
+     "sfx": "heart",
+     "t": 109.28
+    }
+   ],
+   "t0": 108.37,
+   "t1": 111.971
+  }
+ ],
+ "duration": 111.971
+}

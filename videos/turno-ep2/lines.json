@@ -1,0 +1,152 @@
+{
+ "duration": 111.971,
+ "lines": [
+  {
+   "id": "l01",
+   "who": "lola",
+   "text": "No escuro, dá pra ouvir tudo. A neblina raspando o vidro. O Dale respirando no chão. Sem coração batendo.",
+   "t0": 0.5,
+   "t1": 6.24
+  },
+  {
+   "id": "l02",
+   "who": "tobby",
+   "text": "Ok, ok, pergunta séria: se a gente morrer, alguém continua o podcast?",
+   "t0": 6.74,
+   "t1": 10.639
+  },
+  {
+   "id": "l03",
+   "who": "lola",
+   "text": "Tobby. Lanterna.",
+   "t0": 10.939,
+   "t1": 11.989
+  },
+  {
+   "id": "l04",
+   "who": "earl",
+   "text": "O gerador fica nos fundos, trinta metros. Os Ocos odeiam luz. Se a gente religar, a gente vive.",
+   "t0": 12.389,
+   "t1": 18.418
+  },
+  {
+   "id": "l04b",
+   "who": "lola",
+   "text": "Earl, desde quando você acredita em fantasma?",
+   "t0": 18.918,
+   "t1": 21.466
+  },
+  {
+   "id": "l04c",
+   "who": "earl",
+   "text": "Desde oitenta e sete, garota. Pega o pé de cabra.",
+   "t0": 21.816,
+   "t1": 24.858
+  },
+  {
+   "id": "l05",
+   "who": "lola",
+   "text": "Eu e o Earl saímos pela porta dos fundos. O Tobby ficou no rádio, vigiando o Dale, amarrado com fita isolante e um saco de batatinha na cabeça.",
+   "t0": 25.358,
+   "t1": 33.47
+  },
+  {
+   "id": "l06",
+   "who": "radio",
+   "text": "Câmbio. Ele se mexeu. Ele pediu batatinha de churrasco. Isso é normal?",
+   "t0": 33.87,
+   "t1": 37.215
+  },
+  {
+   "id": "l06b",
+   "who": "lola",
+   "text": "Se ele falar de novo, bate com o extintor.",
+   "t0": 37.715,
+   "t1": 39.999
+  },
+  {
+   "id": "l06c",
+   "who": "radio",
+   "text": "Com o extintor ou com a batatinha?",
+   "t0": 40.299,
+   "t1": 42.088
+  },
+  {
+   "id": "l07",
+   "who": "lola",
+   "text": "Vinte metros. A neblina tinha cheiro de enxofre. Quinze. Aí eu vi a picareta.",
+   "t0": 42.588,
+   "t1": 46.663
+  },
+  {
+   "id": "l08",
+   "who": "lola",
+   "text": "Um Oco saiu da névoa com a picareta erguida. Eu me abaixei, a ponta passou raspando o meu cabelo e cravou na lataria do gerador. Ele puxou. Ficou preso. Meio segundo. Foi o que eu precisei.",
+   "t0": 47.163,
+   "t1": 57.648
+  },
+  {
+   "id": "l09",
+   "who": "lola",
+   "text": "Pé de cabra no joelho. O joelho dobrou pro lado errado. Ele caiu, e continuou vindo, arrastando a perna, as unhas rasgando o cascalho.",
+   "t0": 58.048,
+   "t1": 65.317
+  },
+  {
+   "id": "l10",
+   "who": "lola",
+   "text": "Ele agarrou o meu tornozelo e me derrubou. Montou em cima de mim. A mandíbula dele abriu ao meio, cheia de dentes de carvão. Eu travei o pé de cabra na garganta dele e empurrei com tudo o que eu tinha.",
+   "t0": 65.717,
+   "t1": 76.134
+  },
+  {
+   "id": "l11",
+   "who": "earl",
+   "text": "Abaixa, Reyes!",
+   "t0": 76.434,
+   "t1": 77.657
+  },
+  {
+   "id": "l12",
+   "who": "lola",
+   "text": "O tiro de doze arrancou metade do ombro dele. O Earl puxou a corda do gerador. Uma vez. Duas. Na terceira, as luzes do posto acenderam, e os Ocos gritaram. Todos. Na neblina inteira.",
+   "t0": 78.007,
+   "t1": 88.419
+  },
+  {
+   "id": "l13",
+   "who": "lola",
+   "text": "Eles recuaram. A luz queima eles. A gente respirou. Por três segundos.",
+   "t0": 88.919,
+   "t1": 92.923
+  },
+  {
+   "id": "l13b",
+   "who": "radio",
+   "text": "Gente, eu vi tudo pela janela! Vocês parecem filme de ação! Eu vou botar trilha sonora nisso!",
+   "t0": 93.423,
+   "t1": 98.333
+  },
+  {
+   "id": "l14",
+   "who": "earl",
+   "text": "Reyes. Eu preciso te contar o que aconteceu em oitenta e sete.",
+   "t0": 98.783,
+   "t1": 102.377
+  },
+  {
+   "id": "l15",
+   "who": "lola",
+   "text": "Ele levantou a manga. Tinha um arranhão no braço dele. E as veias em volta estavam ficando pretas.",
+   "t0": 102.877,
+   "t1": 108.222
+  },
+  {
+   "id": "l16",
+   "who": "radio",
+   "text": "Gente? O Dale. O Dale sumiu.",
+   "t0": 108.822,
+   "t1": 110.271
+  }
+ ]
+}

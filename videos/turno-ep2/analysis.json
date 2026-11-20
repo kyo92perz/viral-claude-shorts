@@ -1,0 +1,657 @@
+{
+ "duration": 111.971,
+ "phrases": [
+  {
+   "n": 1,
+   "t0": 0,
+   "t1": 1.9,
+   "from": 0,
+   "to": 5,
+   "text": "No escuro dá para ouvir tudo.",
+   "question": false
+  },
+  {
+   "n": 2,
+   "t0": 2.1,
+   "t1": 3.44,
+   "from": 6,
+   "to": 10,
+   "text": "A neblina raspando o vidro.",
+   "question": false
+  },
+  {
+   "n": 3,
+   "t0": 3.64,
+   "t1": 4.8,
+   "from": 11,
+   "to": 15,
+   "text": "O Dale respirando no chão,",
+   "question": false
+  },
+  {
+   "n": 4,
+   "t0": 5.08,
+   "t1": 6.18,
+   "from": 16,
+   "to": 18,
+   "text": "sem coração batendo.",
+   "question": false
+  },
+  {
+   "n": 5,
+   "t0": 6.68,
+   "t1": 7.26,
+   "from": 19,
+   "to": 20,
+   "text": "Ok, ok.",
+   "question": false
+  },
+  {
+   "n": 6,
+   "t0": 7.4,
+   "t1": 8.14,
+   "from": 21,
+   "to": 22,
+   "text": "Pergunta séria.",
+   "question": false
+  },
+  {
+   "n": 7,
+   "t0": 8.46,
+   "t1": 10.42,
+   "from": 23,
+   "to": 30,
+   "text": "Se a gente morrer, alguém continua o podcast.",
+   "question": false
+  },
+  {
+   "n": 8,
+   "t0": 10.9,
+   "t1": 12,
+   "from": 31,
+   "to": 32,
+   "text": "Toby Lanternas.",
+   "question": false
+  },
+  {
+   "n": 9,
+   "t0": 12.38,
+   "t1": 14.56,
+   "from": 33,
+   "to": 39,
+   "text": "O gerador fica nos fundos trinta metros.",
+   "question": false
+  },
+  {
+   "n": 10,
+   "t0": 14.9,
+   "t1": 16.04,
+   "from": 40,
+   "to": 43,
+   "text": "Os Ocos odeiam luz.",
+   "question": false
+  },
+  {
+   "n": 11,
+   "t0": 16.4,
+   "t1": 18.24,
+   "from": 44,
+   "to": 50,
+   "text": "Se a gente religar, a gente vive.",
+   "question": false
+  },
+  {
+   "n": 12,
+   "t0": 18.88,
+   "t1": 21.4,
+   "from": 51,
+   "to": 57,
+   "text": "Earl, desde quando você acredita em fantasma?",
+   "question": true
+  },
+  {
+   "n": 13,
+   "t0": 21.76,
+   "t1": 23.52,
+   "from": 58,
+   "to": 62,
+   "text": "Desde oitenta e sete garota.",
+   "question": false
+  },
+  {
+   "n": 14,
+   "t0": 23.84,
+   "t1": 24.8,
+   "from": 63,
+   "to": 67,
+   "text": "Pega o pé de cabra.",
+   "question": false
+  },
+  {
+   "n": 15,
+   "t0": 25.32,
+   "t1": 27.4,
+   "from": 68,
+   "to": 76,
+   "text": "Eu e o Earl saímos pela porta dos fundos.",
+   "question": false
+  },
+  {
+   "n": 16,
+   "t0": 27.4,
+   "t1": 33.38,
+   "from": 77,
+   "to": 95,
+   "text": "O Toby ficou no rádio, vigiando o Dale, amarrado com fita isolante e um saco de batatinha na cabeça.",
+   "question": false
+  },
+  {
+   "n": 17,
+   "t0": 33.84,
+   "t1": 34.8,
+   "from": 96,
+   "to": 99,
+   "text": "Câmbio ele se mexeu.",
+   "question": false
+  },
+  {
+   "n": 18,
+   "t0": 34.96,
+   "t1": 36.38,
+   "from": 100,
+   "to": 104,
+   "text": "Ele pediu batatinha de churrasco.",
+   "question": false
+  },
+  {
+   "n": 19,
+   "t0": 36.56,
+   "t1": 37.06,
+   "from": 105,
+   "to": 107,
+   "text": "Isso é normal.",
+   "question": false
+  },
+  {
+   "n": 20,
+   "t0": 37.68,
+   "t1": 38.68,
+   "from": 108,
+   "to": 112,
+   "text": "Se ele falar de novo,",
+   "question": false
+  },
+  {
+   "n": 21,
+   "t0": 38.96,
+   "t1": 39.96,
+   "from": 113,
+   "to": 116,
+   "text": "bate com o extintor.",
+   "question": false
+  },
+  {
+   "n": 22,
+   "t0": 40.28,
+   "t1": 41.98,
+   "from": 117,
+   "to": 123,
+   "text": "Com o extintor ou com a batatinha?",
+   "question": true
+  },
+  {
+   "n": 23,
+   "t0": 42.56,
+   "t1": 44.86,
+   "from": 124,
+   "to": 131,
+   "text": "Vinte metros, a neblina tinha cheiro de enxofre.",
+   "question": false
+  },
+  {
+   "n": 24,
+   "t0": 45.1,
+   "t1": 46.6,
+   "from": 132,
+   "to": 137,
+   "text": "Quinze, aí eu vi a picareta.",
+   "question": false
+  },
+  {
+   "n": 25,
+   "t0": 47.08,
+   "t1": 49.36,
+   "from": 138,
+   "to": 146,
+   "text": "Um oco saiu da névoa com a picareta erguida.",
+   "question": false
+  },
+  {
+   "n": 26,
+   "t0": 49.84,
+   "t1": 53.76,
+   "from": 147,
+   "to": 162,
+   "text": "Eu me abaixei, a ponta passou raspando o meu cabelo e cravou na lataria do gerador.",
+   "question": false
+  },
+  {
+   "n": 27,
+   "t0": 53.76,
+   "t1": 55.58,
+   "from": 163,
+   "to": 166,
+   "text": "Ele puxou, ficou preso.",
+   "question": false
+  },
+  {
+   "n": 28,
+   "t0": 55.8,
+   "t1": 57.66,
+   "from": 167,
+   "to": 173,
+   "text": "Meio segundo foi o que eu precisei.",
+   "question": false
+  },
+  {
+   "n": 29,
+   "t0": 58,
+   "t1": 59.08,
+   "from": 174,
+   "to": 178,
+   "text": "Pé de cabra no joelho.",
+   "question": false
+  },
+  {
+   "n": 30,
+   "t0": 59.34,
+   "t1": 60.8,
+   "from": 179,
+   "to": 185,
+   "text": "O joelho dobrou para o lado errado.",
+   "question": false
+  },
+  {
+   "n": 31,
+   "t0": 61.24,
+   "t1": 65.32,
+   "from": 186,
+   "to": 198,
+   "text": "Ele caiu e continuou vindo, arrastando a perna, as unhas rasgando o cascalho.",
+   "question": false
+  },
+  {
+   "n": 32,
+   "t0": 65.68,
+   "t1": 67.66,
+   "from": 199,
+   "to": 206,
+   "text": "Ele agarrou o meu tornozelo e me derrubou.",
+   "question": false
+  },
+  {
+   "n": 33,
+   "t0": 68,
+   "t1": 68.98,
+   "from": 207,
+   "to": 211,
+   "text": "Montou em cima de mim.",
+   "question": false
+  },
+  {
+   "n": 34,
+   "t0": 69.38,
+   "t1": 72.2,
+   "from": 212,
+   "to": 222,
+   "text": "A mandíbula dele abriu ao meio, cheio de dentes de carvão.",
+   "question": false
+  },
+  {
+   "n": 35,
+   "t0": 72.64,
+   "t1": 76.04,
+   "from": 223,
+   "to": 239,
+   "text": "Eu travei o pé de cabra na garganta dele e empurrei com tudo o que eu tinha.",
+   "question": false
+  },
+  {
+   "n": 36,
+   "t0": 77.7,
+   "t1": 80.06,
+   "from": 240,
+   "to": 248,
+   "text": "O tiro de doze arrancou metade do ombro dele.",
+   "question": false
+  },
+  {
+   "n": 37,
+   "t0": 80.06,
+   "t1": 83,
+   "from": 249,
+   "to": 259,
+   "text": "O ar o puxou a corda do gerador uma vez, duas.",
+   "question": false
+  },
+  {
+   "n": 38,
+   "t0": 83.38,
+   "t1": 86.5,
+   "from": 260,
+   "to": 270,
+   "text": "Na terceira, as luzes do posto acenderam e os óculos gritaram,",
+   "question": false
+  },
+  {
+   "n": 39,
+   "t0": 86.82,
+   "t1": 88.38,
+   "from": 271,
+   "to": 274,
+   "text": "todos na neblina inteira.",
+   "question": false
+  },
+  {
+   "n": 40,
+   "t0": 88.88,
+   "t1": 90.62,
+   "from": 275,
+   "to": 280,
+   "text": "Eles recuaram, a luz queima eles,",
+   "question": false
+  },
+  {
+   "n": 41,
+   "t0": 90.98,
+   "t1": 92.7,
+   "from": 281,
+   "to": 286,
+   "text": "a gente respirou por três segundos.",
+   "question": false
+  },
+  {
+   "n": 42,
+   "t0": 93.38,
+   "t1": 94.82,
+   "from": 287,
+   "to": 292,
+   "text": "Gente, eu vi tudo pela janela.",
+   "question": false
+  },
+  {
+   "n": 43,
+   "t0": 95.04,
+   "t1": 96.46,
+   "from": 293,
+   "to": 297,
+   "text": "Vocês parecem filme de ação.",
+   "question": false
+  },
+  {
+   "n": 44,
+   "t0": 96.74,
+   "t1": 98.32,
+   "from": 298,
+   "to": 303,
+   "text": "Eu vou botar trilha sonora nisso.",
+   "question": false
+  },
+  {
+   "n": 45,
+   "t0": 98.78,
+   "t1": 102.38,
+   "from": 304,
+   "to": 315,
+   "text": "Reis, eu preciso de contar o que aconteceu em oitenta e sete.",
+   "question": false
+  },
+  {
+   "n": 46,
+   "t0": 102.82,
+   "t1": 103.84,
+   "from": 316,
+   "to": 319,
+   "text": "Ele levantou a manga,",
+   "question": false
+  },
+  {
+   "n": 47,
+   "t0": 104.16,
+   "t1": 108.12,
+   "from": 320,
+   "to": 333,
+   "text": "tinha um arranhão no braço dele e as veias em volta estavam ficando pretas.",
+   "question": false
+  },
+  {
+   "n": 48,
+   "t0": 108.62,
+   "t1": 110.22,
+   "from": 334,
+   "to": 339,
+   "text": "Gente, o deio, o deio sumiu.",
+   "question": false
+  }
+ ],
+ "pauses": [
+  {
+   "t0": 4.8,
+   "t1": 5.08,
+   "dur": 0.28,
+   "after": 15
+  },
+  {
+   "t0": 6.18,
+   "t1": 6.68,
+   "dur": 0.5,
+   "after": 18
+  },
+  {
+   "t0": 8.14,
+   "t1": 8.46,
+   "dur": 0.32,
+   "after": 22
+  },
+  {
+   "t0": 10.42,
+   "t1": 10.9,
+   "dur": 0.48,
+   "after": 30
+  },
+  {
+   "t0": 12,
+   "t1": 12.38,
+   "dur": 0.38,
+   "after": 32
+  },
+  {
+   "t0": 14.56,
+   "t1": 14.9,
+   "dur": 0.34,
+   "after": 39
+  },
+  {
+   "t0": 16.04,
+   "t1": 16.4,
+   "dur": 0.36,
+   "after": 43
+  },
+  {
+   "t0": 18.24,
+   "t1": 18.88,
+   "dur": 0.64,
+   "after": 50
+  },
+  {
+   "t0": 21.4,
+   "t1": 21.76,
+   "dur": 0.36,
+   "after": 57
+  },
+  {
+   "t0": 23.52,
+   "t1": 23.84,
+   "dur": 0.32,
+   "after": 62
+  },
+  {
+   "t0": 24.8,
+   "t1": 25.32,
+   "dur": 0.52,
+   "after": 67
+  },
+  {
+   "t0": 33.38,
+   "t1": 33.84,
+   "dur": 0.46,
+   "after": 95
+  },
+  {
+   "t0": 37.06,
+   "t1": 37.68,
+   "dur": 0.62,
+   "after": 107
+  },
+  {
+   "t0": 38.68,
+   "t1": 38.96,
+   "dur": 0.28,
+   "after": 112
+  },
+  {
+   "t0": 39.96,
+   "t1": 40.28,
+   "dur": 0.32,
+   "after": 116
+  },
+  {
+   "t0": 41.98,
+   "t1": 42.56,
+   "dur": 0.58,
+   "after": 123
+  },
+  {
+   "t0": 46.6,
+   "t1": 47.08,
+   "dur": 0.48,
+   "after": 137
+  },
+  {
+   "t0": 49.36,
+   "t1": 49.84,
+   "dur": 0.48,
+   "after": 146
+  },
+  {
+   "t0": 57.66,
+   "t1": 58,
+   "dur": 0.34,
+   "after": 173
+  },
+  {
+   "t0": 60.8,
+   "t1": 61.24,
+   "dur": 0.44,
+   "after": 185
+  },
+  {
+   "t0": 65.32,
+   "t1": 65.68,
+   "dur": 0.36,
+   "after": 198
+  },
+  {
+   "t0": 67.66,
+   "t1": 68,
+   "dur": 0.34,
+   "after": 206
+  },
+  {
+   "t0": 68.98,
+   "t1": 69.38,
+   "dur": 0.4,
+   "after": 211
+  },
+  {
+   "t0": 72.2,
+   "t1": 72.64,
+   "dur": 0.44,
+   "after": 222
+  },
+  {
+   "t0": 76.04,
+   "t1": 77.7,
+   "dur": 1.66,
+   "after": 239
+  },
+  {
+   "t0": 83,
+   "t1": 83.38,
+   "dur": 0.38,
+   "after": 259
+  },
+  {
+   "t0": 86.5,
+   "t1": 86.82,
+   "dur": 0.32,
+   "after": 270
+  },
+  {
+   "t0": 88.38,
+   "t1": 88.88,
+   "dur": 0.5,
+   "after": 274
+  },
+  {
+   "t0": 90.62,
+   "t1": 90.98,
+   "dur": 0.36,
+   "after": 280
+  },
+  {
+   "t0": 92.7,
+   "t1": 93.38,
+   "dur": 0.68,
+   "after": 286
+  },
+  {
+   "t0": 96.46,
+   "t1": 96.74,
+   "dur": 0.28,
+   "after": 297
+  },
+  {
+   "t0": 98.32,
+   "t1": 98.78,
+   "dur": 0.46,
+   "after": 303
+  },
+  {
+   "t0": 102.38,
+   "t1": 102.82,
+   "dur": 0.44,
+   "after": 315
+  },
+  {
+   "t0": 103.84,
+   "t1": 104.16,
+   "dur": 0.32,
+   "after": 319
+  },
+  {
+   "t0": 108.12,
+   "t1": 108.62,
+   "dur": 0.5,
+   "after": 333
+  }
+ ],
+ "numbers": [
+  {
+   "i": 75,
+   "w": "dos",
+   "t0": 26.84
+  }
+ ],
+ "words": 340
+}

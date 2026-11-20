@@ -1,0 +1,158 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "shots": [
+  {
+   "id": "test-sheet0",
+   "title": "guard/jab",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet1",
+   "title": "cross/hook",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet2",
+   "title": "elbow/knee",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet3",
+   "title": "kickLow/kickHigh",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet4",
+   "title": "grabbed/thrown",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet5",
+   "title": "lifted/slam",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet6",
+   "title": "hitHead/hitBody",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet7",
+   "title": "duck/pull",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet8",
+   "title": "down/downFace",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet9",
+   "title": "crawl/mount",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet10",
+   "title": "windup/swing",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet11",
+   "title": "aim/recoil",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet12",
+   "title": "choke/lunge",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet13",
+   "title": "bite/push",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet14",
+   "title": "scared/arms",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet15",
+   "title": "shrug/point",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-ext0",
+   "title": "Posto 0",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-ext1",
+   "title": "Posto 1",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-ext2",
+   "title": "Posto 2",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  }
+ ]
+}

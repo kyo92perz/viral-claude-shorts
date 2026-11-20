@@ -1,0 +1,672 @@
+{
+ "duration": 107.635,
+ "phrases": [
+  {
+   "n": 1,
+   "t0": 0,
+   "t1": 3.86,
+   "from": 0,
+   "to": 11,
+   "text": "Em oitenta e sete, a mina desabou com quatorze homens lá dentro.",
+   "question": false
+  },
+  {
+   "n": 2,
+   "t0": 4.24,
+   "t1": 7.5,
+   "from": 12,
+   "to": 21,
+   "text": "Vivos, tinha gás, uma faísca e a cidade inteira explodia.",
+   "question": false
+  },
+  {
+   "n": 3,
+   "t0": 7.78,
+   "t1": 8.96,
+   "from": 22,
+   "to": 26,
+   "text": "Então eu lacrei a entrada.",
+   "question": false
+  },
+  {
+   "n": 4,
+   "t0": 9.58,
+   "t1": 11.94,
+   "from": 27,
+   "to": 35,
+   "text": "Eu ouvi eles batendo na pedra por três dias.",
+   "question": false
+  },
+  {
+   "n": 5,
+   "t0": 12.66,
+   "t1": 14.02,
+   "from": 36,
+   "to": 41,
+   "text": "O meu avô tava lá dentro.",
+   "question": false
+  },
+  {
+   "n": 6,
+   "t0": 14.46,
+   "t1": 16.2,
+   "from": 42,
+   "to": 46,
+   "text": "Tava, eu sinto muito garoto.",
+   "question": false
+  },
+  {
+   "n": 7,
+   "t0": 16.6,
+   "t1": 19.06,
+   "from": 47,
+   "to": 54,
+   "text": "Eles não voltaram pela cidade, voltaram por mim.",
+   "question": false
+  },
+  {
+   "n": 8,
+   "t0": 19.54,
+   "t1": 20.58,
+   "from": 55,
+   "to": 57,
+   "text": "Ninguém falou nada.",
+   "question": false
+  },
+  {
+   "n": 9,
+   "t0": 20.82,
+   "t1": 22,
+   "from": 58,
+   "to": 63,
+   "text": "Até o deio cair do teto.",
+   "question": false
+  },
+  {
+   "n": 10,
+   "t0": 22.5,
+   "t1": 23.24,
+   "from": 64,
+   "to": 66,
+   "text": "Ele estava diferente.",
+   "question": false
+  },
+  {
+   "n": 11,
+   "t0": 23.76,
+   "t1": 25.64,
+   "from": 67,
+   "to": 71,
+   "text": "Maior, os braços compridos demais,",
+   "question": false
+  },
+  {
+   "n": 12,
+   "t0": 25.92,
+   "t1": 27.26,
+   "from": 72,
+   "to": 76,
+   "text": "os dedos virados em garras.",
+   "question": false
+  },
+  {
+   "n": 13,
+   "t0": 27.6,
+   "t1": 30.12,
+   "from": 77,
+   "to": 89,
+   "text": "Ele derrubou o arro com um tapa e veio pra cima de mim.",
+   "question": false
+  },
+  {
+   "n": 14,
+   "t0": 30.46,
+   "t1": 31.16,
+   "from": 90,
+   "to": 92,
+   "text": "Eu sei lutar,",
+   "question": false
+  },
+  {
+   "n": 15,
+   "t0": 31.48,
+   "t1": 32.42,
+   "from": 93,
+   "to": 96,
+   "text": "mas não contra isso.",
+   "question": false
+  },
+  {
+   "n": 16,
+   "t0": 32.82,
+   "t1": 36.24,
+   "from": 97,
+   "to": 109,
+   "text": "Ele me jogou contra a geladeira e o vidro explodiu nas minhas costas.",
+   "question": false
+  },
+  {
+   "n": 17,
+   "t0": 36.68,
+   "t1": 40.66,
+   "from": 110,
+   "to": 123,
+   "text": "Eu acertei três socos no rosto dele e cada um parecia bater numa parede.",
+   "question": false
+  },
+  {
+   "n": 18,
+   "t0": 41.04,
+   "t1": 43.84,
+   "from": 124,
+   "to": 133,
+   "text": "Ele me prendeu pelo pescoço contra a porta da geladeira.",
+   "question": false
+  },
+  {
+   "n": 19,
+   "t0": 44.18,
+   "t1": 46.38,
+   "from": 134,
+   "to": 141,
+   "text": "A minha visão começou a escurecer nas bordas.",
+   "question": false
+  },
+  {
+   "n": 20,
+   "t0": 46.8,
+   "t1": 49.24,
+   "from": 142,
+   "to": 149,
+   "text": "E eu pensei, pelo menos eu morri trabalhando,",
+   "question": false
+  },
+  {
+   "n": 21,
+   "t0": 49.58,
+   "t1": 50.06,
+   "from": 150,
+   "to": 151,
+   "text": "que piada.",
+   "question": false
+  },
+  {
+   "n": 22,
+   "t0": 50.54,
+   "t1": 52.16,
+   "from": 152,
+   "to": 156,
+   "text": "Ei, carvãozinho, sorria pra câmera.",
+   "question": false
+  },
+  {
+   "n": 23,
+   "t0": 52.6,
+   "t1": 55.5,
+   "from": 157,
+   "to": 168,
+   "text": "O tobe acendeu o ring light do podcast bem na cara dele.",
+   "question": false
+  },
+  {
+   "n": 24,
+   "t0": 55.9,
+   "t1": 56.72,
+   "from": 169,
+   "to": 171,
+   "text": "Dois mil lumens.",
+   "question": false
+  },
+  {
+   "n": 25,
+   "t0": 56.98,
+   "t1": 58.26,
+   "from": 172,
+   "to": 177,
+   "text": "O deio berrou e me soltou.",
+   "question": false
+  },
+  {
+   "n": 26,
+   "t0": 58.62,
+   "t1": 61.86,
+   "from": 178,
+   "to": 193,
+   "text": "Eu peguei um caco de vidro do chão e enfiei no olho dele até o fim.",
+   "question": false
+  },
+  {
+   "n": 27,
+   "t0": 62.4,
+   "t1": 67.86,
+   "from": 194,
+   "to": 214,
+   "text": "Quando ele parou de se mexer, o Arles já estava de pé, segurando a caixa de dinamite da obra da rodovia.",
+   "question": false
+  },
+  {
+   "n": 28,
+   "t0": 68.28,
+   "t1": 69.16,
+   "from": 215,
+   "to": 218,
+   "text": "Eles querem a mim,",
+   "question": false
+  },
+  {
+   "n": 29,
+   "t0": 69.44,
+   "t1": 71.32,
+   "from": 219,
+   "to": 225,
+   "text": "então eu vou levar eles pra casa.",
+   "question": false
+  },
+  {
+   "n": 30,
+   "t0": 71.7,
+   "t1": 72.64,
+   "from": 226,
+   "to": 227,
+   "text": "Arles Nannons.",
+   "question": false
+  },
+  {
+   "n": 31,
+   "t0": 72.92,
+   "t1": 74.5,
+   "from": 228,
+   "to": 231,
+   "text": "Reis, cuida desse moleque.",
+   "question": false
+  },
+  {
+   "n": 32,
+   "t0": 74.78,
+   "t1": 76.6,
+   "from": 232,
+   "to": 238,
+   "text": "Ele é mais corajoso do que parece.",
+   "question": false
+  },
+  {
+   "n": 33,
+   "t0": 77.16,
+   "t1": 79.44,
+   "from": 239,
+   "to": 247,
+   "text": "Cherife, se você encontrar o meu avô lá embaixo,",
+   "question": false
+  },
+  {
+   "n": 34,
+   "t0": 79.74,
+   "t1": 81.58,
+   "from": 248,
+   "to": 256,
+   "text": "fala pra ele que eu ainda tenho rádio dele.",
+   "question": false
+  },
+  {
+   "n": 35,
+   "t0": 82.02,
+   "t1": 83.66,
+   "from": 257,
+   "to": 261,
+   "text": "Eu falo garoto, eu falo.",
+   "question": false
+  },
+  {
+   "n": 36,
+   "t0": 84.08,
+   "t1": 86.42,
+   "from": 262,
+   "to": 270,
+   "text": "Ele dirigiu até a mina com a sirene ligada.",
+   "question": false
+  },
+  {
+   "n": 37,
+   "t0": 86.8,
+   "t1": 87.78,
+   "from": 271,
+   "to": 274,
+   "text": "Os ocus foram atrás,",
+   "question": false
+  },
+  {
+   "n": 38,
+   "t0": 88.18,
+   "t1": 89.26,
+   "from": 275,
+   "to": 277,
+   "text": "todos como mariposas.",
+   "question": false
+  },
+  {
+   "n": 39,
+   "t0": 89.92,
+   "t1": 90.94,
+   "from": 278,
+   "to": 281,
+   "text": "Há 5 e 42,",
+   "question": false
+  },
+  {
+   "n": 40,
+   "t0": 91.4,
+   "t1": 93.98,
+   "from": 282,
+   "to": 291,
+   "text": "a montanha tremeu e o sol nasceu em Black Hollow.",
+   "question": false
+  },
+  {
+   "n": 41,
+   "t0": 94.62,
+   "t1": 96.46,
+   "from": 292,
+   "to": 297,
+   "text": "Lola, isso vai dar muita audiência.",
+   "question": false
+  },
+  {
+   "n": 42,
+   "t0": 96.78,
+   "t1": 98.7,
+   "from": 298,
+   "to": 304,
+   "text": "Se você postar isso, eu te mato.",
+   "question": false
+  },
+  {
+   "n": 43,
+   "t0": 99.26,
+   "t1": 101.74,
+   "from": 305,
+   "to": 310,
+   "text": "Ele postou 11 milhões de visualizações.",
+   "question": false
+  },
+  {
+   "n": 44,
+   "t0": 102.1,
+   "t1": 105.72,
+   "from": 311,
+   "to": 323,
+   "text": "E na gravação, bem no finalzinho, dá pra ouvir alguém batendo no vidro.",
+   "question": false
+  }
+ ],
+ "pauses": [
+  {
+   "t0": 3.86,
+   "t1": 4.24,
+   "dur": 0.38,
+   "after": 11
+  },
+  {
+   "t0": 7.5,
+   "t1": 7.78,
+   "dur": 0.28,
+   "after": 21
+  },
+  {
+   "t0": 8.96,
+   "t1": 9.58,
+   "dur": 0.62,
+   "after": 26
+  },
+  {
+   "t0": 11.94,
+   "t1": 12.66,
+   "dur": 0.72,
+   "after": 35
+  },
+  {
+   "t0": 14.02,
+   "t1": 14.46,
+   "dur": 0.44,
+   "after": 41
+  },
+  {
+   "t0": 16.2,
+   "t1": 16.6,
+   "dur": 0.4,
+   "after": 46
+  },
+  {
+   "t0": 19.06,
+   "t1": 19.54,
+   "dur": 0.48,
+   "after": 54
+  },
+  {
+   "t0": 22,
+   "t1": 22.5,
+   "dur": 0.5,
+   "after": 63
+  },
+  {
+   "t0": 23.24,
+   "t1": 23.76,
+   "dur": 0.52,
+   "after": 66
+  },
+  {
+   "t0": 25.64,
+   "t1": 25.92,
+   "dur": 0.28,
+   "after": 71
+  },
+  {
+   "t0": 27.26,
+   "t1": 27.6,
+   "dur": 0.34,
+   "after": 76
+  },
+  {
+   "t0": 30.12,
+   "t1": 30.46,
+   "dur": 0.34,
+   "after": 89
+  },
+  {
+   "t0": 31.16,
+   "t1": 31.48,
+   "dur": 0.32,
+   "after": 92
+  },
+  {
+   "t0": 32.42,
+   "t1": 32.82,
+   "dur": 0.4,
+   "after": 96
+  },
+  {
+   "t0": 36.24,
+   "t1": 36.68,
+   "dur": 0.44,
+   "after": 109
+  },
+  {
+   "t0": 40.66,
+   "t1": 41.04,
+   "dur": 0.38,
+   "after": 123
+  },
+  {
+   "t0": 43.84,
+   "t1": 44.18,
+   "dur": 0.34,
+   "after": 133
+  },
+  {
+   "t0": 46.38,
+   "t1": 46.8,
+   "dur": 0.42,
+   "after": 141
+  },
+  {
+   "t0": 49.24,
+   "t1": 49.58,
+   "dur": 0.34,
+   "after": 149
+  },
+  {
+   "t0": 50.06,
+   "t1": 50.54,
+   "dur": 0.48,
+   "after": 151
+  },
+  {
+   "t0": 52.16,
+   "t1": 52.6,
+   "dur": 0.44,
+   "after": 156
+  },
+  {
+   "t0": 55.5,
+   "t1": 55.9,
+   "dur": 0.4,
+   "after": 168
+  },
+  {
+   "t0": 58.26,
+   "t1": 58.62,
+   "dur": 0.36,
+   "after": 177
+  },
+  {
+   "t0": 61.86,
+   "t1": 62.4,
+   "dur": 0.54,
+   "after": 193
+  },
+  {
+   "t0": 67.86,
+   "t1": 68.28,
+   "dur": 0.42,
+   "after": 214
+  },
+  {
+   "t0": 69.16,
+   "t1": 69.44,
+   "dur": 0.28,
+   "after": 218
+  },
+  {
+   "t0": 71.32,
+   "t1": 71.7,
+   "dur": 0.38,
+   "after": 225
+  },
+  {
+   "t0": 72.64,
+   "t1": 72.92,
+   "dur": 0.28,
+   "after": 227
+  },
+  {
+   "t0": 74.5,
+   "t1": 74.78,
+   "dur": 0.28,
+   "after": 231
+  },
+  {
+   "t0": 76.6,
+   "t1": 77.16,
+   "dur": 0.56,
+   "after": 238
+  },
+  {
+   "t0": 79.44,
+   "t1": 79.74,
+   "dur": 0.3,
+   "after": 247
+  },
+  {
+   "t0": 81.58,
+   "t1": 82.02,
+   "dur": 0.44,
+   "after": 256
+  },
+  {
+   "t0": 83.66,
+   "t1": 84.08,
+   "dur": 0.42,
+   "after": 261
+  },
+  {
+   "t0": 86.42,
+   "t1": 86.8,
+   "dur": 0.38,
+   "after": 270
+  },
+  {
+   "t0": 87.78,
+   "t1": 88.18,
+   "dur": 0.4,
+   "after": 274
+  },
+  {
+   "t0": 89.26,
+   "t1": 89.92,
+   "dur": 0.66,
+   "after": 277
+  },
+  {
+   "t0": 90.94,
+   "t1": 91.4,
+   "dur": 0.46,
+   "after": 281
+  },
+  {
+   "t0": 93.98,
+   "t1": 94.62,
+   "dur": 0.64,
+   "after": 291
+  },
+  {
+   "t0": 96.46,
+   "t1": 96.78,
+   "dur": 0.32,
+   "after": 297
+  },
+  {
+   "t0": 98.7,
+   "t1": 99.26,
+   "dur": 0.56,
+   "after": 304
+  },
+  {
+   "t0": 101.74,
+   "t1": 102.1,
+   "dur": 0.36,
+   "after": 310
+  }
+ ],
+ "numbers": [
+  {
+   "i": 170,
+   "w": "mil",
+   "t0": 56.18
+  },
+  {
+   "i": 279,
+   "w": "5",
+   "t0": 90.08
+  },
+  {
+   "i": 281,
+   "w": "42,",
+   "t0": 90.94
+  },
+  {
+   "i": 307,
+   "w": "11",
+   "t0": 99.88
+  }
+ ],
+ "words": 324
+}

@@ -1,0 +1,135 @@
+{
+  "language": "pt",
+  "title": "Turno da Madrugada — Ep. 3: O Que Ficou na Mina",
+  "lead": 0.5,
+  "tail": 1.6,
+  "lines": [
+    {
+      "id": "l01",
+      "who": "earl",
+      "text": "Em oitenta e sete, a mina desabou com catorze homens lá dentro. Vivos. Tinha gás. Uma faísca, e a cidade inteira explodia. Então eu lacrei a entrada. Eu ouvi eles batendo na pedra por três dias.",
+      "pause": 0.5
+    },
+    {
+      "id": "l02",
+      "who": "tobby",
+      "text": "O meu avô tava lá dentro.",
+      "pause": 0.4
+    },
+    {
+      "id": "l03",
+      "who": "earl",
+      "text": "Tava. Eu sinto muito, garoto. Eles não voltaram pela cidade. Voltaram por mim.",
+      "pause": 0.5
+    },
+    {
+      "id": "l04",
+      "who": "lola",
+      "text": "Ninguém falou nada. Até o Dale cair do teto.",
+      "say": "Ninguém falou nada. Até o Dêil cair do teto.",
+      "pause": 0.4
+    },
+    {
+      "id": "l05",
+      "who": "lola",
+      "text": "Ele estava diferente. Maior. Os braços compridos demais, os dedos virados em garras. Ele derrubou o Earl com um tapa e veio pra cima de mim.",
+      "say": "Ele estava diferente. Maior. Os braços compridos demais, os dedos virados em garras. Ele derrubou o Ârl com um tapa e veio pra cima de mim.",
+      "pause": 0.4
+    },
+    {
+      "id": "l06",
+      "who": "lola",
+      "text": "Eu sei lutar. Mas não contra isso. Ele me jogou contra a geladeira, e o vidro explodiu nas minhas costas. Eu acertei três socos no rosto dele, e cada um parecia bater numa parede.",
+      "pause": 0.4
+    },
+    {
+      "id": "l07",
+      "who": "lola",
+      "text": "Ele me prendeu pelo pescoço contra a porta da geladeira. A minha visão começou a escurecer nas bordas. E eu pensei: pelo menos eu morri trabalhando. Que piada.",
+      "pause": 0.4
+    },
+    {
+      "id": "l08",
+      "who": "tobby",
+      "text": "Ei, carvãozinho! Sorria pra câmera!",
+      "pause": 0.35
+    },
+    {
+      "id": "l09",
+      "who": "lola",
+      "text": "O Tobby acendeu o ring light do podcast bem na cara dele. Dois mil lúmens. O Dale berrou e me soltou. Eu peguei um caco de vidro do chão, e enfiei no olho dele até o fim.",
+      "say": "O Tóbi acendeu o ring laite do pódcast bem na cara dele. Dois mil lúmens. O Dêil berrou e me soltou. Eu peguei um caco de vidro do chão, e enfiei no olho dele até o fim.",
+      "pause": 0.5
+    },
+    {
+      "id": "l10",
+      "who": "lola",
+      "text": "Quando ele parou de se mexer, o Earl já estava de pé, segurando a caixa de dinamite da obra da rodovia.",
+      "say": "Quando ele parou de se mexer, o Ârl já estava de pé, segurando a caixa de dinamite da obra da rodovia.",
+      "pause": 0.4
+    },
+    {
+      "id": "l11",
+      "who": "earl",
+      "text": "Eles querem a mim. Então eu vou levar eles pra casa.",
+      "pause": 0.35
+    },
+    {
+      "id": "l12",
+      "who": "lola",
+      "text": "Earl, não.",
+      "say": "Ârl, não.",
+      "pause": 0.35
+    },
+    {
+      "id": "l13",
+      "who": "earl",
+      "text": "Reyes. Cuida desse moleque. Ele é mais corajoso do que parece.",
+      "say": "Rêies. Cuida desse moleque. Ele é mais corajoso do que parece.",
+      "pause": 0.5
+    },
+    {
+      "id": "l13b",
+      "who": "tobby",
+      "text": "Xerife. Se você encontrar o meu avô lá embaixo, fala pra ele que eu ainda tenho o rádio dele.",
+      "pause": 0.45
+    },
+    {
+      "id": "l13c",
+      "who": "earl",
+      "text": "Eu falo, garoto. Eu falo.",
+      "pause": 0.6
+    },
+    {
+      "id": "l14",
+      "who": "lola",
+      "text": "Ele dirigiu até a mina com a sirene ligada. Os Ocos foram atrás. Todos. Como mariposas.",
+      "pause": 0.5
+    },
+    {
+      "id": "l15",
+      "who": "lola",
+      "text": "Às cinco e quarenta e dois, a montanha tremeu. E o sol nasceu em Black Hollow.",
+      "say": "Às cinco e quarenta e dois, a montanha tremeu. E o sol nasceu em Bléqui Rólou.",
+      "pause": 0.6
+    },
+    {
+      "id": "l16",
+      "who": "tobby",
+      "text": "Lola. Isso vai dar muita audiência.",
+      "pause": 0.3
+    },
+    {
+      "id": "l17",
+      "who": "lola",
+      "text": "Se você postar isso, eu te mato.",
+      "pause": 0.5
+    },
+    {
+      "id": "l18",
+      "who": "lola",
+      "text": "Ele postou. Onze milhões de visualizações. E na gravação, bem no finalzinho, dá pra ouvir alguém batendo no vidro.",
+      "pause": 0.3
+    }
+  ]
+}

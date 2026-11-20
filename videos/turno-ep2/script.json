@@ -1,0 +1,143 @@
+{
+  "language": "pt",
+  "title": "Turno da Madrugada — Ep. 2: Apagão",
+  "lead": 0.5,
+  "tail": 1.4,
+  "lines": [
+    {
+      "id": "l01",
+      "who": "lola",
+      "text": "No escuro, dá pra ouvir tudo. A neblina raspando o vidro. O Dale respirando no chão. Sem coração batendo.",
+      "say": "No escuro, dá pra ouvir tudo. A neblina raspando o vidro. O Dêil respirando no chão. Sem coração batendo.",
+      "pause": 0.5
+    },
+    {
+      "id": "l02",
+      "who": "tobby",
+      "text": "Ok, ok, pergunta séria: se a gente morrer, alguém continua o podcast?",
+      "say": "Ok, ok, pergunta séria: se a gente morrer, alguém continua o pódcast?",
+      "pause": 0.3
+    },
+    {
+      "id": "l03",
+      "who": "lola",
+      "text": "Tobby. Lanterna.",
+      "say": "Tóbi. Lanterna.",
+      "pause": 0.4
+    },
+    {
+      "id": "l04",
+      "who": "earl",
+      "text": "O gerador fica nos fundos, trinta metros. Os Ocos odeiam luz. Se a gente religar, a gente vive.",
+      "pause": 0.5
+    },
+    {
+      "id": "l04b",
+      "who": "lola",
+      "text": "Earl, desde quando você acredita em fantasma?",
+      "say": "Ârl, desde quando você acredita em fantasma?",
+      "pause": 0.35
+    },
+    {
+      "id": "l04c",
+      "who": "earl",
+      "text": "Desde oitenta e sete, garota. Pega o pé de cabra.",
+      "pause": 0.5
+    },
+    {
+      "id": "l05",
+      "who": "lola",
+      "text": "Eu e o Earl saímos pela porta dos fundos. O Tobby ficou no rádio, vigiando o Dale, amarrado com fita isolante e um saco de batatinha na cabeça.",
+      "say": "Eu e o Ârl saímos pela porta dos fundos. O Tóbi ficou no rádio, vigiando o Dêil, amarrado com fita isolante e um saco de batatinha na cabeça.",
+      "pause": 0.4
+    },
+    {
+      "id": "l06",
+      "who": "radio",
+      "text": "Câmbio. Ele se mexeu. Ele pediu batatinha de churrasco. Isso é normal?",
+      "pause": 0.5
+    },
+    {
+      "id": "l06b",
+      "who": "lola",
+      "text": "Se ele falar de novo, bate com o extintor.",
+      "pause": 0.3
+    },
+    {
+      "id": "l06c",
+      "who": "radio",
+      "text": "Com o extintor ou com a batatinha?",
+      "pause": 0.5
+    },
+    {
+      "id": "l07",
+      "who": "lola",
+      "text": "Vinte metros. A neblina tinha cheiro de enxofre. Quinze. Aí eu vi a picareta.",
+      "pause": 0.5
+    },
+    {
+      "id": "l08",
+      "who": "lola",
+      "text": "Um Oco saiu da névoa com a picareta erguida. Eu me abaixei, a ponta passou raspando o meu cabelo e cravou na lataria do gerador. Ele puxou. Ficou preso. Meio segundo. Foi o que eu precisei.",
+      "pause": 0.4
+    },
+    {
+      "id": "l09",
+      "who": "lola",
+      "text": "Pé de cabra no joelho. O joelho dobrou pro lado errado. Ele caiu, e continuou vindo, arrastando a perna, as unhas rasgando o cascalho.",
+      "pause": 0.4
+    },
+    {
+      "id": "l10",
+      "who": "lola",
+      "text": "Ele agarrou o meu tornozelo e me derrubou. Montou em cima de mim. A mandíbula dele abriu ao meio, cheia de dentes de carvão. Eu travei o pé de cabra na garganta dele e empurrei com tudo o que eu tinha.",
+      "pause": 0.3
+    },
+    {
+      "id": "l11",
+      "who": "earl",
+      "text": "Abaixa, Reyes!",
+      "say": "Abaixa, Rêies!",
+      "pause": 0.35
+    },
+    {
+      "id": "l12",
+      "who": "lola",
+      "text": "O tiro de doze arrancou metade do ombro dele. O Earl puxou a corda do gerador. Uma vez. Duas. Na terceira, as luzes do posto acenderam, e os Ocos gritaram. Todos. Na neblina inteira.",
+      "say": "O tiro de doze arrancou metade do ombro dele. O Ârl puxou a corda do gerador. Uma vez. Duas. Na terceira, as luzes do posto acenderam, e os Ocos gritaram. Todos. Na neblina inteira.",
+      "pause": 0.5
+    },
+    {
+      "id": "l13",
+      "who": "lola",
+      "text": "Eles recuaram. A luz queima eles. A gente respirou. Por três segundos.",
+      "pause": 0.5
+    },
+    {
+      "id": "l13b",
+      "who": "radio",
+      "text": "Gente, eu vi tudo pela janela! Vocês parecem filme de ação! Eu vou botar trilha sonora nisso!",
+      "pause": 0.45
+    },
+    {
+      "id": "l14",
+      "who": "earl",
+      "text": "Reyes. Eu preciso te contar o que aconteceu em oitenta e sete.",
+      "say": "Rêies. Eu preciso te contar o que aconteceu em oitenta e sete.",
+      "pause": 0.5
+    },
+    {
+      "id": "l15",
+      "who": "lola",
+      "text": "Ele levantou a manga. Tinha um arranhão no braço dele. E as veias em volta estavam ficando pretas.",
+      "pause": 0.6
+    },
+    {
+      "id": "l16",
+      "who": "radio",
+      "text": "Gente? O Dale. O Dale sumiu.",
+      "say": "Gente? O Dêil. O Dêil sumiu.",
+      "pause": 0.3
+    }
+  ]
+}

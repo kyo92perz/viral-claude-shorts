@@ -83,6 +83,18 @@ const SOUNDS: Record<string, (t: number) => void> = {
   scratch: (t) => add(t, 0.3, (u) => (osc('saw', TAU * (900 * u - 1100 * u * u)) * 0.6 + noise() * 0.4) * Math.sin(Math.PI * u / 0.3), 0.14),
   zip: (t) => add(t - 0.05, 0.2, (u) => (Math.sin(TAU * (2600 * u - 5500 * u * u)) + noise() * 0.2) * Math.sin(Math.PI * u / 0.2), 0.12, 0),
   thump: (t) => add(t, 0.3, (u) => Math.sin(TAU * 75 * u) * Math.exp(-u * 14), 0.5),
+  // horror kit
+  knock: (t) => [0, 0.32, 0.64].forEach((d) => { add(t + d, 0.16, (u) => (Math.sin(TAU * 180 * u) * 0.7 + noise() * 0.5) * Math.exp(-u * 40), 0.55); add(t + d, 0.05, () => noise(), 0.12); }),
+  crack: (t) => { for (let j = 0; j < 4; j++) add(t + j * 0.012, 0.04, (u) => noise() * Math.exp(-u * 90), 0.5 - j * 0.08); add(t, 0.12, (u) => Math.sin(TAU * 140 * u) * Math.exp(-u * 30), 0.35); },
+  glass: (t) => { impact(t, 0.5); for (let j = 0; j < 18; j++) { const f = 2500 + rnd() * 5000, d = rnd() * 0.6; add(t + d, 0.25, (u) => Math.sin(TAU * f * u) * Math.exp(-u * 18), 0.05, rnd() * 1.6 - 0.8); } let y = 0; add(t, 0.5, (u) => { y += 0.5 * (noise() - y); return (noise() - y) * Math.exp(-u * 7); }, 0.4); },
+  gun: (t) => { kick(t, 1); let y = 0; add(t, 1.2, (u) => { y += 0.3 * Math.exp(-u * 3) * (noise() - y); return (noise() * Math.exp(-u * 30) + y * 2 * Math.exp(-u * 3)); }, 0.7); },
+  sting: (t) => { [0, 1, 6, 11].forEach((d, j) => add(t, 1.6, (u) => osc('saw', TAU * hz(ROOT + 12 + d) * u * (1 + 0.004 * Math.sin(TAU * 5 * u))) * Math.min(1, u / 0.02) * Math.exp(-u * 1.6), 0.07, j % 2 ? 0.4 : -0.4)); impact(t, 0.6); },
+  scream: (t) => { for (let j = 0; j < 5; j++) { const f0 = 300 + rnd() * 500; add(t + j * 0.05, 1.3, (u) => (osc('saw', TAU * (f0 * u + 120 * Math.sin(TAU * 7 * u) / TAU)) * 0.5 + noise() * 0.5) * Math.sin(Math.PI * Math.min(1, u / 1.3)) * Math.exp(-u * 0.8), 0.06, rnd() * 1.6 - 0.8); } },
+  buzz: (t) => add(t, 0.5, (u) => (osc('saw', TAU * 120 * u) * 0.5 + osc('square', TAU * 60 * u) * 0.3) * (Math.sin(TAU * 23 * u) > -0.2 ? 1 : 0) * Math.sin(Math.PI * u / 0.5), 0.1),
+  off: (t) => { add(t, 0.6, (u) => osc('saw', TAU * (120 - 90 * u) * u) * Math.exp(-u * 6), 0.18); impact(t, 0.5); },
+  siren: (t) => add(t, 3, (u) => Math.sin(TAU * (700 * u + 160 * Math.sin(TAU * 1.2 * u) / (TAU * 1.2))) * Math.min(1, u / 0.2) * Math.min(1, (3 - u) / 0.5), 0.12),
+  boom: (t) => { impact(t, 1); let y = 0; add(t, 4, (u) => { y += 0.02 * (noise() - y); return y * 6 * Math.exp(-u * 0.9); }, 0.9); },
+  heart: (t) => [0, 0.28, 0.9, 1.18].forEach((d, j) => add(t + d, 0.2, (u) => Math.sin(TAU * (j % 2 ? 48 : 55) * u) * Math.exp(-u * 18), 0.7)),
 };
 
 // ---- ambience (under the scene, with its fades)
@@ -94,6 +106,9 @@ const AMB: Record<string, (t0: number, t1: number, g: (t: number) => number) => 
   },
   crowd: (t0, t1, g) => { let a = 0, b = 0; add(t0 - F, t1 - t0 + 2 * F, (u, t) => { const n = noise(); a += 0.09 * (n - a); b += 0.012 * (n - b); return (a - b) * (1 + 0.3 * Math.sin(TAU * 3.1 * t) + 0.2 * Math.sin(TAU * 5.3 * t + 1)); }, 1.3, 0.1, g); },
   room: (t0, t1, g) => { let y = 0; add(t0 - F, t1 - t0 + 2 * F, () => { y += 0.004 * (noise() - y); return y; }, 2.2, 0, g); },
+  hum: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u) => (Math.sin(TAU * 120 * u) * 0.6 + Math.sin(TAU * 240 * u) * 0.25 + Math.sin(TAU * 360 * u) * 0.1), 0.035, 0, g),
+  drone: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u, t) => (Math.sin(TAU * hz(ROOT - 12) * u) + 0.6 * Math.sin(TAU * hz(ROOT - 11) * u + 0.3) + 0.3 * Math.sin(TAU * hz(ROOT - 6) * u)) * (0.75 + 0.25 * Math.sin(TAU * 0.13 * t)), 0.09, 0, g),
+  heartbeat: (t0, t1, g) => { for (let t = t0; t < t1; t += 0.85) for (const d of [0, 0.25]) add(t + d, 0.2, (u) => Math.sin(TAU * (d ? 48 : 56) * u) * Math.exp(-u * 18), 0.5, 0, g); },
   steps: (t0, t1, g) => { for (let t = Math.ceil(t0 / (BEAT / 2)) * (BEAT / 2), j = 0; t < t1; t += BEAT / 2, j++) add(t, 0.12, (u) => (Math.sin(TAU * 85 * u) * 0.8 + noise() * 0.15) * Math.exp(-u * 28), 0.22, j % 2 ? 0.2 : -0.2, g); },
 };
 
