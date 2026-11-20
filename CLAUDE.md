@@ -16,3 +16,7 @@ Make it in one go: design and test the video's world first (`plan.md`, the world
 ## If something is missing
 
 If `node_modules`, `.venv` or a tool (Node 22.18+, ffmpeg, Python 3.10 to 3.14) is missing, the project isn't set up yet: tell the user and offer to run the steps in `prompts/setup-<style>.md` first. The same goes for a style they ask for whose `styles/<style>/node_modules` is missing.
+
+## Horror, suspense and fights
+
+For any horror, suspense or action story (script, staging, fights, sound, thumbnail, title), also follow the director's manual in `.claude/skills/diretor-de-terror/SKILL.md`: silence before every scare, a varied cutting rhythm (long dread holds, fast fight cuts), a desaturated night with one threat colour, and the creature revealed in parts. After rendering, measure `final.mp4` with its `scripts/analyze-film.py` and compare it with `references/filmes-estudados.md`.
