@@ -1,0 +1,29 @@
+{
+ "language": "pt",
+ "lead": 0.5,
+ "tail": 2.0,
+ "lines": [
+  { "id": "hook", "text": "Existe um andar que não aparece em nenhum botão do elevador do meu prédio. E eu sei por quê. Eu estive lá.", "pause": 0.6 },
+  { "id": "turn", "text": "Essa é a história de como eu fui parar no décimo terceiro andar. E de por que eu não tenho certeza de que voltei.", "pause": 0.7 },
+  { "id": "predio", "text": "Eu moro num prédio antigo, de vinte e um andares. Como muitos prédios por aí, ele não tem o décimo terceiro andar. O botão do elevador pula do doze direto pro quatorze.", "pause": 0.5 },
+  { "id": "porteiro", "text": "O porteiro, seu Ivo, diz que é superstição de construtor. Mas eu reparei numa coisa: ele nunca, nunca pega o elevador depois da meia-noite.", "pause": 0.7 },
+  { "id": "noite", "text": "Numa sexta-feira, eu voltei do trabalho quase duas da manhã. Entrei no elevador, apertei o quatorze, e as portas fecharam.", "pause": 0.4 },
+  { "id": "tranco", "text": "Dez. Onze. Doze. E aí, um tranco. O elevador parou no meio do caminho, e a luz começou a piscar.", "pause": 0.6 },
+  { "id": "numero", "text": "No painel, onde devia aparecer quatorze, acendeu um número que não existe. Treze. Em vermelho.", "pause": 0.7 },
+  { "id": "portas", "text": "As portas abriram sozinhas. E na minha frente tinha um corredor igualzinho ao meu. Mesmo tapete vermelho, mesmas portas de madeira. Só que as plaquinhas das portas começavam com treze.", "pause": 0.5 },
+  { "id": "luzes", "text": "As luzes do teto piscavam num ritmo estranho, quase como uma respiração. E eu, em vez de voltar, dei um passo pra fora. Depois outro.", "pause": 0.5 },
+  { "id": "fundo", "text": "Lá no fundo do corredor, uma porta estava entreaberta. Apartamento treze zero dois. O meu é o quatorze zero dois. Mesma posição. Só que um andar abaixo.", "pause": 0.6 },
+  { "id": "voz", "text": "Eu cheguei perto. Lá dentro era só escuridão. E daquela escuridão, alguém chamou o meu nome. Não era uma voz qualquer. Era a minha voz.", "pause": 0.7 },
+  { "id": "olhos", "text": "Dois pontinhos brancos se acenderam no escuro, bem na altura dos meus olhos. E piscaram. Um segundo depois de mim.", "pause": 0.6 },
+  { "id": "fuga", "text": "Eu corri. Corri pro elevador e apertei o quatorze umas dez vezes. Quando a porta começou a fechar, eu vi. Tinha alguém parado no fim do corredor. Da minha altura. Com o meu casaco.", "pause": 0.6 },
+  { "id": "subiu", "text": "A porta fechou. O elevador subiu. Quatorze. Eu nunca fiquei tão feliz de ver um número.", "pause": 0.5 },
+  { "id": "casa", "text": "Entrei em casa, tranquei a porta e deitei sem nem tirar o tênis. Disse pra mim mesmo que tinha sido só cansaço.", "pause": 0.7 },
+  { "id": "tres", "text": "Às três da manhã, o celular acendeu sozinho. E lá fora, eu ouvi o elevador apitar no meu andar.", "pause": 0.5 },
+  { "id": "passos", "text": "Passos no corredor. Devagar. Parando bem na frente da minha porta. Pela fresta de luz embaixo dela, eu vi a sombra de dois pés.", "pause": 0.6 },
+  { "id": "batidas", "text": "E três batidas.", "pause": 0.8 },
+  { "id": "olho", "text": "Eu levantei, fui até a porta e olhei pelo olho mágico. O corredor lá fora estava piscando. E ali, parado, estava eu. Me olhando de volta.", "pause": 0.6 },
+  { "id": "sussurro", "text": "Ele encostou a boca na porta e sussurrou, com a minha voz: abre, sou eu. Você entrou no apartamento errado.", "pause": 0.8 },
+  { "id": "fim", "text": "Até hoje, eu não abri. E toda noite, às três da manhã, alguém bate três vezes.", "pause": 0.7 },
+  { "id": "cta", "text": "Se o seu prédio também não tem décimo terceiro andar, confira o número antes de sair do elevador. E me conta nos comentários: você abriria a porta?", "pause": 0 }
+ ]
+}

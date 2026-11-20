@@ -1,0 +1,10 @@
+{ "style": "3d", "shots": [
+  { "id": "test-person", "title": "Narrador: idle, walk, run, press, scared", "duration": 5, "snap": [0.5, 1.5, 2.5, 3.5, 4.5] },
+  { "id": "test-double", "title": "O duplo: escondido / batendo", "duration": 2, "snap": [0.5, 1.5] },
+  { "id": "test-exterior", "title": "Prédio à noite (tilt up)", "duration": 2, "snap": [0.2, 1.8] },
+  { "id": "test-cabin", "title": "Elevador: cabine, painel, 13, portas", "duration": 4, "snap": [0.5, 1.5, 2.5, 3.8] },
+  { "id": "test-corridor", "title": "Corredor: 14, 13, porta, placa", "duration": 4, "snap": [0.5, 1.5, 2.5, 3.5] },
+  { "id": "test-apartment", "title": "Quarto: cama, relógio, fresta", "duration": 3, "snap": [0.5, 1.5, 2.5] },
+  { "id": "test-peep", "title": "Olho mágico", "duration": 2, "snap": [1.0] },
+  { "id": "test-scare", "title": "Susto: vermelho + tremor", "duration": 1.5, "snap": [0.2] }
+] }

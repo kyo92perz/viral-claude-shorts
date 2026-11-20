@@ -1,0 +1,798 @@
+{
+ "style": "3d",
+ "fps": 24,
+ "format": "16:9",
+ "notes": "Long YouTube version (16:9, 24 fps) of the Short videos/andar13: the same world, more story (the doorman, the late blink, the twin in his hoodie). Titles as a lower band on key beats only.",
+ "music": {
+  "bpm": 80,
+  "key": "D"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "question",
+   "mood": "tense",
+   "visual": "exterior: the tower at night, slow dolly in, the red beacon",
+   "label": "O 13º andar",
+   "title": "O andar que não existe",
+   "highlight": "andar",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 0,
+   "t1": 4.07
+  },
+  {
+   "id": "estive",
+   "from": 14,
+   "type": "stat",
+   "mood": "dark",
+   "visual": "close-up of the floor display: a red 13 lights up on 'lá'",
+   "keys": [
+    {
+     "id": "la",
+     "at": 18,
+     "sfx": "hit",
+     "t": 6.18
+    }
+   ],
+   "t0": 4.07,
+   "t1": 7.29
+  },
+  {
+   "id": "historia",
+   "from": 21,
+   "type": "object",
+   "mood": "tense",
+   "visual": "the 13th-floor corridor flickering, slow push toward the far door",
+   "title": "Será que eu voltei?",
+   "highlight": "voltei",
+   "ambience": [
+    "room"
+   ],
+   "t0": 7.29,
+   "t1": 13.83
+  },
+  {
+   "id": "predio",
+   "from": 44,
+   "type": "object",
+   "mood": "tense",
+   "visual": "exterior: tilt up the 21-storey façade",
+   "title": "21 andares, sem o 13º",
+   "highlight": "andares",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "sem",
+     "at": 58,
+     "t": 19.1
+    }
+   ],
+   "t0": 13.83,
+   "t1": 21.05
+  },
+  {
+   "id": "botao",
+   "from": 64,
+   "type": "object",
+   "mood": "tense",
+   "visual": "close-up of the button panel: 12 lights up, then 14 (no 13 between them)",
+   "title": "Do 12 direto pro 14",
+   "highlight": "direto",
+   "keys": [
+    {
+     "id": "doze",
+     "at": 70,
+     "sfx": "tick",
+     "t": 22.74
+    },
+    {
+     "id": "quatorze",
+     "at": 74,
+     "sfx": "tick",
+     "t": 23.6
+    }
+   ],
+   "t0": 21.05,
+   "t1": 24.43
+  },
+  {
+   "id": "porteiro",
+   "from": 75,
+   "type": "object",
+   "mood": "curious",
+   "visual": "the lobby: seu Ivo, the doorman, behind his desk",
+   "title": "Seu Ivo, o porteiro",
+   "highlight": "porteiro",
+   "ambience": [
+    "room"
+   ],
+   "t0": 24.43,
+   "t1": 27.54
+  },
+  {
+   "id": "meianoite",
+   "from": 85,
+   "type": "object",
+   "mood": "tense",
+   "visual": "close-up of seu Ivo looking at the elevator; the wall clock at midnight",
+   "title": "Nunca depois da meia-noite",
+   "highlight": "Nunca",
+   "keys": [
+    {
+     "id": "never",
+     "at": 91,
+     "t": 30
+    }
+   ],
+   "t0": 27.54,
+   "t1": 33.19
+  },
+  {
+   "id": "noite",
+   "from": 100,
+   "type": "object",
+   "mood": "calm",
+   "visual": "the narrator in the cabin presses 14, the doors close",
+   "title": "Duas da manhã",
+   "highlight": "duas",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "press",
+     "at": 114,
+     "sfx": "tick",
+     "t": 38.28
+    },
+    {
+     "id": "close",
+     "at": 118,
+     "sfx": "whoosh",
+     "t": 39.56
+    }
+   ],
+   "t0": 33.19,
+   "t1": 40.73
+  },
+  {
+   "id": "andares",
+   "from": 121,
+   "type": "process",
+   "mood": "tense",
+   "visual": "close-up of the display counting 10, 11, 12",
+   "keys": [
+    {
+     "id": "d10",
+     "at": 121,
+     "sfx": "tick",
+     "t": 40.98
+    },
+    {
+     "id": "d11",
+     "at": 122,
+     "sfx": "tick",
+     "t": 42.12
+    },
+    {
+     "id": "d12",
+     "at": 123,
+     "sfx": "tick",
+     "t": 43.42
+    }
+   ],
+   "t0": 40.73,
+   "t1": 44.23
+  },
+  {
+   "id": "tranco",
+   "from": 124,
+   "type": "object",
+   "mood": "tense",
+   "visual": "cabin wide: a jolt, the light flickers, he looks up",
+   "title": "O elevador parou",
+   "highlight": "parou",
+   "keys": [
+    {
+     "id": "jolt",
+     "at": 127,
+     "sfx": "thump",
+     "t": 45.14
+    },
+    {
+     "id": "light",
+     "at": 137,
+     "t": 48.42
+    }
+   ],
+   "t0": 44.23,
+   "t1": 49.87
+  },
+  {
+   "id": "painel",
+   "from": 141,
+   "type": "question",
+   "mood": "tense",
+   "visual": "the display glitches between 12 and 14, then goes dark",
+   "title": "Um número que não existe",
+   "highlight": "número",
+   "keys": [
+    {
+     "id": "lit",
+     "at": 148,
+     "sfx": "tick",
+     "t": 52.58
+    }
+   ],
+   "t0": 49.87,
+   "t1": 54.59
+  },
+  {
+   "id": "treze",
+   "from": 154,
+   "type": "stat",
+   "mood": "dark",
+   "visual": "the red 13 lights up; the doors open by themselves",
+   "title": "Treze.",
+   "highlight": "Treze",
+   "stat": {
+    "value": "13",
+    "text": "um andar que não existe"
+   },
+   "keys": [
+    {
+     "id": "stat",
+     "at": 154,
+     "sfx": "hit",
+     "t": 54.84
+    },
+    {
+     "id": "open",
+     "at": 159,
+     "sfx": "whoosh",
+     "t": 57.8
+    }
+   ],
+   "t0": 54.59,
+   "t1": 59.03
+  },
+  {
+   "id": "corredor",
+   "from": 161,
+   "type": "object",
+   "mood": "tense",
+   "visual": "POV out of the cabin: tilt down to the red carpet, pan to the wooden doors",
+   "title": "Um corredor igualzinho ao meu",
+   "highlight": "corredor",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "carpet",
+     "at": 173,
+     "t": 63
+    },
+    {
+     "id": "doors",
+     "at": 177,
+     "t": 64.3
+    }
+   ],
+   "t0": 59.03,
+   "t1": 65.55
+  },
+  {
+   "id": "placas",
+   "from": 180,
+   "type": "object",
+   "mood": "tense",
+   "visual": "dolly along the side doors: their plates read 1301, 1303…",
+   "keys": [
+    {
+     "id": "plates",
+     "at": 183,
+     "t": 66.34
+    }
+   ],
+   "t0": 65.55,
+   "t1": 68.69
+  },
+  {
+   "id": "respira",
+   "from": 189,
+   "type": "object",
+   "mood": "dark",
+   "visual": "the corridor wide: the ceiling lights pulse slowly, like breathing",
+   "title": "Como uma respiração",
+   "highlight": "respiração",
+   "ambience": [
+    "room"
+   ],
+   "t0": 68.69,
+   "t1": 72.95
+  },
+  {
+   "id": "passo",
+   "from": 201,
+   "type": "process",
+   "mood": "tense",
+   "visual": "from inside the cabin, behind him: he steps out into the corridor",
+   "keys": [
+    {
+     "id": "step",
+     "at": 209,
+     "sfx": "thump",
+     "t": 74.98
+    }
+   ],
+   "t0": 72.95,
+   "t1": 77.51
+  },
+  {
+   "id": "fundo",
+   "from": 214,
+   "type": "process",
+   "mood": "dark",
+   "visual": "following him down the corridor; the far door is ajar",
+   "title": "Uma porta entreaberta",
+   "highlight": "porta",
+   "keys": [
+    {
+     "id": "door",
+     "at": 220,
+     "sfx": "riser",
+     "t": 79.22
+    }
+   ],
+   "t0": 77.51,
+   "t1": 81.37
+  },
+  {
+   "id": "placa",
+   "from": 224,
+   "type": "comparison",
+   "mood": "tense",
+   "visual": "extreme close-up of the plate 1302; it flickers to 1402 and back",
+   "title": "Apartamento 1302",
+   "highlight": "Apartamento",
+   "keys": [
+    {
+     "id": "plate",
+     "at": 225,
+     "sfx": "hit",
+     "t": 82.1
+    },
+    {
+     "id": "mine",
+     "at": 230,
+     "t": 84.08
+    }
+   ],
+   "t0": 81.37,
+   "t1": 85.59
+  },
+  {
+   "id": "abaixo",
+   "from": 231,
+   "type": "map",
+   "mood": "dark",
+   "visual": "exterior: his lit window on the 14th floor; right below it, a red window lights up where no floor exists",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "below",
+     "at": 236,
+     "sfx": "hit",
+     "t": 88.12
+    }
+   ],
+   "t0": 85.59,
+   "t1": 89.05
+  },
+  {
+   "id": "perto",
+   "from": 238,
+   "type": "object",
+   "mood": "dark",
+   "visual": "behind him, slow push toward the dark doorway",
+   "title": "Alguém chamou meu nome",
+   "highlight": "nome",
+   "keys": [
+    {
+     "id": "call",
+     "at": 252,
+     "sfx": "riser",
+     "t": 94.3
+    }
+   ],
+   "t0": 89.05,
+   "t1": 95.61
+  },
+  {
+   "id": "minhavoz",
+   "from": 255,
+   "type": "object",
+   "mood": "dark",
+   "visual": "close-up of his scared face",
+   "title": "Era a minha voz",
+   "highlight": "voz",
+   "t0": 95.61,
+   "t1": 99.17
+  },
+  {
+   "id": "olhos",
+   "from": 263,
+   "type": "object",
+   "mood": "dark",
+   "visual": "the dark doorway: two white eyes open at his eye level",
+   "keys": [
+    {
+     "id": "light",
+     "at": 267,
+     "sfx": "impact",
+     "t": 100.66
+    }
+   ],
+   "t0": 99.17,
+   "t1": 103.89
+  },
+  {
+   "id": "pisca",
+   "from": 276,
+   "type": "comparison",
+   "mood": "dark",
+   "visual": "his face blinks; one second later, the eyes in the dark blink too",
+   "title": "Um segundo depois de mim",
+   "highlight": "depois",
+   "keys": [
+    {
+     "id": "blink",
+     "at": 277,
+     "t": 104.42
+    },
+    {
+     "id": "late",
+     "at": 280,
+     "sfx": "tick",
+     "t": 106.12
+    }
+   ],
+   "t0": 103.89,
+   "t1": 107.23
+  },
+  {
+   "id": "corri",
+   "from": 283,
+   "type": "process",
+   "mood": "energetic",
+   "visual": "he runs toward the camera to the cabin, then presses 14 again and again",
+   "title": "Corri pro elevador",
+   "highlight": "elevador",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "run",
+     "at": 284,
+     "sfx": "whoosh",
+     "t": 107.68
+    },
+    {
+     "id": "press",
+     "at": 290,
+     "sfx": "tick",
+     "t": 109.8
+    }
+   ],
+   "t0": 107.23,
+   "t1": 111.79
+  },
+  {
+   "id": "viu",
+   "from": 296,
+   "type": "object",
+   "mood": "dark",
+   "visual": "from inside the cabin, the doors start closing; someone is standing at the end of the corridor",
+   "title": "Tinha alguém no fim do corredor",
+   "highlight": "corredor",
+   "keys": [
+    {
+     "id": "closing",
+     "at": 299,
+     "t": 112.8
+    },
+    {
+     "id": "saw",
+     "at": 303,
+     "sfx": "hit",
+     "t": 114
+    }
+   ],
+   "t0": 111.79,
+   "t1": 117.35
+  },
+  {
+   "id": "casaco",
+   "from": 312,
+   "type": "object",
+   "mood": "dark",
+   "visual": "the twin at the end of the corridor: his height, his green hoodie, a black face with white eyes",
+   "title": "Com o meu casaco",
+   "highlight": "casaco",
+   "keys": [
+    {
+     "id": "coat",
+     "at": 315,
+     "t": 119.1
+    }
+   ],
+   "t0": 117.35,
+   "t1": 120.37
+  },
+  {
+   "id": "subiu",
+   "from": 319,
+   "type": "process",
+   "mood": "tense",
+   "visual": "the doors close; the display switches to 14",
+   "keys": [
+    {
+     "id": "close",
+     "at": 320,
+     "sfx": "whoosh",
+     "t": 120.76
+    },
+    {
+     "id": "d14",
+     "at": 325,
+     "sfx": "tick",
+     "t": 124.1
+    }
+   ],
+   "t0": 120.37,
+   "t1": 125.15
+  },
+  {
+   "id": "feliz",
+   "from": 326,
+   "type": "object",
+   "mood": "sad",
+   "visual": "the cabin: he breathes out, relieved",
+   "t0": 125.15,
+   "t1": 127.53
+  },
+  {
+   "id": "casa",
+   "from": 335,
+   "type": "object",
+   "mood": "sad",
+   "visual": "the bedroom in moonlight: he lies down with his sneakers on and closes his eyes",
+   "title": "Foi só cansaço",
+   "highlight": "cansaço",
+   "keys": [
+    {
+     "id": "lie",
+     "at": 342,
+     "t": 129.48
+    },
+    {
+     "id": "sleep",
+     "at": 348,
+     "t": 131.76
+    }
+   ],
+   "t0": 127.53,
+   "t1": 134.51
+  },
+  {
+   "id": "tres",
+   "from": 357,
+   "type": "stat",
+   "mood": "tense",
+   "visual": "the phone lights up by itself: 03:00; the elevator dings and his eyes snap open",
+   "title": "Três da manhã",
+   "highlight": "três",
+   "keys": [
+    {
+     "id": "phone",
+     "at": 363,
+     "sfx": "pop",
+     "t": 136.2
+    },
+    {
+     "id": "ding",
+     "at": 372,
+     "sfx": "tick",
+     "t": 139.36
+    }
+   ],
+   "t0": 134.51,
+   "t1": 140.45
+  },
+  {
+   "id": "passos",
+   "from": 376,
+   "type": "process",
+   "mood": "tense",
+   "visual": "low at the strip of light under the door: two feet shadows arrive and stop",
+   "keys": [
+    {
+     "id": "steps",
+     "at": 376,
+     "sfx": "thump",
+     "t": 140.7
+    },
+    {
+     "id": "stop",
+     "at": 380,
+     "sfx": "thump",
+     "t": 143.54
+    }
+   ],
+   "t0": 140.45,
+   "t1": 145.83
+  },
+  {
+   "id": "sombra",
+   "from": 387,
+   "type": "object",
+   "mood": "tense",
+   "visual": "closer on the two feet shadows in the strip of light",
+   "title": "A sombra de dois pés",
+   "highlight": "sombra",
+   "t0": 145.83,
+   "t1": 149.61
+  },
+  {
+   "id": "batidas",
+   "from": 400,
+   "type": "process",
+   "mood": "dark",
+   "visual": "the door shakes with three knocks",
+   "title": "Três batidas",
+   "highlight": "Três",
+   "keys": [
+    {
+     "id": "k1",
+     "at": 401,
+     "sfx": "thump",
+     "t": 150.12
+    },
+    {
+     "id": "k2",
+     "at": 402,
+     "sfx": "thump",
+     "t": 150.36
+    }
+   ],
+   "t0": 149.61,
+   "t1": 151.63
+  },
+  {
+   "id": "levantei",
+   "from": 403,
+   "type": "object",
+   "mood": "tense",
+   "visual": "he gets up and leans on the door, listening",
+   "t0": 151.63,
+   "t1": 155.31
+  },
+  {
+   "id": "olhomagico",
+   "from": 414,
+   "type": "object",
+   "mood": "dark",
+   "visual": "through the peephole: the flickering corridor, empty; then he is there, looking back",
+   "title": "Ali, parado, estava eu",
+   "highlight": "parado",
+   "keys": [
+    {
+     "id": "appear",
+     "at": 420,
+     "sfx": "impact",
+     "t": 158.04
+    }
+   ],
+   "t0": 155.31,
+   "t1": 161.71
+  },
+  {
+   "id": "sussurro",
+   "from": 429,
+   "type": "object",
+   "mood": "dark",
+   "visual": "through the peephole: the twin leans in to the door",
+   "title": "Abre, sou eu",
+   "highlight": "Abre",
+   "keys": [
+    {
+     "id": "lean",
+     "at": 430,
+     "t": 162.12
+    },
+    {
+     "id": "whisper",
+     "at": 441,
+     "sfx": "riser",
+     "t": 165.34
+    }
+   ],
+   "t0": 161.71,
+   "t1": 166.79
+  },
+  {
+   "id": "errado",
+   "from": 444,
+   "type": "closing",
+   "mood": "dark",
+   "visual": "behind the twin, the camera pulls back: his door's plate reads 1302",
+   "title": "Você entrou no apartamento errado",
+   "highlight": "errado",
+   "keys": [
+    {
+     "id": "reveal",
+     "at": 447,
+     "sfx": "scratch",
+     "t": 167.56
+    }
+   ],
+   "t0": 166.79,
+   "t1": 168.81
+  },
+  {
+   "id": "naoabri",
+   "from": 449,
+   "type": "object",
+   "mood": "dark",
+   "visual": "inside, the door with the strip of light and the two feet still there; three knocks again",
+   "title": "Toda noite, às três da manhã",
+   "highlight": "noite",
+   "keys": [
+    {
+     "id": "knock",
+     "at": 462,
+     "sfx": "thump",
+     "t": 173.28
+    }
+   ],
+   "t0": 168.81,
+   "t1": 175.01
+  },
+  {
+   "id": "cta",
+   "from": 465,
+   "type": "closing",
+   "mood": "tense",
+   "visual": "exterior: pull back from the building; the red 13th-floor window glows",
+   "title": "Confira o número antes de sair",
+   "highlight": "número",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 175.01,
+   "t1": 180.89
+  },
+  {
+   "id": "pergunta",
+   "from": 483,
+   "type": "closing",
+   "mood": "dark",
+   "visual": "the elevator display: a red 13 flickering, then darkness",
+   "label": "Comente",
+   "title": "Você abriria a porta?",
+   "highlight": "porta",
+   "t0": 180.89,
+   "t1": 185.964
+  }
+ ],
+ "duration": 185.964
+}

@@ -1,0 +1,17 @@
+{
+ "language": "pt",
+ "lead": 0.4,
+ "tail": 1.4,
+ "lines": [
+  { "id": "hook", "text": "O prédio onde eu moro não tem décimo terceiro andar. O botão do elevador pula do doze direto pro quatorze.", "pause": 0.4 },
+  { "id": "parou", "text": "Mas numa madrugada, voltando pra casa, o elevador parou no meio do caminho.", "pause": 0.35 },
+  { "id": "treze", "text": "E no painel, acendeu um número que não existe. Treze.", "pause": 0.5 },
+  { "id": "corredor", "text": "A porta abriu sozinha. Era um corredor igualzinho ao meu. Mesmo tapete, mesmas portas.", "pause": 0.35 },
+  { "id": "luzes", "text": "Só que as luzes piscavam. E lá no fundo, uma porta entreaberta. Apartamento treze zero dois. O meu é o quatorze zero dois.", "pause": 0.4 },
+  { "id": "voz", "text": "Lá de dentro, alguém chamou o meu nome. Com a minha voz.", "pause": 0.5 },
+  { "id": "fuga", "text": "Eu corri pro elevador e apertei o quatorze umas dez vezes. A porta fechou. Subiu.", "pause": 0.35 },
+  { "id": "casa", "text": "Cheguei em casa, tranquei tudo e fui dormir.", "pause": 0.4 },
+  { "id": "batidas", "text": "Às três da manhã, o elevador apitou no meu andar. Passos no corredor. E três batidas na minha porta.", "pause": 0.5 },
+  { "id": "fim", "text": "Do outro lado, a minha própria voz sussurrou: abre, sou eu. Você entrou no apartamento errado.", "pause": 0 }
+ ]
+}

@@ -1,0 +1,423 @@
+{
+ "style": "3d",
+ "fps": 30,
+ "format": "9:16",
+ "notes": "Original horror story in pt-BR. Low-poly 3D at night: cold, flickering 13th floor vs the warm 14th. Titles with a red highlight. Ends on the twist (plate 1302) and loops back to the building.",
+ "music": {
+  "bpm": 80,
+  "key": "D"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "question",
+   "label": "O 13º andar",
+   "title": "Meu prédio não tem 13º andar",
+   "highlight": "andar",
+   "visual": "exterior: the tower at night, the camera tilts up the façade, the red beacon blinks",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 0,
+   "t1": 3.21
+  },
+  {
+   "id": "botao",
+   "from": 10,
+   "type": "object",
+   "label": "O 13º andar",
+   "title": "Do 12 direto pro 14",
+   "highlight": "direto",
+   "visual": "close-up of the button panel (no 13): the 12 lights up, then the 14",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "doze",
+     "at": 16,
+     "sfx": "tick",
+     "t": 5.08
+    },
+    {
+     "id": "quatorze",
+     "at": 19,
+     "sfx": "tick",
+     "t": 5.9
+    }
+   ],
+   "t0": 3.21,
+   "t1": 6.67
+  },
+  {
+   "id": "parou",
+   "from": 20,
+   "type": "object",
+   "label": "Madrugada",
+   "title": "O elevador parou",
+   "highlight": "parou",
+   "visual": "cabin wide: the narrator idle; a jolt, the light flickers, he gets scared and looks up",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "stop",
+     "at": 28,
+     "sfx": "thump",
+     "t": 9.52
+    }
+   ],
+   "t0": 6.67,
+   "t1": 10.83
+  },
+  {
+   "id": "painel",
+   "from": 33,
+   "type": "question",
+   "label": "Madrugada",
+   "title": "Um número que não existe",
+   "highlight": "número",
+   "visual": "close-up of the floor display glitching between 12 and 14, then it goes dark",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "lit",
+     "at": 36,
+     "sfx": "tick",
+     "t": 11.78
+    }
+   ],
+   "t0": 10.83,
+   "t1": 13.77
+  },
+  {
+   "id": "treze",
+   "from": 42,
+   "type": "stat",
+   "label": "Madrugada",
+   "title": "Treze.",
+   "highlight": "Treze",
+   "stat": {
+    "value": "13",
+    "text": "um andar que não existe"
+   },
+   "visual": "the display lights up a red 13 (red pulse); then the doors open by themselves onto the corridor",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "stat",
+     "at": 42,
+     "sfx": "hit",
+     "t": 14.02
+    },
+    {
+     "id": "open",
+     "at": 44,
+     "sfx": "whoosh",
+     "t": 15.08
+    }
+   ],
+   "t0": 13.77,
+   "t1": 16.55
+  },
+  {
+   "id": "corredor",
+   "from": 47,
+   "type": "object",
+   "label": "13º andar",
+   "title": "Um corredor igualzinho ao meu",
+   "highlight": "corredor",
+   "visual": "POV leaving the elevator; tilt down to the carpet, pan to the side doors",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "carpet",
+     "at": 54,
+     "t": 19.28
+    },
+    {
+     "id": "doors",
+     "at": 56,
+     "t": 20.24
+    }
+   ],
+   "t0": 16.55,
+   "t1": 21.03
+  },
+  {
+   "id": "luzes",
+   "from": 57,
+   "type": "process",
+   "label": "13º andar",
+   "title": "Só que as luzes piscavam",
+   "highlight": "luzes",
+   "visual": "following the narrator down the flickering corridor; the far door is ajar",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "flick",
+     "at": 61,
+     "t": 21.9
+    },
+    {
+     "id": "door",
+     "at": 67,
+     "sfx": "riser",
+     "t": 24.2
+    }
+   ],
+   "t0": 21.03,
+   "t1": 25.67
+  },
+  {
+   "id": "placa",
+   "from": 69,
+   "type": "comparison",
+   "label": "13º andar",
+   "title": "Apartamento 1302",
+   "highlight": "Apartamento",
+   "visual": "extreme close-up of the plate 1302; it flickers to 1402 (his) and back",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "plate",
+     "at": 70,
+     "sfx": "hit",
+     "t": 26.42
+    },
+    {
+     "id": "mine",
+     "at": 74,
+     "t": 28.42
+    }
+   ],
+   "t0": 25.67,
+   "t1": 30.09
+  },
+  {
+   "id": "voz",
+   "from": 80,
+   "type": "object",
+   "label": "13º andar",
+   "title": "Chamou meu nome com a minha voz",
+   "highlight": "voz",
+   "visual": "close-up of his scared face; cut to the dark doorway where two white eyes open (red pulse)",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "call",
+     "at": 85,
+     "sfx": "riser",
+     "t": 31.36
+    },
+    {
+     "id": "eyes",
+     "at": 88,
+     "sfx": "impact",
+     "t": 33.04
+    }
+   ],
+   "t0": 30.09,
+   "t1": 33.99
+  },
+  {
+   "id": "fuga",
+   "from": 92,
+   "type": "process",
+   "label": "Fuga",
+   "title": "Corri pro elevador",
+   "highlight": "elevador",
+   "visual": "he runs toward the camera to the cabin; close-up of the 14 pressed again and again",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "run",
+     "at": 93,
+     "sfx": "whoosh",
+     "t": 34.4
+    },
+    {
+     "id": "press",
+     "at": 97,
+     "sfx": "tick",
+     "t": 35.4
+    },
+    {
+     "id": "ten",
+     "at": 101,
+     "t": 36.44
+    }
+   ],
+   "t0": 33.99,
+   "t1": 37.79
+  },
+  {
+   "id": "fechou",
+   "from": 103,
+   "type": "object",
+   "label": "Fuga",
+   "title": "A porta fechou",
+   "highlight": "fechou",
+   "visual": "from inside the cabin: the doors close while the double stands at the end of the corridor; the display switches to 14 as it goes up",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "close",
+     "at": 104,
+     "sfx": "whoosh",
+     "t": 38.22
+    }
+   ],
+   "t0": 37.79,
+   "t1": 40.37
+  },
+  {
+   "id": "casa",
+   "from": 107,
+   "type": "object",
+   "label": "Em casa",
+   "title": "Tranquei tudo e fui dormir",
+   "highlight": "Tranquei",
+   "visual": "the bedroom in moonlight: he lies down and closes his eyes",
+   "mood": "sad",
+   "keys": [
+    {
+     "id": "lock",
+     "at": 110,
+     "sfx": "tick",
+     "t": 41.6
+    },
+    {
+     "id": "sleep",
+     "at": 112,
+     "t": 41.94
+    }
+   ],
+   "t0": 40.37,
+   "t1": 42.81
+  },
+  {
+   "id": "tres",
+   "from": 115,
+   "type": "stat",
+   "label": "Em casa",
+   "title": "Três da manhã",
+   "highlight": "Três",
+   "visual": "the phone clock 03:00 on the nightstand; the elevator dings and his eyes snap open",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "clock",
+     "at": 116,
+     "t": 43.3
+    },
+    {
+     "id": "ding",
+     "at": 121,
+     "sfx": "tick",
+     "t": 44.36
+    }
+   ],
+   "t0": 42.81,
+   "t1": 45.81
+  },
+  {
+   "id": "batidas",
+   "from": 125,
+   "type": "process",
+   "label": "Em casa",
+   "title": "Três batidas na porta",
+   "highlight": "batidas",
+   "visual": "low at the strip of light under the door: two feet shadows arrive and stop; three knocks shake the door",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "steps",
+     "at": 125,
+     "sfx": "thump",
+     "t": 46.06
+    },
+    {
+     "id": "k1",
+     "at": 130,
+     "sfx": "thump",
+     "t": 48.18
+    },
+    {
+     "id": "k2",
+     "at": 131,
+     "sfx": "thump",
+     "t": 48.5
+    },
+    {
+     "id": "k3",
+     "at": 133,
+     "sfx": "thump",
+     "t": 48.84
+    }
+   ],
+   "t0": 45.81,
+   "t1": 49.67
+  },
+  {
+   "id": "sussurro",
+   "from": 134,
+   "type": "object",
+   "label": "Em casa",
+   "title": "Abre, sou eu",
+   "highlight": "Abre",
+   "visual": "he leans on the door; the peephole shows the double in the flickering corridor, leaning closer",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "peep",
+     "at": 138,
+     "t": 50.88
+    },
+    {
+     "id": "whisper",
+     "at": 142,
+     "sfx": "riser",
+     "t": 52.52
+    }
+   ],
+   "t0": 49.67,
+   "t1": 54.01
+  },
+  {
+   "id": "fim",
+   "from": 145,
+   "type": "closing",
+   "label": "O 13º andar",
+   "title": "Você entrou no apartamento errado",
+   "highlight": "errado",
+   "visual": "behind the double, the camera pulls back from his door: the plate reads 1302 (red pulse, flicker)",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "reveal",
+     "at": 148,
+     "sfx": "scratch",
+     "t": 54.8
+    }
+   ],
+   "t0": 54.01,
+   "t1": 57.235
+  }
+ ],
+ "duration": 57.235
+}

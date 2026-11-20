@@ -8,6 +8,9 @@
 const P3_SKY = '#8ec9f0';
 const C3 = { white: '#f4f6fa', blue: '#2f6fde', gray: '#8a93a6', grayD: '#4a5163', grass: '#7cc46a', grassD: '#5aa452', asphalt: '#3b4150', yellow: '#ffcf4a', red: '#e5484d', air: '#bfe6ff', trunk: '#8a5a3b', night: '#16233d' };
 
+// the frame: 1080 x 1920 (9:16, the default) or 1920 x 1080 when scenes.json says "format": "16:9" (a long YouTube video)
+const P3_W = SCENES.format === '16:9' ? 1920 : 1080, P3_H = SCENES.format === '16:9' ? 1080 : 1920;
+
 // time helpers (absolute video seconds)
 const p3Clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 const p3Lerp = (a: number, b: number, u: number) => a + (b - a) * u;

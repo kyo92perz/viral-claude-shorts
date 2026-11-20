@@ -43,3 +43,6 @@ videos/hello-cartoon/
 # final videos go in GitHub releases, not in the repo
 videos/*/final.mp4
 .DS_Store
+# O 13º andar (Short + long version): the generated voice stays local (script.json regenerates it)
+videos/andar13*/audio.*
+videos/andar13*/analysis.*

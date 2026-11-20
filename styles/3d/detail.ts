@@ -170,12 +170,12 @@ const P3_GRADE = {
 };
 // ratio > 1 renders bigger and scales down (sharper fur and edges, slower). finish: false draws the scene as it is.
 const p3Stage = (w: World, o: P3StageOptions = {}): P3Stage => {
-  const ratio = o.ratio ?? 1, r = w.renderer; r.setPixelRatio(ratio); r.setSize(1080, 1920, false);
-  const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(40, 1080 / 1920, o.near ?? 0.1, o.far ?? 1200); scene.environment = p3Env(r);
+  const ratio = o.ratio ?? 1, r = w.renderer; r.setPixelRatio(ratio); r.setSize(P3_W, P3_H, false);
+  const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(40, P3_W / P3_H, o.near ?? 0.1, o.far ?? 1200); scene.environment = p3Env(r);
   let composer: THREE.EffectComposer | null = null, pass: THREE.RenderPass | null = null, grade: THREE.ShaderPass | null = null;
   if (o.finish !== false) {
     const f = o.finish || {};
-    composer = new THREE.EffectComposer(r, new THREE.WebGLRenderTarget(1080 * ratio, 1920 * ratio, { type: THREE.HalfFloatType, samples: 4 })); composer.setPixelRatio(ratio); composer.setSize(1080, 1920);
+    composer = new THREE.EffectComposer(r, new THREE.WebGLRenderTarget(P3_W * ratio, P3_H * ratio, { type: THREE.HalfFloatType, samples: 4 })); composer.setPixelRatio(ratio); composer.setSize(P3_W, P3_H);
     pass = new THREE.RenderPass(scene, cam); composer.addPass(pass); composer.addPass(new THREE.OutputPass());
     grade = new THREE.ShaderPass({ ...P3_GRADE, uniforms: { tDiffuse: { value: null }, uT: { value: 0 }, uSat: { value: f.sat ?? 1.12 }, uCurve: { value: f.curve ?? 0.32 }, uVig: { value: f.vignette ?? 0.5 }, uGrain: { value: f.grain ?? 0.012 }, uRed: { value: 0 }, uGray: { value: 0 } } });
     composer.addPass(grade);
