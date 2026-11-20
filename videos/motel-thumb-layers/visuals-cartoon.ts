@@ -9,7 +9,7 @@ const mtL = (st: ReturnType<typeof CT.stage>, L: 'lamp' | 'blood' | 'night', pw:
   st.light(L, { view: [0, -1] }); for (const g of ['rooms', 'office', 'sign', 'car', 'r11']) mt_power(g, pw[g] ?? 1);
 };
 const MTX = 500;   // an empty patch of desert for the green-screen shots
-CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, { id: 'b1' }, { id: 'b2' }, { id: 'b3' }, { id: 'w1' }, { id: 'g6' }], mt_init, (t, u, shot) => {
+CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, { id: 'b1' }, { id: 'b2' }, { id: 'b3' }, { id: 'w1' }, { id: 'g6' }, { id: 'w2' }], mt_init, (t, u, shot) => {
   const st = MT_.st!, id = shot.id;
   if (id[0] === 'g') {
     mtL(st, 'lamp'); mtGreen(st, [MTX, 5, -3], true);
@@ -22,6 +22,7 @@ CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, 
     return;
   }
   mtGreen(st, [MTX, 5, -3], false);
+  if (id === 'w2') { mtL(st, 'blood', { rooms: 0.6 }); st.look([1.2, 1.7, 0.4], [1.2, 1.9, -6], 46, 0); return; }   // the same wall, empty
   if (id === 'w1') {   // the wall by the ice machine, the shadow alone on it: huge, claws up over where Gary will stand
     mtL(st, 'blood', { rooms: 0.6 }); st.look([1.2, 1.7, 0.4], [1.2, 1.9, -6], 46, 0);
     mt_rig(st, 21, 'shGary', [1.6, 0.15, -5.95], { ...MT_P.stand, armL: [-150, -175], armR: [150, 175], facing: -1, head: -14, maw: 0 }, 0, 1.6);

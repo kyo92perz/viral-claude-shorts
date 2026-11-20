@@ -2,7 +2,7 @@
  "style": "2.5d_cartoon",
  "fps": 20,
  "format": "16:9",
- "duration": 10,
+ "duration": 11,
  "notes": "thumbnail layers",
  "scenes": [
   {
@@ -73,6 +73,13 @@
    "type": "object",
    "t0": 9,
    "t1": 10,
+   "transition": "cut"
+  },
+  {
+   "id": "w2",
+   "type": "object",
+   "t0": 10,
+   "t1": 11,
    "transition": "cut"
   }
  ]
