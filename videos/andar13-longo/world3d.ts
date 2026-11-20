@@ -118,7 +118,7 @@ const b13Knock = (t: number, tk: number): B13Pose => { const h = b13Knocks(t, tk
 interface B13PersonOpts { dark?: boolean; twin?: boolean; cap?: boolean; shirt?: string; pants?: string; skin?: string; hair?: string; shoe?: string }
 const b13Person = (o: B13PersonOpts = {}) => {
   const D = !!o.dark || !!o.twin, TW = !!o.twin, black = '#07070a';
-  const C = { shirt: D && !TW ? black : (o.shirt || '#2f5a3e'), shirtD: D && !TW ? black : '#264b33', pants: D && !TW ? black : (o.pants || '#5b6270'), skin: D ? black : (o.skin || '#b98463'), hair: D ? black : (o.hair || '#2a1c14'), shoe: D && !TW ? black : (o.shoe || '#e9ecef'), sole: D ? black : '#3a3f48' };
+  const C = { shirt: D && !TW ? black : (o.shirt || '#2f5a3e'), shirtD: D && !TW ? black : o.shirt ? '#' + new THREE.Color(o.shirt).multiplyScalar(0.8).getHexString() : '#264b33', pants: D && !TW ? black : (o.pants || '#5b6270'), skin: D ? black : (o.skin || '#b98463'), hair: D ? black : (o.hair || '#2a1c14'), shoe: D && !TW ? black : (o.shoe || '#e9ecef'), sole: D ? black : '#3a3f48' };
   const mat = (c: string) => p3Mat(c, 0, 0.85);
   const limb = (r0: number, r1: number, L: number, c: string) => { const g = p3Cyl(r1, r0, L, 9); g.translate(0, -L / 2, 0); return p3Mesh(g, mat(c)); };
   const J: Record<string, THREE.Group> = {}; const G = (name: string, x = 0, y = 0, z = 0) => { const g = new THREE.Group(); g.position.set(x, y, z); J[name] = g; return g; };

@@ -70,8 +70,8 @@ b13Shots([
     b13Look([0, 1.6, z], [p3Lerp(0, -1.25, d), p3Lerp(p3Lerp(1.45, 0.1, c), 1.2, d), p3Lerp(z + 8, z + 2.4, Math.max(c * 0.5, d * 0.85))], 42);
   } },
   { id: 'placas', fn(t, u, s) {
-    b13Mode(t, 'thirteen', false); b13Floor('13'); const z = p3Lerp(3.2, 6.2, p3Smooth(u));
-    b13Look([-0.35, 1.65, z], [-1.27, 1.66, z + 1.1], 34);
+    b13Mode(t, 'thirteen', false); b13Floor('13'); const z = p3Lerp(3.3, 4.1, p3Smooth(u));
+    b13Look([p3Lerp(-0.15, -0.45, u), 1.66, z], [-1.25, 1.68, 5], p3Lerp(34, 26, u));
   } },
   { id: 'respira', fn(t, u, s) {
     b13Mode(t, 'thirteen', false); b13Floor('13'); b13Cab(1, '13'); b13Breath(t); B13.endDoor.hinge.rotation.y = 0.5;
@@ -139,7 +139,7 @@ b13Shots([
   } },
   { id: 'subiu', fn(t, u, s) {
     const tc = b13K(s, 'close'), t14 = b13K(s, 'd14');
-    if (t < t14 - 0.6) { b13Mode(t, 'thirteen'); b13Floor('13'); const d: B13Man = B13.twin; d.visible = true; d.position.set(0, 0, 18.5); d.rotation.y = Math.PI; d.pose(b13Stand(t));
+    if (t < tc + 0.75) { b13Mode(t, 'thirteen'); b13Floor('13'); const d: B13Man = B13.twin; d.visible = true; d.position.set(0, 0, 18.5); d.rotation.y = Math.PI; d.pose(b13Stand(t));
       b13Cab(0.58 * (1 - p3Ramp(t, tc, tc + 0.6)), '13'); b13Look([0, 1.6, -0.75], [0, 1.45, 8], 38); }
     else { b13Cab(0, t >= t14 ? '14' : '13'); b13Look([0, 2.0, 0.4], [0, 2.25, 0.985], 34); }
   } },
@@ -184,8 +184,8 @@ b13Shots([
   } },
   { id: 'sussurro', html: (w) => b13PeepMask(w), fn(t, u, s) {
     b13Mode(t, 'thirteen'); b13Floor('13'); const tl = b13K(s, 'lean'), tw = b13K(s, 'whisper'), d: B13Man = B13.twin; d.visible = true;
-    d.position.set(0, 0, p3Lerp(20.15, 20.6, p3Ramp(t, tl, tw))); d.pose({ ...b13Stand(t), 'spine.x': p3Lerp(0, 0.18, p3Ramp(t, tl, tw)), 'neck.z': p3Lerp(0.25, 0.45, p3Ramp(t, tw, tw + 0.8)) });
-    b13Red(0.6 * b13Pulse(t, tw, 2)); b13Look([0, 1.55, 20.97], [0, 1.4, 15], 80);
+    d.position.set(0, 0, p3Lerp(20.0, 20.4, p3Ramp(t, tl, tw))); d.pose({ ...b13Stand(t), 'spine.x': p3Lerp(0, 0.18, p3Ramp(t, tl, tw)), 'neck.z': p3Lerp(0.25, 0.45, p3Ramp(t, tw, tw + 0.8)) });
+    b13Red(0.6 * b13Pulse(t, tw, 2)); b13Look([0, 1.55, 20.97], [0, p3Lerp(1.4, 1.75, p3Ramp(t, tl, tw)), 15], 80);
   } },
   { id: 'errado', fn(t, u, s) {
     b13Mode(t, 'thirteen'); b13Floor('13'); const tr = b13K(s, 'reveal'), d: B13Man = B13.twin; d.visible = true; d.position.set(0.34, 0, 20.35); d.pose(b13Knock(t, s.t0 - 2));
