@@ -9,7 +9,7 @@ const mtL = (st: ReturnType<typeof CT.stage>, L: 'lamp' | 'blood' | 'night', pw:
   st.light(L, { view: [0, -1] }); for (const g of ['rooms', 'office', 'sign', 'car', 'r11']) mt_power(g, pw[g] ?? 1);
 };
 const MTX = 500;   // an empty patch of desert for the green-screen shots
-CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, { id: 'b1' }, { id: 'b2' }, { id: 'b3' }], mt_init, (t, u, shot) => {
+CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, { id: 'b1' }, { id: 'b2' }, { id: 'b3' }, { id: 'w1' }, { id: 'g6' }], mt_init, (t, u, shot) => {
   const st = MT_.st!, id = shot.id;
   if (id[0] === 'g') {
     mtL(st, 'lamp'); mtGreen(st, [MTX, 5, -3], true);
@@ -17,10 +17,15 @@ CT.shots([{ id: 'g1' }, { id: 'g2' }, { id: 'g3' }, { id: 'g4' }, { id: 'g5' }, 
     if (id === 'g2') { st.look([MTX, 1.42, 1.55], [MTX, 1.38, 0], 34, 0); mt_rig(st, 2, 'kev', [MTX, 0, 0], { ...MT_P.scared, facing: 0, expr: 'shock', head: 6 }, 0); }
     if (id === 'g3') { st.look([MTX, 1.55, 3.6], [MTX, 1.5, 0], 40, 0); mt_rig(st, 24, 'shKev', [MTX, 0, 0], { ...MT_P.stand, armL: [-120, -150], armR: [120, 150], facing: 0, maw: 1, head: 0 }, 0, 1.25); }
     if (id === 'g4') { st.look([MTX, 1.55, 3.6], [MTX, 1.5, 0], 40, 0); mt_rig(st, 25, 'shKev', [MTX, 0, 0], { ...MT_P.stand, armL: [-110, -140], armR: [110, 140], facing: 0, maw: 0, head: 0 }, 0, 1.25); }
+    if (id === 'g6') { st.look([MTX, 1.15, 3.1], [MTX, 1.1, 0], 34, 0); mt_rig(st, 6, 'gary', [MTX, 0, 0], { ...MT_P.pose, facing: 1, expr: 'grin', head: 6 }, 0); }
     if (id === 'g5') { st.look([MTX, 1.42, 1.55], [MTX, 1.38, 0], 34, 0); mt_rig(st, 3, 'hank', [MTX, 0, 0], { ...MT_P.scared, facing: 0, expr: 'shock', bruise: 1 }, 0); }
     return;
   }
   mtGreen(st, [MTX, 5, -3], false);
+  if (id === 'w1') {   // the wall by the ice machine, the shadow alone on it: huge, claws up over where Gary will stand
+    mtL(st, 'blood', { rooms: 0.6 }); st.look([1.2, 1.7, 0.4], [1.2, 1.9, -6], 46, 0);
+    mt_rig(st, 21, 'shGary', [1.6, 0.15, -5.95], { ...MT_P.stand, armL: [-150, -175], armR: [150, 175], facing: -1, head: -14, maw: 0 }, 0, 1.6);
+    return; }
   if (id === 'b1') { mtL(st, 'blood', { rooms: 0.1 }); st.look([30.5, 4.5, 8], [34, 10.5, 18], 50, 0); }
   if (id === 'b2') { mtL(st, 'lamp', { r11: 0.6 }); st.look([300, 1.5, 2.6], [300, 1.4, -3], 46, 0); for (let i = 0; i < 11; i++) mt_rig(st, 60 + i, i % 3 ? 'shadow' : 'shadow2', [295.6 + i * 0.84, 0, -2.95], { ...MT_P.stand, armL: [-10 - (i % 4) * 30, -20], armR: [10 + (i % 3) * 25, 30], facing: 0, maw: i === 5 ? 1 : 0 }, 0, 0.92); }
   if (id === 'b3') { mtL(st, 'blood', { rooms: 1 }); st.look([2, 1.2, 22], [4, 5, -6], 50, 0);

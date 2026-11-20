@@ -132,3 +132,23 @@ words(d, (36, 548), '0 CORPOS.', 112, YEL)
 badge(d, 30, 26, 'MOTEL LUA VERMELHA', 34)
 bg.convert('RGB').save(os.path.join(OUT, 'thumb-v3-11-sombras.jpg'), quality=94)
 print('ok', file=sys.stderr)
+
+# ---- V4 (from the research): OLHA A SOMBRA — one innocent man posing, his shadow on the wall doing something else.
+# The text complements the title instead of repeating it; one reaction face (Kev) at ~30 % of the frame; the shadow is the
+# focal point; nothing covers a face; the promise is a real scene of the video (watch time decides the A/B test).
+wall = layer('b-parede-sombra.png').crop((760, 250, 1440, 632)).resize((W, H), Image.LANCZOS)
+wall = ImageEnhance.Contrast(ImageEnhance.Brightness(wall).enhance(1.9)).enhance(1.3)
+ink = wall.convert('L').point(lambda v: 255 if v < 22 else 0).filter(ImageFilter.GaussianBlur(1.5))   # the shadow: pitch black
+wall = Image.blend(wall, Image.new('RGB', (W, H), (170, 20, 50)), 0.18).convert('RGBA')
+for cx, cy in ((150, 120), (1150, 600)): glow(wall, cx, cy, 260, (255, 70, 90), 70)   # light around it, never on it
+wall.alpha_composite(solid((W, H), (6, 3, 8), ink))
+gary = sticker(key(layer('g-gary.png')))
+place(wall, gary, h=470, x=800, y=770, anchor='bc')
+vignette(wall, 0.5)
+place(wall, kev, h=440, x=-40, y=760, anchor='bl')
+d = ImageDraw.Draw(wall)
+words(d, (1255, 40), 'OLHA A', 140, WHITE, 'ra')
+words(d, (1255, 190), 'SOMBRA', 140, YEL, 'ra')
+arrow(d, 690, 40, 590, 225, w=30)
+wall.convert('RGB').save(os.path.join(OUT, 'thumb-v4-olha-a-sombra.jpg'), quality=95)
+print('v4 ok', file=sys.stderr)

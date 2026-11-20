@@ -7,7 +7,8 @@ lugar são originais. A bíblia está em [BIBLIA.md](BIBLIA.md).
 - **Thumbnails para teste A/B** (YouTube Studio → Testar e comparar):
   [V1 "Não acenda a luz"](thumbnail/thumb-v1-nao-acenda-a-luz.jpg) ·
   [V2 "A sombra se soltou"](thumbnail/thumb-v2-a-sombra-se-soltou.jpg) ·
-  [V3 "11 sombras. 0 corpos."](thumbnail/thumb-v3-11-sombras.jpg)
+  [V3 "11 sombras. 0 corpos."](thumbnail/thumb-v3-11-sombras.jpg) ·
+  [**V4 "Olha a sombra"** (feita a partir da pesquisa; recomendada)](thumbnail/thumb-v4-olha-a-sombra.jpg)
   (a primeira versão continua em [thumbnail/thumb-motel-lua-vermelha.jpg](thumbnail/thumb-motel-lua-vermelha.jpg))
 - **Descrição pronta pro YouTube:** [descricao-youtube.txt](descricao-youtube.txt)
 - **Storyboard:** [storyboard.png](storyboard.png), um painel por cena (78 cenas)
