@@ -28,6 +28,8 @@ type V3 = [number, number, number];
 export type Light = import("./lights").LightName;
 export const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
 const FPS = 30;
+/** the output frame: 1080 x 1920 (9:16) or 1920 x 1080 (16:9, scenes.json "format") */
+export const FRAME = typeof SCENES !== "undefined" && SCENES.format === "16:9" ? { w: 1920, h: 1080 } : { w: 1080, h: 1920 };
 
 // ---------------- the image chain: one per renderer, shared by every stage ----------------
 // ink (world lines, own pass) -> lens blur pre + main (thin-lens DOF) -> bloom (emissive only) + NEUTRAL tone map + grade
@@ -36,7 +38,7 @@ const POSTS = new Map<THREE.WebGLRenderer, Post>();
 const makeBloom = () => {   // the glow keeps the same size relative to the frame at any output size
   const b = new BloomEffect({ blendFunction: BlendFunction.ADD, intensity: 0.5, luminanceThreshold: 1.0, luminanceSmoothing: 0.2, mipmapBlur: true, levels: 6, radius: 0.6 });
   const mip = b.mipmapBlurPass, setSize = mip.setSize.bind(mip);
-  mip.setSize = (w: number, h: number) => setSize(Math.round((1920 * w) / Math.max(h, 1)), 1920);
+  mip.setSize = (w: number, h: number) => setSize(Math.round((FRAME.h * w) / Math.max(h, 1)), FRAME.h);
   return b;
 };
 const postFor = (r: THREE.WebGLRenderer, scene: THREE.Scene, cam: THREE.PerspectiveCamera): Post => {
@@ -50,7 +52,7 @@ const postFor = (r: THREE.WebGLRenderer, scene: THREE.Scene, cam: THREE.Perspect
   composer.addPass(render); composer.addPass(ink);
   composer.addPass(new EffectPass(cam, lens.pre)); composer.addPass(new EffectPass(cam, lens.main));
   composer.addPass(new EffectPass(cam, makeBloom(), new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }), grade));
-  composer.setSize(Math.round(1080 * RS), Math.round(1920 * RS));
+  composer.setSize(Math.round(FRAME.w * RS), Math.round(FRAME.h * RS));
   p = { composer, render, ink, lens, grade }; POSTS.set(r, p);
   return p;
 };
@@ -96,7 +98,7 @@ const lidAt = (t: number, i: number) => {
 };
 const toSrgb = (v: number) => { const c = clamp01(v); return c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055; };
 const hexOf = (c: V3, k: number) => "#" + c.map((v) => Math.round(255 * toSrgb(1 - (1 - v) * k)).toString(16).padStart(2, "0")).join("");
-const CONTACT: Record<Light, V3> = { day: [0.2, 0.21, 0.33], golden: [0.24, 0.2, 0.33], night: [0.05, 0.06, 0.1], store: [0.12, 0.13, 0.13], blackout: [0.02, 0.02, 0.04], emergency: [0.1, 0.01, 0.02] };
+const CONTACT: Record<Light, V3> = { day: [0.2, 0.21, 0.33], golden: [0.24, 0.2, 0.33], night: [0.05, 0.06, 0.1], store: [0.12, 0.13, 0.13], blackout: [0.02, 0.02, 0.04], emergency: [0.1, 0.01, 0.02], blood: [0.08, 0.03, 0.05], lamp: [0.14, 0.11, 0.09] };
 const TAIL: V3 = [0.42, 0.44, 0.62];
 
 /** one character this frame. `who` = an outfit (KID, PARENT, townsfolk(i)…) or your own drawing in the 600 x 1000
@@ -149,7 +151,7 @@ export interface Stage {
 }
 export const stage = (w: World, o: StageOptions = {}): Stage => {
   const r = w.renderer;
-  const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(40, 1080 / 1920, o.near ?? 0.2, o.far ?? 1500);
+  const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(40, FRAME.w / FRAME.h, o.near ?? 0.2, o.far ?? 1500);
   cam.layers.enable(NOINK);   // the main render still shows the no-ink layer (cards, sky, sprites)
   const post = postFor(r, scene, cam);
   const sky = new THREE.Mesh(new THREE.SphereGeometry(1100, 48, 24), skyMaterial());
@@ -201,8 +203,8 @@ export const stage = (w: World, o: StageOptions = {}): Stage => {
     const e = K.sky.e.map((deg) => THREE.MathUtils.degToRad(deg)); su.e.value.set(e[1], e[2], e[3], e[4]);
     sky.position.copy(cam.position);
     untone(P.fog, fog.color); fog.near = P.fogNear; fog.far = P.fogFar; scene.fog = o.fog === false ? null : fog; scene.background = null;
-    disc.visible = halo.visible = L === "golden" || L === "night";   // the sun at golden hour, the moon at night
-    (disc.material as THREE.SpriteMaterial).color.setRGB(...(L === "night" ? [2.2, 2.5, 3.0] as V3 : [6.0, 4.4, 2.4] as V3));
+    disc.visible = halo.visible = L === "golden" || L === "night" || L === "blood";   // the sun at golden hour, the moon at night
+    (disc.material as THREE.SpriteMaterial).color.setRGB(...(L === "night" ? [2.2, 2.5, 3.0] as V3 : L === "blood" ? [3.2, 0.7, 0.45] as V3 : [6.0, 4.4, 2.4] as V3));
     if (disc.visible) {
       disc.position.copy(cam.position).addScaledVector(sunDir, 900); disc.scale.setScalar(2 * 900 * Math.tan(THREE.MathUtils.degToRad(1.7)));
       halo.position.copy(disc.position); halo.scale.setScalar(2 * 900 * Math.tan(THREE.MathUtils.degToRad(24)));

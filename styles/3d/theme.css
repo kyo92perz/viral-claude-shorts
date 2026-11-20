@@ -25,3 +25,11 @@ html, body { margin: 0; background: #000; }
   gap: 34px; padding: 0 40px; box-sizing: border-box; box-shadow: 0 12px 40px rgba(0,0,0,0.4); border: 2px solid rgba(255,255,255,0.12); }
 .card .value { font-size: 92px; font-weight: 800; color: var(--stat); white-space: nowrap; }
 .card .text { font-size: 34px; font-weight: 500; color: var(--card-text); line-height: 1.2; }
+/* 16:9 (YouTube): the label becomes a chapter tag at the top left, the title a cinema subtitle at the bottom */
+#root.wide, #root.wide #gl { width: 1920px; height: 1080px; }
+#root.wide .label { top: 54px; left: 70px; font-size: 22px; padding: 8px 18px; }
+#root.wide .title { top: auto; bottom: 64px; left: 260px; width: 1400px; font-size: 54px; column-gap: 15px; font-weight: 800;
+  -webkit-text-stroke: 1.5px rgba(10,14,24,0.7); text-shadow: 0 3px 0 rgba(0,0,0,0.6), 0 0 18px rgba(0,0,0,0.6); }
+#root.wide .title.long { font-size: 48px; column-gap: 13px; }
+#root.wide .word .box { left: -8px; right: -8px; border-width: 4px; border-radius: 9px; }
+#root.wide .card { left: 560px; width: 800px; top: 760px; }

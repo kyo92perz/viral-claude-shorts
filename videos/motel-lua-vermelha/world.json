@@ -1,0 +1,103 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "format": "16:9",
+ "shots": [
+  {
+   "id": "test-cast",
+   "title": "test-cast",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-cast2",
+   "title": "test-cast2",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet0",
+   "title": "test-sheet0",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet1",
+   "title": "test-sheet1",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet2",
+   "title": "test-sheet2",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sheet3",
+   "title": "test-sheet3",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-motel",
+   "title": "test-motel",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-blood",
+   "title": "test-blood",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-ice",
+   "title": "test-ice",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-sign",
+   "title": "test-sign",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-office",
+   "title": "test-office",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  },
+  {
+   "id": "test-pole",
+   "title": "test-pole",
+   "duration": 1,
+   "snap": [
+    0.5
+   ]
+  }
+ ]
+}

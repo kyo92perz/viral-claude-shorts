@@ -61,7 +61,7 @@ const adapter: Adapter = {
     const voice = ['mix.wav', 'audio.wav'].find((f) => fs.existsSync(path.join(v, f)));
     fs.rmSync(path.join(PROJ, 'voice.wav'), { force: true });
     if (voice) fs.copyFileSync(path.join(v, voice), path.join(PROJ, 'voice.wav'));   // to hear it in the preview; the final render remixes it
-    const D = E.duration.toFixed(3);
+    const D = E.duration.toFixed(3), FW = E.format === '16:9' ? 1920 : 1080, FH = E.format === '16:9' ? 1080 : 1920;
     const sections = E.scenes.map((s, i) => `      <section id="sc-${esc(s.id)}" class="clip scene" data-start="${s.t0}" data-duration="${(s.t1 - s.t0).toFixed(3)}" data-track-index="0" style="z-index:${i + 1}">
         <div class="titles"></div>
       </section>`).join('\n');
@@ -69,15 +69,15 @@ const adapter: Adapter = {
 <html lang="${esc(P.language || 'es')}">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1080, height=1920" />
+    <meta name="viewport" content="width=${FW}, height=${FH}" />
     <title>${esc(path.basename(v))} (${esc(F.label)})</title>
     <script src="gsap.min.js"></script>
     <script src="three.js"></script>
     <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="${D}" data-width="1080" data-height="1920">
-      <canvas id="gl" width="1080" height="1920"></canvas>
+    <div id="root" class="${FW > FH ? 'wide' : 'tall'}" data-composition-id="main" data-start="0" data-duration="${D}" data-width="${FW}" data-height="${FH}">
+      <canvas id="gl" width="${FW}" height="${FH}"></canvas>
 ${sections}
 ${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration="${D}" data-track-index="9"></audio>` : ''}
     </div>

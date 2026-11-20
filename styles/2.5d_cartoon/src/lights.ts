@@ -12,7 +12,7 @@ export type LightPreset = {
   sunCol: string; sunI: number; sky: string; ground: string; hemiI: number;         // three lights (unpatched mats only)
   bias: number; normalBias: number;
 };
-export type LightName = "day" | "golden" | "night" | "store" | "blackout" | "emergency";
+export type LightName = "day" | "golden" | "night" | "store" | "blackout" | "emergency" | "blood" | "lamp";
 const NIGHT_BASE = {
   lambert: 0.35, sideK: 0.84, bodyGrad: 0.28, blob: [0.35, 0.36, 0.48] as C3, actorShadow: false,
   skyCurve: [0.0, 0.5, 0.6] as C3, sunDisc: "#cfe0ff", ground: "#141018", bias: -0.00025, normalBias: 0.015,
@@ -60,6 +60,18 @@ export const LIGHTS: Record<LightName, LightPreset> = {
     charTint: [1.0, 0.7, 0.66], charShade: 0.78, charGrad: 0.12, sideTint: [0.95, 0.5, 0.5],
     top: "#080102", hor: "#1c0406", fog: "#1c0406", fogNear: 6, fogFar: 45,
     sunCol: "#ff4a3a", sunI: 1.6, sky: "#5a1414", hemiI: 0.3 },
+  // the blood moon (total lunar eclipse): rust-red moonlight over the desert, violet shadows, faces still readable
+  blood: { ...NIGHT_BASE, az: 55, el: 30,
+    lit: [1.12, 0.5, 0.42], shade: [0.09, 0.05, 0.12], lift: [0.04, 0.02, 0.06], term: 0.15,
+    charTint: [1.0, 0.74, 0.7], charShade: 0.8, charGrad: 0.12, sideTint: [0.92, 0.66, 0.72],
+    top: "#0a0306", hor: "#3a1216", fog: "#2a0e14", fogNear: 20, fogFar: 160,
+    sunCol: "#ff6a4a", sunI: 1.4, sky: "#5a2026", hemiI: 0.32, sunDisc: "#ff5a3a" },
+  // warm tungsten lamps inside (the motel office, a room)
+  lamp: { ...NIGHT_BASE, az: 40, el: 55,
+    lit: [1.35, 1.12, 0.78], shade: [0.22, 0.17, 0.16], lift: [0.05, 0.04, 0.03], term: 0.2,
+    charTint: [1.0, 0.93, 0.82], charShade: 0.84, charGrad: 0.08, sideTint: [0.95, 0.88, 0.8],
+    top: "#05040a", hor: "#120d10", fog: "#120d10", fogNear: 14, fogFar: 60,
+    sunCol: "#ffd9a0", sunI: 2.0, sky: "#e8d2b0", hemiI: 0.5 },
 };
 
 /** world-only look per light (sky stops by elevation in degrees, river colours, cloud palette). All colours are
@@ -94,5 +106,7 @@ export const LOOK: Record<LightName, WorldLook> = {
   night: { sky: { c: ["#2b3550", "#1d2540", "#121a30", "#0b1122", "#060a16"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: NIGHT_CLOUD, bounce: [0, 0, 0], sat: 0.85 },
   store: { sky: { c: ["#0b0f17", "#080b12", "#05070c", "#030409", "#020306"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: NIGHT_CLOUD, bounce: [0, 0, 0], sat: 0.9 },
   blackout: { sky: { c: ["#0a0e18", "#070a12", "#05070d", "#03050a", "#010204"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: { lit: "#1c2130", mid: "#141824", shade: "#0c0f18" }, bounce: [0, 0, 0], sat: 0.8 },
+  blood: { sky: { c: ["#4a1418", "#341014", "#200a10", "#14060c", "#0a0306"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: { lit: "#5a2a30", mid: "#3a1a22", shade: "#200c14" }, bounce: [0.02, 0, 0], sat: 0.95 },
+  lamp: { sky: { c: ["#120d10", "#0c090c", "#080608", "#050405", "#030203"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: NIGHT_CLOUD, bounce: [0.03, 0.02, 0], sat: 1.0 },
   emergency: { sky: { c: ["#2a0608", "#1c0406", "#120204", "#0a0102", "#050001"], e: [0, 3, 8, 16, 40] }, water: NIGHT_WATER, cloud: { lit: "#40141a", mid: "#2a0c10", shade: "#160608" }, bounce: [0.02, 0, 0], sat: 1.0 },
 };

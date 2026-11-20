@@ -1,0 +1,3231 @@
+{
+ "duration": 591.901,
+ "phrases": [
+  {
+   "n": 1,
+   "t0": 0,
+   "t1": 4.06,
+   "from": 0,
+   "to": 11,
+   "text": "Em mil novecentos e sessenta e um na última lua de sangue,",
+   "question": false
+  },
+  {
+   "n": 2,
+   "t0": 4.38,
+   "t1": 6.48,
+   "from": 12,
+   "to": 17,
+   "text": "o motel Lua Vermelha amanheceu vazio.",
+   "question": false
+  },
+  {
+   "n": 3,
+   "t0": 6.84,
+   "t1": 13.12,
+   "from": 18,
+   "to": 34,
+   "text": "Onze óspedes, nenhum corpo, nenhuma gota de sangue, só onze sombras pintadas na parede do quarto onze.",
+   "question": false
+  },
+  {
+   "n": 4,
+   "t0": 13.44,
+   "t1": 17.16,
+   "from": 35,
+   "to": 47,
+   "text": "Como se alguém tivesse ido embora e esquecido de levar a sombra junto.",
+   "question": false
+  },
+  {
+   "n": 5,
+   "t0": 17.8,
+   "t1": 19.48,
+   "from": 48,
+   "to": 54,
+   "text": "Eu sei disso porque eu ava lá.",
+   "question": false
+  },
+  {
+   "n": 6,
+   "t0": 19.78,
+   "t1": 20.66,
+   "from": 55,
+   "to": 58,
+   "text": "Eu tinha oito anos.",
+   "question": false
+  },
+  {
+   "n": 7,
+   "t0": 21.18,
+   "t1": 23.04,
+   "from": 59,
+   "to": 65,
+   "text": "E hoje, sessenta e cinco anos depois,",
+   "question": false
+  },
+  {
+   "n": 8,
+   "t0": 23.46,
+   "t1": 25.1,
+   "from": 66,
+   "to": 72,
+   "text": "a lua vai ficar vermelha de novo.",
+   "question": false
+  },
+  {
+   "n": 9,
+   "t0": 25.94,
+   "t1": 27.16,
+   "from": 73,
+   "to": 77,
+   "text": "Meu nome é Marida Elgado,",
+   "question": false
+  },
+  {
+   "n": 10,
+   "t0": 27.54,
+   "t1": 33.92,
+   "from": 78,
+   "to": 93,
+   "text": "gerente, recepcionista, faxineira e eletricista do motel Lua Vermelha na rota trezentos e setenta e cinco,",
+   "question": false
+  },
+  {
+   "n": 11,
+   "t0": 34.24,
+   "t1": 35.34,
+   "from": 94,
+   "to": 99,
+   "text": "no meio do deserto de Nevada.",
+   "question": false
+  },
+  {
+   "n": 12,
+   "t0": 35.86,
+   "t1": 38.62,
+   "from": 100,
+   "to": 106,
+   "text": "A estrada tem esse apelido, rodovia extraterrestre.",
+   "question": false
+  },
+  {
+   "n": 13,
+   "t0": 38.9,
+   "t1": 42.12,
+   "from": 107,
+   "to": 116,
+   "text": "Então todo maluco que procura disco voador acaba dormindo aqui.",
+   "question": false
+  },
+  {
+   "n": 14,
+   "t0": 42.52,
+   "t1": 44.06,
+   "from": 117,
+   "to": 122,
+   "text": "Eu não acredito em disco voador,",
+   "question": false
+  },
+  {
+   "n": 15,
+   "t0": 44.5,
+   "t1": 45.76,
+   "from": 123,
+   "to": 128,
+   "text": "eu acredito em conta de luz.",
+   "question": false
+  },
+  {
+   "n": 16,
+   "t0": 46.36,
+   "t1": 47.22,
+   "from": 129,
+   "to": 130,
+   "text": "Fui boxeadora,",
+   "question": false
+  },
+  {
+   "n": 17,
+   "t0": 47.58,
+   "t1": 50.12,
+   "from": 131,
+   "to": 137,
+   "text": "quatorze vitórias, duas derrotas, um nariz quebrado.",
+   "question": false
+  },
+  {
+   "n": 18,
+   "t0": 50.12,
+   "t1": 51.62,
+   "from": 138,
+   "to": 142,
+   "text": "A minha filha, a Sofia,",
+   "question": false
+  },
+  {
+   "n": 19,
+   "t0": 51.94,
+   "t1": 57.34,
+   "from": 143,
+   "to": 161,
+   "text": "está na faculdade em Hinoe, e cada quarto alugado aqui é um livro que ela não precisa pedir emprestado.",
+   "question": false
+  },
+  {
+   "n": 20,
+   "t0": 57.88,
+   "t1": 58.84,
+   "from": 162,
+   "to": 165,
+   "text": "Antes da meia noite,",
+   "question": false
+  },
+  {
+   "n": 21,
+   "t0": 59.18,
+   "t1": 59.98,
+   "from": 166,
+   "to": 169,
+   "text": "a Sofia me ligou,",
+   "question": false
+  },
+  {
+   "n": 22,
+   "t0": 60.28,
+   "t1": 61.84,
+   "from": 170,
+   "to": 175,
+   "text": "ela sempre liga quando tem prova.",
+   "question": false
+  },
+  {
+   "n": 23,
+   "t0": 62.22,
+   "t1": 63.88,
+   "from": 176,
+   "to": 181,
+   "text": "Mãe, você está trabalhando de novo?",
+   "question": true
+  },
+  {
+   "n": 24,
+   "t0": 64.32,
+   "t1": 66.86,
+   "from": 182,
+   "to": 191,
+   "text": "Você prometeu que ia dormir em algum momento desse ano.",
+   "question": false
+  },
+  {
+   "n": 25,
+   "t0": 67.12,
+   "t1": 68.7,
+   "from": 192,
+   "to": 197,
+   "text": "Eu durmo quando você se formar,",
+   "question": false
+  },
+  {
+   "n": 26,
+   "t0": 68.98,
+   "t1": 71.74,
+   "from": 198,
+   "to": 207,
+   "text": "vai estudar, e Sofia tranca a porta do quarto hoje,",
+   "question": false
+  },
+  {
+   "n": 27,
+   "t0": 72.04,
+   "t1": 72.86,
+   "from": 208,
+   "to": 211,
+   "text": "é lua de sangue.",
+   "question": false
+  },
+  {
+   "n": 28,
+   "t0": 73.04,
+   "t1": 75.26,
+   "from": 212,
+   "to": 217,
+   "text": "Desde quando você acredita nessas coisas?",
+   "question": true
+  },
+  {
+   "n": 29,
+   "t0": 75.26,
+   "t1": 78.3,
+   "from": 218,
+   "to": 227,
+   "text": "Eu não acredito, mas eu tranco a porta mesmo assim.",
+   "question": false
+  },
+  {
+   "n": 30,
+   "t0": 78.86,
+   "t1": 80.52,
+   "from": 228,
+   "to": 232,
+   "text": "Naquela noite eu tinha quatro",
+   "question": false
+  },
+  {
+   "n": 31,
+   "t0": 80.96,
+   "t1": 84.84,
+   "from": 233,
+   "to": 245,
+   "text": "hóspedes, e o primeiro problema chegou de carro amarelo filmando a si mesmo.",
+   "question": false
+  },
+  {
+   "n": 32,
+   "t0": 85.26,
+   "t1": 89.1,
+   "from": 246,
+   "to": 257,
+   "text": "E aí galera do Kev Explora, 300 mil inscritos, vocês são insanos.",
+   "question": false
+  },
+  {
+   "n": 33,
+   "t0": 89.38,
+   "t1": 93.36,
+   "from": 258,
+   "to": 271,
+   "text": "Hoje a gente está no lugar mais assombrado da rodovia extraterrestre, deixa o like.",
+   "question": false
+  },
+  {
+   "n": 34,
+   "t0": 93.72,
+   "t1": 99.3,
+   "from": 272,
+   "to": 289,
+   "text": "Boa noite senhora, eu quero o quarto onze, o quarto dos desaparecidos, pode ser com desconto de influenciador.",
+   "question": false
+  },
+  {
+   "n": 35,
+   "t0": 99.68,
+   "t1": 101.26,
+   "from": 290,
+   "to": 294,
+   "text": "O quarto onze está interditado,",
+   "question": false
+  },
+  {
+   "n": 36,
+   "t0": 101.6,
+   "t1": 106.9,
+   "from": 295,
+   "to": 316,
+   "text": "e o desconto de influenciador é o seguinte, você paga o preço cheio, e eu não te dou uma surra ao vivo.",
+   "question": false
+  },
+  {
+   "n": 37,
+   "t0": 107.24,
+   "t1": 108.32,
+   "from": 317,
+   "to": 320,
+   "text": "Chat, ela é incrível,",
+   "question": false
+  },
+  {
+   "n": 38,
+   "t0": 108.62,
+   "t1": 110.48,
+   "from": 321,
+   "to": 327,
+   "text": "moça pode repetir olhando para a câmera.",
+   "question": false
+  },
+  {
+   "n": 39,
+   "t0": 111.12,
+   "t1": 112.58,
+   "from": 328,
+   "to": 334,
+   "text": "Eu dei o quarto oito para ele,",
+   "question": false
+  },
+  {
+   "n": 40,
+   "t0": 112.88,
+   "t1": 116.08,
+   "from": 335,
+   "to": 348,
+   "text": "do lado do quarto nove, onde mora o seu Hank Bishop a 12 anos,",
+   "question": false
+  },
+  {
+   "n": 41,
+   "t0": 116.5,
+   "t1": 118.68,
+   "from": 349,
+   "to": 353,
+   "text": "veterano do Vietnã, rabugento profissional.",
+   "question": false
+  },
+  {
+   "n": 42,
+   "t0": 119.16,
+   "t1": 121,
+   "from": 354,
+   "to": 359,
+   "text": "Garoto, desliga essa luz da cara,",
+   "question": false
+  },
+  {
+   "n": 43,
+   "t0": 121.28,
+   "t1": 124.64,
+   "from": 360,
+   "to": 371,
+   "text": "hoje é lua de sangue, tranca a porta, apaga tudo e reza.",
+   "question": false
+  },
+  {
+   "n": 44,
+   "t0": 124.94,
+   "t1": 128.02,
+   "from": 372,
+   "to": 382,
+   "text": "Senhor, com todo respeito, é exatamente por isso que eu vim.",
+   "question": false
+  },
+  {
+   "n": 45,
+   "t0": 128.34,
+   "t1": 130.04,
+   "from": 383,
+   "to": 386,
+   "text": "Então reza mais alto.",
+   "question": false
+  },
+  {
+   "n": 46,
+   "t0": 130.52,
+   "t1": 131.44,
+   "from": 387,
+   "to": 390,
+   "text": "E tinha os Henderson,",
+   "question": false
+  },
+  {
+   "n": 47,
+   "t0": 131.98,
+   "t1": 135.86,
+   "from": 391,
+   "to": 401,
+   "text": "Barbie e Gary de orreo aposentados de tráiler com camisas combinando,",
+   "question": false
+  },
+  {
+   "n": 48,
+   "t0": 136.24,
+   "t1": 138.3,
+   "from": 402,
+   "to": 408,
+   "text": "eles fotografavam até a máquina de gelo.",
+   "question": false
+  },
+  {
+   "n": 49,
+   "t0": 138.6,
+   "t1": 141.96,
+   "from": 409,
+   "to": 420,
+   "text": "Gary tira uma foto minha com a lua, ela está ficando vermelhinha.",
+   "question": false
+  },
+  {
+   "n": 50,
+   "t0": 142.16,
+   "t1": 144.9,
+   "from": 421,
+   "to": 427,
+   "text": "Já estou tirando Barbie, sorria, sorria, sorria.",
+   "question": false
+  },
+  {
+   "n": 51,
+   "t0": 145.5,
+   "t1": 146.18,
+   "from": 428,
+   "to": 429,
+   "text": "As 11h40,",
+   "question": false
+  },
+  {
+   "n": 52,
+   "t0": 146.48,
+   "t1": 148.5,
+   "from": 430,
+   "to": 438,
+   "text": "a sombra da terra começou a comer a lua,",
+   "question": false
+  },
+  {
+   "n": 53,
+   "t0": 148.94,
+   "t1": 152.84,
+   "from": 439,
+   "to": 452,
+   "text": "ela foi ficando cor de ferrugem, depois cor de vinho, depois cor de ferida,",
+   "question": false
+  },
+  {
+   "n": 54,
+   "t0": 153.32,
+   "t1": 155.6,
+   "from": 453,
+   "to": 461,
+   "text": "e o letreiro de neon começou a zumbir sozinho.",
+   "question": false
+  },
+  {
+   "n": 55,
+   "t0": 156.28,
+   "t1": 157.62,
+   "from": 462,
+   "to": 467,
+   "text": "Foi o Kev que viu primeiro,",
+   "question": false
+  },
+  {
+   "n": 56,
+   "t0": 157.9,
+   "t1": 158.22,
+   "from": 468,
+   "to": 468,
+   "text": "claro,",
+   "question": false
+  },
+  {
+   "n": 57,
+   "t0": 158.62,
+   "t1": 163.32,
+   "from": 469,
+   "to": 485,
+   "text": "ele estava filmando Gary tirando foto da Barbie na parede branca do lado da máquina de gelo.",
+   "question": false
+  },
+  {
+   "n": 58,
+   "t0": 163.56,
+   "t1": 167.02,
+   "from": 486,
+   "to": 499,
+   "text": "Gente, gente, olha a sombra dele, o Gary está parado, a sombra não está.",
+   "question": false
+  },
+  {
+   "n": 59,
+   "t0": 167.5,
+   "t1": 169.12,
+   "from": 500,
+   "to": 505,
+   "text": "A sombra do Gary estava acenando,",
+   "question": false
+  },
+  {
+   "n": 60,
+   "t0": 169.44,
+   "t1": 173.3,
+   "from": 506,
+   "to": 522,
+   "text": "devagar para a câmera do Kev, e depois ela virou a cabeça e olhou para o Gary.",
+   "question": false
+  },
+  {
+   "n": 61,
+   "t0": 173.84,
+   "t1": 178.24,
+   "from": 523,
+   "to": 538,
+   "text": "A sombra desceu da parede como quem desce de uma escada e entrou nele pela boca.",
+   "question": false
+  },
+  {
+   "n": 62,
+   "t0": 178.9,
+   "t1": 180.4,
+   "from": 539,
+   "to": 541,
+   "text": "Sorria, sorria, sorria.",
+   "question": false
+  },
+  {
+   "n": 63,
+   "t0": 180.9,
+   "t1": 182.48,
+   "from": 542,
+   "to": 547,
+   "text": "A pele do Gary ficou cinza,",
+   "question": false
+  },
+  {
+   "n": 64,
+   "t0": 182.82,
+   "t1": 187.1,
+   "from": 548,
+   "to": 563,
+   "text": "os olhos ficaram brancos sem nada dentro e ele não tinha mais sombra nenhuma no chão.",
+   "question": false
+  },
+  {
+   "n": 65,
+   "t0": 187.54,
+   "t1": 189.6,
+   "from": 564,
+   "to": 569,
+   "text": "Gary, querido, que brincadeira é essa.",
+   "question": false
+  },
+  {
+   "n": 66,
+   "t0": 190,
+   "t1": 193.9,
+   "from": 570,
+   "to": 584,
+   "text": "Ele pegou a Barbie pelo cabelo e bateu a cabeça dela na máquina de gelo.",
+   "question": false
+  },
+  {
+   "n": 67,
+   "t0": 194.3,
+   "t1": 196.2,
+   "from": 585,
+   "to": 591,
+   "text": "Eu já estava correndo antes de pensar.",
+   "question": false
+  },
+  {
+   "n": 68,
+   "t0": 196.64,
+   "t1": 199.62,
+   "from": 592,
+   "to": 603,
+   "text": "Já abriu o queixo para ele soltar, ele soltou direto no nariz,",
+   "question": false
+  },
+  {
+   "n": 69,
+   "t0": 199.94,
+   "t1": 201.88,
+   "from": 604,
+   "to": 611,
+   "text": "senti o osso a fundar, ele nem piscou.",
+   "question": false
+  },
+  {
+   "n": 70,
+   "t0": 202.28,
+   "t1": 204.4,
+   "from": 612,
+   "to": 620,
+   "text": "Ele veio com as duas mãos no meu pescoço.",
+   "question": false
+  },
+  {
+   "n": 71,
+   "t0": 204.82,
+   "t1": 207.7,
+   "from": 621,
+   "to": 632,
+   "text": "Eu abaixei, girei o quadril e entrei com um gancho de fígado.",
+   "question": false
+  },
+  {
+   "n": 72,
+   "t0": 208.08,
+   "t1": 211.66,
+   "from": 633,
+   "to": 645,
+   "text": "Esse derruba qualquer um, derrubou a minha mão, que doeu até o cotovelo.",
+   "question": false
+  },
+  {
+   "n": 73,
+   "t0": 211.94,
+   "t1": 214.08,
+   "from": 646,
+   "to": 653,
+   "text": "Ele me preençou contra a máquina de gelo.",
+   "question": false
+  },
+  {
+   "n": 74,
+   "t0": 214.08,
+   "t1": 218.02,
+   "from": 654,
+   "to": 665,
+   "text": "O metal gelado nas costas, os dedões dele afundando na minha garganta.",
+   "question": false
+  },
+  {
+   "n": 75,
+   "t0": 218.3,
+   "t1": 220.34,
+   "from": 666,
+   "to": 672,
+   "text": "E o Kev a dois metros filmando.",
+   "question": false
+  },
+  {
+   "n": 76,
+   "t0": 220.78,
+   "t1": 221.96,
+   "from": 673,
+   "to": 676,
+   "text": "Kev me ajuda, porra.",
+   "question": false
+  },
+  {
+   "n": 77,
+   "t0": 222.28,
+   "t1": 224.5,
+   "from": 677,
+   "to": 684,
+   "text": "Eu tô, eu tô, 80 mil pessoas assistindo.",
+   "question": false
+  },
+  {
+   "n": 78,
+   "t0": 224.94,
+   "t1": 227.16,
+   "from": 685,
+   "to": 693,
+   "text": "Eu soltei um uper por dentro dos braços dele.",
+   "question": false
+  },
+  {
+   "n": 79,
+   "t0": 227.62,
+   "t1": 232.76,
+   "from": 694,
+   "to": 714,
+   "text": "O queixo subiu, ele perdeu o equilíbrio por meio segundo e eu enfiei a pade gelo de alumínio na temporada dele.",
+   "question": false
+  },
+  {
+   "n": 80,
+   "t0": 233.02,
+   "t1": 233.48,
+   "from": 715,
+   "to": 716,
+   "text": "Uma vez,",
+   "question": false
+  },
+  {
+   "n": 81,
+   "t0": 233.82,
+   "t1": 234,
+   "from": 717,
+   "to": 717,
+   "text": "duas,",
+   "question": false
+  },
+  {
+   "n": 82,
+   "t0": 234.4,
+   "t1": 234.62,
+   "from": 718,
+   "to": 718,
+   "text": "três,",
+   "question": false
+  },
+  {
+   "n": 83,
+   "t0": 234.92,
+   "t1": 235.4,
+   "from": 719,
+   "to": 720,
+   "text": "ele caiu.",
+   "question": false
+  },
+  {
+   "n": 84,
+   "t0": 235.72,
+   "t1": 238.94,
+   "from": 721,
+   "to": 729,
+   "text": "E, caído sem sombra, ele continuava sorrindo e repetindo.",
+   "question": false
+  },
+  {
+   "n": 85,
+   "t0": 239.38,
+   "t1": 240.4,
+   "from": 730,
+   "to": 731,
+   "text": "Sorria, sorria.",
+   "question": false
+  },
+  {
+   "n": 86,
+   "t0": 241.28,
+   "t1": 243.16,
+   "from": 732,
+   "to": 736,
+   "text": "Desliga essa luz garoto agora.",
+   "question": false
+  },
+  {
+   "n": 87,
+   "t0": 243.6,
+   "t1": 247.42,
+   "from": 737,
+   "to": 753,
+   "text": "O seu Henk arrancou o celular da mão do Kev e jogou dentro do balde de gelo.",
+   "question": false
+  },
+  {
+   "n": 88,
+   "t0": 247.74,
+   "t1": 248.24,
+   "from": 754,
+   "to": 755,
+   "text": "No escuro,",
+   "question": false
+  },
+  {
+   "n": 89,
+   "t0": 248.52,
+   "t1": 250.64,
+   "from": 756,
+   "to": 763,
+   "text": "a gente ouviu uma coisa raspando a parede.",
+   "question": false
+  },
+  {
+   "n": 90,
+   "t0": 251.06,
+   "t1": 251.58,
+   "from": 764,
+   "to": 765,
+   "text": "Indo embora.",
+   "question": false
+  },
+  {
+   "n": 91,
+   "t0": 252.08,
+   "t1": 252.78,
+   "from": 766,
+   "to": 767,
+   "text": "Em 61,",
+   "question": false
+  },
+  {
+   "n": 92,
+   "t0": 253.06,
+   "t1": 254.16,
+   "from": 768,
+   "to": 772,
+   "text": "eu me escondi no porão.",
+   "question": false
+  },
+  {
+   "n": 93,
+   "t0": 254.5,
+   "t1": 256.38,
+   "from": 773,
+   "to": 778,
+   "text": "Sem lâmpada, sem fresta, sem nada.",
+   "question": false
+  },
+  {
+   "n": 94,
+   "t0": 256.7,
+   "t1": 258.2,
+   "from": 779,
+   "to": 784,
+   "text": "Foi por isso que eu sobrevivi.",
+   "question": false
+  },
+  {
+   "n": 95,
+   "t0": 258.5,
+   "t1": 260.02,
+   "from": 785,
+   "to": 790,
+   "text": "Sombra só existe onde tem luz.",
+   "question": false
+  },
+  {
+   "n": 96,
+   "t0": 260.44,
+   "t1": 262.16,
+   "from": 791,
+   "to": 797,
+   "text": "No escuro, elas não têm onde ficar.",
+   "question": false
+  },
+  {
+   "n": 97,
+   "t0": 262.74,
+   "t1": 266.8,
+   "from": 798,
+   "to": 811,
+   "text": "A minha mãe me trancou lá embaixo e disse, não acende nada, nem fósforo.",
+   "question": false
+  },
+  {
+   "n": 98,
+   "t0": 267.1,
+   "t1": 270.34,
+   "from": 812,
+   "to": 824,
+   "text": "Eu ouvi ela me chamando a noite inteira do outro lado da porta,",
+   "question": false
+  },
+  {
+   "n": 99,
+   "t0": 270.62,
+   "t1": 271.44,
+   "from": 825,
+   "to": 828,
+   "text": "com a voz dela,",
+   "question": false
+  },
+  {
+   "n": 100,
+   "t0": 271.76,
+   "t1": 272.7,
+   "from": 829,
+   "to": 832,
+   "text": "mas não era ela.",
+   "question": false
+  },
+  {
+   "n": 101,
+   "t0": 273.16,
+   "t1": 275.38,
+   "from": 833,
+   "to": 840,
+   "text": "Então a gente apaga tudo e pronto, fácil.",
+   "question": false
+  },
+  {
+   "n": 102,
+   "t0": 275.8,
+   "t1": 280.58,
+   "from": 841,
+   "to": 857,
+   "text": "E a Lua e o letreiro, aquele neon foi aceso pela primeira vez na noite de 61.",
+   "question": false
+  },
+  {
+   "n": 103,
+   "t0": 281,
+   "t1": 281.76,
+   "from": 858,
+   "to": 861,
+   "text": "Ele é a porta.",
+   "question": false
+  },
+  {
+   "n": 104,
+   "t0": 282.18,
+   "t1": 283.88,
+   "from": 862,
+   "to": 866,
+   "text": "Enquanto ele brilhar, elas entram.",
+   "question": false
+  },
+  {
+   "n": 105,
+   "t0": 284.44,
+   "t1": 288.8,
+   "from": 867,
+   "to": 880,
+   "text": "O Kev pegou o celular do balde, ainda funcionava, e a lanterna acendeu sozinha.",
+   "question": false
+  },
+  {
+   "n": 106,
+   "t0": 289.24,
+   "t1": 291.48,
+   "from": 881,
+   "to": 889,
+   "text": "Na parede, a sombra do Kev se descolou dele.",
+   "question": false
+  },
+  {
+   "n": 107,
+   "t0": 291.82,
+   "t1": 294.44,
+   "from": 890,
+   "to": 899,
+   "text": "Ela era mais alta que ele e sorria muito melhor.",
+   "question": false
+  },
+  {
+   "n": 108,
+   "t0": 295,
+   "t1": 297.08,
+   "from": 900,
+   "to": 905,
+   "text": "E aí, galera do Kev Explora.",
+   "question": false
+  },
+  {
+   "n": 109,
+   "t0": 297.58,
+   "t1": 298.98,
+   "from": 906,
+   "to": 911,
+   "text": "Ela não foi atrás do Kev.",
+   "question": false
+  },
+  {
+   "n": 110,
+   "t0": 298.98,
+   "t1": 302.98,
+   "from": 912,
+   "to": 924,
+   "text": "Foi atrás da Barbie, que estava sentada, sangrando na escada do quarto 4,",
+   "question": false
+  },
+  {
+   "n": 111,
+   "t0": 303.36,
+   "t1": 308.24,
+   "from": 925,
+   "to": 941,
+   "text": "puxou a Barbie pelo tornozelo para dentro da luz do letreiro, e as duas sumiram no vermelho.",
+   "question": false
+  },
+  {
+   "n": 112,
+   "t0": 308.8,
+   "t1": 310.34,
+   "from": 942,
+   "to": 948,
+   "text": "Não, não, não, isso foi culpa minha,",
+   "question": false
+  },
+  {
+   "n": 113,
+   "t0": 310.64,
+   "t1": 311.58,
+   "from": 949,
+   "to": 952,
+   "text": "isso foi culpa minha.",
+   "question": false
+  },
+  {
+   "n": 114,
+   "t0": 312.1,
+   "t1": 314.22,
+   "from": 953,
+   "to": 961,
+   "text": "Foi e chorar não ia trazer ela de volta.",
+   "question": false
+  },
+  {
+   "n": 115,
+   "t0": 314.94,
+   "t1": 317.06,
+   "from": 962,
+   "to": 970,
+   "text": "O plano era simples, que nem todo plano ruim.",
+   "question": false
+  },
+  {
+   "n": 116,
+   "t0": 317.6,
+   "t1": 322.02,
+   "from": 971,
+   "to": 986,
+   "text": "O transformador do motel fica num poste na beira da rodovia, a 100 metros do escritório.",
+   "question": false
+  },
+  {
+   "n": 117,
+   "t0": 322.46,
+   "t1": 324.94,
+   "from": 987,
+   "to": 994,
+   "text": "Desligando a chave geral, o motel inteiro apaga.",
+   "question": false
+  },
+  {
+   "n": 118,
+   "t0": 324.94,
+   "t1": 326.42,
+   "from": 995,
+   "to": 998,
+   "text": "Eu vou com você.",
+   "question": false
+  },
+  {
+   "n": 119,
+   "t0": 326.72,
+   "t1": 330.76,
+   "from": 999,
+   "to": 1012,
+   "text": "Meus olhos são velhos, mas eu enxergo no escuro melhor que qualquer um aqui.",
+   "question": false
+  },
+  {
+   "n": 120,
+   "t0": 331.12,
+   "t1": 334.56,
+   "from": 1013,
+   "to": 1021,
+   "text": "Kev, você fica no escritório, tudo apagado, celular desligado.",
+   "question": false
+  },
+  {
+   "n": 121,
+   "t0": 334.8,
+   "t1": 337.2,
+   "from": 1022,
+   "to": 1031,
+   "text": "Se alguém bater, você não abre, nem se for eu.",
+   "question": false
+  },
+  {
+   "n": 122,
+   "t0": 337.56,
+   "t1": 339.18,
+   "from": 1032,
+   "to": 1039,
+   "text": "E como eu vou saber que é você?",
+   "question": true
+  },
+  {
+   "n": 123,
+   "t0": 339.6,
+   "t1": 341.22,
+   "from": 1040,
+   "to": 1046,
+   "text": "Se for eu, eu vou te xingar.",
+   "question": false
+  },
+  {
+   "n": 124,
+   "t0": 341.8,
+   "t1": 344.56,
+   "from": 1047,
+   "to": 1057,
+   "text": "Posso pelo menos postar um estoure dizendo que eu estou vivo.",
+   "question": false
+  },
+  {
+   "n": 125,
+   "t0": 344.9,
+   "t1": 345.28,
+   "from": 1058,
+   "to": 1058,
+   "text": "Kev.",
+   "question": false
+  },
+  {
+   "n": 126,
+   "t0": 345.48,
+   "t1": 346.82,
+   "from": 1059,
+   "to": 1063,
+   "text": "Tá tá, escuro, eu entendi.",
+   "question": false
+  },
+  {
+   "n": 127,
+   "t0": 347.34,
+   "t1": 352.18,
+   "from": 1064,
+   "to": 1079,
+   "text": "No estacionamento, cada carro tinha um farol aceso, uma luzinha de painel, um reflexo da lua.",
+   "question": false
+  },
+  {
+   "n": 128,
+   "t0": 352.48,
+   "t1": 354.36,
+   "from": 1080,
+   "to": 1086,
+   "text": "E em cada luz, uma sombra esperando.",
+   "question": false
+  },
+  {
+   "n": 129,
+   "t0": 354.98,
+   "t1": 358.54,
+   "from": 1087,
+   "to": 1095,
+   "text": "Elas vieram rastejando pelo asfalto, compridas finas rindo baixinho,",
+   "question": false
+  },
+  {
+   "n": 130,
+   "t0": 358.84,
+   "t1": 359.94,
+   "from": 1096,
+   "to": 1098,
+   "text": "3, 5, 8.",
+   "question": false
+  },
+  {
+   "n": 131,
+   "t0": 360.56,
+   "t1": 362.88,
+   "from": 1099,
+   "to": 1105,
+   "text": "Mari, entra na caminhonete, confia em mim.",
+   "question": false
+  },
+  {
+   "n": 132,
+   "t0": 363.28,
+   "t1": 369.38,
+   "from": 1106,
+   "to": 1126,
+   "text": "O seu Henk ligou os faróis da caminhonete e as sombras pularam em cima da gente, enormes com os braços abertos.",
+   "question": false
+  },
+  {
+   "n": 133,
+   "t0": 369.96,
+   "t1": 371.46,
+   "from": 1127,
+   "to": 1132,
+   "text": "No meio do pulo, ele desligou.",
+   "question": false
+  },
+  {
+   "n": 134,
+   "t0": 371.84,
+   "t1": 374.06,
+   "from": 1133,
+   "to": 1140,
+   "text": "Elas sumiram no ar como fumaça de vela.",
+   "question": false
+  },
+  {
+   "n": 135,
+   "t0": 374.44,
+   "t1": 376.56,
+   "from": 1141,
+   "to": 1144,
+   "text": "Liga, desliga, liga, desliga.",
+   "question": false
+  },
+  {
+   "n": 136,
+   "t0": 376.88,
+   "t1": 379.46,
+   "from": 1145,
+   "to": 1150,
+   "text": "65 anos esperando para fazer isso.",
+   "question": false
+  },
+  {
+   "n": 137,
+   "t0": 379.46,
+   "t1": 382.18,
+   "from": 1151,
+   "to": 1158,
+   "text": "Mas uma sombra entrou pela janela do motorista,",
+   "question": false
+  },
+  {
+   "n": 138,
+   "t0": 382.48,
+   "t1": 384.02,
+   "from": 1159,
+   "to": 1163,
+   "text": "enquanto o farol estava ligado.",
+   "question": false
+  },
+  {
+   "n": 139,
+   "t0": 384.52,
+   "t1": 389.86,
+   "from": 1164,
+   "to": 1183,
+   "text": "Pegou o seu Henk pelo pescoço e começou a puxar ele para fora, pela fresta, como quem puxa uma linha.",
+   "question": false
+  },
+  {
+   "n": 140,
+   "t0": 390.32,
+   "t1": 393.58,
+   "from": 1184,
+   "to": 1198,
+   "text": "Eu agarrei a chave de roda no chão da caminhonete e bati na mão dela.",
+   "question": false
+  },
+  {
+   "n": 141,
+   "t0": 394.12,
+   "t1": 396.36,
+   "from": 1199,
+   "to": 1207,
+   "text": "A chave atravessou a mão como se fosse água.",
+   "question": false
+  },
+  {
+   "n": 142,
+   "t0": 396.58,
+   "t1": 397.32,
+   "from": 1208,
+   "to": 1210,
+   "text": "Não adiantou nada.",
+   "question": false
+  },
+  {
+   "n": 143,
+   "t0": 397.72,
+   "t1": 400.02,
+   "from": 1211,
+   "to": 1218,
+   "text": "Então eu fiz a única coisa que funcionava.",
+   "question": false
+  },
+  {
+   "n": 144,
+   "t0": 400.44,
+   "t1": 402.24,
+   "from": 1219,
+   "to": 1226,
+   "text": "Arranquei o fio do farol com os dentes.",
+   "question": false
+  },
+  {
+   "n": 145,
+   "t0": 402.84,
+   "t1": 407.64,
+   "from": 1227,
+   "to": 1243,
+   "text": "Escuridão, o seu Henk caiu no banco, tossindo com a marca de cinco dedos pretos no pescoço.",
+   "question": false
+  },
+  {
+   "n": 146,
+   "t0": 407.64,
+   "t1": 409.96,
+   "from": 1244,
+   "to": 1252,
+   "text": "Eu estou bem, eu estou velho, mas estou bem?",
+   "question": true
+  },
+  {
+   "n": 147,
+   "t0": 410.14,
+   "t1": 410.34,
+   "from": 1253,
+   "to": 1253,
+   "text": "Vai.",
+   "question": false
+  },
+  {
+   "n": 148,
+   "t0": 410.98,
+   "t1": 414.98,
+   "from": 1254,
+   "to": 1265,
+   "text": "Eu corri os últimos 50 metros no escuro total, contando os passos.",
+   "question": false
+  },
+  {
+   "n": 149,
+   "t0": 415.34,
+   "t1": 418.02,
+   "from": 1266,
+   "to": 1275,
+   "text": "Abria a caixa do transformador e puxei a chave geral.",
+   "question": false
+  },
+  {
+   "n": 150,
+   "t0": 418.46,
+   "t1": 419.68,
+   "from": 1276,
+   "to": 1279,
+   "text": "O motel inteiro apagou,",
+   "question": false
+  },
+  {
+   "n": 151,
+   "t0": 420,
+   "t1": 422.1,
+   "from": 1280,
+   "to": 1288,
+   "text": "os quartos a piscina, a máquina de gelo tudo,",
+   "question": false
+  },
+  {
+   "n": 152,
+   "t0": 422.44,
+   "t1": 423.26,
+   "from": 1289,
+   "to": 1291,
+   "text": "menos uma coisa.",
+   "question": false
+  },
+  {
+   "n": 153,
+   "t0": 423.82,
+   "t1": 428.1,
+   "from": 1292,
+   "to": 1305,
+   "text": "O letreiro, a Lua de Neon continuava acesa, vermelha, pulsando que nem um coração.",
+   "question": false
+  },
+  {
+   "n": 154,
+   "t0": 428.88,
+   "t1": 433.82,
+   "from": 1306,
+   "to": 1322,
+   "text": "Lá no escritório o Kev estava sozinho no escuro e o celular dele vibrou mensagem do chat.",
+   "question": false
+  },
+  {
+   "n": 155,
+   "t0": 434.22,
+   "t1": 437.82,
+   "from": 1323,
+   "to": 1333,
+   "text": "A live ainda estava rolando em áudio, 300 mil pessoas ouvindo.",
+   "question": false
+  },
+  {
+   "n": 156,
+   "t0": 438.26,
+   "t1": 440.06,
+   "from": 1334,
+   "to": 1341,
+   "text": "Gente, eu não sei se vocês estão ouvindo.",
+   "question": false
+  },
+  {
+   "n": 157,
+   "t0": 440.38,
+   "t1": 443.7,
+   "from": 1342,
+   "to": 1355,
+   "text": "Eu sempre filmei tudo porque eu tinha medo de viver as coisas de verdade.",
+   "question": false
+  },
+  {
+   "n": 158,
+   "t0": 444.08,
+   "t1": 445.28,
+   "from": 1356,
+   "to": 1360,
+   "text": "Se eu filmasse, era conteúdo,",
+   "question": false
+  },
+  {
+   "n": 159,
+   "t0": 445.78,
+   "t1": 446.36,
+   "from": 1361,
+   "to": 1363,
+   "text": "não era real.",
+   "question": false
+  },
+  {
+   "n": 160,
+   "t0": 446.82,
+   "t1": 451.5,
+   "from": 1364,
+   "to": 1384,
+   "text": "Mas a Barbie era real, o Gary era real e a marita lá fora no escuro por causa da minha luz.",
+   "question": false
+  },
+  {
+   "n": 161,
+   "t0": 451.94,
+   "t1": 453.02,
+   "from": 1385,
+   "to": 1388,
+   "text": "Valeu por tudo, galera,",
+   "question": false
+  },
+  {
+   "n": 162,
+   "t0": 453.42,
+   "t1": 454.36,
+   "from": 1389,
+   "to": 1392,
+   "text": "eu vou desligar agora.",
+   "question": false
+  },
+  {
+   "n": 163,
+   "t0": 455,
+   "t1": 456.96,
+   "from": 1393,
+   "to": 1398,
+   "text": "E ele desligou, 300 mil pessoas,",
+   "question": false
+  },
+  {
+   "n": 164,
+   "t0": 457.24,
+   "t1": 457.84,
+   "from": 1399,
+   "to": 1400,
+   "text": "ele desligou.",
+   "question": false
+  },
+  {
+   "n": 165,
+   "t0": 458.34,
+   "t1": 459.92,
+   "from": 1401,
+   "to": 1405,
+   "text": "O letreiro tinha bateria própria.",
+   "question": false
+  },
+  {
+   "n": 166,
+   "t0": 460.4,
+   "t1": 465.36,
+   "from": 1406,
+   "to": 1424,
+   "text": "Eu sabia porque fui eu que paguei para desligar só subindo no poste e quebrando o tubo da Lua.",
+   "question": false
+  },
+  {
+   "n": 167,
+   "t0": 465.36,
+   "t1": 468.72,
+   "from": 1425,
+   "to": 1437,
+   "text": "Eu subi a escada de serviço com a chave de roda na boca,",
+   "question": false
+  },
+  {
+   "n": 168,
+   "t0": 469.14,
+   "t1": 469.8,
+   "from": 1438,
+   "to": 1439,
+   "text": "9 metros.",
+   "question": false
+  },
+  {
+   "n": 169,
+   "t0": 470.14,
+   "t1": 474.98,
+   "from": 1440,
+   "to": 1458,
+   "text": "O vento do deserto batendo na cara e quando eu cheguei na passarela, ele já estava lá me esperando.",
+   "question": false
+  },
+  {
+   "n": 170,
+   "t0": 475.62,
+   "t1": 476.26,
+   "from": 1459,
+   "to": 1460,
+   "text": "Oi, Mari,",
+   "question": false
+  },
+  {
+   "n": 171,
+   "t0": 476.58,
+   "t1": 478.34,
+   "from": 1461,
+   "to": 1466,
+   "text": "pode repetir olhando para a câmera.",
+   "question": false
+  },
+  {
+   "n": 172,
+   "t0": 479.04,
+   "t1": 482.72,
+   "from": 1467,
+   "to": 1480,
+   "text": "A sombra do Kev veio para cima com o mesmo jeito desengonçado do Kev.",
+   "question": false
+  },
+  {
+   "n": 173,
+   "t0": 482.98,
+   "t1": 483.84,
+   "from": 1481,
+   "to": 1483,
+   "text": "Só que rápida,",
+   "question": false
+  },
+  {
+   "n": 174,
+   "t0": 484.14,
+   "t1": 484.82,
+   "from": 1484,
+   "to": 1485,
+   "text": "muito rápida.",
+   "question": false
+  },
+  {
+   "n": 175,
+   "t0": 485.28,
+   "t1": 486.28,
+   "from": 1486,
+   "to": 1489,
+   "text": "Eu travei a guarda.",
+   "question": false
+  },
+  {
+   "n": 176,
+   "t0": 486.62,
+   "t1": 490.42,
+   "from": 1490,
+   "to": 1505,
+   "text": "O primeiro soco dela bateu no meu antebraço e eu senti o frio até o ombro.",
+   "question": false
+  },
+  {
+   "n": 177,
+   "t0": 490.76,
+   "t1": 492.56,
+   "from": 1506,
+   "to": 1510,
+   "text": "Respondi com jab, jab direto.",
+   "question": false
+  },
+  {
+   "n": 178,
+   "t0": 492.94,
+   "t1": 496.06,
+   "from": 1511,
+   "to": 1519,
+   "text": "Meus punhos atravessavam a fumaça preta e voltavam gelados.",
+   "question": false
+  },
+  {
+   "n": 179,
+   "t0": 496.5,
+   "t1": 499.64,
+   "from": 1520,
+   "to": 1531,
+   "text": "Ela me agarrou pela jaqueta e me pendurou para fora da grade,",
+   "question": false
+  },
+  {
+   "n": 180,
+   "t0": 499.98,
+   "t1": 500.64,
+   "from": 1532,
+   "to": 1533,
+   "text": "9 metros.",
+   "question": false
+  },
+  {
+   "n": 181,
+   "t0": 501.02,
+   "t1": 503.34,
+   "from": 1534,
+   "to": 1541,
+   "text": "Os meus pés balançando em cima do estacionamento.",
+   "question": false
+  },
+  {
+   "n": 182,
+   "t0": 504,
+   "t1": 504.98,
+   "from": 1542,
+   "to": 1543,
+   "text": "Deixou like.",
+   "question": false
+  },
+  {
+   "n": 183,
+   "t0": 505.58,
+   "t1": 508.36,
+   "from": 1544,
+   "to": 1554,
+   "text": "Vai menina, mostra para ela o que é um peso médio.",
+   "question": false
+  },
+  {
+   "n": 184,
+   "t0": 508.68,
+   "t1": 509.74,
+   "from": 1555,
+   "to": 1559,
+   "text": "Foi aí que eu entendi.",
+   "question": false
+  },
+  {
+   "n": 185,
+   "t0": 510.04,
+   "t1": 511.6,
+   "from": 1560,
+   "to": 1566,
+   "text": "Ela era feita da luz atrás dela.",
+   "question": false
+  },
+  {
+   "n": 186,
+   "t0": 511.9,
+   "t1": 514.46,
+   "from": 1567,
+   "to": 1577,
+   "text": "Se eu não conseguia bater nela, eu ia bater na luz.",
+   "question": false
+  },
+  {
+   "n": 187,
+   "t0": 515.04,
+   "t1": 520.02,
+   "from": 1578,
+   "to": 1598,
+   "text": "Eu enrolei as pernas na grade, girei o corpo e meti a chave de roda no tubo de Neon da Lua.",
+   "question": false
+  },
+  {
+   "n": 188,
+   "t0": 520.52,
+   "t1": 522.94,
+   "from": 1599,
+   "to": 1606,
+   "text": "O vidro explodiu numa chuva de faíscas vermelhas.",
+   "question": false
+  },
+  {
+   "n": 189,
+   "t0": 522.94,
+   "t1": 526.84,
+   "from": 1607,
+   "to": 1618,
+   "text": "A sombra gritou, um grito de 300 mil vozes ao mesmo tempo.",
+   "question": false
+  },
+  {
+   "n": 190,
+   "t0": 527.08,
+   "t1": 528.86,
+   "from": 1619,
+   "to": 1626,
+   "text": "Ela tentou me puxar junto para a queda,",
+   "question": false
+  },
+  {
+   "n": 191,
+   "t0": 529.24,
+   "t1": 531.52,
+   "from": 1627,
+   "to": 1636,
+   "text": "mas no escuro ela não tinha mão para me segurar.",
+   "question": false
+  },
+  {
+   "n": 192,
+   "t0": 531.9,
+   "t1": 534.24,
+   "from": 1637,
+   "to": 1643,
+   "text": "E pela primeira vez em 65 anos,",
+   "question": false
+  },
+  {
+   "n": 193,
+   "t0": 534.72,
+   "t1": 537.24,
+   "from": 1644,
+   "to": 1650,
+   "text": "o motel Lua Vermelha ficou completamente escuro.",
+   "question": false
+  },
+  {
+   "n": 194,
+   "t0": 538.08,
+   "t1": 539.38,
+   "from": 1651,
+   "to": 1656,
+   "text": "Lá em cima o eclipse acabou,",
+   "question": false
+  },
+  {
+   "n": 195,
+   "t0": 539.72,
+   "t1": 541.16,
+   "from": 1657,
+   "to": 1663,
+   "text": "a Lua voltou a ser branca, normal,",
+   "question": false
+  },
+  {
+   "n": 196,
+   "t0": 541.48,
+   "t1": 542.46,
+   "from": 1664,
+   "to": 1666,
+   "text": "sem graça, linda.",
+   "question": false
+  },
+  {
+   "n": 197,
+   "t0": 543,
+   "t1": 546.44,
+   "from": 1667,
+   "to": 1679,
+   "text": "Quando o sol nasceu, a gente estava sentado na beira da piscina vazia,",
+   "question": false
+  },
+  {
+   "n": 198,
+   "t0": 546.84,
+   "t1": 548.78,
+   "from": 1680,
+   "to": 1687,
+   "text": "o seu Henk com um curativo no pescoço,",
+   "question": false
+  },
+  {
+   "n": 199,
+   "t0": 549.18,
+   "t1": 551.22,
+   "from": 1688,
+   "to": 1695,
+   "text": "o Kev com o celular desligado no bolso.",
+   "question": false
+  },
+  {
+   "n": 200,
+   "t0": 551.22,
+   "t1": 553.84,
+   "from": 1696,
+   "to": 1701,
+   "text": "Garoto, você desligou a live mesmo?",
+   "question": true
+  },
+  {
+   "n": 201,
+   "t0": 554.52,
+   "t1": 555.04,
+   "from": 1702,
+   "to": 1702,
+   "text": "Desliguei.",
+   "question": false
+  },
+  {
+   "n": 202,
+   "t0": 555.24,
+   "t1": 557.28,
+   "from": 1703,
+   "to": 1706,
+   "text": "HMM, talvez você preste.",
+   "question": false
+  },
+  {
+   "n": 203,
+   "t0": 557.74,
+   "t1": 558.82,
+   "from": 1707,
+   "to": 1711,
+   "text": "Sabe o que é engraçado?",
+   "question": true
+  },
+  {
+   "n": 204,
+   "t0": 559.04,
+   "t1": 563.5,
+   "from": 1712,
+   "to": 1729,
+   "text": "Eu procurei disco voador a vida inteira, e o monstro era eu mesmo com uma lanterna na mão.",
+   "question": false
+  },
+  {
+   "n": 205,
+   "t0": 563.94,
+   "t1": 564.82,
+   "from": 1730,
+   "to": 1732,
+   "text": "Pari uma pergunta,",
+   "question": false
+  },
+  {
+   "n": 206,
+   "t0": 565.14,
+   "t1": 567.16,
+   "from": 1733,
+   "to": 1740,
+   "text": "o desconto de influenciador ainda está de pé.",
+   "question": false
+  },
+  {
+   "n": 207,
+   "t0": 567.44,
+   "t1": 569.14,
+   "from": 1741,
+   "to": 1747,
+   "text": "Você vai pagar o quarto 11 também,",
+   "question": false
+  },
+  {
+   "n": 208,
+   "t0": 569.6,
+   "t1": 571.32,
+   "from": 1748,
+   "to": 1754,
+   "text": "eu vou ter que pintar aquela parede.",
+   "question": false
+  },
+  {
+   "n": 209,
+   "t0": 571.82,
+   "t1": 574.8,
+   "from": 1755,
+   "to": 1763,
+   "text": "Na parede do quarto 11, agora tinha 13 sombras,",
+   "question": false
+  },
+  {
+   "n": 210,
+   "t0": 575.28,
+   "t1": 577.96,
+   "from": 1764,
+   "to": 1771,
+   "text": "uma delas de camisa combinando, segurando uma câmera.",
+   "question": false
+  },
+  {
+   "n": 211,
+   "t0": 578.54,
+   "t1": 582.68,
+   "from": 1772,
+   "to": 1787,
+   "text": "Eu fiquei olhando o sol subir em cima do deserto, e foi aí que eu reparei.",
+   "question": false
+  },
+  {
+   "n": 212,
+   "t0": 583.12,
+   "t1": 585.08,
+   "from": 1788,
+   "to": 1795,
+   "text": "Eu levantei a mão para proteger os olhos,",
+   "question": false
+  },
+  {
+   "n": 213,
+   "t0": 585.62,
+   "t1": 588.92,
+   "from": 1796,
+   "to": 1808,
+   "text": "e a minha sombra no chão demorou meio segundo para levantar a dela.",
+   "question": false
+  }
+ ],
+ "pauses": [
+  {
+   "t0": 4.06,
+   "t1": 4.38,
+   "dur": 0.32,
+   "after": 11
+  },
+  {
+   "t0": 6.48,
+   "t1": 6.84,
+   "dur": 0.36,
+   "after": 17
+  },
+  {
+   "t0": 13.12,
+   "t1": 13.44,
+   "dur": 0.32,
+   "after": 34
+  },
+  {
+   "t0": 17.16,
+   "t1": 17.8,
+   "dur": 0.64,
+   "after": 47
+  },
+  {
+   "t0": 19.48,
+   "t1": 19.78,
+   "dur": 0.3,
+   "after": 54
+  },
+  {
+   "t0": 20.66,
+   "t1": 21.18,
+   "dur": 0.52,
+   "after": 58
+  },
+  {
+   "t0": 23.04,
+   "t1": 23.46,
+   "dur": 0.42,
+   "after": 65
+  },
+  {
+   "t0": 25.1,
+   "t1": 25.94,
+   "dur": 0.84,
+   "after": 72
+  },
+  {
+   "t0": 27.16,
+   "t1": 27.54,
+   "dur": 0.38,
+   "after": 77
+  },
+  {
+   "t0": 33.92,
+   "t1": 34.24,
+   "dur": 0.32,
+   "after": 93
+  },
+  {
+   "t0": 35.34,
+   "t1": 35.86,
+   "dur": 0.52,
+   "after": 99
+  },
+  {
+   "t0": 38.62,
+   "t1": 38.9,
+   "dur": 0.28,
+   "after": 106
+  },
+  {
+   "t0": 42.12,
+   "t1": 42.52,
+   "dur": 0.4,
+   "after": 116
+  },
+  {
+   "t0": 44.06,
+   "t1": 44.5,
+   "dur": 0.44,
+   "after": 122
+  },
+  {
+   "t0": 45.76,
+   "t1": 46.36,
+   "dur": 0.6,
+   "after": 128
+  },
+  {
+   "t0": 47.22,
+   "t1": 47.58,
+   "dur": 0.36,
+   "after": 130
+  },
+  {
+   "t0": 51.62,
+   "t1": 51.94,
+   "dur": 0.32,
+   "after": 142
+  },
+  {
+   "t0": 57.34,
+   "t1": 57.88,
+   "dur": 0.54,
+   "after": 161
+  },
+  {
+   "t0": 58.84,
+   "t1": 59.18,
+   "dur": 0.34,
+   "after": 165
+  },
+  {
+   "t0": 59.98,
+   "t1": 60.28,
+   "dur": 0.3,
+   "after": 169
+  },
+  {
+   "t0": 61.84,
+   "t1": 62.22,
+   "dur": 0.38,
+   "after": 175
+  },
+  {
+   "t0": 63.88,
+   "t1": 64.32,
+   "dur": 0.44,
+   "after": 181
+  },
+  {
+   "t0": 68.7,
+   "t1": 68.98,
+   "dur": 0.28,
+   "after": 197
+  },
+  {
+   "t0": 71.74,
+   "t1": 72.04,
+   "dur": 0.3,
+   "after": 207
+  },
+  {
+   "t0": 78.3,
+   "t1": 78.86,
+   "dur": 0.56,
+   "after": 227
+  },
+  {
+   "t0": 80.52,
+   "t1": 80.96,
+   "dur": 0.44,
+   "after": 232
+  },
+  {
+   "t0": 84.84,
+   "t1": 85.26,
+   "dur": 0.42,
+   "after": 245
+  },
+  {
+   "t0": 89.1,
+   "t1": 89.38,
+   "dur": 0.28,
+   "after": 257
+  },
+  {
+   "t0": 93.36,
+   "t1": 93.72,
+   "dur": 0.36,
+   "after": 271
+  },
+  {
+   "t0": 99.3,
+   "t1": 99.68,
+   "dur": 0.38,
+   "after": 289
+  },
+  {
+   "t0": 101.26,
+   "t1": 101.6,
+   "dur": 0.34,
+   "after": 294
+  },
+  {
+   "t0": 106.9,
+   "t1": 107.24,
+   "dur": 0.34,
+   "after": 316
+  },
+  {
+   "t0": 108.32,
+   "t1": 108.62,
+   "dur": 0.3,
+   "after": 320
+  },
+  {
+   "t0": 110.48,
+   "t1": 111.12,
+   "dur": 0.64,
+   "after": 327
+  },
+  {
+   "t0": 112.58,
+   "t1": 112.88,
+   "dur": 0.3,
+   "after": 334
+  },
+  {
+   "t0": 116.08,
+   "t1": 116.5,
+   "dur": 0.42,
+   "after": 348
+  },
+  {
+   "t0": 118.68,
+   "t1": 119.16,
+   "dur": 0.48,
+   "after": 353
+  },
+  {
+   "t0": 121,
+   "t1": 121.28,
+   "dur": 0.28,
+   "after": 359
+  },
+  {
+   "t0": 124.64,
+   "t1": 124.94,
+   "dur": 0.3,
+   "after": 371
+  },
+  {
+   "t0": 128.02,
+   "t1": 128.34,
+   "dur": 0.32,
+   "after": 382
+  },
+  {
+   "t0": 130.04,
+   "t1": 130.52,
+   "dur": 0.48,
+   "after": 386
+  },
+  {
+   "t0": 131.44,
+   "t1": 131.98,
+   "dur": 0.54,
+   "after": 390
+  },
+  {
+   "t0": 135.86,
+   "t1": 136.24,
+   "dur": 0.38,
+   "after": 401
+  },
+  {
+   "t0": 138.3,
+   "t1": 138.6,
+   "dur": 0.3,
+   "after": 408
+  },
+  {
+   "t0": 144.9,
+   "t1": 145.5,
+   "dur": 0.6,
+   "after": 427
+  },
+  {
+   "t0": 146.18,
+   "t1": 146.48,
+   "dur": 0.3,
+   "after": 429
+  },
+  {
+   "t0": 148.5,
+   "t1": 148.94,
+   "dur": 0.44,
+   "after": 438
+  },
+  {
+   "t0": 152.84,
+   "t1": 153.32,
+   "dur": 0.48,
+   "after": 452
+  },
+  {
+   "t0": 155.6,
+   "t1": 156.28,
+   "dur": 0.68,
+   "after": 461
+  },
+  {
+   "t0": 157.62,
+   "t1": 157.9,
+   "dur": 0.28,
+   "after": 467
+  },
+  {
+   "t0": 158.22,
+   "t1": 158.62,
+   "dur": 0.4,
+   "after": 468
+  },
+  {
+   "t0": 167.02,
+   "t1": 167.5,
+   "dur": 0.48,
+   "after": 499
+  },
+  {
+   "t0": 169.12,
+   "t1": 169.44,
+   "dur": 0.32,
+   "after": 505
+  },
+  {
+   "t0": 173.3,
+   "t1": 173.84,
+   "dur": 0.54,
+   "after": 522
+  },
+  {
+   "t0": 178.24,
+   "t1": 178.9,
+   "dur": 0.66,
+   "after": 538
+  },
+  {
+   "t0": 180.4,
+   "t1": 180.9,
+   "dur": 0.5,
+   "after": 541
+  },
+  {
+   "t0": 182.48,
+   "t1": 182.82,
+   "dur": 0.34,
+   "after": 547
+  },
+  {
+   "t0": 187.1,
+   "t1": 187.54,
+   "dur": 0.44,
+   "after": 563
+  },
+  {
+   "t0": 189.6,
+   "t1": 190,
+   "dur": 0.4,
+   "after": 569
+  },
+  {
+   "t0": 193.9,
+   "t1": 194.3,
+   "dur": 0.4,
+   "after": 584
+  },
+  {
+   "t0": 196.2,
+   "t1": 196.64,
+   "dur": 0.44,
+   "after": 591
+  },
+  {
+   "t0": 199.62,
+   "t1": 199.94,
+   "dur": 0.32,
+   "after": 603
+  },
+  {
+   "t0": 201.88,
+   "t1": 202.28,
+   "dur": 0.4,
+   "after": 611
+  },
+  {
+   "t0": 204.4,
+   "t1": 204.82,
+   "dur": 0.42,
+   "after": 620
+  },
+  {
+   "t0": 207.7,
+   "t1": 208.08,
+   "dur": 0.38,
+   "after": 632
+  },
+  {
+   "t0": 211.66,
+   "t1": 211.94,
+   "dur": 0.28,
+   "after": 645
+  },
+  {
+   "t0": 218.02,
+   "t1": 218.3,
+   "dur": 0.28,
+   "after": 665
+  },
+  {
+   "t0": 220.34,
+   "t1": 220.78,
+   "dur": 0.44,
+   "after": 672
+  },
+  {
+   "t0": 221.96,
+   "t1": 222.28,
+   "dur": 0.32,
+   "after": 676
+  },
+  {
+   "t0": 224.5,
+   "t1": 224.94,
+   "dur": 0.44,
+   "after": 684
+  },
+  {
+   "t0": 227.16,
+   "t1": 227.62,
+   "dur": 0.46,
+   "after": 693
+  },
+  {
+   "t0": 233.48,
+   "t1": 233.82,
+   "dur": 0.34,
+   "after": 716
+  },
+  {
+   "t0": 234,
+   "t1": 234.4,
+   "dur": 0.4,
+   "after": 717
+  },
+  {
+   "t0": 234.62,
+   "t1": 234.92,
+   "dur": 0.3,
+   "after": 718
+  },
+  {
+   "t0": 235.4,
+   "t1": 235.72,
+   "dur": 0.32,
+   "after": 720
+  },
+  {
+   "t0": 238.94,
+   "t1": 239.38,
+   "dur": 0.44,
+   "after": 729
+  },
+  {
+   "t0": 240.4,
+   "t1": 241.28,
+   "dur": 0.88,
+   "after": 731
+  },
+  {
+   "t0": 243.16,
+   "t1": 243.6,
+   "dur": 0.44,
+   "after": 736
+  },
+  {
+   "t0": 247.42,
+   "t1": 247.74,
+   "dur": 0.32,
+   "after": 753
+  },
+  {
+   "t0": 248.24,
+   "t1": 248.52,
+   "dur": 0.28,
+   "after": 755
+  },
+  {
+   "t0": 250.64,
+   "t1": 251.06,
+   "dur": 0.42,
+   "after": 763
+  },
+  {
+   "t0": 251.58,
+   "t1": 252.08,
+   "dur": 0.5,
+   "after": 765
+  },
+  {
+   "t0": 252.78,
+   "t1": 253.06,
+   "dur": 0.28,
+   "after": 767
+  },
+  {
+   "t0": 254.16,
+   "t1": 254.5,
+   "dur": 0.34,
+   "after": 772
+  },
+  {
+   "t0": 256.38,
+   "t1": 256.7,
+   "dur": 0.32,
+   "after": 778
+  },
+  {
+   "t0": 258.2,
+   "t1": 258.5,
+   "dur": 0.3,
+   "after": 784
+  },
+  {
+   "t0": 260.02,
+   "t1": 260.44,
+   "dur": 0.42,
+   "after": 790
+  },
+  {
+   "t0": 262.16,
+   "t1": 262.74,
+   "dur": 0.58,
+   "after": 797
+  },
+  {
+   "t0": 266.8,
+   "t1": 267.1,
+   "dur": 0.3,
+   "after": 811
+  },
+  {
+   "t0": 270.34,
+   "t1": 270.62,
+   "dur": 0.28,
+   "after": 824
+  },
+  {
+   "t0": 271.44,
+   "t1": 271.76,
+   "dur": 0.32,
+   "after": 828
+  },
+  {
+   "t0": 272.7,
+   "t1": 273.16,
+   "dur": 0.46,
+   "after": 832
+  },
+  {
+   "t0": 275.38,
+   "t1": 275.8,
+   "dur": 0.42,
+   "after": 840
+  },
+  {
+   "t0": 280.58,
+   "t1": 281,
+   "dur": 0.42,
+   "after": 857
+  },
+  {
+   "t0": 281.76,
+   "t1": 282.18,
+   "dur": 0.42,
+   "after": 861
+  },
+  {
+   "t0": 283.88,
+   "t1": 284.44,
+   "dur": 0.56,
+   "after": 866
+  },
+  {
+   "t0": 288.8,
+   "t1": 289.24,
+   "dur": 0.44,
+   "after": 880
+  },
+  {
+   "t0": 291.48,
+   "t1": 291.82,
+   "dur": 0.34,
+   "after": 889
+  },
+  {
+   "t0": 294.44,
+   "t1": 295,
+   "dur": 0.56,
+   "after": 899
+  },
+  {
+   "t0": 297.08,
+   "t1": 297.58,
+   "dur": 0.5,
+   "after": 905
+  },
+  {
+   "t0": 302.98,
+   "t1": 303.36,
+   "dur": 0.38,
+   "after": 924
+  },
+  {
+   "t0": 308.24,
+   "t1": 308.8,
+   "dur": 0.56,
+   "after": 941
+  },
+  {
+   "t0": 310.34,
+   "t1": 310.64,
+   "dur": 0.3,
+   "after": 948
+  },
+  {
+   "t0": 311.58,
+   "t1": 312.1,
+   "dur": 0.52,
+   "after": 952
+  },
+  {
+   "t0": 314.22,
+   "t1": 314.94,
+   "dur": 0.72,
+   "after": 961
+  },
+  {
+   "t0": 317.06,
+   "t1": 317.6,
+   "dur": 0.54,
+   "after": 970
+  },
+  {
+   "t0": 322.02,
+   "t1": 322.46,
+   "dur": 0.44,
+   "after": 986
+  },
+  {
+   "t0": 326.42,
+   "t1": 326.72,
+   "dur": 0.3,
+   "after": 998
+  },
+  {
+   "t0": 330.76,
+   "t1": 331.12,
+   "dur": 0.36,
+   "after": 1012
+  },
+  {
+   "t0": 337.2,
+   "t1": 337.56,
+   "dur": 0.36,
+   "after": 1031
+  },
+  {
+   "t0": 339.18,
+   "t1": 339.6,
+   "dur": 0.42,
+   "after": 1039
+  },
+  {
+   "t0": 341.22,
+   "t1": 341.8,
+   "dur": 0.58,
+   "after": 1046
+  },
+  {
+   "t0": 344.56,
+   "t1": 344.9,
+   "dur": 0.34,
+   "after": 1057
+  },
+  {
+   "t0": 346.82,
+   "t1": 347.34,
+   "dur": 0.52,
+   "after": 1063
+  },
+  {
+   "t0": 352.18,
+   "t1": 352.48,
+   "dur": 0.3,
+   "after": 1079
+  },
+  {
+   "t0": 354.36,
+   "t1": 354.98,
+   "dur": 0.62,
+   "after": 1086
+  },
+  {
+   "t0": 358.54,
+   "t1": 358.84,
+   "dur": 0.3,
+   "after": 1095
+  },
+  {
+   "t0": 359.94,
+   "t1": 360.56,
+   "dur": 0.62,
+   "after": 1098
+  },
+  {
+   "t0": 362.88,
+   "t1": 363.28,
+   "dur": 0.4,
+   "after": 1105
+  },
+  {
+   "t0": 369.38,
+   "t1": 369.96,
+   "dur": 0.58,
+   "after": 1126
+  },
+  {
+   "t0": 371.46,
+   "t1": 371.84,
+   "dur": 0.38,
+   "after": 1132
+  },
+  {
+   "t0": 374.06,
+   "t1": 374.44,
+   "dur": 0.38,
+   "after": 1140
+  },
+  {
+   "t0": 376.56,
+   "t1": 376.88,
+   "dur": 0.32,
+   "after": 1144
+  },
+  {
+   "t0": 382.18,
+   "t1": 382.48,
+   "dur": 0.3,
+   "after": 1158
+  },
+  {
+   "t0": 384.02,
+   "t1": 384.52,
+   "dur": 0.5,
+   "after": 1163
+  },
+  {
+   "t0": 389.86,
+   "t1": 390.32,
+   "dur": 0.46,
+   "after": 1183
+  },
+  {
+   "t0": 393.58,
+   "t1": 394.12,
+   "dur": 0.54,
+   "after": 1198
+  },
+  {
+   "t0": 397.32,
+   "t1": 397.72,
+   "dur": 0.4,
+   "after": 1210
+  },
+  {
+   "t0": 400.02,
+   "t1": 400.44,
+   "dur": 0.42,
+   "after": 1218
+  },
+  {
+   "t0": 402.24,
+   "t1": 402.84,
+   "dur": 0.6,
+   "after": 1226
+  },
+  {
+   "t0": 410.34,
+   "t1": 410.98,
+   "dur": 0.64,
+   "after": 1253
+  },
+  {
+   "t0": 414.98,
+   "t1": 415.34,
+   "dur": 0.36,
+   "after": 1265
+  },
+  {
+   "t0": 418.02,
+   "t1": 418.46,
+   "dur": 0.44,
+   "after": 1275
+  },
+  {
+   "t0": 419.68,
+   "t1": 420,
+   "dur": 0.32,
+   "after": 1279
+  },
+  {
+   "t0": 422.1,
+   "t1": 422.44,
+   "dur": 0.34,
+   "after": 1288
+  },
+  {
+   "t0": 423.26,
+   "t1": 423.82,
+   "dur": 0.56,
+   "after": 1291
+  },
+  {
+   "t0": 428.1,
+   "t1": 428.88,
+   "dur": 0.78,
+   "after": 1305
+  },
+  {
+   "t0": 433.82,
+   "t1": 434.22,
+   "dur": 0.4,
+   "after": 1322
+  },
+  {
+   "t0": 437.82,
+   "t1": 438.26,
+   "dur": 0.44,
+   "after": 1333
+  },
+  {
+   "t0": 440.06,
+   "t1": 440.38,
+   "dur": 0.32,
+   "after": 1341
+  },
+  {
+   "t0": 443.7,
+   "t1": 444.08,
+   "dur": 0.38,
+   "after": 1355
+  },
+  {
+   "t0": 445.28,
+   "t1": 445.78,
+   "dur": 0.5,
+   "after": 1360
+  },
+  {
+   "t0": 446.36,
+   "t1": 446.82,
+   "dur": 0.46,
+   "after": 1363
+  },
+  {
+   "t0": 451.5,
+   "t1": 451.94,
+   "dur": 0.44,
+   "after": 1384
+  },
+  {
+   "t0": 453.02,
+   "t1": 453.42,
+   "dur": 0.4,
+   "after": 1388
+  },
+  {
+   "t0": 454.36,
+   "t1": 455,
+   "dur": 0.64,
+   "after": 1392
+  },
+  {
+   "t0": 456.96,
+   "t1": 457.24,
+   "dur": 0.28,
+   "after": 1398
+  },
+  {
+   "t0": 457.84,
+   "t1": 458.34,
+   "dur": 0.5,
+   "after": 1400
+  },
+  {
+   "t0": 459.92,
+   "t1": 460.4,
+   "dur": 0.48,
+   "after": 1405
+  },
+  {
+   "t0": 468.72,
+   "t1": 469.14,
+   "dur": 0.42,
+   "after": 1437
+  },
+  {
+   "t0": 469.8,
+   "t1": 470.14,
+   "dur": 0.34,
+   "after": 1439
+  },
+  {
+   "t0": 474.98,
+   "t1": 475.62,
+   "dur": 0.64,
+   "after": 1458
+  },
+  {
+   "t0": 476.26,
+   "t1": 476.58,
+   "dur": 0.32,
+   "after": 1460
+  },
+  {
+   "t0": 478.34,
+   "t1": 479.04,
+   "dur": 0.7,
+   "after": 1466
+  },
+  {
+   "t0": 483.84,
+   "t1": 484.14,
+   "dur": 0.3,
+   "after": 1483
+  },
+  {
+   "t0": 484.82,
+   "t1": 485.28,
+   "dur": 0.46,
+   "after": 1485
+  },
+  {
+   "t0": 486.28,
+   "t1": 486.62,
+   "dur": 0.34,
+   "after": 1489
+  },
+  {
+   "t0": 490.42,
+   "t1": 490.76,
+   "dur": 0.34,
+   "after": 1505
+  },
+  {
+   "t0": 492.56,
+   "t1": 492.94,
+   "dur": 0.38,
+   "after": 1510
+  },
+  {
+   "t0": 496.06,
+   "t1": 496.5,
+   "dur": 0.44,
+   "after": 1519
+  },
+  {
+   "t0": 499.64,
+   "t1": 499.98,
+   "dur": 0.34,
+   "after": 1531
+  },
+  {
+   "t0": 500.64,
+   "t1": 501.02,
+   "dur": 0.38,
+   "after": 1533
+  },
+  {
+   "t0": 503.34,
+   "t1": 504,
+   "dur": 0.66,
+   "after": 1541
+  },
+  {
+   "t0": 504.98,
+   "t1": 505.58,
+   "dur": 0.6,
+   "after": 1543
+  },
+  {
+   "t0": 508.36,
+   "t1": 508.68,
+   "dur": 0.32,
+   "after": 1554
+  },
+  {
+   "t0": 509.74,
+   "t1": 510.04,
+   "dur": 0.3,
+   "after": 1559
+  },
+  {
+   "t0": 511.6,
+   "t1": 511.9,
+   "dur": 0.3,
+   "after": 1566
+  },
+  {
+   "t0": 514.46,
+   "t1": 515.04,
+   "dur": 0.58,
+   "after": 1577
+  },
+  {
+   "t0": 520.02,
+   "t1": 520.52,
+   "dur": 0.5,
+   "after": 1598
+  },
+  {
+   "t0": 528.86,
+   "t1": 529.24,
+   "dur": 0.38,
+   "after": 1626
+  },
+  {
+   "t0": 531.52,
+   "t1": 531.9,
+   "dur": 0.38,
+   "after": 1636
+  },
+  {
+   "t0": 534.24,
+   "t1": 534.72,
+   "dur": 0.48,
+   "after": 1643
+  },
+  {
+   "t0": 537.24,
+   "t1": 538.08,
+   "dur": 0.84,
+   "after": 1650
+  },
+  {
+   "t0": 539.38,
+   "t1": 539.72,
+   "dur": 0.34,
+   "after": 1656
+  },
+  {
+   "t0": 541.16,
+   "t1": 541.48,
+   "dur": 0.32,
+   "after": 1663
+  },
+  {
+   "t0": 542.46,
+   "t1": 543,
+   "dur": 0.54,
+   "after": 1666
+  },
+  {
+   "t0": 546.44,
+   "t1": 546.84,
+   "dur": 0.4,
+   "after": 1679
+  },
+  {
+   "t0": 548.78,
+   "t1": 549.18,
+   "dur": 0.4,
+   "after": 1687
+  },
+  {
+   "t0": 553.84,
+   "t1": 554.52,
+   "dur": 0.68,
+   "after": 1701
+  },
+  {
+   "t0": 557.28,
+   "t1": 557.74,
+   "dur": 0.46,
+   "after": 1706
+  },
+  {
+   "t0": 563.5,
+   "t1": 563.94,
+   "dur": 0.44,
+   "after": 1729
+  },
+  {
+   "t0": 564.82,
+   "t1": 565.14,
+   "dur": 0.32,
+   "after": 1732
+  },
+  {
+   "t0": 567.16,
+   "t1": 567.44,
+   "dur": 0.28,
+   "after": 1740
+  },
+  {
+   "t0": 569.14,
+   "t1": 569.6,
+   "dur": 0.46,
+   "after": 1747
+  },
+  {
+   "t0": 571.32,
+   "t1": 571.82,
+   "dur": 0.5,
+   "after": 1754
+  },
+  {
+   "t0": 574.8,
+   "t1": 575.28,
+   "dur": 0.48,
+   "after": 1763
+  },
+  {
+   "t0": 577.96,
+   "t1": 578.54,
+   "dur": 0.58,
+   "after": 1771
+  },
+  {
+   "t0": 582.68,
+   "t1": 583.12,
+   "dur": 0.44,
+   "after": 1787
+  },
+  {
+   "t0": 585.08,
+   "t1": 585.62,
+   "dur": 0.54,
+   "after": 1795
+  }
+ ],
+ "numbers": [
+  {
+   "i": 1,
+   "w": "mil",
+   "t0": 0.9
+  },
+  {
+   "i": 63,
+   "w": "cinco",
+   "t0": 22.16
+  },
+  {
+   "i": 91,
+   "w": "setenta",
+   "t0": 33.18
+  },
+  {
+   "i": 93,
+   "w": "cinco,",
+   "t0": 33.62
+  },
+  {
+   "i": 252,
+   "w": "300",
+   "t0": 86.94
+  },
+  {
+   "i": 253,
+   "w": "mil",
+   "t0": 87.2
+  },
+  {
+   "i": 282,
+   "w": "dos",
+   "t0": 96.36
+  },
+  {
+   "i": 347,
+   "w": "12",
+   "t0": 115.52
+  },
+  {
+   "i": 429,
+   "w": "11h40,",
+   "t0": 145.68
+  },
+  {
+   "i": 681,
+   "w": "80",
+   "t0": 223.02
+  },
+  {
+   "i": 682,
+   "w": "mil",
+   "t0": 223.32
+  },
+  {
+   "i": 691,
+   "w": "dos",
+   "t0": 226.28
+  },
+  {
+   "i": 767,
+   "w": "61,",
+   "t0": 252.24
+  },
+  {
+   "i": 857,
+   "w": "61.",
+   "t0": 280.08
+  },
+  {
+   "i": 924,
+   "w": "4,",
+   "t0": 302.58
+  },
+  {
+   "i": 983,
+   "w": "100",
+   "t0": 320.78
+  },
+  {
+   "i": 1096,
+   "w": "3,",
+   "t0": 358.84
+  },
+  {
+   "i": 1097,
+   "w": "5,",
+   "t0": 359.22
+  },
+  {
+   "i": 1098,
+   "w": "8.",
+   "t0": 359.64
+  },
+  {
+   "i": 1145,
+   "w": "65",
+   "t0": 376.88
+  },
+  {
+   "i": 1239,
+   "w": "cinco",
+   "t0": 406.02
+  },
+  {
+   "i": 1258,
+   "w": "50",
+   "t0": 411.92
+  },
+  {
+   "i": 1330,
+   "w": "300",
+   "t0": 436.06
+  },
+  {
+   "i": 1331,
+   "w": "mil",
+   "t0": 436.56
+  },
+  {
+   "i": 1396,
+   "w": "300",
+   "t0": 456
+  },
+  {
+   "i": 1397,
+   "w": "mil",
+   "t0": 456.24
+  },
+  {
+   "i": 1438,
+   "w": "9",
+   "t0": 469.14
+  },
+  {
+   "i": 1532,
+   "w": "9",
+   "t0": 499.98
+  },
+  {
+   "i": 1613,
+   "w": "300",
+   "t0": 525.04
+  },
+  {
+   "i": 1614,
+   "w": "mil",
+   "t0": 525.3
+  },
+  {
+   "i": 1642,
+   "w": "65",
+   "t0": 533.2
+  },
+  {
+   "i": 1746,
+   "w": "11",
+   "t0": 568.42
+  },
+  {
+   "i": 1759,
+   "w": "11,",
+   "t0": 572.72
+  },
+  {
+   "i": 1762,
+   "w": "13",
+   "t0": 573.92
+  }
+ ],
+ "words": 1809
+}

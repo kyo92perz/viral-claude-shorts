@@ -1,0 +1,1436 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 20,
+ "format": "16:9",
+ "renderScale": 0.5,
+ "notes": "Motel Lua Vermelha: vídeo longo de terror (16:9). Personagens originais.",
+ "music": {
+  "bpm": 78,
+  "key": "D"
+ },
+ "scenes": [
+  {
+   "id": "p01",
+   "type": "object",
+   "label": "MOTEL LUA VERMELHA",
+   "title": "1961. A última lua de sangue.",
+   "highlight": "sangue",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 0,
+   "t1": 6.02
+  },
+  {
+   "id": "p02",
+   "from": 17,
+   "type": "object",
+   "label": "A LENDA",
+   "title": "Onze sombras pintadas na parede",
+   "highlight": "sombras",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "st",
+     "at": 28,
+     "sfx": "sting",
+     "t": 10.7
+    }
+   ],
+   "t0": 6.02,
+   "t1": 16.92
+  },
+  {
+   "id": "p03",
+   "from": 47,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Eu tinha oito anos",
+   "highlight": "anos",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 16.92,
+   "t1": 25.69
+  },
+  {
+   "id": "a01",
+   "from": 73,
+   "type": "object",
+   "label": "A GERENTE",
+   "title": "Mari Delgado: gerente de tudo",
+   "highlight": "Mari",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 25.69,
+   "t1": 35.04
+  },
+  {
+   "id": "a02",
+   "from": 98,
+   "type": "object",
+   "label": "ROTA 375, NEVADA",
+   "title": "Rodovia Extraterrestre",
+   "highlight": "Rodovia",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 35.04,
+   "t1": 45.44
+  },
+  {
+   "id": "a03",
+   "from": 127,
+   "type": "object",
+   "label": "PESO MÉDIO",
+   "title": "Catorze vitórias, um nariz quebrado",
+   "highlight": "vitórias",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 45.44,
+   "t1": 57.63
+  },
+  {
+   "id": "a04",
+   "from": 162,
+   "type": "object",
+   "label": "SOFIA",
+   "title": "A Sofia me ligou",
+   "highlight": "Sofia",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 57.63,
+   "t1": 66.32
+  },
+  {
+   "id": "a05",
+   "from": 190,
+   "type": "object",
+   "label": "SOFIA",
+   "title": "Tranca a porta. É lua de sangue.",
+   "highlight": "porta",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 66.32,
+   "t1": 74.9
+  },
+  {
+   "id": "a06",
+   "from": 217,
+   "type": "object",
+   "label": "SOFIA",
+   "title": "Eu tranco a porta mesmo assim",
+   "highlight": "tranco",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 74.9,
+   "t1": 78.61
+  },
+  {
+   "id": "a07",
+   "from": 228,
+   "type": "object",
+   "label": "23:02",
+   "title": "O primeiro problema chegou",
+   "highlight": "problema",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 78.61,
+   "t1": 84.4
+  },
+  {
+   "id": "a08",
+   "from": 244,
+   "type": "object",
+   "label": "KEVEXPLORA",
+   "title": "Trezentos mil inscritos",
+   "highlight": "inscritos",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 84.4,
+   "t1": 92.56
+  },
+  {
+   "id": "a09",
+   "from": 269,
+   "type": "object",
+   "label": "O QUARTO 11",
+   "title": "Eu quero o quarto onze",
+   "highlight": "quarto",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 92.56,
+   "t1": 98.76
+  },
+  {
+   "id": "a10",
+   "from": 289,
+   "type": "object",
+   "label": "MARI",
+   "title": "Preço cheio. E sem surra ao vivo.",
+   "highlight": "surra",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 98.76,
+   "t1": 106.56
+  },
+  {
+   "id": "a11",
+   "from": 315,
+   "type": "object",
+   "label": "KEV",
+   "title": "Pode repetir olhando pra câmera?",
+   "highlight": "câmera",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 106.56,
+   "t1": 110.22
+  },
+  {
+   "id": "a12",
+   "from": 327,
+   "type": "object",
+   "label": "QUARTO 9",
+   "title": "Seu Hank, rabugento profissional",
+   "highlight": "rabugento",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 110.22,
+   "t1": 118.91
+  },
+  {
+   "id": "a13",
+   "from": 354,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Tranca a porta, apaga tudo e reza",
+   "highlight": "reza",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 118.91,
+   "t1": 127.54
+  },
+  {
+   "id": "a14",
+   "from": 380,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Então reza mais alto",
+   "highlight": "alto",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 127.54,
+   "t1": 130.27
+  },
+  {
+   "id": "a15",
+   "from": 387,
+   "type": "object",
+   "label": "OS HENDERSON",
+   "title": "Barb e Gary, aposentados de Ohio",
+   "highlight": "aposentados",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 130.27,
+   "t1": 137.78
+  },
+  {
+   "id": "a16",
+   "from": 407,
+   "type": "object",
+   "label": "23:38",
+   "title": "Sorria. Sorria. Sorria.",
+   "highlight": "Sorria",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 137.78,
+   "t1": 145.25
+  },
+  {
+   "id": "a17",
+   "from": 428,
+   "type": "object",
+   "label": "23:40 · O ECLIPSE",
+   "title": "A sombra da Terra comeu a lua",
+   "highlight": "lua",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "buzz",
+     "at": 458,
+     "sfx": "buzz",
+     "t": 154.26
+    }
+   ],
+   "t0": 145.25,
+   "t1": 156.03
+  },
+  {
+   "id": "b01",
+   "from": 462,
+   "type": "object",
+   "label": "A PRIMEIRA SOMBRA",
+   "title": "O Kev viu primeiro",
+   "highlight": "primeiro",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 156.03,
+   "t1": 162.76
+  },
+  {
+   "id": "b02",
+   "from": 484,
+   "type": "object",
+   "label": "KEV",
+   "title": "O Gary tá parado. A sombra não tá.",
+   "highlight": "parado",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 162.76,
+   "t1": 166.66
+  },
+  {
+   "id": "b03",
+   "from": 498,
+   "type": "object",
+   "label": "A SOMBRA",
+   "title": "Ela estava acenando",
+   "highlight": "acenando",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 166.66,
+   "t1": 173.04
+  },
+  {
+   "id": "b04",
+   "from": 521,
+   "type": "object",
+   "label": "A SOMBRA",
+   "title": "E entrou nele pela boca",
+   "highlight": "boca",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "in",
+     "at": 535,
+     "sfx": "sting",
+     "t": 177.12
+    }
+   ],
+   "t0": 173.04,
+   "t1": 179.84
+  },
+  {
+   "id": "b05",
+   "from": 541,
+   "type": "object",
+   "label": "GARY",
+   "title": "Os olhos ficaram brancos",
+   "highlight": "olhos",
+   "mood": "dark",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 179.84,
+   "t1": 186.64
+  },
+  {
+   "id": "b06",
+   "from": 562,
+   "type": "object",
+   "label": "BARB",
+   "title": "Que brincadeira é essa?",
+   "highlight": "brincadeira",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 186.64,
+   "t1": 189.75
+  },
+  {
+   "id": "b07",
+   "from": 570,
+   "type": "object",
+   "label": "A PRIMEIRA LUTA",
+   "title": "Bateu a cabeça dela no gelo",
+   "highlight": "cabeça",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "bang",
+     "at": 577,
+     "sfx": "impact",
+     "t": 191.78
+    }
+   ],
+   "t0": 189.75,
+   "t1": 196.39
+  },
+  {
+   "id": "b08",
+   "from": 592,
+   "type": "object",
+   "label": "A PRIMEIRA LUTA",
+   "title": "Jab. Direto. Ele nem piscou.",
+   "highlight": "piscou",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "jab",
+     "at": 593,
+     "sfx": "hit",
+     "t": 196.86
+    },
+    {
+     "id": "cross",
+     "at": 601,
+     "sfx": "crack",
+     "t": 198.7
+    }
+   ],
+   "t0": 196.39,
+   "t1": 202.03
+  },
+  {
+   "id": "b09",
+   "from": 612,
+   "type": "object",
+   "label": "A PRIMEIRA LUTA",
+   "title": "Gancho de fígado",
+   "highlight": "fígado",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "duck",
+     "at": 622,
+     "sfx": "whoosh",
+     "t": 204.92
+    },
+    {
+     "id": "hook",
+     "at": 630,
+     "sfx": "hit",
+     "t": 207.02
+    }
+   ],
+   "t0": 202.03,
+   "t1": 211.1
+  },
+  {
+   "id": "b10",
+   "from": 644,
+   "type": "object",
+   "label": "A PRIMEIRA LUTA",
+   "title": "Prensada contra a máquina de gelo",
+   "highlight": "máquina",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "pin",
+     "at": 646,
+     "sfx": "impact",
+     "t": 211.94
+    }
+   ],
+   "t0": 211.1,
+   "t1": 219.8
+  },
+  {
+   "id": "b11",
+   "from": 672,
+   "type": "object",
+   "label": "KEV!",
+   "title": "Me ajuda!",
+   "highlight": "ajuda",
+   "mood": "energetic",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 219.8,
+   "t1": 224.69
+  },
+  {
+   "id": "b12",
+   "from": 685,
+   "type": "object",
+   "label": "A PRIMEIRA LUTA",
+   "title": "Um upper. E a pá de gelo.",
+   "highlight": "gelo",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "up",
+     "at": 688,
+     "sfx": "hit",
+     "t": 225.56
+    },
+    {
+     "id": "s1",
+     "at": 715,
+     "sfx": "impact",
+     "t": 233.02
+    },
+    {
+     "id": "s2",
+     "at": 717,
+     "sfx": "impact",
+     "t": 233.82
+    }
+   ],
+   "t0": 224.69,
+   "t1": 234.67
+  },
+  {
+   "id": "b13",
+   "from": 719,
+   "type": "object",
+   "label": "GARY",
+   "title": "Sem sombra, continuava sorrindo",
+   "highlight": "sorrindo",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 234.67,
+   "t1": 241.03
+  },
+  {
+   "id": "b14",
+   "from": 732,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Desliga essa luz, garoto!",
+   "highlight": "luz",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "dunk",
+     "at": 751,
+     "sfx": "thump",
+     "t": 246.68
+    }
+   ],
+   "t0": 241.03,
+   "t1": 251.24
+  },
+  {
+   "id": "b15",
+   "from": 765,
+   "type": "object",
+   "label": "A REGRA",
+   "title": "Sombra só existe onde tem luz",
+   "highlight": "luz",
+   "mood": "curious",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 251.24,
+   "t1": 261.82
+  },
+  {
+   "id": "b16",
+   "from": 797,
+   "type": "object",
+   "label": "1961",
+   "title": "Com a voz dela. Mas não era ela.",
+   "highlight": "voz",
+   "mood": "sad",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 261.82,
+   "t1": 272.4
+  },
+  {
+   "id": "b17",
+   "from": 832,
+   "type": "object",
+   "label": "O LETREIRO",
+   "title": "O neon é a porta",
+   "highlight": "porta",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 272.4,
+   "t1": 284.19
+  },
+  {
+   "id": "b18",
+   "from": 867,
+   "type": "object",
+   "label": "KEV",
+   "title": "A lanterna acendeu sozinha",
+   "highlight": "lanterna",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "on",
+     "at": 878,
+     "sfx": "tick",
+     "t": 287.5
+    }
+   ],
+   "t0": 284.19,
+   "t1": 288.99
+  },
+  {
+   "id": "b19",
+   "from": 881,
+   "type": "object",
+   "label": "A SOMBRA DO KEV",
+   "title": "E sorria muito melhor",
+   "highlight": "sorria",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "off",
+     "at": 888,
+     "sfx": "sting",
+     "t": 290.78
+    }
+   ],
+   "t0": 288.99,
+   "t1": 297.33
+  },
+  {
+   "id": "b20",
+   "from": 906,
+   "type": "object",
+   "label": "BARB",
+   "title": "Ela foi atrás da Barb",
+   "highlight": "atrás",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "gone",
+     "at": 939,
+     "sfx": "scream",
+     "t": 307.14
+    }
+   ],
+   "t0": 297.33,
+   "t1": 308.55
+  },
+  {
+   "id": "b21",
+   "from": 942,
+   "type": "object",
+   "label": "KEV",
+   "title": "Isso foi culpa minha",
+   "highlight": "culpa",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 308.55,
+   "t1": 313.98
+  },
+  {
+   "id": "c01",
+   "from": 961,
+   "type": "object",
+   "label": "O PLANO",
+   "title": "O transformador, a cem metros",
+   "highlight": "transformador",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 313.98,
+   "t1": 324.52
+  },
+  {
+   "id": "c02",
+   "from": 994,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Eu enxergo no escuro",
+   "highlight": "escuro",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 324.52,
+   "t1": 330.32
+  },
+  {
+   "id": "c03",
+   "from": 1011,
+   "type": "object",
+   "label": "O PLANO",
+   "title": "Se for eu, eu vou te xingar",
+   "highlight": "xingar",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 330.32,
+   "t1": 341.55
+  },
+  {
+   "id": "c04",
+   "from": 1047,
+   "type": "object",
+   "label": "KEV",
+   "title": "Posso postar um story?",
+   "highlight": "postar",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 341.55,
+   "t1": 346.36
+  },
+  {
+   "id": "c05",
+   "from": 1062,
+   "type": "object",
+   "label": "O ESTACIONAMENTO",
+   "title": "Em cada luz, uma sombra esperando",
+   "highlight": "sombra",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 346.36,
+   "t1": 354.73
+  },
+  {
+   "id": "c06",
+   "from": 1087,
+   "type": "object",
+   "label": "O ESTACIONAMENTO",
+   "title": "Elas vieram rastejando",
+   "highlight": "rastejando",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 354.73,
+   "t1": 359.6
+  },
+  {
+   "id": "c07",
+   "from": 1098,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Entra na caminhonete",
+   "highlight": "caminhonete",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 359.6,
+   "t1": 363.03
+  },
+  {
+   "id": "c08",
+   "from": 1106,
+   "type": "object",
+   "label": "O TRUQUE",
+   "title": "No meio do pulo, ele desligou",
+   "highlight": "desligou",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "on",
+     "at": 1109,
+     "sfx": "impact",
+     "t": 364.02
+    },
+    {
+     "id": "off",
+     "at": 1131,
+     "sfx": "off",
+     "t": 370.88
+    }
+   ],
+   "t0": 363.03,
+   "t1": 371.59
+  },
+  {
+   "id": "c09",
+   "from": 1133,
+   "type": "object",
+   "label": "O TRUQUE",
+   "title": "Liga. Desliga. Liga. Desliga.",
+   "highlight": "Liga",
+   "mood": "triumphant",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 371.59,
+   "t1": 379.5
+  },
+  {
+   "id": "c10",
+   "from": 1151,
+   "type": "object",
+   "label": "A SEGUNDA LUTA",
+   "title": "Pegou o Seu Hank pelo pescoço",
+   "highlight": "pescoço",
+   "mood": "energetic",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "grab",
+     "at": 1164,
+     "sfx": "whoosh",
+     "t": 384.52
+    }
+   ],
+   "t0": 379.5,
+   "t1": 390.07
+  },
+  {
+   "id": "c11",
+   "from": 1184,
+   "type": "object",
+   "label": "A SEGUNDA LUTA",
+   "title": "Arranquei o fio com os dentes",
+   "highlight": "dentes",
+   "mood": "energetic",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "hit",
+     "at": 1195,
+     "sfx": "hit",
+     "t": 392.84
+    },
+    {
+     "id": "rip",
+     "at": 1219,
+     "sfx": "crack",
+     "t": 400.44
+    }
+   ],
+   "t0": 390.07,
+   "t1": 401.92
+  },
+  {
+   "id": "c12",
+   "from": 1226,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Eu tô velho, mas tô bem",
+   "highlight": "velho",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 401.92,
+   "t1": 410.73
+  },
+  {
+   "id": "c13",
+   "from": 1254,
+   "type": "object",
+   "label": "A CHAVE GERAL",
+   "title": "Cinquenta metros no escuro",
+   "highlight": "escuro",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "pull",
+     "at": 1272,
+     "sfx": "thump",
+     "t": 416.9
+    }
+   ],
+   "t0": 410.73,
+   "t1": 417.72
+  },
+  {
+   "id": "c14",
+   "from": 1275,
+   "type": "object",
+   "label": "APAGÃO",
+   "title": "Tudo apagou. Menos o letreiro.",
+   "highlight": "letreiro",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "off",
+     "at": 1278,
+     "sfx": "off",
+     "t": 418.86
+    }
+   ],
+   "t0": 417.72,
+   "t1": 428.63
+  },
+  {
+   "id": "d01",
+   "from": 1306,
+   "type": "object",
+   "label": "O ESCRITÓRIO",
+   "title": "Trezentas mil pessoas ouvindo",
+   "highlight": "pessoas",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 428.63,
+   "t1": 437.34
+  },
+  {
+   "id": "d02",
+   "from": 1333,
+   "type": "object",
+   "label": "KEV",
+   "title": "Se eu filmasse, não era real",
+   "highlight": "real",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 437.34,
+   "t1": 445.92
+  },
+  {
+   "id": "d03",
+   "from": 1362,
+   "type": "object",
+   "label": "KEV",
+   "title": "Eu vou desligar agora",
+   "highlight": "desligar",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "t0": 445.92,
+   "t1": 454.12
+  },
+  {
+   "id": "d04",
+   "from": 1392,
+   "type": "object",
+   "label": "KEV",
+   "title": "E ele desligou",
+   "highlight": "desligou",
+   "mood": "wonder",
+   "ambience": [
+    "room"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "off",
+     "at": 1393,
+     "sfx": "tick",
+     "t": 455
+    }
+   ],
+   "t0": 454.12,
+   "t1": 458.09
+  },
+  {
+   "id": "d05",
+   "from": 1401,
+   "type": "object",
+   "label": "O LETREIRO",
+   "title": "Só subindo no poste",
+   "highlight": "poste",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 458.09,
+   "t1": 465.04
+  },
+  {
+   "id": "d06",
+   "from": 1423,
+   "type": "object",
+   "label": "NOVE METROS",
+   "title": "A chave de roda na boca",
+   "highlight": "chave",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "t0": 465.04,
+   "t1": 474.7
+  },
+  {
+   "id": "d07",
+   "from": 1458,
+   "type": "object",
+   "label": "A SOMBRA DO KEV",
+   "title": "Oi, Mari.",
+   "highlight": "Mari",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 474.7,
+   "t1": 478.79
+  },
+  {
+   "id": "d08",
+   "from": 1467,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "Rápida. Muito rápida.",
+   "highlight": "rápida",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "lunge",
+     "at": 1483,
+     "sfx": "whoosh",
+     "t": 483.38
+    }
+   ],
+   "t0": 478.79,
+   "t1": 485.03
+  },
+  {
+   "id": "d09",
+   "from": 1486,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "Jab, jab, direto",
+   "highlight": "direto",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "block",
+     "at": 1492,
+     "sfx": "hit",
+     "t": 487.02
+    },
+    {
+     "id": "j1",
+     "at": 1508,
+     "sfx": "hit",
+     "t": 491.38
+    },
+    {
+     "id": "j2",
+     "at": 1509,
+     "sfx": "hit",
+     "t": 491.84
+    },
+    {
+     "id": "j3",
+     "at": 1510,
+     "sfx": "hit",
+     "t": 492.04
+    }
+   ],
+   "t0": 485.03,
+   "t1": 496.25
+  },
+  {
+   "id": "d10",
+   "from": 1520,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "Pendurada a nove metros",
+   "highlight": "metros",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "heartbeat"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "lift",
+     "at": 1527,
+     "sfx": "whoosh",
+     "t": 498.34
+    }
+   ],
+   "t0": 496.25,
+   "t1": 505.33
+  },
+  {
+   "id": "d11",
+   "from": 1544,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Mostra o que é um peso médio!",
+   "highlight": "médio",
+   "mood": "triumphant",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 505.33,
+   "t1": 507.9
+  },
+  {
+   "id": "d12",
+   "from": 1554,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "Ela era feita da luz",
+   "highlight": "luz",
+   "mood": "epic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 507.9,
+   "t1": 514.79
+  },
+  {
+   "id": "d13",
+   "from": 1578,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "A chave de roda no neon",
+   "highlight": "neon",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "smash",
+     "at": 1601,
+     "sfx": "glass",
+     "t": 520.9
+    }
+   ],
+   "t0": 514.79,
+   "t1": 522.98
+  },
+  {
+   "id": "d14",
+   "from": 1607,
+   "type": "object",
+   "label": "A LUTA FINAL",
+   "title": "Um grito de trezentas mil vozes",
+   "highlight": "grito",
+   "mood": "epic",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "scream",
+     "at": 1609,
+     "sfx": "scream",
+     "t": 523.88
+    }
+   ],
+   "t0": 522.98,
+   "t1": 531.12
+  },
+  {
+   "id": "d15",
+   "from": 1636,
+   "type": "object",
+   "label": "FIM DO ECLIPSE",
+   "title": "Completamente escuro",
+   "highlight": "escuro",
+   "mood": "wonder",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 531.12,
+   "t1": 537.83
+  },
+  {
+   "id": "e01",
+   "from": 1651,
+   "type": "object",
+   "label": "AMANHECER",
+   "title": "A lua voltou a ser branca",
+   "highlight": "branca",
+   "mood": "calm",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 537.83,
+   "t1": 542.12
+  },
+  {
+   "id": "e02",
+   "from": 1666,
+   "type": "object",
+   "label": "AMANHECER",
+   "title": "Quando o sol nasceu",
+   "highlight": "sol",
+   "mood": "calm",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 542.12,
+   "t1": 550.72
+  },
+  {
+   "id": "e03",
+   "from": 1694,
+   "type": "object",
+   "label": "SEU HANK",
+   "title": "Talvez você preste",
+   "highlight": "preste",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 550.72,
+   "t1": 557.49
+  },
+  {
+   "id": "e04",
+   "from": 1707,
+   "type": "object",
+   "label": "KEV",
+   "title": "O monstro era eu, com uma lanterna",
+   "highlight": "monstro",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 557.49,
+   "t1": 563.2
+  },
+  {
+   "id": "e05",
+   "from": 1728,
+   "type": "object",
+   "label": "MARI",
+   "title": "Vai pagar o quarto onze também",
+   "highlight": "pagar",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 563.2,
+   "t1": 571.57
+  },
+  {
+   "id": "e06",
+   "from": 1755,
+   "type": "object",
+   "label": "O QUARTO 11",
+   "title": "Agora tinha treze sombras",
+   "highlight": "treze",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "t0": 571.57,
+   "t1": 577.7
+  },
+  {
+   "id": "e07",
+   "from": 1771,
+   "type": "object",
+   "label": "MARI",
+   "title": "Foi aí que eu reparei",
+   "highlight": "reparei",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "transition": "cut",
+   "t0": 577.7,
+   "t1": 582.87
+  },
+  {
+   "id": "e08",
+   "from": 1788,
+   "type": "closing",
+   "label": "FIM?",
+   "title": "A minha sombra demorou meio segundo",
+   "highlight": "sombra",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "transition": "cut",
+   "keys": [
+    {
+     "id": "lag",
+     "at": 1802,
+     "sfx": "sting",
+     "t": 586.84
+    }
+   ],
+   "t0": 582.87,
+   "t1": 591.901
+  }
+ ],
+ "duration": 591.901
+}

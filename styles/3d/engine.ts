@@ -41,13 +41,14 @@ function buildTimeline(): gsap.core.Timeline {
 function build3D(tl: gsap.core.Timeline) {
   const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl') as HTMLCanvasElement, antialias: true, preserveDrawingBuffer: true });
   const RS = SCENES.renderScale ?? 1;   // internal size (the canvas is still shown at 1080 x 1920)
-  renderer.setPixelRatio(1); renderer.setSize(Math.round(1080 * RS), Math.round(1920 * RS), false);
-  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  const FW = SCENES.format === '16:9' ? 1920 : 1080, FH = SCENES.format === '16:9' ? 1080 : 1920;
+  renderer.setPixelRatio(1); renderer.setSize(Math.round(FW * RS), Math.round(FH * RS), false);
+  renderer.shadowMap.enabled = RS >= 1;   // fast software renders skip shadow maps (night scenes barely show them) renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   const worlds = SCENES.scenes.map((s) => {
     const V = VISUALS[s.id] || LIBRARY[s.type] || LIBRARY.object;
     const scene = new THREE.Scene(); scene.background = new THREE.Color(V.bg || P3_SKY);
-    const camera = new THREE.PerspectiveCamera(40, 1080 / 1920, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(40, FW / FH, 0.1, 1000);
     const w: World = {
       s, scene, camera, renderer, tl, K: keyOf(s),
       titles: document.querySelector<HTMLElement>('#sc-' + s.id + ' .titles')!,

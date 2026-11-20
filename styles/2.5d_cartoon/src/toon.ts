@@ -227,7 +227,7 @@ const DEF_LIGHT = rad(-120);
 
 // ---------------- faces ----------------
 export type Expr = "neutral" | "stern" | "grin" | "laugh" | "whistle" | "nervous" | "shock" | "relief" | "relief_open" | "dazed"
-  | "pained" | "smile" | "smile_closed" | "lick";
+  | "pained" | "smile" | "smile_closed" | "lick" | "talk" | "talkStern" | "talkSmile" | "talkSad";
 type EyeK = "dot" | "small" | "lid" | "slit" | "happy" | "dash" | "squeeze" | "shock" | "shockHalf" | "spiral";
 type MouthK = "dash" | "frown" | "smirk" | "smile" | "smileWide" | "grin" | "laugh" | "o" | "O" | "wave" | "teeth" | "lick";
 /** eyes [back, front], brows [inner, outer] offsets in u (+ = down), mouth kind */
@@ -246,6 +246,11 @@ const FACE: Record<Expr, { eye: [EyeK, EyeK]; brow: [number, number]; mouth: Mou
   smile: { eye: ["dot", "dot"], brow: [0, -1], mouth: "smirk" },
   smile_closed: { eye: ["happy", "happy"], brow: [0, -1], mouth: "smile" },
   lick: { eye: ["dot", "dot"], brow: [0, -1], mouth: "lick" },
+  // speaking frames (mouth open), alternated with the resting face while a line is said
+  talk: { eye: ["dot", "dot"], brow: [0, -1], mouth: "o" },
+  talkStern: { eye: ["lid", "lid"], brow: [3, -2], mouth: "O" },
+  talkSmile: { eye: ["happy", "happy"], brow: [-2, -2], mouth: "grin" },
+  talkSad: { eye: ["small", "small"], brow: [-3, 2], mouth: "o" },
 };
 const halfLid = (k: EyeK): EyeK => (k === "dot" || k === "small" ? "lid" : k === "lid" ? "slit" : k === "shock" ? "shockHalf" : k);
 const eyeKind = (k: EyeK, lid: number): EyeK =>
@@ -927,7 +932,7 @@ export const fxBlob = (p: Pen, col: string) => {
 //  weapons have room: show it with `scale: 1 / RIG_SCALE` (times the build you want) on st.person.
 // =====================================================================
 export const RIG_SCALE = 0.6;
-export type RigPropKind = "bat" | "crowbar" | "extinguisher" | "shotgun" | "pickaxe" | "flashlight" | "flare" | "glass" | "ringlight" | "dynamite" | "revolver" | "coffee" | "mic" | "radio";
+export type RigPropKind = "bat" | "crowbar" | "extinguisher" | "shotgun" | "pickaxe" | "flashlight" | "flare" | "glass" | "ringlight" | "dynamite" | "revolver" | "coffee" | "mic" | "radio" | "phone" | "scoop" | "wrench";
 /** a held prop: in hand L or R (screen side), pointing along `ang` (same angle convention), `on` lights it (flare,
  *  flashlight, ring light, shotgun muzzle flash) */
 export type RigProp = { kind: RigPropKind; hand?: "L" | "R"; ang: number; on?: number };
@@ -953,6 +958,8 @@ export type RigOutfit = Outfit & {
   vest?: string; badge?: boolean; flannel?: string; ponytail?: string; beard?: string; veins?: number; shirt?: string; zip?: boolean;
   /** a chips bag pulled over the head (hides the face), duct tape around the arms and chest */
   bag?: string; tape?: boolean;
+  /** a living shadow (black silhouette, white eyes and grin) / a Shadowless one (grey skin, blank white eyes, too-wide grin) */
+  shadow?: boolean; pale?: boolean;
 };
 
 const dirv = (a: number): P2 => [Math.sin(rad(a)), Math.cos(rad(a))];
@@ -1010,10 +1017,17 @@ const drawProp = (p: Pen, pr: RigProp, h: P2, u: number, HH: number) => {
     case "coffee": p.poly([at(-0.05, -0.05), at(-0.05, 0.05), at(0.12, 0.06), at(0.12, -0.06)], "#f2efe8", 1.8 * u); break;
     case "mic": p.band([at(-0.05), at(0.16)], "#2b2b30", 3 * u, 1 * u, "round"); p.ell(...at(0.2), 0.045 * HH, 0.055 * HH, "#55585f", 1.6 * u); break;
     case "radio": p.poly(quad(-0.06, 0.16, 0.05, 0.05), "#2f3a2f", 1.8 * u); p.band([at(0.16, 0.03), at(0.3, 0.03)], "#1d1d1d", 1.6 * u, 0.6 * u); break;
+    case "phone": p.poly(quad(-0.04, 0.17, 0.045, 0.045), "#1a1c22", 1.8 * u); if (on) p.ell(...at(0.12, 0.02), 0.022 * HH, 0.022 * HH, "#ffffff", 0); break;
+    case "scoop": p.band([at(-0.05), at(0.14)], "#9aa3ad", 3.2 * u, 1 * u, "round"); p.poly([at(0.12, -0.07), at(0.36, -0.06), at(0.38, 0.06), at(0.12, 0.07)], "#c7ced6", 1.8 * u); break;
+    case "wrench": p.band([at(-0.1), at(0.72)], "#4b4f56", 3.6 * u, 1.3 * u, "round"); p.band([at(0.66, -0.07), at(0.74, 0.07)], "#4b4f56", 3.6 * u, 1.3 * u, "round"); break;
   }
 };
 
-export const bodyRig = (p: Pen, o: RigOutfit, r: Rig) => {
+const SHADOW_INK = "#08070c";
+export const bodyRig = (p: Pen, o0: RigOutfit, r: Rig) => {
+  const o: RigOutfit = o0.shadow ? { ...o0, jacket: SHADOW_INK, pants: SHADOW_INK, boots: SHADOW_INK, skin: SHADOW_INK, cap: SHADOW_INK, hair: SHADOW_INK,
+    ponytail: o0.ponytail ? SHADOW_INK : undefined, beard: o0.beard ? SHADOW_INK : undefined, moustache: undefined, flannel: undefined, vest: undefined, shirt: undefined,
+    badge: false, stripes: false, belt: null, hollow: true, miner: false, long: o0.long ?? 1.12 } : o0;
   const { expr = "neutral", look = 0, blink = false, light = DEF_LIGHT, seed = 1, facing = 0 } = r;
   const Bd = BUILD[o.build ?? "adult"], skin = o.hollow ? (o.skin ?? "#9fb0b4") : (o.skin ?? SKIN), lid = lidOf(blink);
   const H = headBlob(seed, Bd.a, facing), W = 2 * H.a, HH = 2 * H.b, u = W / 100, sole = 975;
@@ -1055,11 +1069,11 @@ export const bodyRig = (p: Pen, o: RigOutfit, r: Rig) => {
   const drawArm = (s: number) => {
     const [S, E, Hd] = s < 0 ? AL : AR;
     const props = [r.prop, r.prop2].filter((q): q is RigProp => !!q && (q.hand ?? "R") === (s < 0 ? "L" : "R"));
-    for (const pr of props) if (pr.kind === "shotgun" || pr.kind === "pickaxe" || pr.kind === "bat" || pr.kind === "crowbar") drawProp(p, pr, Hd, u, HH);
+    for (const pr of props) if (pr.kind === "shotgun" || pr.kind === "pickaxe" || pr.kind === "bat" || pr.kind === "crowbar" || pr.kind === "wrench") drawProp(p, pr, Hd, u, HH);
     limb(p, S, E, Hd, armW, armCol, u);
     if (o.veins && s < 0) for (let i = 0; i < 3; i++) p.stroke([lerp2(E, Hd, 0.1 + i * 0.25), [lerp2(E, Hd, 0.2 + i * 0.25)[0] + 3 * u, lerp2(E, Hd, 0.2 + i * 0.25)[1] - 2 * u]], 1.6 * u, "#1b0f1f");
     hand(s, Hd, E);
-    for (const pr of props) if (!(pr.kind === "shotgun" || pr.kind === "pickaxe" || pr.kind === "bat" || pr.kind === "crowbar")) drawProp(p, pr, Hd, u, HH);
+    for (const pr of props) if (!(pr.kind === "shotgun" || pr.kind === "pickaxe" || pr.kind === "bat" || pr.kind === "crowbar" || pr.kind === "wrench")) drawProp(p, pr, Hd, u, HH);
   };
   for (const s of [-1, 1]) if (!(frontArm === "both" || (frontArm === "L" && s < 0) || (frontArm === "R" && s > 0))) drawArm(s);
   // ---- torso (rotated about the hips) ----
@@ -1095,7 +1109,7 @@ export const bodyRig = (p: Pen, o: RigOutfit, r: Rig) => {
   if (o.veins) p.clip(hp, () => { for (let i = 0; i < 4; i++) p.stroke([[300 - H.a * 0.9, hc0 + (i - 1) * 14 * u], [300 - H.a * 0.5, hc0 + (i - 1) * 10 * u + 6 * u], [300 - H.a * 0.3, hc0 + (i - 1) * 8 * u]], 1.8 * u, `rgba(30,15,35,${o.veins})`); });
   p.inkRing(hp, ow, thick);
   if (o.beard) p.clip(hp, () => p.ell(300 + 6 * u * facing, hc0 + 0.75 * H.b, 0.85 * H.a, 0.42 * H.b, o.beard!, 0));
-  if (o.miner || (o.hollow && o.hat !== null)) {
+  if (o.miner || (o.hollow && o.hat !== null && !o0.shadow)) {
     const yb = hc0 - 0.32 * H.b;
     p.ell(300, yb, 1.06 * H.a, 0.82 * H.b, "#d9a520", ow, 180, 360);
     p.ell(300, yb, 1.2 * H.a, 0.1 * H.b, "#b88a14", ow * 0.8);
@@ -1105,7 +1119,8 @@ export const bodyRig = (p: Pen, o: RigOutfit, r: Rig) => {
   } else hatOn(p, o, hp, H, 300, hc0, light, seed, facing, false);
   if (o.hollow) {
     const fx = 300 + 7 * u * facing, ey = hc0 + 2 * u;
-    for (const s of [-1, 1]) { p.ell(fx + s * 15 * u, ey, 9 * u, 11 * u, "#05050a", 0); p.dot(fx + s * 15 * u + look * 2 * u, ey - u, 2.2 * u, "#ffffff"); }
+    if (o0.shadow) for (const s of [-1, 1]) p.poly([[fx + s * 6 * u, ey - 2 * u], [fx + s * 26 * u, ey - 9 * u], [fx + s * 22 * u, ey + 5 * u]], "#f4f1ff", 0);
+    else for (const s of [-1, 1]) { p.ell(fx + s * 15 * u, ey, 9 * u, 11 * u, "#05050a", 0); p.dot(fx + s * 15 * u + look * 2 * u, ey - u, 2.2 * u, "#ffffff"); }
     const m = r.maw ?? 0, mx = fx + 2 * u, my = hc0 + 26 * u;
     if (m > 0.05) {   // the jaw splits vertically: a dark slit from the nose to the chin, ringed with coal teeth
       const rx = (6 + 16 * m) * u, ry = (14 + 22 * m) * u;
@@ -1118,7 +1133,13 @@ export const bodyRig = (p: Pen, o: RigOutfit, r: Rig) => {
     if (blood > 0) for (let i = 0; i < 3; i++) splat(p, fx + (rnd(seed, 120 + i) - 0.5) * 50 * u, hc0 + (10 + 25 * rnd(seed, 125 + i)) * u, (5 + 6 * blood) * u, seed + 130 + i, BL);
   } else {
     const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap";
-    faceFront(p, 300, hc0, W, expr, facing, look, lid, brim, skin, o.moustache, o.build === "stout");
+    if (o.pale) {   // blank white eyes and the too-wide grin
+      const fx = 300 + 7 * u * facing, ey = hc0 + 2 * u, mx = fx + 2 * u, my = hc0 + 24 * u;
+      for (const s of [-1, 1]) p.ell(fx + s * 14 * u, ey, 9 * u, 8 * u, "#f6f4ee", 2.6 * u);
+      p.poly([[mx - 28 * u, my - 4 * u], [mx + 28 * u, my - 4 * u], [mx + 23 * u, my + 6 * u], [mx - 23 * u, my + 6 * u]], "#f2efe6", 3 * u);
+      for (let i = -4; i <= 4; i++) p.stroke([[mx + i * 5.6 * u, my - 4 * u], [mx + i * 5.6 * u, my + 6 * u]], 1.4 * u);
+      if (o.moustache) for (const s of [-1, 1]) taper(p, [mx + s * 1.5 * u, hc0 + 13 * u], [mx + s * 15 * u, hc0 + 16 * u], 4.5 * u, 1.6 * u, o.moustache);
+    } else faceFront(p, 300, hc0, W, expr, facing, look, lid, brim, skin, o.moustache, o.build === "stout");
     if (blood > 0) { // a split brow and a nose bleed
       splat(p, 300 + 22 * u * (facing || 1), hc0 - 26 * u, 4 * u + 4 * u * blood, seed + 140, BL);
       p.stroke([[300 + 8 * u * facing, hc0 + 8 * u], [300 + 9 * u * facing, hc0 + (12 + 14 * blood) * u]], 3 * u, BL);

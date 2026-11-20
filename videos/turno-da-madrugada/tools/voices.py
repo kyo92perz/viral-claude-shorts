@@ -24,6 +24,14 @@ VOICES = {
     "oco_f": ("pm_alex", 0.82, OCO),
     "dale": ("pm_santa", 0.9, OCO.replace("0.78", "0.72")),
     "radio": ("pm_alex", 1.1, "highpass=f=380,lowpass=f=3100,acrusher=bits=10:mode=log:aa=1,volume=1.6"),
+    # Motel Lua Vermelha
+    "mari": ("pf_dora", 1.0, None),
+    "kev": ("pm_alex", 1.12, None),
+    "hank": ("pm_santa", 0.9, "asetrate=48000*0.92,aresample=48000,atempo=1.087"),
+    "barb": ("pf_dora", 1.05, "asetrate=48000*1.08,aresample=48000,atempo=0.926"),
+    "gary": ("pm_alex", 0.98, "asetrate=48000*0.9,aresample=48000,atempo=1.11"),
+    "sofia": ("pf_dora", 1.08, "asetrate=48000*1.12,aresample=48000,atempo=0.893,highpass=f=250,lowpass=f=3600"),
+    "sombra_kev": ("pm_alex", 0.9, OCO.replace("0.78", "0.86")),
 }
 
 def load_pipe():

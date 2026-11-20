@@ -10,6 +10,8 @@ export const ROOT = path.resolve(import.meta.dirname, '..');
 // music) and the edges (buttons). It's symmetric (80 px each side), so the center of the frame is the center of the zone.
 // Text, characters and key objects go inside; only backgrounds bleed out.
 export const SAFE = { left: 80, right: 1000, top: 160, bottom: 1600 };
+/** output frame size: 1080 x 1920 (9:16, the default) or 1920 x 1080 (16:9, YouTube) */
+export const frameOf = (format?: string) => (format === '16:9' ? { w: 1920, h: 1080 } : { w: 1080, h: 1920 });
 export async function load(videoDir: string): Promise<{ v: string; E: Plan; A: Adapter }> {
   const v = path.resolve(videoDir);
   const E: Plan = JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8'));

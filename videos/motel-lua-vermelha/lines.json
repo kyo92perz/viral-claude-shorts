@@ -1,0 +1,712 @@
+{
+ "duration": 591.901,
+ "lines": [
+  {
+   "id": "l01",
+   "who": "hank",
+   "text": "Em mil novecentos e sessenta e um, na última lua de sangue, o Motel Lua Vermelha amanheceu vazio.",
+   "t0": 0.8,
+   "t1": 6.462
+  },
+  {
+   "id": "l02",
+   "who": "hank",
+   "text": "Onze hóspedes. Nenhum corpo. Nenhuma gota de sangue. Só onze sombras pintadas na parede do quarto onze. Como se alguém tivesse ido embora, e esquecido de levar a sombra junto.",
+   "t0": 6.862,
+   "t1": 17.347
+  },
+  {
+   "id": "l03",
+   "who": "hank",
+   "text": "Eu sei disso porque eu tava lá. Eu tinha oito anos. E hoje, sessenta e cinco anos depois, a lua vai ficar vermelha de novo.",
+   "t0": 17.847,
+   "t1": 25.223
+  },
+  {
+   "id": "l04",
+   "who": "mari",
+   "text": "Meu nome é Mari Delgado. Gerente, recepcionista, faxineira e eletricista do Motel Lua Vermelha, na Rota trezentos e setenta e cinco, no meio do deserto de Nevada.",
+   "t0": 26.122,
+   "t1": 35.515
+  },
+  {
+   "id": "l05",
+   "who": "mari",
+   "text": "A estrada tem esse apelido, Rodovia Extraterrestre. Então todo maluco que procura disco voador acaba dormindo aqui. Eu não acredito em disco voador. Eu acredito em conta de luz.",
+   "t0": 35.915,
+   "t1": 45.985
+  },
+  {
+   "id": "l06",
+   "who": "mari",
+   "text": "Fui boxeadora. Catorze vitórias, duas derrotas, um nariz quebrado. A minha filha, a Sofia, tá na faculdade em Reno, e cada quarto alugado aqui é um livro que ela não precisa pedir emprestado.",
+   "t0": 46.435,
+   "t1": 57.362
+  },
+  {
+   "id": "l06a",
+   "who": "mari",
+   "text": "Antes da meia-noite, a Sofia me ligou. Ela sempre liga quando tem prova.",
+   "t0": 57.962,
+   "t1": 61.93
+  },
+  {
+   "id": "l06b",
+   "who": "sofia",
+   "text": "Mãe, você tá trabalhando de novo? Você prometeu que ia dormir em algum momento desse ano.",
+   "t0": 62.23,
+   "t1": 66.87
+  },
+  {
+   "id": "l06c",
+   "who": "mari",
+   "text": "Eu durmo quando você se formar. Vai estudar. E Sofia, tranca a porta do quarto hoje. É lua de sangue.",
+   "t0": 67.17,
+   "t1": 72.809
+  },
+  {
+   "id": "l06d",
+   "who": "sofia",
+   "text": "Desde quando você acredita nessas coisas?",
+   "t0": 73.109,
+   "t1": 75.32
+  },
+  {
+   "id": "l06e",
+   "who": "mari",
+   "text": "Eu não acredito. Mas eu tranco a porta mesmo assim.",
+   "t0": 75.62,
+   "t1": 78.455
+  },
+  {
+   "id": "l07",
+   "who": "mari",
+   "text": "Naquela noite, eu tinha quatro hóspedes. E o primeiro problema chegou de carro amarelo, filmando a si mesmo.",
+   "t0": 79.055,
+   "t1": 84.879
+  },
+  {
+   "id": "l08",
+   "who": "kev",
+   "text": "E aí, galera do KevExplora! Trezentos mil inscritos, vocês são insanos! Hoje a gente tá no lugar mais assombrado da Rodovia Extraterrestre! Deixa o like!",
+   "t0": 85.379,
+   "t1": 93.41
+  },
+  {
+   "id": "l09",
+   "who": "kev",
+   "text": "Boa noite, senhora! Eu quero o quarto onze. O quarto dos desaparecidos. Pode ser com desconto de influenciador?",
+   "t0": 93.76,
+   "t1": 99.407
+  },
+  {
+   "id": "l10",
+   "who": "mari",
+   "text": "O quarto onze tá interditado. E o desconto de influenciador é o seguinte: você paga o preço cheio, e eu não te dou uma surra ao vivo.",
+   "t0": 99.757,
+   "t1": 106.986
+  },
+  {
+   "id": "l11",
+   "who": "kev",
+   "text": "Chat, ela é incrível. Moça, pode repetir olhando pra câmera?",
+   "t0": 107.386,
+   "t1": 110.542
+  },
+  {
+   "id": "l12",
+   "who": "mari",
+   "text": "Eu dei o quarto oito pra ele. Do lado do quarto nove, onde mora o Seu Hank Bishop há doze anos. Veterano do Vietnã. Rabugento profissional.",
+   "t0": 111.142,
+   "t1": 118.791
+  },
+  {
+   "id": "l13",
+   "who": "hank",
+   "text": "Garoto. Desliga essa luz da cara. Hoje é lua de sangue. Tranca a porta, apaga tudo e reza.",
+   "t0": 119.191,
+   "t1": 124.67
+  },
+  {
+   "id": "l14",
+   "who": "kev",
+   "text": "Senhor, com todo respeito, é exatamente por isso que eu vim.",
+   "t0": 125.02,
+   "t1": 128.055
+  },
+  {
+   "id": "l15",
+   "who": "hank",
+   "text": "Então reza mais alto.",
+   "t0": 128.405,
+   "t1": 130.122
+  },
+  {
+   "id": "l16",
+   "who": "mari",
+   "text": "E tinha os Henderson. Barb e Gary, de Ohio, aposentados, de trailer, com camisas combinando. Eles fotografavam até a máquina de gelo.",
+   "t0": 130.722,
+   "t1": 138.257
+  },
+  {
+   "id": "l17",
+   "who": "barb",
+   "text": "Gary, tira uma foto minha com a lua! Ela tá ficando vermelhinha!",
+   "t0": 138.657,
+   "t1": 141.995
+  },
+  {
+   "id": "l18",
+   "who": "gary",
+   "text": "Já tô tirando, Barb. Sorria. Sorria. Sorria.",
+   "t0": 142.295,
+   "t1": 144.93
+  },
+  {
+   "id": "l19",
+   "who": "mari",
+   "text": "Às onze e quarenta, a sombra da Terra começou a comer a lua. Ela foi ficando cor de ferrugem, depois cor de vinho, depois cor de ferida. E o letreiro de neon começou a zumbir sozinho.",
+   "t0": 145.53,
+   "t1": 155.635
+  },
+  {
+   "id": "l20",
+   "who": "mari",
+   "text": "Foi o Kev que viu primeiro. Claro. Ele tava filmando o Gary tirando foto da Barb, na parede branca do lado da máquina de gelo.",
+   "t0": 156.435,
+   "t1": 163.219
+  },
+  {
+   "id": "l21",
+   "who": "kev",
+   "text": "Gente. Gente, olha a sombra dele. O Gary tá parado. A sombra não tá.",
+   "t0": 163.619,
+   "t1": 167.06
+  },
+  {
+   "id": "l22",
+   "who": "mari",
+   "text": "A sombra do Gary estava acenando. Devagar. Pra câmera do Kev. E depois ela virou a cabeça, e olhou pro Gary.",
+   "t0": 167.56,
+   "t1": 173.393
+  },
+  {
+   "id": "l23",
+   "who": "mari",
+   "text": "A sombra desceu da parede como quem desce de uma escada. E entrou nele pela boca.",
+   "t0": 173.893,
+   "t1": 178.343
+  },
+  {
+   "id": "l24",
+   "who": "gary",
+   "text": "Sorria. Sorria. Sorria.",
+   "t0": 178.943,
+   "t1": 180.473
+  },
+  {
+   "id": "l25",
+   "who": "mari",
+   "text": "A pele do Gary ficou cinza. Os olhos ficaram brancos, sem nada dentro. E ele não tinha mais sombra nenhuma no chão.",
+   "t0": 180.973,
+   "t1": 187.111
+  },
+  {
+   "id": "l26",
+   "who": "barb",
+   "text": "Gary? Querido, que brincadeira é essa?",
+   "t0": 187.611,
+   "t1": 189.653
+  },
+  {
+   "id": "l27",
+   "who": "mari",
+   "text": "Ele pegou a Barb pelo cabelo e bateu a cabeça dela na máquina de gelo. Eu já estava correndo antes de pensar.",
+   "t0": 190.053,
+   "t1": 196.322
+  },
+  {
+   "id": "l28",
+   "who": "mari",
+   "text": "Jab no queixo pra ele soltar. Ele soltou. Direto no nariz. Senti o osso afundar. Ele nem piscou.",
+   "t0": 196.722,
+   "t1": 201.93
+  },
+  {
+   "id": "l29",
+   "who": "mari",
+   "text": "Ele veio com as duas mãos no meu pescoço. Eu abaixei, girei o quadril e entrei com um gancho de fígado. Esse derruba qualquer um. Derrubou a minha mão, que doeu até o cotovelo.",
+   "t0": 202.33,
+   "t1": 211.686
+  },
+  {
+   "id": "l30",
+   "who": "mari",
+   "text": "Ele me prensou contra a máquina de gelo. O metal gelado nas costas, os dedões dele afundando na minha garganta. E o Kev, a dois metros, filmando.",
+   "t0": 212.086,
+   "t1": 220.397
+  },
+  {
+   "id": "l31",
+   "who": "mari",
+   "text": "Kev! Me ajuda, porra!",
+   "t0": 220.747,
+   "t1": 222.019
+  },
+  {
+   "id": "l32",
+   "who": "kev",
+   "text": "Eu tô, eu tô! Oitenta mil pessoas assistindo!",
+   "t0": 222.319,
+   "t1": 224.556
+  },
+  {
+   "id": "l33",
+   "who": "mari",
+   "text": "Eu soltei um upper por dentro dos braços dele. O queixo subiu, ele perdeu o equilíbrio por meio segundo, e eu enfiei a pá de gelo de alumínio na têmpora dele. Uma vez. Duas. Três. Ele caiu.",
+   "t0": 224.956,
+   "t1": 235.392
+  },
+  {
+   "id": "l34",
+   "who": "mari",
+   "text": "E caído, sem sombra, ele continuava sorrindo. E repetindo.",
+   "t0": 235.792,
+   "t1": 239.005
+  },
+  {
+   "id": "l35",
+   "who": "gary",
+   "text": "Sorria. Sorria.",
+   "t0": 239.405,
+   "t1": 240.534
+  },
+  {
+   "id": "l36",
+   "who": "hank",
+   "text": "Desliga essa luz, garoto! Agora!",
+   "t0": 241.334,
+   "t1": 243.388
+  },
+  {
+   "id": "l37",
+   "who": "mari",
+   "text": "O Seu Hank arrancou o celular da mão do Kev e jogou dentro do balde de gelo. No escuro, a gente ouviu uma coisa raspando a parede. Indo embora.",
+   "t0": 243.788,
+   "t1": 251.676
+  },
+  {
+   "id": "l38",
+   "who": "hank",
+   "text": "Em sessenta e um, eu me escondi no porão. Sem lâmpada, sem fresta, sem nada. Foi por isso que eu sobrevivi. Sombra só existe onde tem luz. No escuro, elas não têm onde ficar.",
+   "t0": 252.126,
+   "t1": 262.317
+  },
+  {
+   "id": "l38a",
+   "who": "hank",
+   "text": "A minha mãe me trancou lá embaixo e disse: não acende nada, nem fósforo. Eu ouvi ela me chamando a noite inteira, do outro lado da porta. Com a voz dela. Mas não era ela.",
+   "t0": 262.767,
+   "t1": 272.733
+  },
+  {
+   "id": "l39",
+   "who": "kev",
+   "text": "Então a gente apaga tudo e pronto! Fácil!",
+   "t0": 273.233,
+   "t1": 275.446
+  },
+  {
+   "id": "l40",
+   "who": "hank",
+   "text": "E a lua? E o letreiro? Aquele neon foi aceso pela primeira vez na noite de sessenta e um. Ele é a porta. Enquanto ele brilhar, elas entram.",
+   "t0": 275.796,
+   "t1": 283.904
+  },
+  {
+   "id": "l41",
+   "who": "mari",
+   "text": "O Kev pegou o celular do balde. Ainda funcionava. E a lanterna acendeu sozinha.",
+   "t0": 284.504,
+   "t1": 288.889
+  },
+  {
+   "id": "l42",
+   "who": "mari",
+   "text": "Na parede, a sombra do Kev se descolou dele. Ela era mais alta que ele. E sorria muito melhor.",
+   "t0": 289.289,
+   "t1": 294.558
+  },
+  {
+   "id": "l43",
+   "who": "sombra_kev",
+   "text": "E aí, galera do KevExplora.",
+   "t0": 295.058,
+   "t1": 297.174
+  },
+  {
+   "id": "l44",
+   "who": "mari",
+   "text": "Ela não foi atrás do Kev. Foi atrás da Barb, que estava sentada, sangrando, na escada do quarto quatro. Puxou a Barb pelo tornozelo pra dentro da luz do letreiro. E as duas sumiram no vermelho.",
+   "t0": 297.674,
+   "t1": 308.238
+  },
+  {
+   "id": "l45",
+   "who": "kev",
+   "text": "Não, não, não. Isso foi culpa minha. Isso foi culpa minha.",
+   "t0": 308.838,
+   "t1": 311.643
+  },
+  {
+   "id": "l46",
+   "who": "mari",
+   "text": "Foi. E chorar não ia trazer ela de volta.",
+   "t0": 312.143,
+   "t1": 314.374
+  },
+  {
+   "id": "l47",
+   "who": "mari",
+   "text": "O plano era simples, que nem todo plano ruim. O transformador do motel fica num poste na beira da rodovia, a cem metros do escritório. Desligando a chave geral, o motel inteiro apaga.",
+   "t0": 314.974,
+   "t1": 325.026
+  },
+  {
+   "id": "l48",
+   "who": "hank",
+   "text": "Eu vou com você. Meus olhos são velhos, mas eu enxergo no escuro melhor que qualquer um aqui.",
+   "t0": 325.426,
+   "t1": 330.809
+  },
+  {
+   "id": "l49",
+   "who": "mari",
+   "text": "Kev, você fica no escritório. Tudo apagado. Celular desligado. Se alguém bater, você não abre. Nem se for eu.",
+   "t0": 331.159,
+   "t1": 337.218
+  },
+  {
+   "id": "l50",
+   "who": "kev",
+   "text": "E como eu vou saber que é você?",
+   "t0": 337.618,
+   "t1": 339.332
+  },
+  {
+   "id": "l51",
+   "who": "mari",
+   "text": "Se for eu, eu vou te xingar.",
+   "t0": 339.632,
+   "t1": 341.274
+  },
+  {
+   "id": "l51a",
+   "who": "kev",
+   "text": "Posso pelo menos postar um story dizendo que eu tô vivo?",
+   "t0": 341.874,
+   "t1": 344.681
+  },
+  {
+   "id": "l51b",
+   "who": "mari",
+   "text": "Kev.",
+   "t0": 344.931,
+   "t1": 345.36
+  },
+  {
+   "id": "l51c",
+   "who": "kev",
+   "text": "Tá, tá. Escuro. Entendi.",
+   "t0": 345.61,
+   "t1": 346.926
+  },
+  {
+   "id": "l52",
+   "who": "mari",
+   "text": "No estacionamento, cada carro tinha um farol aceso, uma luzinha de painel, um reflexo da lua. E em cada luz, uma sombra esperando.",
+   "t0": 347.426,
+   "t1": 354.535
+  },
+  {
+   "id": "l53",
+   "who": "mari",
+   "text": "Elas vieram rastejando pelo asfalto, compridas, finas, rindo baixinho. Três. Cinco. Oito.",
+   "t0": 355.035,
+   "t1": 360.106
+  },
+  {
+   "id": "l54",
+   "who": "hank",
+   "text": "Mari. Entra na caminhonete. Confia em mim.",
+   "t0": 360.606,
+   "t1": 363.046
+  },
+  {
+   "id": "l55",
+   "who": "mari",
+   "text": "O Seu Hank ligou os faróis da caminhonete, e as sombras pularam em cima da gente, enormes, com os braços abertos. No meio do pulo, ele desligou.",
+   "t0": 363.446,
+   "t1": 371.517
+  },
+  {
+   "id": "l56",
+   "who": "mari",
+   "text": "Elas sumiram no ar. Como fumaça de vela.",
+   "t0": 371.867,
+   "t1": 374.091
+  },
+  {
+   "id": "l57",
+   "who": "hank",
+   "text": "Liga. Desliga. Liga. Desliga. Sessenta e cinco anos esperando pra fazer isso.",
+   "t0": 374.491,
+   "t1": 379.504
+  },
+  {
+   "id": "l58",
+   "who": "mari",
+   "text": "Mas uma sombra entrou pela janela do motorista, enquanto o farol estava ligado. Pegou o Seu Hank pelo pescoço e começou a puxar ele pra fora, pela fresta, como quem puxa uma linha.",
+   "t0": 379.954,
+   "t1": 389.943
+  },
+  {
+   "id": "l59",
+   "who": "mari",
+   "text": "Eu agarrei a chave de roda no chão da caminhonete e bati na mão dela. A chave atravessou a mão, como se fosse água. Não adiantou nada. Então eu fiz a única coisa que funcionava. Arranquei o fio do farol com os dentes.",
+   "t0": 390.343,
+   "t1": 402.389
+  },
+  {
+   "id": "l60",
+   "who": "mari",
+   "text": "Escuridão. O Seu Hank caiu no banco, tossindo, com a marca de cinco dedos pretos no pescoço.",
+   "t0": 402.839,
+   "t1": 407.649
+  },
+  {
+   "id": "l61",
+   "who": "hank",
+   "text": "Eu tô bem. Eu tô velho, mas tô bem. Vai.",
+   "t0": 408.049,
+   "t1": 410.44
+  },
+  {
+   "id": "l62",
+   "who": "mari",
+   "text": "Eu corri os últimos cinquenta metros no escuro total, contando os passos. Abri a caixa do transformador e puxei a chave geral.",
+   "t0": 411.04,
+   "t1": 418.115
+  },
+  {
+   "id": "l63",
+   "who": "mari",
+   "text": "O motel inteiro apagou. Os quartos, a piscina, a máquina de gelo, tudo. Menos uma coisa.",
+   "t0": 418.515,
+   "t1": 423.392
+  },
+  {
+   "id": "l64",
+   "who": "mari",
+   "text": "O letreiro. A lua de neon continuava acesa, vermelha, pulsando que nem um coração.",
+   "t0": 423.892,
+   "t1": 428.277
+  },
+  {
+   "id": "l65",
+   "who": "mari",
+   "text": "Lá no escritório, o Kev estava sozinho no escuro. E o celular dele vibrou. Mensagem do chat. A live ainda estava rolando, em áudio. Trezentas mil pessoas ouvindo.",
+   "t0": 428.977,
+   "t1": 437.862
+  },
+  {
+   "id": "l66",
+   "who": "kev",
+   "text": "Gente. Eu não sei se vocês tão ouvindo. Eu sempre filmei tudo porque eu tinha medo de viver as coisas de verdade. Se eu filmasse, era conteúdo. Não era real.",
+   "t0": 438.312,
+   "t1": 446.431
+  },
+  {
+   "id": "l67",
+   "who": "kev",
+   "text": "Mas a Barb era real. O Gary era real. E a Mari tá lá fora, no escuro, por causa da minha luz.",
+   "t0": 446.881,
+   "t1": 451.602
+  },
+  {
+   "id": "l68",
+   "who": "kev",
+   "text": "Valeu por tudo, galera. Eu vou desligar agora.",
+   "t0": 452.052,
+   "t1": 454.481
+  },
+  {
+   "id": "l69",
+   "who": "mari",
+   "text": "E ele desligou. Trezentas mil pessoas. Ele desligou.",
+   "t0": 455.081,
+   "t1": 457.902
+  },
+  {
+   "id": "l70",
+   "who": "mari",
+   "text": "O letreiro tinha bateria própria. Eu sabia, porque fui eu que paguei. Pra desligar, só subindo no poste e quebrando o tubo da lua.",
+   "t0": 458.402,
+   "t1": 465.412
+  },
+  {
+   "id": "l71",
+   "who": "mari",
+   "text": "Eu subi a escada de serviço com a chave de roda na boca. Nove metros. O vento do deserto batendo na cara. E quando eu cheguei na passarela, ele já estava lá me esperando.",
+   "t0": 465.912,
+   "t1": 475.201
+  },
+  {
+   "id": "l72",
+   "who": "sombra_kev",
+   "text": "Oi, Mari. Pode repetir olhando pra câmera?",
+   "t0": 475.701,
+   "t1": 478.491
+  },
+  {
+   "id": "l73",
+   "who": "mari",
+   "text": "A sombra do Kev veio pra cima com o mesmo jeito desengonçado do Kev. Só que rápida. Muito rápida.",
+   "t0": 479.091,
+   "t1": 484.895
+  },
+  {
+   "id": "l74",
+   "who": "mari",
+   "text": "Eu travei a guarda. O primeiro soco dela bateu no meu antebraço e eu senti o frio até o ombro. Respondi com jab, jab, direto. Meus punhos atravessavam a fumaça preta e voltavam gelados.",
+   "t0": 485.295,
+   "t1": 496.241
+  },
+  {
+   "id": "l75",
+   "who": "mari",
+   "text": "Ela me agarrou pela jaqueta e me pendurou pra fora da grade. Nove metros. Os meus pés balançando em cima do estacionamento.",
+   "t0": 496.641,
+   "t1": 503.526
+  },
+  {
+   "id": "l76",
+   "who": "sombra_kev",
+   "text": "Deixa o like.",
+   "t0": 503.926,
+   "t1": 505.306
+  },
+  {
+   "id": "l76a",
+   "who": "hank",
+   "text": "Vai, menina! Mostra pra ela o que é um peso médio!",
+   "t0": 505.706,
+   "t1": 508.374
+  },
+  {
+   "id": "l77",
+   "who": "mari",
+   "text": "Foi aí que eu entendi. Ela era feita da luz atrás dela. Se eu não conseguia bater nela, eu ia bater na luz.",
+   "t0": 508.774,
+   "t1": 514.673
+  },
+  {
+   "id": "l78",
+   "who": "mari",
+   "text": "Eu enrolei as pernas na grade, girei o corpo, e meti a chave de roda no tubo de neon da lua. O vidro explodiu numa chuva de faíscas vermelhas.",
+   "t0": 515.073,
+   "t1": 523.12
+  },
+  {
+   "id": "l79",
+   "who": "mari",
+   "text": "A sombra gritou. Um grito de trezentas mil vozes ao mesmo tempo. Ela tentou me puxar junto pra queda. Mas no escuro, ela não tinha mão pra me segurar.",
+   "t0": 523.52,
+   "t1": 531.554
+  },
+  {
+   "id": "l80",
+   "who": "mari",
+   "text": "E pela primeira vez em sessenta e cinco anos, o Motel Lua Vermelha ficou completamente escuro.",
+   "t0": 532.054,
+   "t1": 537.289
+  },
+  {
+   "id": "l81",
+   "who": "mari",
+   "text": "Lá em cima, o eclipse acabou. A lua voltou a ser branca. Normal. Sem graça. Linda.",
+   "t0": 538.189,
+   "t1": 542.548
+  },
+  {
+   "id": "l82",
+   "who": "mari",
+   "text": "Quando o sol nasceu, a gente estava sentado na beira da piscina vazia. O Seu Hank com um curativo no pescoço. O Kev com o celular desligado no bolso.",
+   "t0": 543.048,
+   "t1": 551.246
+  },
+  {
+   "id": "l83",
+   "who": "hank",
+   "text": "Garoto. Você desligou a live mesmo?",
+   "t0": 551.646,
+   "t1": 553.945
+  },
+  {
+   "id": "l84",
+   "who": "kev",
+   "text": "Desliguei.",
+   "t0": 554.245,
+   "t1": 554.999
+  },
+  {
+   "id": "l85",
+   "who": "hank",
+   "text": "Hmm. Talvez você preste.",
+   "t0": 555.299,
+   "t1": 557.327
+  },
+  {
+   "id": "l85a",
+   "who": "kev",
+   "text": "Sabe o que é engraçado? Eu procurei disco voador a vida inteira. E o monstro era eu mesmo, com uma lanterna na mão.",
+   "t0": 557.827,
+   "t1": 563.5
+  },
+  {
+   "id": "l86",
+   "who": "kev",
+   "text": "Mari. Uma pergunta. O desconto de influenciador ainda tá de pé?",
+   "t0": 564.0,
+   "t1": 567.194
+  },
+  {
+   "id": "l87",
+   "who": "mari",
+   "text": "Você vai pagar o quarto onze também. Eu vou ter que pintar aquela parede.",
+   "t0": 567.494,
+   "t1": 571.38
+  },
+  {
+   "id": "l88",
+   "who": "mari",
+   "text": "Na parede do quarto onze, agora tinha treze sombras. Uma delas, de camisa combinando, segurando uma câmera.",
+   "t0": 571.98,
+   "t1": 578.089
+  },
+  {
+   "id": "l89",
+   "who": "mari",
+   "text": "Eu fiquei olhando o sol subir em cima do deserto. E foi aí que eu reparei.",
+   "t0": 578.689,
+   "t1": 582.659
+  },
+  {
+   "id": "l90",
+   "who": "mari",
+   "text": "Eu levantei a mão pra proteger os olhos. E a minha sombra, no chão, demorou meio segundo pra levantar a dela.",
+   "t0": 583.159,
+   "t1": 589.001
+  }
+ ]
+}

@@ -22,7 +22,7 @@ const rows: [string, string, string][] = [], check = (n: string, pass: boolean |
 // 1. format and length
 const [w, h] = probe(['-select_streams', 'v:0', '-show_entries', 'stream=width,height'], VID).split(',').map(Number);
 const dur = Number(probe(['-show_entries', 'format=duration'], VID));
-check('format', w === 1080 && h === 1920, `${w}x${h}`);
+check('format', E.format === '16:9' ? w === 1920 && h === 1080 : w === 1080 && h === 1920, `${w}x${h}`);
 check('length', Math.abs(dur - E.duration) <= 0.15, `${dur.toFixed(2)} s (audio ${E.duration.toFixed(2)} s)`);
 // 2. loudness
 const lo = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', VID, '-af', 'ebur128=peak=true', '-f', 'null', '-'], { maxBuffer: 1 << 26 }).stderr.toString();

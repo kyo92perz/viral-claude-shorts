@@ -171,12 +171,14 @@ const GRADE_NIGHT: GradeParams = { ky: [0, 0.06, 0.2, 0.5, 0.78, 0.93, 1], sat: 
 const GRADE_STORE: GradeParams = { ky: [0, 0.07, 0.24, 0.56, 0.82, 0.94, 1], sat: [0.9, 0.95, 1.0], tintS: [0.02, -0.01], tintM: [-0.006, -0.01], tintH: [0, 0], vig: [0.34, 0.3] };
 const GRADE_BLACKOUT: GradeParams = { ky: [0, 0.05, 0.19, 0.5, 0.8, 0.94, 1], sat: [0.8, 0.9, 1.0], tintS: [0.04, -0.004], tintM: [0.015, 0], tintH: [0, 0], vig: [0.5, 0.22] };
 const GRADE_EMERGENCY: GradeParams = { ky: [0, 0.06, 0.21, 0.52, 0.8, 0.94, 1], sat: [1.0, 1.1, 1.0], tintS: [-0.01, 0.02], tintM: [0, 0.01], tintH: [0, 0], vig: [0.45, 0.25] };
-export type GradeName = "day" | "golden" | "night" | "store" | "blackout" | "emergency";
-export const GRADES: Record<GradeName, GradeParams> = { day: GRADE_DAY2, golden: GRADE_GOLDEN2, night: GRADE_NIGHT, store: GRADE_STORE, blackout: GRADE_BLACKOUT, emergency: GRADE_EMERGENCY };
+const GRADE_BLOOD: GradeParams = { ky: [0, 0.06, 0.21, 0.52, 0.8, 0.94, 1], sat: [0.95, 1.05, 1.0], tintS: [0.02, 0.01], tintM: [0, 0.008], tintH: [0, 0], vig: [0.4, 0.28] };
+const GRADE_LAMP: GradeParams = { ky: [0, 0.07, 0.24, 0.56, 0.82, 0.94, 1], sat: [0.95, 1.02, 1.0], tintS: [0.015, 0.004], tintM: [-0.006, 0.006], tintH: [0, 0], vig: [0.34, 0.3] };
+export type GradeName = "day" | "golden" | "night" | "store" | "blackout" | "emergency" | "blood" | "lamp";
+export const GRADES: Record<GradeName, GradeParams> = { day: GRADE_DAY2, golden: GRADE_GOLDEN2, night: GRADE_NIGHT, store: GRADE_STORE, blackout: GRADE_BLACKOUT, emergency: GRADE_EMERGENCY, blood: GRADE_BLOOD, lamp: GRADE_LAMP };
 /** One strength (0..1, the effect's `amount`) per preset, set against the NEW world (bridge_world, 2026-10-31): full-strength
  *  presets overshot (day median Y' .59-.67 vs target .571, golden .58 vs .52); day 0.65 / golden 0.45 land at
  *  .54-.62 / ~.52. Re-fit the presets (grade.md 5.C) after the merge and raise these again. */
-export const GRADE_STRENGTH: Record<GradeName, number> = { day: 1, golden: 1, night: 1, store: 1, blackout: 1, emergency: 1 };
+export const GRADE_STRENGTH: Record<GradeName, number> = { day: 1, golden: 1, night: 1, store: 1, blackout: 1, emergency: 1, blood: 1, lamp: 1 };
 /** Apply the preset of a light to the effect (only touches uniforms when the light changes). */
 export function gradeFor(fx: GradeEffect, light: GradeName) {
   const tag = fx as unknown as { _light?: string };
