@@ -4,7 +4,11 @@ Animação 2.5D no mesmo estilo de "Turno da Madrugada", agora em 1920×1080. A 
 lugar são originais. A bíblia está em [BIBLIA.md](BIBLIA.md).
 
 - **Vídeo:** `final.mp4` (gerado pelo render; os vídeos finais não entram no git)
-- **Thumbnail:** [thumbnail/thumb-motel-lua-vermelha.jpg](thumbnail/thumb-motel-lua-vermelha.jpg)
+- **Thumbnails para teste A/B** (YouTube Studio → Testar e comparar):
+  [V1 "Não acenda a luz"](thumbnail/thumb-v1-nao-acenda-a-luz.jpg) ·
+  [V2 "A sombra se soltou"](thumbnail/thumb-v2-a-sombra-se-soltou.jpg) ·
+  [V3 "11 sombras. 0 corpos."](thumbnail/thumb-v3-11-sombras.jpg)
+  (a primeira versão continua em [thumbnail/thumb-motel-lua-vermelha.jpg](thumbnail/thumb-motel-lua-vermelha.jpg))
 - **Descrição pronta pro YouTube:** [descricao-youtube.txt](descricao-youtube.txt)
 - **Storyboard:** [storyboard.png](storyboard.png), um painel por cena (78 cenas)
 

@@ -1,0 +1,65 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 20,
+ "format": "16:9",
+ "duration": 8,
+ "notes": "thumbnail layers",
+ "scenes": [
+  {
+   "id": "g1",
+   "type": "object",
+   "t0": 0,
+   "transition": "cut",
+   "t1": 1
+  },
+  {
+   "id": "g2",
+   "type": "object",
+   "t0": 1,
+   "transition": "cut",
+   "t1": 2
+  },
+  {
+   "id": "g3",
+   "type": "object",
+   "t0": 2,
+   "transition": "cut",
+   "t1": 3
+  },
+  {
+   "id": "g4",
+   "type": "object",
+   "t0": 3,
+   "transition": "cut",
+   "t1": 4
+  },
+  {
+   "id": "g5",
+   "type": "object",
+   "t0": 4,
+   "transition": "cut",
+   "t1": 5
+  },
+  {
+   "id": "b1",
+   "type": "object",
+   "t0": 5,
+   "transition": "cut",
+   "t1": 6
+  },
+  {
+   "id": "b2",
+   "type": "object",
+   "t0": 6,
+   "transition": "cut",
+   "t1": 7
+  },
+  {
+   "id": "b3",
+   "type": "object",
+   "t0": 7,
+   "transition": "cut",
+   "t1": 8
+  }
+ ]
+}
