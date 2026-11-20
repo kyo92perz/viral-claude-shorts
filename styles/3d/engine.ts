@@ -15,7 +15,8 @@ function buildTimeline(): gsap.core.Timeline {
     const sec = document.getElementById('sc-' + s.id)!, $ = (q: string) => '#sc-' + s.id + ' ' + q;
     const T = sec.querySelector('.titles')!;
     if (s.label) { const e = document.createElement('div'); e.className = 'label'; e.textContent = s.label.toUpperCase(); T.appendChild(e);
-      tl.fromTo($('.label'), { scale: 0.4, opacity: 0, xPercent: -50 }, { scale: 1, opacity: 1, xPercent: -50, duration: 0.3, ease: 'back.out(2)' }, s.t0 + 0.02); }
+      const xp = SCENES.format === '16:9' ? 0 : -50;   // 9:16 centres the label; 16:9 pins it to the top left
+      tl.fromTo($('.label'), { scale: 0.4, opacity: 0, xPercent: xp }, { scale: 1, opacity: 1, xPercent: xp, duration: 0.3, ease: 'back.out(2)' }, s.t0 + 0.02); }
     if (s.title) {
       const t = document.createElement('div'); t.className = 'title' + (s.title.length > 30 ? ' long' : ''); T.appendChild(t);
       const hl = s.highlight ? norm3(s.highlight) : null, ws = s.title.split(/\s+/);
