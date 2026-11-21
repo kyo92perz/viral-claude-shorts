@@ -1,0 +1,103 @@
+{
+ "duration": 72.842,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "lb_eu",
+   "text": "Três descargas. Três chutes na porta. E um palavrão. É assim que se chama a Loira do Banheiro.",
+   "t0": 0.3,
+   "t1": 7.098
+  },
+  {
+   "id": "n02",
+   "who": "lb_eu",
+   "text": "Toda escola do Brasil tem a sua. A minha era a Escola Estadual Dom Pedro, em mil novecentos e noventa e seis.",
+   "t0": 7.698,
+   "t1": 14.198
+  },
+  {
+   "id": "n03",
+   "who": "lb_eu",
+   "text": "A Bia jurava que era mentira. No intervalo, ela me arrastou pro banheiro do segundo andar, o que vivia interditado.",
+   "t0": 14.598,
+   "t1": 22.007
+  },
+  {
+   "id": "b01",
+   "who": "lb_bia",
+   "text": "Se for verdade, eu te dou o meu lanche de uma semana.",
+   "t0": 22.407,
+   "t1": 25.174
+  },
+  {
+   "id": "n04",
+   "who": "lb_eu",
+   "text": "Ela puxou a descarga. Uma vez. Duas. Três.",
+   "t0": 25.674,
+   "t1": 28.782
+  },
+  {
+   "id": "n05",
+   "who": "lb_eu",
+   "text": "Chutou a porta da última cabine. E falou o palavrão.",
+   "t0": 30.182,
+   "t1": 33.479
+  },
+  {
+   "id": "b02",
+   "who": "lb_bia",
+   "text": "Viu? Nada.",
+   "t0": 34.279,
+   "t1": 37.349
+  },
+  {
+   "id": "n06",
+   "who": "lb_eu",
+   "text": "Foi aí que a luz piscou. E no espelho, atrás da gente, tinha uma moça de branco. Pálida. Com algodão no nariz, igual gente morta no caixão.",
+   "t0": 38.549,
+   "t1": 47.083
+  },
+  {
+   "id": "n07",
+   "who": "lb_eu",
+   "text": "E o algodão começou a ficar vermelho.",
+   "t0": 47.883,
+   "t1": 49.623
+  },
+  {
+   "id": "b03",
+   "who": "lb_bia",
+   "text": "Corre!",
+   "t0": 50.523,
+   "t1": 50.892
+  },
+  {
+   "id": "n08",
+   "who": "lb_eu",
+   "text": "A porta da cabine abriu sozinha. E todas as torneiras começaram a jorrar sangue.",
+   "t0": 51.492,
+   "t1": 56.967
+  },
+  {
+   "id": "n09",
+   "who": "lb_eu",
+   "text": "A gente saiu correndo. Mas a Bia voltou. Pra buscar a mochila.",
+   "t0": 57.467,
+   "t1": 60.859
+  },
+  {
+   "id": "n10",
+   "who": "lb_eu",
+   "text": "Ela nunca mais falou daquele dia. Mas, até hoje, a Bia nunca mais deu descarga três vezes.",
+   "t0": 62.459,
+   "t1": 67.711
+  },
+  {
+   "id": "n11",
+   "who": "lb_eu",
+   "text": "E você? Teria coragem de dar a terceira descarga?",
+   "t0": 68.311,
+   "t1": 71.242
+  }
+ ]
+}

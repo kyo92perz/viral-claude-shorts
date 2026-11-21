@@ -1,0 +1,97 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "hs_eu",
+   "text": "Minha mãe dizia: se não entrar antes de escurecer, o Homem do Saco te leva.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "hs_eu",
+   "text": "Eu achava que era só coisa que mãe fala pra criança entrar em casa. Até a tarde em que o Lucas, meu irmão, ficou na rua depois do sol se pôr.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "n03",
+   "who": "hs_eu",
+   "text": "Um velho alto, de chapéu, com um saco de estopa nas costas, apareceu no fim da rua.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "hs_eu",
+   "text": "E o saco se mexia.",
+   "pause": 1.0,
+   "emo": 0.75
+  },
+  {
+   "id": "v01",
+   "who": "hs_velho",
+   "text": "Que menino bonito. Quer ver o que eu tenho aqui dentro?",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "l01",
+   "who": "hs_lucas",
+   "text": "O que tem aí, moço?",
+   "pause": 0.9,
+   "emo": 0.5
+  },
+  {
+   "id": "s01",
+   "who": "hs_saco",
+   "text": "Não abre! Corre!",
+   "pause": 0.8,
+   "emo": 0.9
+  },
+  {
+   "id": "n05",
+   "who": "hs_eu",
+   "text": "Eu gritei o nome dele. E o velho virou a cabeça pra mim. Devagar. Mais do que um pescoço devia virar.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "m01",
+   "who": "hs_mae",
+   "text": "Lucas! Pra dentro! Agora!",
+   "pause": 0.6,
+   "emo": 0.9
+  },
+  {
+   "id": "n06",
+   "who": "hs_eu",
+   "text": "O Lucas correu. O velho não correu atrás. Só sorriu. E começou a contar os portões da nossa rua.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "v02",
+   "who": "hs_velho",
+   "text": "Um. Dois. Três. Amanhã eu volto.",
+   "pause": 1.0,
+   "emo": 0.55
+  },
+  {
+   "id": "n07",
+   "who": "hs_eu",
+   "text": "Desde então, lá em casa, todo mundo entra antes do sol se pôr. E ninguém abre o portão quando escuta alguém contando.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n08",
+   "who": "hs_eu",
+   "text": "E na sua rua? Quantos portões tem?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

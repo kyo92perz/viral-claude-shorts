@@ -59,7 +59,25 @@ function build3D(tl: gsap.core.Timeline) {
     };
     return { s, w, pose: V.build(w) };
   });
+  // captions: the voice in groups of up to 3 words, the word being said in yellow (updated on every seek, deterministic)
+  const cap = SCENES.captions ? document.createElement('div') : null;
+  const groups: { t0: number; t1: number; words: { w: string; t0: number }[] }[] = [];
+  if (cap) {
+    cap.className = 'captions'; document.getElementById('root')!.appendChild(cap);
+    let g: (typeof groups)[0] | null = null;
+    WORDS.forEach((w, i) => {
+      const prev = WORDS[i - 1], gap = prev ? w.t0 - prev.t1 : 9, chars = g ? g.words.reduce((n, x) => n + x.w.length + 1, 0) : 0;
+      if (!g || g.words.length >= 3 || gap > 0.35 || chars + w.w.length > 16 || /[.!?]$/.test(prev?.w || '')) { g = { t0: w.t0, t1: w.t1, words: [] }; groups.push(g); }
+      g.words.push({ w: w.w, t0: w.t0 }); g.t1 = w.t1;
+    });
+  }
+  const caption = (t: number) => {
+    if (!cap) return;
+    const g = groups.find((x) => t >= x.t0 - 0.05 && t < x.t1 + 0.25);
+    cap.innerHTML = g ? g.words.map((x, i) => `<span class="${t >= x.t0 && (i === g.words.length - 1 || t < g.words[i + 1].t0) ? 'on' : ''}">${x.w.replace(/[<>&]/g, '')}</span>`).join(' ') : '';
+  };
   const draw = (t: number) => {
+    caption(t);
     const cur = worlds.find((x) => t < x.s.t1) || worlds[worlds.length - 1];
     cur.pose(t);
     if (cur.w.present) cur.w.present(); else renderer.render(cur.w.scene, cur.w.camera);

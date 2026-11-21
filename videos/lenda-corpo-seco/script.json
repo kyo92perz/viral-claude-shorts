@@ -1,0 +1,97 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "cs_narr",
+   "text": "Existe um homem que nem a terra quis enterrar.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "cs_narr",
+   "text": "No interior de Minas, os mais velhos chamam ele de Corpo-Seco.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "n03",
+   "who": "cs_narr",
+   "text": "Dizem que ele foi tão ruim em vida, que bateu na própria mãe. Quando morreu, a terra cuspiu o corpo de volta. Três vezes.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "cs_narr",
+   "text": "Sem céu e sem inferno, o corpo secou. Virou couro e osso. E agora ele vive grudado nas árvores da beira da estrada, esperando alguém passar.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n05",
+   "who": "cs_narr",
+   "text": "Meu avô, Seu Tião, voltava da roça de bicicleta, depois da meia-noite, quando ouviu um galho estalar.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "t01",
+   "who": "cs_tiao",
+   "text": "Quem tá aí?",
+   "pause": 1.4,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "cs_narr",
+   "text": "Ninguém respondeu. Só que a árvore do lado da estrada estava se mexendo. E árvore não tem braço.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "n07",
+   "who": "cs_narr",
+   "text": "O Corpo-Seco desceu do tronco, devagar, com a pele estalando igual folha seca.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "t02",
+   "who": "cs_tiao",
+   "text": "Sai de mim, coisa ruim!",
+   "pause": 0.5,
+   "emo": 1.0
+  },
+  {
+   "id": "n08",
+   "who": "cs_narr",
+   "text": "Meu avô pedalou como nunca. E sentiu unhas raspando nas costas.",
+   "pause": 0.5,
+   "emo": 0.75
+  },
+  {
+   "id": "n09",
+   "who": "cs_narr",
+   "text": "Ele só parou na porteira da fazenda, que tinha uma cruz de madeira. E o Corpo-Seco não passou da cruz.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
+   "id": "n10",
+   "who": "cs_narr",
+   "text": "No dia seguinte, a camisa do vô estava rasgada em três tiras. E a árvore da estrada amanheceu morta.",
+   "pause": 0.7,
+   "emo": 0.55
+  },
+  {
+   "id": "n11",
+   "who": "cs_narr",
+   "text": "Na sua cidade tem uma árvore que ninguém tem coragem de cortar?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

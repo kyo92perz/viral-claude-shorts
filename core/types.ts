@@ -31,7 +31,9 @@ export interface Plan { style: string; fps: number; format: string; notes?: stri
   /** 3D styles: internal render size as a fraction of 1080 x 1920 (the output stays 1080 x 1920). Below 1 also drops MSAA and
    *  halves the shadow map: about 3x faster on machines without a GPU (software WebGL). Default 1. */
   renderScale?: number;
-  shadows?: boolean }   // 3d: cast shadows even when renderScale < 1 (slower, but lit scenes read as solid)
+  shadows?: boolean;    // 3d: cast shadows even when renderScale < 1 (slower, but lit scenes read as solid)
+  captions?: boolean;   // 3d and flat2d: big word-by-word captions of the voice (Shorts are watched without sound)
+  badge?: { title: string; ep?: string } }   // flat2d: a series badge at the top left of every frame
 
 // script.json (only when the voice is generated with voice.ts)
 export interface ScriptLine { id?: string; text: string; pause?: number; seed?: number }

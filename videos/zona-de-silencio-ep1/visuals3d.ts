@@ -439,7 +439,7 @@ const zvAfter = (t: number, ex: { theo?: string; dani?: string; bol?: string; ra
 ZV.skate = (P: ZsPerson) => { const sk: THREE.Object3D = ZS.props.skate; sk.visible = true; if (sk.parent !== ZS.st.scene) ZS.st.scene.add(sk); sk.position.set(P.root.position.x, 0.09, P.root.position.z); sk.rotation.set(0, P.root.rotation.y, 0); };
 
 // the shots share the world built in world3d.ts
-p3Shots(ZV_SHOTS, (w) => { const st = zsBuild(w); ZS.lines = ZS_LINES; return st; }, (t, u, shot, s) => {
+p3Shots(ZV_SHOTS, (w) => { const st = zsBuild(w); ZS_TALK.lines = ZS_LINES; return st; }, (t, u, shot, s) => {
   zvReset(t); ZV.theoAtMic = false;
   ZV.t74 = SCENES.scenes.find((x) => x.id === 's74')!.t0;
   // where Bolacha stops on the path (the end of his walk when the singing is interrupted)

@@ -1,3 +1,4 @@
+@font-face { font-family: "Anton"; src: url("Anton.ttf") format("truetype"); }
 /* =====================================================================
    Flat 2D — the theme: flat vector, saturated colors, clean shapes, soft single-tone shadows.
    The technique (flat SVG + GSAP) stays fixed; to customize from the notes, change the variables.
@@ -25,3 +26,11 @@ html, body { margin: 0; background: #000; }
   gap: 30px; padding: 0 44px; box-sizing: border-box; box-shadow: 0 12px 0 rgba(0,0,0,0.18); }
 .card .value { font-size: 96px; font-weight: 900; color: var(--stat); white-space: nowrap; }
 .card .text { font-size: 36px; font-weight: 700; color: var(--card-text); line-height: 1.15; }
+/* captions (scenes.json "captions": true): the voice word by word, the word being said in yellow */
+.captions { position: absolute; left: 80px; width: 920px; top: 1190px; text-align: center; font: 400 104px/1.02 "Anton", Impact, sans-serif; color: #fff;
+  text-transform: uppercase; -webkit-text-stroke: 12px #1b1424; paint-order: stroke fill; z-index: 500; pointer-events: none; }
+.captions .g { position: absolute; left: 0; right: 0; opacity: 0; }
+.captions .w { display: inline-block; margin: 0 10px; }
+/* a series badge at the top left (scenes.json "badge": { "title": "...", "ep": "EP.1" }) */
+.badge { position: absolute; top: 120px; left: 70px; z-index: 500; font: 400 64px/1 "Anton", Impact, sans-serif; color: #e9e4f2; -webkit-text-stroke: 8px #1b1424; paint-order: stroke fill; letter-spacing: 1px; }
+.badge .ep { color: #f6c744; font-size: 44px; margin-left: 22px; vertical-align: 8px; }

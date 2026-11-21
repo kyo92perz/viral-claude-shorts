@@ -69,6 +69,16 @@ VOICES = {
     "eco_ray_young": ("pm_alex", 0.92, st(-1.5) + "," + ECO),
     "eco_theo": ("pm_alex", 0.95, st(3.5) + "," + ECO),
     "eco_bolacha": ("piper:cadu", 0.9, st(4) + "," + ECO),
+    # Lendas brasileiras (Shorts)
+    "lb_eu": ("pf_dora", 1.02, st(2) + ",equalizer=f=250:t=q:w=1:g=1.5"),
+    "lb_bia": ("pf_dora", 1.08, st(3.5) + ",equalizer=f=3200:t=q:w=1:g=2.5"),
+    "cs_narr": ("piper:cadu", 0.97, st(-1) + ",equalizer=f=150:t=q:w=1:g=2.5"),
+    "cs_tiao": ("pm_santa", 0.92, st(-1.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "hs_eu": ("pf_dora", 1.0, st(1) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "hs_lucas": ("pm_alex", 1.08, st(6)),
+    "hs_velho": ("pm_santa", 0.9, st(-3) + ",aecho=0.8:0.4:60:0.25,equalizer=f=120:t=q:w=1:g=3"),
+    "hs_saco": ("pf_dora", 1.05, st(4) + ",lowpass=f=900,highpass=f=150,volume=0.9"),
+    "hs_mae": ("pf_dora", 0.98, st(-1)),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)

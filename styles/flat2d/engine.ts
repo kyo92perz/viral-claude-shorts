@@ -41,6 +41,25 @@ function buildTimeline(): gsap.core.Timeline {
     // ---- the scene's art
     if (V.anim) V.anim(tl, s, K, $);
   }
+  // captions: the voice in groups of up to 3 words; the word being said turns yellow (all on the timeline)
+  const root = document.getElementById('root')!;
+  if (SCENES.captions) {
+    const cap = document.createElement('div'); cap.className = 'captions'; root.appendChild(cap);
+    const groups: { t0: number; t1: number; w: { w: string; t0: number }[] }[] = []; let g: (typeof groups)[0] | null = null;
+    WORDS.forEach((w, i) => { const prev = WORDS[i - 1], gap = prev ? w.t0 - prev.t1 : 9, chars = g ? g.w.reduce((n, x) => n + x.w.length + 1, 0) : 0;
+      if (!g || g.w.length >= 3 || gap > 0.35 || chars + w.w.length > 15 || /[.!?,]$/.test(prev?.w || '')) { g = { t0: w.t0, t1: w.t1, w: [] }; groups.push(g); }
+      g.w.push({ w: w.w, t0: w.t0 }); g.t1 = w.t1; });
+    groups.forEach((G, gi) => {
+      const el = document.createElement('div'); el.className = 'g'; cap.appendChild(el);
+      G.w.forEach((x) => { const sp = document.createElement('span'); sp.className = 'w'; sp.textContent = x.w.replace(/[.,!?;:]+$/, ''); el.appendChild(sp); });
+      const end = Math.min(G.t1 + 0.25, groups[gi + 1]?.t0 ?? 1e9);
+      tl.fromTo(el, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.08, ease: 'back.out(3)' }, G.t0 - 0.04);
+      tl.set(el, { opacity: 0 }, end);
+      const spans = el.querySelectorAll('.w');
+      G.w.forEach((x, k) => { tl.set(spans[k], { color: '#f6c744' }, x.t0); if (k < G.w.length - 1) tl.set(spans[k], { color: '#ffffff' }, G.w[k + 1].t0); });
+    });
+  }
+  if (SCENES.badge) { const b = document.createElement('div'); b.className = 'badge'; b.textContent = SCENES.badge.title; if (SCENES.badge.ep) { const e = document.createElement('span'); e.className = 'ep'; e.textContent = SCENES.badge.ep; b.appendChild(e); } root.appendChild(b); }
   tl.set({}, {}, SCENES.duration);   // the timeline spans the whole video
   return tl;
 }

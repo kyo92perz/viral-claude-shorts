@@ -1,0 +1,104 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "lb_eu",
+   "text": "Três descargas. Três chutes na porta. E um palavrão. É assim que se chama a Loira do Banheiro.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n02",
+   "who": "lb_eu",
+   "text": "Toda escola do Brasil tem a sua. A minha era a Escola Estadual Dom Pedro, em mil novecentos e noventa e seis.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "n03",
+   "who": "lb_eu",
+   "text": "A Bia jurava que era mentira. No intervalo, ela me arrastou pro banheiro do segundo andar, o que vivia interditado.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "b01",
+   "who": "lb_bia",
+   "text": "Se for verdade, eu te dou o meu lanche de uma semana.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "lb_eu",
+   "text": "Ela puxou a descarga. Uma vez. Duas. Três.",
+   "pause": 1.4,
+   "emo": 0.55
+  },
+  {
+   "id": "n05",
+   "who": "lb_eu",
+   "text": "Chutou a porta da última cabine. E falou o palavrão.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "b02",
+   "who": "lb_bia",
+   "text": "Viu? Nada.",
+   "pause": 1.2,
+   "emo": 0.5
+  },
+  {
+   "id": "n06",
+   "who": "lb_eu",
+   "text": "Foi aí que a luz piscou. E no espelho, bem atrás da gente, tinha uma moça de branco. Pálida. Com algodão no nariz, igual gente morta no caixão.",
+   "pause": 0.8,
+   "emo": 0.45
+  },
+  {
+   "id": "n07",
+   "who": "lb_eu",
+   "text": "E o algodão começou a ficar vermelho.",
+   "pause": 0.9,
+   "emo": 0.75
+  },
+  {
+   "id": "b03",
+   "who": "lb_bia",
+   "text": "Corre! Corre!",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n08",
+   "who": "lb_eu",
+   "text": "A porta da cabine abriu sozinha. E todas as torneiras começaram a jorrar sangue.",
+   "pause": 0.5,
+   "emo": 0.8
+  },
+  {
+   "id": "n09",
+   "who": "lb_eu",
+   "text": "A gente saiu correndo. Mas a Bia voltou. Pra buscar a mochila.",
+   "pause": 1.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n10",
+   "who": "lb_eu",
+   "text": "Ela nunca mais falou daquele dia. Mas, até hoje, a Bia nunca mais deu descarga três vezes.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "n11",
+   "who": "lb_eu",
+   "text": "E você? Teria coragem de dar a terceira descarga?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

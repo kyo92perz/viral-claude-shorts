@@ -30,7 +30,8 @@ const adapter: Adapter = {
     fs.mkdirSync(PROJ, { recursive: true });
     fs.copyFileSync(path.join(HERE, 'node_modules', 'gsap', 'dist', 'gsap.min.js'), path.join(PROJ, 'gsap.min.js'));
     fs.copyFileSync(path.join(HERE, 'theme.css'), path.join(PROJ, 'theme.css'));
-    for (const f of ['engine', 'library']) fs.writeFileSync(path.join(PROJ, `${f}.js`), toJs(path.join(HERE, `${f}.ts`)));
+    fs.copyFileSync(path.join(HERE, 'Anton.ttf'), path.join(PROJ, 'Anton.ttf'));   // the condensed display font of the toon signs and captions (SIL OFL)
+    for (const f of ['engine', 'library', 'toon']) fs.writeFileSync(path.join(PROJ, `${f}.js`), toJs(path.join(HERE, `${f}.ts`)));
     // the video's world (reusable pieces, their states, sets) and its scenes
     for (const [src, out] of [['world.ts', 'world.js'], ['visuals.ts', 'visuals.js']]) { const f = path.join(v, src); fs.writeFileSync(path.join(PROJ, out), fs.existsSync(f) ? toJs(f) : ''); }
     if (fs.existsSync(path.join(v, 'assets'))) fs.cpSync(path.join(v, 'assets'), path.join(PROJ, 'assets'), { recursive: true });
@@ -59,6 +60,7 @@ ${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration=
       const WORDS = ${JSON.stringify(P.words)};
     </script>
     <script src="library.js"></script>
+    <script src="toon.js"></script>
     <script src="world.js"></script>
     <script src="visuals.js"></script>
     <script src="engine.js"></script>

@@ -52,7 +52,7 @@ const adapter: Adapter = {
     bundleThree(ESB(), HERE, path.join(PROJ, 'three.js'));
     const theme = [HERE, ENGINE].map((d) => path.join(d, 'theme.css')).find((f) => fs.existsSync(f))!;
     fs.copyFileSync(theme, path.join(PROJ, 'theme.css'));
-    for (const f of ['engine', 'library', 'detail']) fs.writeFileSync(path.join(PROJ, `${f}.js`), toJs(ESB(), path.join(ENGINE, `${f}.ts`)));
+    for (const f of ['engine', 'library', 'detail', 'people']) fs.writeFileSync(path.join(PROJ, `${f}.js`), toJs(ESB(), path.join(ENGINE, `${f}.ts`)));
     const extra = F.extra ? F.extra(PROJ) : [];
     // the video's world (reusable pieces, their states, sets, camera moves) and its scenes
     for (const [src, out] of [[F.world, 'world.js'], [F.visuals, 'visuals.js']]) { const f = path.join(v, src); fs.writeFileSync(path.join(PROJ, out), fs.existsSync(f) ? toJs(ESB(), f) : ''); }
@@ -87,6 +87,7 @@ ${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration=
     </script>
     <script src="library.js"></script>
     <script src="detail.js"></script>
+    <script src="people.js"></script>
 ${extra.map((f) => `    <script src="${f}"></script>\n`).join('')}    <script src="world.js"></script>
     <script src="visuals.js"></script>
     <script src="engine.js"></script>
