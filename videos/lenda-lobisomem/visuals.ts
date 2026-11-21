@@ -1,5 +1,5 @@
 // <lines>
-const LO_LINES: { who: string; t0: number; t1: number }[] = [];
+const LO_LINES = [{"who": "lo_ju", "t0": 0.3, "t1": 5.942}, {"who": "lo_ju", "t0": 6.542, "t1": 13.343}, {"who": "lo_ju2", "t0": 13.843, "t1": 17.332}, {"who": "lo_tonho", "t0": 17.732, "t1": 19.914}, {"who": "lo_ju", "t0": 20.614, "t1": 24.99}, {"who": "lo_ju", "t0": 25.49, "t1": 31.008}, {"who": "lo_ju", "t0": 31.608, "t1": 37.18}, {"who": "lo_ju", "t0": 37.98, "t1": 43.968}, {"who": "lo_ju", "t0": 44.568, "t1": 48.832}, {"who": "lo_ju", "t0": 49.432, "t1": 54.937}, {"who": "lo_ju", "t0": 55.737, "t1": 62.066}, {"who": "lo_tonho", "t0": 62.566, "t1": 65.158}, {"who": "lo_ju", "t0": 66.058, "t1": 70.99}];
 // </lines>
 // =====================================================================
 //  O LOBISOMEM: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -61,7 +61,7 @@ defineVisuals({
   run: { bg: '#0f1530', html: () => bzShot(`${loFarm()}${loCoopOut(880, 1320)}${loJulia(60, 1600, 1.15)}`, ''),
     anim(tl, s, K, $) { tl.set($('#door'), { opacity: 0 }, s.t0); bzWalk(tl, $('#julia'), s.t0, K('slam') - 0.2, 0, 820, true); bzFace(tl, $('#julia'), s.t0, 'wide', 'open'); tl.set($('#julia'), { opacity: 0 }, K('slam') - 0.15); tl.set($('#door'), { opacity: 1 }, K('slam')); bzQuake(tl, $('#cam'), K('slam'), K('slam') + 0.2, 5); } },
   coop: { bg: '#3a2a20', html: () => bzShot(`${loCoop()}${loJulia(540, 1560, 1.2)}`, bzVignette(0.75)),
-    anim(tl, s, K, $) { bzFace(tl, $('#julia'), s.t0, 'wide', 'flat'); bzPose(tl, $('#julia'), s.t0, { aL: 165 }, 0.01); tl.set($('#eye'), { opacity: 1, scale: 1.6, transformOrigin: '50% 50%' }, s.t0);
+    anim(tl, s, K, $) { bzFace(tl, $('#julia'), s.t0, 'wide', 'flat'); bzPose(tl, $('#julia'), s.t0, { aL: 165 }, 0.01); tl.set($('#eye'), { opacity: 1, scale: 3.2, transformOrigin: '50% 50%' }, s.t0);
       tl.fromTo($('#eye'), { x: -300 }, { x: 420, duration: s.t1 - s.t0, ease: 'steps(5)' }, s.t0); bzShake(tl, $('#julia'), K('g'), s.t1, 3); } },
   dawn: { bg: '#f29a4a', html: () => bzShot(`${bzSky('#f29a4a', '#5a3f7a')}${bzSun(540, 1100, 160, '#ffd27a')}<rect y="1150" width="1080" height="790" fill="#4a6a44" ${bzO()}/>${[...Array(12)].map((_, i) => `<rect x="${i * 95}" y="1050" width="22" height="200" fill="#8a6a4a" ${bzO('stroke-width="4"')}/>`).join('')}<path d="M0 1100 h1080" stroke="#8a6a4a" stroke-width="16"/>${loRooster(540, 1060, 1.4)}`, bzSign('ck', 'COCORICÓ!', 540, 420, 5, '#fff', BZ.ink, 110)),
     anim(tl, s, K, $) { bzPop(tl, $('#ck'), s.t0 + 0.3); tl.fromTo($('#rooster'), { rotation: 0, svgOrigin: '540 1060' }, { rotation: -8, svgOrigin: '540 1060', duration: 0.3, yoyo: true, repeat: 3 }, s.t0 + 0.2); } },

@@ -26,7 +26,7 @@ SHOTS = [
  ('turn', 'n06', 4, None, D, ['drone'], []),
  ('eyes', 'n06', 8, None, D, ['drone'], [('e', 'n06', 10, 0, 'sting')]),
  ('run', 'n07', 0, None, E, ['steps'], [('slam', 'n07', 4, 0, 'thud')]),
- ('coop', 'n07', 7, None, D, ['drone'], [('g', 'n07', 11, 0, 'growl')]),
+ ('coop', 'n07', 7, None, D, ['drone'], [('g', 'n07', 10, 0, 'growl')]),
  ('dawn', 'n07', 12, None, C, ['forest'], []),
  ('kitchen', 'n08', 0, -0.3, Q, ['room'], []),
  ('scrap', 'n08', 9, None, D, ['room'], [('s', 'n08', 14, 0, 'sting')]),

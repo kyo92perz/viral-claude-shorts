@@ -1,0 +1,96 @@
+{
+ "duration": 72.59,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "lo_ju",
+   "text": "Dizem que o sétimo filho homem vira lobisomem. Meu primo Tonho era o sétimo.",
+   "t0": 0.3,
+   "t1": 5.942
+  },
+  {
+   "id": "n02",
+   "who": "lo_ju",
+   "text": "Na roça do meu tio, ninguém falava disso. Mas toda sexta-feira de lua cheia, o Tonho sumia antes da meia-noite.",
+   "t0": 6.542,
+   "t1": 13.343
+  },
+  {
+   "id": "j01",
+   "who": "lo_ju2",
+   "text": "Tonho, aonde você vai a essa hora?",
+   "t0": 13.843,
+   "t1": 17.332
+  },
+  {
+   "id": "t01",
+   "who": "lo_tonho",
+   "text": "Fica em casa, Júlia. Hoje não.",
+   "t0": 17.732,
+   "t1": 19.914
+  },
+  {
+   "id": "n03",
+   "who": "lo_ju",
+   "text": "Eu segui ele até a encruzilhada. Ele deitou no chão de terra e começou a rolar.",
+   "t0": 20.614,
+   "t1": 24.99
+  },
+  {
+   "id": "n04",
+   "who": "lo_ju",
+   "text": "Os ossos estalaram. As costas cresceram. As orelhas subiram. E o rosto do meu primo virou focinho.",
+   "t0": 25.49,
+   "t1": 31.008
+  },
+  {
+   "id": "n05",
+   "who": "lo_ju",
+   "text": "O bicho uivou pra lua. E os cachorros da roça inteira responderam.",
+   "t0": 31.608,
+   "t1": 37.18
+  },
+  {
+   "id": "n05b",
+   "who": "lo_ju",
+   "text": "Eu tapei a boca pra não gritar. O bicho era maior que um cavalo, e ainda usava a camisa do Tonho, toda rasgada.",
+   "t0": 37.98,
+   "t1": 43.968
+  },
+  {
+   "id": "n06",
+   "who": "lo_ju",
+   "text": "Eu pisei num galho. Ele virou a cabeça. E aqueles olhos amarelos me acharam.",
+   "t0": 44.568,
+   "t1": 48.832
+  },
+  {
+   "id": "n07",
+   "who": "lo_ju",
+   "text": "Corri pro galinheiro e tranquei a porta. Ele farejou cada fresta, rosnando, até o galo cantar.",
+   "t0": 49.432,
+   "t1": 54.937
+  },
+  {
+   "id": "n08",
+   "who": "lo_ju",
+   "text": "De manhã, o Tonho apareceu na cozinha, todo arranhado, com um pedaço do meu vestido preso no dente.",
+   "t0": 55.737,
+   "t1": 62.066
+  },
+  {
+   "id": "t02",
+   "who": "lo_tonho",
+   "text": "Bom dia, prima. Dormiu bem?",
+   "t0": 62.566,
+   "t1": 65.158
+  },
+  {
+   "id": "n09",
+   "who": "lo_ju",
+   "text": "E na sua família? Quem é o sétimo filho?",
+   "t0": 66.058,
+   "t1": 70.99
+  }
+ ]
+}

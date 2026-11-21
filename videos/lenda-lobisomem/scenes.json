@@ -1,0 +1,395 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.5"
+ },
+ "music": {
+  "bpm": 80,
+  "key": "D"
+ },
+ "notes": "O LOBISOMEM, Brasil Z toon look (styles/flat2d/toon.ts): a farm at night under a huge full moon, a dirt crossroads, a henhouse, a warm kitchen at dawn. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "howl",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 3.76
+  },
+  {
+   "id": "tonho",
+   "from": 8,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 10,
+     "sfx": "hit",
+     "t": 4.497
+    }
+   ],
+   "t0": 3.76,
+   "t1": 6.292
+  },
+  {
+   "id": "farm",
+   "from": 14,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night"
+   ],
+   "t0": 6.292,
+   "t1": 9.142
+  },
+  {
+   "id": "moon",
+   "from": 22,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 9.142,
+   "t1": 11.252
+  },
+  {
+   "id": "sneak",
+   "from": 28,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 11.252,
+   "t1": 13.643
+  },
+  {
+   "id": "ju",
+   "from": 34,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 13.643,
+   "t1": 17.632
+  },
+  {
+   "id": "hoje",
+   "from": 41,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.1,
+   "ambience": [
+    "night"
+   ],
+   "t0": 17.632,
+   "t1": 20.364
+  },
+  {
+   "id": "follow",
+   "from": 47,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 20.364,
+   "t1": 22.415
+  },
+  {
+   "id": "roll",
+   "from": 53,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 22.415,
+   "t1": 25.24
+  },
+  {
+   "id": "change",
+   "from": 63,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "k1",
+     "at": 64,
+     "sfx": "crack",
+     "t": 25.677
+    },
+    {
+     "id": "k2",
+     "at": 67,
+     "sfx": "crack",
+     "t": 26.77
+    },
+    {
+     "id": "k3",
+     "at": 70,
+     "sfx": "crack",
+     "t": 27.916
+    },
+    {
+     "id": "k4",
+     "at": 78,
+     "sfx": "impact",
+     "t": 30.208
+    }
+   ],
+   "t0": 25.24,
+   "t1": 31.358
+  },
+  {
+   "id": "howl",
+   "from": 80,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "u",
+     "at": 82,
+     "sfx": "howl",
+     "t": 32.314
+    }
+   ],
+   "t0": 31.358,
+   "t1": 33.551
+  },
+  {
+   "id": "dogs",
+   "from": 85,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 33.551,
+   "t1": 37.73
+  },
+  {
+   "id": "hide",
+   "from": 92,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 37.73,
+   "t1": 39.729
+  },
+  {
+   "id": "big",
+   "from": 99,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 102,
+     "sfx": "growl",
+     "t": 40.385
+    }
+   ],
+   "t0": 39.729,
+   "t1": 44.318
+  },
+  {
+   "id": "snap",
+   "from": 115,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 116,
+     "sfx": "crack",
+     "t": 44.752
+    }
+   ],
+   "t0": 44.318,
+   "t1": 45.693
+  },
+  {
+   "id": "turn",
+   "from": 119,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 45.693,
+   "t1": 46.799
+  },
+  {
+   "id": "eyes",
+   "from": 123,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 125,
+     "sfx": "sting",
+     "t": 47.358
+    }
+   ],
+   "t0": 46.799,
+   "t1": 49.182
+  },
+  {
+   "id": "run",
+   "from": 129,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "slam",
+     "at": 133,
+     "sfx": "thud",
+     "t": 50.822
+    }
+   ],
+   "t0": 49.182,
+   "t1": 51.871
+  },
+  {
+   "id": "coop",
+   "from": 136,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 139,
+     "sfx": "growl",
+     "t": 52.88
+    }
+   ],
+   "t0": 51.871,
+   "t1": 53.845
+  },
+  {
+   "id": "dawn",
+   "from": 141,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 53.845,
+   "t1": 55.437
+  },
+  {
+   "id": "kitchen",
+   "from": 145,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 55.437,
+   "t1": 59.163
+  },
+  {
+   "id": "scrap",
+   "from": 154,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 159,
+     "sfx": "sting",
+     "t": 60.559
+    }
+   ],
+   "t0": 59.163,
+   "t1": 62.366
+  },
+  {
+   "id": "bomdia",
+   "from": 163,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 62.366,
+   "t1": 65.858
+  },
+  {
+   "id": "you",
+   "from": 168,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 176,
+     "dt": 0.967,
+     "sfx": "howl",
+     "t": 71.22
+    }
+   ],
+   "t0": 65.858,
+   "t1": 72.59
+  }
+ ],
+ "duration": 72.59
+}
