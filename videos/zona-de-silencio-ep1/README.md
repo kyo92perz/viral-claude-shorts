@@ -8,7 +8,22 @@ personagem ou trama de outra obra.
 - **Storyboard:** [storyboard.png](storyboard.png), 118 planos numerados
 - **Descrição, títulos e tags para o YouTube:** [descricao-youtube.txt](descricao-youtube.txt)
 - **Legendas em português (SRT):** [legendas-pt.srt](legendas-pt.srt). Suba no YouTube Studio → Legendas.
-- **Thumbnails:** pasta [thumbnail/](thumbnail/)
+- **Thumbnails para teste A/B** (YouTube Studio → Testar e comparar):
+  [**V1 "Desliga o rádio!"** (recomendada)](thumbnail/thumb-v1-desliga-o-radio.jpg) ·
+  [V2 "Ele tem a sua voz"](thumbnail/thumb-v2-ele-tem-a-sua-voz.jpg) ·
+  [V3 "15 anos esperando"](thumbnail/thumb-v3-15-anos.jpg)
+
+## Medições do final.mp4 (`analyze-film.py`)
+
+| | Este episódio | Motel Lua Vermelha | Referências estudadas |
+|---|---|---|---|
+| Planos | 127 em 9:03 (mediana 3,5 s) | 116 em 9:52 | Sprite Fright: 97 em 10:30 |
+| Planos < 1 s / > 8 s | 18% / 6% | 25% / 27% | Charge: 22% / 9% |
+| Saturação média | **120** | 180 | 82–148 |
+| Quase-silêncio | 0,7% | 0,1% | 2–13% |
+
+A noite ficou bem mais dessaturada que no Motel. Os silêncios antes dos sustos existem na trilha, mas a ambiência
+(estática, vento) continua por baixo, então ainda ficaram abaixo das referências.
 
 ## Como foi feito
 
