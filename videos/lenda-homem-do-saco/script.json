@@ -24,6 +24,13 @@
    "emo": 0.6
   },
   {
+   "id": "n03b",
+   "who": "hs_eu",
+   "text": "Ninguém no bairro conhecia ele. E todos os cachorros da rua pararam de latir ao mesmo tempo.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
    "id": "n04",
    "who": "hs_eu",
    "text": "E o saco se mexia.",
@@ -43,6 +50,13 @@
    "text": "O que tem aí, moço?",
    "pause": 0.9,
    "emo": 0.5
+  },
+  {
+   "id": "n04b",
+   "who": "hs_eu",
+   "text": "O Lucas chegou mais perto. O velho começou a desamarrar a boca do saco. E lá de dentro, uma voz de criança gritou:",
+   "pause": 0.5,
+   "emo": 0.65
   },
   {
    "id": "s01",
@@ -75,9 +89,16 @@
   {
    "id": "v02",
    "who": "hs_velho",
-   "text": "Um. Dois. Três. Amanhã eu volto.",
+   "text": "Um... Dois... Três... Amanhã eu volto.",
    "pause": 1.0,
-   "emo": 0.55
+   "emo": 0.45
+  },
+  {
+   "id": "n06b",
+   "who": "hs_eu",
+   "text": "Naquela noite, ninguém dormiu. E de madrugada, alguém bateu três vezes no nosso portão.",
+   "pause": 1.2,
+   "emo": 0.6
   },
   {
    "id": "n07",
