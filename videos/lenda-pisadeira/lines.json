@@ -1,0 +1,96 @@
+{
+ "duration": 69.34,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "pi_eu",
+   "text": "Se você jantar demais e dormir de barriga pra cima, ela desce do telhado... e senta no seu peito.",
+   "t0": 0.3,
+   "t1": 6.145
+  },
+  {
+   "id": "n02",
+   "who": "pi_eu",
+   "text": "Minha vó chamava ela de Pisadeira. Magra, com unhas compridas e uma risada que não acaba nunca.",
+   "t0": 6.745,
+   "t1": 12.118
+  },
+  {
+   "id": "v01",
+   "who": "pi_vo",
+   "text": "Não deita de barriga cheia, menino. Ela fica olhando lá do telhado.",
+   "t0": 12.618,
+   "t1": 16.455
+  },
+  {
+   "id": "n03",
+   "who": "pi_eu",
+   "text": "Eu ri. Naquela noite, comi três pratos de feijoada e deitei de barriga pra cima.",
+   "t0": 17.055,
+   "t1": 23.971
+  },
+  {
+   "id": "n04",
+   "who": "pi_eu",
+   "text": "Acordei às três da manhã. Não conseguia mexer nada. Nem um dedo. Nem gritar.",
+   "t0": 24.871,
+   "t1": 29.511
+  },
+  {
+   "id": "n05",
+   "who": "pi_eu",
+   "text": "Alguma coisa pesada estava sentada no meu peito. E tinha cheiro de terra molhada.",
+   "t0": 30.211,
+   "t1": 34.536
+  },
+  {
+   "id": "n06",
+   "who": "pi_eu",
+   "text": "Abri os olhos. E ela estava ali. Sorrindo. Com as unhas arranhando o meu pescoço.",
+   "t0": 35.136,
+   "t1": 40.149
+  },
+  {
+   "id": "p01",
+   "who": "pi_pis",
+   "text": "Tava gostosa a janta, menino?",
+   "t0": 40.749,
+   "t1": 42.505
+  },
+  {
+   "id": "n07",
+   "who": "pi_eu",
+   "text": "Lembrei da vó. Ela dizia que a Pisadeira só vai embora se você conseguir mexer o dedão do pé.",
+   "t0": 43.405,
+   "t1": 50.056
+  },
+  {
+   "id": "n08",
+   "who": "pi_eu",
+   "text": "Fiz força. Muita força. E o dedão mexeu.",
+   "t0": 50.556,
+   "t1": 54.019
+  },
+  {
+   "id": "n09",
+   "who": "pi_eu",
+   "text": "Ela deu um grito, pulou pela janela e sumiu no telhado.",
+   "t0": 54.419,
+   "t1": 57.464
+  },
+  {
+   "id": "n10",
+   "who": "pi_eu",
+   "text": "No dia seguinte, tinha marca de unha no meu pescoço. E pegadas de barro no teto do quarto.",
+   "t0": 58.264,
+   "t1": 63.57
+  },
+  {
+   "id": "n11",
+   "who": "pi_eu",
+   "text": "E você? Jantou demais hoje?",
+   "t0": 64.27,
+   "t1": 67.74
+  }
+ ]
+}

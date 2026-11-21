@@ -10,7 +10,7 @@ const LO_SNOUT = '<ellipse cx="0" cy="30" rx="54" ry="40" fill="#8a7462" stroke=
 const LO_SHIRT = '<path d="M-90 -520 L-40 -380 L-80 -300 L-20 -240 L-70 -160 M90 -520 L50 -400 L85 -330 L30 -260" stroke="#c8342c" stroke-width="26" stroke-linecap="round" fill="none"/>';
 const LO_SPEC: Record<string, BzSpec> = {
   julia: { kid: true, skin: '#d9a27a', hair: { style: 'pony', color: '#3a2418' }, top: '#f6c744', dress: '#f6c744', shoes: '#c8342c' },
-  tonho: { kid: true, tall: 1.25, skin: '#c98757', hair: { style: 'messy', color: '#1c1410' }, top: '#c8342c', top2: '#7a1a14', pants: '#3a4a6a', shoes: '#3a2a1a' },
+  tonho: { kid: true, tall: 1.25, skin: '#c98757', hair: { style: 'messy', color: '#1c1410' }, top: '#c8342c', top2: '#7a1a14', pants: '#3a4a6a', shoes: '#3a2a1a', glow: '#ffd23a' },
   meio: { kid: true, tall: 1.3, wide: 1.1, skin: '#a87458', hair: { style: 'spiky', color: '#4a3a32' }, top: '#c8342c', top2: '#7a1a14', pants: '#3a4a6a', shoes: '#a87458', claws: true, glow: '#ffd23a', headBack: LO_EARS('#a87458') },
   lobo: { tall: 1.38, wide: 1.3, skin: '#5a4638', hair: { style: 'spiky', color: '#3a2e28' }, top: '#5a4638', pants: '#5a4638', shoes: '#3a2e28', claws: true, glow: '#ffd23a',
     headBack: LO_EARS('#5a4638'), headFront: LO_SNOUT, extra: LO_SHIRT },

@@ -103,6 +103,15 @@ const SOUNDS: Record<string, (t: number) => void> = {
   creak: (t) => add(t, 0.9, (u) => osc('saw', TAU * (90 + 40 * Math.sin(TAU * 1.3 * u)) * u) * (0.5 + 0.5 * Math.sin(TAU * 23 * u)) * Math.sin(Math.PI * u / 0.9), 0.08),
   thud: (t) => { add(t, 0.5, (u) => Math.sin(TAU * (60 + 40 * Math.exp(-u * 20)) * u) * Math.exp(-u * 8), 0.8); let y = 0; add(t, 0.4, (u) => { y += 0.15 * (noise() - y); return y * Math.exp(-u * 10) * 3; }, 0.35); for (let j = 0; j < 6; j++) add(t + 0.05 + rnd() * 0.4, 0.05, (u) => noise() * Math.exp(-u * 60), 0.12); },
   click: (t) => { add(t, 0.03, (u) => noise() * Math.exp(-u * 200), 0.3); add(t + 0.035, 0.02, (u) => noise() * Math.exp(-u * 250), 0.18); },
+  // a wolf howl: a sine that rises, holds with vibrato and falls (with an octave above, a bit of breath)
+  howl: (t) => { let ph = 0; add(t, 2.6, (u) => { const f = u < 0.5 ? 320 + 300 * (u / 0.5) : u < 1.8 ? 620 + 18 * Math.sin(TAU * 5.5 * u) : 620 - 260 * ((u - 1.8) / 0.8); ph += TAU * f / 48000;
+    return (Math.sin(ph) + 0.25 * Math.sin(2 * ph) + 0.04 * noise()) * Math.min(1, u / 0.25) * Math.min(1, (2.6 - u) / 0.5); }, 0.22); },
+  // a low growl: filtered noise, rough amplitude
+  growl: (t) => { let y = 0; add(t, 1.4, (u) => { y += 0.05 * (noise() - y); return y * 6 * (0.6 + 0.4 * Math.sin(TAU * 28 * u)) * Math.min(1, u / 0.1) * Math.min(1, (1.4 - u) / 0.3); }, 0.5); },
+  // a church bell: inharmonic partials with a long decay
+  bell: (t) => [[220, 1], [440 * 1.19, 0.5], [660 * 1.02, 0.35], [880 * 1.5, 0.2], [1100 * 1.3, 0.12]].forEach(([f, a]) => add(t, 3.5, (u) => Math.sin(TAU * f * u) * Math.exp(-u * (1.2 + f / 900)), 0.18 * a)),
+  // a horse neigh: a fast tremolo on a falling-rising saw
+  neigh: (t) => add(t, 1.6, (u) => osc('saw', TAU * (700 - 250 * Math.sin(Math.PI * u / 1.6)) * u) * (0.5 + 0.5 * Math.sin(TAU * 22 * u)) * Math.min(1, u / 0.08) * Math.min(1, (1.6 - u) / 0.4), 0.07),
   // a toilet flush: the lever clack, a rushing low noise that swells and drains, a few gurgles at the end
   flush: (t) => { SOUNDS.click(t); let y = 0; add(t + 0.05, 1.7, (u) => { y += 0.08 * (noise() - y); return y * 4 * Math.min(1, u / 0.15) * Math.exp(-Math.max(0, u - 0.5) * 2.2); }, 0.5);
     for (let j = 0; j < 5; j++) add(t + 1.0 + j * 0.13 + rnd() * 0.05, 0.09, (u) => Math.sin(TAU * (180 + 260 * u / 0.09) * u) * Math.sin(Math.PI * u / 0.09), 0.12); },

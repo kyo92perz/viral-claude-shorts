@@ -1,0 +1,414 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.4"
+ },
+ "music": {
+  "bpm": 72,
+  "key": "E"
+ },
+ "notes": "A PISADEIRA, Brasil Z toon look (styles/flat2d/toon.ts): a blue bedroom at night, red clock, the roofs under a huge moon. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "sting",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 3.513
+  },
+  {
+   "id": "roof",
+   "from": 10,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 3.513,
+   "t1": 4.825
+  },
+  {
+   "id": "land",
+   "from": 14,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 15,
+     "sfx": "thud",
+     "t": 4.947
+    }
+   ],
+   "t0": 4.825,
+   "t1": 6.495
+  },
+  {
+   "id": "title",
+   "from": 19,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 24,
+     "sfx": "impact",
+     "t": 8.148
+    }
+   ],
+   "t0": 6.495,
+   "t1": 9.068
+  },
+  {
+   "id": "nails",
+   "from": 26,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 27,
+     "sfx": "scratch",
+     "t": 9.286
+    }
+   ],
+   "t0": 9.068,
+   "t1": 10.206
+  },
+  {
+   "id": "laugh",
+   "from": 29,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 10.206,
+   "t1": 12.418
+  },
+  {
+   "id": "vo",
+   "from": 36,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 12.418,
+   "t1": 16.805
+  },
+  {
+   "id": "feast",
+   "from": 48,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "p1",
+     "at": 53,
+     "sfx": "pop",
+     "t": 19.279
+    },
+    {
+     "id": "p2",
+     "at": 54,
+     "sfx": "pop",
+     "t": 19.724
+    },
+    {
+     "id": "p3",
+     "at": 56,
+     "sfx": "pop",
+     "t": 20.614
+    }
+   ],
+   "t0": 16.805,
+   "t1": 21.403
+  },
+  {
+   "id": "bed",
+   "from": 57,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "off",
+     "at": 62,
+     "dt": 0.275,
+     "sfx": "click",
+     "t": 23.801
+    }
+   ],
+   "t0": 21.403,
+   "t1": 24.571
+  },
+  {
+   "id": "clock",
+   "from": 63,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 65,
+     "sfx": "beep",
+     "t": 25.567
+    }
+   ],
+   "t0": 24.571,
+   "t1": 26.486
+  },
+  {
+   "id": "frozen",
+   "from": 68,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 26.486,
+   "t1": 29.961
+  },
+  {
+   "id": "weight",
+   "from": 77,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 29.961,
+   "t1": 34.886
+  },
+  {
+   "id": "eyes",
+   "from": 91,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "her",
+     "at": 94,
+     "sfx": "sting",
+     "t": 36.045
+    }
+   ],
+   "t0": 34.886,
+   "t1": 37.736
+  },
+  {
+   "id": "neck",
+   "from": 99,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 102,
+     "sfx": "scratch",
+     "t": 38.566
+    }
+   ],
+   "t0": 37.736,
+   "t1": 40.549
+  },
+  {
+   "id": "janta",
+   "from": 106,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 40.549,
+   "t1": 43.205
+  },
+  {
+   "id": "lembrei",
+   "from": 111,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 43.205,
+   "t1": 48.602
+  },
+  {
+   "id": "foot",
+   "from": 125,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 48.602,
+   "t1": 50.306
+  },
+  {
+   "id": "force",
+   "from": 130,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 50.306,
+   "t1": 52.555
+  },
+  {
+   "id": "toe",
+   "from": 134,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "m",
+     "at": 137,
+     "dt": -0.1,
+     "sfx": "hit",
+     "t": 53.383
+    }
+   ],
+   "t0": 52.555,
+   "t1": 54.169
+  },
+  {
+   "id": "scream",
+   "from": 138,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "g",
+     "at": 139,
+     "sfx": "scream",
+     "t": 54.649
+    }
+   ],
+   "t0": 54.169,
+   "t1": 55.411
+  },
+  {
+   "id": "window",
+   "from": 142,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 142,
+     "dt": 0.2,
+     "sfx": "whoosh",
+     "t": 55.591
+    }
+   ],
+   "t0": 55.411,
+   "t1": 56.537
+  },
+  {
+   "id": "gone",
+   "from": 146,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 56.537,
+   "t1": 57.964
+  },
+  {
+   "id": "morning",
+   "from": 149,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 57.964,
+   "t1": 61.347
+  },
+  {
+   "id": "ceiling",
+   "from": 159,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 61.347,
+   "t1": 64.07
+  },
+  {
+   "id": "you",
+   "from": 167,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 171,
+     "dt": 0.9,
+     "sfx": "sting",
+     "t": 67.97
+    }
+   ],
+   "t0": 64.07,
+   "t1": 69.34
+  }
+ ],
+ "duration": 69.34
+}

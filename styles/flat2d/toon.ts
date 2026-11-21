@@ -165,3 +165,19 @@ function bzSign(id: string, text: string, x: number, y: number, rot = -4, bg = B
 // a vignette on top of everything (darker corners) and a flash for impacts
 const bzVignette = (k = 0.55) => `<defs><radialGradient id="bzvig${BZ_UID}" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="${k}"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#bzvig${BZ_UID++})"/>`;
 const bzFlash = (id: string, c = '#fff') => `<rect id="${id}" width="1080" height="1920" fill="${c}" opacity="0"/>`;
+// ---- shot helpers (every shot draws inside #cam; overlays stay outside it)
+const bzShot = (body: string, over = '') => svg(`<g id="cam">${body}</g>${over}`);
+// a slow camera push (or pull: b < a) around (ox, oy)
+function bzPush(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a = 1, b = 1.07, ox = 540, oy = 900) {
+  tl.fromTo(sel, { scale: a, svgOrigin: `${ox} ${oy}` }, { scale: b, svgOrigin: `${ox} ${oy}`, duration: t1 - t0, ease: 'none' }, t0);
+}
+// a flash overlay that fades out (an impact)
+const bzHit = (tl: gsap.core.Timeline, sel: string, t: number, k = 0.7) => tl.fromTo(sel, { opacity: k }, { opacity: 0, duration: 0.3, ease: 'power2.out' }, t);
+// show something at t with a pop (hidden before)
+const bzShow = (tl: gsap.core.Timeline, sel: string, t: number) => { tl.set(sel, { opacity: 1 }, t); bzPop(tl, sel, t, 0.3); };
+// the hook plate: visible from the very first frame, then a punch (the first frame of a Short must already hook)
+const bzHook = (tl: gsap.core.Timeline, sel: string, t: number) => tl.fromTo(sel, { scale: 1.25, transformOrigin: '50% 50%' }, { scale: 1, duration: 0.35, ease: 'back.out(3)' }, t);
+// a big number or word with an outline (hidden until shown)
+const bzNum = (id: string, n: string, x: number, y: number, c = '#fff', size = 240) => `<g id="${id}" opacity="0"><text x="${x}" y="${y}" text-anchor="middle" font-family="Anton" font-size="${size}" fill="${c}" stroke="${BZ.ink}" stroke-width="14" paint-order="stroke">${n}</text></g>`;
+// the whole frame shakes
+const bzQuake = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a = 6) => tl.fromTo(sel, { x: -a }, { x: a, duration: 0.05, yoyo: true, repeat: Math.max(1, Math.floor((t1 - t0) / 0.05)), ease: 'none' }, t0);
