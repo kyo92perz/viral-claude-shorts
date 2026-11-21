@@ -47,6 +47,7 @@ export const SFX: Record<string, string> = {
   off: 'the power dies: a falling hum and a thud', siren: 'a police siren passing', boom: 'a huge explosion with a long rumble', heart: 'two heartbeats',
   static: 'a radio bursting into static', feedback: 'a screaming audio feedback loop', beep: 'a pager beeping', chop: 'an axe biting into something', spark: 'electric sparks crackling',
   creak: 'a door or floorboard creaking', thud: 'a body hitting a wall or shelves', click: 'a switch or a radio turned off',
+  flush: 'a toilet flush', pour: 'water or blood gushing from taps',
 };
 // background sound of a scene's place
 export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat',

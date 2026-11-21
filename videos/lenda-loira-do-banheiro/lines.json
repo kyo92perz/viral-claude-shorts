@@ -1,5 +1,5 @@
 {
- "duration": 72.842,
+ "duration": 73.961,
  "lines": [
   {
    "id": "n01",
@@ -53,51 +53,51 @@
   {
    "id": "n06",
    "who": "lb_eu",
-   "text": "Foi aí que a luz piscou. E no espelho, atrás da gente, tinha uma moça de branco. Pálida. Com algodão no nariz, igual gente morta no caixão.",
+   "text": "Foi aí que a luz piscou. E no espelho, bem atrás da gente, tinha uma moça de branco. Pálida. Com algodão no nariz, igual gente morta no caixão.",
    "t0": 38.549,
-   "t1": 47.083
+   "t1": 47.69
   },
   {
    "id": "n07",
    "who": "lb_eu",
    "text": "E o algodão começou a ficar vermelho.",
-   "t0": 47.883,
-   "t1": 49.623
+   "t0": 48.49,
+   "t1": 50.23
   },
   {
    "id": "b03",
    "who": "lb_bia",
-   "text": "Corre!",
-   "t0": 50.523,
-   "t1": 50.892
+   "text": "Corre! Corre!",
+   "t0": 51.13,
+   "t1": 52.011
   },
   {
    "id": "n08",
    "who": "lb_eu",
    "text": "A porta da cabine abriu sozinha. E todas as torneiras começaram a jorrar sangue.",
-   "t0": 51.492,
-   "t1": 56.967
+   "t0": 52.611,
+   "t1": 58.086
   },
   {
    "id": "n09",
    "who": "lb_eu",
    "text": "A gente saiu correndo. Mas a Bia voltou. Pra buscar a mochila.",
-   "t0": 57.467,
-   "t1": 60.859
+   "t0": 58.586,
+   "t1": 61.978
   },
   {
    "id": "n10",
    "who": "lb_eu",
    "text": "Ela nunca mais falou daquele dia. Mas, até hoje, a Bia nunca mais deu descarga três vezes.",
-   "t0": 62.459,
-   "t1": 67.711
+   "t0": 63.578,
+   "t1": 68.83
   },
   {
    "id": "n11",
    "who": "lb_eu",
    "text": "E você? Teria coragem de dar a terceira descarga?",
-   "t0": 68.311,
-   "t1": 71.242
+   "t0": 69.43,
+   "t1": 72.361
   }
  ]
 }

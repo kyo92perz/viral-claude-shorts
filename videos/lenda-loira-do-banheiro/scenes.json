@@ -1,0 +1,529 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.1"
+ },
+ "music": {
+  "bpm": 84,
+  "key": "E"
+ },
+ "notes": "A LOIRA DO BANHEIRO, Brasil Z toon look (styles/flat2d/toon.ts): flat 2D, thick outlines, school greens by day, the bathroom goes dark and red. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "flush1",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 1,
+     "dt": -0.1,
+     "sfx": "flush",
+     "t": 0.574
+    }
+   ],
+   "t0": 0,
+   "t1": 1.408
+  },
+  {
+   "id": "kick1",
+   "from": 2,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 3,
+     "sfx": "thud",
+     "t": 1.762
+    }
+   ],
+   "t0": 1.408,
+   "t1": 2.971
+  },
+  {
+   "id": "swear1",
+   "from": 6,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 8,
+     "dt": -0.2,
+     "sfx": "pop",
+     "t": 3.159
+    }
+   ],
+   "t0": 2.971,
+   "t1": 4.025
+  },
+  {
+   "id": "title",
+   "from": 9,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 13,
+     "sfx": "sting",
+     "t": 5.161
+    }
+   ],
+   "t0": 4.025,
+   "t1": 7.448
+  },
+  {
+   "id": "schools",
+   "from": 18,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 20,
+     "sfx": "pop",
+     "t": 8.414
+    }
+   ],
+   "t0": 7.448,
+   "t1": 9.426
+  },
+  {
+   "id": "school",
+   "from": 24,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "y",
+     "at": 32,
+     "sfx": "hit",
+     "t": 11.719
+    }
+   ],
+   "t0": 9.426,
+   "t1": 14.348
+  },
+  {
+   "id": "bia",
+   "from": 40,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 14.348,
+   "t1": 16.561
+  },
+  {
+   "id": "hall",
+   "from": 46,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 16.561,
+   "t1": 20.448
+  },
+  {
+   "id": "tape",
+   "from": 56,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "z",
+     "at": 58,
+     "sfx": "hit",
+     "t": 20.853
+    }
+   ],
+   "t0": 20.448,
+   "t1": 22.207
+  },
+  {
+   "id": "dare",
+   "from": 60,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 22.207,
+   "t1": 25.424
+  },
+  {
+   "id": "pull",
+   "from": 72,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 25.424,
+   "t1": 27.186
+  },
+  {
+   "id": "flush3",
+   "from": 76,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.15,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "f1",
+     "at": 76,
+     "sfx": "flush",
+     "t": 27.336
+    },
+    {
+     "id": "f2",
+     "at": 78,
+     "sfx": "flush",
+     "t": 27.987
+    },
+    {
+     "id": "f3",
+     "at": 79,
+     "sfx": "flush",
+     "t": 28.384
+    }
+   ],
+   "t0": 27.186,
+   "t1": 29.162
+  },
+  {
+   "id": "wait",
+   "from": 79,
+   "type": "object",
+   "mood": "silence",
+   "delay": 0.778,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 29.162,
+   "t1": 29.982
+  },
+  {
+   "id": "kick2",
+   "from": 80,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 81,
+     "sfx": "thud",
+     "t": 30.624
+    }
+   ],
+   "t0": 29.982,
+   "t1": 32.263
+  },
+  {
+   "id": "swear2",
+   "from": 86,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 88,
+     "dt": -0.1,
+     "sfx": "pop",
+     "t": 32.673
+    }
+   ],
+   "t0": 32.263,
+   "t1": 34.029
+  },
+  {
+   "id": "nada",
+   "from": 90,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 34.029,
+   "t1": 37.649
+  },
+  {
+   "id": "flicker",
+   "from": 92,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.9,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "off",
+     "at": 96,
+     "sfx": "buzz",
+     "t": 39.457
+    }
+   ],
+   "t0": 37.649,
+   "t1": 40.203
+  },
+  {
+   "id": "mirror",
+   "from": 98,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "her",
+     "at": 105,
+     "sfx": "sting",
+     "t": 42.333
+    }
+   ],
+   "t0": 40.203,
+   "t1": 44.017
+  },
+  {
+   "id": "pale",
+   "from": 110,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 44.017,
+   "t1": 45.258
+  },
+  {
+   "id": "cotton",
+   "from": 113,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 45.258,
+   "t1": 48.19
+  },
+  {
+   "id": "red",
+   "from": 120,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "heartbeat"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 124,
+     "sfx": "heart",
+     "t": 49.435
+    }
+   ],
+   "t0": 48.19,
+   "t1": 50.93
+  },
+  {
+   "id": "corre",
+   "from": 127,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "run",
+     "at": 127,
+     "sfx": "impact",
+     "t": 51.13
+    }
+   ],
+   "t0": 50.93,
+   "t1": 52.361
+  },
+  {
+   "id": "door",
+   "from": 129,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 131,
+     "sfx": "creak",
+     "t": 53.184
+    }
+   ],
+   "t0": 52.361,
+   "t1": 54.859
+  },
+  {
+   "id": "taps",
+   "from": 135,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 137,
+     "sfx": "pour",
+     "t": 55.412
+    }
+   ],
+   "t0": 54.859,
+   "t1": 58.336
+  },
+  {
+   "id": "run",
+   "from": 143,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 58.336,
+   "t1": 59.839
+  },
+  {
+   "id": "back",
+   "from": 147,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "t0": 59.839,
+   "t1": 61.433
+  },
+  {
+   "id": "bag",
+   "from": 153,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "slam",
+     "at": 154,
+     "dt": 0.667,
+     "sfx": "thud",
+     "t": 62.208
+    }
+   ],
+   "t0": 61.433,
+   "t1": 62.978
+  },
+  {
+   "id": "silent",
+   "from": 155,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.6,
+   "ambience": [
+    "room"
+   ],
+   "t0": 62.978,
+   "t1": 65.578
+  },
+  {
+   "id": "twice",
+   "from": 161,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "f1",
+     "at": 169,
+     "sfx": "click",
+     "t": 67.648
+    },
+    {
+     "id": "f2",
+     "at": 170,
+     "sfx": "click",
+     "t": 68.17
+    }
+   ],
+   "t0": 65.578,
+   "t1": 69.23
+  },
+  {
+   "id": "you",
+   "from": 172,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "eyes",
+     "at": 180,
+     "dt": 0.76,
+     "sfx": "sting",
+     "t": 72.591
+    }
+   ],
+   "t0": 69.23,
+   "t1": 73.961
+  }
+ ],
+ "duration": 73.961
+}

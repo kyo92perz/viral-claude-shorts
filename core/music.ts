@@ -103,6 +103,11 @@ const SOUNDS: Record<string, (t: number) => void> = {
   creak: (t) => add(t, 0.9, (u) => osc('saw', TAU * (90 + 40 * Math.sin(TAU * 1.3 * u)) * u) * (0.5 + 0.5 * Math.sin(TAU * 23 * u)) * Math.sin(Math.PI * u / 0.9), 0.08),
   thud: (t) => { add(t, 0.5, (u) => Math.sin(TAU * (60 + 40 * Math.exp(-u * 20)) * u) * Math.exp(-u * 8), 0.8); let y = 0; add(t, 0.4, (u) => { y += 0.15 * (noise() - y); return y * Math.exp(-u * 10) * 3; }, 0.35); for (let j = 0; j < 6; j++) add(t + 0.05 + rnd() * 0.4, 0.05, (u) => noise() * Math.exp(-u * 60), 0.12); },
   click: (t) => { add(t, 0.03, (u) => noise() * Math.exp(-u * 200), 0.3); add(t + 0.035, 0.02, (u) => noise() * Math.exp(-u * 250), 0.18); },
+  // a toilet flush: the lever clack, a rushing low noise that swells and drains, a few gurgles at the end
+  flush: (t) => { SOUNDS.click(t); let y = 0; add(t + 0.05, 1.7, (u) => { y += 0.08 * (noise() - y); return y * 4 * Math.min(1, u / 0.15) * Math.exp(-Math.max(0, u - 0.5) * 2.2); }, 0.5);
+    for (let j = 0; j < 5; j++) add(t + 1.0 + j * 0.13 + rnd() * 0.05, 0.09, (u) => Math.sin(TAU * (180 + 260 * u / 0.09) * u) * Math.sin(Math.PI * u / 0.09), 0.12); },
+  // water (or blood) gushing from taps: a steady hiss that starts hard
+  pour: (t) => { let y = 0; add(t, 2.4, (u) => { y += 0.35 * (noise() - y); return y * 2 * Math.min(1, u / 0.05) * Math.min(1, (2.4 - u) / 0.6); }, 0.3); },
 };
 
 // ---- ambience (under the scene, with its fades)

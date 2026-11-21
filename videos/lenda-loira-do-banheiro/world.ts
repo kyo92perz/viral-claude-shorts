@@ -35,6 +35,7 @@ function lbHall(withSign = true) {
 function lbBath() {
   let tiles = ''; for (let x = 0; x <= 1080; x += 60) tiles += `<path d="M${x} 1020 V1400" stroke="#2b5a4a" stroke-width="3"/>`; for (let y = 1020; y <= 1400; y += 60) tiles += `<path d="M0 ${y} H1080" stroke="#2b5a4a" stroke-width="3"/>`;
   const stall = (i: number) => { const x = 40 + i * 255; return `<rect x="${x}" y="760" width="22" height="620" fill="#7d8f84" ${bzO()}/>
+    <rect x="${x + 22}" y="780" width="210" height="560" fill="#14161c"/><g id="eyes${i}" opacity="0"><ellipse cx="${x + 105}" cy="930" rx="16" ry="9" fill="#f4f8ff"/><ellipse cx="${x + 155}" cy="930" rx="16" ry="9" fill="#f4f8ff"/></g>
     <g id="door${i}"><g transform="translate(${x + 22} 0)"><rect x="0" y="780" width="210" height="560" fill="#93a698" ${bzO()}/><rect x="170" y="1040" width="18" height="40" rx="6" fill="#c9ced8" ${bzO('stroke-width="4"')}/>
       <text x="105" y="880" text-anchor="middle" font-family="Anton" font-size="44" fill="#5a6a60">${i + 1}</text></g></g>`; };
   return `<rect width="1080" height="1920" fill="#d8cfb4"/>${[...Array(6)].map((_, i) => `<path d="M${120 + i * 170} 560 q 20 60 -8 120 q 30 10 18 50" stroke="#a89c80" stroke-width="5" fill="none"/>`).join('')}
@@ -49,12 +50,13 @@ function lbFlush() {
   return `<rect width="1080" height="1920" fill="#5f9e86"/>${tiles}<g id="plate"><rect x="340" y="700" width="400" height="400" rx="30" fill="#d4d8dc" ${bzO('stroke-width="10"')}/><circle id="btn" cx="540" cy="900" r="120" fill="#eef0f2" ${bzO('stroke-width="10"')}/><circle cx="500" cy="860" r="30" fill="#fff" opacity="0.7"/></g>`;
 }
 // sinks and the long mirror; faucets have streams (ids) that turn to blood
-function lbSinks() {
+function lbSinks(reflection = '') {
+  const cid = 'lbmirror' + (BZ_UID++);   // one clip per copy: a clip inside a hidden scene clips nothing
   let tiles = ''; for (let x = 0; x <= 1080; x += 60) tiles += `<path d="M${x} 1080 V1400" stroke="#2b5a4a" stroke-width="3"/>`;
   const sink = (x: number, i: number) => `<path d="M${x - 120} 1160 h240 q-10 110 -120 110 q-110 0 -120 -110z" fill="#f4f2ec" ${bzO()}/><path d="M${x + 60} 1160 v-60 q0 -24 -24 -24 h-40" stroke="${BZ.ink}" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M${x + 60} 1160 v-60 q0 -24 -24 -24 h-40" stroke="#c9ced8" stroke-width="10" fill="none" stroke-linecap="round"/>
     <rect id="stream${i}" x="${x - 4 - 2}" y="1080" width="14" height="140" fill="${BZ.blood}" opacity="0"/><ellipse id="pool${i}" cx="${x}" cy="1180" rx="90" ry="20" fill="${BZ.blood}" opacity="0"/>`;
   return `<rect width="1080" height="1920" fill="#d8cfb4"/><rect y="1080" width="1080" height="320" fill="#5f9e86"/>${tiles}<path d="M0 1080 h1080" stroke="${BZ.ink}" stroke-width="8"/>
-    <rect x="60" y="620" width="960" height="420" fill="#9fb4bc" ${bzO('stroke-width="10"')}/><path d="M120 680 l120 -40 M160 760 l220 -80 M700 700 l200 -60" stroke="#e8f4f8" stroke-width="10" opacity="0.5"/>
+    <rect x="60" y="620" width="960" height="420" fill="#9fb4bc" ${bzO('stroke-width="10"')}/><defs><clipPath id="${cid}"><rect x="64" y="624" width="952" height="412"/></clipPath></defs><g clip-path="url(#${cid})">${reflection}</g><path d="M120 680 l120 -40 M160 760 l220 -80 M700 700 l200 -60" stroke="#e8f4f8" stroke-width="10" opacity="0.5"/>
     ${sink(220, 0)}${sink(540, 1)}${sink(860, 2)}<rect y="1400" width="1080" height="560" fill="#9aa0a0" ${bzO()}/><ellipse id="floodpool" cx="540" cy="1520" rx="10" ry="4" fill="${BZ.blood}" opacity="0.9"/>`;
 }
 // a dark overlay for the flickering light (id), and the mirror's ghost glow
@@ -64,6 +66,31 @@ function lbFlicker(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, 
   const pat = [0, k, 0.1, k, 0, 0, k, 0.3, k, k, 0]; let t = t0, i = 0;
   while (t < t1) { tl.set(sel, { opacity: pat[i % pat.length] }, t); t += 0.07 + ((i * 37) % 5) * 0.03; i++; }
   tl.set(sel, { opacity: 0 }, t1);
+}
+
+
+// a censored swear in a spiky speech bubble (the comic way to "say" the palavrão)
+function lbSwear(id: string, x: number, y: number, s = 1) {
+  const pts = [...Array(18)].map((_, i) => { const a = (i / 18) * Math.PI * 2, r = i % 2 ? 150 : 205; return `${(Math.cos(a) * r * 1.35).toFixed(0)},${(Math.sin(a) * r).toFixed(0)}`; }).join(' ');
+  return `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})"><polygon points="${pts}" fill="#fff" ${bzO('stroke-width="9"')}/>
+    <text x="0" y="40" text-anchor="middle" font-family="Anton" font-size="120" fill="${BZ.red}" stroke="${BZ.ink}" stroke-width="6" paint-order="stroke">#@$%!</text></g></g>`;
+}
+// a school backpack
+const lbBag = (id: string, x: number, y: number, s = 1, c = '#d4483a') => `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})"><path d="M-40 -150 q40 -60 80 0" stroke="${BZ.ink}" stroke-width="16" fill="none"/>
+  <rect x="-90" y="-150" width="180" height="200" rx="40" fill="${c}" ${bzO()}/><rect x="-60" y="-40" width="120" height="70" rx="16" fill="#f6c744" ${bzO()}/></g></g>`;
+// a classroom: green board with the date, two desks in front (drawn after the people: they hide the legs)
+function lbClass() {
+  return `<rect width="1080" height="1920" fill="#e9dcc0"/><rect y="1100" width="1080" height="300" fill="#c7a77a" ${bzO()}/>
+    <rect x="120" y="560" width="840" height="400" fill="#2f5a46" ${bzO('stroke-width="12"')}/><text x="540" y="720" text-anchor="middle" font-family="Anton" font-size="90" fill="#e8efe8" opacity="0.85">12/03/1996</text>
+    <path d="M200 820 q120 -40 220 0 t220 0" stroke="#e8efe8" stroke-width="6" fill="none" opacity="0.6"/><rect y="1380" width="1080" height="560" fill="#a38b6a" ${bzO()}/>`;
+}
+const lbDesks = () => `<rect x="80" y="1380" width="420" height="40" fill="#c98a4a" ${bzO()}/><rect x="580" y="1380" width="420" height="40" fill="#c98a4a" ${bzO()}/>
+  <rect x="100" y="1420" width="380" height="260" fill="#7a5a3a" ${bzO()}/><rect x="600" y="1420" width="380" height="260" fill="#7a5a3a" ${bzO()}/>`;
+// a little school (the "every school has one" montage) with a pale face at one window
+function lbMiniSchool(id: string, x: number, y: number, s: number, roof: string) {
+  return `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})"><rect x="-200" y="-260" width="400" height="260" fill="#efe0b8" ${bzO()}/><path d="M-230 -250 L0 -380 L230 -250 Z" fill="${roof}" ${bzO()}/>
+    ${[-120, 0, 120].map((wx) => `<rect x="${wx - 40}" y="-200" width="80" height="80" fill="#bfe0f0" ${bzO('stroke-width="5"')}/>`).join('')}<rect x="-40" y="-100" width="80" height="100" fill="#7a4a2a" ${bzO()}/>
+    <g class="ghost" opacity="0"><circle cx="120" cy="-155" r="26" fill="#c9d4dc"/><path d="M94 -160 q26 -50 52 0 v40 h-52z" fill="#e8d27a"/><circle cx="111" cy="-150" r="5" fill="${BZ.ink}"/><circle cx="129" cy="-150" r="5" fill="${BZ.ink}"/></g></g></g>`;
 }
 
 // ---------------------------------------------------------------- the world test (world.json)
