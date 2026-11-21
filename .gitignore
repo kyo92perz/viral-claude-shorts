@@ -43,3 +43,4 @@ videos/hello-cartoon/
 # final videos go in GitHub releases, not in the repo
 videos/*/final.mp4
 .DS_Store
+videos/*/final-youtube.mp4
