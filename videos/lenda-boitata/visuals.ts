@@ -1,5 +1,5 @@
 // <lines>
-const BO_LINES: { who: string; t0: number; t1: number }[] = [];
+const BO_LINES = [{"who": "bo_eu", "t0": 0.3, "t1": 4.663}, {"who": "bo_eu", "t0": 5.263, "t1": 11.512}, {"who": "bo_eu", "t0": 12.012, "t1": 16.675}, {"who": "bo_zeca", "t0": 17.075, "t1": 21.37}, {"who": "bo_eu", "t0": 22.07, "t1": 26.185}, {"who": "bo_eu", "t0": 26.785, "t1": 30.623}, {"who": "bo_eu", "t0": 31.323, "t1": 37.139}, {"who": "bo_zeca", "t0": 37.639, "t1": 39.245}, {"who": "bo_eu", "t0": 39.845, "t1": 45.361}, {"who": "bo_eu", "t0": 46.161, "t1": 53.254}, {"who": "bo_zeca", "t0": 53.754, "t1": 57.396}, {"who": "bo_eu", "t0": 58.296, "t1": 60.848}];
 // </lines>
 // =====================================================================
 //  O BOITATÁ: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.

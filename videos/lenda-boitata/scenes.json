@@ -1,0 +1,318 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.8"
+ },
+ "music": {
+  "bpm": 86,
+  "key": "G"
+ },
+ "notes": "O BOITATÁ, Brasil Z toon look (styles/flat2d/toon.ts): a dark forest by a river, a wall of fire, a fire serpent with two huge eyes; dawn in orange. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "sting",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 3.692
+  },
+  {
+   "id": "title",
+   "from": 15,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 18,
+     "sfx": "impact",
+     "t": 4.262
+    }
+   ],
+   "t0": 3.692,
+   "t1": 5.013
+  },
+  {
+   "id": "snake",
+   "from": 19,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night"
+   ],
+   "t0": 5.013,
+   "t1": 7.979
+  },
+  {
+   "id": "eyes",
+   "from": 27,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 7.979,
+   "t1": 10.245
+  },
+  {
+   "id": "protect",
+   "from": 33,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 10.245,
+   "t1": 11.762
+  },
+  {
+   "id": "zeca",
+   "from": 37,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 39,
+     "sfx": "hit",
+     "t": 12.414
+    }
+   ],
+   "t0": 11.762,
+   "t1": 13.393
+  },
+  {
+   "id": "order",
+   "from": 42,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 13.393,
+   "t1": 16.875
+  },
+  {
+   "id": "lenda",
+   "from": 56,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 16.875,
+   "t1": 21.77
+  },
+  {
+   "id": "blaze",
+   "from": 63,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 66,
+     "sfx": "boom",
+     "t": 23.016
+    }
+   ],
+   "t0": 21.77,
+   "t1": 24.135
+  },
+  {
+   "id": "flee",
+   "from": 69,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 24.135,
+   "t1": 26.535
+  },
+  {
+   "id": "flame",
+   "from": 76,
+   "type": "object",
+   "mood": "silence",
+   "t0": 26.535,
+   "t1": 28.35
+  },
+  {
+   "id": "crawl",
+   "from": 82,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 28.35,
+   "t1": 31.073
+  },
+  {
+   "id": "long",
+   "from": 91,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 31.073,
+   "t1": 33.16
+  },
+  {
+   "id": "toward",
+   "from": 95,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 33.16,
+   "t1": 37.439
+  },
+  {
+   "id": "deus",
+   "from": 107,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 37.439,
+   "t1": 39.595
+  },
+  {
+   "id": "rise",
+   "from": 113,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 115,
+     "sfx": "riser",
+     "t": 40.434
+    }
+   ],
+   "t0": 39.595,
+   "t1": 41.498
+  },
+  {
+   "id": "fireeyes",
+   "from": 118,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 41.498,
+   "t1": 43.48
+  },
+  {
+   "id": "look",
+   "from": 124,
+   "type": "object",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "w",
+     "at": 128,
+     "sfx": "impact",
+     "t": 44.424
+    }
+   ],
+   "t0": 43.48,
+   "t1": 45.661
+  },
+  {
+   "id": "morning",
+   "from": 131,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.5,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 45.661,
+   "t1": 49.866
+  },
+  {
+   "id": "blind",
+   "from": 143,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 49.866,
+   "t1": 53.554
+  },
+  {
+   "id": "luz",
+   "from": 156,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 53.554,
+   "t1": 58.096
+  },
+  {
+   "id": "you",
+   "from": 164,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 174,
+     "dt": 0.524,
+     "sfx": "sting",
+     "t": 61.078
+    }
+   ],
+   "t0": 58.096,
+   "t1": 62.448
+  }
+ ],
+ "duration": 62.448
+}
