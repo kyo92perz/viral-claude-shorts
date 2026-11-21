@@ -58,5 +58,9 @@ defineVisuals({
   'test-snake': { bg: '#0b1028', html: () => svg(`${boForest()}${boSnake('boi', 760, 1500, 0.9)}`), anim(tl, s) { boSlither(tl, '#sc-test-snake #boi', s.t0, s.t1); } },
   'test-fire': { bg: '#0b1028', html: () => svg(`${boForest(false)}${boFireWall()}${boCapy('cp', 300, 1700, 1)}${boDeer('dr', 760, 1720, 1)}`), anim(tl, s) { boFlicker(tl, '#sc-test-fire', s.t0, s.t1); } },
   'test-eyes': { bg: '#0b1028', html: () => svg(`<rect width="1080" height="1920" fill="#0b0e18"/>${boSnake('boi', 300, 900, 3.2, 6)}`), anim(tl, s) { boSlither(tl, '#sc-test-eyes #boi', s.t0, s.t1, 20); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#0b0e18', html: () => svg(`<rect width="1080" height="1920" fill="#0b0e18"/>${[...Array(7)].map((_, i) => boTree(i * 170 - 20, 1900, 1.6, '#0f1a18')).join('')}${boSnake('boi', 260, 1060, 3.0, 6)}${bzVignette(0.7)}`), anim() {} },
+  'cover-b': { bg: '#0b1028', html: () => svg(`${boForest(false)}${boFireWall()}${boSnake('boi', 380, 1500, 1.0, 12)}${boZeca(860, 1800, 1.2, true)}<rect width="1080" height="1920" fill="#ff7a2a" opacity="0.12"/>${bzVignette(0.6)}`),
+    anim(tl, s) { bzFace(tl, '#sc-cover-b #zeca', s.t0, 'wide', 'open'); } },
   'test-dawn': { bg: '#f29a4a', html: () => svg(`${boDawn()}${boZeca(540, 1560, 1.3, false, true)}`), anim(tl, s) { bzFace(tl, '#sc-test-dawn #zeca', s.t0, 'glow', 'open'); } },
 });

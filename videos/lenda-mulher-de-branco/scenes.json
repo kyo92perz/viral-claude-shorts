@@ -1,0 +1,365 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.7"
+ },
+ "music": {
+  "bpm": 70,
+  "key": "F"
+ },
+ "notes": "A MULHER DE BRANCO, Brasil Z toon look (styles/flat2d/toon.ts): a highway at night in the rain, headlights, a red truck; the only white is her dress. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "sting",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 4.657
+  },
+  {
+   "id": "face",
+   "from": 13,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 4.657,
+   "t1": 5.547
+  },
+  {
+   "id": "jair",
+   "from": 15,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 5.547,
+   "t1": 8.872
+  },
+  {
+   "id": "medo",
+   "from": 24,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 8.872,
+   "t1": 10.56
+  },
+  {
+   "id": "rain",
+   "from": 30,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "t0": 10.56,
+   "t1": 12.558
+  },
+  {
+   "id": "km",
+   "from": 36,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "t0": 12.558,
+   "t1": 13.701
+  },
+  {
+   "id": "found",
+   "from": 39,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 43,
+     "sfx": "sting",
+     "t": 15.019
+    }
+   ],
+   "t0": 13.701,
+   "t1": 18.029
+  },
+  {
+   "id": "stop",
+   "from": 50,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 51,
+     "dt": -0.2,
+     "sfx": "thud",
+     "t": 18.434
+    }
+   ],
+   "t0": 18.029,
+   "t1": 19.247
+  },
+  {
+   "id": "cab",
+   "from": 52,
+   "type": "object",
+   "mood": "dark",
+   "delay": 0.1,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "in",
+     "at": 53,
+     "sfx": "creak",
+     "t": 19.503
+    }
+   ],
+   "t0": 19.247,
+   "t1": 22.932
+  },
+  {
+   "id": "radio",
+   "from": 59,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 63,
+     "sfx": "static",
+     "t": 24.418
+    }
+   ],
+   "t0": 22.932,
+   "t1": 25.281
+  },
+  {
+   "id": "fog",
+   "from": 65,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 25.281,
+   "t1": 28.92
+  },
+  {
+   "id": "pergunta",
+   "from": 77,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 28.92,
+   "t1": 30.89
+  },
+  {
+   "id": "resposta",
+   "from": 83,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 30.89,
+   "t1": 34.12
+  },
+  {
+   "id": "mirror",
+   "from": 90,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 34.12,
+   "t1": 38.198
+  },
+  {
+   "id": "still",
+   "from": 103,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 105,
+     "sfx": "sting",
+     "t": 38.638
+    }
+   ],
+   "t0": 38.198,
+   "t1": 40.24
+  },
+  {
+   "id": "curve",
+   "from": 108,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "t0": 40.24,
+   "t1": 43.561
+  },
+  {
+   "id": "cemetery",
+   "from": 119,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 121,
+     "sfx": "sting",
+     "t": 43.965
+    }
+   ],
+   "t0": 43.561,
+   "t1": 44.722
+  },
+  {
+   "id": "atropelou",
+   "from": 122,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 44.722,
+   "t1": 47.576
+  },
+  {
+   "id": "brake",
+   "from": 129,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "b",
+     "at": 130,
+     "sfx": "scratch",
+     "t": 48.219
+    }
+   ],
+   "t0": 47.576,
+   "t1": 49.132
+  },
+  {
+   "id": "seat",
+   "from": 133,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 49.132,
+   "t1": 54.091
+  },
+  {
+   "id": "pai",
+   "from": 150,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 54.091,
+   "t1": 56.204
+  },
+  {
+   "id": "photo",
+   "from": 155,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 169,
+     "sfx": "sting",
+     "t": 59.77
+    }
+   ],
+   "t0": 56.204,
+   "t1": 60.998
+  },
+  {
+   "id": "you",
+   "from": 171,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind",
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 176,
+     "dt": 0.574,
+     "sfx": "sting",
+     "t": 63.8
+    }
+   ],
+   "t0": 60.998,
+   "t1": 65.17
+  }
+ ],
+ "duration": 65.17
+}

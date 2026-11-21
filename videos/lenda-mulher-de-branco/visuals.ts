@@ -1,5 +1,5 @@
 // <lines>
-const BR_LINES: { who: string; t0: number; t1: number }[] = [];
+const BR_LINES = [{"who": "br_eu", "t0": 0.3, "t1": 5.197}, {"who": "br_eu", "t0": 5.797, "t1": 10.31}, {"who": "br_eu", "t0": 10.81, "t1": 17.779}, {"who": "br_eu", "t0": 18.279, "t1": 22.582}, {"who": "br_eu", "t0": 23.182, "t1": 28.52}, {"who": "br_jair", "t0": 29.12, "t1": 30.59}, {"who": "br_moca", "t0": 31.09, "t1": 33.57}, {"who": "br_eu", "t0": 34.37, "t1": 39.89}, {"who": "br_eu", "t0": 40.49, "t1": 44.522}, {"who": "br_moca", "t0": 45.022, "t1": 46.976}, {"who": "br_eu", "t0": 47.976, "t1": 53.791}, {"who": "br_eu", "t0": 54.391, "t1": 60.498}, {"who": "br_eu", "t0": 61.198, "t1": 63.57}];
 // </lines>
 // =====================================================================
 //  A MULHER DE BRANCO: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -63,7 +63,7 @@ defineVisuals({
   pai: { bg: '#14161e', html: () => bzShot(`${bzSky('#05070f', '#1a1e34')}${brJair(540, 1950, 2.2)}`, bzVignette(0.75)),
     anim(tl, s, K, $) { bzFace(tl, $('#jair'), s.t0, 'half', 'frown'); bzBlink(tl, $('#jair'), s.t0, s.t1); } },
   photo: { bg: '#2a2018', html: () => bzShot(brPhoto(), `${bzFlash('fl')}${bzVignette(0.7)}`),
-    anim(tl, s, K, $) { bzPush(tl, $('#cam'), s.t0, K('j'), 1, 1.12, 540, 1000); tl.to($('#cam'), { scale: 2.0, svgOrigin: '540 1320', duration: 0.35, ease: 'power3.out' }, K('j')); bzHit(tl, $('#fl'), K('j'), 0.4); } },
+    anim(tl, s, K, $) { bzPush(tl, $('#cam'), s.t0, K('j'), 1, 1.12, 540, 1000); tl.to($('#cam'), { scale: 2.0, svgOrigin: '540 1320', y: -440, duration: 0.35, ease: 'power3.out' }, K('j')); bzHit(tl, $('#fl'), K('j'), 0.4); } },
   you: { bg: '#05070f', html: () => bzShot(`${brRoad()}<g id="far">${brMoca(540, 1350, 0.5)}</g><g id="near" opacity="0">${brMoca(540, 2900, 4.0)}</g>${brRain()}`, bzVignette(0.85)),
     anim(tl, s, K, $) { bzFace(tl, $('#moca'), s.t0, 'dead', 'flat'); brRainFall(tl, $(''), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, K('end'), 1, 1.3, 540, 1100);
       tl.set($('#far'), { opacity: 0 }, K('end')); tl.set($('#near'), { opacity: 1 }, K('end')); tl.set($('#cam'), { scale: 1 }, K('end')); } },

@@ -1,0 +1,96 @@
+{
+ "duration": 65.17,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "br_eu",
+   "text": "Se você ver uma mulher de branco pedindo carona na estrada à meia-noite... não para.",
+   "t0": 0.3,
+   "t1": 5.197
+  },
+  {
+   "id": "n02",
+   "who": "br_eu",
+   "text": "Meu pai, Seu Jair, foi caminhoneiro por trinta anos. E só teve medo uma vez.",
+   "t0": 5.797,
+   "t1": 10.31
+  },
+  {
+   "id": "n03",
+   "who": "br_eu",
+   "text": "Era uma noite de chuva fina. No quilômetro sete, os faróis acharam uma moça de vestido branco, sozinha no acostamento.",
+   "t0": 10.81,
+   "t1": 17.779
+  },
+  {
+   "id": "n04",
+   "who": "br_eu",
+   "text": "Ele parou. Ela subiu sem dizer nada. Molhada. Gelada.",
+   "t0": 18.279,
+   "t1": 22.582
+  },
+  {
+   "id": "n04b",
+   "who": "br_eu",
+   "text": "O rádio do caminhão chiou sozinho. E o vidro embaçou do lado dela, mas não do lado dele.",
+   "t0": 23.182,
+   "t1": 28.52
+  },
+  {
+   "id": "j01",
+   "who": "br_jair",
+   "text": "Pra onde a senhora vai, moça?",
+   "t0": 29.12,
+   "t1": 30.59
+  },
+  {
+   "id": "m01",
+   "who": "br_moca",
+   "text": "Pra casa. Fica logo depois da curva.",
+   "t0": 31.09,
+   "t1": 33.57
+  },
+  {
+   "id": "n05",
+   "who": "br_eu",
+   "text": "Meu pai olhou no retrovisor. No espelho, o banco do lado estava vazio. Mas ela continuava sentada ali.",
+   "t0": 34.37,
+   "t1": 39.89
+  },
+  {
+   "id": "n06",
+   "who": "br_eu",
+   "text": "Na curva, ela apontou pra umas luzes no meio do mato. Era um cemitério.",
+   "t0": 40.49,
+   "t1": 44.522
+  },
+  {
+   "id": "m02",
+   "who": "br_moca",
+   "text": "Foi aqui que você me atropelou, Jair.",
+   "t0": 45.022,
+   "t1": 46.976
+  },
+  {
+   "id": "n07",
+   "who": "br_eu",
+   "text": "Ele pisou no freio. Quando olhou de novo, o banco estava vazio. Só uma poça de água e um véu branco.",
+   "t0": 47.976,
+   "t1": 53.791
+  },
+  {
+   "id": "n08",
+   "who": "br_eu",
+   "text": "Meu pai nunca atropelou ninguém. Mas o caminhão, antes de ser dele, era do meu avô. Que também se chamava Jair.",
+   "t0": 54.391,
+   "t1": 60.498
+  },
+  {
+   "id": "n09",
+   "who": "br_eu",
+   "text": "E você? Daria carona pra ela?",
+   "t0": 61.198,
+   "t1": 63.57
+  }
+ ]
+}

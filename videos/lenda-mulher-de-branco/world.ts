@@ -67,6 +67,10 @@ defineVisuals({
   'test-truck': { bg: '#05070f', html: () => svg(`${brRoad()}${brTruck(540, 1500, 0.9)}${brRain()}`), anim() {} },
   'test-cab': { bg: '#14161e', html: () => svg(`${brCab()}${brJair(270, 1900, 1.4)}${brMoca(800, 1900, 1.4)}${brMirror(`<rect x="372" y="452" width="336" height="106" fill="#2a2e44"/>`)}${brWheel()}${brRain(40, 0.35)}`),
     anim(tl, s) { bzFace(tl, '#sc-test-cab #moca', s.t0, 'dead', 'flat'); bzFace(tl, '#sc-test-cab #jair', s.t0, 'dot', 'flat'); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#05070f', html: () => svg(`${brRoad()}${brMoca(540, 2500, 3.0)}${brRain()}${bzVignette(0.7)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #moca', s.t0, 'dead', 'flat'); } },
+  'cover-b': { bg: '#14161e', html: () => svg(`${brCab()}${brJair(270, 1700, 1.4)}${brMoca(800, 1700, 1.4)}${brMirror('<rect x="560" y="470" width="120" height="90" rx="14" fill="#5a3a3a"/>')}${brWheel()}${brRain(40, 0.3)}${bzVignette(0.6)}`),
+    anim(tl, s) { bzFace(tl, '#sc-cover-b #moca', s.t0, 'dead', 'flat'); bzFace(tl, '#sc-cover-b #jair', s.t0, 'wide', 'open'); } },
   'test-cemetery': { bg: '#05070f', html: () => svg(`${brCemetery()}`), anim() {} },
   'test-seat': { bg: '#1e2030', html: () => svg(`${brSeat()}`), anim() {} },
   'test-photo': { bg: '#2a2018', html: () => svg(`${brPhoto()}`), anim() {} },

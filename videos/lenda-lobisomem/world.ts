@@ -63,5 +63,8 @@ defineVisuals({
   'test-coop': { bg: '#3a2a20', html: () => svg(`${loCoop()}${loJulia(560, 1640, 1.3)}`), anim(tl, s) { tl.set('#sc-test-coop #eye', { opacity: 1 }, s.t0); bzFace(tl, '#sc-test-coop #julia', s.t0, 'wide', 'o'); } },
   'test-kitchen': { bg: '#f0e2c0', html: () => svg(`${loKitchen()}${loTonho(700, 1600, 1.3, true)}${loScrap('sc', 700 - 0, 1600 - 446 * 1.3 + 50, 1.2)}${loTable()}`),
     anim(tl, s) { bzFace(tl, '#sc-test-kitchen #tonho', s.t0, 'dot', 'grin'); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#0f1530', html: () => svg(`${loNight(540, 620, 320)}<rect y="1500" width="1080" height="440" fill="#2c3a34"/>${loLobo(540, 2400, 2.3)}${bzVignette(0.6)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #lobo', s.t0, 'glow', 'fangs'); } },
+  'cover-b': { bg: '#f0e2c0', html: () => svg(`${loKitchen()}${loTonho(540, 2000, 2.5)}${loScrap('sc', 560, 1010, 2.1)}${bzVignette(0.5)}`), anim(tl, s) { bzFace(tl, '#sc-cover-b #tonho', s.t0, 'glow', 'grin'); } },
   'test-face': { bg: '#0f1530', html: () => svg(`${loNight(540, 520, 300)}${loLobo(540, 2700, 3)}`), anim(tl, s) { bzFace(tl, '#sc-test-face #lobo', s.t0, 'glow', 'fangs'); } },
 });
