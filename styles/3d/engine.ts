@@ -44,7 +44,8 @@ function build3D(tl: gsap.core.Timeline) {
   const RS = SCENES.renderScale ?? 1;   // internal size (the canvas is still shown at 1080 x 1920)
   const FW = SCENES.format === '16:9' ? 1920 : 1080, FH = SCENES.format === '16:9' ? 1080 : 1920;
   renderer.setPixelRatio(1); renderer.setSize(Math.round(FW * RS), Math.round(FH * RS), false);
-  renderer.shadowMap.enabled = RS >= 1;   // fast software renders skip shadow maps (night scenes barely show them) renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.shadowMap.enabled = SCENES.shadows ?? RS >= 1;   // fast software renders skip shadow maps unless scenes.json asks for them
+  renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   const worlds = SCENES.scenes.map((s) => {
     const V = VISUALS[s.id] || LIBRARY[s.type] || LIBRARY.object;

@@ -1,0 +1,3066 @@
+{
+ "duration": 541.918,
+ "phrases": [
+  {
+   "n": 1,
+   "t0": 3.72,
+   "t1": 4.88,
+   "from": 0,
+   "to": 3,
+   "text": "Ray, vem ver isso?",
+   "question": true
+  },
+  {
+   "n": 2,
+   "t0": 5.08,
+   "t1": 8.06,
+   "from": 4,
+   "to": 15,
+   "text": "O sinal voltou e não vem do céu, vem debaixo da montanha.",
+   "question": false
+  },
+  {
+   "n": 3,
+   "t0": 8.66,
+   "t1": 10.06,
+   "from": 16,
+   "to": 20,
+   "text": "Doutor, são três da manhã.",
+   "question": false
+  },
+  {
+   "n": 4,
+   "t0": 10.36,
+   "t1": 12.34,
+   "from": 21,
+   "to": 28,
+   "text": "Sinal debaixo da terra é cano de esgoto.",
+   "question": false
+  },
+  {
+   "n": 5,
+   "t0": 12.78,
+   "t1": 17.02,
+   "from": 29,
+   "to": 42,
+   "text": "Três da manhã é quando a cidade dorme, sem rádio, sem televisão, sem nada.",
+   "question": false
+  },
+  {
+   "n": 6,
+   "t0": 17.42,
+   "t1": 20,
+   "from": 43,
+   "to": 56,
+   "text": "É a única hora em que dá pra ouvir o que tem lá embaixo.",
+   "question": false
+  },
+  {
+   "n": 7,
+   "t0": 20.4,
+   "t1": 23.56,
+   "from": 57,
+   "to": 68,
+   "text": "Minha mulher acha que eu trabalho numa fábrica de antena de TV.",
+   "question": false
+  },
+  {
+   "n": 8,
+   "t0": 24.02,
+   "t1": 27.66,
+   "from": 69,
+   "to": 81,
+   "text": "Se ela soubesse que eu passo à noite ouvindo pedra, pedia ou divórcio.",
+   "question": false
+  },
+  {
+   "n": 9,
+   "t0": 28.32,
+   "t1": 28.84,
+   "from": 82,
+   "to": 82,
+   "text": "Escuta.",
+   "question": false
+  },
+  {
+   "n": 10,
+   "t0": 31.04,
+   "t1": 32.28,
+   "from": 83,
+   "to": 87,
+   "text": "Alô, aqui é Pike Ridge.",
+   "question": false
+  },
+  {
+   "n": 11,
+   "t0": 32.58,
+   "t1": 33.36,
+   "from": 88,
+   "to": 90,
+   "text": "Está me ouvindo.",
+   "question": false
+  },
+  {
+   "n": 12,
+   "t0": 34.72,
+   "t1": 35.98,
+   "from": 91,
+   "to": 95,
+   "text": "Alô, aqui é Pike Ridge.",
+   "question": false
+  },
+  {
+   "n": 13,
+   "t0": 36.38,
+   "t1": 37.04,
+   "from": 96,
+   "to": 98,
+   "text": "Está me ouvindo.",
+   "question": false
+  },
+  {
+   "n": 14,
+   "t0": 37.94,
+   "t1": 39.64,
+   "from": 99,
+   "to": 106,
+   "text": "É eco, é só o eco da antena.",
+   "question": false
+  },
+  {
+   "n": 15,
+   "t0": 40.82,
+   "t1": 41.9,
+   "from": 107,
+   "to": 110,
+   "text": "Não é eco, reis.",
+   "question": false
+  },
+  {
+   "n": 16,
+   "t0": 42.78,
+   "t1": 43.72,
+   "from": 111,
+   "to": 114,
+   "text": "Eu não falei isso.",
+   "question": false
+  },
+  {
+   "n": 17,
+   "t0": 44,
+   "t1": 45.34,
+   "from": 115,
+   "to": 119,
+   "text": "Doutor, eu não falei isso.",
+   "question": false
+  },
+  {
+   "n": 18,
+   "t0": 45.82,
+   "t1": 47.1,
+   "from": 120,
+   "to": 124,
+   "text": "Ele aprendeu a nossa voz.",
+   "question": false
+  },
+  {
+   "n": 19,
+   "t0": 47.6,
+   "t1": 47.82,
+   "from": 125,
+   "to": 125,
+   "text": "Ray,",
+   "question": false
+  },
+  {
+   "n": 20,
+   "t0": 48.12,
+   "t1": 49.12,
+   "from": 126,
+   "to": 128,
+   "text": "ele está aprendendo.",
+   "question": false
+  },
+  {
+   "n": 21,
+   "t0": 49.4,
+   "t1": 50.42,
+   "from": 129,
+   "to": 131,
+   "text": "Aumenta a potência.",
+   "question": false
+  },
+  {
+   "n": 22,
+   "t0": 52.38,
+   "t1": 53.28,
+   "from": 132,
+   "to": 133,
+   "text": "Desliga isso.",
+   "question": false
+  },
+  {
+   "n": 23,
+   "t0": 53.6,
+   "t1": 54.28,
+   "from": 134,
+   "to": 135,
+   "text": "Desliga agora.",
+   "question": false
+  },
+  {
+   "n": 24,
+   "t0": 54.98,
+   "t1": 58.38,
+   "from": 136,
+   "to": 148,
+   "text": "Mais um minuto, só mais um minuto e a gente entra pra história.",
+   "question": false
+  },
+  {
+   "n": 25,
+   "t0": 62.6,
+   "t1": 63.2,
+   "from": 149,
+   "to": 149,
+   "text": "Doutor,",
+   "question": false
+  },
+  {
+   "n": 26,
+   "t0": 63.52,
+   "t1": 64.38,
+   "from": 150,
+   "to": 152,
+   "text": "atrás de você.",
+   "question": false
+  },
+  {
+   "n": 27,
+   "t0": 66.4,
+   "t1": 68.78,
+   "from": 153,
+   "to": 159,
+   "text": "Ray, corta o cabo, corta o cabo.",
+   "question": false
+  },
+  {
+   "n": 28,
+   "t0": 74.4,
+   "t1": 75.76,
+   "from": 160,
+   "to": 161,
+   "text": "Silêncio, silêncio.",
+   "question": false
+  },
+  {
+   "n": 29,
+   "t0": 83.78,
+   "t1": 84.74,
+   "from": 162,
+   "to": 163,
+   "text": "Daniela Ruiz,",
+   "question": false
+  },
+  {
+   "n": 30,
+   "t0": 85.02,
+   "t1": 86.54,
+   "from": 164,
+   "to": 168,
+   "text": "9 horas em casa, ouviu?",
+   "question": true
+  },
+  {
+   "n": 31,
+   "t0": 86.88,
+   "t1": 87.34,
+   "from": 169,
+   "to": 169,
+   "text": "9,",
+   "question": false
+  },
+  {
+   "n": 32,
+   "t0": 87.7,
+   "t1": 88.78,
+   "from": 170,
+   "to": 174,
+   "text": "não é 9 e meia?",
+   "question": true
+  },
+  {
+   "n": 33,
+   "t0": 89.14,
+   "t1": 90.2,
+   "from": 175,
+   "to": 177,
+   "text": "Tamãe, 9 horas.",
+   "question": false
+  },
+  {
+   "n": 34,
+   "t0": 90.44,
+   "t1": 91.8,
+   "from": 178,
+   "to": 183,
+   "text": "Juro pela sua torta de maçã.",
+   "question": false
+  },
+  {
+   "n": 35,
+   "t0": 92.14,
+   "t1": 93.9,
+   "from": 184,
+   "to": 192,
+   "text": "E não vai se meter com rádio de novo.",
+   "question": false
+  },
+  {
+   "n": 36,
+   "t0": 94.26,
+   "t1": 95.6,
+   "from": 193,
+   "to": 197,
+   "text": "O fiscal passou aqui hoje.",
+   "question": false
+  },
+  {
+   "n": 37,
+   "t0": 98.4,
+   "t1": 99.9,
+   "from": 198,
+   "to": 201,
+   "text": "Boa noite, Marlowe Hollow.",
+   "question": false
+  },
+  {
+   "n": 38,
+   "t0": 100.3,
+   "t1": 103,
+   "from": 202,
+   "to": 209,
+   "text": "Você está ouvindo a rádio Porão, 27 megahertz,",
+   "question": false
+  },
+  {
+   "n": 39,
+   "t0": 103.4,
+   "t1": 105.74,
+   "from": 210,
+   "to": 220,
+   "text": "a única rádio da zona de silêncio que o governo é.",
+   "question": false
+  },
+  {
+   "n": 40,
+   "t0": 106.54,
+   "t1": 108.72,
+   "from": 221,
+   "to": 229,
+   "text": "Porque o governo nem sabe que a gente existe,",
+   "question": false
+  },
+  {
+   "n": 41,
+   "t0": 109.04,
+   "t1": 111.6,
+   "from": 230,
+   "to": 241,
+   "text": "Tell, a gente tem três ouvintes e um é a sua avó.",
+   "question": false
+  },
+  {
+   "n": 42,
+   "t0": 111.88,
+   "t1": 114.12,
+   "from": 242,
+   "to": 249,
+   "text": "E ela desligou na metade da última vez.",
+   "question": false
+  },
+  {
+   "n": 43,
+   "t0": 119.88,
+   "t1": 122.08,
+   "from": 250,
+   "to": 254,
+   "text": "Oh, desculpa, eu estava mastigando.",
+   "question": false
+  },
+  {
+   "n": 44,
+   "t0": 131.12,
+   "t1": 132.82,
+   "from": 255,
+   "to": 259,
+   "text": "Todo mundo sabe por quê?",
+   "question": true
+  },
+  {
+   "n": 45,
+   "t0": 133,
+   "t1": 134.58,
+   "from": 260,
+   "to": 265,
+   "text": "Acabou o dinheiro, meu pai disse.",
+   "question": false
+  },
+  {
+   "n": 46,
+   "t0": 135.74,
+   "t1": 137.98,
+   "from": 266,
+   "to": 274,
+   "text": "Ele disse que o Elvis abasteceu no posto dele.",
+   "question": false
+  },
+  {
+   "n": 47,
+   "t0": 138.16,
+   "t1": 140.72,
+   "from": 275,
+   "to": 283,
+   "text": "E abasteceu, ele pagou com um cheque sem fundo.",
+   "question": false
+  },
+  {
+   "n": 48,
+   "t0": 141.22,
+   "t1": 141.98,
+   "from": 284,
+   "to": 286,
+   "text": "Isso é verdade.",
+   "question": false
+  },
+  {
+   "n": 49,
+   "t0": 142.78,
+   "t1": 143.56,
+   "from": 287,
+   "to": 289,
+   "text": "Meu tio viu.",
+   "question": false
+  },
+  {
+   "n": 50,
+   "t0": 144.22,
+   "t1": 147.7,
+   "from": 290,
+   "to": 302,
+   "text": "Ele disse que o Elvis comeu três sanduíces e foi embora sem pagar.",
+   "question": false
+  },
+  {
+   "n": 51,
+   "t0": 148.06,
+   "t1": 153.26,
+   "from": 303,
+   "to": 322,
+   "text": "Gente, foco, regra número um da Rádio Porão, ninguém fala o nome de ninguém no ar, o fiscal ouve tudo.",
+   "question": false
+  },
+  {
+   "n": 52,
+   "t0": 153.66,
+   "t1": 156.4,
+   "from": 323,
+   "to": 332,
+   "text": "Você acabou de falar o nome da cidade inteira, gênio.",
+   "question": false
+  },
+  {
+   "n": 53,
+   "t0": 156.4,
+   "t1": 157.68,
+   "from": 333,
+   "to": 336,
+   "text": "A cidade não conta.",
+   "question": false
+  },
+  {
+   "n": 54,
+   "t0": 157.98,
+   "t1": 164.14,
+   "from": 337,
+   "to": 355,
+   "text": "Aqui é zona de silêncio, o telescópio precisava de silêncio total para escutar o espaço, então é proibido transmitir.",
+   "question": false
+  },
+  {
+   "n": 55,
+   "t0": 164.42,
+   "t1": 166.58,
+   "from": 356,
+   "to": 363,
+   "text": "E se ninguém transmite, ninguém escuta a gente.",
+   "question": false
+  },
+  {
+   "n": 56,
+   "t0": 167.04,
+   "t1": 167.42,
+   "from": 364,
+   "to": 364,
+   "text": "Lógica.",
+   "question": false
+  },
+  {
+   "n": 57,
+   "t0": 167.74,
+   "t1": 169.2,
+   "from": 365,
+   "to": 370,
+   "text": "Então por que a gente transmite?",
+   "question": true
+  },
+  {
+   "n": 58,
+   "t0": 169.56,
+   "t1": 171.46,
+   "from": 371,
+   "to": 377,
+   "text": "Porque é a feira de ciências, bolacha.",
+   "question": false
+  },
+  {
+   "n": 59,
+   "t0": 171.86,
+   "t1": 174.92,
+   "from": 378,
+   "to": 387,
+   "text": "Primeiro lugar ganha 500 dólares e uma viagem para Washington.",
+   "question": false
+  },
+  {
+   "n": 60,
+   "t0": 175.42,
+   "t1": 177.32,
+   "from": 388,
+   "to": 395,
+   "text": "E o segundo lugar ganha uma multa federal,",
+   "question": false
+  },
+  {
+   "n": 61,
+   "t0": 177.64,
+   "t1": 178,
+   "from": 396,
+   "to": 396,
+   "text": "câmbio.",
+   "question": false
+  },
+  {
+   "n": 62,
+   "t0": 178.68,
+   "t1": 179.1,
+   "from": 397,
+   "to": 397,
+   "text": "Gente,",
+   "question": false
+  },
+  {
+   "n": 63,
+   "t0": 179.72,
+   "t1": 181.7,
+   "from": 398,
+   "to": 403,
+   "text": "tem alguém falando no outro canal.",
+   "question": false
+  },
+  {
+   "n": 64,
+   "t0": 183.02,
+   "t1": 184.76,
+   "from": 404,
+   "to": 407,
+   "text": "Boa noite, Marlowe Hollow.",
+   "question": false
+  },
+  {
+   "n": 65,
+   "t0": 184.76,
+   "t1": 186.62,
+   "from": 408,
+   "to": 411,
+   "text": "É a nossa transmissão.",
+   "question": false
+  },
+  {
+   "n": 66,
+   "t0": 186.78,
+   "t1": 187.9,
+   "from": 412,
+   "to": 414,
+   "text": "Tá voltando atrasada.",
+   "question": false
+  },
+  {
+   "n": 67,
+   "t0": 188.08,
+   "t1": 189.58,
+   "from": 415,
+   "to": 419,
+   "text": "Deve ser reflexo na montanha.",
+   "question": false
+  },
+  {
+   "n": 68,
+   "t0": 190.96,
+   "t1": 191.4,
+   "from": 420,
+   "to": 420,
+   "text": "Bolacha.",
+   "question": false
+  },
+  {
+   "n": 69,
+   "t0": 192.08,
+   "t1": 193.64,
+   "from": 421,
+   "to": 426,
+   "text": "Porque ele sabe o meu apelido?",
+   "question": true
+  },
+  {
+   "n": 70,
+   "t0": 194.12,
+   "t1": 195.46,
+   "from": 427,
+   "to": 432,
+   "text": "Porque ele tem a minha voz?",
+   "question": true
+  },
+  {
+   "n": 71,
+   "t0": 196.76,
+   "t1": 197.2,
+   "from": 433,
+   "to": 433,
+   "text": "Bolacha.",
+   "question": false
+  },
+  {
+   "n": 72,
+   "t0": 197.9,
+   "t1": 199.12,
+   "from": 434,
+   "to": 437,
+   "text": "Vem brincar lá fora.",
+   "question": false
+  },
+  {
+   "n": 73,
+   "t0": 200.1,
+   "t1": 201.64,
+   "from": 438,
+   "to": 444,
+   "text": "Eu caio, é óbvio que eu caio.",
+   "question": false
+  },
+  {
+   "n": 74,
+   "t0": 201.98,
+   "t1": 204.62,
+   "from": 445,
+   "to": 456,
+   "text": "Aquele idiota trabalha com a sua irmã e tem um walk -talk.",
+   "question": false
+  },
+  {
+   "n": 75,
+   "t0": 205.04,
+   "t1": 205.82,
+   "from": 457,
+   "to": 459,
+   "text": "Eu vou gravar.",
+   "question": false
+  },
+  {
+   "n": 76,
+   "t0": 206.02,
+   "t1": 208.3,
+   "from": 460,
+   "to": 469,
+   "text": "Se for o caio, amanhã a gente acaba com ele.",
+   "question": false
+  },
+  {
+   "n": 77,
+   "t0": 208.74,
+   "t1": 209.86,
+   "from": 470,
+   "to": 475,
+   "text": "E se não for o caio?",
+   "question": true
+  },
+  {
+   "n": 78,
+   "t0": 211.04,
+   "t1": 214.48,
+   "from": 476,
+   "to": 485,
+   "text": "Eu caio, tem que ser bolacha level walk, canal 9.",
+   "question": false
+  },
+  {
+   "n": 79,
+   "t0": 214.74,
+   "t1": 216.52,
+   "from": 486,
+   "to": 493,
+   "text": "A gente te acompanha até a sua casa.",
+   "question": false
+  },
+  {
+   "n": 80,
+   "t0": 216.82,
+   "t1": 217.52,
+   "from": 494,
+   "to": 496,
+   "text": "E o pédia?",
+   "question": true
+  },
+  {
+   "n": 81,
+   "t0": 218.06,
+   "t1": 220.24,
+   "from": 497,
+   "to": 505,
+   "text": "Minha mãe me mata se eu desligar o pédia.",
+   "question": false
+  },
+  {
+   "n": 82,
+   "t0": 220.54,
+   "t1": 221.66,
+   "from": 506,
+   "to": 508,
+   "text": "Então deixa ligado.",
+   "question": false
+  },
+  {
+   "n": 83,
+   "t0": 221.98,
+   "t1": 224.58,
+   "from": 509,
+   "to": 520,
+   "text": "É mais fácil sobreviver a um monstro do que a sua mãe.",
+   "question": false
+  },
+  {
+   "n": 84,
+   "t0": 226.36,
+   "t1": 226.92,
+   "from": 521,
+   "to": 521,
+   "text": "Central,",
+   "question": false
+  },
+  {
+   "n": 85,
+   "t0": 227.2,
+   "t1": 227.72,
+   "from": 522,
+   "to": 524,
+   "text": "aqui é Coil.",
+   "question": false
+  },
+  {
+   "n": 86,
+   "t0": 228.32,
+   "t1": 230.64,
+   "from": 525,
+   "to": 529,
+   "text": "Transmissão ilegal em 27 megahertz.",
+   "question": false
+  },
+  {
+   "n": 87,
+   "t0": 231.26,
+   "t1": 231.86,
+   "from": 530,
+   "to": 531,
+   "text": "Ua hammock.",
+   "question": false
+  },
+  {
+   "n": 88,
+   "t0": 232.32,
+   "t1": 232.7,
+   "from": 532,
+   "to": 533,
+   "text": "De novo.",
+   "question": false
+  },
+  {
+   "n": 89,
+   "t0": 233.26,
+   "t1": 234.1,
+   "from": 534,
+   "to": 535,
+   "text": "Entendido fiscal,",
+   "question": false
+  },
+  {
+   "n": 90,
+   "t0": 234.46,
+   "t1": 235.46,
+   "from": 536,
+   "to": 538,
+   "text": "multa ou apreensão?",
+   "question": true
+  },
+  {
+   "n": 91,
+   "t0": 235.98,
+   "t1": 236.4,
+   "from": 539,
+   "to": 540,
+   "text": "Ainda não.",
+   "question": false
+  },
+  {
+   "n": 92,
+   "t0": 236.4,
+   "t1": 239.7,
+   "from": 541,
+   "to": 548,
+   "text": "Tem mais alguma coisa transmitindo na mesma frequência.",
+   "question": false
+  },
+  {
+   "n": 93,
+   "t0": 240.2,
+   "t1": 241.36,
+   "from": 549,
+   "to": 554,
+   "text": "E não vem de nenhuma casa.",
+   "question": false
+  },
+  {
+   "n": 94,
+   "t0": 242.2,
+   "t1": 243.26,
+   "from": 555,
+   "to": 558,
+   "text": "Está vindo da serra.",
+   "question": false
+  },
+  {
+   "n": 95,
+   "t0": 243.78,
+   "t1": 245.22,
+   "from": 559,
+   "to": 563,
+   "text": "Do lado do observatório velho.",
+   "question": false
+  },
+  {
+   "n": 96,
+   "t0": 245.58,
+   "t1": 245.98,
+   "from": 564,
+   "to": 564,
+   "text": "Fiscal,",
+   "question": false
+  },
+  {
+   "n": 97,
+   "t0": 246.26,
+   "t1": 248.44,
+   "from": 565,
+   "to": 570,
+   "text": "o observatório está fechado desde 79.",
+   "question": false
+  },
+  {
+   "n": 98,
+   "t0": 249.24,
+   "t1": 249.68,
+   "from": 571,
+   "to": 572,
+   "text": "Eu sei.",
+   "question": false
+  },
+  {
+   "n": 99,
+   "t0": 250.02,
+   "t1": 250.48,
+   "from": 573,
+   "to": 573,
+   "text": "Central.",
+   "question": false
+  },
+  {
+   "n": 100,
+   "t0": 251.02,
+   "t1": 252.64,
+   "from": 574,
+   "to": 580,
+   "text": "É por isso que eu estou preocupado.",
+   "question": false
+  },
+  {
+   "n": 101,
+   "t0": 255.56,
+   "t1": 256.08,
+   "from": 581,
+   "to": 581,
+   "text": "Não.",
+   "question": false
+  },
+  {
+   "n": 102,
+   "t0": 258.26,
+   "t1": 259.02,
+   "from": 582,
+   "to": 584,
+   "text": "Não, não, não.",
+   "question": false
+  },
+  {
+   "n": 103,
+   "t0": 259.28,
+   "t1": 260.66,
+   "from": 585,
+   "to": 590,
+   "text": "Você morreu de fome lá embaixo.",
+   "question": false
+  },
+  {
+   "n": 104,
+   "t0": 261.1,
+   "t1": 262.32,
+   "from": 591,
+   "to": 596,
+   "text": "Eu te deixei morrer de fome.",
+   "question": false
+  },
+  {
+   "n": 105,
+   "t0": 264,
+   "t1": 265.46,
+   "from": 597,
+   "to": 600,
+   "text": "15 homens de silêncio.",
+   "question": false
+  },
+  {
+   "n": 106,
+   "t0": 265.82,
+   "t1": 266.52,
+   "from": 601,
+   "to": 602,
+   "text": "15 homens.",
+   "question": false
+  },
+  {
+   "n": 107,
+   "t0": 269.52,
+   "t1": 271.08,
+   "from": 603,
+   "to": 606,
+   "text": "Jess, olha essa capa.",
+   "question": false
+  },
+  {
+   "n": 108,
+   "t0": 271.7,
+   "t1": 273.62,
+   "from": 607,
+   "to": 613,
+   "text": "O retorno do zumbi cannibal, parte 6.",
+   "question": false
+  },
+  {
+   "n": 109,
+   "t0": 274.44,
+   "t1": 274.74,
+   "from": 614,
+   "to": 614,
+   "text": "6.",
+   "question": false
+  },
+  {
+   "n": 110,
+   "t0": 275.36,
+   "t1": 276.5,
+   "from": 615,
+   "to": 618,
+   "text": "Quem mais seis vezes?",
+   "question": true
+  },
+  {
+   "n": 111,
+   "t0": 277.06,
+   "t1": 280.64,
+   "from": 619,
+   "to": 631,
+   "text": "Você, se não arrumar a prateleira de comédia antes do meu pai chegar.",
+   "question": false
+  },
+  {
+   "n": 112,
+   "t0": 280.94,
+   "t1": 283.08,
+   "from": 632,
+   "to": 639,
+   "text": "Comédia é a prateleira mais triste da loja.",
+   "question": false
+  },
+  {
+   "n": 113,
+   "t0": 283.7,
+   "t1": 286.52,
+   "from": 640,
+   "to": 649,
+   "text": "Ninguém aluga comédia numa cidade onde é proibido ter rádio.",
+   "question": false
+  },
+  {
+   "n": 114,
+   "t0": 286.86,
+   "t1": 288.24,
+   "from": 650,
+   "to": 653,
+   "text": "Mais seis meses, Caio.",
+   "question": false
+  },
+  {
+   "n": 115,
+   "t0": 288.24,
+   "t1": 290.38,
+   "from": 654,
+   "to": 660,
+   "text": "Seis meses e eu estou na faculdade,",
+   "question": false
+  },
+  {
+   "n": 116,
+   "t0": 290.7,
+   "t1": 294.28,
+   "from": 661,
+   "to": 673,
+   "text": "longe dessa cidade onde o telefone é a coisa mais moderna que existe.",
+   "question": false
+  },
+  {
+   "n": 117,
+   "t0": 294.56,
+   "t1": 296.52,
+   "from": 674,
+   "to": 683,
+   "text": "E quem vai cuidar do seu irmão gênio do mau?",
+   "question": true
+  },
+  {
+   "n": 118,
+   "t0": 296.98,
+   "t1": 299.84,
+   "from": 684,
+   "to": 693,
+   "text": "O fiscal do governo, ele já cuida de qualquer jeito.",
+   "question": false
+  },
+  {
+   "n": 119,
+   "t0": 301.26,
+   "t1": 301.78,
+   "from": 694,
+   "to": 694,
+   "text": "Jess,",
+   "question": false
+  },
+  {
+   "n": 120,
+   "t0": 302.44,
+   "t1": 304.8,
+   "from": 695,
+   "to": 702,
+   "text": "porque todas as TVS mudaram de canal sozinhas.",
+   "question": false
+  },
+  {
+   "n": 121,
+   "t0": 305.26,
+   "t1": 307.48,
+   "from": 703,
+   "to": 708,
+   "text": "Pifou o videocassete central de novo.",
+   "question": false
+  },
+  {
+   "n": 122,
+   "t0": 308.34,
+   "t1": 309.26,
+   "from": 709,
+   "to": 712,
+   "text": "Tem alguém na tela.",
+   "question": false
+  },
+  {
+   "n": 123,
+   "t0": 309.74,
+   "t1": 310.06,
+   "from": 713,
+   "to": 713,
+   "text": "Jess,",
+   "question": false
+  },
+  {
+   "n": 124,
+   "t0": 310.56,
+   "t1": 312.12,
+   "from": 714,
+   "to": 720,
+   "text": "tem alguém em pé dentro da tela,",
+   "question": false
+  },
+  {
+   "n": 125,
+   "t0": 312.42,
+   "t1": 313.4,
+   "from": 721,
+   "to": 724,
+   "text": "em todas as telas.",
+   "question": false
+  },
+  {
+   "n": 126,
+   "t0": 314.84,
+   "t1": 315.32,
+   "from": 725,
+   "to": 725,
+   "text": "Tell,",
+   "question": false
+  },
+  {
+   "n": 127,
+   "t0": 315.62,
+   "t1": 317.04,
+   "from": 726,
+   "to": 730,
+   "text": "você tá transmitindo de novo?",
+   "question": true
+  },
+  {
+   "n": 128,
+   "t0": 317.52,
+   "t1": 320.42,
+   "from": 731,
+   "to": 738,
+   "text": "Desliga essa porcaria, as TVs da loja enlouqueceram?",
+   "question": true
+  },
+  {
+   "n": 129,
+   "t0": 321.44,
+   "t1": 322.48,
+   "from": 739,
+   "to": 741,
+   "text": "Não fomos nós,",
+   "question": false
+  },
+  {
+   "n": 130,
+   "t0": 322.84,
+   "t1": 324.34,
+   "from": 742,
+   "to": 749,
+   "text": "Jess, o Caio tá aí do seu lado.",
+   "question": false
+  },
+  {
+   "n": 131,
+   "t0": 324.6,
+   "t1": 326.74,
+   "from": 750,
+   "to": 757,
+   "text": "Tá ababando numa capa de filme, por quê?",
+   "question": true
+  },
+  {
+   "n": 132,
+   "t0": 327.04,
+   "t1": 329.48,
+   "from": 758,
+   "to": 767,
+   "text": "Porque alguém tá usando a voz do Bolaixa no rádio.",
+   "question": false
+  },
+  {
+   "n": 133,
+   "t0": 329.74,
+   "t1": 330.38,
+   "from": 768,
+   "to": 771,
+   "text": "E não é ele.",
+   "question": false
+  },
+  {
+   "n": 134,
+   "t0": 333.4,
+   "t1": 334.52,
+   "from": 772,
+   "to": 774,
+   "text": "Bolaixa para base.",
+   "question": false
+  },
+  {
+   "n": 135,
+   "t0": 334.98,
+   "t1": 336.54,
+   "from": 775,
+   "to": 780,
+   "text": "Tô passando pelas torres de luz.",
+   "question": false
+  },
+  {
+   "n": 136,
+   "t0": 337.28,
+   "t1": 339.86,
+   "from": 781,
+   "to": 790,
+   "text": "Isso aqui de noite parece capa de filme da locadora.",
+   "question": false
+  },
+  {
+   "n": 137,
+   "t0": 340.2,
+   "t1": 342.28,
+   "from": 791,
+   "to": 798,
+   "text": "Pase para Bolaixa, para de chorar e anda.",
+   "question": false
+  },
+  {
+   "n": 138,
+   "t0": 342.28,
+   "t1": 344.22,
+   "from": 799,
+   "to": 805,
+   "text": "São 10 minutos até a sua casa.",
+   "question": false
+  },
+  {
+   "n": 139,
+   "t0": 344.56,
+   "t1": 347,
+   "from": 806,
+   "to": 813,
+   "text": "Bolaixa escuta, eu ouvi a gravação de novo.",
+   "question": false
+  },
+  {
+   "n": 140,
+   "t0": 347.4,
+   "t1": 349.4,
+   "from": 814,
+   "to": 821,
+   "text": "A voz só aparece quando a gente transmite.",
+   "question": false
+  },
+  {
+   "n": 141,
+   "t0": 349.58,
+   "t1": 351.52,
+   "from": 822,
+   "to": 829,
+   "text": "Toda vez, como se ela seguisse o sinal.",
+   "question": false
+  },
+  {
+   "n": 142,
+   "t0": 351.92,
+   "t1": 352.48,
+   "from": 830,
+   "to": 831,
+   "text": "Que ótimo.",
+   "question": false
+  },
+  {
+   "n": 143,
+   "t0": 353.06,
+   "t1": 355.72,
+   "from": 832,
+   "to": 842,
+   "text": "E eu tô andando no escuro segurando um sinal na mão.",
+   "question": false
+  },
+  {
+   "n": 144,
+   "t0": 356.32,
+   "t1": 357.04,
+   "from": 843,
+   "to": 845,
+   "text": "Tá tudo bem.",
+   "question": false
+  },
+  {
+   "n": 145,
+   "t0": 357.66,
+   "t1": 358.14,
+   "from": 846,
+   "to": 847,
+   "text": "Tudo bem.",
+   "question": false
+  },
+  {
+   "n": 146,
+   "t0": 358.76,
+   "t1": 361.04,
+   "from": 848,
+   "to": 855,
+   "text": "Pão de queijo da dona Ruiz, quente infeliz.",
+   "question": false
+  },
+  {
+   "n": 147,
+   "t0": 361.68,
+   "t1": 363.3,
+   "from": 856,
+   "to": 861,
+   "text": "Pão de queijo da dona Ruiz.",
+   "question": false
+  },
+  {
+   "n": 148,
+   "t0": 363.8,
+   "t1": 367.04,
+   "from": 862,
+   "to": 872,
+   "text": "Bolaixa, você tá cantando o comercial do restaurante da minha mãe.",
+   "question": false
+  },
+  {
+   "n": 149,
+   "t0": 367.42,
+   "t1": 368.66,
+   "from": 873,
+   "to": 877,
+   "text": "Isso me acalma, tá bom?",
+   "question": true
+  },
+  {
+   "n": 150,
+   "t0": 369.26,
+   "t1": 370.04,
+   "from": 878,
+   "to": 881,
+   "text": "Me deixe em paz.",
+   "question": false
+  },
+  {
+   "n": 151,
+   "t0": 373.16,
+   "t1": 373.8,
+   "from": 882,
+   "to": 882,
+   "text": "Bolaixa,",
+   "question": false
+  },
+  {
+   "n": 152,
+   "t0": 374.12,
+   "t1": 374.84,
+   "from": 883,
+   "to": 884,
+   "text": "aqui atrás.",
+   "question": false
+  },
+  {
+   "n": 153,
+   "t0": 375.92,
+   "t1": 376.74,
+   "from": 885,
+   "to": 886,
+   "text": "Teu, Teu,",
+   "question": false
+  },
+  {
+   "n": 154,
+   "t0": 377.26,
+   "t1": 379.7,
+   "from": 887,
+   "to": 896,
+   "text": "eu acabei de ouvir a minha voz atrás de mim.",
+   "question": false
+  },
+  {
+   "n": 155,
+   "t0": 380.12,
+   "t1": 381.18,
+   "from": 897,
+   "to": 899,
+   "text": "Desliga o rádio,",
+   "question": false
+  },
+  {
+   "n": 156,
+   "t0": 381.48,
+   "t1": 383.28,
+   "from": 900,
+   "to": 904,
+   "text": "desliga agora e fica quieto.",
+   "question": false
+  },
+  {
+   "n": 157,
+   "t0": 394.9,
+   "t1": 395.54,
+   "from": 905,
+   "to": 905,
+   "text": "Não,",
+   "question": false
+  },
+  {
+   "n": 158,
+   "t0": 395.9,
+   "t1": 396.16,
+   "from": 906,
+   "to": 906,
+   "text": "não,",
+   "question": false
+  },
+  {
+   "n": 159,
+   "t0": 396.48,
+   "t1": 396.68,
+   "from": 907,
+   "to": 907,
+   "text": "não.",
+   "question": false
+  },
+  {
+   "n": 160,
+   "t0": 397.08,
+   "t1": 398.38,
+   "from": 908,
+   "to": 910,
+   "text": "Mãe, agora não.",
+   "question": false
+  },
+  {
+   "n": 161,
+   "t0": 401.38,
+   "t1": 402.9,
+   "from": 911,
+   "to": 914,
+   "text": "Socorro, alguém me ajuda,",
+   "question": false
+  },
+  {
+   "n": 162,
+   "t0": 403.18,
+   "t1": 403.76,
+   "from": 915,
+   "to": 915,
+   "text": "socorro.",
+   "question": false
+  },
+  {
+   "n": 163,
+   "t0": 404.26,
+   "t1": 404.9,
+   "from": 916,
+   "to": 916,
+   "text": "Ásia,",
+   "question": false
+  },
+  {
+   "n": 164,
+   "t0": 405.36,
+   "t1": 405.68,
+   "from": 917,
+   "to": 917,
+   "text": "ásia.",
+   "question": false
+  },
+  {
+   "n": 165,
+   "t0": 409,
+   "t1": 410.26,
+   "from": 918,
+   "to": 919,
+   "text": "Tá fechado,",
+   "question": false
+  },
+  {
+   "n": 166,
+   "t0": 410.58,
+   "t1": 411.02,
+   "from": 920,
+   "to": 920,
+   "text": "garoto.",
+   "question": false
+  },
+  {
+   "n": 167,
+   "t0": 411.58,
+   "t1": 412.26,
+   "from": 921,
+   "to": 923,
+   "text": "Sai da minha.",
+   "question": false
+  },
+  {
+   "n": 168,
+   "t0": 412.74,
+   "t1": 414.1,
+   "from": 924,
+   "to": 930,
+   "text": "O que você trouxe pra minha loja?",
+   "question": true
+  },
+  {
+   "n": 169,
+   "t0": 414.56,
+   "t1": 416.12,
+   "from": 931,
+   "to": 936,
+   "text": "Ele veio atrás do meu parche.",
+   "question": false
+  },
+  {
+   "n": 170,
+   "t0": 416.44,
+   "t1": 417.68,
+   "from": 937,
+   "to": 941,
+   "text": "Tem uma coisa me seguindo.",
+   "question": false
+  },
+  {
+   "n": 171,
+   "t0": 420.12,
+   "t1": 421.6,
+   "from": 942,
+   "to": 945,
+   "text": "Tira tudo da tomada.",
+   "question": false
+  },
+  {
+   "n": 172,
+   "t0": 422.26,
+   "t1": 423.08,
+   "from": 946,
+   "to": 947,
+   "text": "Tudo, agora.",
+   "question": false
+  },
+  {
+   "n": 173,
+   "t0": 429.64,
+   "t1": 430.24,
+   "from": 948,
+   "to": 948,
+   "text": "Vem,",
+   "question": false
+  },
+  {
+   "n": 174,
+   "t0": 430.54,
+   "t1": 431.86,
+   "from": 949,
+   "to": 951,
+   "text": "vem, seu desgraçado.",
+   "question": false
+  },
+  {
+   "n": 175,
+   "t0": 432.42,
+   "t1": 433.82,
+   "from": 952,
+   "to": 956,
+   "text": "15 anos eu esperei isso.",
+   "question": false
+  },
+  {
+   "n": 176,
+   "t0": 441.42,
+   "t1": 443.84,
+   "from": 957,
+   "to": 963,
+   "text": "Garoto, a tomada da parede, a grande.",
+   "question": false
+  },
+  {
+   "n": 177,
+   "t0": 448.2,
+   "t1": 450.58,
+   "from": 964,
+   "to": 968,
+   "text": "Seu rei, seu rei, levanta.",
+   "question": false
+  },
+  {
+   "n": 178,
+   "t0": 452,
+   "t1": 453.76,
+   "from": 969,
+   "to": 973,
+   "text": "Ei, cara de antena, aqui.",
+   "question": false
+  },
+  {
+   "n": 179,
+   "t0": 456.96,
+   "t1": 458.34,
+   "from": 974,
+   "to": 977,
+   "text": "Ele come o sinal.",
+   "question": false
+  },
+  {
+   "n": 180,
+   "t0": 458.8,
+   "t1": 459.22,
+   "from": 978,
+   "to": 978,
+   "text": "Então,",
+   "question": false
+  },
+  {
+   "n": 181,
+   "t0": 459.64,
+   "t1": 460.92,
+   "from": 979,
+   "to": 983,
+   "text": "toma o seu próprio sinal.",
+   "question": false
+  },
+  {
+   "n": 182,
+   "t0": 469.7,
+   "t1": 472.4,
+   "from": 984,
+   "to": 990,
+   "text": "Ninguém nunca mais fala alto nessa cidade.",
+   "question": false
+  },
+  {
+   "n": 183,
+   "t0": 473,
+   "t1": 473.7,
+   "from": 991,
+   "to": 992,
+   "text": "Nunca mais.",
+   "question": false
+  },
+  {
+   "n": 184,
+   "t0": 474.34,
+   "t1": 475.3,
+   "from": 993,
+   "to": 996,
+   "text": "Eu vou virar mímico.",
+   "question": false
+  },
+  {
+   "n": 185,
+   "t0": 475.58,
+   "t1": 478.46,
+   "from": 997,
+   "to": 1007,
+   "text": "Você já fala igual ao mímico Bolaixa, só que com som.",
+   "question": false
+  },
+  {
+   "n": 186,
+   "t0": 479.28,
+   "t1": 481.8,
+   "from": 1008,
+   "to": 1016,
+   "text": "O Senhor já tinha visto aquilo antes, não tinha.",
+   "question": false
+  },
+  {
+   "n": 187,
+   "t0": 482.74,
+   "t1": 484.66,
+   "from": 1017,
+   "to": 1021,
+   "text": "Pai que ri de 79.",
+   "question": false
+  },
+  {
+   "n": 188,
+   "t0": 485.32,
+   "t1": 488.92,
+   "from": 1022,
+   "to": 1035,
+   "text": "Eu cortei o cabo e achei que ele tinha morrido de fome lá embaixo.",
+   "question": false
+  },
+  {
+   "n": 189,
+   "t0": 491.34,
+   "t1": 492.98,
+   "from": 1036,
+   "to": 1038,
+   "text": "De barulho, menina.",
+   "question": false
+  },
+  {
+   "n": 190,
+   "t0": 493.4,
+   "t1": 493.76,
+   "from": 1039,
+   "to": 1040,
+   "text": "De voz.",
+   "question": false
+  },
+  {
+   "n": 191,
+   "t0": 494.08,
+   "t1": 496.26,
+   "from": 1041,
+   "to": 1049,
+   "text": "E vocês acabaram de dar um banquete pra ele.",
+   "question": false
+  },
+  {
+   "n": 192,
+   "t0": 503.02,
+   "t1": 504.72,
+   "from": 1050,
+   "to": 1054,
+   "text": "Vocês não vão usar nada.",
+   "question": false
+  },
+  {
+   "n": 193,
+   "t0": 505.3,
+   "t1": 506.06,
+   "from": 1055,
+   "to": 1057,
+   "text": "Vão pra casa,",
+   "question": false
+  },
+  {
+   "n": 194,
+   "t0": 506.36,
+   "t1": 508.04,
+   "from": 1058,
+   "to": 1064,
+   "text": "desligam tudo e não falam com ninguém.",
+   "question": false
+  },
+  {
+   "n": 195,
+   "t0": 508.34,
+   "t1": 508.8,
+   "from": 1065,
+   "to": 1066,
+   "text": "Nem comigo,",
+   "question": false
+  },
+  {
+   "n": 196,
+   "t0": 509.2,
+   "t1": 509.86,
+   "from": 1067,
+   "to": 1070,
+   "text": "nem com o rádio.",
+   "question": false
+  },
+  {
+   "n": 197,
+   "t0": 511.8,
+   "t1": 512.9,
+   "from": 1071,
+   "to": 1076,
+   "text": "Ele sabe o nome do Bolaixa.",
+   "question": false
+  },
+  {
+   "n": 198,
+   "t0": 513.34,
+   "t1": 514.74,
+   "from": 1077,
+   "to": 1081,
+   "text": "Ele vai voltar atrás dele.",
+   "question": false
+  },
+  {
+   "n": 199,
+   "t0": 515.12,
+   "t1": 516.36,
+   "from": 1082,
+   "to": 1087,
+   "text": "A Jenga não vai pra casa.",
+   "question": false
+  },
+  {
+   "n": 200,
+   "t0": 516.82,
+   "t1": 518.14,
+   "from": 1088,
+   "to": 1093,
+   "text": "Eu voto em ir pra casa.",
+   "question": false
+  },
+  {
+   "n": 201,
+   "t0": 518.6,
+   "t1": 519.58,
+   "from": 1094,
+   "to": 1096,
+   "text": "Só pra constar.",
+   "question": false
+  },
+  {
+   "n": 202,
+   "t0": 520.96,
+   "t1": 522.36,
+   "from": 1097,
+   "to": 1100,
+   "text": "Central, aqui é Coil.",
+   "question": false
+  },
+  {
+   "n": 203,
+   "t0": 522.92,
+   "t1": 523.62,
+   "from": 1101,
+   "to": 1102,
+   "text": "Avisou Washington.",
+   "question": false
+  },
+  {
+   "n": 204,
+   "t0": 524.26,
+   "t1": 525.2,
+   "from": 1103,
+   "to": 1107,
+   "text": "Pai que ri de Acordou.",
+   "question": false
+  },
+  {
+   "n": 205,
+   "t0": 533.38,
+   "t1": 535.88,
+   "from": 1108,
+   "to": 1113,
+   "text": "O rádio tá desligado da tomada.",
+   "question": false
+  }
+ ],
+ "pauses": [
+  {
+   "t0": 8.06,
+   "t1": 8.66,
+   "dur": 0.6,
+   "after": 15
+  },
+  {
+   "t0": 10.06,
+   "t1": 10.36,
+   "dur": 0.3,
+   "after": 20
+  },
+  {
+   "t0": 12.34,
+   "t1": 12.78,
+   "dur": 0.44,
+   "after": 28
+  },
+  {
+   "t0": 17.02,
+   "t1": 17.42,
+   "dur": 0.4,
+   "after": 42
+  },
+  {
+   "t0": 20,
+   "t1": 20.4,
+   "dur": 0.4,
+   "after": 56
+  },
+  {
+   "t0": 23.56,
+   "t1": 24.02,
+   "dur": 0.46,
+   "after": 68
+  },
+  {
+   "t0": 27.66,
+   "t1": 28.32,
+   "dur": 0.66,
+   "after": 81
+  },
+  {
+   "t0": 28.84,
+   "t1": 31.04,
+   "dur": 2.2,
+   "after": 82
+  },
+  {
+   "t0": 32.28,
+   "t1": 32.58,
+   "dur": 0.3,
+   "after": 87
+  },
+  {
+   "t0": 33.36,
+   "t1": 34.72,
+   "dur": 1.36,
+   "after": 90
+  },
+  {
+   "t0": 35.98,
+   "t1": 36.38,
+   "dur": 0.4,
+   "after": 95
+  },
+  {
+   "t0": 37.04,
+   "t1": 37.94,
+   "dur": 0.9,
+   "after": 98
+  },
+  {
+   "t0": 39.64,
+   "t1": 40.82,
+   "dur": 1.18,
+   "after": 106
+  },
+  {
+   "t0": 41.9,
+   "t1": 42.78,
+   "dur": 0.88,
+   "after": 110
+  },
+  {
+   "t0": 43.72,
+   "t1": 44,
+   "dur": 0.28,
+   "after": 114
+  },
+  {
+   "t0": 45.34,
+   "t1": 45.82,
+   "dur": 0.48,
+   "after": 119
+  },
+  {
+   "t0": 47.1,
+   "t1": 47.6,
+   "dur": 0.5,
+   "after": 124
+  },
+  {
+   "t0": 47.82,
+   "t1": 48.12,
+   "dur": 0.3,
+   "after": 125
+  },
+  {
+   "t0": 49.12,
+   "t1": 49.4,
+   "dur": 0.28,
+   "after": 128
+  },
+  {
+   "t0": 50.42,
+   "t1": 52.38,
+   "dur": 1.96,
+   "after": 131
+  },
+  {
+   "t0": 53.28,
+   "t1": 53.6,
+   "dur": 0.32,
+   "after": 133
+  },
+  {
+   "t0": 54.28,
+   "t1": 54.98,
+   "dur": 0.7,
+   "after": 135
+  },
+  {
+   "t0": 58.38,
+   "t1": 62.6,
+   "dur": 4.22,
+   "after": 148
+  },
+  {
+   "t0": 63.2,
+   "t1": 63.52,
+   "dur": 0.32,
+   "after": 149
+  },
+  {
+   "t0": 64.38,
+   "t1": 66.4,
+   "dur": 2.02,
+   "after": 152
+  },
+  {
+   "t0": 68.78,
+   "t1": 74.4,
+   "dur": 5.62,
+   "after": 159
+  },
+  {
+   "t0": 75.76,
+   "t1": 83.78,
+   "dur": 8.02,
+   "after": 161
+  },
+  {
+   "t0": 84.74,
+   "t1": 85.02,
+   "dur": 0.28,
+   "after": 163
+  },
+  {
+   "t0": 86.54,
+   "t1": 86.88,
+   "dur": 0.34,
+   "after": 168
+  },
+  {
+   "t0": 87.34,
+   "t1": 87.7,
+   "dur": 0.36,
+   "after": 169
+  },
+  {
+   "t0": 88.78,
+   "t1": 89.14,
+   "dur": 0.36,
+   "after": 174
+  },
+  {
+   "t0": 91.8,
+   "t1": 92.14,
+   "dur": 0.34,
+   "after": 183
+  },
+  {
+   "t0": 93.9,
+   "t1": 94.26,
+   "dur": 0.36,
+   "after": 192
+  },
+  {
+   "t0": 95.6,
+   "t1": 98.4,
+   "dur": 2.8,
+   "after": 197
+  },
+  {
+   "t0": 99.9,
+   "t1": 100.3,
+   "dur": 0.4,
+   "after": 201
+  },
+  {
+   "t0": 103,
+   "t1": 103.4,
+   "dur": 0.4,
+   "after": 209
+  },
+  {
+   "t0": 105.74,
+   "t1": 106.54,
+   "dur": 0.8,
+   "after": 220
+  },
+  {
+   "t0": 108.72,
+   "t1": 109.04,
+   "dur": 0.32,
+   "after": 229
+  },
+  {
+   "t0": 111.6,
+   "t1": 111.88,
+   "dur": 0.28,
+   "after": 241
+  },
+  {
+   "t0": 114.12,
+   "t1": 119.88,
+   "dur": 5.76,
+   "after": 249
+  },
+  {
+   "t0": 122.08,
+   "t1": 131.12,
+   "dur": 9.04,
+   "after": 254
+  },
+  {
+   "t0": 134.58,
+   "t1": 135.74,
+   "dur": 1.16,
+   "after": 265
+  },
+  {
+   "t0": 140.72,
+   "t1": 141.22,
+   "dur": 0.5,
+   "after": 283
+  },
+  {
+   "t0": 141.98,
+   "t1": 142.78,
+   "dur": 0.8,
+   "after": 286
+  },
+  {
+   "t0": 143.56,
+   "t1": 144.22,
+   "dur": 0.66,
+   "after": 289
+  },
+  {
+   "t0": 147.7,
+   "t1": 148.06,
+   "dur": 0.36,
+   "after": 302
+  },
+  {
+   "t0": 153.26,
+   "t1": 153.66,
+   "dur": 0.4,
+   "after": 322
+  },
+  {
+   "t0": 157.68,
+   "t1": 157.98,
+   "dur": 0.3,
+   "after": 336
+  },
+  {
+   "t0": 164.14,
+   "t1": 164.42,
+   "dur": 0.28,
+   "after": 355
+  },
+  {
+   "t0": 166.58,
+   "t1": 167.04,
+   "dur": 0.46,
+   "after": 363
+  },
+  {
+   "t0": 167.42,
+   "t1": 167.74,
+   "dur": 0.32,
+   "after": 364
+  },
+  {
+   "t0": 169.2,
+   "t1": 169.56,
+   "dur": 0.36,
+   "after": 370
+  },
+  {
+   "t0": 171.46,
+   "t1": 171.86,
+   "dur": 0.4,
+   "after": 377
+  },
+  {
+   "t0": 174.92,
+   "t1": 175.42,
+   "dur": 0.5,
+   "after": 387
+  },
+  {
+   "t0": 177.32,
+   "t1": 177.64,
+   "dur": 0.32,
+   "after": 395
+  },
+  {
+   "t0": 178,
+   "t1": 178.68,
+   "dur": 0.68,
+   "after": 396
+  },
+  {
+   "t0": 179.1,
+   "t1": 179.72,
+   "dur": 0.62,
+   "after": 397
+  },
+  {
+   "t0": 181.7,
+   "t1": 183.02,
+   "dur": 1.32,
+   "after": 403
+  },
+  {
+   "t0": 189.58,
+   "t1": 190.96,
+   "dur": 1.38,
+   "after": 419
+  },
+  {
+   "t0": 191.4,
+   "t1": 192.08,
+   "dur": 0.68,
+   "after": 420
+  },
+  {
+   "t0": 193.64,
+   "t1": 194.12,
+   "dur": 0.48,
+   "after": 426
+  },
+  {
+   "t0": 195.46,
+   "t1": 196.76,
+   "dur": 1.3,
+   "after": 432
+  },
+  {
+   "t0": 197.2,
+   "t1": 197.9,
+   "dur": 0.7,
+   "after": 433
+  },
+  {
+   "t0": 199.12,
+   "t1": 200.1,
+   "dur": 0.98,
+   "after": 437
+  },
+  {
+   "t0": 201.64,
+   "t1": 201.98,
+   "dur": 0.34,
+   "after": 444
+  },
+  {
+   "t0": 204.62,
+   "t1": 205.04,
+   "dur": 0.42,
+   "after": 456
+  },
+  {
+   "t0": 208.3,
+   "t1": 208.74,
+   "dur": 0.44,
+   "after": 469
+  },
+  {
+   "t0": 209.86,
+   "t1": 211.04,
+   "dur": 1.18,
+   "after": 475
+  },
+  {
+   "t0": 216.52,
+   "t1": 216.82,
+   "dur": 0.3,
+   "after": 493
+  },
+  {
+   "t0": 217.52,
+   "t1": 218.06,
+   "dur": 0.54,
+   "after": 496
+  },
+  {
+   "t0": 220.24,
+   "t1": 220.54,
+   "dur": 0.3,
+   "after": 505
+  },
+  {
+   "t0": 221.66,
+   "t1": 221.98,
+   "dur": 0.32,
+   "after": 508
+  },
+  {
+   "t0": 224.58,
+   "t1": 226.36,
+   "dur": 1.78,
+   "after": 520
+  },
+  {
+   "t0": 226.92,
+   "t1": 227.2,
+   "dur": 0.28,
+   "after": 521
+  },
+  {
+   "t0": 227.72,
+   "t1": 228.32,
+   "dur": 0.6,
+   "after": 524
+  },
+  {
+   "t0": 230.64,
+   "t1": 231.26,
+   "dur": 0.62,
+   "after": 529
+  },
+  {
+   "t0": 231.86,
+   "t1": 232.32,
+   "dur": 0.46,
+   "after": 531
+  },
+  {
+   "t0": 232.7,
+   "t1": 233.26,
+   "dur": 0.56,
+   "after": 533
+  },
+  {
+   "t0": 234.1,
+   "t1": 234.46,
+   "dur": 0.36,
+   "after": 535
+  },
+  {
+   "t0": 235.46,
+   "t1": 235.98,
+   "dur": 0.52,
+   "after": 538
+  },
+  {
+   "t0": 239.7,
+   "t1": 240.2,
+   "dur": 0.5,
+   "after": 548
+  },
+  {
+   "t0": 241.36,
+   "t1": 242.2,
+   "dur": 0.84,
+   "after": 554
+  },
+  {
+   "t0": 243.26,
+   "t1": 243.78,
+   "dur": 0.52,
+   "after": 558
+  },
+  {
+   "t0": 245.22,
+   "t1": 245.58,
+   "dur": 0.36,
+   "after": 563
+  },
+  {
+   "t0": 245.98,
+   "t1": 246.26,
+   "dur": 0.28,
+   "after": 564
+  },
+  {
+   "t0": 248.44,
+   "t1": 249.24,
+   "dur": 0.8,
+   "after": 570
+  },
+  {
+   "t0": 249.68,
+   "t1": 250.02,
+   "dur": 0.34,
+   "after": 572
+  },
+  {
+   "t0": 250.48,
+   "t1": 251.02,
+   "dur": 0.54,
+   "after": 573
+  },
+  {
+   "t0": 252.64,
+   "t1": 255.56,
+   "dur": 2.92,
+   "after": 580
+  },
+  {
+   "t0": 256.08,
+   "t1": 258.26,
+   "dur": 2.18,
+   "after": 581
+  },
+  {
+   "t0": 260.66,
+   "t1": 261.1,
+   "dur": 0.44,
+   "after": 590
+  },
+  {
+   "t0": 262.32,
+   "t1": 264,
+   "dur": 1.68,
+   "after": 596
+  },
+  {
+   "t0": 265.46,
+   "t1": 265.82,
+   "dur": 0.36,
+   "after": 600
+  },
+  {
+   "t0": 266.52,
+   "t1": 269.52,
+   "dur": 3,
+   "after": 602
+  },
+  {
+   "t0": 271.08,
+   "t1": 271.7,
+   "dur": 0.62,
+   "after": 606
+  },
+  {
+   "t0": 273.62,
+   "t1": 274.44,
+   "dur": 0.82,
+   "after": 613
+  },
+  {
+   "t0": 274.74,
+   "t1": 275.36,
+   "dur": 0.62,
+   "after": 614
+  },
+  {
+   "t0": 276.5,
+   "t1": 277.06,
+   "dur": 0.56,
+   "after": 618
+  },
+  {
+   "t0": 280.64,
+   "t1": 280.94,
+   "dur": 0.3,
+   "after": 631
+  },
+  {
+   "t0": 283.08,
+   "t1": 283.7,
+   "dur": 0.62,
+   "after": 639
+  },
+  {
+   "t0": 286.52,
+   "t1": 286.86,
+   "dur": 0.34,
+   "after": 649
+  },
+  {
+   "t0": 290.38,
+   "t1": 290.7,
+   "dur": 0.32,
+   "after": 660
+  },
+  {
+   "t0": 294.28,
+   "t1": 294.56,
+   "dur": 0.28,
+   "after": 673
+  },
+  {
+   "t0": 296.52,
+   "t1": 296.98,
+   "dur": 0.46,
+   "after": 683
+  },
+  {
+   "t0": 299.84,
+   "t1": 301.26,
+   "dur": 1.42,
+   "after": 693
+  },
+  {
+   "t0": 301.78,
+   "t1": 302.44,
+   "dur": 0.66,
+   "after": 694
+  },
+  {
+   "t0": 304.8,
+   "t1": 305.26,
+   "dur": 0.46,
+   "after": 702
+  },
+  {
+   "t0": 307.48,
+   "t1": 308.34,
+   "dur": 0.86,
+   "after": 708
+  },
+  {
+   "t0": 309.26,
+   "t1": 309.74,
+   "dur": 0.48,
+   "after": 712
+  },
+  {
+   "t0": 310.06,
+   "t1": 310.56,
+   "dur": 0.5,
+   "after": 713
+  },
+  {
+   "t0": 312.12,
+   "t1": 312.42,
+   "dur": 0.3,
+   "after": 720
+  },
+  {
+   "t0": 313.4,
+   "t1": 314.84,
+   "dur": 1.44,
+   "after": 724
+  },
+  {
+   "t0": 315.32,
+   "t1": 315.62,
+   "dur": 0.3,
+   "after": 725
+  },
+  {
+   "t0": 317.04,
+   "t1": 317.52,
+   "dur": 0.48,
+   "after": 730
+  },
+  {
+   "t0": 320.42,
+   "t1": 321.44,
+   "dur": 1.02,
+   "after": 738
+  },
+  {
+   "t0": 322.48,
+   "t1": 322.84,
+   "dur": 0.36,
+   "after": 741
+  },
+  {
+   "t0": 326.74,
+   "t1": 327.04,
+   "dur": 0.3,
+   "after": 757
+  },
+  {
+   "t0": 330.38,
+   "t1": 333.4,
+   "dur": 3.02,
+   "after": 771
+  },
+  {
+   "t0": 334.52,
+   "t1": 334.98,
+   "dur": 0.46,
+   "after": 774
+  },
+  {
+   "t0": 336.54,
+   "t1": 337.28,
+   "dur": 0.74,
+   "after": 780
+  },
+  {
+   "t0": 339.86,
+   "t1": 340.2,
+   "dur": 0.34,
+   "after": 790
+  },
+  {
+   "t0": 344.22,
+   "t1": 344.56,
+   "dur": 0.34,
+   "after": 805
+  },
+  {
+   "t0": 347,
+   "t1": 347.4,
+   "dur": 0.4,
+   "after": 813
+  },
+  {
+   "t0": 351.52,
+   "t1": 351.92,
+   "dur": 0.4,
+   "after": 829
+  },
+  {
+   "t0": 352.48,
+   "t1": 353.06,
+   "dur": 0.58,
+   "after": 831
+  },
+  {
+   "t0": 355.72,
+   "t1": 356.32,
+   "dur": 0.6,
+   "after": 842
+  },
+  {
+   "t0": 357.04,
+   "t1": 357.66,
+   "dur": 0.62,
+   "after": 845
+  },
+  {
+   "t0": 358.14,
+   "t1": 358.76,
+   "dur": 0.62,
+   "after": 847
+  },
+  {
+   "t0": 361.04,
+   "t1": 361.68,
+   "dur": 0.64,
+   "after": 855
+  },
+  {
+   "t0": 363.3,
+   "t1": 363.8,
+   "dur": 0.5,
+   "after": 861
+  },
+  {
+   "t0": 367.04,
+   "t1": 367.42,
+   "dur": 0.38,
+   "after": 872
+  },
+  {
+   "t0": 368.66,
+   "t1": 369.26,
+   "dur": 0.6,
+   "after": 877
+  },
+  {
+   "t0": 370.04,
+   "t1": 373.16,
+   "dur": 3.12,
+   "after": 881
+  },
+  {
+   "t0": 373.8,
+   "t1": 374.12,
+   "dur": 0.32,
+   "after": 882
+  },
+  {
+   "t0": 374.84,
+   "t1": 375.92,
+   "dur": 1.08,
+   "after": 884
+  },
+  {
+   "t0": 376.74,
+   "t1": 377.26,
+   "dur": 0.52,
+   "after": 886
+  },
+  {
+   "t0": 379.7,
+   "t1": 380.12,
+   "dur": 0.42,
+   "after": 896
+  },
+  {
+   "t0": 381.18,
+   "t1": 381.48,
+   "dur": 0.3,
+   "after": 899
+  },
+  {
+   "t0": 383.28,
+   "t1": 394.9,
+   "dur": 11.62,
+   "after": 904
+  },
+  {
+   "t0": 395.54,
+   "t1": 395.9,
+   "dur": 0.36,
+   "after": 905
+  },
+  {
+   "t0": 396.16,
+   "t1": 396.48,
+   "dur": 0.32,
+   "after": 906
+  },
+  {
+   "t0": 396.68,
+   "t1": 397.08,
+   "dur": 0.4,
+   "after": 907
+  },
+  {
+   "t0": 398.38,
+   "t1": 401.38,
+   "dur": 3,
+   "after": 910
+  },
+  {
+   "t0": 402.9,
+   "t1": 403.18,
+   "dur": 0.28,
+   "after": 914
+  },
+  {
+   "t0": 403.76,
+   "t1": 404.26,
+   "dur": 0.5,
+   "after": 915
+  },
+  {
+   "t0": 404.9,
+   "t1": 405.36,
+   "dur": 0.46,
+   "after": 916
+  },
+  {
+   "t0": 405.68,
+   "t1": 409,
+   "dur": 3.32,
+   "after": 917
+  },
+  {
+   "t0": 410.26,
+   "t1": 410.58,
+   "dur": 0.32,
+   "after": 919
+  },
+  {
+   "t0": 411.02,
+   "t1": 411.58,
+   "dur": 0.56,
+   "after": 920
+  },
+  {
+   "t0": 412.26,
+   "t1": 412.74,
+   "dur": 0.48,
+   "after": 923
+  },
+  {
+   "t0": 414.1,
+   "t1": 414.56,
+   "dur": 0.46,
+   "after": 930
+  },
+  {
+   "t0": 416.12,
+   "t1": 416.44,
+   "dur": 0.32,
+   "after": 936
+  },
+  {
+   "t0": 417.68,
+   "t1": 420.12,
+   "dur": 2.44,
+   "after": 941
+  },
+  {
+   "t0": 421.6,
+   "t1": 422.26,
+   "dur": 0.66,
+   "after": 945
+  },
+  {
+   "t0": 423.08,
+   "t1": 429.64,
+   "dur": 6.56,
+   "after": 947
+  },
+  {
+   "t0": 430.24,
+   "t1": 430.54,
+   "dur": 0.3,
+   "after": 948
+  },
+  {
+   "t0": 431.86,
+   "t1": 432.42,
+   "dur": 0.56,
+   "after": 951
+  },
+  {
+   "t0": 433.82,
+   "t1": 441.42,
+   "dur": 7.6,
+   "after": 956
+  },
+  {
+   "t0": 443.84,
+   "t1": 448.2,
+   "dur": 4.36,
+   "after": 963
+  },
+  {
+   "t0": 450.58,
+   "t1": 452,
+   "dur": 1.42,
+   "after": 968
+  },
+  {
+   "t0": 453.76,
+   "t1": 456.96,
+   "dur": 3.2,
+   "after": 973
+  },
+  {
+   "t0": 458.34,
+   "t1": 458.8,
+   "dur": 0.46,
+   "after": 977
+  },
+  {
+   "t0": 459.22,
+   "t1": 459.64,
+   "dur": 0.42,
+   "after": 978
+  },
+  {
+   "t0": 460.92,
+   "t1": 469.7,
+   "dur": 8.78,
+   "after": 983
+  },
+  {
+   "t0": 472.4,
+   "t1": 473,
+   "dur": 0.6,
+   "after": 990
+  },
+  {
+   "t0": 473.7,
+   "t1": 474.34,
+   "dur": 0.64,
+   "after": 992
+  },
+  {
+   "t0": 478.46,
+   "t1": 479.28,
+   "dur": 0.82,
+   "after": 1007
+  },
+  {
+   "t0": 481.8,
+   "t1": 482.74,
+   "dur": 0.94,
+   "after": 1016
+  },
+  {
+   "t0": 484.66,
+   "t1": 485.32,
+   "dur": 0.66,
+   "after": 1021
+  },
+  {
+   "t0": 488.92,
+   "t1": 491.34,
+   "dur": 2.42,
+   "after": 1035
+  },
+  {
+   "t0": 492.98,
+   "t1": 493.4,
+   "dur": 0.42,
+   "after": 1038
+  },
+  {
+   "t0": 493.76,
+   "t1": 494.08,
+   "dur": 0.32,
+   "after": 1040
+  },
+  {
+   "t0": 496.26,
+   "t1": 503.02,
+   "dur": 6.76,
+   "after": 1049
+  },
+  {
+   "t0": 504.72,
+   "t1": 505.3,
+   "dur": 0.58,
+   "after": 1054
+  },
+  {
+   "t0": 506.06,
+   "t1": 506.36,
+   "dur": 0.3,
+   "after": 1057
+  },
+  {
+   "t0": 508.04,
+   "t1": 508.34,
+   "dur": 0.3,
+   "after": 1064
+  },
+  {
+   "t0": 508.8,
+   "t1": 509.2,
+   "dur": 0.4,
+   "after": 1066
+  },
+  {
+   "t0": 509.86,
+   "t1": 511.8,
+   "dur": 1.94,
+   "after": 1070
+  },
+  {
+   "t0": 512.9,
+   "t1": 513.34,
+   "dur": 0.44,
+   "after": 1076
+  },
+  {
+   "t0": 514.74,
+   "t1": 515.12,
+   "dur": 0.38,
+   "after": 1081
+  },
+  {
+   "t0": 516.36,
+   "t1": 516.82,
+   "dur": 0.46,
+   "after": 1087
+  },
+  {
+   "t0": 518.14,
+   "t1": 518.6,
+   "dur": 0.46,
+   "after": 1093
+  },
+  {
+   "t0": 519.58,
+   "t1": 520.96,
+   "dur": 1.38,
+   "after": 1096
+  },
+  {
+   "t0": 522.36,
+   "t1": 522.92,
+   "dur": 0.56,
+   "after": 1100
+  },
+  {
+   "t0": 523.62,
+   "t1": 524.26,
+   "dur": 0.64,
+   "after": 1102
+  },
+  {
+   "t0": 525.2,
+   "t1": 533.38,
+   "dur": 8.18,
+   "after": 1107
+  }
+ ],
+ "numbers": [
+  {
+   "i": 164,
+   "w": "9",
+   "t0": 85.02
+  },
+  {
+   "i": 169,
+   "w": "9,",
+   "t0": 86.88
+  },
+  {
+   "i": 172,
+   "w": "9",
+   "t0": 88
+  },
+  {
+   "i": 176,
+   "w": "9",
+   "t0": 89.64
+  },
+  {
+   "i": 208,
+   "w": "27",
+   "t0": 101.9
+  },
+  {
+   "i": 381,
+   "w": "500",
+   "t0": 172.78
+  },
+  {
+   "i": 485,
+   "w": "9.",
+   "t0": 214.1
+  },
+  {
+   "i": 528,
+   "w": "27",
+   "t0": 229.36
+  },
+  {
+   "i": 570,
+   "w": "79.",
+   "t0": 247.88
+  },
+  {
+   "i": 597,
+   "w": "15",
+   "t0": 264
+  },
+  {
+   "i": 601,
+   "w": "15",
+   "t0": 265.82
+  },
+  {
+   "i": 613,
+   "w": "6.",
+   "t0": 273.2
+  },
+  {
+   "i": 614,
+   "w": "6.",
+   "t0": 274.44
+  },
+  {
+   "i": 617,
+   "w": "seis",
+   "t0": 275.84
+  },
+  {
+   "i": 651,
+   "w": "seis",
+   "t0": 287.12
+  },
+  {
+   "i": 654,
+   "w": "Seis",
+   "t0": 288.24
+  },
+  {
+   "i": 800,
+   "w": "10",
+   "t0": 342.74
+  },
+  {
+   "i": 952,
+   "w": "15",
+   "t0": 432.42
+  },
+  {
+   "i": 1021,
+   "w": "79.",
+   "t0": 483.78
+  }
+ ],
+ "words": 1114
+}

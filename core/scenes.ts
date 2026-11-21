@@ -15,7 +15,7 @@
 //       "stat": { "value": "60 °C", "text": "y el almidón se suelta" },   // bottom card (optional)
 //       "visual": "a surprised loaf of bread on a cutting board",        // what gets drawn (the style implements it)
 //       "asset": "logo.png",                   // optional: a file from videos/<topic>/assets/
-//       "keys": [ { "id": "crack", "at": 5 } ],  // moments inside the scene (when word #5 is said);
+//       "keys": [ { "id": "crack", "at": 5 } ],  // moments inside the scene (when word #5 is said; "dt": seconds after it, for actions in a pause);
 //                                                // none closer than 0.7 s to the end of the scene: the animation must finish
 //       "transition": "cut" }                  // how this scene ENTERS: always "cut" for now
 //   ]
@@ -52,6 +52,7 @@ S.forEach((s, k) => {
   if (!TYPES.includes(s.type)) err.push(`${s.id}: unknown type "${s.type}" (${TYPES.join(', ')})`);
   if (k === 0) s.t0 = 0;
   else if (silent) { if (typeof s.t0 !== 'number') err.push(`${s.id}: there is no voice, so the scene needs "t0" in seconds`); }
+  else if (typeof s.delay === 'number') s.t0 = +(at(s.from, s.id) + s.delay).toFixed(3);   // a cut inside a pause (action without words)
   else { const w = at(s.from, s.id), prev = s.from ? W[s.from - 1] : undefined; s.t0 = +Math.max(prev ? prev.t1 + 0.04 : 0, w - BEFORE).toFixed(3); }
   if (s.highlight && s.title && !s.title.toLowerCase().includes(s.highlight.toLowerCase())) err.push(`${s.id}: "highlight" (${s.highlight}) is not in the title`);
   if (s.title && s.title.length > 48) warn.push(`${s.id}: long title (${s.title.length} characters): ≤ 40 works better in 9:16`);
@@ -65,7 +66,7 @@ S.forEach((s, k) => {
   if (s.t1 - s.t0 < 2.0) warn.push(`${s.id}: lasts ${(s.t1 - s.t0).toFixed(2)} s (under 2 s the animation can't be seen in full)`);
   if (k && s.t0 <= S[k - 1].t0) err.push(`${s.id}: starts before the previous scene (order of "from" or "t0")`);
   for (const c of s.keys || []) {
-    if (!silent) c.t = +at(c.at, `${s.id}.${c.id}`).toFixed(3);
+    if (!silent) c.t = +(at(c.at, `${s.id}.${c.id}`) + (c.dt || 0)).toFixed(3);
     else if (typeof c.t !== 'number') { err.push(`${s.id}.${c.id}: there is no voice, so the key needs "t" in seconds`); continue; }
     if (c.t < s.t0 - 1e-6 || c.t >= s.t1) err.push(`${s.id}.${c.id}: the key (${c.t}s) falls outside its scene (${s.t0}–${s.t1}s)`);
     else if (k < S.length - 1 && s.t1 - c.t < MARGIN) err.push(`${s.id}.${c.id}: the key lands ${(s.t1 - c.t).toFixed(2)} s before the cut: its animation would be left half done (leave ≥ ${MARGIN} s, or move it to the next scene)`);

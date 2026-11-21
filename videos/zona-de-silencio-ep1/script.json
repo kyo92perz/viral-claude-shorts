@@ -1,0 +1,692 @@
+{
+ "title": "Zona de Silêncio, EP1: Estática",
+ "lead": 4.0,
+ "tail": 5.0,
+ "lines": [
+  {
+   "id": "v01",
+   "who": "vance",
+   "text": "Ray, vem ver isso. O sinal voltou. E não vem do céu, vem de baixo da montanha.",
+   "pause": 0.6
+  },
+  {
+   "id": "r01",
+   "who": "ray_young",
+   "text": "Doutor, são três da manhã. Sinal debaixo da terra é cano de esgoto.",
+   "say": "Doutor, são três da manhã. Sinal debaixo da terra é cano de esgoto.",
+   "pause": 0.4
+  },
+  {
+   "id": "v01b",
+   "who": "vance",
+   "text": "Três da manhã é quando a cidade dorme. Sem rádio, sem televisão, sem nada. É a única hora em que dá pra ouvir o que tem lá embaixo.",
+   "pause": 0.4
+  },
+  {
+   "id": "r01b",
+   "who": "ray_young",
+   "text": "Minha mulher acha que eu trabalho numa fábrica de antena de TV. Se ela soubesse que eu passo a noite ouvindo pedra, pedia o divórcio.",
+   "say": "Minha mulher acha que eu trabalho numa fábrica de antena de tevê. Se ela soubesse que eu passo a noite ouvindo pedra, pedia o divórcio.",
+   "pause": 0.5
+  },
+  {
+   "id": "v02",
+   "who": "vance",
+   "text": "Escuta.",
+   "pause": 2.2
+  },
+  {
+   "id": "v03",
+   "who": "vance",
+   "text": "Alô? Aqui é Pike Ridge. Está me ouvindo?",
+   "say": "Alô? Aqui é Paique Rídji. Está me ouvindo?",
+   "pause": 1.4
+  },
+  {
+   "id": "e01",
+   "who": "eco_vance",
+   "text": "Alô? Aqui é Pike Ridge. Está me ouvindo?",
+   "say": "Alô? Aqui é Paique Rídji. Está me ouvindo?",
+   "pause": 0.8
+  },
+  {
+   "id": "r02",
+   "who": "ray_young",
+   "text": "É eco. É só o eco da antena.",
+   "pause": 1.2
+  },
+  {
+   "id": "e02",
+   "who": "eco_ray_young",
+   "text": "Não é eco, Ray.",
+   "say": "Não é eco, Rêi.",
+   "pause": 0.9
+  },
+  {
+   "id": "r03",
+   "who": "ray_young",
+   "text": "Eu não falei isso. Doutor, eu não falei isso!",
+   "emo": 0.8,
+   "pause": 0.5
+  },
+  {
+   "id": "v04",
+   "who": "vance",
+   "text": "Ele aprendeu a nossa voz. Ray, ele está aprendendo. Aumenta a potência.",
+   "say": "Ele aprendeu a nossa voz. Rêi, ele está aprendendo. Aumenta a potência.",
+   "emo": 0.7,
+   "pause": 0.4
+  },
+  {
+   "id": "r04",
+   "who": "ray_young",
+   "text": "Desliga isso. Desliga agora!",
+   "emo": 0.85,
+   "pause": 0.4
+  },
+  {
+   "id": "v05",
+   "who": "vance",
+   "text": "Mais um minuto. Só mais um minuto e a gente entra pra história.",
+   "pause": 4.2
+  },
+  {
+   "id": "r05",
+   "who": "ray_young",
+   "text": "Doutor! Atrás de você!",
+   "emo": 1.0,
+   "pause": 2.2
+  },
+  {
+   "id": "v06",
+   "who": "vance",
+   "text": "Ray! Corta o cabo! Corta o cabo!",
+   "say": "Rêi! Corta o cabo! Corta o cabo!",
+   "emo": 1.0,
+   "pause": 4.0
+  },
+  {
+   "id": "r06",
+   "who": "ray_young",
+   "text": "Silêncio. Silêncio.",
+   "emo": 0.45,
+   "pause": 7.0
+  },
+  {
+   "id": "m01",
+   "who": "helen",
+   "text": "Daniela Ruiz! Nove horas em casa, ouviu? Nove! Não é nove e meia!",
+   "emo": 0.6,
+   "pause": 0.3
+  },
+  {
+   "id": "d00",
+   "who": "dani",
+   "text": "Tá, mãe! Nove horas! Juro pela sua torta de maçã!",
+   "pause": 0.4
+  },
+  {
+   "id": "m02",
+   "who": "helen",
+   "text": "E não vai se meter com rádio de novo! O fiscal passou aqui hoje!",
+   "pause": 3.0
+  },
+  {
+   "id": "t01",
+   "who": "theo",
+   "text": "Boa noite, Marlow Hollow! Você está ouvindo a Rádio Porão, vinte e sete megahertz, a única rádio da zona de silêncio que o governo ainda não fechou.",
+   "say": "Boa noite, Márlou Rólou! Você está ouvindo a Rádio Porão, vinte e sete megahértz, a única rádio da zona de silêncio que o governo ainda não fechou.",
+   "pause": 0.4
+  },
+  {
+   "id": "d01",
+   "who": "dani",
+   "text": "Porque o governo nem sabe que a gente existe, Theo. A gente tem três ouvintes. E um é a sua avó.",
+   "pause": 0.3
+  },
+  {
+   "id": "b01",
+   "who": "bolacha",
+   "text": "E ela desligou na metade da última vez.",
+   "pause": 0.3
+  },
+  {
+   "id": "t02",
+   "who": "theo",
+   "text": "Ela dormiu. É diferente. Bolacha, efeito sonoro de lobisomem, por favor.",
+   "pause": 0.4
+  },
+  {
+   "id": "b02",
+   "who": "bolacha",
+   "text": "Auuuu. Desculpa, eu tava mastigando.",
+   "say": "Auuuuuu. Desculpa, eu tava mastigando.",
+   "pause": 0.3
+  },
+  {
+   "id": "d02",
+   "who": "dani",
+   "text": "Isso foi um lobisomem com refluxo.",
+   "pause": 0.4
+  },
+  {
+   "id": "t03",
+   "who": "theo",
+   "text": "Ignorem. Hoje no programa: o telescópio de Pike Ridge, que fechou em mil novecentos e setenta e nove e ninguém sabe por quê.",
+   "say": "Ignorem. Hoje no programa: o telescópio de Paique Rídji, que fechou em mil novecentos e setenta e nove e ninguém sabe por quê.",
+   "pause": 0.3
+  },
+  {
+   "id": "d03",
+   "who": "dani",
+   "text": "Todo mundo sabe por quê. Acabou o dinheiro. Meu pai disse.",
+   "pause": 0.3
+  },
+  {
+   "id": "t04",
+   "who": "theo",
+   "text": "Seu pai também disse que o Elvis abasteceu no posto dele.",
+   "pause": 0.3
+  },
+  {
+   "id": "d04",
+   "who": "dani",
+   "text": "E abasteceu! Ele pagou com um cheque sem fundo.",
+   "pause": 0.5
+  },
+  {
+   "id": "b03a",
+   "who": "bolacha",
+   "text": "Isso é verdade. Meu tio viu. Ele disse que o Elvis comeu três sanduíches e foi embora sem pagar.",
+   "pause": 0.3
+  },
+  {
+   "id": "t04b",
+   "who": "theo",
+   "text": "Gente, foco. Regra número um da Rádio Porão: ninguém fala o nome de ninguém no ar. O fiscal ouve tudo.",
+   "pause": 0.3
+  },
+  {
+   "id": "d04b",
+   "who": "dani",
+   "text": "Você acabou de falar o nome da cidade inteira, gênio.",
+   "pause": 0.3
+  },
+  {
+   "id": "t04c",
+   "who": "theo",
+   "text": "A cidade não conta. Aqui é zona de silêncio: o telescópio precisava de silêncio total pra escutar o espaço, então é proibido transmitir. E se ninguém transmite, ninguém escuta a gente. Lógica.",
+   "pause": 0.3
+  },
+  {
+   "id": "b03b",
+   "who": "bolacha",
+   "text": "Então por que a gente transmite?",
+   "pause": 0.3
+  },
+  {
+   "id": "t04d",
+   "who": "theo",
+   "text": "Porque é a feira de ciências, Bolacha. Primeiro lugar ganha quinhentos dólares e uma viagem pra Washington.",
+   "say": "Porque é a feira de ciências, Bolacha. Primeiro lugar ganha quinhentos dólares e uma viagem pra Uóchinton.",
+   "pause": 0.3
+  },
+  {
+   "id": "d04c",
+   "who": "dani",
+   "text": "E o segundo lugar ganha uma multa federal. Câmbio.",
+   "pause": 0.8
+  },
+  {
+   "id": "b03",
+   "who": "bolacha",
+   "text": "Gente. Tem alguém falando no outro canal.",
+   "pause": 1.6
+  },
+  {
+   "id": "e03",
+   "who": "eco_theo",
+   "text": "Boa noite, Marlow Hollow.",
+   "say": "Boa noite, Márlou Rólou.",
+   "pause": 0.6
+  },
+  {
+   "id": "t05",
+   "who": "theo",
+   "text": "É a nossa transmissão. Tá voltando atrasada. Deve ser reflexo na montanha.",
+   "pause": 1.2
+  },
+  {
+   "id": "e04",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Bolacha.",
+   "pause": 0.8
+  },
+  {
+   "id": "b04",
+   "who": "bolacha",
+   "text": "Por que ele sabe o meu apelido? Por que ele tem a minha voz?",
+   "emo": 0.75,
+   "pause": 0.9
+  },
+  {
+   "id": "e05",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Vem brincar lá fora.",
+   "pause": 0.8
+  },
+  {
+   "id": "d05",
+   "who": "dani",
+   "text": "É o Kyle. É óbvio que é o Kyle. Aquele idiota trabalha com a sua irmã e tem um walkie-talkie.",
+   "say": "É o Cáil. É óbvio que é o Cáil. Aquele idiota trabalha com a sua irmã e tem um uóki-tóki.",
+   "pause": 0.3
+  },
+  {
+   "id": "t06",
+   "who": "theo",
+   "text": "Eu vou gravar. Se for o Kyle, amanhã a gente acaba com ele.",
+   "say": "Eu vou gravar. Se for o Cáil, amanhã a gente acaba com ele.",
+   "pause": 0.5
+  },
+  {
+   "id": "b05",
+   "who": "bolacha",
+   "text": "E se não for o Kyle?",
+   "say": "E se não for o Cáil?",
+   "emo": 0.6,
+   "pause": 1.6
+  },
+  {
+   "id": "t06b",
+   "who": "theo",
+   "text": "É o Kyle. Tem que ser. Bolacha, leva o walkie. Canal nove. A gente te acompanha até a sua casa.",
+   "say": "É o Cáil. Tem que ser. Bolacha, leva o uóki. Canal nove. A gente te acompanha até a sua casa.",
+   "pause": 0.3
+  },
+  {
+   "id": "b05b",
+   "who": "bolacha",
+   "text": "E o pager? Minha mãe me mata se eu desligar o pager.",
+   "pause": 0.3,
+   "say": "E o pêidjer? Minha mãe me mata se eu desligar o pêidjer."
+  },
+  {
+   "id": "d05b",
+   "who": "dani",
+   "text": "Então deixa ligado. É mais fácil sobreviver a um monstro do que à sua mãe.",
+   "pause": 2.0
+  },
+  {
+   "id": "c01",
+   "who": "coyle",
+   "text": "Central, aqui é Coyle. Transmissão ilegal em vinte e sete megahertz. Rua Hemlock. De novo.",
+   "say": "Central, aqui é Cóil. Transmissão ilegal em vinte e sete megahértz. Rua Rémloc. De novo.",
+   "pause": 0.4
+  },
+  {
+   "id": "z01",
+   "who": "central",
+   "text": "Entendido, fiscal. Multa ou apreensão?",
+   "pause": 0.5
+  },
+  {
+   "id": "c02",
+   "who": "coyle",
+   "text": "Ainda não. Tem mais alguma coisa transmitindo na mesma frequência. E não vem de nenhuma casa.",
+   "pause": 0.8
+  },
+  {
+   "id": "c02b",
+   "who": "coyle",
+   "text": "Está vindo da serra. Do lado do observatório velho.",
+   "pause": 0.4
+  },
+  {
+   "id": "z02",
+   "who": "central",
+   "text": "Fiscal, o observatório está fechado desde setenta e nove.",
+   "pause": 0.4
+  },
+  {
+   "id": "c02c",
+   "who": "coyle",
+   "text": "Eu sei, Central. É por isso que eu estou preocupado.",
+   "emo": 0.5,
+   "pause": 3.0
+  },
+  {
+   "id": "e06",
+   "who": "eco_vance",
+   "text": "Ray. Ray.",
+   "say": "Rêi. Rêi.",
+   "pause": 1.4
+  },
+  {
+   "id": "h01",
+   "who": "ray_old",
+   "text": "Não. Não, não, não. Você morreu de fome lá embaixo. Eu te deixei morrer de fome.",
+   "emo": 0.65,
+   "pause": 1.6
+  },
+  {
+   "id": "h02",
+   "who": "ray_old",
+   "text": "Quinze anos de silêncio. Quinze anos.",
+   "pause": 3.0
+  },
+  {
+   "id": "k01",
+   "who": "kyle",
+   "text": "Jess, olha essa capa. O Retorno do Zumbi Canibal, parte seis. Seis! Quem morre seis vezes?",
+   "say": "Djéss, olha essa capa. O Retorno do Zumbi Canibal, parte seis. Seis! Quem morre seis vezes?",
+   "pause": 0.3
+  },
+  {
+   "id": "j01",
+   "who": "jess",
+   "text": "Você, se não arrumar a prateleira de comédia antes do meu pai chegar.",
+   "pause": 0.3
+  },
+  {
+   "id": "k02",
+   "who": "kyle",
+   "text": "Comédia é a prateleira mais triste da loja. Ninguém aluga comédia numa cidade onde é proibido ter rádio.",
+   "pause": 0.4
+  },
+  {
+   "id": "j01b",
+   "who": "jess",
+   "text": "Mais seis meses, Kyle. Seis meses e eu tô na faculdade, longe dessa cidade onde o telefone é a coisa mais moderna que existe.",
+   "say": "Mais seis meses, Cáil. Seis meses e eu tô na faculdade, longe dessa cidade onde o telefone é a coisa mais moderna que existe.",
+   "pause": 0.3
+  },
+  {
+   "id": "k02b",
+   "who": "kyle",
+   "text": "E quem vai cuidar do seu irmão gênio do mal?",
+   "pause": 0.3
+  },
+  {
+   "id": "j01c",
+   "who": "jess",
+   "text": "O fiscal do governo. Ele já cuida, de qualquer jeito.",
+   "pause": 1.6
+  },
+  {
+   "id": "k03",
+   "who": "kyle",
+   "text": "Jess. Por que todas as TVs mudaram de canal sozinhas?",
+   "say": "Djéss. Por que todas as TVs mudaram de canal sozinhas?",
+   "pause": 0.3
+  },
+  {
+   "id": "j02",
+   "who": "jess",
+   "text": "Pifou o videocassete central de novo.",
+   "pause": 0.9
+  },
+  {
+   "id": "k04",
+   "who": "kyle",
+   "text": "Tem alguém na tela. Jess, tem alguém em pé dentro da tela. Em todas as telas.",
+   "say": "Tem alguém na tela. Djéss, tem alguém em pé dentro da tela. Em todas as telas.",
+   "emo": 0.75,
+   "pause": 1.0
+  },
+  {
+   "id": "j03",
+   "who": "jess",
+   "text": "Theo, você tá transmitindo de novo? Desliga essa porcaria. As TVs da loja enlouqueceram.",
+   "emo": 0.6,
+   "pause": 0.3
+  },
+  {
+   "id": "t07",
+   "who": "theo_phone",
+   "text": "Não fomos nós. Jess, o Kyle tá aí do seu lado?",
+   "say": "Não fomos nós. Djéss, o Cáil tá aí do seu lado?",
+   "pause": 0.3
+  },
+  {
+   "id": "j04",
+   "who": "jess",
+   "text": "Tá. Babando numa capa de filme. Por quê?",
+   "pause": 0.3
+  },
+  {
+   "id": "t08",
+   "who": "theo_phone",
+   "text": "Porque alguém tá usando a voz do Bolacha no rádio. E não é ele.",
+   "emo": 0.6,
+   "pause": 3.0
+  },
+  {
+   "id": "b06",
+   "who": "bolacha",
+   "text": "Bolacha para Base. Tô passando pelas torres de luz. Isso aqui de noite parece capa de filme da locadora.",
+   "pause": 0.3
+  },
+  {
+   "id": "d06",
+   "who": "dani_radio",
+   "text": "Base para Bolacha. Para de chorar e anda. São dez minutos até a sua casa.",
+   "pause": 0.3
+  },
+  {
+   "id": "t09",
+   "who": "theo_radio",
+   "text": "Bolacha, escuta. Eu ouvi a gravação de novo. A voz só aparece quando a gente transmite. Toda vez. Como se ela seguisse o sinal.",
+   "pause": 0.3
+  },
+  {
+   "id": "b07",
+   "who": "bolacha",
+   "text": "Que ótimo. E eu tô andando no escuro segurando um sinal na mão.",
+   "pause": 0.6
+  },
+  {
+   "id": "b07b",
+   "who": "bolacha",
+   "text": "Tá tudo bem. Tudo bem. Pão de queijo da dona Ruiz, quentinho e feliz. Pão de queijo da dona Ruiz.",
+   "say": "Tá tudo bem. Tudo bem. Pão de queijo da dona Rúiz, quentinho e feliz. Pão de queijo da dona Rúiz.",
+   "pause": 0.4
+  },
+  {
+   "id": "d06b",
+   "who": "dani_radio",
+   "text": "Bolacha, você tá cantando o comercial do restaurante da minha mãe?",
+   "pause": 0.3
+  },
+  {
+   "id": "b07c",
+   "who": "bolacha",
+   "text": "Isso me acalma, tá bom? Me deixa em paz.",
+   "pause": 2.6
+  },
+  {
+   "id": "e07",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Aqui atrás.",
+   "pause": 0.8
+  },
+  {
+   "id": "b08",
+   "who": "bolacha",
+   "text": "Theo. Theo, eu acabei de ouvir a minha voz atrás de mim.",
+   "emo": 0.8,
+   "pause": 0.3
+  },
+  {
+   "id": "t10",
+   "who": "theo_radio",
+   "text": "Desliga o rádio! Desliga agora e fica quieto!",
+   "emo": 0.85,
+   "pause": 12.0
+  },
+  {
+   "id": "b09",
+   "who": "bolacha",
+   "text": "Não, não, não. Mãe, agora não!",
+   "emo": 0.9,
+   "pause": 2.0
+  },
+  {
+   "id": "b10",
+   "who": "bolacha",
+   "text": "Socorro! Alguém me ajuda! Socorro!",
+   "emo": 1.0,
+   "pause": 4.0
+  },
+  {
+   "id": "h03",
+   "who": "ray_old",
+   "text": "Tá fechado, garoto! Sai da minha... O que você trouxe pra minha loja?",
+   "emo": 0.6,
+   "pause": 0.3
+  },
+  {
+   "id": "b11",
+   "who": "bolacha",
+   "text": "Ele veio atrás do meu pager! Tem uma coisa me seguindo!",
+   "emo": 0.9,
+   "pause": 1.0
+  },
+  {
+   "id": "e08",
+   "who": "eco_vance",
+   "text": "Ray. Corta o cabo, Ray.",
+   "say": "Rêi. Corta o cabo, Rêi.",
+   "pause": 0.4
+  },
+  {
+   "id": "h04",
+   "who": "ray_old",
+   "text": "Tira tudo da tomada! Tudo! Agora!",
+   "emo": 0.9,
+   "pause": 6.5
+  },
+  {
+   "id": "h05",
+   "who": "ray_old",
+   "text": "Vem! Vem, seu desgraçado! Quinze anos eu esperei isso!",
+   "emo": 1.0,
+   "pause": 7.5
+  },
+  {
+   "id": "h05b",
+   "who": "ray_old",
+   "text": "Garoto! A tomada da parede! A grande!",
+   "emo": 0.9,
+   "pause": 4.5
+  },
+  {
+   "id": "b12",
+   "who": "bolacha",
+   "text": "Seu Ray! Seu Ray, levanta!",
+   "say": "Seu Rêi! Seu Rêi, levanta!",
+   "emo": 0.95,
+   "pause": 1.5
+  },
+  {
+   "id": "d07",
+   "who": "dani",
+   "text": "Ei! Cara de antena! Aqui!",
+   "emo": 0.9,
+   "pause": 3.5
+  },
+  {
+   "id": "t11",
+   "who": "theo",
+   "text": "Ele come o sinal! Então toma o seu próprio sinal!",
+   "emo": 0.9,
+   "pause": 9.0
+  },
+  {
+   "id": "b13",
+   "who": "bolacha",
+   "text": "Ninguém nunca mais fala alto nessa cidade. Nunca mais. Eu vou virar mímico.",
+   "pause": 0.3
+  },
+  {
+   "id": "d08",
+   "who": "dani",
+   "text": "Você já fala igual a um mímico, Bolacha. Só que com som.",
+   "pause": 0.8
+  },
+  {
+   "id": "t12",
+   "who": "theo",
+   "text": "O senhor já tinha visto aquilo antes. Não tinha?",
+   "pause": 1.2
+  },
+  {
+   "id": "h06",
+   "who": "ray_old",
+   "text": "Pike Ridge. Setenta e nove. Eu cortei o cabo. E achei que ele tinha morrido de fome lá embaixo.",
+   "say": "Paique Rídji. Setenta e nove. Eu cortei o cabo. E achei que ele tinha morrido de fome lá embaixo.",
+   "emo": 0.5,
+   "pause": 0.4
+  },
+  {
+   "id": "d09",
+   "who": "dani",
+   "text": "Fome de quê?",
+   "pause": 0.6
+  },
+  {
+   "id": "h07",
+   "who": "ray_old",
+   "text": "De barulho, menina. De voz. E vocês acabaram de dar um banquete pra ele.",
+   "emo": 0.5,
+   "pause": 1.6
+  },
+  {
+   "id": "t12b",
+   "who": "theo",
+   "text": "A gente gravou a voz dele. Tá aqui, na fita. Se ele odeia o próprio sinal, a gente pode usar isso.",
+   "pause": 0.4
+  },
+  {
+   "id": "h08",
+   "who": "ray_old",
+   "text": "Vocês não vão usar nada. Vão pra casa, desligam tudo e não falam com ninguém. Nem comigo. Nem com o rádio.",
+   "emo": 0.55,
+   "pause": 0.4
+  },
+  {
+   "id": "d10",
+   "who": "dani",
+   "text": "Ele sabe o nome do Bolacha. Ele vai voltar atrás dele. A gente não vai pra casa.",
+   "emo": 0.55,
+   "pause": 0.4
+  },
+  {
+   "id": "b14",
+   "who": "bolacha",
+   "text": "Eu voto em ir pra casa. Só pra constar.",
+   "pause": 1.6
+  },
+  {
+   "id": "c03",
+   "who": "coyle",
+   "text": "Central, aqui é Coyle. Avisa Washington. Pike Ridge acordou.",
+   "say": "Central, aqui é Cóil. Avisa Uóchinton. Paique Rídji acordou.",
+   "pause": 3.5
+  },
+  {
+   "id": "e09",
+   "who": "eco_vance",
+   "text": "Ray. Eu ainda estou aqui embaixo. Ele me deixa falar. Quando está com fome.",
+   "say": "Rêi. Eu ainda estou aqui embaixo. Ele me deixa falar. Quando está com fome.",
+   "pause": 1.2
+  },
+  {
+   "id": "t13",
+   "who": "theo",
+   "text": "O rádio tá desligado da tomada.",
+   "emo": 0.55,
+   "pause": 1.0
+  }
+ ]
+}

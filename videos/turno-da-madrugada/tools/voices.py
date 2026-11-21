@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Script -> voiced audio for the night-shift series, with one voice per character.
-Engine: Kokoro-82M (hexgrad/Kokoro-82M), the same model and Portuguese voices VoiceStudio ships (pf_dora, pm_alex,
-pm_santa). Run it with a Python that has `kokoro` and `soundfile` installed.
+Engines: Kokoro-82M (hexgrad/Kokoro-82M), the same model and Portuguese voices VoiceStudio ships (pf_dora, pm_alex,
+pm_santa), and Piper pt_BR voices ("piper:cadu", "piper:faber", "piper:jeff"; the .onnx files in $PIPER_VOICES,
+default ~/.piper-voices). Run it with a Python that has `kokoro`, `piper-tts` and `soundfile` installed.
   usage: python voices.py videos/<episode>
 reads  videos/<episode>/script.json  ({ lead, tail, lines: [{ id, who, text, say?, pause, emo?, cfg? }] })
        emo (0.25-1.2, optional): ACT the line with Chatterbox Multilingual at that emotion intensity, cloning the
@@ -19,6 +20,20 @@ SR = 48000
 OCO = ("asplit=2[a][b];[a]asetrate=48000*0.78,aresample=48000,aecho=0.8:0.75:70|140:0.35|0.2,volume=1.25[lo];"
        "[b]asetrate=48000*1.2,aresample=48000,highpass=f=1800,volume=0.35,aecho=0.6:0.5:40:0.4[hi];"
        "[lo][hi]amix=inputs=2:normalize=0,tremolo=f=7:d=0.25")
+def st(n):
+    """pitch shift by n semitones keeping the speed (asetrate + atempo, atempo chained inside 0.5..2)"""
+    r = 2 ** (n / 12); t = 1 / r; parts = []
+    while t < 0.5: parts.append("atempo=0.5"); t /= 0.5
+    while t > 2: parts.append("atempo=2"); t /= 2
+    parts.append(f"atempo={t:.5f}")
+    return f"aresample=48000,asetrate=48000*{r:.5f},aresample=48000," + ",".join(parts)
+
+WALKIE = "highpass=f=450,lowpass=f=2900,acrusher=bits=9:mode=log:aa=1,acompressor=threshold=0.05:ratio=8:makeup=4"
+PHONE = "highpass=f=300,lowpass=f=3400,acompressor=threshold=0.1:ratio=4:makeup=2,acrusher=bits=12:mode=log:aa=1"
+# the creature speaking with someone's voice: a little lower, doubled late, metallic, a radio band and a slow flutter
+ECO = (st(-1) + ",highpass=f=200,lowpass=f=5000,flanger=delay=1.5:depth=1.5:speed=0.2:regen=10,"
+       "aecho=0.8:0.5:240:0.18,acrusher=bits=13:mode=log:aa=1")
+
 VOICES = {
     "lola": ("pf_dora", 1.0, None),
     "tobby": ("pm_alex", 1.1, None),
@@ -35,17 +50,53 @@ VOICES = {
     "gary": ("pm_alex", 0.98, "asetrate=48000*0.9,aresample=48000,atempo=1.11"),
     "sofia": ("pf_dora", 1.08, "asetrate=48000*1.12,aresample=48000,atempo=0.893,highpass=f=250,lowpass=f=3600"),
     "sombra_kev": ("pm_alex", 0.9, OCO.replace("0.78", "0.86")),
+    # Zona de Silencio (kids are adult voices shifted up: pitch and formants move together, like a younger throat)
+    "theo": ("pm_alex", 1.04, st(3.5)),
+    "theo_phone": ("pm_alex", 1.04, st(3.5) + "," + PHONE),
+    "theo_radio": ("pm_alex", 1.04, st(3.5) + "," + WALKIE),
+    "dani": ("pf_dora", 1.08, st(2.5) + ",equalizer=f=3200:t=q:w=1:g=2"),
+    "dani_radio": ("pf_dora", 1.08, st(2.5) + "," + WALKIE),
+    "bolacha": ("piper:cadu", 0.98, st(4)),
+    "jess": ("pf_dora", 0.98, "equalizer=f=250:t=q:w=1:g=2"),
+    "kyle": ("piper:faber", 0.9, st(1) + ",equalizer=f=2500:t=q:w=1:g=-2"),
+    "ray_young": ("pm_alex", 1.0, st(-1.5)),
+    "ray_old": ("piper:jeff", 0.95, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=3"),
+    "vance": ("pm_santa", 0.97, None),
+    "coyle": ("piper:faber", 0.97, st(-2) + ",equalizer=f=4000:t=q:w=1:g=-3"),
+    "central": ("pf_dora", 1.05, WALKIE),
+    "helen": ("pf_dora", 0.98, st(-1.5) + ",equalizer=f=300:t=q:w=1:g=2"),
+    "eco_vance": ("pm_santa", 0.92, ECO),
+    "eco_ray_young": ("pm_alex", 0.92, st(-1.5) + "," + ECO),
+    "eco_theo": ("pm_alex", 0.95, st(3.5) + "," + ECO),
+    "eco_bolacha": ("piper:cadu", 0.9, st(4) + "," + ECO),
 }
 
-def load_pipe():
-    from kokoro import KPipeline
-    return KPipeline(lang_code="p", repo_id="hexgrad/Kokoro-82M")
+PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)
+_PIPERS = {}
+
+class Pipe:
+    """both engines behind one call: raw(text, voice, speed) -> (samples, sample_rate)"""
+    def __init__(self): self.k = None
+    def raw(self, text, voice, speed):
+        if voice.startswith("piper:"):
+            from piper import PiperVoice, SynthesisConfig
+            name = voice.split(":", 1)[1]
+            if name not in _PIPERS: _PIPERS[name] = PiperVoice.load(os.path.join(PIPER_DIR, f"pt_BR-{name}-medium.onnx"))
+            v = _PIPERS[name]; cfg = SynthesisConfig(length_scale=1 / speed)
+            audio = np.concatenate([c.audio_float_array for c in v.synthesize(text, syn_config=cfg)])
+            return audio, v.config.sample_rate
+        if self.k is None:
+            from kokoro import KPipeline
+            self.k = KPipeline(lang_code="p", repo_id="hexgrad/Kokoro-82M")
+        return np.concatenate([np.asarray(a) for _, _, a in self.k(text, voice=voice, speed=speed)]), 24000
+
+def load_pipe(): return Pipe()
 
 def synth(pipe, text, who, out):
     voice, speed, fx = VOICES[who]
-    audio = np.concatenate([np.asarray(a) for _, _, a in pipe(text, voice=voice, speed=speed)])
+    audio, sr = pipe.raw(text, voice, speed)
     with tempfile.TemporaryDirectory() as d:
-        raw = os.path.join(d, "raw.wav"); sf.write(raw, audio, 24000); finish(raw, who, out)
+        raw = os.path.join(d, "raw.wav"); sf.write(raw, audio, sr); finish(raw, who, out)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BATCH = os.path.join(HERE, "..", "..", "..", ".claude", "skills", "diretor-de-terror", "scripts", "chatterbox-batch.py")
@@ -60,11 +111,11 @@ def finish(raw, who, out):
 
 def ref_for(pipe, who, vdir):
     """a 6-8 s plain Kokoro read in the character's voice (no effects), the timbre Chatterbox clones"""
-    ref = os.path.join(vdir, f"_ref_{VOICES[who][0]}_{VOICES[who][1]}.wav")
+    ref = os.path.join(vdir, f"_ref_{VOICES[who][0].replace(':', '-')}_{VOICES[who][1]}.wav")
     if not os.path.exists(ref):
         voice, speed, _ = VOICES[who]
-        audio = np.concatenate([np.asarray(a) for _, _, a in pipe(REF_TEXT, voice=voice, speed=speed)])
-        sf.write(ref, audio, 24000)
+        audio, sr = pipe.raw(REF_TEXT, voice, speed)
+        sf.write(ref, audio, sr)
     return ref
 
 def act(jobs):

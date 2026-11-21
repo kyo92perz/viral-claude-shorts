@@ -1,0 +1,733 @@
+{
+ "duration": 543.485,
+ "lines": [
+  {
+   "id": "v01",
+   "who": "vance",
+   "text": "Ray, vem ver isso. O sinal voltou. E não vem do céu, vem de baixo da montanha.",
+   "t0": 4.0,
+   "t1": 8.107
+  },
+  {
+   "id": "r01",
+   "who": "ray_young",
+   "text": "Doutor, são três da manhã. Sinal debaixo da terra é cano de esgoto.",
+   "t0": 8.707,
+   "t1": 12.456
+  },
+  {
+   "id": "v01b",
+   "who": "vance",
+   "text": "Três da manhã é quando a cidade dorme. Sem rádio, sem televisão, sem nada. É a única hora em que dá pra ouvir o que tem lá embaixo.",
+   "t0": 12.856,
+   "t1": 20.072
+  },
+  {
+   "id": "r01b",
+   "who": "ray_young",
+   "text": "Minha mulher acha que eu trabalho numa fábrica de antena de TV. Se ela soubesse que eu passo a noite ouvindo pedra, pedia o divórcio.",
+   "t0": 20.472,
+   "t1": 27.671
+  },
+  {
+   "id": "v02",
+   "who": "vance",
+   "text": "Escuta.",
+   "t0": 28.171,
+   "t1": 28.923
+  },
+  {
+   "id": "v03",
+   "who": "vance",
+   "text": "Alô? Aqui é Pike Ridge. Está me ouvindo?",
+   "t0": 31.123,
+   "t1": 33.461
+  },
+  {
+   "id": "e01",
+   "who": "eco_vance",
+   "text": "Alô? Aqui é Pike Ridge. Está me ouvindo?",
+   "t0": 34.861,
+   "t1": 37.221
+  },
+  {
+   "id": "r02",
+   "who": "ray_young",
+   "text": "É eco. É só o eco da antena.",
+   "t0": 38.021,
+   "t1": 39.68
+  },
+  {
+   "id": "e02",
+   "who": "eco_ray_young",
+   "text": "Não é eco, Ray.",
+   "t0": 40.88,
+   "t1": 41.976
+  },
+  {
+   "id": "r03",
+   "who": "ray_young",
+   "text": "Eu não falei isso. Doutor, eu não falei isso!",
+   "t0": 42.876,
+   "t1": 45.326
+  },
+  {
+   "id": "v04",
+   "who": "vance",
+   "text": "Ele aprendeu a nossa voz. Ray, ele está aprendendo. Aumenta a potência.",
+   "t0": 45.826,
+   "t1": 52.034
+  },
+  {
+   "id": "r04",
+   "who": "ray_young",
+   "text": "Desliga isso. Desliga agora!",
+   "t0": 52.434,
+   "t1": 54.722
+  },
+  {
+   "id": "v05",
+   "who": "vance",
+   "text": "Mais um minuto. Só mais um minuto e a gente entra pra história.",
+   "t0": 55.122,
+   "t1": 58.53
+  },
+  {
+   "id": "r05",
+   "who": "ray_young",
+   "text": "Doutor! Atrás de você!",
+   "t0": 62.73,
+   "t1": 64.485
+  },
+  {
+   "id": "v06",
+   "who": "vance",
+   "text": "Ray! Corta o cabo! Corta o cabo!",
+   "t0": 66.685,
+   "t1": 70.391
+  },
+  {
+   "id": "r06",
+   "who": "ray_young",
+   "text": "Silêncio. Silêncio.",
+   "t0": 74.391,
+   "t1": 76.712
+  },
+  {
+   "id": "m01",
+   "who": "helen",
+   "text": "Daniela Ruiz! Nove horas em casa, ouviu? Nove! Não é nove e meia!",
+   "t0": 83.712,
+   "t1": 88.85
+  },
+  {
+   "id": "d00",
+   "who": "dani",
+   "text": "Tá, mãe! Nove horas! Juro pela sua torta de maçã!",
+   "t0": 89.15,
+   "t1": 91.844
+  },
+  {
+   "id": "m02",
+   "who": "helen",
+   "text": "E não vai se meter com rádio de novo! O fiscal passou aqui hoje!",
+   "t0": 92.244,
+   "t1": 95.718
+  },
+  {
+   "id": "t01",
+   "who": "theo",
+   "text": "Boa noite, Marlow Hollow! Você está ouvindo a Rádio Porão, vinte e sete megahertz, a única rádio da zona de silêncio que o governo ainda não fechou.",
+   "t0": 98.718,
+   "t1": 106.528
+  },
+  {
+   "id": "d01",
+   "who": "dani",
+   "text": "Porque o governo nem sabe que a gente existe, Theo. A gente tem três ouvintes. E um é a sua avó.",
+   "t0": 106.928,
+   "t1": 111.618
+  },
+  {
+   "id": "b01",
+   "who": "bolacha",
+   "text": "E ela desligou na metade da última vez.",
+   "t0": 111.918,
+   "t1": 114.232
+  },
+  {
+   "id": "t02",
+   "who": "theo",
+   "text": "Ela dormiu. É diferente. Bolacha, efeito sonoro de lobisomem, por favor.",
+   "t0": 114.532,
+   "t1": 118.712
+  },
+  {
+   "id": "b02",
+   "who": "bolacha",
+   "text": "Auuuu. Desculpa, eu tava mastigando.",
+   "t0": 119.112,
+   "t1": 122.185
+  },
+  {
+   "id": "d02",
+   "who": "dani",
+   "text": "Isso foi um lobisomem com refluxo.",
+   "t0": 122.485,
+   "t1": 124.372
+  },
+  {
+   "id": "t03",
+   "who": "theo",
+   "text": "Ignorem. Hoje no programa: o telescópio de Pike Ridge, que fechou em mil novecentos e setenta e nove e ninguém sabe por quê.",
+   "t0": 124.772,
+   "t1": 131.419
+  },
+  {
+   "id": "d03",
+   "who": "dani",
+   "text": "Todo mundo sabe por quê. Acabou o dinheiro. Meu pai disse.",
+   "t0": 131.719,
+   "t1": 134.669
+  },
+  {
+   "id": "t04",
+   "who": "theo",
+   "text": "Seu pai também disse que o Elvis abasteceu no posto dele.",
+   "t0": 134.969,
+   "t1": 138.004
+  },
+  {
+   "id": "d04",
+   "who": "dani",
+   "text": "E abasteceu! Ele pagou com um cheque sem fundo.",
+   "t0": 138.304,
+   "t1": 140.801
+  },
+  {
+   "id": "b03a",
+   "who": "bolacha",
+   "text": "Isso é verdade. Meu tio viu. Ele disse que o Elvis comeu três sanduíches e foi embora sem pagar.",
+   "t0": 141.301,
+   "t1": 147.825
+  },
+  {
+   "id": "t04b",
+   "who": "theo",
+   "text": "Gente, foco. Regra número um da Rádio Porão: ninguém fala o nome de ninguém no ar. O fiscal ouve tudo.",
+   "t0": 148.125,
+   "t1": 153.393
+  },
+  {
+   "id": "d04b",
+   "who": "dani",
+   "text": "Você acabou de falar o nome da cidade inteira, gênio.",
+   "t0": 153.693,
+   "t1": 156.441
+  },
+  {
+   "id": "t04c",
+   "who": "theo",
+   "text": "A cidade não conta. Aqui é zona de silêncio: o telescópio precisava de silêncio total pra escutar o espaço, então é proibido transmitir. E se ninguém transmite, ninguém escuta a gente. Lógica.",
+   "t0": 156.741,
+   "t1": 167.487
+  },
+  {
+   "id": "b03b",
+   "who": "bolacha",
+   "text": "Então por que a gente transmite?",
+   "t0": 167.787,
+   "t1": 169.304
+  },
+  {
+   "id": "t04d",
+   "who": "theo",
+   "text": "Porque é a feira de ciências, Bolacha. Primeiro lugar ganha quinhentos dólares e uma viagem pra Washington.",
+   "t0": 169.604,
+   "t1": 175.163
+  },
+  {
+   "id": "d04c",
+   "who": "dani",
+   "text": "E o segundo lugar ganha uma multa federal. Câmbio.",
+   "t0": 175.463,
+   "t1": 178.003
+  },
+  {
+   "id": "b03",
+   "who": "bolacha",
+   "text": "Gente. Tem alguém falando no outro canal.",
+   "t0": 178.803,
+   "t1": 181.846
+  },
+  {
+   "id": "e03",
+   "who": "eco_theo",
+   "text": "Boa noite, Marlow Hollow.",
+   "t0": 183.446,
+   "t1": 184.943
+  },
+  {
+   "id": "t05",
+   "who": "theo",
+   "text": "É a nossa transmissão. Tá voltando atrasada. Deve ser reflexo na montanha.",
+   "t0": 185.543,
+   "t1": 189.604
+  },
+  {
+   "id": "e04",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Bolacha.",
+   "t0": 190.804,
+   "t1": 192.676
+  },
+  {
+   "id": "b04",
+   "who": "bolacha",
+   "text": "Por que ele sabe o meu apelido? Por que ele tem a minha voz?",
+   "t0": 193.476,
+   "t1": 196.883
+  },
+  {
+   "id": "e05",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Vem brincar lá fora.",
+   "t0": 197.783,
+   "t1": 200.574
+  },
+  {
+   "id": "d05",
+   "who": "dani",
+   "text": "É o Kyle. É óbvio que é o Kyle. Aquele idiota trabalha com a sua irmã e tem um walkie-talkie.",
+   "t0": 201.374,
+   "t1": 206.021
+  },
+  {
+   "id": "t06",
+   "who": "theo",
+   "text": "Eu vou gravar. Se for o Kyle, amanhã a gente acaba com ele.",
+   "t0": 206.321,
+   "t1": 209.515
+  },
+  {
+   "id": "b05",
+   "who": "bolacha",
+   "text": "E se não for o Kyle?",
+   "t0": 210.015,
+   "t1": 211.129
+  },
+  {
+   "id": "t06b",
+   "who": "theo",
+   "text": "É o Kyle. Tem que ser. Bolacha, leva o walkie. Canal nove. A gente te acompanha até a sua casa.",
+   "t0": 212.729,
+   "t1": 217.757
+  },
+  {
+   "id": "b05b",
+   "who": "bolacha",
+   "text": "E o pager? Minha mãe me mata se eu desligar o pager.",
+   "t0": 218.057,
+   "t1": 221.517
+  },
+  {
+   "id": "d05b",
+   "who": "dani",
+   "text": "Então deixa ligado. É mais fácil sobreviver a um monstro do que à sua mãe.",
+   "t0": 221.817,
+   "t1": 225.814
+  },
+  {
+   "id": "c01",
+   "who": "coyle",
+   "text": "Central, aqui é Coyle. Transmissão ilegal em vinte e sete megahertz. Rua Hemlock. De novo.",
+   "t0": 227.814,
+   "t1": 234.151
+  },
+  {
+   "id": "z01",
+   "who": "central",
+   "text": "Entendido, fiscal. Multa ou apreensão?",
+   "t0": 234.551,
+   "t1": 236.699
+  },
+  {
+   "id": "c02",
+   "who": "coyle",
+   "text": "Ainda não. Tem mais alguma coisa transmitindo na mesma frequência. E não vem de nenhuma casa.",
+   "t0": 237.199,
+   "t1": 242.704
+  },
+  {
+   "id": "c02b",
+   "who": "coyle",
+   "text": "Está vindo da serra. Do lado do observatório velho.",
+   "t0": 243.504,
+   "t1": 246.463
+  },
+  {
+   "id": "z02",
+   "who": "central",
+   "text": "Fiscal, o observatório está fechado desde setenta e nove.",
+   "t0": 246.863,
+   "t1": 250.077
+  },
+  {
+   "id": "c02c",
+   "who": "coyle",
+   "text": "Eu sei, Central. É por isso que eu estou preocupado.",
+   "t0": 250.477,
+   "t1": 253.884
+  },
+  {
+   "id": "e06",
+   "who": "eco_vance",
+   "text": "Ray. Ray.",
+   "t0": 256.884,
+   "t1": 257.661
+  },
+  {
+   "id": "h01",
+   "who": "ray_old",
+   "text": "Não. Não, não, não. Você morreu de fome lá embaixo. Eu te deixei morrer de fome.",
+   "t0": 259.061,
+   "t1": 264.143
+  },
+  {
+   "id": "h02",
+   "who": "ray_old",
+   "text": "Quinze anos de silêncio. Quinze anos.",
+   "t0": 265.743,
+   "t1": 268.507
+  },
+  {
+   "id": "k01",
+   "who": "kyle",
+   "text": "Jess, olha essa capa. O Retorno do Zumbi Canibal, parte seis. Seis! Quem morre seis vezes?",
+   "t0": 271.507,
+   "t1": 278.366
+  },
+  {
+   "id": "j01",
+   "who": "jess",
+   "text": "Você, se não arrumar a prateleira de comédia antes do meu pai chegar.",
+   "t0": 278.666,
+   "t1": 282.327
+  },
+  {
+   "id": "k02",
+   "who": "kyle",
+   "text": "Comédia é a prateleira mais triste da loja. Ninguém aluga comédia numa cidade onde é proibido ter rádio.",
+   "t0": 282.627,
+   "t1": 288.118
+  },
+  {
+   "id": "j01b",
+   "who": "jess",
+   "text": "Mais seis meses, Kyle. Seis meses e eu tô na faculdade, longe dessa cidade onde o telefone é a coisa mais moderna que existe.",
+   "t0": 288.518,
+   "t1": 295.916
+  },
+  {
+   "id": "k02b",
+   "who": "kyle",
+   "text": "E quem vai cuidar do seu irmão gênio do mal?",
+   "t0": 296.216,
+   "t1": 298.269
+  },
+  {
+   "id": "j01c",
+   "who": "jess",
+   "text": "O fiscal do governo. Ele já cuida, de qualquer jeito.",
+   "t0": 298.569,
+   "t1": 301.501
+  },
+  {
+   "id": "k03",
+   "who": "kyle",
+   "text": "Jess. Por que todas as TVs mudaram de canal sozinhas?",
+   "t0": 303.101,
+   "t1": 306.602
+  },
+  {
+   "id": "j02",
+   "who": "jess",
+   "text": "Pifou o videocassete central de novo.",
+   "t0": 306.902,
+   "t1": 309.145
+  },
+  {
+   "id": "k04",
+   "who": "kyle",
+   "text": "Tem alguém na tela. Jess, tem alguém em pé dentro da tela. Em todas as telas.",
+   "t0": 310.045,
+   "t1": 315.762
+  },
+  {
+   "id": "j03",
+   "who": "jess",
+   "text": "Theo, você tá transmitindo de novo? Desliga essa porcaria. As TVs da loja enlouqueceram.",
+   "t0": 316.762,
+   "t1": 323.079
+  },
+  {
+   "id": "t07",
+   "who": "theo_phone",
+   "text": "Não fomos nós. Jess, o Kyle tá aí do seu lado?",
+   "t0": 323.379,
+   "t1": 325.967
+  },
+  {
+   "id": "j04",
+   "who": "jess",
+   "text": "Tá. Babando numa capa de filme. Por quê?",
+   "t0": 326.267,
+   "t1": 328.36
+  },
+  {
+   "id": "t08",
+   "who": "theo_phone",
+   "text": "Porque alguém tá usando a voz do Bolacha no rádio. E não é ele.",
+   "t0": 328.66,
+   "t1": 332.01
+  },
+  {
+   "id": "b06",
+   "who": "bolacha",
+   "text": "Bolacha para Base. Tô passando pelas torres de luz. Isso aqui de noite parece capa de filme da locadora.",
+   "t0": 335.01,
+   "t1": 341.592
+  },
+  {
+   "id": "d06",
+   "who": "dani_radio",
+   "text": "Base para Bolacha. Para de chorar e anda. São dez minutos até a sua casa.",
+   "t0": 341.892,
+   "t1": 345.887
+  },
+  {
+   "id": "t09",
+   "who": "theo_radio",
+   "text": "Bolacha, escuta. Eu ouvi a gravação de novo. A voz só aparece quando a gente transmite. Toda vez. Como se ela seguisse o sinal.",
+   "t0": 346.187,
+   "t1": 353.202
+  },
+  {
+   "id": "b07",
+   "who": "bolacha",
+   "text": "Que ótimo. E eu tô andando no escuro segurando um sinal na mão.",
+   "t0": 353.502,
+   "t1": 357.356
+  },
+  {
+   "id": "b07b",
+   "who": "bolacha",
+   "text": "Tá tudo bem. Tudo bem. Pão de queijo da dona Ruiz, quentinho e feliz. Pão de queijo da dona Ruiz.",
+   "t0": 357.956,
+   "t1": 364.997
+  },
+  {
+   "id": "d06b",
+   "who": "dani_radio",
+   "text": "Bolacha, você tá cantando o comercial do restaurante da minha mãe?",
+   "t0": 365.397,
+   "t1": 368.761
+  },
+  {
+   "id": "b07c",
+   "who": "bolacha",
+   "text": "Isso me acalma, tá bom? Me deixa em paz.",
+   "t0": 369.061,
+   "t1": 371.869
+  },
+  {
+   "id": "e07",
+   "who": "eco_bolacha",
+   "text": "Bolacha. Aqui atrás.",
+   "t0": 374.469,
+   "t1": 376.676
+  },
+  {
+   "id": "b08",
+   "who": "bolacha",
+   "text": "Theo. Theo, eu acabei de ouvir a minha voz atrás de mim.",
+   "t0": 377.476,
+   "t1": 381.436
+  },
+  {
+   "id": "t10",
+   "who": "theo_radio",
+   "text": "Desliga o rádio! Desliga agora e fica quieto!",
+   "t0": 381.736,
+   "t1": 384.822
+  },
+  {
+   "id": "b09",
+   "who": "bolacha",
+   "text": "Não, não, não. Mãe, agora não!",
+   "t0": 396.822,
+   "t1": 400.849
+  },
+  {
+   "id": "b10",
+   "who": "bolacha",
+   "text": "Socorro! Alguém me ajuda! Socorro!",
+   "t0": 402.849,
+   "t1": 407.121
+  },
+  {
+   "id": "h03",
+   "who": "ray_old",
+   "text": "Tá fechado, garoto! Sai da minha... O que você trouxe pra minha loja?",
+   "t0": 411.121,
+   "t1": 415.837
+  },
+  {
+   "id": "b11",
+   "who": "bolacha",
+   "text": "Ele veio atrás do meu pager! Tem uma coisa me seguindo!",
+   "t0": 416.137,
+   "t1": 419.305
+  },
+  {
+   "id": "e08",
+   "who": "eco_vance",
+   "text": "Ray. Corta o cabo, Ray.",
+   "t0": 420.305,
+   "t1": 421.762
+  },
+  {
+   "id": "h04",
+   "who": "ray_old",
+   "text": "Tira tudo da tomada! Tudo! Agora!",
+   "t0": 422.162,
+   "t1": 424.998
+  },
+  {
+   "id": "h05",
+   "who": "ray_old",
+   "text": "Vem! Vem, seu desgraçado! Quinze anos eu esperei isso!",
+   "t0": 431.498,
+   "t1": 435.622
+  },
+  {
+   "id": "h05b",
+   "who": "ray_old",
+   "text": "Garoto! A tomada da parede! A grande!",
+   "t0": 443.122,
+   "t1": 445.54
+  },
+  {
+   "id": "b12",
+   "who": "bolacha",
+   "text": "Seu Ray! Seu Ray, levanta!",
+   "t0": 450.04,
+   "t1": 452.156
+  },
+  {
+   "id": "d07",
+   "who": "dani",
+   "text": "Ei! Cara de antena! Aqui!",
+   "t0": 453.656,
+   "t1": 455.464
+  },
+  {
+   "id": "t11",
+   "who": "theo",
+   "text": "Ele come o sinal! Então toma o seu próprio sinal!",
+   "t0": 458.964,
+   "t1": 462.59
+  },
+  {
+   "id": "b13",
+   "who": "bolacha",
+   "text": "Ninguém nunca mais fala alto nessa cidade. Nunca mais. Eu vou virar mímico.",
+   "t0": 471.59,
+   "t1": 476.91
+  },
+  {
+   "id": "d08",
+   "who": "dani",
+   "text": "Você já fala igual a um mímico, Bolacha. Só que com som.",
+   "t0": 477.21,
+   "t1": 480.126
+  },
+  {
+   "id": "t12",
+   "who": "theo",
+   "text": "O senhor já tinha visto aquilo antes. Não tinha?",
+   "t0": 480.926,
+   "t1": 483.477
+  },
+  {
+   "id": "h06",
+   "who": "ray_old",
+   "text": "Pike Ridge. Setenta e nove. Eu cortei o cabo. E achei que ele tinha morrido de fome lá embaixo.",
+   "t0": 484.677,
+   "t1": 491.54
+  },
+  {
+   "id": "d09",
+   "who": "dani",
+   "text": "Fome de quê?",
+   "t0": 491.94,
+   "t1": 492.731
+  },
+  {
+   "id": "h07",
+   "who": "ray_old",
+   "text": "De barulho, menina. De voz. E vocês acabaram de dar um banquete pra ele.",
+   "t0": 493.331,
+   "t1": 498.074
+  },
+  {
+   "id": "t12b",
+   "who": "theo",
+   "text": "A gente gravou a voz dele. Tá aqui, na fita. Se ele odeia o próprio sinal, a gente pode usar isso.",
+   "t0": 499.674,
+   "t1": 504.885
+  },
+  {
+   "id": "h08",
+   "who": "ray_old",
+   "text": "Vocês não vão usar nada. Vão pra casa, desligam tudo e não falam com ninguém. Nem comigo. Nem com o rádio.",
+   "t0": 505.285,
+   "t1": 512.581
+  },
+  {
+   "id": "d10",
+   "who": "dani",
+   "text": "Ele sabe o nome do Bolacha. Ele vai voltar atrás dele. A gente não vai pra casa.",
+   "t0": 512.981,
+   "t1": 518.045
+  },
+  {
+   "id": "b14",
+   "who": "bolacha",
+   "text": "Eu voto em ir pra casa. Só pra constar.",
+   "t0": 518.445,
+   "t1": 521.214
+  },
+  {
+   "id": "c03",
+   "who": "coyle",
+   "text": "Central, aqui é Coyle. Avisa Washington. Pike Ridge acordou.",
+   "t0": 522.814,
+   "t1": 526.931
+  },
+  {
+   "id": "e09",
+   "who": "eco_vance",
+   "text": "Ray. Eu ainda estou aqui embaixo. Ele me deixa falar. Quando está com fome.",
+   "t0": 530.431,
+   "t1": 534.482
+  },
+  {
+   "id": "t13",
+   "who": "theo",
+   "text": "O rádio tá desligado da tomada.",
+   "t0": 535.682,
+   "t1": 537.485
+  }
+ ]
+}

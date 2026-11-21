@@ -1,0 +1,12 @@
+{ "style": "3d", "format": "16:9", "fps": 20, "shots": [
+  { "id": "test-cast", "title": "Elenco na rua", "duration": 2, "snap": [1.0] },
+  { "id": "test-faces", "title": "Expressões (Theo e Bolacha)", "duration": 7, "snap": [0.5, 2.5, 3.5, 4.5] },
+  { "id": "test-dish", "title": "Pike Ridge 1979: a antena", "duration": 2, "snap": [1.0] },
+  { "id": "test-control", "title": "Sala de controle", "duration": 2, "snap": [1.0] },
+  { "id": "test-basement", "title": "Porão: Rádio Porão", "duration": 2, "snap": [1.0] },
+  { "id": "test-street", "title": "Rua principal à noite", "duration": 2, "snap": [1.0] },
+  { "id": "test-rewind", "title": "Locadora: parede de TVs", "duration": 2, "snap": [1.0] },
+  { "id": "test-woods", "title": "Bosque das torres", "duration": 2, "snap": [1.0] },
+  { "id": "test-shop", "title": "Loja do Ray: a luta", "duration": 2, "snap": [1.0] },
+  { "id": "test-chiado", "title": "O Chiado: poses", "duration": 4, "snap": [0.5, 1.5, 2.5, 3.5] }
+] }

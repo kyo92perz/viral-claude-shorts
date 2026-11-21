@@ -31,6 +31,7 @@ export const MOODS: Record<string, Mood> = {
   dark:       { about: 'horror, fear, danger, death: sparse and low', scale: 'phrygian', prog: [0, 1], energy: 0.4, bright: 0.02, pad: 0.08, padWave: 'saw', bass: 0, bassPerBar: 0, arp: 0, arpVol: 0, arpWave: 'sine', arpOct: 1, drums: 0.3, kick: 'x...............', snare: no, hat: no, drone: 0.22, bells: 0.05, dissonant: true },
   sad:        { about: 'loss, regret, a melancholic fact', scale: 'minor', prog: [0, 5, 3, 4], energy: 0.25, bright: 0.045, pad: 0.14, padWave: 'sine', bass: 0.08, bassPerBar: 1, arp: 1, arpVol: 0.06, arpWave: 'sine', arpOct: 1, drums: 0, kick: no, snare: no, hat: no, drone: 0, bells: 0.03 },
   wonder:     { about: 'discovery, beauty, "how amazing"', scale: 'lydian', prog: [0, 1, 4, 0], energy: 0.35, bright: 0.09, pad: 0.12, padWave: 'tri', bass: 0.08, bassPerBar: 1, arp: 2, arpVol: 0.05, arpWave: 'sine', arpOct: 2, drums: 0, kick: no, snare: no, hat: no, drone: 0, bells: 0.07 },
+  silence:    { about: 'no music at all: the held breath before a scare (the next scene hits without a riser)', scale: 'minor', prog: [0], energy: 0.1, bright: 0.02, pad: 0, padWave: 'sine', bass: 0, bassPerBar: 0, arp: 0, arpVol: 0, arpWave: 'sine', arpOct: 1, drums: 0, kick: no, snare: no, hat: no, drone: 0, bells: 0 },
   triumphant: { about: 'the ending, a win, a call to action', scale: 'major', prog: [0, 4, 5, 3], energy: 0.9, bright: 0.13, pad: 0.18, padWave: 'saw', bass: 0.16, bassPerBar: 4, arp: 2, arpVol: 0.05, arpWave: 'tri', arpOct: 1, drums: 0.7, kick: 'x...x...x...x...', snare: '....x.......x...', hat: '..x...x...x...x.', drone: 0, bells: 0.06 },
 };
 // a scene with no mood gets its type's
@@ -44,7 +45,10 @@ export const SFX: Record<string, string> = {
   knock: 'three knuckle knocks on glass or a door', crack: 'a bone or a stick snapping', glass: 'glass shattering', gun: 'a shotgun blast',
   sting: 'a horror stinger: a dissonant stab for a scare', scream: 'inhuman screams in the distance', buzz: 'a fluorescent tube flickering',
   off: 'the power dies: a falling hum and a thud', siren: 'a police siren passing', boom: 'a huge explosion with a long rumble', heart: 'two heartbeats',
+  static: 'a radio bursting into static', feedback: 'a screaming audio feedback loop', beep: 'a pager beeping', chop: 'an axe biting into something', spark: 'electric sparks crackling',
+  creak: 'a door or floorboard creaking', thud: 'a body hitting a wall or shelves', click: 'a switch or a radio turned off',
 };
 // background sound of a scene's place
 export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat',
-  hum: 'fluorescent tubes buzzing', drone: 'a low dissonant horror drone', heartbeat: 'a slow heartbeat' };
+  hum: 'fluorescent tubes buzzing', drone: 'a low dissonant horror drone', heartbeat: 'a slow heartbeat',
+  night: 'crickets and a far dog at night', static: 'a soft radio hiss', powerline: 'the hum of high-voltage wires' };

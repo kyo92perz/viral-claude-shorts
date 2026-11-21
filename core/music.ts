@@ -95,6 +95,14 @@ const SOUNDS: Record<string, (t: number) => void> = {
   siren: (t) => add(t, 3, (u) => Math.sin(TAU * (700 * u + 160 * Math.sin(TAU * 1.2 * u) / (TAU * 1.2))) * Math.min(1, u / 0.2) * Math.min(1, (3 - u) / 0.5), 0.12),
   boom: (t) => { impact(t, 1); let y = 0; add(t, 4, (u) => { y += 0.02 * (noise() - y); return y * 6 * Math.exp(-u * 0.9); }, 0.9); },
   heart: (t) => [0, 0.28, 0.9, 1.18].forEach((d, j) => add(t + d, 0.2, (u) => Math.sin(TAU * (j % 2 ? 48 : 55) * u) * Math.exp(-u * 18), 0.7)),
+  static: (t) => { let y = 0; add(t, 1.1, (u) => { y += 0.6 * (noise() - y); return (noise() - y * 0.5) * Math.min(1, u / 0.01) * (u < 0.15 ? 1 : Math.exp(-(u - 0.15) * 3)) * (0.6 + 0.4 * (Math.sin(TAU * 31 * u) > 0 ? 1 : 0.3)); }, 0.35); },
+  feedback: (t) => { add(t, 2.4, (u) => (osc('sine', TAU * (2400 + 300 * Math.sin(TAU * 3 * u)) * u) * 0.7 + osc('saw', TAU * 1200 * u) * 0.2) * Math.min(1, u / 0.3) * Math.min(1, (2.4 - u) / 0.3), 0.16); add(t, 2.4, (u) => osc('sine', TAU * 3600 * u) * Math.min(1, u / 0.6) * Math.min(1, (2.4 - u) / 0.3), 0.06, 0.3); },
+  beep: (t) => [0, 0.18, 0.36, 0.9, 1.08, 1.26].forEach((d) => add(t + d, 0.12, (u) => osc('square', TAU * 2900 * u) * Math.min(1, u / 0.004) * Math.min(1, (0.12 - u) / 0.01), 0.07)),
+  chop: (t) => { kick(t, 0.7); for (let j = 0; j < 3; j++) add(t + j * 0.008, 0.06, (u) => noise() * Math.exp(-u * 70), 0.45); add(t, 0.25, (u) => Math.sin(TAU * (210 - 90 * u) * u) * Math.exp(-u * 14), 0.4); add(t, 0.5, (u) => Math.sin(TAU * 1800 * u) * Math.exp(-u * 9), 0.05); },
+  spark: (t) => { for (let j = 0; j < 22; j++) { const d = rnd() * 0.7; add(t + d, 0.03, (u) => noise() * Math.exp(-u * 150), 0.25 * rnd() + 0.08, rnd() * 1.4 - 0.7); } add(t, 0.8, (u) => osc('saw', TAU * 120 * u) * Math.exp(-u * 4) * (Math.sin(TAU * 40 * u) > 0 ? 1 : 0), 0.08); },
+  creak: (t) => add(t, 0.9, (u) => osc('saw', TAU * (90 + 40 * Math.sin(TAU * 1.3 * u)) * u) * (0.5 + 0.5 * Math.sin(TAU * 23 * u)) * Math.sin(Math.PI * u / 0.9), 0.08),
+  thud: (t) => { add(t, 0.5, (u) => Math.sin(TAU * (60 + 40 * Math.exp(-u * 20)) * u) * Math.exp(-u * 8), 0.8); let y = 0; add(t, 0.4, (u) => { y += 0.15 * (noise() - y); return y * Math.exp(-u * 10) * 3; }, 0.35); for (let j = 0; j < 6; j++) add(t + 0.05 + rnd() * 0.4, 0.05, (u) => noise() * Math.exp(-u * 60), 0.12); },
+  click: (t) => { add(t, 0.03, (u) => noise() * Math.exp(-u * 200), 0.3); add(t + 0.035, 0.02, (u) => noise() * Math.exp(-u * 250), 0.18); },
 };
 
 // ---- ambience (under the scene, with its fades)
@@ -109,6 +117,12 @@ const AMB: Record<string, (t0: number, t1: number, g: (t: number) => number) => 
   hum: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u) => (Math.sin(TAU * 120 * u) * 0.6 + Math.sin(TAU * 240 * u) * 0.25 + Math.sin(TAU * 360 * u) * 0.1), 0.035, 0, g),
   drone: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u, t) => (Math.sin(TAU * hz(ROOT - 12) * u) + 0.6 * Math.sin(TAU * hz(ROOT - 11) * u + 0.3) + 0.3 * Math.sin(TAU * hz(ROOT - 6) * u)) * (0.75 + 0.25 * Math.sin(TAU * 0.13 * t)), 0.09, 0, g),
   heartbeat: (t0, t1, g) => { for (let t = t0; t < t1; t += 0.85) for (const d of [0, 0.25]) add(t + d, 0.2, (u) => Math.sin(TAU * (d ? 48 : 56) * u) * Math.exp(-u * 18), 0.5, 0, g); },
+  night: (t0, t1, g) => {
+    AMB.wind(t0, t1, (t) => g(t) * 0.35);
+    for (let t = t0 + rnd() * 0.3; t < t1; t += 0.42 + rnd() * 0.25) { const f = 4200 + rnd() * 500, pan = rnd() * 1.2 - 0.6; for (let k = 0; k < 3; k++) add(t + k * 0.045, 0.03, (u) => Math.sin(TAU * f * u) * Math.sin(Math.PI * u / 0.03), 0.018, pan, g); }
+  },
+  static: (t0, t1, g) => { let y = 0; add(t0 - F, t1 - t0 + 2 * F, (u, t) => { y += 0.5 * (noise() - y); return (noise() - y) * (0.7 + 0.3 * Math.sin(TAU * 0.4 * t)); }, 0.05, 0, g); },
+  powerline: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u, t) => (Math.sin(TAU * 60 * u) * 0.5 + Math.sin(TAU * 120 * u) * 0.35 + osc('saw', TAU * 180 * u) * 0.08) * (0.8 + 0.2 * Math.sin(TAU * 0.21 * t)), 0.05, 0, g),
   steps: (t0, t1, g) => { for (let t = Math.ceil(t0 / (BEAT / 2)) * (BEAT / 2), j = 0; t < t1; t += BEAT / 2, j++) add(t, 0.12, (u) => (Math.sin(TAU * 85 * u) * 0.8 + noise() * 0.15) * Math.exp(-u * 28), 0.22, j % 2 ? 0.2 : -0.2, g); },
 };
 
@@ -148,7 +162,9 @@ for (const { s, k, name, m } of S) {
   let into = '';
   if (k) {
     const dE = m.energy - S[k - 1].m.energy;
-    if (dE >= 0.2) { riser(s.t0); impact(s.t0, 0.7); into = 'riser + impact'; }
+    if (name === 'silence') into = 'silence';
+    else if (S[k - 1].name === 'silence') { if (dE >= 0.2) { impact(s.t0, 0.85); into = 'hit out of silence'; } else into = 'out of silence'; }
+    else if (dE >= 0.2) { riser(s.t0); impact(s.t0, 0.7); into = 'riser + impact'; }
     else if (dE <= -0.2) { drop(s.t0); into = 'drop'; }
     else { swish(s.t0, 0.25); into = 'swish'; }
   }

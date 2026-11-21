@@ -1,0 +1,1734 @@
+{
+ "style": "3d",
+ "fps": 20,
+ "format": "16:9",
+ "renderScale": 0.6667,
+ "shadows": true,
+ "music": {
+  "bpm": 76,
+  "key": "D"
+ },
+ "notes": "ZONA DE SILÊNCIO EP1: 3D horror, night, desaturated, phosphor green only for the threat. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "s01",
+   "from": 0,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "wind",
+    "static"
+   ],
+   "label": "PIKE RIDGE, VIRGÍNIA OCIDENTAL",
+   "title": "1979",
+   "t0": 0,
+   "t1": 8.457
+  },
+  {
+   "id": "s02",
+   "from": 17,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 8.457,
+   "t1": 12.606
+  },
+  {
+   "id": "s03",
+   "from": 30,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 12.606,
+   "t1": 20.222
+  },
+  {
+   "id": "s04",
+   "from": 58,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 20.222,
+   "t1": 27.921
+  },
+  {
+   "id": "s05",
+   "from": 83,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum",
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "wave",
+     "at": 83,
+     "dt": 0.9,
+     "sfx": "static",
+     "t": 29.071
+    }
+   ],
+   "t0": 27.921,
+   "t1": 30.873
+  },
+  {
+   "id": "s06",
+   "from": 84,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum",
+    "static"
+   ],
+   "t0": 30.873,
+   "t1": 34.561
+  },
+  {
+   "id": "s07",
+   "from": 92,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "green",
+     "at": 92,
+     "sfx": "buzz",
+     "t": 34.861
+    }
+   ],
+   "t0": 34.561,
+   "t1": 37.771
+  },
+  {
+   "id": "s08",
+   "from": 100,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 37.771,
+   "t1": 40.68
+  },
+  {
+   "id": "s09",
+   "from": 108,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "heart",
+     "at": 108,
+     "dt": 0.2,
+     "sfx": "heart",
+     "t": 41.08
+    }
+   ],
+   "t0": 40.68,
+   "t1": 42.626
+  },
+  {
+   "id": "s10",
+   "from": 112,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 42.626,
+   "t1": 45.576
+  },
+  {
+   "id": "s11",
+   "from": 121,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "static",
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "knob",
+     "at": 129,
+     "sfx": "riser",
+     "t": 49.349
+    }
+   ],
+   "t0": 45.576,
+   "t1": 52.184
+  },
+  {
+   "id": "s12",
+   "from": 133,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "static"
+   ],
+   "t0": 52.184,
+   "t1": 54.872
+  },
+  {
+   "id": "s13",
+   "from": 137,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "static"
+   ],
+   "t0": 54.872,
+   "t1": 59.11
+  },
+  {
+   "id": "s14",
+   "from": 149,
+   "type": "object",
+   "mood": "silence",
+   "delay": 1.053,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "turn",
+     "at": 149,
+     "dt": 1.653,
+     "sfx": "creak",
+     "t": 59.71
+    }
+   ],
+   "t0": 59.11,
+   "t1": 61.43
+  },
+  {
+   "id": "s15",
+   "from": 150,
+   "type": "object",
+   "mood": "dark",
+   "delay": -1.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "appear",
+     "at": 150,
+     "dt": -0.4,
+     "sfx": "sting",
+     "t": 62.33
+    }
+   ],
+   "t0": 61.43,
+   "t1": 64.965
+  },
+  {
+   "id": "s16",
+   "from": 153,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 0.9,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "grab",
+     "at": 153,
+     "dt": 1.1,
+     "sfx": "thud",
+     "t": 65.165
+    }
+   ],
+   "t0": 64.965,
+   "t1": 70.771
+  },
+  {
+   "id": "s17",
+   "from": 160,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 0.988,
+   "keys": [
+    {
+     "id": "axe",
+     "at": 160,
+     "dt": 1.588,
+     "t": 71.371
+    },
+    {
+     "id": "chop",
+     "at": 160,
+     "dt": 2.988,
+     "sfx": "chop",
+     "t": 72.771
+    },
+    {
+     "id": "dark",
+     "at": 160,
+     "dt": 3.188,
+     "sfx": "off",
+     "t": 72.971
+    }
+   ],
+   "t0": 70.771,
+   "t1": 73.791
+  },
+  {
+   "id": "s18",
+   "from": 161,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.6,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 73.791,
+   "t1": 77.692
+  },
+  {
+   "id": "s19",
+   "from": 162,
+   "type": "object",
+   "mood": "silence",
+   "delay": 2.14,
+   "ambience": [
+    "static"
+   ],
+   "label": "EPISÓDIO 1 — ESTÁTICA",
+   "title": "ZONA DE SILÊNCIO",
+   "keys": [
+    {
+     "id": "hit",
+     "at": 162,
+     "dt": 2.24,
+     "sfx": "impact",
+     "t": 77.792
+    }
+   ],
+   "t0": 77.692,
+   "t1": 81.312
+  },
+  {
+   "id": "s20",
+   "from": 163,
+   "type": "object",
+   "mood": "curious",
+   "delay": -2.4,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "label": "MARLOW HOLLOW, VIRGÍNIA OCIDENTAL",
+   "title": "Outubro de 1994",
+   "t0": 81.312,
+   "t1": 88.9
+  },
+  {
+   "id": "s21",
+   "from": 176,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night"
+   ],
+   "t0": 88.9,
+   "t1": 91.994
+  },
+  {
+   "id": "s22",
+   "from": 186,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night"
+   ],
+   "t0": 91.994,
+   "t1": 97.818
+  },
+  {
+   "id": "s23",
+   "from": 200,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.9,
+   "ambience": [
+    "room"
+   ],
+   "t0": 97.818,
+   "t1": 106.678
+  },
+  {
+   "id": "s24",
+   "from": 227,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 106.678,
+   "t1": 111.668
+  },
+  {
+   "id": "s25",
+   "from": 248,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 111.668,
+   "t1": 114.282
+  },
+  {
+   "id": "s26",
+   "from": 256,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 114.282,
+   "t1": 118.862
+  },
+  {
+   "id": "s27",
+   "from": 267,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 118.862,
+   "t1": 122.235
+  },
+  {
+   "id": "s28",
+   "from": 272,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 122.235,
+   "t1": 124.522
+  },
+  {
+   "id": "s29",
+   "from": 278,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 124.522,
+   "t1": 131.469
+  },
+  {
+   "id": "s30",
+   "from": 301,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 131.469,
+   "t1": 134.719
+  },
+  {
+   "id": "s31",
+   "from": 312,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 134.719,
+   "t1": 138.054
+  },
+  {
+   "id": "s32",
+   "from": 323,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 138.054,
+   "t1": 141.051
+  },
+  {
+   "id": "s33",
+   "from": 332,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 141.051,
+   "t1": 147.875
+  },
+  {
+   "id": "s34",
+   "from": 351,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 147.875,
+   "t1": 153.443
+  },
+  {
+   "id": "s35",
+   "from": 371,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 153.443,
+   "t1": 156.491
+  },
+  {
+   "id": "s36",
+   "from": 381,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 156.491,
+   "t1": 167.537
+  },
+  {
+   "id": "s37",
+   "from": 413,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 167.537,
+   "t1": 169.354
+  },
+  {
+   "id": "s38",
+   "from": 419,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 169.354,
+   "t1": 175.213
+  },
+  {
+   "id": "s39",
+   "from": 436,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 175.213,
+   "t1": 178.553
+  },
+  {
+   "id": "s40",
+   "from": 445,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room",
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "needle",
+     "at": 447,
+     "sfx": "static",
+     "t": 179.572
+    }
+   ],
+   "t0": 178.553,
+   "t1": 183.046
+  },
+  {
+   "id": "s41",
+   "from": 452,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.4,
+   "ambience": [
+    "static"
+   ],
+   "t0": 183.046,
+   "t1": 185.293
+  },
+  {
+   "id": "s42",
+   "from": 456,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "static"
+   ],
+   "t0": 185.293,
+   "t1": 190.504
+  },
+  {
+   "id": "s43",
+   "from": 468,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "heart",
+     "at": 468,
+     "dt": 0.1,
+     "sfx": "heart",
+     "t": 190.904
+    }
+   ],
+   "t0": 190.504,
+   "t1": 193.226
+  },
+  {
+   "id": "s44",
+   "from": 470,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "static"
+   ],
+   "t0": 193.226,
+   "t1": 197.583
+  },
+  {
+   "id": "s45",
+   "from": 484,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "pass",
+     "at": 486,
+     "dt": 0.2,
+     "sfx": "whoosh",
+     "t": 199.173
+    }
+   ],
+   "t0": 197.583,
+   "t1": 201.124
+  },
+  {
+   "id": "s46",
+   "from": 489,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 201.124,
+   "t1": 206.071
+  },
+  {
+   "id": "s47",
+   "from": 509,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "rec",
+     "at": 511,
+     "sfx": "click",
+     "t": 206.723
+    }
+   ],
+   "t0": 206.071,
+   "t1": 209.765
+  },
+  {
+   "id": "s48",
+   "from": 522,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "room"
+   ],
+   "t0": 209.765,
+   "t1": 212.479
+  },
+  {
+   "id": "s49",
+   "from": 528,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 212.479,
+   "t1": 217.807
+  },
+  {
+   "id": "s50",
+   "from": 548,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 217.807,
+   "t1": 221.567
+  },
+  {
+   "id": "s51",
+   "from": 560,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 221.567,
+   "t1": 226.914
+  },
+  {
+   "id": "s52",
+   "from": 575,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.9,
+   "ambience": [
+    "night"
+   ],
+   "t0": 226.914,
+   "t1": 234.301
+  },
+  {
+   "id": "s53",
+   "from": 590,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "static"
+   ],
+   "t0": 234.301,
+   "t1": 236.949
+  },
+  {
+   "id": "s54",
+   "from": 595,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 236.949,
+   "t1": 243.254
+  },
+  {
+   "id": "s55",
+   "from": 611,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "t0": 243.254,
+   "t1": 246.613
+  },
+  {
+   "id": "s56",
+   "from": 620,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "static"
+   ],
+   "t0": 246.613,
+   "t1": 250.227
+  },
+  {
+   "id": "s57",
+   "from": 629,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "t0": 250.227,
+   "t1": 254.884
+  },
+  {
+   "id": "s58",
+   "from": 639,
+   "type": "object",
+   "mood": "silence",
+   "delay": -2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "on",
+     "at": 639,
+     "dt": -0.3,
+     "sfx": "static",
+     "t": 256.584
+    }
+   ],
+   "t0": 254.884,
+   "t1": 258.811
+  },
+  {
+   "id": "s59",
+   "from": 641,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room",
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "plug",
+     "at": 656,
+     "dt": 0.917,
+     "sfx": "click",
+     "t": 264.723
+    }
+   ],
+   "t0": 258.811,
+   "t1": 265.543
+  },
+  {
+   "id": "s60",
+   "from": 657,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 265.543,
+   "t1": 270.007
+  },
+  {
+   "id": "s61",
+   "from": 663,
+   "type": "object",
+   "mood": "playful",
+   "delay": -1.5,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 270.007,
+   "t1": 278.416
+  },
+  {
+   "id": "s62",
+   "from": 679,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 278.416,
+   "t1": 282.377
+  },
+  {
+   "id": "s63",
+   "from": 692,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 282.377,
+   "t1": 288.268
+  },
+  {
+   "id": "s64",
+   "from": 710,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 288.268,
+   "t1": 295.966
+  },
+  {
+   "id": "s65",
+   "from": 734,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 295.966,
+   "t1": 298.319
+  },
+  {
+   "id": "s66",
+   "from": 744,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 298.319,
+   "t1": 302.001
+  },
+  {
+   "id": "s67",
+   "from": 754,
+   "type": "object",
+   "mood": "tense",
+   "delay": -1.1,
+   "ambience": [
+    "hum",
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "tvs",
+     "at": 754,
+     "dt": -0.9,
+     "sfx": "static",
+     "t": 302.201
+    }
+   ],
+   "t0": 302.001,
+   "t1": 306.652
+  },
+  {
+   "id": "s68",
+   "from": 764,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum",
+    "static"
+   ],
+   "t0": 306.652,
+   "t1": 309.645
+  },
+  {
+   "id": "s69",
+   "from": 770,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.4,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "figure",
+     "at": 772,
+     "sfx": "sting",
+     "t": 310.882
+    }
+   ],
+   "t0": 309.645,
+   "t1": 316.512
+  },
+  {
+   "id": "s70",
+   "from": 786,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "static"
+   ],
+   "t0": 316.512,
+   "t1": 323.129
+  },
+  {
+   "id": "s71",
+   "from": 800,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 323.129,
+   "t1": 326.017
+  },
+  {
+   "id": "s72",
+   "from": 811,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "static"
+   ],
+   "t0": 326.017,
+   "t1": 328.41
+  },
+  {
+   "id": "s73",
+   "from": 819,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "t0": 328.41,
+   "t1": 332.81
+  },
+  {
+   "id": "s74",
+   "from": 833,
+   "type": "object",
+   "mood": "tense",
+   "delay": -2.2,
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 332.81,
+   "t1": 341.642
+  },
+  {
+   "id": "s75",
+   "from": 852,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 341.642,
+   "t1": 345.937
+  },
+  {
+   "id": "s76",
+   "from": 867,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 345.937,
+   "t1": 353.252
+  },
+  {
+   "id": "s77",
+   "from": 891,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 353.252,
+   "t1": 357.706
+  },
+  {
+   "id": "s78",
+   "from": 904,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 357.706,
+   "t1": 365.147
+  },
+  {
+   "id": "s79",
+   "from": 924,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 365.147,
+   "t1": 368.811
+  },
+  {
+   "id": "s80",
+   "from": 935,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "powerline"
+   ],
+   "t0": 368.811,
+   "t1": 372.869
+  },
+  {
+   "id": "s81",
+   "from": 944,
+   "type": "object",
+   "mood": "silence",
+   "delay": -1.6,
+   "ambience": [
+    "powerline"
+   ],
+   "keys": [
+    {
+     "id": "crack",
+     "at": 944,
+     "dt": -1.2,
+     "sfx": "crack",
+     "t": 373.269
+    }
+   ],
+   "t0": 372.869,
+   "t1": 377.226
+  },
+  {
+   "id": "s82",
+   "from": 947,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "powerline"
+   ],
+   "t0": 377.226,
+   "t1": 381.486
+  },
+  {
+   "id": "s83",
+   "from": 959,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "powerline"
+   ],
+   "keys": [
+    {
+     "id": "off",
+     "at": 966,
+     "dt": 0.762,
+     "sfx": "click",
+     "t": 385.102
+    }
+   ],
+   "t0": 381.486,
+   "t1": 386.102
+  },
+  {
+   "id": "s84",
+   "from": 966,
+   "type": "object",
+   "mood": "silence",
+   "delay": 1.762,
+   "keys": [
+    {
+     "id": "pass",
+     "at": 966,
+     "dt": 5.262,
+     "t": 389.602
+    },
+    {
+     "id": "beep",
+     "at": 966,
+     "dt": 10.262,
+     "sfx": "beep",
+     "t": 394.602
+    }
+   ],
+   "t0": 386.102,
+   "t1": 396.422
+  },
+  {
+   "id": "s85",
+   "from": 967,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "snap",
+     "at": 967,
+     "dt": -0.2,
+     "sfx": "sting",
+     "t": 396.622
+    }
+   ],
+   "t0": 396.422,
+   "t1": 401.249
+  },
+  {
+   "id": "s86",
+   "from": 973,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -1.6,
+   "ambience": [
+    "night"
+   ],
+   "t0": 401.249,
+   "t1": 407.701
+  },
+  {
+   "id": "s87",
+   "from": 977,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 1.633,
+   "ambience": [
+    "night"
+   ],
+   "t0": 407.701,
+   "t1": 410.321
+  },
+  {
+   "id": "s88",
+   "from": 978,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.8,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "door",
+     "at": 978,
+     "dt": -0.6,
+     "sfx": "thud",
+     "t": 410.521
+    }
+   ],
+   "t0": 410.321,
+   "t1": 415.887
+  },
+  {
+   "id": "s89",
+   "from": 991,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "room"
+   ],
+   "t0": 415.887,
+   "t1": 419.705
+  },
+  {
+   "id": "s90",
+   "from": 1002,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.6,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "all",
+     "at": 1002,
+     "dt": -0.4,
+     "sfx": "static",
+     "t": 419.905
+    }
+   ],
+   "t0": 419.705,
+   "t1": 421.912
+  },
+  {
+   "id": "s91",
+   "from": 1007,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "axe",
+     "at": 1009,
+     "t": 423.08
+    }
+   ],
+   "t0": 421.912,
+   "t1": 425.978
+  },
+  {
+   "id": "s92",
+   "from": 1012,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 1.522,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "glass",
+     "at": 1012,
+     "dt": 1.822,
+     "sfx": "glass",
+     "t": 426.278
+    }
+   ],
+   "t0": 425.978,
+   "t1": 428.578
+  },
+  {
+   "id": "s93",
+   "from": 1012,
+   "type": "object",
+   "mood": "dark",
+   "delay": 4.122,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "rise",
+     "at": 1012,
+     "dt": 4.522,
+     "sfx": "scream",
+     "t": 428.978
+    }
+   ],
+   "t0": 428.578,
+   "t1": 431.298
+  },
+  {
+   "id": "s94",
+   "from": 1013,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "chop",
+     "at": 1016,
+     "sfx": "chop",
+     "t": 432.501
+    }
+   ],
+   "t0": 431.298,
+   "t1": 436.302
+  },
+  {
+   "id": "s95",
+   "from": 1021,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 1.089,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "swipe",
+     "at": 1021,
+     "dt": 1.389,
+     "sfx": "whoosh",
+     "t": 436.602
+    },
+    {
+     "id": "thud",
+     "at": 1021,
+     "dt": 1.789,
+     "sfx": "thud",
+     "t": 437.002
+    }
+   ],
+   "t0": 436.302,
+   "t1": 439.002
+  },
+  {
+   "id": "s96",
+   "from": 1021,
+   "type": "object",
+   "mood": "dark",
+   "delay": 3.789,
+   "ambience": [
+    "static"
+   ],
+   "t0": 439.002,
+   "t1": 442.822
+  },
+  {
+   "id": "s97",
+   "from": 1022,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "ambience": [
+    "static"
+   ],
+   "t0": 442.822,
+   "t1": 446.42
+  },
+  {
+   "id": "s98",
+   "from": 1028,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 1.351,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "plug",
+     "at": 1028,
+     "dt": 2.051,
+     "sfx": "off",
+     "t": 447.12
+    }
+   ],
+   "t0": 446.42,
+   "t1": 449.64
+  },
+  {
+   "id": "s99",
+   "from": 1029,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.4,
+   "ambience": [
+    "static"
+   ],
+   "t0": 449.64,
+   "t1": 452.656
+  },
+  {
+   "id": "s100",
+   "from": 1034,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -1,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "door",
+     "at": 1034,
+     "dt": -0.8,
+     "sfx": "thud",
+     "t": 452.856
+    }
+   ],
+   "t0": 452.656,
+   "t1": 455.844
+  },
+  {
+   "id": "s101",
+   "from": 1038,
+   "type": "object",
+   "mood": "energetic",
+   "delay": 0.77,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "hit",
+     "at": 1038,
+     "dt": 1.27,
+     "sfx": "hit",
+     "t": 456.344
+    },
+    {
+     "id": "hiss",
+     "at": 1038,
+     "dt": 1.87,
+     "sfx": "scream",
+     "t": 456.944
+    }
+   ],
+   "t0": 455.844,
+   "t1": 458.664
+  },
+  {
+   "id": "s102",
+   "from": 1039,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "play",
+     "at": 1048,
+     "dt": 0.825,
+     "sfx": "click",
+     "t": 462.97
+    }
+   ],
+   "t0": 458.664,
+   "t1": 463.97
+  },
+  {
+   "id": "s103",
+   "from": 1048,
+   "type": "object",
+   "mood": "dark",
+   "delay": 1.825,
+   "keys": [
+    {
+     "id": "fb",
+     "at": 1048,
+     "dt": 1.925,
+     "sfx": "feedback",
+     "t": 464.07
+    },
+    {
+     "id": "spark",
+     "at": 1048,
+     "dt": 3.025,
+     "sfx": "spark",
+     "t": 465.17
+    }
+   ],
+   "t0": 463.97,
+   "t1": 467.17
+  },
+  {
+   "id": "s104",
+   "from": 1048,
+   "type": "object",
+   "mood": "dark",
+   "delay": 5.025,
+   "keys": [
+    {
+     "id": "out",
+     "at": 1048,
+     "dt": 5.625,
+     "sfx": "spark",
+     "t": 467.77
+    },
+    {
+     "id": "dark",
+     "at": 1048,
+     "dt": 7.025,
+     "sfx": "off",
+     "t": 469.17
+    }
+   ],
+   "t0": 467.17,
+   "t1": 470.59
+  },
+  {
+   "id": "s105",
+   "from": 1049,
+   "type": "object",
+   "mood": "sad",
+   "delay": -1,
+   "ambience": [
+    "room"
+   ],
+   "t0": 470.59,
+   "t1": 476.96
+  },
+  {
+   "id": "s106",
+   "from": 1062,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 476.96,
+   "t1": 480.676
+  },
+  {
+   "id": "s107",
+   "from": 1074,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 480.676,
+   "t1": 484.427
+  },
+  {
+   "id": "s108",
+   "from": 1083,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 484.427,
+   "t1": 491.69
+  },
+  {
+   "id": "s109",
+   "from": 1102,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 491.69,
+   "t1": 493.081
+  },
+  {
+   "id": "s110",
+   "from": 1105,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "t0": 493.081,
+   "t1": 499.424
+  },
+  {
+   "id": "s111",
+   "from": 1119,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 499.424,
+   "t1": 505.035
+  },
+  {
+   "id": "s112",
+   "from": 1140,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 505.035,
+   "t1": 512.731
+  },
+  {
+   "id": "s113",
+   "from": 1161,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 512.731,
+   "t1": 518.195
+  },
+  {
+   "id": "s114",
+   "from": 1178,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 518.195,
+   "t1": 521.614
+  },
+  {
+   "id": "s115",
+   "from": 1187,
+   "type": "object",
+   "mood": "dark",
+   "delay": -1.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "t0": 521.614,
+   "t1": 528.831
+  },
+  {
+   "id": "s116",
+   "from": 1196,
+   "type": "object",
+   "mood": "silence",
+   "delay": -1.6,
+   "ambience": [
+    "static"
+   ],
+   "keys": [
+    {
+     "id": "glow",
+     "at": 1196,
+     "dt": -0.6,
+     "sfx": "static",
+     "t": 529.831
+    }
+   ],
+   "t0": 528.831,
+   "t1": 535.382
+  },
+  {
+   "id": "s117",
+   "from": 1210,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "static"
+   ],
+   "t0": 535.382,
+   "t1": 538.065
+  },
+  {
+   "id": "s118",
+   "from": 1215,
+   "type": "closing",
+   "mood": "dark",
+   "delay": 0.978,
+   "ambience": [
+    "static"
+   ],
+   "label": "CONTINUA NO EPISÓDIO 2",
+   "title": "ZONA DE SILÊNCIO",
+   "keys": [
+    {
+     "id": "cut",
+     "at": 1215,
+     "dt": 4.578,
+     "sfx": "sting",
+     "t": 541.665
+    }
+   ],
+   "t0": 538.065,
+   "t1": 543.485
+  }
+ ],
+ "duration": 543.485
+}

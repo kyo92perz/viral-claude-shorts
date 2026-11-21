@@ -7,10 +7,11 @@ export interface Words { duration: number; language?: string; text?: string; wor
 
 // scenes.json (written by the agent, stamped with t0/t1/t by scenes.ts)
 export type SceneType = 'question' | 'object' | 'process' | 'comparison' | 'stat' | 'map' | 'asset' | 'closing';
-export interface Key { id: string; at?: number; t: number; sfx?: string }   // at: word index (t in seconds when there's no voice); sfx: a sound effect at that moment (core/score.ts)
+export interface Key { id: string; at?: number; dt?: number; t: number; sfx?: string }   // at: word index (t in seconds when there's no voice), dt: seconds after that word (actions in a pause); sfx: a sound effect at that moment (core/score.ts)
 export interface Scene {
   id: string;
   from?: number;   // word index where the scene starts (no voice: t0 in seconds instead)
+  delay?: number;  // optional: start this many seconds after (or, negative, before) word #from itself, to cut inside a pause
   type: SceneType;
   label?: string;
   title?: string;
@@ -29,7 +30,8 @@ export interface Plan { style: string; fps: number; format: string; notes?: stri
   music?: { bpm?: number; key?: string };   // the soundtrack's tempo and key (default 96 BPM in D)
   /** 3D styles: internal render size as a fraction of 1080 x 1920 (the output stays 1080 x 1920). Below 1 also drops MSAA and
    *  halves the shadow map: about 3x faster on machines without a GPU (software WebGL). Default 1. */
-  renderScale?: number }
+  renderScale?: number;
+  shadows?: boolean }   // 3d: cast shadows even when renderScale < 1 (slower, but lit scenes read as solid)
 
 // script.json (only when the voice is generated with voice.ts)
 export interface ScriptLine { id?: string; text: string; pause?: number; seed?: number }
