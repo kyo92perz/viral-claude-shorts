@@ -1,96 +1,96 @@
 {
- "duration": 72.59,
+ "duration": 66.341,
  "lines": [
   {
    "id": "n01",
    "who": "lo_ju",
-   "text": "Dizem que o sétimo filho homem vira lobisomem. Meu primo Tonho era o sétimo.",
+   "text": "Dizem que o sétimo filho homem vira lobisomem. Meu primo Pedro era o sétimo.",
    "t0": 0.3,
-   "t1": 5.942
+   "t1": 4.488
   },
   {
    "id": "n02",
    "who": "lo_ju",
-   "text": "Na roça do meu tio, ninguém falava disso. Mas toda sexta-feira de lua cheia, o Tonho sumia antes da meia-noite.",
-   "t0": 6.542,
-   "t1": 13.343
+   "text": "Na roça do meu tio, ninguém falava disso. Mas toda sexta-feira de lua cheia, o Pedro sumia antes da meia-noite.",
+   "t0": 5.088,
+   "t1": 10.963
   },
   {
    "id": "j01",
    "who": "lo_ju2",
-   "text": "Tonho, aonde você vai a essa hora?",
-   "t0": 13.843,
-   "t1": 17.332
+   "text": "Pedro! Aonde você vai a essa hora?",
+   "t0": 11.463,
+   "t1": 13.391
   },
   {
    "id": "t01",
    "who": "lo_tonho",
    "text": "Fica em casa, Júlia. Hoje não.",
-   "t0": 17.732,
-   "t1": 19.914
+   "t0": 13.791,
+   "t1": 15.973
   },
   {
    "id": "n03",
    "who": "lo_ju",
    "text": "Eu segui ele até a encruzilhada. Ele deitou no chão de terra e começou a rolar.",
-   "t0": 20.614,
-   "t1": 24.99
+   "t0": 16.673,
+   "t1": 21.05
   },
   {
    "id": "n04",
    "who": "lo_ju",
    "text": "Os ossos estalaram. As costas cresceram. As orelhas subiram. E o rosto do meu primo virou focinho.",
-   "t0": 25.49,
-   "t1": 31.008
+   "t0": 21.55,
+   "t1": 27.068
   },
   {
    "id": "n05",
    "who": "lo_ju",
-   "text": "O bicho uivou pra lua. E os cachorros da roça inteira responderam.",
-   "t0": 31.608,
-   "t1": 37.18
+   "text": "O bicho soltou um uivo pra lua. E os cachorros da roça inteira responderam.",
+   "t0": 27.668,
+   "t1": 32.022
   },
   {
    "id": "n05b",
    "who": "lo_ju",
-   "text": "Eu tapei a boca pra não gritar. O bicho era maior que um cavalo, e ainda usava a camisa do Tonho, toda rasgada.",
-   "t0": 37.98,
-   "t1": 43.968
+   "text": "Eu tapei a boca pra não gritar. O bicho era maior que um cavalo, e ainda usava a camisa do Pedro, toda rasgada.",
+   "t0": 32.822,
+   "t1": 38.639
   },
   {
    "id": "n06",
    "who": "lo_ju",
    "text": "Eu pisei num galho. Ele virou a cabeça. E aqueles olhos amarelos me acharam.",
-   "t0": 44.568,
-   "t1": 48.832
+   "t0": 39.239,
+   "t1": 43.503
   },
   {
    "id": "n07",
    "who": "lo_ju",
    "text": "Corri pro galinheiro e tranquei a porta. Ele farejou cada fresta, rosnando, até o galo cantar.",
-   "t0": 49.432,
-   "t1": 54.937
+   "t0": 44.103,
+   "t1": 49.608
   },
   {
    "id": "n08",
    "who": "lo_ju",
-   "text": "De manhã, o Tonho apareceu na cozinha, todo arranhado, com um pedaço do meu vestido preso no dente.",
-   "t0": 55.737,
-   "t1": 62.066
+   "text": "De manhã, o Pedro apareceu na cozinha, todo arranhado, com um pedaço do meu vestido preso no dente.",
+   "t0": 50.408,
+   "t1": 55.817
   },
   {
    "id": "t02",
    "who": "lo_tonho",
    "text": "Bom dia, prima. Dormiu bem?",
-   "t0": 62.566,
-   "t1": 65.158
+   "t0": 56.317,
+   "t1": 58.909
   },
   {
    "id": "n09",
    "who": "lo_ju",
    "text": "E na sua família? Quem é o sétimo filho?",
-   "t0": 66.058,
-   "t1": 70.99
+   "t0": 59.809,
+   "t1": 64.741
   }
  ]
 }
