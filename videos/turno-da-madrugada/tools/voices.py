@@ -3,7 +3,10 @@
 Engine: Kokoro-82M (hexgrad/Kokoro-82M), the same model and Portuguese voices VoiceStudio ships (pf_dora, pm_alex,
 pm_santa). Run it with a Python that has `kokoro` and `soundfile` installed.
   usage: python voices.py videos/<episode>
-reads  videos/<episode>/script.json  ({ lead, tail, lines: [{ id, who, text, say?, pause }] })
+reads  videos/<episode>/script.json  ({ lead, tail, lines: [{ id, who, text, say?, pause, emo?, cfg? }] })
+       emo (0.25-1.2, optional): ACT the line with Chatterbox Multilingual at that emotion intensity, cloning the
+       character's own Kokoro voice (same timbre and effect chain), so acted and plain lines match. Needs the env var
+       CHATTERBOX_PY pointing at a Python with chatterbox-tts (see .claude/skills/diretor-de-terror/references/vozes.md).
 writes videos/<episode>/voice/<id>.wav (reused when the text did not change), audio.wav (48 kHz mono) and lines.json
        (each line's start and end in seconds), so scenes can be cut on the lines.
 """
@@ -42,24 +45,59 @@ def synth(pipe, text, who, out):
     voice, speed, fx = VOICES[who]
     audio = np.concatenate([np.asarray(a) for _, _, a in pipe(text, voice=voice, speed=speed)])
     with tempfile.TemporaryDirectory() as d:
-        raw = os.path.join(d, "raw.wav"); sf.write(raw, audio, 24000)
-        af = "aresample=48000" + (f",{fx}" if fx else "")
-        trim = "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-filter_complex", f"{af},{trim}", "-ac", "1", "-ar", str(SR), out], check=True)
+        raw = os.path.join(d, "raw.wav"); sf.write(raw, audio, 24000); finish(raw, who, out)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+BATCH = os.path.join(HERE, "..", "..", "..", ".claude", "skills", "diretor-de-terror", "scripts", "chatterbox-batch.py")
+REF_TEXT = "Boa noite. Eu trabalho aqui faz muito tempo, e conheço cada canto deste lugar, cada barulho e cada sombra."
+
+def finish(raw, who, out):
+    """resample, the character's effect chain and trim, shared by both engines"""
+    fx = VOICES[who][2]
+    af = "aresample=48000" + (f",{fx}" if fx else "")
+    trim = "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-filter_complex", f"{af},{trim}", "-ac", "1", "-ar", str(SR), out], check=True)
+
+def ref_for(pipe, who, vdir):
+    """a 6-8 s plain Kokoro read in the character's voice (no effects), the timbre Chatterbox clones"""
+    ref = os.path.join(vdir, f"_ref_{VOICES[who][0]}_{VOICES[who][1]}.wav")
+    if not os.path.exists(ref):
+        voice, speed, _ = VOICES[who]
+        audio = np.concatenate([np.asarray(a) for _, _, a in pipe(REF_TEXT, voice=voice, speed=speed)])
+        sf.write(ref, audio, 24000)
+    return ref
+
+def act(jobs):
+    """run the Chatterbox batch (one model load) and finish every line"""
+    py = os.environ.get("CHATTERBOX_PY")
+    if not py: sys.exit("lines with 'emo' need CHATTERBOX_PY=<python with chatterbox-tts> (see references/vozes.md)")
+    with tempfile.TemporaryDirectory() as d:
+        for k, j in enumerate(jobs): j["raw"] = os.path.join(d, f"{k}.wav")
+        spec = os.path.join(d, "jobs.json")
+        json.dump([{"text": j["say"], "ref": j["ref"], "out": j["raw"], "exaggeration": j["emo"], "cfg": j["cfg"], "lang": "pt"} for j in jobs], open(spec, "w", encoding="utf8"), ensure_ascii=False)
+        subprocess.run([py, BATCH, spec], check=True, stdout=subprocess.DEVNULL)
+        for j in jobs:
+            finish(j["raw"], j["who"], j["wav"]); open(j["txt"], "w", encoding="utf8").write(j["key"])
 
 def main():
     root = os.path.abspath(sys.argv[1]); vdir = os.path.join(root, "voice"); os.makedirs(vdir, exist_ok=True)
     S = json.load(open(os.path.join(root, "script.json"), encoding="utf8"))
-    pipe = None
+    pipe = None; acted = []
     parts, t, lines = [], S.get("lead", 0.5), []
     parts.append(np.zeros(int(t * SR), dtype=np.float32))
     for L in S["lines"]:
         say = L.get("say", L["text"]); wav = os.path.join(vdir, f"{L['id']}.wav"); txt = wav[:-4] + ".txt"
-        key = f"{L['who']}|{say}"
+        emo = L.get("emo"); key = f"{L['who']}|{say}" + (f"|emo={emo}|cfg={L.get('cfg', 0.3)}" if emo is not None else "")
         if not (os.path.exists(wav) and os.path.exists(txt) and open(txt, encoding="utf8").read() == key):
             pipe = pipe or load_pipe()
-            print(f"  {L['id']} ({L['who']}): {L['text'][:60]}", file=sys.stderr)
-            synth(pipe, say, L["who"], wav); open(txt, "w", encoding="utf8").write(key)
+            print(f"  {L['id']} ({L['who']}{', emo ' + str(emo) if emo is not None else ''}): {L['text'][:60]}", file=sys.stderr)
+            if emo is None:
+                synth(pipe, say, L["who"], wav); open(txt, "w", encoding="utf8").write(key)
+            else:
+                acted.append({"say": say, "who": L["who"], "emo": emo, "cfg": L.get("cfg", 0.3), "ref": ref_for(pipe, L["who"], vdir), "wav": wav, "txt": txt, "key": key})
+    if acted: act(acted)
+    for L in S["lines"]:
+        wav = os.path.join(vdir, f"{L['id']}.wav")
         a, sr = sf.read(wav, dtype="float32"); assert sr == SR
         lines.append({"id": L["id"], "who": L["who"], "text": L["text"], "t0": round(t, 3), "t1": round(t + len(a) / SR, 3)})
         parts.append(a); t += len(a) / SR

@@ -48,6 +48,10 @@ chapados.
 | ler uma pose nova | ≥ 0,5 s; uma emoção-chave fica ≥ 1 s |
 | reação de susto (pulo) | 0,1 s de subida, 0,3 s de queda, hold de 1 s olhando |
 | criatura que "aparece" | 0 s (corte) ou muito devagar (3–6 s); nunca no meio-termo |
+| passo de caminhada normal (Richard Williams) | 12 quadros a 24 fps = 0,5 s por passo (2 passos/s) |
+| caminhada "de desenho", saltitante | 8 quadros = 0,33 s por passo |
+| corrida | 6 quadros por passo; corrida desesperada, 4 |
+| andar furtivo / se esgueirando | ~16–24 quadros por passo (estimativa nossa, sem fonte), corpo baixo e paradas no meio |
 
 **Espaçamento:** devagar → rápido → devagar = natural. **Parado → instantâneo** = sobrenatural. Use o segundo só para
 a ameaça, e só quando você quer que a plateia pule.
@@ -111,3 +115,46 @@ roteiro → *thumbnail boards* (rabiscos) → storyboard → animatic (storyboar
 cenário) → poses-chave → intermediários e polimento → luz e cor → som e mixagem.
 Aqui: `plan.md` → `world.png` (teste do mundo) → `storyboard.png` (o animatic sem movimento) → render → `report.md`.
 Revise **no storyboard**, onde mudar é barato.
+
+## 10. Movimento medido: 14 filmes assistidos quadro a quadro
+
+Medido com `scripts/analyze-motion.py`: conta quantos **desenhos novos por segundo** cada filme mostra, quanto tempo
+cada desenho fica na tela enquanto há movimento (em 1s, 2s, 3s) e quanto do filme é pose parada. Depois mostra 8
+quadros seguidos nos picos de ação.
+
+| Filme | Técnica | Desenhos novos/s (mediana) | Em 1s / 2s / 3s+ | Parado |
+|---|---|---|---|---|
+| *Gertie the Dinosaur* (1914) | desenho à mão, cenário redesenhado a cada quadro | 17 | 59% / 22% / 19% | **0,7%** |
+| *The Skeleton Dance* (1929) | desenho à mão, sincronizado à música | 22 | 70% / 24% / 6% | **0%** |
+| *Betty Boop: Snow-White* (1933) | "rubber hose", metamorfoses | 25 (de 30) | 84% / 13% / 3% | 6,7% |
+| *Superman: Mechanical Monsters* (1941) | desenho à mão de estúdio | 19 (de 30) | 70% / 23% / 7% | 2,4% |
+| *As Aventuras do Príncipe Achmed* (1926) | silhuetas recortadas | 18 | 83% / 9% / 8% | 7,3% |
+| *Sprite Fright* (2021) | CG estilizado | 14 | 65% / **30%** / 5% | 9,7% |
+| *Charge* (2022) | CG cinematográfico | 16,5 | 86% / 7% / 7% | 10,6% |
+| *Coffee Run*, *Spring*, *Cosmos Laundromat*, *Big Buck Bunny*, *Agent 327* | CG | 18–24 | 95–96% / 1–2% / 2–3% | 6–15% |
+| **Nosso** *Motel Lua Vermelha* (20 fps) | 2.5D | 14 (de 20) | 82% / 8% / 10% | 8,5% |
+| **Nosso** *Turno da Madrugada* ep. 1 | 2.5D | 16 | 87% / 5% / 8% | 11,4% |
+
+(Fontes a 30 fps vieram de telecinagem, então o "1s × 2s" delas é aproximado. Em filme antigo, o grão foi filtrado pela
+média de área.)
+
+**O que os quadros mostraram:**
+
+1. **Mestres do desenho misturam 1s e 2s.** Gertie fica perto de 60/20 e Betty Boop em 84/13. Sprite Fright, mesmo em
+   CG, usa "2s" em 30% do movimento, o que dá cara de desenho. **Para nós:** a câmera e os efeitos ficam em 1s, e as
+   poses dos personagens podem andar em 2s (segurar cada pose 2 quadros) para parecer desenhado. Num susto, 1s.
+2. **Personagem vivo nunca congela:** Gertie fica 0,7% do tempo parada e o Skeleton Dance 0%. McCay mantém a dinossaura
+   respirando e balançando o tempo todo, e o traço "treme" porque o cenário foi redesenhado a cada quadro. Os nossos
+   ficam 8–11% totalmente parados e com pouca energia. **Regra:** respiração e micro-movimento sempre ligados nos
+   humanos; **congelar de verdade é privilégio da criatura** (é isso que a torna estranha).
+3. **Uma camada que nunca para:** a neve caindo em Betty Boop e os vagalumes e folhas em Sprite Fright mantêm o quadro
+   vivo mesmo quando o personagem segura a pose. **Para nós:** sempre um loop ambiente (poeira, mariposas na lâmpada,
+   neon piscando, areia).
+4. **Pico de ação = atuação do corpo.** Nos picos de Charge e Agent 327 há cortes a cada 2–4 quadros, borrão de
+   movimento, faíscas e flash. Nos picos do Motel, o que mais se move é a **luz e a câmera**, não os personagens. E
+   Barb e Gary aparecem lado a lado em poses idênticas (gêmeos). **Para nós:** nas lutas e sustos, o corpo precisa fazer
+   arco, antecipação e reação grandes; e nunca duas poses iguais lado a lado.
+5. **Metamorfose e "rubber hose"** (Betty Boop): objetos que viram outros objetos e corpos de borracha cabem no
+   pesadelo. Uma bola de neve que vira rosto, uma sombra que vira mão.
+6. **Silhueta legível sempre** (Achmed): mesmo sem rosto, a pose conta tudo. Teste da silhueta em preto para cada pose
+   da criatura.

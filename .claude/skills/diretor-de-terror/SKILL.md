@@ -1,13 +1,15 @@
 ---
 name: diretor-de-terror
-description: Manual de direção para vídeos animados de terror, suspense e ação (Shorts e vídeos longos do YouTube). Use ao criar, roteirizar, decupar, animar, mixar ou embalar (título, thumbnail, descrição) uma história de terror ou suspense neste repo, ou quando pedirem "faz um vídeo de terror", "história de suspense", "cena de luta", "thumbnail que chame atenção", "prender o público", "como o fulano dirigiria isso". Também para estudar um filme (medir cortes, silêncios e cor) com o script incluso.
+description: Manual de direção para vídeos animados de terror, suspense e ação (Shorts e vídeos longos do YouTube). Use ao criar, roteirizar, decupar, animar, dar voz, mixar ou embalar (título, thumbnail, descrição) uma história de terror ou suspense neste repo, ou quando pedirem "faz um vídeo de terror", "história de suspense", "cena de luta", "voz de monstro", "fala com emoção", "dublagem", "thumbnail que chame atenção", "prender o público". Também para estudar um filme (cortes, silêncios, cor, movimento quadro a quadro) e medir ou checar vozes com os scripts inclusos.
 ---
 
 # Diretor de Terror
 
 O que aprendemos estudando animação de todos os estilos, roteiro de terror e suspense, direção (câmera, luz, som,
-montagem e luta) e o YouTube (embalagem e retenção). Também assistimos e medimos seis filmes de referência e criticamos
-os nossos vídeos com os mesmos números. Este arquivo é o resumo operacional; os detalhes ficam em `references/`.
+montagem e luta), vozes (atuação, direção, vozes por IA, efeitos e mixagem) e o YouTube (embalagem e retenção). Também
+assistimos e medimos 14 filmes de referência (cortes, silêncios, cor e movimento quadro a quadro), testamos motores de
+voz e efeitos com números, e criticamos os nossos vídeos com as mesmas medidas. Este arquivo é o resumo operacional; os
+detalhes ficam em `references/`.
 
 ## Como funciona
 
@@ -18,10 +20,13 @@ os nossos vídeos com os mesmos números. Este arquivo é o resumo operacional; 
    de silêncios (`references/direcao.md`, `references/animacao.md`).
 4. **Decupagem no `scenes.json`** com a curva de ritmo planejada (holds de pavor e sub-cortes de luta), e não um plano
    de 4 s atrás do outro.
-5. **Revisão no storyboard e no `report.md`**, e depois medir o `final.mp4` com o script e comparar com as referências.
-6. **Publicação com o checklist** de `references/youtube.md` §8.
+5. **Vozes:** falas-chave atuadas (`emo` no `script.json`), efeitos por tipo de voz e `check-speech.py` antes do render
+   (`references/vozes.md`).
+6. **Revisão no storyboard e no `report.md`**, e depois medir o `final.mp4` (`analyze-film.py`, `analyze-motion.py`) e
+   comparar com as referências.
+7. **Publicação com o checklist** de `references/youtube.md` §8.
 
-## As 20 regras do diretor
+## As 25 regras do diretor
 
 **História**
 1. **Bomba debaixo da mesa:** a plateia sabe de algo que o personagem não sabe. Suspense > surpresa.
@@ -48,19 +53,31 @@ os nossos vídeos com os mesmos números. Este arquivo é o resumo operacional; 
 14. **Os olhos lideram, a cabeça segue, o corpo congela.** Toda reação começa no olhar.
 15. **Golpe = antecipação + ação + reação**, com hitstop, flash de 1–3 quadros, tremor que decai, partículas e custo
     visível.
+16. **Humano nunca congela, só a criatura:** respiração e micro-movimento sempre ligados (Gertie fica 0,7% parada; nós
+    ficamos 8–11%). Poses em "2s" dão cara de desenho; no susto, 1s.
+17. **Uma camada que nunca para** (poeira, mariposas, neon, neve) e **nunca duas poses iguais lado a lado**.
 
 **Som e montagem**
 
-16. **Silêncio antes do susto:** 1,5–3 s quase mudo e depois o hit (+25–30 LU). Medido em Sprite Fright; ausente nos
+18. **Silêncio antes do susto:** 1,5–3 s quase mudo e depois o hit (+25–30 LU). Medido em Sprite Fright; ausente nos
     nossos vídeos.
-17. **Som antes da imagem:** ouvir a coisa antes de ver.
-18. **Ritmo é contraste:** holds de 8–15 s no pavor e sub-cortes de 0,4–1,5 s na luta. Mediana constante = vídeo
+19. **Som antes da imagem:** ouvir a coisa antes de ver.
+20. **Ritmo é contraste:** holds de 8–15 s no pavor e sub-cortes de 0,4–1,5 s na luta. Mediana constante = vídeo
     plano.
-19. **Depois de todo susto, o close de reação**, e um rescaldo de 2–4 s.
+21. **Depois de todo susto, o close de reação**, e um rescaldo de 2–4 s.
+
+**Voz**
+
+22. **Voz = altura, ritmo, colocação e textura** diferentes por personagem; dirija com contexto e verbos ("esconder o
+    medo da filha"), não com adjetivos ("triste").
+23. **Fala-chave é atuada** (Chatterbox `emo` ≈ 0,7, `cfg` 0,3); o Kokoro não faz emoção nem pausa com "...". Pausa é
+    silêncio de verdade (`pause`).
+24. **Toda fala passa no ouvido do Whisper** (`check-speech.py`): fala-chave com WER > 0,15 é refeita. Criatura que
+    conta o enredo precisa ser entendida.
 
 **YouTube**
 
-20. **A promessa da thumbnail aparece no 1º minuto**, com reganchos a cada 30–60 s e fim no ferrão + tela final,
+25. **A promessa da thumbnail aparece no 1º minuto**, com reganchos a cada 30–60 s e fim no ferrão + tela final,
     sem despedida. Ficção nunca se chama de "real".
 
 ## Aplicando no pipeline deste repo
@@ -73,26 +90,37 @@ os nossos vídeos com os mesmos números. Este arquivo é o resumo operacional; 
 | troca de temperatura | `lights`/`grade` diferentes antes e depois da virada (ex.: `lamp` → `night`/`blackout`) |
 | criatura em partes | estados no mundo (`shadow`, só mãos, silhueta, rosto) testados no `world.png` antes das cenas |
 | espaço negativo e POV | tomadas nomeadas no mundo (`CT.shots`): `porta-escura`, `pov-baixo` |
-| medir o resultado | `python3 .claude/skills/diretor-de-terror/scripts/analyze-film.py videos/<topic>/final.mp4 /tmp/medida 6` |
+| fala atuada | `"emo": 0.7, "cfg": 0.3` na linha do `script.json` + `CHATTERBOX_PY=...` ao rodar `voices.py` |
+| voz de criatura, rádio, fantasma | `bash .claude/skills/diretor-de-terror/scripts/voice-fx.sh <preset> in.wav out.wav` (ou a cadeia no `VOICES` do `voices.py`) |
+| conferir as falas | `.venv/bin/python .claude/skills/diretor-de-terror/scripts/check-speech.py videos/<topic>` |
+| medir o resultado | `analyze-film.py` (ritmo, silêncio, cor) e `analyze-motion.py` (movimento) no `final.mp4` |
 
 ## Usage
 
 ```bash
-python3 .claude/skills/diretor-de-terror/scripts/analyze-film.py <video.mp4> <pasta-saida> [limiar]
+S=.claude/skills/diretor-de-terror/scripts
+python3 $S/analyze-film.py <video.mp4> <pasta-saida> [limiar]          # cortes, silêncios, cor (sheet.jpg)
+python3 $S/analyze-motion.py <video.mp4> <pasta-saida> [max_min] [início_s]   # desenhos/s, 1s-2s-3s, parado, picos (strips.jpg)
+python3 $S/analyze-voice.py <audio-ou-video> [início_s] [duração_s]   # melodia, ritmo, pausas, dinâmica, brilho
+.venv/bin/python $S/check-speech.py <fala.wav> "texto"  |  videos/<topic>   # inteligibilidade (Whisper)
+bash $S/voice-fx.sh list | <preset> in.wav out.wav                     # 15 efeitos de voz a -20 LUFS
+$CHATTERBOX_PY $S/chatterbox-batch.py jobs.json                        # falas atuadas (o voices.py chama sozinho)
 ```
 
-**Arguments:**
+**Arguments (analyze-film):**
 - `video.mp4`: o filme ou o nosso `final.mp4`
 - `pasta-saida`: onde gravar `summary.json`, `sheet.jpg`, `cuts.txt` e `loud.txt` (é criada)
 - `limiar`: sensibilidade de corte; 6 para animação e vídeo digital limpo (padrão), 9 para filme antigo com tremor
 
 **Examples:**
 ```bash
-python3 .claude/skills/diretor-de-terror/scripts/analyze-film.py videos/motel-lua-vermelha/final.mp4 /tmp/m 6
-python3 .claude/skills/diretor-de-terror/scripts/analyze-film.py ~/filmes/nosferatu.mp4 /tmp/n 9
+python3 $S/analyze-film.py videos/motel-lua-vermelha/final.mp4 /tmp/m 6
+python3 $S/analyze-motion.py ~/filmes/gertie.mp4 /tmp/g 6 360        # pula o prólogo filmado
+bash $S/voice-fx.sh sombra videos/x/voice/l12.wav /tmp/l12-sombra.wav
 ```
 
-Requer ffmpeg/ffprobe e Python 3 com Pillow (`python3 -m pip install pillow` se faltar; o `.venv` do repo não traz). Um filme de 90 min leva ~10–20 min sem GPU.
+Requer ffmpeg/ffprobe e Python 3 com Pillow e numpy (`python3 -m pip install pillow numpy` se faltar; o `.venv` do repo
+não traz Pillow). `check-speech.py` usa o `.venv` do repo (faster-whisper). Um filme de 90 min leva ~10–20 min sem GPU.
 
 ## Output
 
@@ -105,6 +133,9 @@ Requer ffmpeg/ffprobe e Python 3 com Pillow (`python3 -m pip install pillow` se 
 - **`pacing`:** cortes por minuto em barras (curva de ritmo).
 - **`quiet_share_pct`:** porcentagem do tempo abaixo de −40 LUFS.
 - **`silence_then_hit_s`:** os instantes de silêncio seguido de hit (os sustos sonoros).
+- **`analyze-motion`:** `new_drawings_per_s_median`, `timing_while_moving_pct` (`on_1s`, `on_2s`...), `held_share_pct`.
+- **`analyze-voice`:** `pitch_range_st` / `pitch_move_st` (quanto a melodia se mexe), `syllables_per_s`, `pauses`.
+- **`check-speech`:** `wer` (0 = perfeito; > 0,15 conferir; > 0,35 não se entende) e as palavras trocadas.
 
 ## Present Results to User
 
@@ -126,10 +157,12 @@ Ao entregar um vídeo, inclua a medição do `final.mp4` comparada à tabela de 
   personagens, humor, viradas, diálogo, lutas no roteiro, finais e ética.
 - `references/direcao.md`: planos, ângulos, lente, luz, som, montagem (Murch), anatomia do susto, coreografia de luta
   e checklist de cena.
-- `references/animacao.md`: os estilos de animação, os 12 princípios, tabela de timing, atuação, design de criatura,
-  cor, lip-sync e impactos.
+- `references/animacao.md`: os estilos de animação, os 12 princípios, tabela de timing (com caminhada e corrida),
+  atuação, design de criatura, cor, lip-sync, impactos e o estudo de movimento medido em 14 filmes.
+- `references/vozes.md`: atuação e direção de voz, narração de terror, dublagem, motores de voz e licenças, as
+  medições (Kokoro × Chatterbox), falas atuadas no pipeline, os efeitos e a mixagem.
 - `references/youtube.md`: algoritmo, thumbnail, título, gancho, retenção, formatos, Shorts e checklist de publicação.
-- `references/filmes-estudados.md`: os seis filmes medidos, a lição de cada um e a autocrítica medida dos nossos
+- `references/filmes-estudados.md`: os filmes medidos (ritmo, som, cor), a lição de cada um e a autocrítica medida dos nossos
   vídeos.
 
 ## Troubleshooting
@@ -139,5 +172,9 @@ Ao entregar um vídeo, inclua a medição do `final.mp4` comparada à tabela de 
 - **Muitos cortes falsos em filme antigo (tremulação):** suba o limiar para 9–12.
 - **Poucos cortes em animação com dissolves:** desça para 4–5; dissolves longos não são detectados como corte.
 - **`saturation` 0:** o filme é preto e branco (normal).
+- **`analyze-motion` diz "tudo em 1s" num filme antigo:** grão de película; a média de área já filtra a maior parte,
+  mas fontes a 30 fps telecinadas embaralham 1s/2s. Compare só filmes com o mesmo fps.
+- **Chatterbox: `'NoneType' object is not callable` no `perth`:** instale `setuptools<81` no venv dele.
+- **Chatterbox lento:** ~18 s de CPU por segundo de fala. Atue só as falas-chave; com GPU (CUDA/MPS) ele usa sozinho.
 - **Rodar de novo do zero:** apague a pasta de saída; o script reaproveita `cuts.txt`, `loud.txt` e os quadros
   existentes.

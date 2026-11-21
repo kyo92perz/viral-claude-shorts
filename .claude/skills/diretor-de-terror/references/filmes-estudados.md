@@ -111,10 +111,24 @@ vídeos de lá não foram usados.
    - inserts de luz falhando;
    - código de cor da lua vermelha.
 
+## Segunda rodada: movimento quadro a quadro
+
+Mais oito animações livres foram assistidas pelo movimento: *Gertie the Dinosaur* (1914), *Betty Boop: Snow-White*
+(1933), *As Aventuras do Príncipe Achmed* (1926), *Big Buck Bunny*, *Spring*, *Coffee Run*, *Cosmos Laundromat* e
+*Agent 327*. As seis anteriores foram medidas de novo com `analyze-motion.py`. A tabela e as lições estão em
+`animacao.md` §10. Em resumo:
+
+- os mestres do desenho misturam 1s e 2s;
+- personagem vivo nunca congela;
+- sempre há uma camada ambiente em movimento;
+- no pico de ação, o corpo atua (cortes de 2–4 quadros, borrão, faíscas);
+- nos nossos picos, mexe mais a luz que os personagens.
+
 ## Como estudar um filme novo
 
 ```bash
 python3 .claude/skills/diretor-de-terror/scripts/analyze-film.py filme.mp4 /tmp/estudo-filme 6   # 9 para filme antigo
+python3 .claude/skills/diretor-de-terror/scripts/analyze-motion.py filme.mp4 /tmp/estudo-mov 15  # movimento
 ```
 
 1. Leia o `summary.json` (ritmo, silêncio e cor).
