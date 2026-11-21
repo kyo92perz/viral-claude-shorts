@@ -994,6 +994,17 @@ const ZS_TEST = [
     const C = zsPut('chiado', [1.5, 0, 6], Math.PI, ZS_CPOSES.stalk, t); ZS.chiado.fx(t, 0.6); zsLook([2.5, 1.6, -3.5], [0.5, 1.4, 3], 44); } },
   { id: 'test-shop', fn(t: number) { zsUse('shop'); ZS.shopCeil.intensity = 6; zsPut('ray_old', [1.6, 0, 0.6], -Math.PI / 2, ZS_POSES.axeReady, t, 'angry'); zsHold('axe', ZS.cast.ray_old, 'R', [0, -0.07, 0.02], [1.5, 0, 0]);
     zsPut('chiado', [-0.8, 0, 1.2], Math.PI / 2, ZS_CPOSES.reach, t); ZS.chiado.fx(t, 0.9); zsLook([0.3, 1.6, -2.4], [0.3, 1.3, 1.0], 46); } },
+  { id: 'thumb-a', fn(t: number) { zsUse('woods'); ZS.st.scene.fog.density = 0.02;
+    const B = zsPut('bolacha', [0, 0, 0], 0.25, { ...ZS_POSES.flashlight, j: { ...ZS_POSES.flashlight.j, head: [-0.05, 0.5, 0], sL: [-1.3, 0.3, 0.3], eL: [-1.9] } }, t, 'terror', { lookX: 0.8, lid: -0.3 });
+    zsHold('flashlight', B, 'R'); zsHold('walkie', B, 'L', [0, -0.08, 0.03]);
+    ZS.flash.l.intensity = 30; ZS.flash.l.position.set(0.2, 1.2, 0.5); ZS.flash.l.target.position.set(0.5, 1.0, 6);
+    const C = zsPut('chiado', [-0.9, 0, -1.3], 0.5, { ...ZS_CPOSES.reach, j: { ...ZS_CPOSES.reach.j, head: [-0.2, 0.2, 0.15], sR: [-1.2, 0.3, -0.6], eR: [-0.6] } }, t); ZS.chiado.fx(t, 1.3, 0.5);
+    ZS.thumbLight = ZS.thumbLight || new THREE.PointLight(ZS_GREEN, 0, 6, 2); ZS.st.add(ZS.thumbLight); const q = zsAt([-0.6, 2.2, -0.6]); ZS.thumbLight.position.set(...q); ZS.thumbLight.intensity = 6;
+    zsLook([1.3, 1.45, 2.0], [-0.2, 1.65, -0.4], 42); } },
+  { id: 'thumb-b', fn(t: number) { zsUse('shop'); ZS_DIAL.value = 1; ZS.shopCeil.intensity = 2; ZS.shopGlass.visible = false;
+    zsPut('chiado', [-0.6, 0, 1.0], Math.PI / 2 + 0.3, ZS_CPOSES.shriek, t); ZS.chiado.fx(t, 1.4, 1);
+    const R = zsPut('ray_old', [1.0, 0, 0.2], -1.9, ZS_POSES.axeRaise, t, 'rage'); zsHold('axe', R, 'R', [0, -0.07, 0.02], [1.5, 0, 0]);
+    zsLook([0.9, 0.9, -2.4], [-0.1, 1.9, 0.8], 46); } },
   { id: 'test-chiado', fn(t: number, u: number) { zsUse('control'); const pose = [ZS_CPOSES.hunch, ZS_CPOSES.shriek, ZS_CPOSES.swipe, ZS_CPOSES.convulse][Math.floor(u * 3.99)];
     zsPut('chiado', [0, 0, 0.5], 0, pose, t); ZS.chiado.fx(t, 1); zsLook([0, 1.7, 4.2], [0, 1.6, 0.5], 45); } },
 ];
