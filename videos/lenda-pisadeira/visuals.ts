@@ -16,13 +16,15 @@ const piFaceLying = (hx: number, hy: number, s: number) => `<ellipse cx="${hx - 
 // her hand with very long nails (pointing left), local origin at the wrist
 const piClaw = (id: string, x: number, y: number, s = 1, rot = 0) => `<g id="${id}"><g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><path d="M0 0 L160 -30" stroke="${BZ.ink}" stroke-width="58" stroke-linecap="round"/><path d="M0 0 L160 -30" stroke="#9aa39a" stroke-width="42" stroke-linecap="round"/>
   <circle cx="0" cy="0" r="52" fill="#9aa39a" ${bzO()}/>${[-36, -12, 12, 34].map((d) => `<path d="M-30 ${d} Q -110 ${d - 10} -170 ${d + 26}" stroke="${BZ.ink}" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M-30 ${d} Q -110 ${d - 10} -170 ${d + 26}" stroke="#d8d0a8" stroke-width="8" fill="none" stroke-linecap="round"/>`).join('')}</g></g>`;
-const piHook = (txt: string) => bzSign('hk', txt, 540, 1540, -4, BZ.red, '#fff', 104);
+const piHook = (txt: string) => bzSign('hk', txt, 540, 330, -4, BZ.red, '#fff', 104);
 
 defineVisuals({
   // ---------------- the hook: she is already on his chest at frame 1
-  hook: { bg: '#1e2a48', html: () => bzShot(piBedShot(), `${piDark('dk', '#000')}${piHook('NÃO DURMA ASSIM')}${bzFlash('fl', BZ.red)}${bzVignette(0.75)}`),
-    anim(tl, s, K, $) { piOnChest(tl, $('#pis'), s.t0); bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzFace(tl, $('#rafa'), s.t0, 'wide', 'o'); tl.set($('#dk'), { opacity: 0.2 }, s.t0);
-      bzHook(tl, $('#hk'), s.t0); bzHit(tl, $('#fl'), K('h'), 0.35); bzShake(tl, $('#rafa'), s.t0, s.t1, 3); bzPush(tl, $('#cam'), s.t0, s.t1, 1.4, 1.55, 560, 900); } },
+  hook: { bg: '#14161c', html: () => bzShot(`<rect width="1080" height="1920" fill="#14161c"/>${piPis(540, 2750, 3.4)}`, `${piHook('NÃO DURMA ASSIM')}${bzFlash('fl', BZ.red)}${bzVignette(0.8)}`),
+    anim(tl, s, K, $) { bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzHook(tl, $('#hk'), s.t0); bzHit(tl, $('#fl'), K('h'), 0.35); bzShake(tl, $('#pis'), s.t0, s.t0 + 0.4, 4); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 850); } },
+  bedhook: { bg: '#1e2a48', html: () => bzShot(piBedShot(), `${piDark('dk', '#000')}${bzVignette(0.75)}`),
+    anim(tl, s, K, $) { piOnChest(tl, $('#pis'), s.t0); bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzFace(tl, $('#rafa'), s.t0, 'wide', 'o'); tl.set($('#dk'), { opacity: 0.1 }, s.t0);
+      bzShake(tl, $('#rafa'), s.t0, s.t1, 3); bzPush(tl, $('#cam'), s.t0, s.t1, 1.4, 1.55, 560, 900); } },
   roof: { bg: '#0f1530', html: () => bzShot(`${piRoofs()}${piPis(540, 1160, 0.9)}`, bzVignette(0.7)),
     anim(tl, s, K, $) { bzFace(tl, $('#pis'), s.t0, 'glow', 'grin'); bzPose(tl, $('#pis'), s.t0, { lL: 60, lR: -60, aL: 40, aR: -40 }, 0.01);
       tl.fromTo($('#pis'), { y: -120 }, { y: 260, duration: s.t1 - s.t0, ease: 'power1.in' }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 1100); } },

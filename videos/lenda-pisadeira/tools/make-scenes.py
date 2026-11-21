@@ -9,6 +9,7 @@ D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'si
 # (id, line, word, delay s, mood, ambience, keys: (id, line, word, dt, sfx))
 SHOTS = [
  ('hook', 'n01', 0, None, D, ['drone'], [('h', 'n01', 0, 0.1, 'sting')]),
+ ('bedhook', 'n01', 5, None, D, ['drone'], []),
  ('roof', 'n01', 10, None, D, ['wind'], []),
  ('land', 'n01', 14, None, D, ['drone'], [('l', 'n01', 15, 0, 'thud')]),
  ('title', 'n02', 0, None, D, ['drone'], [('t', 'n02', 5, 0, 'impact')]),

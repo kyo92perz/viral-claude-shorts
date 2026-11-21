@@ -31,6 +31,17 @@
     }
    ],
    "t0": 0,
+   "t1": 1.831
+  },
+  {
+   "id": "bedhook",
+   "from": 5,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 1.831,
    "t1": 3.513
   },
   {
