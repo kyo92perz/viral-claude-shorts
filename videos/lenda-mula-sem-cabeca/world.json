@@ -37,6 +37,24 @@
    "snap": [
     1.2
    ]
+  },
+  {
+   "id": "cover-a",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "cover-b",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
   }
  ]
 }

@@ -59,5 +59,10 @@ defineVisuals({
     anim(tl, s) { muFlicker(tl, '#sc-test-cast #mula', s.t0, s.t1); bzFace(tl, '#sc-test-cast #beto', s.t0, 'dot', 'grin'); } },
   'test-run': { bg: '#0f1530', html: () => svg(`${muSquare(1)}${muMula('mula', 540, 1800, 1.3)}`), anim(tl, s) { muGallop(tl, '#sc-test-run #mula', s.t0, s.t1); } },
   'test-floor': { bg: '#0f1530', html: () => svg(`${muSquare(1)}${muPrints()}${muCap(540, 1560, 1.2)}`), anim(tl, s) { for (let i = 0; i < 6; i++) tl.set(`#sc-test-floor #hp${i}`, { opacity: 1 }, s.t0); muFlicker(tl, '#sc-test-floor #cap', s.t0, s.t1); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#0f1530', html: () => svg(`${muSquare(1)}${muMula('mula', 240, 1820, 1.5)}<rect width="1080" height="1920" fill="#ff6a2a" opacity="0.14"/>${bzVignette(0.6)}`),
+    anim(tl, s) { [['l1', 35], ['l2', -35], ['l3', -30], ['l4', 30]].forEach(([c, a]) => tl.set(`#sc-cover-a #mula .${c}`, { rotation: +a, transformOrigin: '50% 0%' }, s.t0)); } },
+  'cover-b': { bg: '#0f1530', html: () => svg(`${muSquare(1)}<g transform="rotate(90 200 1760)">${muDavi(200, 1760, 1.1)}</g>${muBeto(700, 1560, 1.4)}<rect width="1080" height="1920" fill="#ff7a2a" opacity="0.25"/>${bzVignette(0.6)}`),
+    anim(tl, s) { bzFace(tl, '#sc-cover-b #beto', s.t0, 'wide', 'open'); bzFace(tl, '#sc-cover-b #davi', s.t0, 'closed', 'flat'); } },
   'test-fire': { bg: '#0f1530', html: () => svg(`${bzSky('#0f1530', '#3a2f5a')}${muMula('mula', 300, 2900, 3.2)}`), anim(tl, s) { muFlicker(tl, '#sc-test-fire #mula', s.t0, s.t1); } },
 });
