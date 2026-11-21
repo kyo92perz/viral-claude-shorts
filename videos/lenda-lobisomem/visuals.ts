@@ -21,7 +21,7 @@ defineVisuals({
   // ---------------- the hook: the wolf howls under the moon at frame 1
   hook: { bg: '#0f1530', html: () => bzShot(`${loCross()}${loLobo(540, 1700, 1.2)}`, `${loHook('O 7º FILHO')}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#lobo'), s.t0, 'glow', 'open'); bzPose(tl, $('#lobo'), s.t0, { hd: -25, aL: 40, aR: -40 }, 0.01); bzHook(tl, $('#hk'), s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1.1, 1.3, 540, 900); } },
-  tonho: { bg: '#0f1530', html: () => bzShot(`${loFarm()}${loTonho(540, 1500, 1.3)}`, bzSign('nm', 'TONHO', 540, 330, -4, BZ.yellow, BZ.ink, 120, { text: 'O SÉTIMO', bg: BZ.red, fg: '#fff' })),
+  tonho: { bg: '#0f1530', html: () => bzShot(`${loFarm()}${loTonho(540, 1500, 1.3)}`, bzSign('nm', 'PEDRO', 540, 330, -4, BZ.yellow, BZ.ink, 120, { text: 'O SÉTIMO', bg: BZ.red, fg: '#fff' })),
     anim(tl, s, K, $) { bzFace(tl, $('#tonho'), s.t0, 'half', 'flat'); tl.set($('#nm'), { opacity: 0 }, s.t0); bzShow(tl, $('#nm'), K('n')); bzBlink(tl, $('#tonho'), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 950); } },
   farm: { bg: '#0f1530', html: () => bzShot(loFarm(), ''), anim(tl, s, K, $) { bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 400, 1000); } },
   moon: { bg: '#0f1530', html: () => bzShot(`${loNight(540, 960, 380)}`, bzSign('lc', 'SEXTA • LUA CHEIA', 540, 330, -3, BZ.yellow, BZ.ink, 90)),
