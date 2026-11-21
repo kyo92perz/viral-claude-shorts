@@ -1,5 +1,5 @@
 // <lines>
-const MU_LINES: { who: string; t0: number; t1: number }[] = [];
+const MU_LINES = [{"who": "mu_eu", "t0": 0.3, "t1": 6.279}, {"who": "mu_eu", "t0": 6.879, "t1": 12.676}, {"who": "mu_eu", "t0": 13.176, "t1": 19.736}, {"who": "mu_eu", "t0": 20.336, "t1": 26.251}, {"who": "mu_beto", "t0": 26.651, "t1": 29.403}, {"who": "mu_eu", "t0": 30.203, "t1": 35.272}, {"who": "mu_eu", "t0": 35.972, "t1": 40.692}, {"who": "mu_eu", "t0": 41.192, "t1": 48.327}, {"who": "mu_eu", "t0": 48.827, "t1": 52.996}, {"who": "mu_eu", "t0": 53.596, "t1": 58.466}, {"who": "mu_eu", "t0": 59.466, "t1": 66.926}, {"who": "mu_eu", "t0": 67.526, "t1": 71.116}];
 // </lines>
 // =====================================================================
 //  A MULA SEM CABEÇA: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -18,8 +18,8 @@ const muVillages = () => [...Array(7)].map((_, i) => { const x = 80 + i * 155, y
 
 defineVisuals({
   // ---------------- the hook: she gallops through the frame at frame 1
-  hook: { bg: '#0f1530', html: () => bzShot(`${muSquare(1)}${muMula('mula', 540, 1960, 1.6)}`, `${bzSign('hk', 'NÃO OLHE PRA ELA', 540, 330, -4, BZ.red, '#fff', 100)}<rect width="1080" height="1920" fill="#ff6a2a" opacity="0.12"/>${bzVignette(0.7)}`),
-    anim(tl, s, K, $) { muGallop(tl, $('#mula'), s.t0, s.t1, 0.2); tl.fromTo($('#mula'), { x: -260 }, { x: 160, duration: s.t1 - s.t0, ease: 'none' }, s.t0); bzHook(tl, $('#hk'), s.t0); bzQuake(tl, $('#cam'), s.t0, s.t1, 3); } },
+  hook: { bg: '#0f1530', html: () => bzShot(`${muSquare(1)}${muMula('mula', 250, 1900, 1.4)}`, `${bzSign('hk', 'NÃO OLHE PRA ELA', 540, 330, -4, BZ.red, '#fff', 100)}<rect width="1080" height="1920" fill="#ff6a2a" opacity="0.12"/>${bzVignette(0.7)}`),
+    anim(tl, s, K, $) { muGallop(tl, $('#mula'), s.t0, s.t1, 0.2); tl.fromTo($('#mula'), { x: -80 }, { x: 80, duration: s.t1 - s.t0, ease: 'none' }, s.t0); bzHook(tl, $('#hk'), s.t0); bzQuake(tl, $('#cam'), s.t0, s.t1, 3); } },
   fire: { bg: '#05070f', html: () => bzShot(muNeckClose(), bzVignette(0.8)),
     anim(tl, s, K, $) { muFlicker(tl, $('#mula'), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 600, 1100); } },
   vilas: { bg: '#0f1530', html: () => bzShot(`${bzSky('#0f1530', '#3a2f5a')}${bzStars(50, 9, 900)}<rect y="1180" width="1080" height="760" fill="#2c3a34" ${bzO()}/>${muVillages()}${muMula('mula', 0, 1500, 0.45)}`, `${[...Array(7)].map((_, i) => bzNum('n' + i, String(i + 1), 80 + i * 155, 1000, i === 6 ? BZ.red : '#fff', 110)).join('')}`),
@@ -61,9 +61,9 @@ defineVisuals({
   // ---------------- after
   empty: { bg: '#0f1530', html: () => bzShot(`${muSquare(1)}${muDavi(540, 1560, 1.35)}`, muDark('dk', '#05060c', 0.15)),
     anim(tl, s, K, $) { bzFace(tl, $('#davi'), s.t0, 'wide', 'o'); tl.fromTo($('#davi .hd'), { rotation: -14, transformOrigin: '50% 90%' }, { rotation: 14, duration: 0.8, yoyo: true, repeat: 2, ease: 'sine.inOut' }, s.t0 + 0.2); bzPush(tl, $('#cam'), s.t0, s.t1, 1.1, 1, 540, 1000); } },
-  prints: { bg: '#0f1530', html: () => bzShot(`<g transform="translate(-540 -1500) scale(2)">${muSquare(1)}${muPrints()}</g>`, bzVignette(0.7)),
+  prints: { bg: '#0f1530', html: () => bzShot(`<g transform="translate(-540 -2340) scale(2)">${muSquare(1)}${muPrints()}</g>`, bzVignette(0.7)),
     anim(tl, s, K, $) { for (let i = 0; i < 6; i++) tl.to($('#hp' + i), { opacity: 1, duration: 0.15 }, s.t0 + 0.3 + i * 0.3); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 1500); } },
-  cap: { bg: '#0f1530', html: () => bzShot(`<g transform="translate(-540 -1500) scale(2)">${muSquare(1)}</g>${muCap(540, 1180, 2.4)}`, bzVignette(0.8)),
+  cap: { bg: '#0f1530', html: () => bzShot(`<g transform="translate(-540 -2340) scale(2)">${muSquare(1)}</g>${muCap(540, 1060, 2.4)}`, bzVignette(0.8)),
     anim(tl, s, K, $) { muFlicker(tl, $('#cap'), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 1000); } },
   you: { bg: '#05070f', html: () => bzShot(muNeckClose(), `${bzFlash('fl', '#fff')}${bzVignette(0.85)}`),
     anim(tl, s, K, $) { muFlicker(tl, $('#mula'), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, K('end'), 1, 1.7, 600, 1000); bzHit(tl, $('#fl'), K('end'), 0.9); } },

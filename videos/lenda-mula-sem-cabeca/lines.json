@@ -1,0 +1,89 @@
+{
+ "duration": 72.716,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "mu_eu",
+   "text": "Ela não tem cabeça. Mas solta fogo pelo pescoço. E corre sete vilas antes do galo cantar.",
+   "t0": 0.3,
+   "t1": 6.279
+  },
+  {
+   "id": "n02",
+   "who": "mu_eu",
+   "text": "Na minha cidade, de quinta pra sexta, ninguém sai depois da meia-noite. Por causa da Mula sem Cabeça.",
+   "t0": 6.879,
+   "t1": 12.676
+  },
+  {
+   "id": "n03",
+   "who": "mu_eu",
+   "text": "Dizem que ela era uma moça amaldiçoada. E toda quinta-feira, à meia-noite, o corpo dela vira uma mula de fogo.",
+   "t0": 13.176,
+   "t1": 19.736
+  },
+  {
+   "id": "n04",
+   "who": "mu_eu",
+   "text": "Eu e o Beto achamos que era história pra assustar criança. Então ficamos na praça pra ver.",
+   "t0": 20.336,
+   "t1": 26.251
+  },
+  {
+   "id": "b01",
+   "who": "mu_beto",
+   "text": "Já é meia-noite. Cadê a tal mula?",
+   "t0": 26.651,
+   "t1": 29.403
+  },
+  {
+   "id": "n05",
+   "who": "mu_eu",
+   "text": "O sino da igreja tocou sozinho. Uma vez. Depois veio um relincho que gelou o meu sangue.",
+   "t0": 30.203,
+   "t1": 35.272
+  },
+  {
+   "id": "n06",
+   "who": "mu_eu",
+   "text": "Ela veio pela rua de pedra, soltando faísca dos cascos e fogo de onde devia ter cabeça.",
+   "t0": 35.972,
+   "t1": 40.692
+  },
+  {
+   "id": "n07",
+   "who": "mu_eu",
+   "text": "Minha vó tinha ensinado: deita de barriga no chão, esconde as unhas e fecha os olhos. Ela não enxerga quem se esconde.",
+   "t0": 41.192,
+   "t1": 48.327
+  },
+  {
+   "id": "n08",
+   "who": "mu_eu",
+   "text": "Eu deitei. O Beto não. Ele ficou de pé, de boca aberta, olhando.",
+   "t0": 48.827,
+   "t1": 52.996
+  },
+  {
+   "id": "n09",
+   "who": "mu_eu",
+   "text": "Senti o calor passar por cima de mim. Ouvi o Beto gritar. Depois, silêncio.",
+   "t0": 53.596,
+   "t1": 58.466
+  },
+  {
+   "id": "n10",
+   "who": "mu_eu",
+   "text": "Quando abri os olhos, a praça estava vazia. Só ficaram marcas de casco queimadas nas pedras. E o boné do Beto, pegando fogo.",
+   "t0": 59.466,
+   "t1": 66.926
+  },
+  {
+   "id": "n11",
+   "who": "mu_eu",
+   "text": "Se ela passar na sua rua hoje, você deita no chão... ou fica olhando?",
+   "t0": 67.526,
+   "t1": 71.116
+  }
+ ]
+}

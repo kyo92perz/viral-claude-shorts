@@ -21,7 +21,7 @@ SHOTS = [
  ('street', 'n06', 0, None, E, ['steps'], [('sp', 'n06', 7, 0, 'spark')]),
  ('neck', 'n06', 10, None, E, ['drone'], []),
  ('vo', 'n07', 0, None, T, ['heartbeat'], []),
- ('lie', 'n07', 4, None, T, ['heartbeat'], [('d', 'n07', 4, 0, 'thud')]),
+ ('lie', 'n07', 4, None, T, ['heartbeat'], [('d', 'n07', 4, 0.1, 'thud')]),
  ('notme', 'n08', 0, None, T, ['heartbeat'], []),
  ('pass', 'n09', 0, None, E, ['steps'], [('f', 'n09', 2, 0, 'whoosh'), ('g', 'n09', 10, 0, 'scream')]),
  ('silence', 'n09', 12, None, S0, [], []),

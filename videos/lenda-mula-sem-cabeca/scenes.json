@@ -1,0 +1,338 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.6"
+ },
+ "music": {
+  "bpm": 92,
+  "key": "A"
+ },
+ "notes": "A MULA SEM CABEÇA, Brasil Z toon look (styles/flat2d/toon.ts): a small town square at night, a white church with a bell, cobblestones; the only warm colour is her fire. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "neigh",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 1.635
+  },
+  {
+   "id": "fire",
+   "from": 4,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 1.635,
+   "t1": 3.544
+  },
+  {
+   "id": "vilas",
+   "from": 9,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 3.544,
+   "t1": 6.629
+  },
+  {
+   "id": "town",
+   "from": 17,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 6.629,
+   "t1": 10.946
+  },
+  {
+   "id": "title",
+   "from": 29,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 32,
+     "sfx": "impact",
+     "t": 11.719
+    }
+   ],
+   "t0": 10.946,
+   "t1": 12.926
+  },
+  {
+   "id": "curse",
+   "from": 35,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "v",
+     "at": 50,
+     "sfx": "impact",
+     "t": 18.338
+    }
+   ],
+   "t0": 12.926,
+   "t1": 20.086
+  },
+  {
+   "id": "boys",
+   "from": 55,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night"
+   ],
+   "t0": 20.086,
+   "t1": 26.451
+  },
+  {
+   "id": "beto",
+   "from": 72,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 26.451,
+   "t1": 29.953
+  },
+  {
+   "id": "bell",
+   "from": 79,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 83,
+     "sfx": "bell",
+     "t": 31.222
+    }
+   ],
+   "t0": 29.953,
+   "t1": 32.53
+  },
+  {
+   "id": "neigh",
+   "from": 87,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 90,
+     "sfx": "neigh",
+     "t": 33.395
+    }
+   ],
+   "t0": 32.53,
+   "t1": 35.722
+  },
+  {
+   "id": "street",
+   "from": 96,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "sp",
+     "at": 103,
+     "sfx": "spark",
+     "t": 37.945
+    }
+   ],
+   "t0": 35.722,
+   "t1": 38.939
+  },
+  {
+   "id": "neck",
+   "from": 106,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 38.939,
+   "t1": 40.942
+  },
+  {
+   "id": "vo",
+   "from": 113,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 40.942,
+   "t1": 42.684
+  },
+  {
+   "id": "lie",
+   "from": 117,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 117,
+     "dt": 0.1,
+     "sfx": "thud",
+     "t": 42.764
+    }
+   ],
+   "t0": 42.684,
+   "t1": 48.577
+  },
+  {
+   "id": "notme",
+   "from": 135,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 48.577,
+   "t1": 53.346
+  },
+  {
+   "id": "pass",
+   "from": 148,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 150,
+     "sfx": "whoosh",
+     "t": 54.151
+    },
+    {
+     "id": "g",
+     "at": 158,
+     "sfx": "scream",
+     "t": 56.617
+    }
+   ],
+   "t0": 53.346,
+   "t1": 57.438
+  },
+  {
+   "id": "silence",
+   "from": 160,
+   "type": "object",
+   "mood": "silence",
+   "t0": 57.438,
+   "t1": 59.066
+  },
+  {
+   "id": "empty",
+   "from": 162,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 59.066,
+   "t1": 62.096
+  },
+  {
+   "id": "prints",
+   "from": 170,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 62.096,
+   "t1": 65.046
+  },
+  {
+   "id": "cap",
+   "from": 178,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 180,
+     "sfx": "sting",
+     "t": 65.309
+    }
+   ],
+   "t0": 65.046,
+   "t1": 67.326
+  },
+  {
+   "id": "you",
+   "from": 185,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 198,
+     "dt": 0.654,
+     "sfx": "neigh",
+     "t": 71.346
+    }
+   ],
+   "t0": 67.326,
+   "t1": 72.716
+  }
+ ],
+ "duration": 72.716
+}
