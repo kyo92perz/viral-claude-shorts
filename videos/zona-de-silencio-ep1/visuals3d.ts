@@ -54,7 +54,7 @@ const zvSparks = (at: Vec3, t0: number, t: number, n = 60) => {
 const zvFlash = (P: ZsPerson, on: number) => {
   if (on <= 0) return; const h = new THREE.Vector3(); P.handR.getWorldPosition(h); const dir = new THREE.Vector3(0, -0.1, 1).applyAxisAngle(new THREE.Vector3(0, 1, 0), P.root.rotation.y);
   const o = ZS.sets.woods.position; ZS.flash.l.intensity = 40 * on; ZS.flash.l.position.set(h.x - o.x, h.y - o.y, h.z - o.z); ZS.flash.l.target.position.set(h.x - o.x + dir.x * 8, h.y - o.y + dir.y * 8, h.z - o.z + dir.z * 8);
-  ZS.beam.visible = true; ZS.beam.position.set(h.x - o.x + dir.x * 3.5, h.y - o.y + dir.y * 3.5, h.z - o.z + dir.z * 3.5); ZS.beam.quaternion.setFromUnitVectors(new THREE.Vector3(0, -1, 0), dir.clone().normalize());
+  ZS.beam.visible = false; ZS.beam.position.set(h.x - o.x + dir.x * 3.5, h.y - o.y + dir.y * 3.5, h.z - o.z + dir.z * 3.5); ZS.beam.quaternion.setFromUnitVectors(new THREE.Vector3(0, -1, 0), dir.clone().normalize());
 };
 
 // ---------------------------------------------------------------- blocking (set-local marks)
@@ -66,7 +66,8 @@ const ZV_RW = { jess: [-2.8, 0, 1.55] as Vec3, kyle: [-2.3, 0, -0.6] as Vec3, tv
 // the three kids in the basement in their usual places (a base layer for many shots)
 const zvBasement = (t: number, ex: { theo?: string; dani?: string; bol?: string } = {}, poses: { theo?: ZsPose; dani?: ZsPose; bol?: ZsPose } = {}) => {
   zsUse('basement');
-  const th = zsPut('theo', ZV_BASE.theo, Math.PI - 0.5, poses.theo || zvSit('theo', 0.5, ZS_POSES.micDesk), t, ex.theo || 'calm'); if (!poses.theo || poses.theo.y) zsSeat(0, ZV_BASE.theo, Math.PI - 0.5);
+  const tf = ZV.theoAtMic ? Math.PI - 0.5 : 0.45;
+  const th = zsPut('theo', ZV_BASE.theo, tf, poses.theo || zvSit('theo', 0.5, ZV.theoAtMic ? ZS_POSES.micDesk : zsMix(ZS_POSES.sit, ZS_POSES.talkR, 0.4)), t, ex.theo || 'calm'); if (!poses.theo || poses.theo.y) zsSeat(0, ZV_BASE.theo, tf);
   const da = zsPut('dani', ZV_BASE.dani, -2.2, poses.dani || ZS_POSES.armsCrossed, t, ex.dani || 'smirk');
   const bo = zsPut('bolacha', ZV_BASE.bol, -1.87, poses.bol || zvSit('bolacha', 0.55, ZS_POSES.relaxed.j ? { ...ZS_POSES.sit, j: { ...ZS_POSES.sit.j, sR: [-0.9, 0, -0.1], eR: [-1.6] } } : ZS_POSES.sit), t, ex.bol || 'smile');
   return { th, da, bo };
@@ -94,11 +95,11 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     zvLookFace('ray_young', 1.25, 0.35, 0, 30, t); } },
   { id: 's05', fn(t, u, s) { zsUse('control'); const k = zvK(s, 'wave'); ZS_SCREEN.uWave.value = 0.2 + zsRamp(t, k - 0.3, k + 0.8) * 1.4;
     zsPut('vance', ZV_CTRL.vance, Math.PI, zvSit('vance', 0.5, ZS_POSES.micDesk), t, 'hush'); zsSeat(0, ZV_CTRL.vance, Math.PI);
-    zvCam(u, [[-0.2, 1.62, -1.6], [-0.2, 1.62, -2.6], 34], [[-0.2, 1.62, -1.95], [-0.2, 1.62, -2.6], 26]); } },
+    zvCam(u, [[0.45, 1.62, -1.3], [0.45, 1.62, -2.2], 34], [[0.45, 1.62, -1.6], [0.45, 1.62, -2.2], 26]); } },
   { id: 's06', fn(t, u) { zsUse('control'); ZS_SCREEN.uWave.value = 1.0; ZS_DIAL.value = 0;
     zsPut('vance', ZV_CTRL.vance, Math.PI, zvSit('vance', 0.5, { ...ZS_POSES.micDesk, j: { ...ZS_POSES.micDesk.j, spine: [0.3], head: [0.1] } }), t, 'awe'); zsSeat(0, ZV_CTRL.vance, Math.PI);
     zsPut('ray_young', ZV_CTRL.ray, zvTo(ZV_CTRL.ray, ZV_CTRL.vance), ZS_POSES.relaxed, t, 'worried');
-    zvCam(u, [[0.8, 1.25, -0.2], [-0.3, 1.2, 0.4], 32], [[0.7, 1.24, 0.0], [-0.3, 1.2, 0.4], 30]); } },
+    zvCam(u, [[0.25, 1.28, -0.45], [-0.3, 1.2, 0.45], 32], [[0.2, 1.27, -0.3], [-0.3, 1.2, 0.45], 30]); } },
   { id: 's07', fn(t, u, s) { zsUse('control'); const g = zsRamp(t, zvK(s, 'green'), zvK(s, 'green') + 0.8); ZS_DIAL.value = g; ZS_SCREEN.uWave.value = 1.5;
     ZS.ctrlLights.forEach((l: THREE.PointLight) => (l.intensity = 9 * zvFlick(t, 13, 0.6)));
     zsPut('vance', ZV_CTRL.vance, Math.PI, zvSit('vance', 0.5, ZS_POSES.micDesk), t, 'awe', { lookY: 0.2 }); zsSeat(0, ZV_CTRL.vance, Math.PI);
@@ -171,34 +172,34 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     const D = zsPut('dani', [x, 0, 1.8], Math.PI / 2 - 0.5, { j: { hL: [0, 0, 0.12], kL: [0.3], hR: [-0.2, 0, -0.1], kR: [0.1], spine: [0.05, -0.8, 0], chest: [0, -0.4, 0], head: [0, -0.7, 0], sR: [-1.2, 0, -0.6], eR: [-0.3], sL: [0, 0, 0.6] }, f: [0.3, 0.1] }, t, 'grin'); ZV.skate(D);
     zsLook([x + 3.2, 1.25, 4.2], [x, 1.2, 1.6], 38); } },
   { id: 's22', fn(t, u) { zsUse('street'); zsPut('helen', [-9.4, 0.15, -7.0], 0.5, zsMix(ZS_POSES.handsHips, ZS_POSES.point, Math.max(0, Math.sin(t * 2)) * 0.6), t, 'angry');
-    zvCam(u, [[-8.0, 1.6, -4.2], [-9.4, 1.65, -7.0], 34], [[-7.4, 1.8, -3.0], [-7.0, 1.4, -6.0], 40]); } },
+    zvCam(u, [[-8.7, 1.55, -5.4], [-9.4, 1.62, -7.0], 32], [[-8.5, 1.55, -5.2], [-9.3, 1.6, -7.0], 30]); } },
 
   // ===== THE BASEMENT =====
-  { id: 's23', fn(t, u) { zvBasement(t, { theo: 'grin', dani: 'smirk', bol: 'smile' }); zvCam(u, [[-1.8, 1.45, 0.6], [-0.4, 1.05, -1.6], 44], [[-1.3, 1.25, -0.1], [-0.35, 1.08, -1.6], 36]); } },
+  { id: 's23', fn(t, u) { ZV.theoAtMic = true; zvBasement(t, { theo: 'grin', dani: 'smirk', bol: 'smile' }); zvCam(u, [[-1.8, 1.45, 0.6], [-0.4, 1.05, -1.6], 44], [[-1.3, 1.25, -0.1], [-0.35, 1.08, -1.6], 36]); } },
   { id: 's24', fn(t, u) { zvBasement(t, { theo: 'smile', dani: 'skeptic' }, { dani: zsMix(ZS_POSES.armsCrossed, ZS_POSES.talkR, 0.5) }); zvLookFace('dani', 1.2, 0.4, 0, 32, t); } },
   { id: 's25', fn(t, u) { zvBasement(t, { bol: 'smile' }); zvLookFace('bolacha', 1.5, 0.2, 0.1, 34, t); } },
-  { id: 's26', fn(t, u) { zvBasement(t, { theo: 'skeptic' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.micDesk, ZS_POSES.point, 0.35)) }); zvLookFace('theo', 1.1, -0.6, 0, 32, t); } },
+  { id: 's26', fn(t, u) { zvBasement(t, { theo: 'skeptic' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.sit, ZS_POSES.point, 0.45)) }); zvLookFace('theo', 1.1, -0.6, 0, 32, t); } },
   { id: 's27', fn(t, u) { zvBasement(t, { bol: 'scream', dani: 'skeptic' }, { bol: zvSit('bolacha', 0.55, { ...ZS_POSES.sit, j: { ...ZS_POSES.sit.j, neck: [-0.4], head: [-0.4], sL: [-0.9, 0, 0.5], eL: [-1.5], sR: [-0.9, 0, -0.5], eR: [-1.5] } }) });
     zvCam(u, [[0.2, 1.1, 1.9], [1.45, 1.0, 1.15], 36], [[0.4, 1.0, 1.8], [1.45, 1.05, 1.15], 32]); } },
   { id: 's28', fn(t, u) { zvBasement(t, { theo: 'laugh', dani: 'skeptic', bol: 'grin' }); zvCam(u, [[-0.5, 1.4, 1.3], [0.6, 1.25, -1.0], 38], [[-0.3, 1.4, 1.1], [0.75, 1.3, -1.1], 34]); } },
-  { id: 's29', fn(t, u) { zvBasement(t, { theo: 'grin', dani: 'neutral', bol: 'calm' }); zvCam(u, [[1.6, 1.9, 1.9], [-0.6, 0.95, -1.2], 46], [[1.2, 1.8, 2.0], [-0.6, 0.95, -1.2], 44]); } },
+  { id: 's29', fn(t, u) { ZV.theoAtMic = true; zvBasement(t, { theo: 'grin', dani: 'neutral', bol: 'calm' }); zvCam(u, [[1.6, 1.9, 1.9], [-0.6, 0.95, -1.2], 46], [[1.2, 1.8, 2.0], [-0.6, 0.95, -1.2], 44]); } },
   { id: 's30', fn(t, u) { zvBasement(t, { dani: 'skeptic' }, { dani: zsMix(ZS_POSES.armsCrossed, ZS_POSES.shrug, 0.5) }); zvLookFace('dani', 1.3, -0.3, 0.02, 32, t); } },
   { id: 's31', fn(t, u) { zvBasement(t, { theo: 'smirk' }); zvLookFace('theo', 1.15, -0.55, 0, 32, t); } },
   { id: 's32', fn(t, u) { zvBasement(t, { dani: 'grin' }, { dani: zsMix(ZS_POSES.point, ZS_POSES.armsCrossed, 0.3) }); zvLookFace('dani', 1.4, 0.2, 0, 34, t); } },
   { id: 's33', fn(t, u) { zvBasement(t, { bol: 'smile', dani: 'smirk', theo: 'skeptic' }, { bol: zvSit('bolacha', 0.55, { ...ZS_POSES.sit, j: { ...ZS_POSES.sit.j, sR: [-0.8, 0, -0.4], eR: [-1.4], sL: [-0.7, 0, 0.4], eL: [-1.3] } }) }); zvLookFace('bolacha', 1.3, -0.3, 0.05, 32, t); } },
-  { id: 's34', fn(t, u) { zvBasement(t, { theo: 'neutral', dani: 'smirk', bol: 'calm' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.micDesk, ZS_POSES.talkL, 0.6)) }); zvCam(u, [[-1.4, 1.2, -0.4], [-0.3, 1.15, -1.45], 32], [[-1.3, 1.22, -0.55], [-0.3, 1.15, -1.45], 30]); } },
+  { id: 's34', fn(t, u) { zvBasement(t, { theo: 'neutral', dani: 'smirk', bol: 'calm' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.sit, ZS_POSES.talkL, 0.6)) }); zvLookFace('theo', 1.05, 0.5, 0, 32, t); } },
   { id: 's35', fn(t, u) { zvBasement(t, { dani: 'smirk', theo: 'skeptic' }, { dani: ZS_POSES.handsHips }); zvLookFace('dani', 1.2, 0.5, 0, 32, t); } },
-  { id: 's36', fn(t, u) { zvBasement(t, { theo: 'calm', dani: 'skeptic', bol: 'calm' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.micDesk, ZS_POSES.talkR, 0.5 + 0.3 * Math.sin(t * 2))) });
+  { id: 's36', fn(t, u) { zvBasement(t, { theo: 'calm', dani: 'skeptic', bol: 'calm' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.sit, ZS_POSES.talkR, 0.5 + 0.3 * Math.sin(t * 2))) });
     zvCam(u, [[0.9, 2.1, 1.6], [-0.4, 1.0, -1.4], 40], [[-0.3, 1.5, 0.6], [-0.35, 1.1, -1.4], 36]); } },
   { id: 's37', fn(t, u) { zvBasement(t, { bol: 'worried' }); zvLookFace('bolacha', 1.4, 0.0, 0.05, 32, t); } },
-  { id: 's38', fn(t, u) { zvBasement(t, { theo: 'grin' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.micDesk, ZS_POSES.shrug, 0.6)) }); zvLookFace('theo', 1.1, -0.3, 0, 32, t); } },
+  { id: 's38', fn(t, u) { zvBasement(t, { theo: 'grin' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.sit, ZS_POSES.shrug, 0.6)) }); zvLookFace('theo', 1.1, -0.3, 0, 32, t); } },
   { id: 's39', fn(t, u) { zvBasement(t, { dani: 'grin', theo: 'angry', bol: 'laugh' }, { dani: ZS_POSES.walkieTalk }); zvCam(u, [[-0.2, 1.4, 0.8], [0.85, 1.35, -1.2], 34], [[0.0, 1.38, 0.6], [0.85, 1.35, -1.2], 30]); } },
   { id: 's40', fn(t, u, s) { zvBasement(t, { theo: 'neutral', dani: 'neutral', bol: 'worried' }, { bol: ZS_POSES.stand }); const k = zvK(s, 'needle'); ZS_DIAL.value = zsRamp(t, k, k + 0.6) * 0.6;
     zvCam(u, [[-0.4, 1.0, -1.65], [-1.15, 0.92, -2.2], 30], [[-0.55, 0.98, -1.75], [-1.15, 0.92, -2.2], 24]); ZS.cast.bolacha.root.position.set(ZS.at[0] + 0.6, 0, ZS.at[2] + 0.2); } },
   { id: 's41', fn(t, u) { zvBasement(t, { theo: 'worried', dani: 'worried', bol: 'fear' }, { bol: ZS_POSES.scared }); ZS_DIAL.value = 1; ZS.baseKey.intensity = 22 * zvFlick(t, 9, 0.85);
     ZS.cast.bolacha.root.position.set(ZS.at[0] + 0.6, 0, ZS.at[2] + 0.2); ZS.cast.bolacha.root.rotation.y = Math.PI - 0.4;
     zvCam(u, [[2.2, 1.6, 2.1], [-0.4, 1.0, -1.3], 44], [[2.0, 1.5, 1.8], [-0.4, 1.0, -1.4], 42]); } },
-  { id: 's42', fn(t, u) { zvBasement(t, { theo: 'worried' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.micDesk, ZS_POSES.shrug, 0.4)) }); ZS_DIAL.value = 1; zvLookFace('theo', 1.05, -0.5, 0, 30, t); } },
+  { id: 's42', fn(t, u) { zvBasement(t, { theo: 'worried' }, { theo: zvSit('theo', 0.5, zsMix(ZS_POSES.sit, ZS_POSES.shrug, 0.4)) }); ZS_DIAL.value = 1; zvLookFace('theo', 1.05, -0.5, 0, 30, t); } },
   { id: 's43', fn(t, u) { zvBasement(t, { bol: 'fear' }, { bol: ZS_POSES.scared }); ZS_DIAL.value = 1; ZS.cast.bolacha.root.position.set(ZS.at[0] + 0.6, 0, ZS.at[2] + 0.2); ZS.cast.bolacha.root.rotation.y = Math.PI - 0.4;
     const P = ZS.cast.bolacha, hp = new THREE.Vector3(); P.J.head.getWorldPosition(hp); const o = ZS.at, f = P.root.rotation.y, d = zsLerp(1.6, 0.8, zsEase(u));
     zsLook([hp.x - o[0] + Math.sin(f) * d, hp.y - o[1] + 0.05, hp.z - o[2] + Math.cos(f) * d], [hp.x - o[0], hp.y - o[1] + 0.05, hp.z - o[2]], 30); } },
@@ -210,7 +211,7 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     const k = zvK(s, 'pass'), x = zsLerp(-0.2, 2.0, zsRamp(t, k - 0.2, k + 0.6)); if (t > k - 0.2 && t < k + 0.6) { const C = zsPut('chiado', [x, 0.6, -3.4], Math.PI / 2, ZS_CPOSES.hunch, t); ZS.chiado.fx(t, 0.3); }
     zvCam(u, [[-1.2, 1.2, 1.4], [0.6, 1.8, -2.4], 42], [[-1.0, 1.15, 1.2], [0.7, 1.85, -2.4], 40]); } },
   { id: 's46', fn(t, u) { zvBasement(t, { dani: 'skeptic', theo: 'worried' }, { dani: zsMix(ZS_POSES.handsHips, ZS_POSES.point, 0.4) }); ZS_DIAL.value = 0.5; zvLookFace('dani', 1.25, 0.3, 0, 32, t); } },
-  { id: 's47', fn(t, u, s) { zvBasement(t, { theo: 'angry' }, { theo: zvSit('theo', 0.5, { ...ZS_POSES.micDesk, j: { ...ZS_POSES.micDesk.j, sL: [-1.1, 0.2, 0.3], eL: [-0.6] } }) }); ZS_DIAL.value = 0.4;
+  { id: 's47', fn(t, u, s) { ZV.theoAtMic = true; zvBasement(t, { theo: 'angry' }, { theo: zvSit('theo', 0.5, { ...ZS_POSES.micDesk, j: { ...ZS_POSES.micDesk.j, sL: [-1.1, 0.2, 0.3], eL: [-0.6] } }) }); ZS_DIAL.value = 0.4;
     const k = zvK(s, 'rec'); ZS.cassette.children[1].position.y = 0.052 - (t > k ? 0.006 : 0);
     zvCam(u, [[-1.25, 1.15, -1.3], [-1.6, 0.8, -1.85], 30], [[-1.25, 1.1, -1.45], [-1.6, 0.8, -1.85], 26]); } },
   { id: 's48', fn(t, u) { zvBasement(t, { bol: 'fear', theo: 'worried', dani: 'worried' }, { bol: ZS_POSES.scared }); ZS.cast.bolacha.root.position.set(ZS.at[0] + 0.6, 0, ZS.at[2] + 0.2); ZS.cast.bolacha.root.rotation.y = Math.PI + 0.3;
@@ -230,7 +231,7 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
   { id: 's54', fn(t, u) { zsUse('street'); const turn = zsEase(u); const C = zsPut('coyle', [3.0, 0, 4.9], zsLerp(-0.4, Math.PI - 0.3, turn), ZS_POSES.walkieTalk, t, 'worried'); zsHold('phone', C, 'R', [0, -0.05, 0.03], [0, 0, 0]);
     zvCam(u, [[5.0, 1.7, 3.0], [3.0, 1.6, 4.9], 36], [[4.6, 1.7, 3.2], [3.0, 1.6, 4.9], 34]); } },
   { id: 's55', fn(t, u) { zsUse('street'); const C = zsPut('coyle', [3.0, 0, 4.9], Math.PI - 0.3, ZS_POSES.walkieTalk, t, 'worried'); zsHold('phone', C, 'R', [0, -0.05, 0.03], [0, 0, 0]);
-    zvCam(u, [[4.5, 1.6, 9.5], [-2, 7, -60], 40], [[4.2, 1.6, 9.8], [-2, 8, -60], 38]); } },
+    zvCam(u, [[0.6, 1.7, 6.2], [-2, 7, -60], 40], [[0.4, 1.7, 6.5], [-2, 8, -60], 38]); } },
   { id: 's56', fn(t, u) { zsUse('street'); const C = zsPut('coyle', [3.0, 0, 4.9], Math.PI - 0.3, ZS_POSES.walkieTalk, t, 'worried'); zsHold('phone', C, 'R', [0, -0.05, 0.03], [0, 0, 0]); zvLookFace('coyle', 1.0, -0.5, 0, 30, t); } },
   { id: 's57', fn(t, u) { zsUse('street'); const C = zsPut('coyle', [3.0, 0, 4.9], Math.PI - 0.6, ZS_POSES.walkieTalk, t, 'fear'); zsHold('phone', C, 'R', [0, -0.05, 0.03], [0, 0, 0]);
     zvCam(u, [[3.5, 1.7, 7.2], [3.0, 1.6, 4.9], 34], [[1.5, 3.0, 10.5], [0, 1.5, -7.5], 44]); } },
@@ -244,13 +245,13 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     const rp: Vec3 = zvL3(ZV_SHOP.ray, [-2.7, 0, -1.2], zsRamp(t, s.t0 + 0.6, pl - 0.6));
     zsPut('ray_old', rp, zvTo(rp, [-3.5, 0, -1.2]), t > pl - 0.6 ? ZS_POSES.pullPlug : zsWalk(t * 5, 0.7), t, 'fear', { lookX: 0.2 }, 'ray_old');
     zvCam(u, [[0.8, 1.6, 1.8], [-1.0, 1.3, -0.8], 42], [[0.0, 1.5, 1.4], [-2.6, 1.0, -1.2], 40]); } },
-  { id: 's60', fn(t, u) { zsUse('shop'); const R = zsPut('ray_old', ZV_SHOP.ray, Math.PI / 2 - 0.3, zvSit('ray_old', 0.5, { ...ZS_POSES.sit, j: { ...ZS_POSES.sit.j, sR: [-0.9, 0, -0.2], eR: [-1.8], head: [0.25] } }), t, 'sad'); zsSeat(2, ZV_SHOP.ray, Math.PI / 2 - 0.3);
+  { id: 's60', fn(t, u) { zsUse('shop'); const R = zsPut('ray_old', ZV_SHOP.ray, Math.PI / 2 - 0.3, zvSit('ray_old', 0.5, { ...ZS_POSES.sit, j: { ...ZS_POSES.sit.j, sR: [-0.5, 0, -0.2], eR: [-1.2], head: [0.25] } }), t, 'sad'); zsSeat(2, ZV_SHOP.ray, Math.PI / 2 - 0.3);
     zsHold('glassDrink', R, 'R', [0, -0.06, 0.04], [0, 0, 0]); zvLookFace('ray_old', 1.0, -0.7, 0.1, 32, t); } },
 
   // ===== REWIND VIDEO =====
-  { id: 's61', fn(t, u) { zsUse('rewind'); const K = zsPut('kyle', ZV_RW.kyle, 0.6, { j: { sR: [-1.0, 0.2, -0.2], eR: [-1.0], sL: [-0.3, 0, 0.2], eL: [-0.6], head: [0.1, 0.2, 0] }, f: [0.4, 0.8] }, t, 'grin'); zsHold('cassette', K, 'R', [0, -0.07, 0.05], [1.4, 0, 0]);
+  { id: 's61', fn(t, u) { zsUse('rewind'); const K = zsPut('kyle', ZV_RW.kyle, 1.3, { j: { sR: [-1.0, 0.2, -0.2], eR: [-1.0], sL: [-0.3, 0, 0.2], eL: [-0.6], head: [0.1, 0.2, 0] }, f: [0.4, 0.8] }, t, 'grin'); zsHold('cassette', K, 'R', [0, -0.07, 0.05], [1.4, 0, 0]);
     zsPut('jess', ZV_RW.jess, 0.2, ZS_POSES.armsCrossed, t, 'tired');
-    zvCam(u, [[-0.6, 1.8, 1.6], [-2.4, 1.5, -0.4], 40], [[-0.9, 1.75, 1.2], [-2.4, 1.55, -0.5], 36]); } },
+    zvCam(u, [[0.9, 1.6, -0.4], [-2.3, 1.5, -0.6], 38], [[0.5, 1.6, -0.5], [-2.3, 1.55, -0.6], 34]); } },
   { id: 's62', fn(t, u) { zsUse('rewind'); zsPut('jess', ZV_RW.jess, 0.6, ZS_POSES.armsCrossed, t, 'skeptic'); zsPut('kyle', ZV_RW.kyle, -2.0, ZS_POSES.relaxed, t, 'smile'); zvLookFace('jess', 1.3, 0.2, 0.02, 32, t); } },
   { id: 's63', fn(t, u) { zsUse('rewind'); const K = zsPut('kyle', ZV_RW.kyle, -2.3, zsMix(ZS_POSES.shrug, ZS_POSES.talkR, 0.5), t, 'grin'); zsHold('cassette', K, 'R', [0, -0.07, 0.05], [1.4, 0, 0]); zvLookFace('kyle', 1.3, 0.3, 0, 32, t); } },
   { id: 's64', fn(t, u) { zsUse('rewind'); zsPut('jess', ZV_RW.jess, 0.9, { ...ZS_POSES.relaxed, j: { ...ZS_POSES.relaxed.j, head: [0.1, -0.3, 0] } }, t, 'tired', { lookX: 0.4 });
@@ -260,7 +261,7 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
   { id: 's66', fn(t, u) { zsUse('rewind'); zsPut('jess', ZV_RW.jess, 0.7, ZS_POSES.armsCrossed, t, 'smirk'); zsPut('kyle', [-1.6, 0, 0.9], -2.2, ZS_POSES.relaxed, t, 'laugh'); zvLookFace('jess', 1.2, 0.4, 0, 32, t); } },
   { id: 's67', fn(t, u, s) { zsUse('rewind'); const k = zvK(s, 'tvs'); ZS_SCREEN.uStatic.value = t > k ? 1 : 0.15; ZS.tvLight.intensity = t > k ? 5 : 1;
     zsPut('kyle', [1.0, 0, -0.6], zsLerp(-2.2, 2.2, zsRamp(t, k + 0.2, k + 1.0)), ZS_POSES.relaxed, t, t > k ? 'worried' : 'calm');
-    zvCam(u, [[-0.6, 1.5, 1.6], [2.6, 1.2, -2.0], 42], [[-0.4, 1.5, 1.3], [2.8, 1.2, -2.2], 40]); } },
+    zvCam(u, [[2.0, 1.5, 1.8], [2.9, 1.2, -2.2], 44], [[2.1, 1.5, 1.5], [3.0, 1.2, -2.3], 40]); } },
   { id: 's68', fn(t, u) { zsUse('rewind'); ZS_SCREEN.uStatic.value = 1; ZS.tvLight.intensity = 5; zsPut('jess', ZV_RW.jess, 0.3, { ...ZS_POSES.relaxed, j: { ...ZS_POSES.relaxed.j, head: [0.3, 0, 0] } }, t, 'tired', { lookY: -0.5 }); zvLookFace('jess', 1.4, -0.3, 0.05, 32, t); } },
   { id: 's69', fn(t, u, s) { zsUse('rewind'); ZS_SCREEN.uStatic.value = 1; const f = zvK(s, 'figure'); ZS_SCREEN.uShape.value = zsRamp(t, f - 0.4, f + 0.6); ZS.tvLight.intensity = 5 + 2 * Math.sin(t * 20);
     const kp: Vec3 = zvL3([1.4, 0, -0.9], [0.4, 0, 0.3], zsRamp(t, f, s.t1)); zsPut('kyle', kp, 2.3, zsMix(ZS_POSES.relaxed, ZS_POSES.scared, zsRamp(t, f - 0.2, f + 0.5)), t, 'fear', {}, 'kyle');
@@ -317,15 +318,15 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     zsHold('flashlight', B, 'R'); zvFlash(B, 0.8); const cp = zvStutter([w.p[0] - 0.4, 0, w.p[2] - 2.6 - Math.sin(t * 2) * 0.6], t, 6, 2);
     zsPut('chiado', cp, zvTo(cp, w.p), ZS_CPOSES.reach, t); ZS.chiado.fx(t, 1, 2);
     zsLook([w.p[0] + 0.8, 1.2 + Math.sin(t * 9) * 0.05, w.p[2] + 3.2], [w.p[0], 1.3, w.p[2] - 1.0], 42); } },
-  { id: 's87', fn(t, u, s) { zsUse('street'); const w = zvWalk([-30, 0, 9.5], [1.9, 0, -6.6], s.t0, t, 4.5, 1); zsPut('bolacha', w.p, w.face, w.pose, t, 'scream');
-    zvCam(u, [[-6, 2.2, 10], [-14, 1.2, 4], 40], [[-2, 2.0, 8], [0, 1.2, -6], 42], t, 0.02); } },
+  { id: 's87', fn(t, u, s) { zsUse('street'); const w = zvWalk([-14, 0, 7.5], [1.9, 0, -6.6], s.t0, t, 4.2, 1); zsPut('bolacha', w.p, w.face, w.pose, t, 'scream');
+    zsLook([w.p[0] + 4.5, 1.8, w.p[2] + 4.0], [w.p[0], 1.2, w.p[2]], 40); } },
 
   // ===== THE FIGHT =====
   { id: 's88', fn(t, u, s) { zsUse('shop'); ZS.shopCeil.intensity = 4; const d = zvK(s, 'door'); const bp: Vec3 = zvL3([1.9, 0, 3.6], [1.0, 0, 1.2], zsRamp(t, d, d + 0.9));
     zsPut('bolacha', bp, Math.PI + 0.3, t < d + 0.9 ? zsWalk(t * 10, 1, 1) : ZS_POSES.scared, t, 'terror');
     zsPut('ray_old', ZV_SHOP.ray, zsLerp(Math.PI / 2, -2.4, zsRamp(t, d + 0.2, d + 0.8)), zsMix(ZS_POSES.stand, ZS_POSES.point, zsRamp(t, d + 0.8, d + 1.6)), t, 'angry');
     zvCam(u, [[-2.2, 1.6, -1.6], [1.4, 1.2, 1.6], 44], [[-2.0, 1.6, -1.8], [1.2, 1.2, 1.0], 42]); } },
-  { id: 's89', fn(t, u) { zsUse('shop'); ZS.shopCeil.intensity = 4; const B = zsPut('bolacha', [1.0, 0, 1.2], Math.PI + 0.6, { j: { sR: [-1.3, 0, -0.2], eR: [-0.9], sL: [-0.5, 0, 0.3], eL: [-1.0] }, f: [0.6, 0.85] }, t, 'terror'); zsHold('walkie', B, 'R');
+  { id: 's89', fn(t, u) { zsUse('shop'); ZS.shopCeil.intensity = 4; const B = zsPut('bolacha', [1.0, 0, 1.2], Math.PI + 0.6, { j: { sR: [-0.7, 0, -0.3], eR: [-0.6], sL: [-0.5, 0, 0.3], eL: [-1.0] }, f: [0.6, 0.85] }, t, 'terror'); zsHold('walkie', B, 'R');
     zsPut('ray_old', ZV_SHOP.ray, -2.4, ZS_POSES.stand, t, 'worried'); zvLookFace('bolacha', 1.1, -0.4, 0, 34, t); } },
   { id: 's90', fn(t, u, s) { zsUse('shop'); const a = zvK(s, 'all'); ZS_DIAL.value = t > a ? 1 : 0; ZS.shopCeil.intensity = 4 * (t > a ? zvFlick(t, 14, 0.5) : 1);
     ZS.shopRadios.forEach((r: THREE.Object3D, i: number) => { r.rotation.z = t > a ? Math.sin(t * 40 + i) * 0.01 : 0; });
@@ -358,14 +359,14 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     if (t < th) zsHold('axe', R, 'R', [0, -0.07, 0.02], [1.5, 0, 0]);
     zsPut('chiado', [-0.6, 0, 1.2], zvTo([-0.6, 0, 1.2], [0.2, 0, 0.6]), t < sw ? ZS_CPOSES.stalk : ZS_CPOSES.swipe, t); ZS.chiado.fx(t, 1, 2);
     ZS.shopRadios.forEach((r: THREE.Object3D, i: number) => { if (i > 20 && i < 30 && t > th) { r.position.y = Math.max(r.position.y - 0, 0.52 + Math.floor((i % 4)) * 0.6 - Math.min(1, (t - th) * 2) * 0.5); r.rotation.z = Math.min(1, (t - th) * 3) * 0.6; } });
-    zvCam(u, [[-1.8, 1.5, -1.0], [1.0, 1.2, -0.6], 44], [[-1.8, 1.4, -1.2], [2.2, 0.9, -1.8], 42], t, t > th && t < th + 0.5 ? 0.07 : 0.02); } },
+    zvCam(u, [[-1.2, 1.4, 1.8], [1.2, 1.1, -0.6], 44], [[-1.0, 1.3, 1.6], [2.3, 0.8, -2.0], 44], t, t > th && t < th + 0.5 ? 0.07 : 0.02); } },
   { id: 's96', fn(t, u) { zsUse('shop'); ZS_DIAL.value = 1; ZS.shopGlass.visible = false; ZS.shopCeil.intensity = 3 * zvFlick(t, 12, 0.6);
-    zsPut('ray_old', [2.9, 0, -2.4], -2.2, ZS_POSES.fallen, t, 'pain');
+    zsPut('ray_old', [2.9, 0, -2.4], -0.88, ZS_POSES.fallen, t, 'pain');
     const cp = zvStutter(zvL3([-0.6, 0, 1.2], [0.2, 0, -1.0], zsEase(u)), t, 5); zsPut('chiado', cp, zvTo(cp, [0.8, 0, -2.2]), ZS_CPOSES.stalk, t); ZS.chiado.fx(t, 1);
     zsPut('bolacha', [0.8, 0, -2.4], 0.3, ZS_POSES.cower, t, 'terror');
     zvCam(u, [[1.3, 0.5, -2.8], [-0.3, 1.6, 0.6], 44], [[1.2, 0.5, -2.8], [0.1, 1.8, -0.4], 46]); } },
   { id: 's97', fn(t, u) { zsUse('shop'); ZS_DIAL.value = 1; ZS.shopGlass.visible = false; ZS.shopCeil.intensity = 3 * zvFlick(t, 12, 0.6);
-    zsPut('ray_old', [2.9, 0, -2.4], -2.2, { ...ZS_POSES.fallen, j: { ...ZS_POSES.fallen.j, head: [-0.5, -0.2, 0], sR: [-1.4, 0, -0.3], eR: [-0.2] } }, t, 'shout'); zvLookFace('ray_old', 0.9, 0.3, 0.15, 36, t); } },
+    zsPut('ray_old', [2.9, 0, -2.4], -0.88, { ...ZS_POSES.fallen, j: { ...ZS_POSES.fallen.j, head: [-0.5, -0.2, 0], sR: [-1.4, 0, -0.3], eR: [-0.2] } }, t, 'shout'); zvLookFace('ray_old', 0.9, 0.3, 0.15, 36, t); } },
   { id: 's98', fn(t, u, s) { zsUse('shop'); const pl = zvK(s, 'plug'); ZS_DIAL.value = t < pl ? 1 : 0.15; ZS.shopGlass.visible = false; ZS.shopCeil.intensity = t < pl ? 3 * zvFlick(t, 12, 0.6) : 0.6;
     zsPut('bolacha', [0.8, 0, -2.4], Math.PI, t < pl - 0.3 ? ZS_POSES.pullPlug : zsMix(ZS_POSES.pullPlug, ZS_POSES.hitBack, zsRamp(t, pl - 0.3, pl + 0.2)), t, 'shout', {}, 'bolacha');
     zsPut('chiado', [0.2, 0, -1.0], zvTo([0.2, 0, -1.0], [0.8, 0, -2.4]), t < pl ? ZS_CPOSES.reach : ZS_CPOSES.hunch, t); ZS.chiado.fx(t, t < pl ? 1 : 0.4); ZS.chiado.root.visible = t < pl || zvFlick(t, 40, 0.6) > 0.5;
@@ -374,7 +375,7 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
   { id: 's99', fn(t, u) { zsUse('shop'); ZS_DIAL.value = 0.2; ZS.shopGlass.visible = false; ZS.shopCeil.intensity = 0.6;
     const cp = zvStutter([0.4, 0, -1.6], t, 4); zsPut('chiado', cp, zvTo(cp, [0.8, 0, -2.4]), ZS_CPOSES.reach, t); ZS.chiado.fx(t, 0.8);
     zsPut('bolacha', [0.8, 0, -2.5], 2.6, ZS_POSES.cower, t, 'scream', {}, 'bolacha');
-    zsPut('ray_old', [2.9, 0, -2.4], -2.2, ZS_POSES.fallen, t, 'pain');
+    zsPut('ray_old', [2.9, 0, -2.4], -0.88, ZS_POSES.fallen, t, 'pain');
     zvCam(u, [[-1.4, 1.2, -0.6], [0.6, 1.0, -2.2], 40], [[-1.2, 1.1, -0.9], [0.6, 1.0, -2.2], 38], t, 0.015); } },
   { id: 's100', fn(t, u, s) { zsUse('shop'); ZS.shopGlass.visible = false; ZS.shopCeil.intensity = 0.6; ZS_DIAL.value = 0.2; const d = zvK(s, 'door');
     const dp: Vec3 = zvL3([1.9, 0, 3.8], [1.4, 0, 1.6], zsRamp(t, d, d + 0.8)), tp: Vec3 = zvL3([2.4, 0, 4.2], [2.2, 0, 2.2], zsRamp(t, d + 0.2, d + 1.0));
@@ -388,7 +389,7 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
   { id: 's102', fn(t, u, s) { zsUse('shop'); ZS.shopGlass.visible = false; ZS.shopCeil.intensity = 0.6; ZS_DIAL.value = 0.3;
     const T = zsPut('theo', [1.9, 0, 1.4], zvTo([1.9, 0, 1.4], [0.3, 0, -1.0]), ZS_POSES.holdUp, t, 'rage', {}, 'theo'); zsHold('cassette', T, 'R', [0, -0.08, 0.06], [1.4, 0, 0]);
     zsPut('chiado', zvStutter([0.3, 0, -1.0], t, 5), zvTo([0.3, 0, -1.0], [1.9, 0, 1.4]), ZS_CPOSES.reach, t); ZS.chiado.fx(t, 1);
-    zvLookFace('theo', 1.2, -0.5, -0.1, 36, t); } },
+    zvLookFace('theo', 1.3, -1.0, -0.05, 36, t); } },
   { id: 's103', fn(t, u, s) { zsUse('shop'); ZS.shopGlass.visible = false; const fb = zvK(s, 'fb'), sp = zvK(s, 'spark'); ZS_DIAL.value = t > fb ? 1 : 0.3; ZS.shopCeil.intensity = t > fb ? 3 * zvFlick(t, 30, 0.1) : 0.6;
     const C = zsPut('chiado', zvStutter([0.3, 0, -1.0], t, 14, 2.5), 0.9 + Math.sin(t * 13) * 0.3, t > fb ? ZS_CPOSES.convulse : ZS_CPOSES.reach, t); ZS.chiado.fx(t, t > fb ? 1.8 : 1, 3);
     zvSparks([0.3, 1.8, -1.0], sp, t, 60);
@@ -419,9 +420,9 @@ const ZV_SHOTS: { id: string; fn(t: number, u: number, s: Scene): void }[] = [
     const C = zsPut('coyle', [-1.0, 0, -4.8], Math.PI, ZS_POSES.walkieTalk, t, 'calm'); zsHold('phone', C, 'R', [0, -0.05, 0.03], [0, 0, 0]);
     zvCam(u, [[-2.2, 1.7, -2.6], [-1.0, 1.6, -4.8], 34], [[-1.8, 1.7, -3.0], [-1.0, 1.65, -4.8], 30]); } },
   { id: 's116', fn(t, u, s) { zsUse('basement'); const g = zvK(s, 'glow'); ZS_DIAL.value = zsRamp(t, g, g + 1.0); ZS.baseKey.intensity = 0;
-    zsPut('theo', [-2.4, 0.81, 0.4], Math.PI - 0.3, ZS_POSES.stand, t, 'fear');
-    zvCam(u, [[1.6, 1.3, 1.8], [-0.8, 1.0, -2.0], 44], [[1.2, 1.2, 1.2], [-0.8, 0.95, -2.0], 40]); } },
-  { id: 's117', fn(t, u) { zsUse('basement'); ZS_DIAL.value = 1; ZS.baseKey.intensity = 0; zsPut('theo', [-2.4, 0.81, 0.4], Math.PI - 0.3, ZS_POSES.scared, t, 'terror', {}, 'theo'); zvLookFace('theo', 0.95, 0.4, 0, 32, t); } },
+    zsPut('theo', [-2.1, 0, 1.1], Math.PI - 0.5, ZS_POSES.stand, t, 'fear');
+    zvCam(u, [[1.6, 1.4, 2.0], [-1.3, 1.1, -0.9], 46], [[1.3, 1.35, 1.6], [-1.3, 1.05, -1.0], 42]); } },
+  { id: 's117', fn(t, u) { zsUse('basement'); ZS_DIAL.value = 1; ZS.baseKey.intensity = 0; zsPut('theo', [-2.1, 0, 1.1], Math.PI - 0.5, ZS_POSES.scared, t, 'terror', {}, 'theo'); zvLookFace('theo', 0.95, 0.4, 0, 32, t); } },
   { id: 's118', fn(t, u, s) { zsUse('basement'); ZS_DIAL.value = 1; ZS.baseKey.intensity = 0; const c = zvK(s, 'cut');
     zvCam(u, [[-1.0, 1.0, -1.4], [-1.15, 0.9, -2.2], 30], [[-1.1, 0.95, -1.85], [-1.15, 0.9, -2.2], 20]); if (t > c) { ZS_DIAL.value = 0; ZS.sets.basement.visible = false; } } },
 ];
@@ -439,7 +440,7 @@ ZV.skate = (P: ZsPerson) => { const sk: THREE.Object3D = ZS.props.skate; sk.visi
 
 // the shots share the world built in world3d.ts
 p3Shots(ZV_SHOTS, (w) => { const st = zsBuild(w); ZS.lines = ZS_LINES; return st; }, (t, u, shot, s) => {
-  zvReset(t);
+  zvReset(t); ZV.theoAtMic = false;
   ZV.t74 = SCENES.scenes.find((x) => x.id === 's74')!.t0;
   // where Bolacha stops on the path (the end of his walk when the singing is interrupted)
   if (!ZV.bStop) { const w = zvWalk([0, 0, -26], [1.2, 0, 10], ZV.t74, SCENES.scenes.find((x) => x.id === 's79')!.t0, 1.0); ZV.bStop = w.p; }

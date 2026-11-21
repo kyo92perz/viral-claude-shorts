@@ -104,12 +104,15 @@ ${extra.map((f) => `    <script src="${f}"></script>\n`).join('')}    <script sr
     const tmp = path.join(dir, '_hf'); fs.rmSync(tmp, { recursive: true, force: true });
     const r = hf(['snapshot', 'project', '--at', times.join(','), '--no-end', '--output', tmp]);
     if (r.status !== 0) throw new Error('snapshot failed:\n' + r.stdout + r.stderr);
-    const pngs = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort();
+    const num = (f: string) => +(f.match(/(\d+)/)?.[1] ?? 0);   // frame-NN-at-T.Ts.png: frame-2 before frame-100 (a text sort breaks past 99 frames)
+    const pngs = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort((a, b) => num(a) - num(b));
     return pngs.map((f, i) => { const o = path.join(dir, `p${String(i + 1).padStart(2, '0')}.png`); fs.renameSync(path.join(tmp, f), o); return o; });
   },
   video(v) {
     const out = path.join(v, 'render', 'silent.mp4'); fs.mkdirSync(path.dirname(out), { recursive: true });
-    const r = hf(['render', 'project', '--output', out, '--fps', String(JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')).fps || 30), '--quality', 'high', ...(process.env.HF_WORKERS ? ['--workers', process.env.HF_WORKERS] : [])], { stdio: 'inherit' });
+    const r = hf(['render', 'project', '--output', out, '--fps', String(JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')).fps || 30), '--quality', 'high', ...(process.env.HF_WORKERS ? ['--workers', process.env.HF_WORKERS] : []),
+      // long renders: with HF_SEGMENTED_CAPTURE=true a stopped render picks up where it was (finished segments are reused)
+      ...(process.env.HF_SEGMENTED_CAPTURE === 'true' ? ['--resume', '--keep-segments'] : [])], { stdio: 'inherit' });
     if (r.status !== 0) throw new Error('the render failed');
     return out;
   },

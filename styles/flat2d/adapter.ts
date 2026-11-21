@@ -76,7 +76,8 @@ ${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration=
     const tmp = path.join(dir, '_hf'); fs.rmSync(tmp, { recursive: true, force: true });
     const r = hf(['snapshot', 'project', '--at', times.join(','), '--no-end', '--output', tmp]);
     if (r.status !== 0) throw new Error('snapshot failed:\n' + r.stdout + r.stderr);
-    const pngs = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort();
+    const num = (f: string) => +(f.match(/(\d+)/)?.[1] ?? 0);   // frame-NN-at-T.Ts.png: frame-2 before frame-100 (a text sort breaks past 99 frames)
+    const pngs = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort((a, b) => num(a) - num(b));
     return pngs.map((f, i) => { const o = path.join(dir, `p${String(i + 1).padStart(2, '0')}.png`); fs.renameSync(path.join(tmp, f), o); return o; });
   },
   video(v) {

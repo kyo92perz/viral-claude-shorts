@@ -14,7 +14,7 @@ const zsC = (c: string) => new THREE.Color(c);
 
 // skin: warm sheen, faint mottling and pores
 const zsSkin = (tone: string) => zsM('skin' + tone, () => p3Shader(new THREE.MeshPhysicalMaterial({ color: tone, roughness: 0.5, sheen: 0.35, sheenRoughness: 0.55, sheenColor: zsC('#ff8f6e'), clearcoat: 0.06, clearcoatRoughness: 0.6 }), 'zs-skin', {
-  bump: 0.00035, color: `float n = p3F(p3Pos.xy * 22.0 + p3Pos.z * 7.0), m = p3N(p3Pos.xy * 1400.0 + p3Pos.z * 900.0); diffuseColor.rgb *= 0.95 + 0.07 * n; p3Ht = m;` }));
+  color: `float n = p3F(p3Pos.xy * 22.0 + p3Pos.z * 7.0); diffuseColor.rgb *= 0.96 + 0.06 * n;` }));
 type ZsPattern = 'plain' | 'flannel' | 'denim' | 'knit' | 'canvas' | 'suit' | 'nylon';
 // cloth: a weave everywhere, plus the pattern (two colors), all from the object position (no uv seams)
 const ZS_CLOTH_GLSL: Record<ZsPattern, string> = {
@@ -186,7 +186,7 @@ const zsHead = (sp: ZsSpec, r: number) => {
     const bd = p3Blob((x, y, z) => { const mouth = Math.abs(x) < 0.26 && y > -0.62 && y < -0.42 && z > 0; const on = y < -0.12 && z > -0.3 && !mouth;
       const k = on ? (sp.beard ? 1.07 : 1.006) : 0.9, q = shape(x, y, z); return [q[0] * r * k, q[1] * r * k, q[2] * r * k]; }, undefined, 48, 36);
     F.add(zsMesh(bd, sp.beard ? zsHairMat(sp.beard) : zsM('stub' + sp.stubble + sp.skin, () => p3Shader(new THREE.MeshStandardMaterial({ color: '#ffffff', roughness: 0.8 }), 'zs-stubble', { uniforms: { uA: { value: zsC(sp.stubble!) }, uS: { value: zsC(sp.skin) } },
-      color: `float n = step(0.5, p3N(p3Pos.xy * 1400.0 + p3Pos.z * 500.0)); diffuseColor.rgb = mix(uS * 0.88, uA * 0.8, 0.5 * n + 0.12);` }))));
+      color: `float n = p3N(p3Pos.xy * 500.0 + p3Pos.z * 300.0); diffuseColor.rgb = mix(uS * 0.95, uA, 0.12 + 0.12 * n);` }))));
   }
   if (sp.mustache) F.add(zsMesh(zsCap(r * 0.045, r * 0.26), zsHairMat(sp.mustache), [0, -r * 0.43, surf(0, -0.43) + r * 0.01], [0, 0, Math.PI / 2], [1, 1, 0.7]));
   if (sp.glasses) {
@@ -203,7 +203,7 @@ const zsHead = (sp: ZsSpec, r: number) => {
   const face = {
     set(f: ZsFace) {
       const lid = Math.min(1, Math.max(-0.4, f.lid));
-      lids.forEach((l, i) => { l.rotation.x = -0.75 + lid * 1.7 + f.lookY * 0.25; l.rotation.z = (i ? 1 : -1) * f.browIn * 0.1; });
+      lids.forEach((l, i) => { l.rotation.x = -1.0 + lid * 1.8 + f.lookY * 0.25; l.rotation.z = (i ? 1 : -1) * f.browIn * 0.1; });
       lows.forEach((l) => { l.rotation.x = -f.lidLow * 0.45 - Math.max(0, f.smile) * 0.3; });
       eyes.forEach((e) => { e.rotation.set(-f.lookY * 0.4, f.lookX * 0.5, 0); });
       brows.forEach((b, i) => { const s = i ? -1 : 1; b.position.y = base.brows[i].y + f.browUp * r * 0.08 - f.browIn * r * 0.015; b.position.x = base.brows[i].x - s * f.browIn * r * 0.03;
@@ -267,7 +267,7 @@ const zsPerson = (sp: ZsSpec): ZsPerson => {
   if (sp.tie) J.chest.add(zsMesh(new THREE.BoxGeometry(H * 0.018, torso * 0.55, H * 0.006), zsStd(sp.tie, 0.5), [0, torso * 0.3, w * 0.62 + H * 0.004], [0.08, 0, 0]));
   if (sp.pager) J.hips.add(zsMesh(new THREE.RoundedBoxGeometry(H * 0.03, H * 0.045, H * 0.015, 2, 0.003), zsStd('#1a1a1c', 0.4), [hipW * 1.3, 0.02 * H, H * 0.03]));
   J.neck.add(zsMesh(zsLimbGeo(H * 0.032, H * 0.034, neckL + 0.02), skin, [0, neckL + 0.01, 0]));
-  const head = zsHead(sp, r); head.g.position.y = r * 0.95; J.head.add(head.g);
+  const head = zsHead(sp, r); head.g.position.y = r * 0.8; J.head.add(head.g);
   // arms
   const sleeveF = sp.shirt.short && !sp.jacket ? skin : top;
   const hands: ReturnType<typeof zsHand>[] = [];
@@ -325,7 +325,7 @@ const zsTrack = (keys: [number, ZsPose][], t: number): ZsPose => {
 const ZS_POSES: Record<string, ZsPose> = {
   stand: { j: { sL: [0.05, 0, 0.12], sR: [0.05, 0, -0.12], eL: [-0.15], eR: [-0.15], hL: [0, 0, 0.02], hR: [0, 0, -0.02] }, f: [0.3, 0.3] },
   relaxed: { j: { spine: [-0.03], sL: [0.08, 0, 0.1], sR: [0.02, 0, -0.14], eL: [-0.25], eR: [-0.1], hL: [0.02, 0, 0.05], hR: [-0.04, 0.1, -0.01], kR: [0.08], head: [0.04, 0, 0.05] }, f: [0.35, 0.3] },
-  armsCrossed: { j: { sL: [-0.55, 0.3, 0.22], eL: [-1.9, 0.6, 0], sR: [-0.6, -0.3, -0.25], eR: [-1.9, -0.6, 0], head: [-0.05] }, f: [0.6, 0.6] },
+  armsCrossed: { j: { sL: [-0.25, 0, -0.08], eL: [-1.35], wL: [0, 0, -0.5], sR: [-0.3, 0, 0.08], eR: [-1.3], wR: [0, 0, 0.5], head: [-0.05] }, f: [0.55, 0.55] },
   handsHips: { j: { sL: [0.1, 0, 0.55], eL: [-1.4, 0, 0], wL: [0, 0, -0.4], sR: [0.1, 0, -0.55], eR: [-1.4, 0, 0], wR: [0, 0, 0.4], hL: [0, 0, 0.07], hR: [0, 0, -0.07] }, f: [0.5, 0.5] },
   point: { j: { sR: [-1.45, 0.1, -0.1], eR: [-0.1], wR: [0.1], chest: [0, -0.15, 0], head: [0, -0.15, 0], sL: [0.05, 0, 0.12], eL: [-0.2] }, f: [0.35, 0.7] },
   shrug: { j: { sL: [0.1, 0, 0.35], eL: [-1.3, 0.4, 0], sR: [0.1, 0, -0.35], eR: [-1.3, -0.4, 0], head: [0, 0, 0.15], chest: [0.05] }, f: [0.1, 0.1] },
@@ -843,6 +843,8 @@ const zsSetWoods = () => {
   const ground = g.children[0] as THREE.Mesh; ground.position.x = 0;
   for (let k = 0; k < 70; k++) { const rnd = p3Rnd(500 + k); let x = (rnd() - 0.5) * 70, z = (rnd() - 0.5) * 90; if (Math.abs(x - Math.sin(z * 0.12) * 2.5) < 3.5) x += x < 0 ? -4 : 4;
     const tr = zsPine(10 + rnd() * 9, k + 3); tr.position.set(x, 0, z); tr.rotation.y = rnd() * 6; g.add(tr); }
+  for (let k = 0; k < 36; k++) { const rnd = p3Rnd(1700 + k), z = -30 + k * 1.7 + rnd(), side = k % 2 ? 1 : -1, x = Math.sin(z * 0.12) * 2.5 + side * (3.2 + rnd() * 4);
+    const tr = zsPine(8 + rnd() * 8, 300 + k); tr.position.set(x, 0, z); tr.rotation.y = rnd() * 6; g.add(tr); }
   for (let k = 0; k < 30; k++) { const rnd = p3Rnd(900 + k), x = (rnd() - 0.5) * 40, z = (rnd() - 0.5) * 60; if (Math.abs(x) < 3) continue;
     g.add(zsMesh(new THREE.DodecahedronGeometry(0.3 + rnd() * 0.5, 1), zsConcrete('#5a5e58'), [x, 0.1, z], [rnd() * 3, rnd() * 3, 0], [1, 0.6, 1.2])); }
   // the pylons and the humming line above the path
@@ -903,13 +905,13 @@ const zsSetShop = () => {
 const zsSparks = () => { const s = p3Swarm(80, new THREE.SphereGeometry(0.012, 4, 3), zsGlow('#ffd27a', 3)); s.castShadow = false; return s; };
 
 // ---------------------------------------------------------------- the whole world, built once
-const ZS_FOG: Record<string, [string, number]> = { dish: ['#111a2e', 0.011], control: ['#0b0d0c', 0.02], basement: ['#120c08', 0.03], street: ['#121828', 0.016], rewind: ['#0c0a14', 0.02], woods: ['#141d33', 0.04], shop: ['#0e0b08', 0.03] };
+const ZS_FOG: Record<string, [string, number]> = { dish: ['#111a2e', 0.011], control: ['#0b0d0c', 0.02], basement: ['#120c08', 0.03], street: ['#121828', 0.016], rewind: ['#0c0a14', 0.02], woods: ['#1a2440', 0.028], shop: ['#0e0b08', 0.03] };
 const ZS_ENV: Record<string, number> = { dish: 0.05, control: 0.18, basement: 0.08, street: 0.05, rewind: 0.14, woods: 0.03, shop: 0.08 };
-const ZS_BG: Record<string, string> = { dish: '#0e1528', control: '#050605', basement: '#050403', street: '#0e1322', rewind: '#05040a', woods: '#121a2e', shop: '#060504' };
+const ZS_BG: Record<string, string> = { dish: '#0e1528', control: '#050605', basement: '#050403', street: '#0e1322', rewind: '#05040a', woods: '#1a2440', shop: '#060504' };
 // a soft fill near the camera (the 'eye light' of film sets): faces never fall into pure black
 const ZS_FILL: Record<string, [string, number]> = { dish: ['#8fa6ff', 2], control: ['#d8f0d0', 2.5], basement: ['#ffd9b0', 3.5], street: ['#9fb0e8', 3], rewind: ['#c8d0ff', 2.5], woods: ['#9fb4ff', 2.2], shop: ['#ffe0b8', 3] };
 const zsBuild = (w: World) => {
-  const st = p3Stage(w, { finish: { vignette: 0.55, sat: 0.92, curve: 0.3, grain: 0.022 } });
+  const st = p3Stage(w, { finish: { vignette: 0.55, sat: 0.92, curve: 0.3, grain: 0.009 } });
   st.scene.fog = new THREE.FogExp2('#000000', 0.02);
   ZS.st = st; ZS.sets = {} as Record<string, THREE.Group>;
   const make: Record<string, () => THREE.Group> = { dish: zsSetDish, control: zsSetControl, basement: zsSetBasement, street: zsSetStreet, rewind: zsSetRewind, woods: zsSetWoods, shop: zsSetShop };
@@ -954,6 +956,7 @@ const zsPut = (who: string, p: Vec3, face: number, pose: ZsPose, t: number, expr
   P.root.visible = true; const q = zsAt(p); P.root.position.set(q[0] + (pose.x || 0), q[1], q[2] + (pose.z || 0)); P.root.rotation.set(0, face, 0);
   zsApply(P, who === 'chiado' ? pose : zsAlive(pose, t, who.length * 1.37));
   if (who !== 'chiado') zsFace(P, t, expr || pose.face, who.length * 0.77, look, speaks);
+  P.root.updateMatrixWorld(true);   // so cameras and props that read joint positions this frame see the new pose
   return P;
 };
 // a chair under a seated person (set-local position of the person, their facing)
