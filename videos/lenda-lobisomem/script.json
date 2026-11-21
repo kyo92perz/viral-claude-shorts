@@ -1,0 +1,97 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "lo_ju",
+   "text": "Dizem que o sétimo filho homem vira lobisomem. Meu primo Tonho era o sétimo.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "lo_ju",
+   "text": "Na roça do meu tio, ninguém falava disso. Mas toda sexta-feira de lua cheia, o Tonho sumia antes da meia-noite.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "j01",
+   "who": "lo_ju2",
+   "text": "Tonho, aonde você vai a essa hora?",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "t01",
+   "who": "lo_tonho",
+   "text": "Fica em casa, Júlia. Hoje não.",
+   "pause": 0.7,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "lo_ju",
+   "text": "Eu segui ele até a encruzilhada. Ele deitou no chão de terra e começou a rolar.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "lo_ju",
+   "text": "Os ossos estalaram. As costas cresceram. As orelhas subiram. E o rosto do meu primo virou focinho.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n05",
+   "who": "lo_ju",
+   "text": "O bicho uivou pra lua. E os cachorros da roça inteira responderam.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "n05b",
+   "who": "lo_ju",
+   "text": "Eu tapei a boca pra não gritar. O bicho era maior que um cavalo, e ainda usava a camisa do Tonho, toda rasgada.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "lo_ju",
+   "text": "Eu pisei num galho. Ele virou a cabeça. E aqueles olhos amarelos me acharam.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n07",
+   "who": "lo_ju",
+   "text": "Corri pro galinheiro e tranquei a porta. Ele farejou cada fresta, rosnando, até o galo cantar.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n08",
+   "who": "lo_ju",
+   "text": "De manhã, o Tonho apareceu na cozinha, todo arranhado, com um pedaço do meu vestido preso no dente.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "t02",
+   "who": "lo_tonho",
+   "text": "Bom dia, prima. Dormiu bem?",
+   "pause": 0.9,
+   "emo": 0.55
+  },
+  {
+   "id": "n09",
+   "who": "lo_ju",
+   "text": "E na sua família? Quem é o sétimo filho?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

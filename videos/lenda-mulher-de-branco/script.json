@@ -1,0 +1,97 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "br_eu",
+   "text": "Se você ver uma mulher de branco pedindo carona na estrada à meia-noite... não para.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "br_eu",
+   "text": "Meu pai, Seu Jair, foi caminhoneiro por trinta anos. E só teve medo uma vez.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "n03",
+   "who": "br_eu",
+   "text": "Era uma noite de chuva fina. No quilômetro sete, os faróis acharam uma moça de vestido branco, sozinha no acostamento.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "br_eu",
+   "text": "Ele parou. Ela subiu sem dizer nada. Molhada. Gelada.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n04b",
+   "who": "br_eu",
+   "text": "O rádio do caminhão chiou sozinho. E o vidro embaçou do lado dela, mas não do lado dele.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "j01",
+   "who": "br_jair",
+   "text": "Pra onde a senhora vai, moça?",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "m01",
+   "who": "br_moca",
+   "text": "Pra casa. Fica logo depois da curva.",
+   "pause": 0.8,
+   "emo": 0.5
+  },
+  {
+   "id": "n05",
+   "who": "br_eu",
+   "text": "Meu pai olhou no retrovisor. No espelho, o banco do lado estava vazio. Mas ela continuava sentada ali.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "br_eu",
+   "text": "Na curva, ela apontou pra umas luzes no meio do mato. Era um cemitério.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "m02",
+   "who": "br_moca",
+   "text": "Foi aqui que você me atropelou, Jair.",
+   "pause": 1.0,
+   "emo": 0.6
+  },
+  {
+   "id": "n07",
+   "who": "br_eu",
+   "text": "Ele pisou no freio. Quando olhou de novo, o banco estava vazio. Só uma poça de água e um véu branco.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n08",
+   "who": "br_eu",
+   "text": "Meu pai nunca atropelou ninguém. Mas o caminhão, antes de ser dele, era do meu avô. Que também se chamava Jair.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n09",
+   "who": "br_eu",
+   "text": "E você? Daria carona pra ela?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

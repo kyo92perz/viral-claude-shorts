@@ -1,0 +1,90 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "bo_eu",
+   "text": "Se você ver uma luz se mexendo no meio do mato, não olha pra ela. Pode ser o Boitatá.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "bo_eu",
+   "text": "Uma cobra de fogo, comprida feito um rio, com olhos que brilham igual farol. Ela protege a mata.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n03",
+   "who": "bo_eu",
+   "text": "Meu tio Zeca não acreditava. Ele queria abrir pasto e mandou botar fogo na mata da beira do rio.",
+   "pause": 0.4,
+   "emo": 0.55
+  },
+  {
+   "id": "z01",
+   "who": "bo_zeca",
+   "text": "Lenda não paga conta. Pode tacar fogo.",
+   "pause": 0.7,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "bo_eu",
+   "text": "Naquela noite, as chamas subiram alto. E os bichos fugiram correndo pro rio.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n05",
+   "who": "bo_eu",
+   "text": "Mas uma das chamas não subiu. Ela deitou no chão. E começou a se arrastar.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "bo_eu",
+   "text": "Era comprida. Muito comprida. E vinha na direção do meu tio, engolindo o fogo pelo caminho.",
+   "pause": 0.5,
+   "emo": 0.7
+  },
+  {
+   "id": "z02",
+   "who": "bo_zeca",
+   "text": "Meu Deus, que bicho é esse?",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n07",
+   "who": "bo_eu",
+   "text": "O Boitatá levantou a cabeça. Os olhos dele eram duas fogueiras. E meu tio olhou direto pra eles.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n08",
+   "who": "bo_eu",
+   "text": "No dia seguinte, o fogo tinha apagado sozinho. A mata estava inteira. E meu tio estava na beira do rio, cego, repetindo uma frase só.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "z03",
+   "who": "bo_zeca",
+   "text": "Não olha pra luz. Não olha pra luz.",
+   "pause": 0.9,
+   "emo": 0.6
+  },
+  {
+   "id": "n09",
+   "who": "bo_eu",
+   "text": "Se você visse a luz no mato... teria coragem de olhar?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

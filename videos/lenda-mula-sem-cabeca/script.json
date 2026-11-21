@@ -1,0 +1,90 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "mu_eu",
+   "text": "Ela não tem cabeça. Mas solta fogo pelo pescoço. E corre sete vilas antes do galo cantar.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "mu_eu",
+   "text": "Na minha cidade, de quinta pra sexta, ninguém sai depois da meia-noite. Por causa da Mula sem Cabeça.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "mu_eu",
+   "text": "Dizem que ela era uma moça amaldiçoada. E toda quinta-feira, à meia-noite, o corpo dela vira uma mula de fogo.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "mu_eu",
+   "text": "Eu e o Beto achamos que era história pra assustar criança. Então ficamos na praça pra ver.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "b01",
+   "who": "mu_beto",
+   "text": "Já é meia-noite. Cadê a tal mula?",
+   "pause": 0.8,
+   "emo": 0.5
+  },
+  {
+   "id": "n05",
+   "who": "mu_eu",
+   "text": "O sino da igreja tocou sozinho. Uma vez. Depois veio um relincho que gelou o meu sangue.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "mu_eu",
+   "text": "Ela veio pela rua de pedra, soltando faísca dos cascos e fogo de onde devia ter cabeça.",
+   "pause": 0.5,
+   "emo": 0.7
+  },
+  {
+   "id": "n07",
+   "who": "mu_eu",
+   "text": "Minha vó tinha ensinado: deita de barriga no chão, esconde as unhas e fecha os olhos. Ela não enxerga quem se esconde.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n08",
+   "who": "mu_eu",
+   "text": "Eu deitei. O Beto não. Ele ficou de pé, de boca aberta, olhando.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n09",
+   "who": "mu_eu",
+   "text": "Senti o calor passar por cima de mim. Ouvi o Beto gritar. Depois, silêncio.",
+   "pause": 1.0,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "mu_eu",
+   "text": "Quando abri os olhos, a praça estava vazia. Só ficaram marcas de casco queimadas nas pedras. E o boné do Beto, pegando fogo.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n11",
+   "who": "mu_eu",
+   "text": "Se ela passar na sua rua hoje, você deita no chão... ou fica olhando?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

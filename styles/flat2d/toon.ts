@@ -24,6 +24,8 @@ interface BzSpec {
   face?: 'normal' | 'pale' | 'dead' | 'dry';                                // pale: grey-blue (a ghost); dead: sunken eyes; dry: a dried corpse
   extra?: string;                                                           // more SVG drawn on the body (local coordinates)
   cotton?: boolean; claws?: boolean; ribs?: boolean;
+  headBack?: string; headFront?: string;                                    // more SVG in the head (local coords, radius ~90): behind the head (ears, a veil) / over the face under the eyes (a snout)
+  glow?: string;                                                            // color of the 'glow' eyes (monsters; default red)
 }
 // a noodle limb: a dark stroke under a colored one (round caps), from (0,0) down to (dx, len)
 const bzLimb = (len: number, w: number, color: string, dx = 0, bend = 0) => {
@@ -67,6 +69,7 @@ function bzChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = fals
     <g class="ey ey-closed" opacity="0"><path d="M${-e - 14} ${ey + 4} Q ${-e} ${ey - 12} ${-e + 14} ${ey + 4}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M${e - 14} ${ey + 4} Q ${e} ${ey - 12} ${e + 14} ${ey + 4}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/></g>
     <g class="ey ey-half" opacity="0"><path d="M${-e - 16} ${ey - 2} h32" stroke="${BZ.ink}" stroke-width="7" stroke-linecap="round"/><ellipse cx="${-e}" cy="${ey + 5}" rx="8" ry="6" fill="${BZ.ink}"/><path d="M${e - 16} ${ey - 2} h32" stroke="${BZ.ink}" stroke-width="7" stroke-linecap="round"/><ellipse cx="${e}" cy="${ey + 5}" rx="8" ry="6" fill="${BZ.ink}"/></g>
     <g class="ey ey-angry" opacity="0"><ellipse cx="${-e}" cy="${ey + 3}" rx="9" ry="11" fill="${BZ.ink}"/><ellipse cx="${e}" cy="${ey + 3}" rx="9" ry="11" fill="${BZ.ink}"/><path d="M${-e - 20} ${ey - 26} L${-e + 12} ${ey - 14}" stroke="${BZ.ink}" stroke-width="7" stroke-linecap="round"/><path d="M${e + 20} ${ey - 26} L${e - 12} ${ey - 14}" stroke="${BZ.ink}" stroke-width="7" stroke-linecap="round"/></g>
+    <g class="ey ey-glow" opacity="0"><circle cx="${-e}" cy="${ey}" r="30" fill="${sp.glow || '#ff3a2a'}" opacity="0.3"/><circle cx="${e}" cy="${ey}" r="30" fill="${sp.glow || '#ff3a2a'}" opacity="0.3"/><ellipse cx="${-e}" cy="${ey}" rx="16" ry="11" fill="${sp.glow || '#ff3a2a'}" ${bzO('stroke-width="4"')}/><ellipse cx="${e}" cy="${ey}" rx="16" ry="11" fill="${sp.glow || '#ff3a2a'}" ${bzO('stroke-width="4"')}/><ellipse cx="${-e}" cy="${ey}" rx="3" ry="9" fill="${BZ.ink}"/><ellipse cx="${e}" cy="${ey}" rx="3" ry="9" fill="${BZ.ink}"/></g>
     <g class="ey ey-dead" opacity="0"><circle cx="${-e}" cy="${ey}" r="20" fill="#1a1418"/><circle cx="${e}" cy="${ey}" r="20" fill="#1a1418"/><circle cx="${-e}" cy="${ey}" r="4" fill="#e8f0ff"/><circle cx="${e}" cy="${ey}" r="4" fill="#e8f0ff"/></g>`;
   const my = hr * 0.42, mouths = `
     <g class="mo mo-smile"><path d="M-22 ${my - 6} Q 0 ${my + 14} 22 ${my - 6}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/></g>
@@ -74,6 +77,7 @@ function bzChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = fals
     <g class="mo mo-open" opacity="0"><ellipse cx="0" cy="${my + 4}" rx="17" ry="20" fill="${BZ.red}" ${bzO('stroke-width="5"')}/></g>
     <g class="mo mo-grin" opacity="0"><path d="M-28 ${my - 8} Q 0 ${my + 26} 28 ${my - 8} Z" fill="#fff" ${bzO('stroke-width="5"')}/></g>
     <g class="mo mo-frown" opacity="0"><path d="M-20 ${my + 8} Q 0 ${my - 8} 20 ${my + 8}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+    <g class="mo mo-fangs" opacity="0"><path d="M-40 ${my - 12} Q 0 ${my + 34} 40 ${my - 12} Z" fill="#3a0e12" ${bzO('stroke-width="5"')}/><path d="M-34 ${my - 10} l7 14 l7 -12 l7 14 l7 -14 l7 14 l7 -14 l7 14 l7 -12 l7 12" fill="#f4f0e4" stroke="${BZ.ink}" stroke-width="3" stroke-linejoin="round"/></g>
     <g class="mo mo-o" opacity="0"><ellipse cx="0" cy="${my + 2}" rx="10" ry="12" fill="${BZ.red}" ${bzO('stroke-width="4"')}/></g>`;
   const brows = `<g class="brows"><path d="M${-e - 18} ${ey - 30} Q ${-e} ${ey - 38} ${-e + 16} ${ey - 30}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M${e - 16} ${ey - 30} Q ${e} ${ey - 38} ${e + 18} ${ey - 30}" stroke="${BZ.ink}" stroke-width="6" fill="none" stroke-linecap="round"/></g>`;
   const beard = sp.beard ? `<path d="M${-hr * 0.8} ${hr * 0.2} Q ${-hr * 0.7} ${hr * 1.25} 0 ${hr * 1.3} Q ${hr * 0.7} ${hr * 1.25} ${hr * 0.8} ${hr * 0.2} Q ${hr * 0.4} ${hr * 0.75} 0 ${hr * 0.7} Q ${-hr * 0.4} ${hr * 0.75} ${-hr * 0.8} ${hr * 0.2} Z" fill="${sp.beard}" ${bzO()}/>` : '';
@@ -87,13 +91,13 @@ function bzChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = fals
   else if (sp.hat?.kind === 'fedora') hat = `<ellipse cx="0" cy="${-hr * 0.55}" rx="${hr * 1.45}" ry="${hr * 0.24}" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.8} ${-hr * 0.6} Q ${-hr * 0.85} ${-hr * 1.5} ${-hr * 0.2} ${-hr * 1.35} L 0 ${-hr * 1.2} L ${hr * 0.2} ${-hr * 1.35} Q ${hr * 0.85} ${-hr * 1.5} ${hr * 0.8} ${-hr * 0.6} Z" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.8} ${-hr * 0.72} h${hr * 1.6}" stroke="${BZ.ink}" stroke-width="12"/>`;
   else if (sp.hat?.kind === 'cap') hat = `<path d="M${-hr * 0.95} ${-hr * 0.3} Q ${-hr} ${-hr * 1.15} 0 ${-hr * 1.1} Q ${hr} ${-hr * 1.15} ${hr * 0.95} ${-hr * 0.3} Z" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.9} ${-hr * 0.32} Q 0 ${-hr * 0.1} ${hr * 1.3} ${-hr * 0.35} Q 0 ${-hr * 0.5} ${-hr * 0.9} ${-hr * 0.32} Z" fill="${BZ.ink}"/>`;
   else if (sp.hat?.kind === 'beanie') hat = `<path d="M${-hr * 0.98} ${-hr * 0.25} Q ${-hr} ${-hr * 1.2} 0 ${-hr * 1.15} Q ${hr} ${-hr * 1.2} ${hr * 0.98} ${-hr * 0.25} Z" fill="${sp.hat.color}" ${bzO()}/>`;
-  const head = `<g transform="translate(0 ${headY})"><g class="hd">${hairBack}<circle r="${hr}" fill="${skin}" ${bzO()}/>${cheeks}${hairFront}${beard}${eyes}${brows}${glasses}${mustache}${mouths}${cotton}${hat}</g></g>`;
+  const head = `<g transform="translate(0 ${headY})"><g class="hd">${sp.headBack || ''}${hairBack}<circle r="${hr}" fill="${skin}" ${bzO()}/>${cheeks}${hairFront}${beard}${sp.headFront || ''}${eyes}${brows}${glasses}${mustache}${mouths}${cotton}${hat}</g></g>`;
   return `<g id="${id}"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">
     ${leg('lL', -bodyW * 0.22)}${leg('lR', bodyW * 0.22)}${arm('aL', -bodyW * 0.42)}
     <g class="bd">${body}${stripe}${belt}${badge}${ribs}${sp.extra || ''}</g>${arm('aR', bodyW * 0.42)}${head}</g></g></g>`;
 }
 // ---- motion on the timeline (absolute times). sel = '#sc-xxx #id' (use $('#id'))
-const BZ_EYES = ['dot', 'wide', 'closed', 'half', 'angry', 'dead'], BZ_MOUTHS = ['smile', 'flat', 'open', 'grin', 'frown', 'o'];
+const BZ_EYES = ['dot', 'wide', 'closed', 'half', 'angry', 'dead', 'glow'], BZ_MOUTHS = ['smile', 'flat', 'open', 'grin', 'frown', 'o', 'fangs'];
 function bzFace(tl: gsap.core.Timeline, sel: string, t: number, eyes?: string, mouth?: string) {
   if (eyes) BZ_EYES.forEach((n) => tl.set(`${sel} .ey-${n}`, { opacity: n === eyes ? 1 : 0 }, t));
   if (mouth) BZ_MOUTHS.forEach((n) => tl.set(`${sel} .mo-${n}`, { opacity: n === mouth ? 1 : 0 }, t));

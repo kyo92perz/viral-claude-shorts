@@ -79,6 +79,19 @@ VOICES = {
     "hs_velho": ("pm_santa", 0.9, st(-3) + ",aecho=0.8:0.4:60:0.25,equalizer=f=120:t=q:w=1:g=3"),
     "hs_saco": ("pf_dora", 1.05, st(4) + ",lowpass=f=900,highpass=f=150,volume=0.9"),
     "hs_mae": ("pf_dora", 0.98, st(-1)),
+    "pi_eu": ("pm_alex", 1.0, st(2)),
+    "pi_vo": ("pf_dora", 0.92, st(-3) + ",equalizer=f=250:t=q:w=1:g=2"),
+    "pi_pis": ("pf_dora", 0.88, st(-3) + ",aecho=0.8:0.5:40:0.3,highpass=f=180"),
+    "lo_ju": ("pf_dora", 1.02, st(2.5) + ",equalizer=f=250:t=q:w=1:g=1.5"),
+    "lo_ju2": ("pf_dora", 1.05, st(3)),
+    "lo_tonho": ("piper:cadu", 0.97, st(0.5)),
+    "mu_eu": ("pm_alex", 1.0, st(1) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "mu_beto": ("piper:faber", 1.0, st(3)),
+    "br_eu": ("pm_alex", 0.97, st(-1.5) + ",equalizer=f=150:t=q:w=1:g=2"),
+    "br_jair": ("piper:jeff", 0.95, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "br_moca": ("pf_dora", 0.94, st(-1) + ",aecho=0.8:0.5:50:0.3,lowpass=f=5500"),
+    "bo_eu": ("pf_dora", 1.0, st(1.5) + ",equalizer=f=220:t=q:w=1:g=1.5"),
+    "bo_zeca": ("pm_santa", 0.95, st(-1) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)

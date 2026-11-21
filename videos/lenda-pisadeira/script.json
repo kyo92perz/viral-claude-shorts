@@ -1,0 +1,97 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "pi_eu",
+   "text": "Se você jantar demais e dormir de barriga pra cima, ela desce do telhado... e senta no seu peito.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "pi_eu",
+   "text": "Minha vó chamava ela de Pisadeira. Magra, com unhas compridas e uma risada que não acaba nunca.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "v01",
+   "who": "pi_vo",
+   "text": "Não deita de barriga cheia, menino. Ela fica olhando lá do telhado.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "pi_eu",
+   "text": "Eu ri. Naquela noite, comi três pratos de feijoada e deitei de barriga pra cima.",
+   "pause": 0.9,
+   "emo": 0.5
+  },
+  {
+   "id": "n04",
+   "who": "pi_eu",
+   "text": "Acordei às três da manhã. Não conseguia mexer nada. Nem um dedo. Nem gritar.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n05",
+   "who": "pi_eu",
+   "text": "Alguma coisa pesada estava sentada no meu peito. E tinha cheiro de terra molhada.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "pi_eu",
+   "text": "Abri os olhos. E ela estava ali. Sorrindo. Com as unhas arranhando o meu pescoço.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "p01",
+   "who": "pi_pis",
+   "text": "Tava gostosa a janta, menino?",
+   "pause": 0.9,
+   "emo": 0.6
+  },
+  {
+   "id": "n07",
+   "who": "pi_eu",
+   "text": "Lembrei da vó. Ela dizia que a Pisadeira só vai embora se você conseguir mexer o dedão do pé.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n08",
+   "who": "pi_eu",
+   "text": "Fiz força. Muita força. E o dedão mexeu.",
+   "pause": 0.4,
+   "emo": 0.7
+  },
+  {
+   "id": "n09",
+   "who": "pi_eu",
+   "text": "Ela deu um grito, pulou pela janela e sumiu no telhado.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "pi_eu",
+   "text": "No dia seguinte, tinha marca de unha no meu pescoço. E pegadas de barro no teto do quarto.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n11",
+   "who": "pi_eu",
+   "text": "E você? Jantou demais hoje?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}
