@@ -9,6 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { transformSync } from 'esbuild';
 import type { Adapter, Plan, Words } from '../../core/types.ts';
+import { holdProject } from '../../core/lock.ts';
 
 const HERE = import.meta.dirname, PROJ = path.join(HERE, 'project');
 const HF = path.join(HERE, 'node_modules', '.bin', process.platform === 'win32' ? 'hyperframes.cmd' : 'hyperframes');
@@ -25,6 +26,7 @@ const toJs = (file: string) => transformSync(fs.readFileSync(file, 'utf8'), { lo
 const adapter: Adapter = {
   engine: 'HyperFrames (HTML + GSAP)',
   build(v) {
+    holdProject(PROJ, v);   // one video at a time in project/
     const E: Plan = JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')), wf = path.join(v, 'words.json');
     const P: Words = fs.existsSync(wf) ? JSON.parse(fs.readFileSync(wf, 'utf8')) : { duration: E.duration, words: [] };   // no voice: a silent animation
     fs.mkdirSync(PROJ, { recursive: true });

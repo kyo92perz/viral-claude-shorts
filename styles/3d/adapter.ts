@@ -12,6 +12,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import type * as Esbuild from 'esbuild';
 import type { Adapter, Plan, Words } from '../../core/types.ts';
+import { holdProject } from '../../core/lock.ts';
 
 const ENGINE = import.meta.dirname;   // engine.ts, library.ts, detail.ts and theme.css live here
 const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -45,6 +46,7 @@ const previewStatus = (): { port: number } | null => {
 const adapter: Adapter = {
   engine: F.engine,
   build(v) {
+    holdProject(PROJ, v);   // one video at a time in project/
     const E: Plan = JSON.parse(fs.readFileSync(path.join(v, 'scenes.json'), 'utf8')), wf = path.join(v, 'words.json');
     const P: Words = fs.existsSync(wf) ? JSON.parse(fs.readFileSync(wf, 'utf8')) : { duration: E.duration, words: [] };   // no voice: a silent animation
     fs.mkdirSync(PROJ, { recursive: true });
