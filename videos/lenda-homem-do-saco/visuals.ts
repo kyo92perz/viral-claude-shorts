@@ -1,5 +1,5 @@
 // <lines>
-const HS_LINES = [];
+const HS_LINES = [{"who": "hs_eu", "t0": 0.3, "t1": 4.845}, {"who": "hs_eu", "t0": 5.345, "t1": 12.186}, {"who": "hs_eu", "t0": 12.686, "t1": 17.669}, {"who": "hs_eu", "t0": 18.269, "t1": 23.39}, {"who": "hs_eu", "t0": 24.19, "t1": 25.335}, {"who": "hs_velho", "t0": 26.335, "t1": 29.614}, {"who": "hs_lucas", "t0": 30.214, "t1": 31.541}, {"who": "hs_eu", "t0": 32.441, "t1": 39.001}, {"who": "hs_saco", "t0": 39.501, "t1": 40.836}, {"who": "hs_eu", "t0": 41.636, "t1": 47.149}, {"who": "hs_mae", "t0": 47.749, "t1": 49.398}, {"who": "hs_eu", "t0": 49.998, "t1": 57.043}, {"who": "hs_velho", "t0": 57.643, "t1": 60.187}, {"who": "hs_eu", "t0": 61.187, "t1": 66.945}, {"who": "hs_eu", "t0": 68.145, "t1": 74.078}, {"who": "hs_eu", "t0": 74.678, "t1": 76.54}];
 // </lines>
 // =====================================================================
 //  O HOMEM DO SACO: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -99,7 +99,7 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#ana'), s.t0, 'half', 'flat'); bzFace(tl, $('#lucas'), s.t0, 'half', 'flat'); bzFace(tl, $('#mae'), s.t0, 'half', 'flat');
       bzWalk(tl, $('#ana'), s.t0, K('shut') - 1.0, 0, 380); bzWalk(tl, $('#lucas'), s.t0, K('shut') - 1.0, 0, 220); tl.to($('#ana, #lucas, #mae'), { opacity: 0, duration: 0.3 }, K('shut') - 0.9);
       tl.fromTo($('#panel'), { scaleX: 0, svgOrigin: '360 790' }, { scaleX: 1, svgOrigin: '360 790', duration: 0.4, ease: 'power2.in' }, K('shut') - 0.4); } },
-  inside: { bg: '#0f1530', html: () => hsShot(`${bzSky('#0f1530', '#3a2f5a')}${bzStars(40, 11, 900)}<rect y="1250" width="1080" height="700" fill="#2e3044"/>${hsSil(540, 1500, 1.6)}${hsGate(540, 1650, 9, '#3a4a6a', 2.8)}`, bzVignette(0.8)),
+  inside: { bg: '#0f1530', html: () => hsShot(`${bzSky('#0f1530', '#3a2f5a')}${bzStars(40, 11, 900)}<rect y="1250" width="1080" height="700" fill="#2e3044"/>${hsSil(780, 1330, 1.6)}${hsGate(540, 1650, 9, '#3a4a6a', 2.8)}`, bzVignette(0.8)),
     anim(tl, s, K, $) { tl.fromTo($('#sil'), { opacity: 0 }, { opacity: 1, duration: 1.2 }, s.t0 + 0.4); hsPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 1100); } },
   you: { bg: '#0f1530', html: () => hsShot(`${hsStreetFar(true)}<g id="fr">${hsManG(540, 1180, 0.3)}</g><g id="near" opacity="0">${hsVelho(540, 2700, 2.9)}</g>`, bzVignette(0.8)),
     anim(tl, s, K, $) { bzFace(tl, $('#near #velho'), s.t0, 'wide', 'grin'); hsWobble(tl, $('#fr #sack'), s.t0, s.t1, 0.6); hsPush(tl, $('#cam'), s.t0, K('hat'), 1, 1.2, 540, 1050);

@@ -1,5 +1,5 @@
 {
- "duration": 57.96,
+ "duration": 78.14,
  "lines": [
   {
    "id": "n01",
@@ -23,74 +23,95 @@
    "t1": 17.669
   },
   {
+   "id": "n03b",
+   "who": "hs_eu",
+   "text": "Ninguém no bairro conhecia ele. E todos os cachorros da rua pararam de latir ao mesmo tempo.",
+   "t0": 18.269,
+   "t1": 23.39
+  },
+  {
    "id": "n04",
    "who": "hs_eu",
    "text": "E o saco se mexia.",
-   "t0": 18.269,
-   "t1": 19.414
+   "t0": 24.19,
+   "t1": 25.335
   },
   {
    "id": "v01",
    "who": "hs_velho",
    "text": "Que menino bonito. Quer ver o que eu tenho aqui dentro?",
-   "t0": 20.414,
-   "t1": 23.693
+   "t0": 26.335,
+   "t1": 29.614
   },
   {
    "id": "l01",
    "who": "hs_lucas",
    "text": "O que tem aí, moço?",
-   "t0": 24.293,
-   "t1": 25.62
+   "t0": 30.214,
+   "t1": 31.541
+  },
+  {
+   "id": "n04b",
+   "who": "hs_eu",
+   "text": "O Lucas chegou mais perto. O velho começou a desamarrar a boca do saco. E lá de dentro, uma voz de criança gritou:",
+   "t0": 32.441,
+   "t1": 39.001
   },
   {
    "id": "s01",
    "who": "hs_saco",
    "text": "Não abre! Corre!",
-   "t0": 26.52,
-   "t1": 27.854
+   "t0": 39.501,
+   "t1": 40.836
   },
   {
    "id": "n05",
    "who": "hs_eu",
    "text": "Eu gritei o nome dele. E o velho virou a cabeça pra mim. Devagar. Mais do que um pescoço devia virar.",
-   "t0": 28.654,
-   "t1": 34.168
+   "t0": 41.636,
+   "t1": 47.149
   },
   {
    "id": "m01",
    "who": "hs_mae",
    "text": "Lucas! Pra dentro! Agora!",
-   "t0": 34.768,
-   "t1": 36.417
+   "t0": 47.749,
+   "t1": 49.398
   },
   {
    "id": "n06",
    "who": "hs_eu",
    "text": "O Lucas correu. O velho não correu atrás. Só sorriu. E começou a contar os portões da nossa rua.",
-   "t0": 37.017,
-   "t1": 44.061
+   "t0": 49.998,
+   "t1": 57.043
   },
   {
    "id": "v02",
    "who": "hs_velho",
-   "text": "Um. Dois. Três. Amanhã eu volto.",
-   "t0": 44.661,
-   "t1": 46.966
+   "text": "Um... Dois... Três... Amanhã eu volto.",
+   "t0": 57.643,
+   "t1": 60.187
+  },
+  {
+   "id": "n06b",
+   "who": "hs_eu",
+   "text": "Naquela noite, ninguém dormiu. E de madrugada, alguém bateu três vezes no nosso portão.",
+   "t0": 61.187,
+   "t1": 66.945
   },
   {
    "id": "n07",
    "who": "hs_eu",
    "text": "Desde então, lá em casa, todo mundo entra antes do sol se pôr. E ninguém abre o portão quando escuta alguém contando.",
-   "t0": 47.966,
-   "t1": 53.899
+   "t0": 68.145,
+   "t1": 74.078
   },
   {
    "id": "n08",
    "who": "hs_eu",
    "text": "E na sua rua? Quantos portões tem?",
-   "t0": 54.499,
-   "t1": 56.36
+   "t0": 74.678,
+   "t1": 76.54
   }
  ]
 }

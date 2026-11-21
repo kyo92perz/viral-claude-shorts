@@ -1,0 +1,428 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.3"
+ },
+ "music": {
+  "bpm": 80,
+  "key": "C"
+ },
+ "notes": "O HOMEM DO SACO, Brasil Z toon look (styles/flat2d/toon.ts): a street of small houses with numbered gates at dusk (orange-purple), then night (navy). Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "sack",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "peek",
+     "at": 5,
+     "sfx": "sting",
+     "t": 1.74
+    }
+   ],
+   "t0": 0,
+   "t1": 3.341
+  },
+  {
+   "id": "title",
+   "from": 9,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 10,
+     "sfx": "impact",
+     "t": 3.462
+    }
+   ],
+   "t0": 3.341,
+   "t1": 5.095
+  },
+  {
+   "id": "mom",
+   "from": 15,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 5.095,
+   "t1": 8.663
+  },
+  {
+   "id": "lucas",
+   "from": 29,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 35,
+     "sfx": "pop",
+     "t": 9.713
+    }
+   ],
+   "t0": 8.663,
+   "t1": 12.436
+  },
+  {
+   "id": "far",
+   "from": 46,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "ap",
+     "at": 58,
+     "sfx": "riser",
+     "t": 16.233
+    }
+   ],
+   "t0": 12.436,
+   "t1": 18.019
+  },
+  {
+   "id": "nobody",
+   "from": 63,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "off",
+     "at": 66,
+     "sfx": "click",
+     "t": 19.273
+    }
+   ],
+   "t0": 18.019,
+   "t1": 20.013
+  },
+  {
+   "id": "dogs",
+   "from": 68,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "q",
+     "at": 74,
+     "t": 21.589
+    }
+   ],
+   "t0": 20.013,
+   "t1": 23.94
+  },
+  {
+   "id": "wobble",
+   "from": 80,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 23.94,
+   "t1": 26.135
+  },
+  {
+   "id": "velho",
+   "from": 85,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 26.135,
+   "t1": 30.114
+  },
+  {
+   "id": "ask",
+   "from": 96,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.1,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 30.114,
+   "t1": 32.191
+  },
+  {
+   "id": "closer",
+   "from": 101,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 32.191,
+   "t1": 33.987
+  },
+  {
+   "id": "untie",
+   "from": 106,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 115,
+     "sfx": "heart",
+     "t": 36.564
+    }
+   ],
+   "t0": 33.987,
+   "t1": 39.301
+  },
+  {
+   "id": "peek",
+   "from": 124,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 124,
+     "sfx": "sting",
+     "t": 39.501
+    }
+   ],
+   "t0": 39.301,
+   "t1": 41.386
+  },
+  {
+   "id": "shout",
+   "from": 127,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 41.386,
+   "t1": 42.901
+  },
+  {
+   "id": "turn",
+   "from": 132,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 135,
+     "sfx": "creak",
+     "t": 43.465
+    },
+    {
+     "id": "g",
+     "at": 145,
+     "sfx": "crack",
+     "t": 46.057
+    }
+   ],
+   "t0": 42.901,
+   "t1": 47.549
+  },
+  {
+   "id": "mae",
+   "from": 148,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "t0": 47.549,
+   "t1": 49.748
+  },
+  {
+   "id": "run",
+   "from": 152,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 49.748,
+   "t1": 51.152
+  },
+  {
+   "id": "smile",
+   "from": 155,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 51.152,
+   "t1": 53.798
+  },
+  {
+   "id": "count",
+   "from": 162,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "t0": 53.798,
+   "t1": 57.443
+  },
+  {
+   "id": "numbers",
+   "from": 171,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g1",
+     "at": 171,
+     "sfx": "knock",
+     "t": 57.643
+    },
+    {
+     "id": "g2",
+     "at": 172,
+     "sfx": "knock",
+     "t": 57.921
+    },
+    {
+     "id": "g3",
+     "at": 173,
+     "sfx": "knock",
+     "t": 58.358
+    },
+    {
+     "id": "bye",
+     "at": 174,
+     "t": 58.796
+    }
+   ],
+   "t0": 57.443,
+   "t1": 60.787
+  },
+  {
+   "id": "awake",
+   "from": 177,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.4,
+   "ambience": [
+    "night"
+   ],
+   "t0": 60.787,
+   "t1": 63.548
+  },
+  {
+   "id": "knock",
+   "from": 183,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 187,
+     "sfx": "knock",
+     "t": 65.426
+    }
+   ],
+   "t0": 63.548,
+   "t1": 67.845
+  },
+  {
+   "id": "home",
+   "from": 191,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "shut",
+     "at": 203,
+     "dt": -0.4,
+     "sfx": "thud",
+     "t": 70.688
+    }
+   ],
+   "t0": 67.845,
+   "t1": 71.44
+  },
+  {
+   "id": "inside",
+   "from": 205,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 71.44,
+   "t1": 74.478
+  },
+  {
+   "id": "you",
+   "from": 213,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "hat",
+     "at": 219,
+     "dt": 0.46,
+     "sfx": "sting",
+     "t": 76.77
+    }
+   ],
+   "t0": 74.478,
+   "t1": 78.14
+  }
+ ],
+ "duration": 78.14
+}

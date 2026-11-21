@@ -1,5 +1,5 @@
 {
- "duration": 78.727,
+ "duration": 82.235,
  "lines": [
   {
    "id": "n01",
@@ -39,58 +39,58 @@
   {
    "id": "t01",
    "who": "cs_tiao",
-   "text": "Quem tá aí?",
+   "text": "Ei! Quem que tá aí?",
    "t0": 35.389,
-   "t1": 36.683
+   "t1": 40.191
   },
   {
    "id": "n06",
    "who": "cs_narr",
    "text": "Ninguém respondeu. Só que a árvore do lado da estrada estava se mexendo. E árvore não tem braço.",
-   "t0": 38.083,
-   "t1": 44.876
+   "t0": 41.591,
+   "t1": 48.384
   },
   {
    "id": "n07",
    "who": "cs_narr",
    "text": "O Corpo-Seco desceu do tronco, devagar, com a pele estalando igual folha seca.",
-   "t0": 45.676,
-   "t1": 50.724
+   "t0": 49.184,
+   "t1": 54.232
   },
   {
    "id": "t02",
    "who": "cs_tiao",
    "text": "Sai de mim, coisa ruim!",
-   "t0": 51.324,
-   "t1": 52.656
+   "t0": 54.832,
+   "t1": 56.164
   },
   {
    "id": "n08",
    "who": "cs_narr",
    "text": "Meu avô pedalou como nunca. E sentiu unhas raspando nas costas.",
-   "t0": 53.156,
-   "t1": 57.688
+   "t0": 56.664,
+   "t1": 61.196
   },
   {
    "id": "n09",
    "who": "cs_narr",
    "text": "Ele só parou na porteira da fazenda, que tinha uma cruz de madeira. E o Corpo-Seco não passou da cruz.",
-   "t0": 58.188,
-   "t1": 64.427
+   "t0": 61.696,
+   "t1": 67.935
   },
   {
    "id": "n10",
    "who": "cs_narr",
    "text": "No dia seguinte, a camisa do vô estava rasgada em três tiras. E a árvore da estrada amanheceu morta.",
-   "t0": 65.227,
-   "t1": 72.816
+   "t0": 68.735,
+   "t1": 76.324
   },
   {
    "id": "n11",
    "who": "cs_narr",
    "text": "Na sua cidade tem uma árvore que ninguém tem coragem de cortar?",
-   "t0": 73.516,
-   "t1": 77.127
+   "t0": 77.024,
+   "t1": 80.635
   }
  ]
 }

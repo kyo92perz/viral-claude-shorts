@@ -229,34 +229,34 @@
     "night"
    ],
    "t0": 35.189,
-   "t1": 36.813
+   "t1": 40.321
   },
   {
    "id": "quiet",
-   "from": 89,
+   "from": 91,
    "type": "object",
    "mood": "silence",
-   "delay": 0.492,
+   "delay": 0.95,
    "ambience": [
     "night"
    ],
-   "t0": 36.813,
-   "t1": 39.356
+   "t0": 40.321,
+   "t1": 42.864
   },
   {
    "id": "moving",
-   "from": 92,
+   "from": 94,
    "type": "object",
    "mood": "dark",
    "ambience": [
     "wind"
    ],
-   "t0": 39.356,
-   "t1": 43.214
+   "t0": 42.864,
+   "t1": 46.722
   },
   {
    "id": "arm",
-   "from": 103,
+   "from": 105,
    "type": "object",
    "mood": "dark",
    "ambience": [
@@ -265,17 +265,17 @@
    "keys": [
     {
      "id": "a",
-     "at": 106,
+     "at": 108,
      "sfx": "creak",
-     "t": 44.151
+     "t": 47.659
     }
    ],
-   "t0": 43.214,
-   "t1": 45.426
+   "t0": 46.722,
+   "t1": 48.934
   },
   {
    "id": "descend",
-   "from": 108,
+   "from": 110,
    "type": "object",
    "mood": "dark",
    "ambience": [
@@ -284,45 +284,45 @@
    "keys": [
     {
      "id": "k",
-     "at": 117,
+     "at": 119,
      "sfx": "crack",
-     "t": 48.928
+     "t": 52.436
     }
    ],
-   "t0": 45.426,
-   "t1": 51.124
+   "t0": 48.934,
+   "t1": 54.632
   },
   {
    "id": "sai",
-   "from": 121,
+   "from": 123,
    "type": "object",
    "mood": "energetic",
    "delay": -0.2,
    "keys": [
     {
      "id": "go",
-     "at": 121,
+     "at": 123,
      "sfx": "sting",
-     "t": 51.324
+     "t": 54.832
     }
    ],
-   "t0": 51.124,
-   "t1": 52.906
+   "t0": 54.632,
+   "t1": 56.414
   },
   {
    "id": "chase",
-   "from": 126,
+   "from": 128,
    "type": "object",
    "mood": "energetic",
    "ambience": [
     "steps"
    ],
-   "t0": 52.906,
-   "t1": 55.157
+   "t0": 56.414,
+   "t1": 58.665
   },
   {
    "id": "claws",
-   "from": 131,
+   "from": 133,
    "type": "object",
    "mood": "energetic",
    "ambience": [
@@ -331,17 +331,17 @@
    "keys": [
     {
      "id": "sc",
-     "at": 134,
+     "at": 136,
      "sfx": "scratch",
-     "t": 56.244
+     "t": 59.752
     }
    ],
-   "t0": 55.157,
-   "t1": 57.938
+   "t0": 58.665,
+   "t1": 61.446
   },
   {
    "id": "gate",
-   "from": 137,
+   "from": 139,
    "type": "object",
    "mood": "tense",
    "ambience": [
@@ -350,17 +350,17 @@
    "keys": [
     {
      "id": "x",
-     "at": 147,
+     "at": 149,
      "sfx": "shimmer",
-     "t": 61.336
+     "t": 64.844
     }
    ],
-   "t0": 57.938,
-   "t1": 62.358
+   "t0": 61.446,
+   "t1": 65.866
   },
   {
    "id": "stop",
-   "from": 150,
+   "from": 152,
    "type": "object",
    "mood": "dark",
    "ambience": [
@@ -369,17 +369,17 @@
    "keys": [
     {
      "id": "h",
-     "at": 154,
+     "at": 156,
      "sfx": "sting",
-     "t": 63.483
+     "t": 66.991
     }
    ],
-   "t0": 62.358,
-   "t1": 64.927
+   "t0": 65.866,
+   "t1": 68.435
   },
   {
    "id": "dawn",
-   "from": 157,
+   "from": 159,
    "type": "object",
    "mood": "sad",
    "delay": -0.3,
@@ -389,28 +389,28 @@
    "keys": [
     {
      "id": "t",
-     "at": 167,
+     "at": 169,
      "sfx": "pop",
-     "t": 69.039
+     "t": 72.547
     }
    ],
-   "t0": 64.927,
-   "t1": 69.906
+   "t0": 68.435,
+   "t1": 73.414
   },
   {
    "id": "dead",
-   "from": 169,
+   "from": 171,
    "type": "object",
    "mood": "sad",
    "ambience": [
     "wind"
    ],
-   "t0": 69.906,
-   "t1": 73.316
+   "t0": 73.414,
+   "t1": 76.824
   },
   {
    "id": "you",
-   "from": 176,
+   "from": 178,
    "type": "object",
    "mood": "dark",
    "delay": -0.2,
@@ -421,15 +421,15 @@
    "keys": [
     {
      "id": "eyes",
-     "at": 187,
+     "at": 189,
      "dt": 0.622,
      "sfx": "sting",
-     "t": 77.357
+     "t": 80.865
     }
    ],
-   "t0": 73.316,
-   "t1": 78.727
+   "t0": 76.824,
+   "t1": 82.235
   }
  ],
- "duration": 78.727
+ "duration": 82.235
 }

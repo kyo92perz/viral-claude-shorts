@@ -30,8 +30,8 @@ SHOTS = [
  ('numbers', 'v02', 0, -0.2, D, ['night'], [('g1', 'v02', 0, 0, 'knock'), ('g2', 'v02', 1, 0, 'knock'), ('g3', 'v02', 2, 0, 'knock'), ('bye', 'v02', 3, 0, None)]),
  ('awake', 'n06b', 0, -0.4, S0, ['night'], []),
  ('knock', 'n06b', 6, None, D, ['night'], [('k', 'n06b', 10, 0, 'knock')]),
- ('home', 'n07', 0, -0.3, SAD, ['wind'], [('shut', 'n07', 12, 0, 'thud')]),
- ('inside', 'n07', 13, None, T, ['night'], []),
+ ('home', 'n07', 0, -0.3, SAD, ['wind'], [('shut', 'n07', 12, -0.4, 'thud')]),
+ ('inside', 'n07', 14, None, T, ['night'], []),
  ('you', 'n08', 0, -0.2, D, ['night', 'drone'], [('hat', 'n08', 99, 0.25, 'sting')]),
 ]
 build(V, SHOTS, {'style': 'flat2d', 'fps': 30, 'format': '9:16', 'captions': True, 'badge': {'title': 'LENDAS DO BRASIL', 'ep': 'EP.3'},
