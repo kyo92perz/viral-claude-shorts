@@ -1,0 +1,435 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.2"
+ },
+ "music": {
+  "bpm": 78,
+  "key": "D"
+ },
+ "notes": "O CORPO-SECO, Brasil Z toon look (styles/flat2d/toon.ts): navy night on a dirt road in Minas, fog, a twisted tree; dawn in orange. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "open",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "eyes",
+     "at": 6,
+     "sfx": "sting",
+     "t": 1.876
+    }
+   ],
+   "t0": 0,
+   "t1": 3.395
+  },
+  {
+   "id": "minas",
+   "from": 9,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night"
+   ],
+   "t0": 3.395,
+   "t1": 6.044
+  },
+  {
+   "id": "title",
+   "from": 16,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 19,
+     "sfx": "impact",
+     "t": 6.958
+    }
+   ],
+   "t0": 6.044,
+   "t1": 7.74
+  },
+  {
+   "id": "window",
+   "from": 20,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "hit",
+     "at": 29,
+     "sfx": "hit",
+     "t": 10.577
+    }
+   ],
+   "t0": 7.74,
+   "t1": 11.964
+  },
+  {
+   "id": "grave",
+   "from": 33,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "spit",
+     "at": 37,
+     "sfx": "impact",
+     "t": 13.372
+    }
+   ],
+   "t0": 11.964,
+   "t1": 14.747
+  },
+  {
+   "id": "three",
+   "from": 42,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "p1",
+     "at": 42,
+     "sfx": "thud",
+     "t": 14.947
+    },
+    {
+     "id": "p2",
+     "at": 42,
+     "dt": 0.3,
+     "sfx": "thud",
+     "t": 15.247
+    },
+    {
+     "id": "p3",
+     "at": 43,
+     "sfx": "impact",
+     "t": 15.274
+    }
+   ],
+   "t0": 14.747,
+   "t1": 16.611
+  },
+  {
+   "id": "nowhere",
+   "from": 44,
+   "type": "object",
+   "mood": "tense",
+   "delay": 0.45,
+   "keys": [
+    {
+     "id": "x1",
+     "at": 45,
+     "dt": 0.2,
+     "sfx": "hit",
+     "t": 16.664
+    },
+    {
+     "id": "x2",
+     "at": 48,
+     "sfx": "hit",
+     "t": 17.237
+    }
+   ],
+   "t0": 16.611,
+   "t1": 17.996
+  },
+  {
+   "id": "dry",
+   "from": 50,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 51,
+     "sfx": "crack",
+     "t": 18.413
+    }
+   ],
+   "t0": 17.996,
+   "t1": 20.282
+  },
+  {
+   "id": "tree",
+   "from": 56,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "t0": 20.282,
+   "t1": 26.528
+  },
+  {
+   "id": "ride",
+   "from": 70,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "night"
+   ],
+   "t0": 26.528,
+   "t1": 32.318
+  },
+  {
+   "id": "snap",
+   "from": 82,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 86,
+     "sfx": "crack",
+     "t": 34.137
+    }
+   ],
+   "t0": 32.318,
+   "t1": 35.189
+  },
+  {
+   "id": "quem",
+   "from": 87,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 35.189,
+   "t1": 36.813
+  },
+  {
+   "id": "quiet",
+   "from": 89,
+   "type": "object",
+   "mood": "silence",
+   "delay": 0.492,
+   "ambience": [
+    "night"
+   ],
+   "t0": 36.813,
+   "t1": 39.356
+  },
+  {
+   "id": "moving",
+   "from": 92,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 39.356,
+   "t1": 43.214
+  },
+  {
+   "id": "arm",
+   "from": 103,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 106,
+     "sfx": "creak",
+     "t": 44.151
+    }
+   ],
+   "t0": 43.214,
+   "t1": 45.426
+  },
+  {
+   "id": "descend",
+   "from": 108,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 117,
+     "sfx": "crack",
+     "t": 48.928
+    }
+   ],
+   "t0": 45.426,
+   "t1": 51.124
+  },
+  {
+   "id": "sai",
+   "from": 121,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "go",
+     "at": 121,
+     "sfx": "sting",
+     "t": 51.324
+    }
+   ],
+   "t0": 51.124,
+   "t1": 52.906
+  },
+  {
+   "id": "chase",
+   "from": 126,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 52.906,
+   "t1": 55.157
+  },
+  {
+   "id": "claws",
+   "from": 131,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "sc",
+     "at": 134,
+     "sfx": "scratch",
+     "t": 56.244
+    }
+   ],
+   "t0": 55.157,
+   "t1": 57.938
+  },
+  {
+   "id": "gate",
+   "from": 137,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "x",
+     "at": 147,
+     "sfx": "shimmer",
+     "t": 61.336
+    }
+   ],
+   "t0": 57.938,
+   "t1": 62.358
+  },
+  {
+   "id": "stop",
+   "from": 150,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 154,
+     "sfx": "sting",
+     "t": 63.483
+    }
+   ],
+   "t0": 62.358,
+   "t1": 64.927
+  },
+  {
+   "id": "dawn",
+   "from": 157,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 167,
+     "sfx": "pop",
+     "t": 69.039
+    }
+   ],
+   "t0": 64.927,
+   "t1": 69.906
+  },
+  {
+   "id": "dead",
+   "from": 169,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 69.906,
+   "t1": 73.316
+  },
+  {
+   "id": "you",
+   "from": 176,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind",
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "eyes",
+     "at": 187,
+     "dt": 0.622,
+     "sfx": "sting",
+     "t": 77.357
+    }
+   ],
+   "t0": 73.316,
+   "t1": 78.727
+  }
+ ],
+ "duration": 78.727
+}

@@ -1,5 +1,5 @@
 // <lines>
-const CS_LINES = [];
+const CS_LINES = [{"who": "cs_narr", "t0": 0.3, "t1": 3.045}, {"who": "cs_narr", "t0": 3.645, "t1": 7.59}, {"who": "cs_narr", "t0": 7.99, "t1": 15.661}, {"who": "cs_narr", "t0": 16.161, "t1": 26.178}, {"who": "cs_narr", "t0": 26.778, "t1": 34.789}, {"who": "cs_tiao", "t0": 35.389, "t1": 36.683}, {"who": "cs_narr", "t0": 38.083, "t1": 44.876}, {"who": "cs_narr", "t0": 45.676, "t1": 50.724}, {"who": "cs_tiao", "t0": 51.324, "t1": 52.656}, {"who": "cs_narr", "t0": 53.156, "t1": 57.688}, {"who": "cs_narr", "t0": 58.188, "t1": 64.427}, {"who": "cs_narr", "t0": 65.227, "t1": 72.816}, {"who": "cs_narr", "t0": 73.516, "t1": 77.127}];
 // </lines>
 // =====================================================================
 //  O CORPO-SECO: the shots (Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -58,9 +58,9 @@ defineVisuals({
     anim(tl, s, K, $) { tl.set($('#cr'), { opacity: 0 }, s.t0); csShow(tl, $('#cr'), K('c')); csShake(tl, $('#tree'), K('c'), K('c') + 0.3, 8); csPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 700); } },
   quem: { bg: '#0f1530', html: () => csShot(`${csNight(860, 280)}${csTree('tree', 960, 1900, 1.4)}${csTiao(480, 1950, 2.2)}`, bzVignette(0.7)),
     anim(tl, s, K, $) { bzFace(tl, $('#tiao'), s.t0, 'wide', 'flat'); bzTalk(tl, $('#tiao'), 'cs_tiao', s.t0, s.t1, 'flat', 'open'); tl.fromTo($('#tiao .hd'), { rotation: -10, transformOrigin: '50% 90%' }, { rotation: 10, duration: 0.8, yoyo: true, repeat: 1, ease: 'sine.inOut' }, s.t0 + 0.2); } },
-  quiet: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csTree('tree', 820, 1460, 1.0)}${csRide(260, 1700, 0.8)}${bzFog(1600, BZ.fog, 0.4)}`, bzVignette(0.75)),
+  quiet: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csTree('tree', 820, 1460, 1.0)}${csRide(360, 1700, 0.8)}${bzFog(1600, BZ.fog, 0.4)}`, bzVignette(0.75)),
     anim(tl, s, K, $) { bzPose(tl, $('#tiao'), s.t0, { aL: -62, aR: -62, lL: -40, lR: -40 }, 0.01); bzFace(tl, $('#tiao'), s.t0, 'wide', 'flat'); csPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08, 820, 1100); tl.fromTo($('.fog'), { x: 0 }, { x: 70, duration: s.t1 - s.t0, ease: 'none' }, s.t0); } },
-  moving: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csTree('tree', 700, 1560, 1.3)}${csRide(200, 1750, 0.85)}${bzFog(1600, BZ.fog, 0.35)}`, bzVignette(0.75)),
+  moving: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csTree('tree', 700, 1560, 1.3)}${csRide(330, 1750, 0.85)}${bzFog(1600, BZ.fog, 0.35)}`, bzVignette(0.75)),
     anim(tl, s, K, $) { bzPose(tl, $('#tiao'), s.t0, { aL: -62, aR: -62, lL: -40, lR: -40 }, 0.01); bzFace(tl, $('#tiao'), s.t0, 'wide', 'o');
       tl.fromTo($('#tree'), { rotation: -1.5, svgOrigin: '700 1560' }, { rotation: 1.5, svgOrigin: '700 1560', duration: 0.55, yoyo: true, repeat: Math.floor((s.t1 - s.t0) / 0.55), ease: 'sine.inOut' }, s.t0); csPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 700, 1000); } },
   arm: { bg: '#0f1530', html: () => csShot(`${csNight(200, 300)}${csTree('tree', 540, 2600, 2.6)}${csSeco(540, 1980, 1.8)}`, bzVignette(0.8)),
@@ -74,9 +74,9 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#tiao'), s.t0, 'angry', 'open'); bzTalk(tl, $('#tiao'), 'cs_tiao', s.t0, s.t1, 'open', 'open'); bzShake(tl, $('#tiao'), s.t0, s.t1, 5); bzPose(tl, $('#tiao'), s.t0, { aL: 150, aR: -40 }, 0.2); } },
   // ---------------- the chase
   chase: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csSeco(0, 1720, 1.05)}${csRide(0, 1720, 0.95)}${bzFog(1650, BZ.fog, 0.3)}`, bzVignette(0.6)),
-    anim(tl, s, K, $) { tl.fromTo($('#rider'), { x: -200 }, { x: 1400, duration: s.t1 - s.t0, ease: 'power1.in' }, s.t0); csPedal(tl, $(''), s.t0, s.t1, true); bzFace(tl, $('#tiao'), s.t0, 'wide', 'open');
-      bzWalk(tl, $('#seco'), s.t0, s.t1, -500, 1000, true); bzFace(tl, $('#seco'), s.t0, 'angry', 'open'); bzPose(tl, $('#seco'), s.t0, { aR: -110 }, 0.01); } },
-  claws: { bg: '#0f1530', html: () => csShot(`${csNight()}<g id="road">${csRoad()}</g>${csRide(600, 1900, 1.7)}${csClaw('claw', 330, 1100)}<g id="marks" opacity="0"><path d="M470 1000 l60 120 M500 990 l60 120 M530 980 l60 120" stroke="${BZ.blood}" stroke-width="14" stroke-linecap="round"/></g>`, `${bzFlash('fl', BZ.red)}${bzVignette(0.7)}`),
+    anim(tl, s, K, $) { tl.fromTo($('#rider'), { x: 150 }, { x: 1500, duration: s.t1 - s.t0, ease: 'none' }, s.t0); csPedal(tl, $(''), s.t0, s.t1, true); bzFace(tl, $('#tiao'), s.t0, 'wide', 'open');
+      bzWalk(tl, $('#seco'), s.t0, s.t1, -800, 750, true); bzFace(tl, $('#seco'), s.t0, 'angry', 'open'); bzPose(tl, $('#seco'), s.t0, { aR: -110 }, 0.01); } },
+  claws: { bg: '#0f1530', html: () => csShot(`${csNight()}<g id="road">${csRoad()}</g>${csRide(600, 1900, 1.7)}${csClaw('claw', 300, 1250)}<g id="marks" opacity="0"><path d="M330 1190 l50 120 M360 1180 l50 120 M390 1170 l50 120" stroke="${BZ.blood}" stroke-width="14" stroke-linecap="round"/></g>`, `${bzFlash('fl', BZ.red)}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { csPedal(tl, $(''), s.t0, s.t1, true); bzFace(tl, $('#tiao'), s.t0, 'wide', 'open'); tl.fromTo($('#claw'), { x: -500 }, { x: 0, duration: K('sc') - s.t0, ease: 'power1.in' }, s.t0);
       tl.to($('#marks'), { opacity: 1, duration: 0.1 }, K('sc')); csHit(tl, $('#fl'), K('sc'), 0.45); tl.to($('#claw'), { x: -500, duration: 0.5, ease: 'power2.in' }, K('sc') + 0.3); csShake(tl, $('#cam'), s.t0, s.t1, 3); } },
   gate: { bg: '#0f1530', html: () => csShot(`${csNight()}${csRoad()}${csGlow(540 - 330 * 1.1, 1500 - 560 * 1.1)}${csGate(540, 1500, 1.1)}${csRide(0, 1760, 0.75)}${bzFog(1600, BZ.fog, 0.3)}`, bzVignette(0.6)),

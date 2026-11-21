@@ -40,9 +40,9 @@
   {
    "id": "t01",
    "who": "cs_tiao",
-   "text": "Quem tá aí?",
+   "text": "Ei! Quem que tá aí?",
    "pause": 1.4,
-   "emo": 0.7
+   "emo": 0.5
   },
   {
    "id": "n06",
