@@ -52,7 +52,7 @@ function buildTimeline(): gsap.core.Timeline {
     groups.forEach((G, gi) => {
       const el = document.createElement('div'); el.className = 'g'; cap.appendChild(el);
       G.w.forEach((x) => { const sp = document.createElement('span'); sp.className = 'w'; sp.textContent = x.w.replace(/[.,!?;:]+$/, ''); el.appendChild(sp); });
-      const end = Math.min(G.t1 + 0.25, groups[gi + 1]?.t0 ?? 1e9);
+      const end = Math.min(G.t1 + 0.25, (groups[gi + 1]?.t0 ?? 1e9) - 0.04);   // gone before the next group pops in (no frame with both)
       tl.fromTo(el, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.08, ease: 'back.out(3)' }, G.t0 - 0.04);
       tl.set(el, { opacity: 0 }, end);
       const spans = el.querySelectorAll('.w');

@@ -9,7 +9,8 @@ const CS_SPEC: Record<string, BzSpec> = {
   tiaoTorn: { skin: '#c98757', hat: { kind: 'straw', color: '#e8c86a' }, mustache: '#ece8e0', top: '#3a6aa8', top2: '#e8e4dc', pants: '#6a5a44', shoes: '#3a2a1a',
     extra: '<path d="M-50 -420 l70 160 M-20 -440 l70 170 M10 -450 l60 160" stroke="#c98757" stroke-width="14" stroke-linecap="round"/><path d="M-50 -420 l70 160 M-20 -440 l70 170 M10 -450 l60 160" stroke="#2b2433" stroke-width="4" stroke-linecap="round" opacity="0.6"/>' },
   seco: { tall: 1.12, wide: 0.62, face: 'dry', ribs: true, claws: true, hair: { style: 'messy', color: '#2a2018' }, top: '#7a6a55', pants: '#4a3a2a', shoes: '#7a6a55' },
-  vivo: { tall: 1.05, wide: 0.8, face: 'dead', hair: { style: 'messy', color: '#2a2018' }, top: '#7a3a2a', pants: '#3a3030', shoes: '#2b2433' },
+  vivo: { tall: 1.05, wide: 0.8, skin: '#b8865a', hair: { style: 'messy', color: '#2a2018' }, top: '#7a3a2a', pants: '#3a3030', shoes: '#2b2433' },
+  compadre: { skin: '#8a5a3a', hat: { kind: 'fedora', color: '#5a4a3a' }, beard: '#d8d4cc', top: '#a8742a', pants: '#4a4a5a', shoes: '#2b2433' },
   mae: { tall: 0.92, skin: '#d9a27a', hair: { style: 'bun', color: '#b8b4ac' }, top: '#6a4a7a', dress: '#6a4a7a', shoes: '#2b2433' },
 };
 const csTiao = (x: number, y: number, s = 1, flip = false, torn = false) => bzChar('tiao', torn ? CS_SPEC.tiaoTorn : CS_SPEC.tiao, x, y, s, flip);
