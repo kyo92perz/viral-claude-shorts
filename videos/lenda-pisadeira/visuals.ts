@@ -21,7 +21,7 @@ const piHook = (txt: string) => bzSign('hk', txt, 540, 330, -4, BZ.red, '#fff', 
 defineVisuals({
   // ---------------- the hook: she is already on his chest at frame 1
   hook: { bg: '#14161c', html: () => bzShot(`<rect width="1080" height="1920" fill="#14161c"/>${piPis(540, 2750, 3.4)}`, `${piHook('NÃO DURMA ASSIM')}${bzFlash('fl', BZ.red)}${bzVignette(0.8)}`),
-    anim(tl, s, K, $) { bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzHook(tl, $('#hk'), s.t0); bzHit(tl, $('#fl'), K('h'), 0.35); bzShake(tl, $('#pis'), s.t0, s.t0 + 0.4, 4); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 850); } },
+    anim(tl, s, K, $) { bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzHook(tl, $('#hk'), s.t0); bzShake(tl, $('#pis'), s.t0, s.t0 + 0.4, 4); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 850); } },
   bedhook: { bg: '#1e2a48', html: () => bzShot(piBedShot(), `${piDark('dk', '#000')}${bzVignette(0.75)}`),
     anim(tl, s, K, $) { piOnChest(tl, $('#pis'), s.t0); bzFace(tl, $('#pis'), s.t0, 'glow', 'fangs'); bzFace(tl, $('#rafa'), s.t0, 'wide', 'o'); tl.set($('#dk'), { opacity: 0.1 }, s.t0);
       bzShake(tl, $('#rafa'), s.t0, s.t1, 3); bzPush(tl, $('#cam'), s.t0, s.t1, 1.4, 1.55, 560, 900); } },
