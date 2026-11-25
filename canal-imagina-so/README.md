@@ -5,8 +5,8 @@ Canal de vídeos longos (8–15 min, 16:9) no formato "E se…?": uma pergunta s
 cabelo cacheado, jaqueta verde com zíper amarelo, tênis vermelho), o amigo **Biel** (boné vermelho) e a mãe, **Dona Cida**.
 Tudo se passa no Brasil (escola, cantina, padaria, pelada de rua).
 
-- **Foto de perfil:** [foto-perfil.png](foto-perfil.png) (800×800; o YouTube recorta em círculo)
-- **Banner:** [banner.png](banner.png) (2560×1440; nome e slogan dentro da área que aparece no celular)
+- **Foto de perfil:** [foto-perfil.png](foto-perfil.png) (balão de pensamento com "?", serve para todo tema) e a variante [foto-perfil-b.png](foto-perfil-b.png)
+- **Banner:** [banner.png](banner.png) (2560×1440; o Tuco e o Biel sob balões de ideias, nome, slogan e @ na área do celular; plano `brand-banner2`)
 - **Como refazer:** planos `brand-avatar` e `brand-banner` em `videos/imagina-001-dinheiro/world.ts`, depois
   `node core/world.ts videos/imagina-001-dinheiro` (quadros p13 e p14 em `world/storyboard/`)
 
