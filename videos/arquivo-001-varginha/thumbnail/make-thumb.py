@@ -46,7 +46,7 @@ im = text(im, ['O QUE', 'ELAS', 'VIRAM?'], 40, 40, 150, [WHITE, WHITE, YELLOW]);
 im.save(os.path.join(V, 'thumbnail.jpg'), quality=90)
 # V2: the creature + the secret folder; a red stamp "LIBERADO"
 im = base('p20.png', 1.1, 0.5, 0.5)
-im = stamp(im, 'LIBERADO', 940, 600, 92); im = text(im, ['30 ANOS', 'ESCONDIDO'], W - 36, 36, 120, [WHITE, YELLOW], align='right'); im = tag(im)
+im = stamp(im, 'LIBERADO', 960, 455, 92); im = text(im, ['30 ANOS', 'ESCONDIDO'], W - 36, 36, 120, [WHITE, YELLOW], align='right'); im = tag(im)
 im.save(os.path.join(V, 'thumbnail-b.jpg'), quality=90)
 # V3: the face again, the inquiry's verdict as the hook
 im = base('p19.png', 1.4, 0.62, 0.45)
