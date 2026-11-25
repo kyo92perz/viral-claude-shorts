@@ -1,0 +1,103 @@
+{
+ "duration": 86.445,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "ia_eu",
+   "text": "Se você ouvir alguém cantando no rio de madrugada... não responde. E nem olha pra água.",
+   "t0": 0.3,
+   "t1": 4.898
+  },
+  {
+   "id": "n02",
+   "who": "ia_eu",
+   "text": "Meu irmão Tiago era pescador no Rio Negro, no Amazonas. Forte, teimoso, e não tinha medo de nada.",
+   "t0": 5.498,
+   "t1": 12.117
+  },
+  {
+   "id": "n03",
+   "who": "ia_eu",
+   "text": "Numa noite de lua cheia, ele saiu de canoa sozinho. Eu fiquei no trapiche, esperando com a lamparina.",
+   "t0": 12.617,
+   "t1": 18.22
+  },
+  {
+   "id": "n04",
+   "who": "ia_eu",
+   "text": "Lá pela meia-noite, começou uma música. Uma voz de mulher, bonita demais pra ser de gente. E vinha de baixo da água.",
+   "t0": 18.82,
+   "t1": 26.023
+  },
+  {
+   "id": "t01",
+   "who": "ia_tiago",
+   "text": "Bruna, tá ouvindo? Tem alguém cantando no meio do rio!",
+   "t0": 26.623,
+   "t1": 30.015
+  },
+  {
+   "id": "n05",
+   "who": "ia_eu",
+   "text": "Eu gritei pra ele voltar. Mas ele não me ouvia mais. Remava pro meio do rio, com o olho parado. Sorrindo.",
+   "t0": 30.615,
+   "t1": 36.681
+  },
+  {
+   "id": "n06",
+   "who": "ia_eu",
+   "text": "Aí ela apareceu. Primeiro o cabelo, preto e comprido, boiando. Depois os olhos, verdes, brilhando igual vaga-lume.",
+   "t0": 37.381,
+   "t1": 43.782
+  },
+  {
+   "id": "i01",
+   "who": "ia_iara",
+   "text": "Vem, Tiago. Vem pro fundo comigo.",
+   "t0": 44.382,
+   "t1": 46.117
+  },
+  {
+   "id": "n07",
+   "who": "ia_eu",
+   "text": "Ele se debruçou pra fora da canoa. E duas mãos geladas puxaram ele pra dentro do rio.",
+   "t0": 46.917,
+   "t1": 53.371
+  },
+  {
+   "id": "n08",
+   "who": "ia_eu",
+   "text": "Eu pulei na água e puxei ele pela camisa com toda a força. E por um segundo, eu vi ela inteira. A cauda. As escamas. E uma boca cheia de dentes.",
+   "t0": 53.971,
+   "t1": 61.933
+  },
+  {
+   "id": "n09",
+   "who": "ia_eu",
+   "text": "Consegui arrastar meu irmão até a margem. Ele estava vivo. Mas não falou nada. Só ficou olhando pro rio.",
+   "t0": 62.533,
+   "t1": 68.51
+  },
+  {
+   "id": "n10",
+   "who": "ia_eu",
+   "text": "Desde aquela noite, o Tiago não come peixe, não dorme, e vai pro trapiche toda madrugada.",
+   "t0": 69.21,
+   "t1": 74.208
+  },
+  {
+   "id": "n11",
+   "who": "ia_eu",
+   "text": "E quando eu chego perto, ele está cantando. A mesma música. Com a voz dela.",
+   "t0": 74.708,
+   "t1": 79.013
+  },
+  {
+   "id": "n12",
+   "who": "ia_eu",
+   "text": "Se você morasse na beira do rio... teria coragem de ouvir a música até o fim?",
+   "t0": 79.713,
+   "t1": 84.845
+  }
+ ]
+}

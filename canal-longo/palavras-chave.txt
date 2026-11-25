@@ -1,0 +1,27 @@
+PALAVRAS-CHAVE — ARQUIVO PROIBIDO (canal longo)
+
+1) CAMPO "PALAVRAS-CHAVE DO CANAL" (Studio → Configurações → Canal → Informações básicas), cole tudo:
+mistérios do brasil, casos reais, histórias reais de terror, caso varginha, et de varginha, operação prato, ovni no brasil, chupa cabra, casos sem solução, mistérios não resolvidos, lendas brasileiras, folclore brasileiro, lendas urbanas, histórias de terror, animação de terror, documentário animado, arquivo proibido, teorias da conspiração brasil, desaparecimentos misteriosos, coisas que o governo escondeu
+
+2) HASHTAGS (máximo 3 no fim da descrição; as 3 aparecem em cima do título)
+#misterios #casosreais #arquivoproibido
+Extras por tema: #varginha #ovni #lendasbrasileiras #terror #folclorebrasileiro
+
+3) MOLDE DE CADA VÍDEO
+Título (até 60 caracteres, palavra que as pessoas buscam no começo):
+  "O Caso Varginha: o que o Exército escondeu em 1996"
+  "Operação Prato: as luzes que atacavam pescadores no Pará"
+Descrição (as 2 primeiras linhas aparecem na busca):
+  linha 1: a pergunta do vídeo com a palavra-chave ("O que realmente aconteceu em Varginha em 1996?")
+  linha 2: a promessa ("Neste caso animado, os relatos, as contradições e o que ficou sem resposta.")
+  depois: capítulos com minutagem (00:00 O primeiro relato…), fontes, 3 hashtags
+Tags do vídeo (8 a 12): nome do caso, variações (et de varginha, caso varginha 1996), cidade/estado, "mistério", "história real", "animação"
+
+4) TEMAS QUE O BRASIL JÁ BUSCA (fila de vídeos)
+Caso Varginha (1996) · Operação Prato (1977, Pará) · Chupa-cabra no Brasil (1997) · A noite oficial dos OVNIs (1986)
+Desaparecimentos sem solução · Cidades fantasmas do Brasil · Lendas que viraram notícia (Lobisomem, Corpo-Seco)
+
+COMO CONFERIR O QUE ESTÁ SENDO BUSCADO (5 minutos, de graça):
+- digite o tema na busca do YouTube e anote o que o autocompletar sugere: são buscas reais
+- YouTube Studio → Pesquisa (aba "Pesquisas do seu público") quando o canal tiver público
+- Google Trends (trends.google.com.br), filtro "Pesquisa do YouTube", Brasil
