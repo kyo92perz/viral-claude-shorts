@@ -1,5 +1,5 @@
 // <lines>
-const MT_LINES = [];
+const MT_LINES = [{"who": "mt_eu", "t0": 0.3, "t1": 5.575}, {"who": "mt_eu", "t0": 6.175, "t1": 10.944}, {"who": "mt_eu", "t0": 11.344, "t1": 17.276}, {"who": "mt_eu", "t0": 17.976, "t1": 20.63}, {"who": "mt_vo", "t0": 21.03, "t1": 24.331}, {"who": "mt_eu", "t0": 24.931, "t1": 29.829}, {"who": "mt_eu", "t0": 30.129, "t1": 32.504}, {"who": "mt_eu", "t0": 33.004, "t1": 36.55}, {"who": "mt_eu", "t0": 37.55, "t1": 44.697}, {"who": "mt_matinta", "t0": 45.197, "t1": 47.282}, {"who": "mt_eu", "t0": 47.882, "t1": 53.488}, {"who": "mt_eu", "t0": 54.088, "t1": 58.303}, {"who": "mt_eu", "t0": 58.903, "t1": 63.048}];
 // </lines>
 // =====================================================================
 //  A MATINTA PERERA: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -63,8 +63,8 @@ defineVisuals({
   // ---------------- the rule, and today
   rule: { bg: '#070b1c', html: () => bzShot(`<g transform="translate(-900 -560) scale(2.4)">${mtRoom(true)}${mtBird('bd', 790, 760, 0.5)}</g>`, `${mtSay('rl', 'PROMETEU? PAGA.', 540, 300, -4, BZ.red, '#fff', 110)}${bzVignette(0.8)}`),
     anim(tl, s, K, $) { mtHide(tl, $('#rl'), s.t0, K('j')); tl.fromTo($('#bd .eyes'), { opacity: 0.3 }, { opacity: 1, duration: 0.3, yoyo: true, repeat: 7 }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 900); } },
-  today: { bg: '#141a2e', html: () => bzShot(`${mtToday()}${mtChar('tito', 560, 1290, 1.0)}`, `${mtSay('on', 'ONTEM', 540, 300, -3, '#fff', BZ.ink, 90)}${bzVignette(0.6)}`),
-    anim(tl, s, K, $) { tl.set($('#tito'), { rotation: -85, svgOrigin: '560 1290', x: 60, y: -110 }, s.t0); bzFace(tl, $('#tito'), s.t0, 'closed', 'flat'); bzFace(tl, $('#tito'), s.t0 + 1.2, 'wide', 'o'); mtHide(tl, $('#on'), s.t0, s.t0 + 0.3);
+  today: { bg: '#141a2e', html: () => bzShot(`${mtToday()}${mtChar('tito', 360, 1190, 0.95)}`, `${mtSay('on', 'ONTEM', 540, 300, -3, '#fff', BZ.ink, 90)}${bzVignette(0.6)}`),
+    anim(tl, s, K, $) { tl.set($('#tito'), { rotation: 88, svgOrigin: '360 1190' }, s.t0); bzFace(tl, $('#tito'), s.t0, 'closed', 'flat'); bzFace(tl, $('#tito'), s.t0 + 1.2, 'wide', 'o'); mtHide(tl, $('#on'), s.t0, s.t0 + 0.3);
       tl.fromTo($('#clk'), { opacity: 1 }, { opacity: 0.5, duration: 0.5, yoyo: true, repeat: 5 }, s.t0); } },
   outside: { bg: '#141a2e', html: () => bzShot(`<g transform="translate(-860 -560) scale(2.3)">${mtToday()}${mtBird('bd', 780, 760, 0.6)}</g>${mtWhistle('wh', 720, 980)}`, `${bzFlash('fl', BZ.red)}${bzVignette(0.85)}`),
     anim(tl, s, K, $) { tl.set($('#bd'), { opacity: 0 }, s.t0); tl.to($('#bd'), { opacity: 1, duration: 0.6 }, K('o') - 0.3); mtWhistleGo(tl, $('#wh'), K('o'), s.t1); bzHit(tl, $('#fl'), K('end'), 0.3); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 900); } },

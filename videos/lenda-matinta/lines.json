@@ -1,0 +1,96 @@
+{
+ "duration": 64.548,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "mt_eu",
+   "text": "Se você ouvir um assobio fino de madrugada... não promete nada. Nem de brincadeira.",
+   "t0": 0.3,
+   "t1": 5.575
+  },
+  {
+   "id": "n02",
+   "who": "mt_eu",
+   "text": "Eu tava na casa da minha vó, no interior do Pará. Primeira noite lá.",
+   "t0": 6.175,
+   "t1": 10.944
+  },
+  {
+   "id": "n03",
+   "who": "mt_eu",
+   "text": "Duas da manhã, começou. Um assobio fino, comprido... em cima do telhado.",
+   "t0": 11.344,
+   "t1": 17.276
+  },
+  {
+   "id": "n04",
+   "who": "mt_eu",
+   "text": "Minha vó levantou da rede na hora. Branca.",
+   "t0": 17.976,
+   "t1": 20.63
+  },
+  {
+   "id": "v01",
+   "who": "mt_vo",
+   "text": "É a Matinta Perera. Fica quieto, menino. Não responde.",
+   "t0": 21.03,
+   "t1": 24.331
+  },
+  {
+   "id": "n05",
+   "who": "mt_eu",
+   "text": "Mas o assobio não parava. Cada vez mais perto. E eu, pra ela ir embora, gritei:",
+   "t0": 24.931,
+   "t1": 29.829
+  },
+  {
+   "id": "e01",
+   "who": "mt_eu",
+   "text": "Volta amanhã que eu te dou café!",
+   "t0": 30.129,
+   "t1": 32.504
+  },
+  {
+   "id": "n06",
+   "who": "mt_eu",
+   "text": "Minha vó tapou minha boca. Tarde demais. O assobio parou.",
+   "t0": 33.004,
+   "t1": 36.55
+  },
+  {
+   "id": "n07",
+   "who": "mt_eu",
+   "text": "De manhã cedo, bateram na porta. Uma velha que ninguém da vila conhecia. Vestido preto, xale na cabeça, unha comprida.",
+   "t0": 37.55,
+   "t1": 44.697
+  },
+  {
+   "id": "m01",
+   "who": "mt_matinta",
+   "text": "Vim buscar o café que o menino prometeu.",
+   "t0": 45.197,
+   "t1": 47.282
+  },
+  {
+   "id": "n08",
+   "who": "mt_eu",
+   "text": "Minha vó deu o café e um pedaço de fumo. A velha olhou pra mim, sorriu... e foi embora assobiando.",
+   "t0": 47.882,
+   "t1": 53.488
+  },
+  {
+   "id": "n09",
+   "who": "mt_eu",
+   "text": "Dizem que quem promete e não paga, ela visita na janela pro resto da vida.",
+   "t0": 54.088,
+   "t1": 58.303
+  },
+  {
+   "id": "n10",
+   "who": "mt_eu",
+   "text": "Ontem eu acordei às duas da manhã. E tinha um assobio... aqui fora.",
+   "t0": 58.903,
+   "t1": 63.048
+  }
+ ]
+}

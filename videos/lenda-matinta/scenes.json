@@ -1,0 +1,345 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.12"
+ },
+ "music": {
+  "bpm": 64,
+  "key": "E"
+ },
+ "notes": "A MATINTA PERERA, Brasil Z toon look: a stilt house by a river in Pará at night (açaí palms, moon), the room with two hammocks and an oil lamp, the black bird with red eyes on the roof whistling, the old woman in a black shawl at the door in the morning. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 4,
+     "sfx": "whistle",
+     "t": 1.465
+    }
+   ],
+   "t0": 0,
+   "t1": 3.203
+  },
+  {
+   "id": "title",
+   "from": 8,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 9,
+     "sfx": "impact",
+     "t": 3.459
+    }
+   ],
+   "t0": 3.203,
+   "t1": 5.875
+  },
+  {
+   "id": "house",
+   "from": 14,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 22,
+     "sfx": "hit",
+     "t": 8.462
+    }
+   ],
+   "t0": 5.875,
+   "t1": 11.094
+  },
+  {
+   "id": "woke",
+   "from": 28,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 33,
+     "sfx": "whistle",
+     "t": 13.61
+    }
+   ],
+   "t0": 11.094,
+   "t1": 15.566
+  },
+  {
+   "id": "roof",
+   "from": 36,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 38,
+     "sfx": "whistle",
+     "t": 16.287
+    }
+   ],
+   "t0": 15.566,
+   "t1": 17.776
+  },
+  {
+   "id": "vo",
+   "from": 40,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 17.776,
+   "t1": 20.83
+  },
+  {
+   "id": "quieto",
+   "from": 48,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 50,
+     "sfx": "sting",
+     "t": 21.327
+    }
+   ],
+   "t0": 20.83,
+   "t1": 24.681
+  },
+  {
+   "id": "closer",
+   "from": 57,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 64,
+     "sfx": "whistle",
+     "t": 27.144
+    }
+   ],
+   "t0": 24.681,
+   "t1": 27.872
+  },
+  {
+   "id": "gritei",
+   "from": 66,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 27.872,
+   "t1": 29.929
+  },
+  {
+   "id": "promise",
+   "from": 73,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "x",
+     "at": 73,
+     "sfx": "hit",
+     "t": 30.129
+    }
+   ],
+   "t0": 29.929,
+   "t1": 32.804
+  },
+  {
+   "id": "tapou",
+   "from": 80,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 89,
+     "sfx": "off",
+     "t": 36.166
+    }
+   ],
+   "t0": 32.804,
+   "t1": 37.3
+  },
+  {
+   "id": "knock",
+   "from": 90,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "k",
+     "at": 93,
+     "sfx": "knock",
+     "t": 38.451
+    }
+   ],
+   "t0": 37.3,
+   "t1": 39.546
+  },
+  {
+   "id": "velha",
+   "from": 96,
+   "type": "object",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "v",
+     "at": 97,
+     "sfx": "sting",
+     "t": 39.787
+    }
+   ],
+   "t0": 39.546,
+   "t1": 42.015
+  },
+  {
+   "id": "unha",
+   "from": 103,
+   "type": "object",
+   "mood": "dark",
+   "t0": 42.015,
+   "t1": 44.997
+  },
+  {
+   "id": "cobrar",
+   "from": 110,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "t0": 44.997,
+   "t1": 47.682
+  },
+  {
+   "id": "pay",
+   "from": 118,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "t0": 47.682,
+   "t1": 50.351
+  },
+  {
+   "id": "smile",
+   "from": 128,
+   "type": "object",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "s",
+     "at": 133,
+     "sfx": "sting",
+     "t": 51.665
+    }
+   ],
+   "t0": 50.351,
+   "t1": 53.788
+  },
+  {
+   "id": "rule",
+   "from": 138,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 147,
+     "sfx": "sting",
+     "t": 56.68
+    }
+   ],
+   "t0": 53.788,
+   "t1": 58.603
+  },
+  {
+   "id": "today",
+   "from": 153,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 58.603,
+   "t1": 61.16
+  },
+  {
+   "id": "outside",
+   "from": 160,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 163,
+     "sfx": "whistle",
+     "t": 61.885
+    },
+    {
+     "id": "end",
+     "at": 165,
+     "dt": 0.558,
+     "sfx": "sting",
+     "t": 63.278
+    }
+   ],
+   "t0": 61.16,
+   "t1": 64.548
+  }
+ ],
+ "duration": 64.548
+}
