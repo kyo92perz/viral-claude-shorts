@@ -25,6 +25,7 @@ interface BzSpec {
   extra?: string;                                                           // more SVG drawn on the body (local coordinates)
   cotton?: boolean; claws?: boolean; ribs?: boolean;
   headBack?: string; headFront?: string;                                    // more SVG in the head (local coords, radius ~90): behind the head (ears, a veil) / over the face under the eyes (a snout)
+  flat?: boolean; noShadow?: boolean;                                       // no shading / no ground shadow
   glow?: string;                                                            // color of the 'glow' eyes (monsters; default red)
 }
 // a noodle limb: a dark stroke under a colored one (round caps), from (0,0) down to (dx, len)
@@ -91,10 +92,15 @@ function bzChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = fals
   else if (sp.hat?.kind === 'fedora') hat = `<ellipse cx="0" cy="${-hr * 0.55}" rx="${hr * 1.45}" ry="${hr * 0.24}" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.8} ${-hr * 0.6} Q ${-hr * 0.85} ${-hr * 1.5} ${-hr * 0.2} ${-hr * 1.35} L 0 ${-hr * 1.2} L ${hr * 0.2} ${-hr * 1.35} Q ${hr * 0.85} ${-hr * 1.5} ${hr * 0.8} ${-hr * 0.6} Z" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.8} ${-hr * 0.72} h${hr * 1.6}" stroke="${BZ.ink}" stroke-width="12"/>`;
   else if (sp.hat?.kind === 'cap') hat = `<path d="M${-hr * 0.95} ${-hr * 0.3} Q ${-hr} ${-hr * 1.15} 0 ${-hr * 1.1} Q ${hr} ${-hr * 1.15} ${hr * 0.95} ${-hr * 0.3} Z" fill="${sp.hat.color}" ${bzO()}/><path d="M${-hr * 0.9} ${-hr * 0.32} Q 0 ${-hr * 0.1} ${hr * 1.3} ${-hr * 0.35} Q 0 ${-hr * 0.5} ${-hr * 0.9} ${-hr * 0.32} Z" fill="${BZ.ink}"/>`;
   else if (sp.hat?.kind === 'beanie') hat = `<path d="M${-hr * 0.98} ${-hr * 0.25} Q ${-hr} ${-hr * 1.2} 0 ${-hr * 1.15} Q ${hr} ${-hr * 1.2} ${hr * 0.98} ${-hr * 0.25} Z" fill="${sp.hat.color}" ${bzO()}/>`;
-  const head = `<g transform="translate(0 ${headY})"><g class="hd">${sp.headBack || ''}${hairBack}<circle r="${hr}" fill="${skin}" ${bzO()}/>${cheeks}${hairFront}${beard}${sp.headFront || ''}${eyes}${brows}${glasses}${mustache}${mouths}${cotton}${hat}</g></g>`;
-  return `<g id="${id}"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">
+  const head = `<g transform="translate(0 ${headY})"><g class="hd">${sp.headBack || ''}${hairBack}<circle r="${hr}" fill="${skin}" ${bzO()}/>${sp.flat ? '' : `<path d="M${hr * 0.15} ${-hr * 0.97} A ${hr} ${hr} 0 0 1 ${hr * 0.15} ${hr * 0.97} A ${hr * 0.78} ${hr} 0 0 0 ${hr * 0.15} ${-hr * 0.97} Z" fill="#000" opacity="0.1"/><ellipse cx="${-hr * 0.42}" cy="${-hr * 0.5}" rx="${hr * 0.2}" ry="${hr * 0.12}" fill="#fff" opacity="0.18" transform="rotate(-30 ${-hr * 0.42} ${-hr * 0.5})"/>`}${cheeks}${hairFront}${beard}${sp.headFront || ''}${eyes}${brows}${glasses}${mustache}${mouths}${cotton}${hat}</g></g>`;
+  // depth: a soft shadow on the ground, a shaded side on the body and the head (sp.flat turns it off)
+  const shadow = sp.noShadow ? '' : `<ellipse class="shadow" cx="0" cy="4" rx="${bodyW * 0.8}" ry="18" fill="#000" opacity="0.28"/>`;
+  const bodyShade = sp.flat ? '' : sp.dress
+    ? `<path d="M${bodyW * 0.12} ${bodyTop + 12} Q ${bodyW * 0.4} ${bodyTop + 20} ${bodyW * 0.68} ${hipY + 58} Q ${bodyW * 0.45} ${hipY + 76} ${bodyW * 0.22} ${hipY + 80} Z" fill="#000" opacity="0.13"/>`
+    : `<rect x="${bodyW * 0.1}" y="${bodyTop + 8}" width="${bodyW * 0.36}" height="${bodyH - 16}" rx="${bodyW * 0.18}" fill="#000" opacity="0.13"/>`;
+  return `<g id="${id}"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">${shadow}
     ${leg('lL', -bodyW * 0.22)}${leg('lR', bodyW * 0.22)}${arm('aL', -bodyW * 0.42)}
-    <g class="bd">${body}${stripe}${belt}${badge}${ribs}${sp.extra || ''}</g>${arm('aR', bodyW * 0.42)}${head}</g></g></g>`;
+    <g class="bd">${body}${bodyShade}${stripe}${belt}${badge}${ribs}${sp.extra || ''}</g>${arm('aR', bodyW * 0.42)}${head}</g></g></g>`;
 }
 // ---- motion on the timeline (absolute times). sel = '#sc-xxx #id' (use $('#id'))
 const BZ_EYES = ['dot', 'wide', 'closed', 'half', 'angry', 'dead', 'glow'], BZ_MOUTHS = ['smile', 'flat', 'open', 'grin', 'frown', 'o', 'fangs'];
@@ -181,3 +187,69 @@ const bzHook = (tl: gsap.core.Timeline, sel: string, t: number) => tl.fromTo(sel
 const bzNum = (id: string, n: string, x: number, y: number, c = '#fff', size = 240) => `<g id="${id}" opacity="0"><text x="${x}" y="${y}" text-anchor="middle" font-family="Anton" font-size="${size}" fill="${c}" stroke="${BZ.ink}" stroke-width="14" paint-order="stroke">${n}</text></g>`;
 // the whole frame shakes
 const bzQuake = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a = 6) => tl.fromTo(sel, { x: -a }, { x: a, duration: 0.05, yoyo: true, repeat: Math.max(1, Math.floor((t1 - t0) / 0.05)), ease: 'none' }, t0);
+
+// ---- detail kit: depth, particles, light, a living camera
+// particles: fireflies (glowing dots that wander and blink), leaves (fall and spin), embers (rise), bubbles (rise and wobble),
+// dust (drifts), spores (float up slowly). Area [x0, y0, x1, y1]. Animate them with bzParticlesGo.
+function bzParticles(id: string, kind: 'fireflies' | 'leaves' | 'embers' | 'bubbles' | 'dust' | 'spores', n = 24, area = [0, 0, 1080, 1920], seed = 1) {
+  let r = seed * 9301 + 49297; const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
+  const [x0, y0, x1, y1] = area; let out = '';
+  for (let i = 0; i < n; i++) {
+    const x = x0 + rnd() * (x1 - x0), y = y0 + rnd() * (y1 - y0), k = 0.6 + rnd() * 0.8;
+    if (kind === 'fireflies') out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><circle r="${(16 * k).toFixed(1)}" fill="#e8ff8a" opacity="0.25"/><circle r="${(5 * k).toFixed(1)}" fill="#f6ffc8"/></g></g>`;
+    else if (kind === 'leaves') out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><path d="M0 ${-18 * k} Q ${14 * k} 0 0 ${18 * k} Q ${-14 * k} 0 0 ${-18 * k} Z" fill="${['#3f7a3a', '#5a8a2a', '#8a6a2a', '#2f5a30'][i % 4]}" stroke="${BZ.ink}" stroke-width="3"/></g></g>`;
+    else if (kind === 'embers') out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><circle r="${(10 * k).toFixed(1)}" fill="#ff8a2a" opacity="0.3"/><circle r="${(4 * k).toFixed(1)}" fill="#ffd27a"/></g></g>`;
+    else if (kind === 'bubbles') out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><circle r="${(9 * k).toFixed(1)}" fill="none" stroke="#c8e8ff" stroke-width="3" opacity="0.7"/><circle cx="${-3 * k}" cy="${-3 * k}" r="${(2.5 * k).toFixed(1)}" fill="#fff" opacity="0.8"/></g></g>`;
+    else if (kind === 'dust') out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><circle r="${(3 * k).toFixed(1)}" fill="#fff8e0" opacity="0.5"/></g></g>`;
+    else out += `<g class="pt"><g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})"><circle r="${(6 * k).toFixed(1)}" fill="#c8ffd8" opacity="0.35"/><circle r="${(2 * k).toFixed(1)}" fill="#e8fff0"/></g></g>`;
+  }
+  return `<g id="${id}" class="particles ${kind}">${out}</g>`;
+}
+// set the particles of group sel moving between t0 and t1 (deterministic: everything depends on the index)
+function bzParticlesGo(tl: gsap.core.Timeline, sel: string, kind: string, t0: number, t1: number) {
+  const d = t1 - t0, q = `${sel} .pt`;
+  const h = (i: number, m: number) => ((i * 7919 + 104729) % m);
+  if (kind === 'fireflies' || kind === 'spores' || kind === 'dust') {
+    tl.fromTo(q, { x: 0, y: 0 }, { x: (i: number) => h(i, 160) - 80, y: (i: number) => (kind === 'spores' ? -120 - h(i, 120) : h(i, 140) - 70), duration: d, ease: 'sine.inOut' }, t0);
+    if (kind === 'fireflies') tl.fromTo(q, { opacity: 1 }, { opacity: 0.15, duration: 0.6, yoyo: true, repeat: Math.max(1, Math.floor(d / 0.6)), ease: 'sine.inOut', stagger: { each: 0.13, from: 'random' } }, t0);
+  } else if (kind === 'leaves') {
+    tl.fromTo(q, { x: 0, y: 0, rotation: 0, transformOrigin: '50% 50%' }, { x: (i: number) => -120 - h(i, 200), y: (i: number) => 500 + h(i, 500), rotation: (i: number) => 180 + h(i, 360), duration: d, ease: 'none' }, t0);
+  } else if (kind === 'embers') {
+    tl.fromTo(q, { x: 0, y: 0, opacity: 1 }, { x: (i: number) => h(i, 140) - 70, y: (i: number) => -400 - h(i, 500), opacity: 0.2, duration: d, ease: 'none' }, t0);
+  } else if (kind === 'bubbles') {
+    tl.fromTo(q, { y: 0 }, { y: (i: number) => -500 - h(i, 600), duration: d, ease: 'none' }, t0);
+    tl.fromTo(q, { x: -8 }, { x: 8, duration: 0.4, yoyo: true, repeat: Math.max(1, Math.floor(d / 0.4)), ease: 'sine.inOut', stagger: 0.07 }, t0);
+  }
+}
+// soft light: a radial glow (lamps, moon, fire, eyes)
+function bzGlow(id: string, x: number, y: number, r: number, c = '#ffd27a', op = 0.5) {
+  const g = 'bzgl' + (BZ_UID++);
+  return `<defs><radialGradient id="${g}"><stop offset="0" stop-color="${c}" stop-opacity="${op}"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></radialGradient></defs><circle id="${id}" cx="${x}" cy="${y}" r="${r}" fill="url(#${g})"/>`;
+}
+// light rays from (x, y) fanning down (moonlight through trees, light under water)
+function bzRays(id: string, x: number, y: number, n = 5, len = 1600, c = '#e8f4ff', op = 0.12) {
+  return `<g id="${id}">${[...Array(n)].map((_, i) => { const a = -0.5 + (i / Math.max(1, n - 1)) * 1.0, w = 60 + (i % 3) * 30;
+    return `<path d="M${x} ${y} L${x + Math.sin(a) * len - w} ${y + Math.cos(a) * len} L${x + Math.sin(a) * len + w} ${y + Math.cos(a) * len} Z" fill="${c}" opacity="${op}"/>`; }).join('')}</g>`;
+}
+// big dark leaves framing the shot in the foreground (jungle); side: 'both' | 'left' | 'right' | 'top'
+function bzFrameLeaves(side = 'both', c = '#0e1a14', seed = 3) {
+  const leaf = (x: number, y: number, rot: number, s: number) => `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><path d="M0 0 Q 120 -60 260 0 Q 120 60 0 0 Z" fill="${c}"/><path d="M0 0 Q 130 -6 250 0" stroke="#1a2e22" stroke-width="5" fill="none"/></g>`;
+  let out = ''; const L: number[][] = [];
+  if (side === 'both' || side === 'left') L.push([-130, 260, 20, 1.25], [-150, 760, -10, 1.45], [-120, 1250, 25, 1.2], [-140, 1720, -20, 1.4]);
+  if (side === 'both' || side === 'right') L.push([1210, 420, 160, 1.3], [1230, 900, 195, 1.45], [1200, 1400, 150, 1.25], [1220, 1800, 200, 1.4]);
+  if (side === 'top') L.push([100, -130, 70, 1.3], [420, -150, 100, 1.45], [760, -130, 80, 1.35], [1000, -120, 120, 1.3]);
+  for (const [x, y, r, s] of L) out += leaf(x, y, r + (seed % 7), s);
+  return `<g class="frameleaves">${out}</g>`;
+}
+// the camera breathes (handheld): a slow drift in x and y
+function bzHandheld(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, amp = 5) {
+  const d = t1 - t0;
+  tl.fromTo(sel, { x: -amp }, { x: amp, duration: 1.7, yoyo: true, repeat: Math.max(1, Math.floor(d / 1.7)), ease: 'sine.inOut' }, t0);
+  tl.fromTo(sel, { y: amp * 0.6 }, { y: -amp * 0.6, duration: 1.3, yoyo: true, repeat: Math.max(1, Math.floor(d / 1.3)), ease: 'sine.inOut' }, t0);
+}
+// a living character: breathing and blinking for the whole shot
+const bzIdle = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number, seed = 0) => { bzBob(tl, sel, t0, t1, 4); bzBlink(tl, sel, t0, t1, 2.6, seed); };
+// parallax: the groups #lay-bg, #lay-mid, #lay-fg of the shot slide by dx at 0.25x, 0.6x and 1.4x
+function bzParallax(tl: gsap.core.Timeline, $: (q: string) => string, t0: number, t1: number, dx: number) {
+  [['#lay-bg', 0.25], ['#lay-mid', 0.6], ['#lay-fg', 1.4]].forEach(([q, k]) => tl.fromTo($(q as string), { x: 0 }, { x: dx * (k as number), duration: t1 - t0, ease: 'none' }, t0));
+}

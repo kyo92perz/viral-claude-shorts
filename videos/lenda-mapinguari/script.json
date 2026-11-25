@@ -1,0 +1,118 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "ma_eu",
+   "text": "Nunca responda um grito no meio da floresta. Porque quem gritou... vem atrás de quem respondeu.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "ma_eu",
+   "text": "Meu avô Raimundo foi seringueiro no Acre, nos anos setenta. Ele só contou essa história uma vez. E chorou.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "ma_eu",
+   "text": "Era ele e o amigo dele, o Chico. Acampados no meio da mata, a três dias de caminhada da cidade mais perto.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "n04",
+   "who": "ma_eu",
+   "text": "Numa noite, veio um grito. Um grito grosso, comprido, que fez até os macacos ficarem quietos.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "c01",
+   "who": "ma_chico",
+   "text": "Ê! Quem tá aí? Tá perdido?",
+   "pause": 0.4,
+   "emo": 0.6
+  },
+  {
+   "id": "v01",
+   "who": "ma_vo",
+   "text": "Cala a boca, Chico! Não responde!",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n05",
+   "who": "ma_eu",
+   "text": "Mas o Chico já tinha respondido. E o grito voltou. Mais perto.",
+   "pause": 0.9,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "ma_eu",
+   "text": "Primeiro veio o cheiro. Um fedor de carne podre que fazia o olho arder. Depois, as árvores começaram a estalar.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n07",
+   "who": "ma_eu",
+   "text": "E ele saiu da mata. Um bicho de quatro metros, peludo, com um olho só no meio da testa.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n08",
+   "who": "ma_eu",
+   "text": "O Chico atirou. As balas batiam no couro dele e caíam no chão. Aí a barriga do bicho abriu. Era uma boca cheia de dentes.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n09",
+   "who": "ma_eu",
+   "text": "Meu avô se jogou no igarapé e prendeu o fôlego debaixo da água. Lá de baixo, ele ouviu o Chico gritar. Uma vez só.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "ma_eu",
+   "text": "Quando o dia clareou, só tinha a rede do Chico, rasgada. E pegadas enormes, viradas pra trás, entrando na mata.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n11",
+   "who": "ma_eu",
+   "text": "Hoje meu avô mora com a gente, na beira da floresta. E ontem à noite, veio um grito lá do mato.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n12",
+   "who": "ma_eu",
+   "text": "Meu avô tapou a minha boca com a mão, tremendo. E sussurrou:",
+   "pause": 0.4,
+   "emo": 0.6
+  },
+  {
+   "id": "v02",
+   "who": "ma_vo",
+   "text": "Ele voltou. Não responde.",
+   "pause": 0.9,
+   "emo": 0.55
+  },
+  {
+   "id": "n13",
+   "who": "ma_eu",
+   "text": "E você? Ia responder?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

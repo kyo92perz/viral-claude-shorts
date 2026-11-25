@@ -92,6 +92,14 @@ VOICES = {
     "br_moca": ("pf_dora", 0.94, st(-1) + ",aecho=0.8:0.5:50:0.3,lowpass=f=5500"),
     "bo_eu": ("pf_dora", 1.0, st(1.5) + ",equalizer=f=220:t=q:w=1:g=1.5"),
     "bo_zeca": ("pm_santa", 0.95, st(-1) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "cu_eu": ("pm_alex", 0.98, st(0.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "cu_bento": ("piper:jeff", 0.95, st(-1.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "ia_eu": ("pf_dora", 1.0, st(1) + ",equalizer=f=220:t=q:w=1:g=1.5"),
+    "ia_tiago": ("piper:cadu", 1.0, st(0)),
+    "ia_iara": ("pf_dora", 0.9, st(2) + ",aecho=0.8:0.6:70|140:0.35|0.2,lowpass=f=6000"),
+    "ma_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "ma_vo": ("pm_santa", 0.9, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
+    "ma_chico": ("piper:faber", 1.0, st(1)),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)

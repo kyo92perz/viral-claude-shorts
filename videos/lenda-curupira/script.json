@@ -1,0 +1,118 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "cu_eu",
+   "text": "Se você achar pegadas no meio do mato andando ao contrário... não segue. É o Curupira te chamando.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "cu_eu",
+   "text": "Meu tio Bento era caçador no interior do Pará. Ele dizia que não tinha medo de bicho nenhum. Nem de lenda.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "b01",
+   "who": "cu_bento",
+   "text": "Curupira é história de vó, moleque. Pega a lanterna e vem.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "cu_eu",
+   "text": "A gente entrou na mata antes do sol nascer. Meu tio marcou uma árvore com três cortes de faca, pra achar o caminho de volta.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "cu_eu",
+   "text": "Duas horas depois, achamos pegadas na lama. Pequenas. Descalças. E viradas pra trás.",
+   "pause": 0.5,
+   "emo": 0.65
+  },
+  {
+   "id": "b02",
+   "who": "cu_bento",
+   "text": "Tem gente aqui no mato. Vamos seguir as pegadas.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "n05",
+   "who": "cu_eu",
+   "text": "A gente seguiu. Só que pegada virada pra trás leva pro lado contrário de quem fez.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n06",
+   "who": "cu_eu",
+   "text": "Aí começou o assobio. Fino. Comprido. Vindo de todos os lados ao mesmo tempo.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n07",
+   "who": "cu_eu",
+   "text": "Andamos uma hora em linha reta. E paramos na frente de uma árvore com três cortes de faca. A mesma árvore.",
+   "pause": 0.5,
+   "emo": 0.65
+  },
+  {
+   "id": "b03",
+   "who": "cu_bento",
+   "text": "Não pode ser! A gente andou reto o tempo todo!",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n08",
+   "who": "cu_eu",
+   "text": "Andamos de novo. E de novo. Toda vez, a árvore dos três cortes aparecia na nossa frente.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n09",
+   "who": "cu_eu",
+   "text": "Foi quando eu vi. Montado num porco do mato, um menino de cabelo vermelho igual fogo. Rindo. Com os pés virados pra trás.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "cu_eu",
+   "text": "Lembrei do que minha vó ensinava: faz um nó num cipó e esconde a ponta. O Curupira para pra desatar, e você foge.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "n11",
+   "who": "cu_eu",
+   "text": "Eu dei o nó e corri. Meu tio ficou pra trás, mirando a espingarda no menino.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n12",
+   "who": "cu_eu",
+   "text": "Achei a estrada no fim da tarde. Meu tio nunca voltou. Três dias depois, só a espingarda dele apareceu. Com o cano todo amarrado de cipó.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n13",
+   "who": "cu_eu",
+   "text": "E você? Seguiria as pegadas?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}
