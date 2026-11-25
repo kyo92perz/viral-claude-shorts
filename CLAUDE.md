@@ -20,3 +20,9 @@ If `node_modules`, `.venv` or a tool (Node 22.18+, ffmpeg, Python 3.10 to 3.14) 
 ## Horror, suspense and fights
 
 For any horror, suspense or action story (script, staging, fights, sound, thumbnail, title), also follow the director's manual in `.claude/skills/diretor-de-terror/SKILL.md`: silence before every scare, a varied cutting rhythm (long dread holds, fast fight cuts), a desaturated night with one threat colour, and the creature revealed in parts. Act the key lines (`emo` in `script.json`, see `references/vozes.md`) and check every line with its `scripts/check-speech.py` before rendering. After rendering, measure `final.mp4` with its `scripts/analyze-film.py` and compare it with `references/filmes-estudados.md`.
+
+## Crescer e monetizar
+
+Para título, capa, gancho, descrição, horários, nicho, leitura dos números do YouTube Studio ou monetização, siga
+`.claude/skills/youtube-crescimento/SKILL.md`. Quando o usuário mostrar resultados novos do Studio, registre-os em
+`references/dados-dos-canais.md` dessa skill.
