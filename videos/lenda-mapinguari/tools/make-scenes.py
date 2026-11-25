@@ -9,7 +9,7 @@ D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'si
 N = ['night']; F = ['night', 'forest']
 SHOTS = [
  ('hook', 'n01', 0, None, D, ['drone'], [('h', 'n01', 0, 0.1, 'roar')]),
- ('mouth', 'n01', 8, None, D, ['drone'], [('m', 'n01', 11, 0, 'sting')]),
+ ('mouth', 'n01', 8, None, D, ['drone'], [('m', 'n01', 10, 0, 'sting')]),
  ('title', 'n01', 13, None, D, ['drone'], [('t', 'n01', 15, 0, 'impact')]),
  ('vo', 'n02', 0, None, SAD, ['room'], [('n', 'n02', 2, 0, 'hit')]),
  ('tear', 'n02', 10, None, SAD, ['room'], []),

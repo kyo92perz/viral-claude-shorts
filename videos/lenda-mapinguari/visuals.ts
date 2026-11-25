@@ -1,5 +1,5 @@
 // <lines>
-const MA_LINES: { who: string; t0: number; t1: number }[] = [];
+const MA_LINES = [{"who": "ma_eu", "t0": 0.3, "t1": 5.48}, {"who": "ma_eu", "t0": 6.08, "t1": 13.733}, {"who": "ma_eu", "t0": 14.233, "t1": 20.696}, {"who": "ma_eu", "t0": 21.296, "t1": 28.38}, {"who": "ma_chico", "t0": 28.98, "t1": 32.51}, {"who": "ma_vo", "t0": 32.91, "t1": 36.376}, {"who": "ma_eu", "t0": 36.976, "t1": 40.395}, {"who": "ma_eu", "t0": 41.295, "t1": 47.999}, {"who": "ma_eu", "t0": 48.599, "t1": 53.975}, {"who": "ma_eu", "t0": 54.575, "t1": 61.738}, {"who": "ma_eu", "t0": 62.338, "t1": 70.451}, {"who": "ma_eu", "t0": 71.251, "t1": 78.932}, {"who": "ma_eu", "t0": 79.632, "t1": 85.878}, {"who": "ma_eu", "t0": 86.478, "t1": 89.988}, {"who": "ma_vo", "t0": 90.388, "t1": 92.732}, {"who": "ma_eu", "t0": 93.632, "t1": 95.346}];
 // </lines>
 // =====================================================================
 //  O MAPINGUARI: the shots (detailed Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.

@@ -1,5 +1,5 @@
 // <lines>
-const IA_LINES: { who: string; t0: number; t1: number }[] = [];
+const IA_LINES = [{"who": "ia_eu", "t0": 0.3, "t1": 4.898}, {"who": "ia_eu", "t0": 5.498, "t1": 12.117}, {"who": "ia_eu", "t0": 12.617, "t1": 18.22}, {"who": "ia_eu", "t0": 18.82, "t1": 26.023}, {"who": "ia_tiago", "t0": 26.623, "t1": 30.015}, {"who": "ia_eu", "t0": 30.615, "t1": 36.681}, {"who": "ia_eu", "t0": 37.381, "t1": 43.782}, {"who": "ia_iara", "t0": 44.382, "t1": 46.117}, {"who": "ia_eu", "t0": 46.917, "t1": 53.371}, {"who": "ia_eu", "t0": 53.971, "t1": 61.933}, {"who": "ia_eu", "t0": 62.533, "t1": 68.51}, {"who": "ia_eu", "t0": 69.21, "t1": 74.208}, {"who": "ia_eu", "t0": 74.708, "t1": 79.013}, {"who": "ia_eu", "t0": 79.713, "t1": 84.845}];
 // </lines>
 // =====================================================================
 //  A IARA: the shots (detailed Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -95,8 +95,9 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#tiago'), s.t0, 'glow', 'flat'); iaShimmer(tl, $(''), s.t0, s.t1); bzParticlesGo(tl, $('#ff'), 'fireflies', s.t0, s.t1); bzPop(tl, $('#md'), s.t0 + 0.2); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 560, 1000); } },
   sing: { bg: '#0b1028', html: () => bzShot(`${iaRiver(1250)}${iaTiago(540, 2150, 2.4)}${iaNotes(760, 900)}`, bzVignette(0.8)),
     anim(tl, s, K, $) { bzFace(tl, $('#tiago'), s.t0, 'closed', 'o'); iaNotesGo(tl, $(''), s.t0, s.t1); tl.fromTo($('#tiago .hd'), { rotation: -6, transformOrigin: '50% 90%' }, { rotation: 6, duration: 0.8, yoyo: true, repeat: 3, ease: 'sine.inOut' }, s.t0); } },
-  voz: { bg: '#0b1028', html: () => bzShot(`${iaRiver(1000)}${iaTiago(540, 1900, 2.0)}<g opacity="0.55" transform="translate(0 1060) scale(1 -1) translate(0 -1060)" id="refl">${iaIara(540, 1900, 2.0)}</g>`, `${bzFlash('fl', '#6aff9a')}${bzVignette(0.8)}`),
-    anim(tl, s, K, $) { bzFace(tl, $('#tiago'), s.t0, 'closed', 'o'); bzFace(tl, $('#tiago'), K('v'), 'glow', 'o'); bzFace(tl, $('#iara'), s.t0, 'glow', 'smile'); tl.fromTo($('#refl'), { opacity: 0 }, { opacity: 0.55, duration: 0.6 }, K('v') - 0.3); bzHit(tl, $('#fl'), K('v'), 0.25); iaShimmer(tl, $(''), s.t0, s.t1); } },
+  voz: { bg: '#0b1028', html: () => bzShot(`${iaRiver(1100)}${iaTiago(540, 1420, 1.5)}<g id="refl" opacity="0">${iaSurfaceFace(540, 1760, 1.5)}</g>${iaRipples('rp', 540, 1700)}`, `${bzFlash('fl', '#6aff9a')}${bzVignette(0.8)}`),
+    anim(tl, s, K, $) { bzFace(tl, $('#tiago'), s.t0, 'closed', 'o'); bzFace(tl, $('#tiago'), K('v'), 'glow', 'o'); bzFace(tl, $('#iara'), s.t0, 'glow', 'smile'); tl.to($('#refl'), { opacity: 0.75, duration: 0.6 }, K('v') - 0.3);
+      bzHit(tl, $('#fl'), K('v'), 0.25); iaShimmer(tl, $(''), s.t0, s.t1); iaRipplesGo(tl, $('#rp'), s.t0, s.t1); } },
   you: { bg: '#0b1028', html: () => bzShot(`${iaRiver(1000)}<g id="rise" opacity="0">${iaSurfaceFace(540, 1000, 2.6)}</g>${iaRipples('rp', 540, 1010)}${bzParticles('ff', 'fireflies', 16, [0, 500, 1080, 980], 7)}`, bzVignette(0.8)),
     anim(tl, s, K, $) { bzFace(tl, $('#iara'), s.t0, 'glow', 'fangs'); iaShimmer(tl, $(''), s.t0, s.t1); iaRipplesGo(tl, $('#rp'), s.t0, s.t1); bzParticlesGo(tl, $('#ff'), 'fireflies', s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 960); tl.set($('#rise'), { opacity: 1 }, K('end')); } },
 });

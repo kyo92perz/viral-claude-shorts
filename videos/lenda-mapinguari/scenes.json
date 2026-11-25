@@ -1,0 +1,454 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.11"
+ },
+ "music": {
+  "bpm": 74,
+  "key": "C"
+ },
+ "notes": "O MAPINGUARI, detailed Brasil Z toon look: a dark Acre jungle at night, rubber trees with latex cups, hammocks, a campfire throwing embers, a stream; the giant's single eye is the only red. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "roar",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 2.832
+  },
+  {
+   "id": "mouth",
+   "from": 8,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 10,
+     "sfx": "sting",
+     "t": 3.492
+    }
+   ],
+   "t0": 2.832,
+   "t1": 4.48
+  },
+  {
+   "id": "title",
+   "from": 13,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 15,
+     "sfx": "impact",
+     "t": 4.931
+    }
+   ],
+   "t0": 4.48,
+   "t1": 5.83
+  },
+  {
+   "id": "vo",
+   "from": 16,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 18,
+     "sfx": "hit",
+     "t": 6.692
+    }
+   ],
+   "t0": 5.83,
+   "t1": 10.386
+  },
+  {
+   "id": "tear",
+   "from": 26,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 10.386,
+   "t1": 13.983
+  },
+  {
+   "id": "seringa",
+   "from": 35,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "night",
+    "forest"
+   ],
+   "t0": 13.983,
+   "t1": 16.237
+  },
+  {
+   "id": "camp",
+   "from": 43,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night",
+    "forest"
+   ],
+   "t0": 16.237,
+   "t1": 20.996
+  },
+  {
+   "id": "grito",
+   "from": 57,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 61,
+     "sfx": "roar",
+     "t": 22.83
+    }
+   ],
+   "t0": 20.996,
+   "t1": 25.296
+  },
+  {
+   "id": "monkeys",
+   "from": 66,
+   "type": "object",
+   "mood": "silence",
+   "t0": 25.296,
+   "t1": 28.78
+  },
+  {
+   "id": "quemta",
+   "from": 73,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 28.78,
+   "t1": 32.71
+  },
+  {
+   "id": "calaboca",
+   "from": 79,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 32.71,
+   "t1": 36.726
+  },
+  {
+   "id": "closer",
+   "from": 85,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 92,
+     "sfx": "roar",
+     "t": 38.919
+    }
+   ],
+   "t0": 36.726,
+   "t1": 40.995
+  },
+  {
+   "id": "smell",
+   "from": 97,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 40.995,
+   "t1": 45.69
+  },
+  {
+   "id": "trees",
+   "from": 111,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 114,
+     "sfx": "crack",
+     "t": 46.778
+    }
+   ],
+   "t0": 45.69,
+   "t1": 48.349
+  },
+  {
+   "id": "emerge",
+   "from": 117,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 119,
+     "sfx": "impact",
+     "t": 49.001
+    }
+   ],
+   "t0": 48.349,
+   "t1": 49.855
+  },
+  {
+   "id": "size",
+   "from": 122,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 49.855,
+   "t1": 51.925
+  },
+  {
+   "id": "eye",
+   "from": 128,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 130,
+     "sfx": "sting",
+     "t": 52.365
+    }
+   ],
+   "t0": 51.925,
+   "t1": 54.325
+  },
+  {
+   "id": "shoot",
+   "from": 136,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "b1",
+     "at": 138,
+     "sfx": "gun",
+     "t": 55.069
+    },
+    {
+     "id": "b2",
+     "at": 142,
+     "sfx": "gun",
+     "t": 56.441
+    }
+   ],
+   "t0": 54.325,
+   "t1": 58.3
+  },
+  {
+   "id": "belly",
+   "from": 149,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 154,
+     "sfx": "roar",
+     "t": 59.625
+    }
+   ],
+   "t0": 58.3,
+   "t1": 62.138
+  },
+  {
+   "id": "dive",
+   "from": 161,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "d",
+     "at": 164,
+     "sfx": "splash",
+     "t": 63.162
+    }
+   ],
+   "t0": 62.138,
+   "t1": 64.568
+  },
+  {
+   "id": "under",
+   "from": 168,
+   "type": "object",
+   "mood": "silence",
+   "keys": [
+    {
+     "id": "s",
+     "at": 181,
+     "sfx": "scream",
+     "t": 69.132
+    }
+   ],
+   "t0": 64.568,
+   "t1": 70.751
+  },
+  {
+   "id": "dawn",
+   "from": 185,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.5,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 70.751,
+   "t1": 75.211
+  },
+  {
+   "id": "prints",
+   "from": 196,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 75.211,
+   "t1": 79.332
+  },
+  {
+   "id": "today",
+   "from": 205,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "t0": 79.332,
+   "t1": 83.095
+  },
+  {
+   "id": "again",
+   "from": 216,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 221,
+     "sfx": "roar",
+     "t": 84.507
+    }
+   ],
+   "t0": 83.095,
+   "t1": 86.278
+  },
+  {
+   "id": "hand",
+   "from": 226,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 86.278,
+   "t1": 90.188
+  },
+  {
+   "id": "voltou",
+   "from": 238,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 90.188,
+   "t1": 93.432
+  },
+  {
+   "id": "you",
+   "from": 242,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 245,
+     "dt": 1.048,
+     "sfx": "sting",
+     "t": 95.576
+    }
+   ],
+   "t0": 93.432,
+   "t1": 96.946
+  }
+ ],
+ "duration": 96.946
+}
