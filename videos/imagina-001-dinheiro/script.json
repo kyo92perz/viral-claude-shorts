@@ -1,0 +1,369 @@
+{
+ "lead": 0.3,
+ "tail": 1.6,
+ "lines": [
+  {
+   "id": "a01",
+   "who": "im_narr",
+   "text": "Imagina só: amanhã você acorda e tem 1 real na sua conta. Só que, todo dia, esse dinheiro dobra. Sozinho.",
+   "say": "Imagina só: amanhã você acorda e tem um real na sua conta. Só que, todo dia, esse dinheiro dobra. Sozinho.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "a02",
+   "who": "im_narr",
+   "text": "Parece pouco, né? Mas em 30 dias você vai ter mais de 500 milhões. E se não parar... no fim deste vídeo o dinheiro do mundo inteiro não vai ser suficiente.",
+   "say": "Parece pouco, né? Mas em trinta dias você vai ter mais de quinhentos milhões. E se não parar... no fim deste vídeo o dinheiro do mundo inteiro não vai ser suficiente.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "a03",
+   "who": "im_narr",
+   "text": "As regras são simples: o dinheiro dobra toda manhã, às 7 horas. Você pode gastar à vontade. E não pode contar pra ninguém como isso acontece.",
+   "say": "As regras são simples: o dinheiro dobra toda manhã, às sete horas. Você pode gastar à vontade. E não pode contar pra ninguém como isso acontece.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "a04",
+   "who": "im_narr",
+   "text": "Valendo. Dia 1.",
+   "say": "Valendo. Dia um.",
+   "pause": 0.9,
+   "emo": 0.6
+  },
+  {
+   "id": "b01",
+   "who": "im_narr",
+   "text": "Você abre o aplicativo do banco: 1 real. Dá pra comprar... uma bala. Talvez duas.",
+   "say": "Você abre o aplicativo do banco: um real. Dá pra comprar... uma bala. Talvez duas.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "t01",
+   "who": "im_tuco",
+   "text": "Sério que esse é o meu superpoder?",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "b02",
+   "who": "im_narr",
+   "text": "Dia 2: 2 reais. Dia 3: 4 reais. Dia 5: 16 reais. Dá pra um salgado e um refrigerante na cantina.",
+   "say": "Dia dois: dois reais. Dia três: quatro reais. Dia cinco: dezesseis reais. Dá pra um salgado e um refrigerante na cantina.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "b03",
+   "who": "im_narr",
+   "text": "No dia 7 você tem 64 reais e já paga o lanche do seu amigo Biel.",
+   "say": "No dia sete você tem sessenta e quatro reais e já paga o lanche do seu amigo Biel.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "k01",
+   "who": "im_biel",
+   "text": "Ué, ganhou na rifa, foi?",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "b04",
+   "who": "im_narr",
+   "text": "E aqui está a armadilha que quase todo mundo cai: a primeira semana inteira não deu nem 130 reais. Parece que não vai dar em nada.",
+   "say": "E aqui está a armadilha que quase todo mundo cai: a primeira semana inteira não deu nem cento e trinta reais. Parece que não vai dar em nada.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "b05",
+   "who": "im_narr",
+   "text": "Isso tem nome: crescimento exponencial. No começo é devagar, devagar, devagar... e de repente explode.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
+   "id": "c01",
+   "who": "im_narr",
+   "text": "Dia 10: 512 reais. Você compra um tênis novo e ainda sobra.",
+   "say": "Dia dez: quinhentos e doze reais. Você compra um tênis novo e ainda sobra.",
+   "pause": 0.4,
+   "emo": 0.55
+  },
+  {
+   "id": "c02",
+   "who": "im_narr",
+   "text": "Dia 11: mil e vinte e quatro reais. Pela primeira vez, você tem mais de mil reais na conta.",
+   "say": "Dia onze: mil e vinte e quatro reais. Pela primeira vez, você tem mais de mil reais na conta.",
+   "pause": 0.4,
+   "emo": 0.6
+  },
+  {
+   "id": "c03",
+   "who": "im_narr",
+   "text": "Dia 14: 8 mil reais. Você paga a conta de luz atrasada da sua mãe sem ela ver.",
+   "say": "Dia quatorze: oito mil reais. Você paga a conta de luz atrasada da sua mãe sem ela ver.",
+   "pause": 0.4,
+   "emo": 0.5
+  },
+  {
+   "id": "m01",
+   "who": "im_mae",
+   "text": "Tuco! A conta de luz apareceu paga! Foi você?",
+   "pause": 0.5,
+   "emo": 0.7
+  },
+  {
+   "id": "t02",
+   "who": "im_tuco",
+   "text": "Eu? Não, mãe. Deve ter sido... milagre.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "c04",
+   "who": "im_narr",
+   "text": "Dia 16: 32 mil reais. Dá pra comprar um carro usado. Mas você tem 14 anos. Então você compra um videogame, um celular novo e uma bicicleta elétrica.",
+   "say": "Dia dezesseis: trinta e dois mil reais. Dá pra comprar um carro usado. Mas você tem quatorze anos. Então você compra um videogame, um celular novo e uma bicicleta elétrica.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "c05",
+   "who": "im_narr",
+   "text": "E na escola, todo mundo começa a reparar.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "d01",
+   "who": "im_narr",
+   "text": "Dia 18: 131 mil reais. O telefone toca. É do banco.",
+   "say": "Dia dezoito: cento e trinta e um mil reais. O telefone toca. É do banco.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "g01",
+   "who": "im_ger",
+   "text": "Boa tarde. Notamos movimentações fora do seu perfil. Pode explicar a origem desse dinheiro?",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "d02",
+   "who": "im_narr",
+   "text": "E isso é real: no Brasil, os bancos avisam o governo quando aparece dinheiro demais, rápido demais, sem explicação. Quem cuida disso é o COAF, um órgão que procura lavagem de dinheiro.",
+   "say": "E isso é real: no Brasil, os bancos avisam o governo quando aparece dinheiro demais, rápido demais, sem explicação. Quem cuida disso é o Coaf, um órgão que procura lavagem de dinheiro.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "d03",
+   "who": "im_narr",
+   "text": "Ou seja: se você não tiver uma boa história, o seu superpoder vai virar um processo.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "d04",
+   "who": "im_narr",
+   "text": "Então você faz o que qualquer gênio faria: conta pra sua mãe. Não o segredo, mas o dinheiro. E ela chama um contador.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "m02",
+   "who": "im_mae",
+   "text": "Meu filho, de onde saiu esse dinheiro todo?!",
+   "pause": 0.6,
+   "emo": 0.85
+  },
+  {
+   "id": "d05",
+   "who": "im_narr",
+   "text": "Dia 20: 524 mil reais. Dia 21: mais de um milhão. Você é oficialmente um milionário de 14 anos.",
+   "say": "Dia vinte: quinhentos e vinte e quatro mil reais. Dia vinte e um: mais de um milhão. Você é oficialmente um milionário de quatorze anos.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "e01",
+   "who": "im_narr",
+   "text": "Daqui pra frente, cada noite de sono vale mais que o salário de uma vida inteira.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "e02",
+   "who": "im_narr",
+   "text": "Dia 23: 4 milhões. Você compra uma casa pra sua família. Dia 25: 16 milhões. Seus tios que nunca ligavam começam a ligar todo dia.",
+   "say": "Dia vinte e três: quatro milhões. Você compra uma casa pra sua família. Dia vinte e cinco: dezesseis milhões. Seus tios que nunca ligavam começam a ligar todo dia.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "e03",
+   "who": "im_narr",
+   "text": "Dia 27: 67 milhões. Aparece um repórter na porta da casa nova.",
+   "say": "Dia vinte e sete: sessenta e sete milhões. Aparece um repórter na porta da casa nova.",
+   "pause": 0.4,
+   "emo": 0.55
+  },
+  {
+   "id": "r01",
+   "who": "im_rep",
+   "text": "Estamos aqui com o adolescente mais rico do bairro! Qual é o segredo, Tuco?",
+   "pause": 0.5,
+   "emo": 0.75
+  },
+  {
+   "id": "t03",
+   "who": "im_tuco",
+   "text": "É... eu durmo cedo?",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "e04",
+   "who": "im_narr",
+   "text": "Dia 30. Você acorda com 536 milhões de reais. Mais ou menos o tamanho de um prêmio enorme da Mega da Virada. Só que você ganha um desses... todo dia. E no dia seguinte, ganha dois.",
+   "say": "Dia trinta. Você acorda com quinhentos e trinta e seis milhões de reais. Mais ou menos o tamanho de um prêmio enorme da Mega da Virada. Só que você ganha um desses... todo dia. E no dia seguinte, ganha dois.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "f01",
+   "who": "im_narr",
+   "text": "Dia 31: um bilhão de reais. Você é bilionário. A essa altura, o dinheiro já parou de ser divertido.",
+   "say": "Dia trinta e um: um bilhão de reais. Você é bilionário. A essa altura, o dinheiro já parou de ser divertido.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "f02",
+   "who": "im_narr",
+   "text": "Você precisa de seguranças. Advogados. Um prédio só pra guardar papel de imposto. E o Biel não te chama mais pra jogar bola, porque agora tem câmera em todo lugar que você vai.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "k02",
+   "who": "im_biel",
+   "text": "Mano, você era mais legal quando era pobre.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "f03",
+   "who": "im_narr",
+   "text": "Dia 35: 17 bilhões. Dia 38: 137 bilhões. Você passa a maior fortuna do Brasil. Em menos de seis semanas, partindo de uma moeda de 1 real.",
+   "say": "Dia trinta e cinco: dezessete bilhões. Dia trinta e oito: cento e trinta e sete bilhões. Você passa a maior fortuna do Brasil. Em menos de seis semanas, partindo de uma moeda de um real.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "f04",
+   "who": "im_narr",
+   "text": "Dia 41: um trilhão. Você poderia dar um carro zero pra cada família da sua cidade, e na manhã seguinte ter o dobro de novo.",
+   "say": "Dia quarenta e um: um trilhão. Você poderia dar um carro zero pra cada família da sua cidade, e na manhã seguinte ter o dobro de novo.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "h01",
+   "who": "im_narr",
+   "text": "Mas é aqui que a história fica estranha. Porque o dinheiro não é mágico. Ele só vale alguma coisa porque é difícil de conseguir.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "h02",
+   "who": "im_narr",
+   "text": "Dia 45: 17 trilhões de reais. Mais do que tudo que o Brasil inteiro produz em um ano. Se você gastar isso, vai ter dinheiro demais correndo atrás das mesmas coisas.",
+   "say": "Dia quarenta e cinco: dezessete trilhões de reais. Mais do que tudo que o Brasil inteiro produz em um ano. Se você gastar isso, vai ter dinheiro demais correndo atrás das mesmas coisas.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "h03",
+   "who": "im_narr",
+   "text": "E quando isso acontece, os preços sobem. O nome disso é inflação. O Brasil já viveu isso de verdade: em 1993 os preços subiram mais de dois mil por cento em um ano. O pão que custava um, no fim do ano custava vinte e cinco.",
+   "say": "E quando isso acontece, os preços sobem. O nome disso é inflação. O Brasil já viveu isso de verdade: em noventa e três os preços subiram mais de dois mil por cento em um ano. O pão que custava um, no fim do ano custava vinte e cinco.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "m03",
+   "who": "im_mae",
+   "text": "Tuco, o pão de queijo tá custando quinhentos reais! O que tá acontecendo?",
+   "pause": 0.6,
+   "emo": 0.8
+  },
+  {
+   "id": "h04",
+   "who": "im_narr",
+   "text": "Dia 51: mais de mil trilhões. Mais do que tudo que o planeta inteiro produz em um ano. Você tem mais dinheiro que o mundo. E o dinheiro do mundo inteiro... começa a não valer nada.",
+   "say": "Dia cinquenta e um: mais de mil trilhões. Mais do que tudo que o planeta inteiro produz em um ano. Você tem mais dinheiro que o mundo. E o dinheiro do mundo inteiro... começa a não valer nada.",
+   "pause": 1.0,
+   "emo": 0.7
+  },
+  {
+   "id": "j01",
+   "who": "im_narr",
+   "text": "Tem uma lenda antiga sobre isso. Um sábio pediu a um rei: um grão de arroz na primeira casa do tabuleiro de xadrez, dois na segunda, quatro na terceira... dobrando até a casa 64.",
+   "say": "Tem uma lenda antiga sobre isso. Um sábio pediu a um rei: um grão de arroz na primeira casa do tabuleiro de xadrez, dois na segunda, quatro na terceira... dobrando até a casa sessenta e quatro.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "j02",
+   "who": "im_narr",
+   "text": "O rei riu. Achou que era pouco. Mas na última casa iam ser mais de nove quintilhões de grãos. Mais arroz do que o mundo inteiro colhe em cem mil anos.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "j03",
+   "who": "im_narr",
+   "text": "No dia 64, você teria 9 quintilhões de reais. Um número tão grande que nenhuma calculadora de celular mostra direito.",
+   "say": "No dia sessenta e quatro, você teria nove quintilhões de reais. Um número tão grande que nenhuma calculadora de celular mostra direito.",
+   "pause": 1.0,
+   "emo": 0.6
+  },
+  {
+   "id": "z01",
+   "who": "im_narr",
+   "text": "Então, qual é a lição? Coisas pequenas que dobram parecem bobas no começo. Um real. Uma página lida por dia. Um real guardado. Mas o tempo transforma pouco em muito.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "z02",
+   "who": "im_narr",
+   "text": "E a pergunta mais importante: em que dia você parava o poder? No dia 21, milionário e sem chamar atenção? No dia 31, bilionário? Ou você ia até o fim?",
+   "say": "E a pergunta mais importante: em que dia você parava o poder? No dia vinte e um, milionário e sem chamar atenção? No dia trinta e um, bilionário? Ou você ia até o fim?",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
+   "id": "z03",
+   "who": "im_narr",
+   "text": "Escreve o número do dia aqui nos comentários. E se inscreve, porque no próximo episódio... você vai encolher pela metade todo dia.",
+   "pause": 0.4,
+   "emo": 0.65
+  },
+  {
+   "id": "t04",
+   "who": "im_tuco",
+   "text": "Peraí... pela metade?!",
+   "pause": 0.4,
+   "emo": 0.8
+  }
+ ]
+}
