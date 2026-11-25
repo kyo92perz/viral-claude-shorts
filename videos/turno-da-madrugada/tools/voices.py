@@ -105,6 +105,10 @@ VOICES = {
     "ap_lil": ("pf_dora", 1.05, st(3)),
     "ap_kat": ("pf_dora", 1.0, st(1)),
     "ap_pm": ("piper:faber", 1.0, st(-1) + ",highpass=f=250,lowpass=f=3800"),
+    # LENDA DA MATINTA PERERA: o neto (narra), a avó, a velha (Matinta)
+    "mt_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "mt_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    "mt_matinta": ("pf_dora", 0.82, st(-4) + ",aecho=0.6:0.5:45:0.25,highpass=f=150,lowpass=f=5200"),
     # IMAGINA SÓ (canal "E se"): narrador animado e próximo; Tuco (14), Biel, a mãe, o gerente do banco, uma repórter
     "im_narr": ("pm_alex", 1.05, st(0.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=3000:t=q:w=1:g=2"),
     "im_tuco": ("pm_alex", 1.05, st(4)),

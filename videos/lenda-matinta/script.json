@@ -1,0 +1,19 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {"id": "n01", "who": "mt_eu", "text": "Se você ouvir um assobio fino de madrugada... não promete nada. Nem de brincadeira.", "pause": 0.6, "emo": 0.6},
+  {"id": "n02", "who": "mt_eu", "text": "Eu tava na casa da minha vó, no interior do Pará. Primeira noite lá.", "pause": 0.4, "emo": 0.45},
+  {"id": "n03", "who": "mt_eu", "text": "Duas da manhã, começou. Um assobio fino, comprido... em cima do telhado.", "pause": 0.7, "emo": 0.65},
+  {"id": "n04", "who": "mt_eu", "text": "Minha vó levantou da rede na hora. Branca.", "pause": 0.4, "emo": 0.55},
+  {"id": "v01", "who": "mt_vo", "text": "É a Matinta Perera. Fica quieto, menino. Não responde.", "pause": 0.6, "emo": 0.7},
+  {"id": "n05", "who": "mt_eu", "text": "Mas o assobio não parava. Cada vez mais perto. E eu, pra ela ir embora, gritei:", "pause": 0.3, "emo": 0.6},
+  {"id": "e01", "who": "mt_eu", "text": "Volta amanhã que eu te dou café!", "pause": 0.5, "emo": 0.9},
+  {"id": "n06", "who": "mt_eu", "text": "Minha vó tapou minha boca. Tarde demais. O assobio parou.", "pause": 1.0, "emo": 0.65},
+  {"id": "n07", "who": "mt_eu", "text": "De manhã cedo, bateram na porta. Uma velha que ninguém da vila conhecia. Vestido preto, xale na cabeça, unha comprida.", "pause": 0.5, "emo": 0.6},
+  {"id": "m01", "who": "mt_matinta", "text": "Vim buscar o café que o menino prometeu.", "pause": 0.6, "emo": 0.6},
+  {"id": "n08", "who": "mt_eu", "text": "Minha vó deu o café e um pedaço de fumo. A velha olhou pra mim, sorriu... e foi embora assobiando.", "pause": 0.6, "emo": 0.6},
+  {"id": "n09", "who": "mt_eu", "text": "Dizem que quem promete e não paga, ela visita na janela pro resto da vida.", "pause": 0.6, "emo": 0.6},
+  {"id": "n10", "who": "mt_eu", "text": "Ontem eu acordei às duas da manhã. E tinha um assobio... aqui fora.", "pause": 0.3, "emo": 0.7}
+ ]
+}
