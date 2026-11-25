@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url('../styles/flat2d/Anton.ttf')}
+body{margin:0;background:#000}svg{display:block}
+</style></head><body>
+<!-- PROFILE 800x800 -->
+<svg id="profile" width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="pbg" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#2a1e3e"/><stop offset="1" stop-color="#0a0812"/></radialGradient>
+  <radialGradient id="eyeglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd23a" stop-opacity="0.9"/><stop offset="1" stop-color="#ffd23a" stop-opacity="0"/></radialGradient>
+  <clipPath id="hole"><path d="M400 210 a110 110 0 0 1 70 195 L520 600 L280 600 L330 405 A110 110 0 0 1 400 210 Z"/></clipPath>
+ </defs>
+ <rect width="800" height="800" fill="url(#pbg)"/>
+ <!-- the case folder -->
+ <g transform="translate(400 420) scale(0.88) translate(-400 -420) rotate(-6 400 420)">
+  <path d="M120 170 h220 l40 40 h300 v480 h-560 z" fill="#d8b46a" stroke="#1b1424" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M120 250 h560" stroke="#b8944a" stroke-width="10"/>
+  <!-- keyhole with an eye inside -->
+  <path d="M400 210 a110 110 0 0 1 70 195 L520 600 L280 600 L330 405 A110 110 0 0 1 400 210 Z" fill="#05040a" stroke="#1b1424" stroke-width="14"/>
+  <g clip-path="url(#hole)">
+   <circle cx="400" cy="320" r="150" fill="url(#eyeglow)"/>
+   <ellipse cx="400" cy="320" rx="84" ry="56" fill="#fff4c8" stroke="#1b1424" stroke-width="10"/>
+   <circle cx="400" cy="320" r="38" fill="#ffd23a" stroke="#1b1424" stroke-width="7"/>
+   <ellipse cx="400" cy="320" rx="9" ry="30" fill="#1b1424"/>
+   <circle cx="386" cy="306" r="8" fill="#fff"/>
+  </g>
+  <!-- red stamp -->
+  <g transform="translate(400 655) rotate(-8)">
+   <rect x="-235" y="-58" width="470" height="116" rx="14" fill="none" stroke="#e0302a" stroke-width="14"/>
+   <text x="0" y="34" text-anchor="middle" font-family="Anton" font-size="96" fill="#e0302a" letter-spacing="4">PROIBIDO</text>
+  </g>
+ </g>
+</svg>
+<!-- BANNER 2560x1440 (safe area: centre 1546x423, i.e. x 507..2053, y 508..931) -->
+<svg id="banner" width="2560" height="1440" viewBox="0 0 2560 1440" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070a18"/><stop offset="0.7" stop-color="#1e1a3a"/><stop offset="1" stop-color="#3a2448"/></linearGradient>
+  <radialGradient id="moon" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#efe9d6" stop-opacity="0.35"/><stop offset="1" stop-color="#efe9d6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aff6a" stop-opacity="0.55"/><stop offset="1" stop-color="#9aff6a" stop-opacity="0.05"/></linearGradient>
+  <radialGradient id="fire" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff8a2a" stop-opacity="0.6"/><stop offset="1" stop-color="#ff8a2a" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="2560" height="1440" fill="url(#sky)"/>
+ <g fill="#fff" opacity="0.8" id="stars"></g>
+ <!-- left: the UFO over a small town -->
+ <circle cx="2230" cy="300" r="330" fill="url(#moon)"/><circle cx="2230" cy="300" r="120" fill="#efe9d6" stroke="#1b1424" stroke-width="10"/><circle cx="2190" cy="270" r="22" fill="#cfc7b0"/><circle cx="2260" cy="340" r="16" fill="#cfc7b0"/>
+ <path d="M300 330 L120 1080 L560 1080 Z" fill="url(#beam)"/>
+ <g transform="translate(330 300)"><ellipse cx="0" cy="30" rx="210" ry="56" fill="#8a94a8" stroke="#1b1424" stroke-width="12"/><path d="M-110 20 Q 0 -110 110 20 Z" fill="#b8e8ff" stroke="#1b1424" stroke-width="12"/>
+  <circle cx="-120" cy="40" r="14" fill="#9aff6a"/><circle cx="-40" cy="54" r="14" fill="#ffd23a"/><circle cx="40" cy="54" r="14" fill="#9aff6a"/><circle cx="120" cy="40" r="14" fill="#ffd23a"/></g>
+ <!-- town skyline -->
+ <g fill="#120f22" stroke="#1b1424" stroke-width="8">
+  <rect x="0" y="1000" width="200" height="440"/><rect x="190" y="940" width="160" height="500"/><path d="M350 1440 V 980 L430 900 L510 980 V1440 Z"/><rect x="500" y="1040" width="220" height="400"/>
+  <rect x="1850" y="1020" width="200" height="420"/><rect x="2040" y="960" width="170" height="480"/><rect x="2200" y="1060" width="360" height="380"/>
+ </g>
+ <g fill="#ffd27a"><rect x="40" y="1060" width="40" height="40"/><rect x="230" y="1000" width="40" height="40"/><rect x="560" y="1100" width="40" height="40"/><rect x="2080" y="1020" width="40" height="40"/><rect x="2300" y="1120" width="40" height="40"/></g>
+ <!-- right: the wolf on a hill against the moon glow -->
+ <path d="M1700 1440 Q 2100 1180 2560 1260 V1440 Z" fill="#0c0a18"/>
+ <!-- bottom-left: the mule's fire -->
+ <circle cx="760" cy="1250" r="220" fill="url(#fire)"/>
+ <!-- the title in the safe area -->
+ <g transform="translate(1280 700) rotate(-3)">
+  <rect x="-770" y="-150" width="1540" height="250" rx="22" fill="#d8b46a" stroke="#1b1424" stroke-width="16"/>
+  <text x="0" y="62" text-anchor="middle" font-family="Anton" font-size="188" fill="#1b1424" letter-spacing="4">ARQUIVO PROIBIDO</text>
+  <g transform="translate(640 -190) rotate(8)"><rect x="-205" y="-50" width="410" height="100" rx="12" fill="#e0302a" stroke="#1b1424" stroke-width="10"/><text x="0" y="32" text-anchor="middle" font-family="Anton" font-size="78" fill="#fff">CASO Nº 001</text></g>
+ </g>
+ <text x="1280" y="900" text-anchor="middle" font-family="Anton" font-size="64" fill="#efe9d6" stroke="#0a0812" stroke-width="10" paint-order="stroke" letter-spacing="2">OS MISTÉRIOS QUE O BRASIL TENTOU ESQUECER</text>
+ <g transform="translate(1280 1010)"><rect x="-330" y="-46" width="660" height="80" rx="40" fill="#e0302a" stroke="#1b1424" stroke-width="8"/><text x="0" y="18" text-anchor="middle" font-family="Anton" font-size="52" fill="#fff" letter-spacing="2">NOVO CASO TODA SEXTA</text></g>
+</svg>
+<script>
+const g=document.getElementById('stars');let r=7;const rnd=()=>((r=(r*9301+49297)%233280)/233280);
+for(let i=0;i<160;i++){const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',rnd()*2560);c.setAttribute('cy',rnd()*900);c.setAttribute('r',1+rnd()*3);c.setAttribute('opacity',0.3+rnd()*0.7);g.appendChild(c);}
+</script></body></html>
