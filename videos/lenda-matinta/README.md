@@ -4,7 +4,7 @@ Animação 2D no estilo "Brasil Z" (contorno grosso, cabeças redondas, céus em
 O gancho: o pássaro de olhos vermelhos aparece no primeiro quadro com o aviso "NÃO PROMETA NADA", e o assobio do fim emenda no começo, para o vídeo rodar em loop.
 
 - **Vídeo:** `final.mp4` (gerado pelo render; vídeos finais não entram no git)
-- **Capas para o Short:** [cover.jpg](cover.jpg) (recomendada) e [cover-b.jpg](cover-b.jpg)
+- **Capas para o Short:** [cover.jpg](cover.jpg) "ELA VEIO COBRAR" (recomendada) e [cover-b.jpg](cover-b.jpg) "NÃO PROMETA NADA"
 - **Título, descrição, tags e comentário fixado:** [descricao-youtube.txt](descricao-youtube.txt)
 - **Storyboard:** [storyboard.png](storyboard.png)
 

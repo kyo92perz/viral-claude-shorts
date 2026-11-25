@@ -59,6 +59,6 @@ defineVisuals({
   'test-house': { bg: '#070b1c', html: () => svg(`${mtHouse()}${mtBird('bd', 540, 770, 0.8)}${mtWhistle('wh', 460, 560)}`), anim(tl, s) { mtWhistleGo(tl, '#sc-test-house #wh', s.t0, s.t1); } },
   'test-door': { bg: '#5a3e2a', html: () => svg(`${mtDoor()}${mtChar('matinta', 540, 1500, 1.3)}`), anim(tl, s) { bzFace(tl, '#sc-test-door #matinta', s.t0, 'half', 'grin'); } },
   'test-today': { bg: '#141a2e', html: () => svg(`${mtToday()}${mtBird('bd', 780, 760, 0.7)}`), anim() {} },
-  'cover-a': { bg: '#070b1c', html: () => svg(`<g transform="translate(-1000 -1100) scale(2.85)">${mtHouse()}${mtBird('bd', 540, 770, 0.8)}</g>${bzVignette(0.55)}`), anim() {} },
+  'cover-a': { bg: '#070b1c', html: () => svg(`<g transform="translate(-1000 -650) scale(2.85)">${mtHouse()}${mtBird('bd', 540, 770, 0.8)}</g>${bzVignette(0.55)}`), anim() {} },
   'cover-b': { bg: '#5a3e2a', html: () => svg(`${mtDoor()}${mtChar('matinta', 540, 2300, 3.0)}`), anim(tl, s) { bzFace(tl, '#sc-cover-b #matinta', s.t0, 'glow', 'grin'); } },
 });
