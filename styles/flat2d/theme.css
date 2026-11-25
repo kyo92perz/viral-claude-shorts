@@ -31,6 +31,13 @@ html, body { margin: 0; background: #000; }
   text-transform: uppercase; -webkit-text-stroke: 12px #1b1424; paint-order: stroke fill; z-index: 500; pointer-events: none; }
 .captions .g { position: absolute; left: 0; right: 0; opacity: 0; }
 .captions .w { display: inline-block; margin: 0 10px; }
+/* 16:9 (scenes.json "format": "16:9"): the same look on a 1920 x 1080 frame, captions low and smaller (YouTube's player bar sits below) */
+#root.wide { width: 1920px; height: 1080px; }
+.wide .art, .wide .art > svg { width: 1920px; height: 1080px; }
+.wide .captions { left: 260px; width: 1400px; top: 860px; font-size: 64px; -webkit-text-stroke: 8px #1b1424; }
+.wide .captions .w { margin: 0 7px; }
+.wide .badge { top: 44px; left: 56px; font-size: 38px; -webkit-text-stroke: 6px #1b1424; }
+.wide .badge .ep { font-size: 28px; margin-left: 14px; vertical-align: 5px; }
 /* a series badge at the top left (scenes.json "badge": { "title": "...", "ep": "EP.1" }) */
 .badge { position: absolute; top: 120px; left: 70px; z-index: 500; font: 400 64px/1 "Anton", Impact, sans-serif; color: #e9e4f2; -webkit-text-stroke: 8px #1b1424; paint-order: stroke fill; letter-spacing: 1px; }
 .badge .ep { color: #f6c744; font-size: 44px; margin-left: 22px; vertical-align: 8px; }

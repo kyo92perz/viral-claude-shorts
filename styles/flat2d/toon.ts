@@ -145,19 +145,19 @@ function bzShake(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, am
 const bzPop = (tl: gsap.core.Timeline, sel: string, t: number, d = 0.4) => tl.fromTo(sel, { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: d, ease: 'back.out(2)' }, t);
 // ---- sets
 let BZ_UID = 0;
-function bzSky(top: string, bottom: string, h = 1920) { const g = 'bzsky' + (BZ_UID++); return `<defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${top}"/><stop offset="1" stop-color="${bottom}"/></linearGradient></defs><rect width="1080" height="${h}" fill="url(#${g})"/>`; }
+function bzSky(top: string, bottom: string, h = FH) { const g = 'bzsky' + (BZ_UID++); return `<defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${top}"/><stop offset="1" stop-color="${bottom}"/></linearGradient></defs><rect width="${FW}" height="${h}" fill="url(#${g})"/>`; }
 function bzStars(n: number, seed = 1, yMax = 1100) { let s = ''; let r = seed * 9301 + 49297; const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
-  for (let i = 0; i < n; i++) s += `<circle cx="${(rnd() * 1080).toFixed(0)}" cy="${(rnd() * yMax).toFixed(0)}" r="${(1.5 + rnd() * 3).toFixed(1)}" fill="#fff" opacity="${(0.4 + rnd() * 0.6).toFixed(2)}"/>`; return `<g class="stars">${s}</g>`; }
+  for (let i = 0; i < n; i++) s += `<circle cx="${(rnd() * FW).toFixed(0)}" cy="${(rnd() * yMax).toFixed(0)}" r="${(1.5 + rnd() * 3).toFixed(1)}" fill="#fff" opacity="${(0.4 + rnd() * 0.6).toFixed(2)}"/>`; return `<g class="stars">${s}</g>`; }
 function bzMoon(id: string, x: number, y: number, r = 70) { return `<g id="${id}"><circle cx="${x}" cy="${y}" r="${r * 1.8}" fill="#fff" opacity="0.06"/><circle cx="${x}" cy="${y}" r="${r}" fill="${BZ.moon}" ${bzO()}/><circle cx="${x - r * 0.3}" cy="${y - r * 0.2}" r="${r * 0.16}" fill="#cfc7b0"/><circle cx="${x + r * 0.25}" cy="${y + r * 0.25}" r="${r * 0.11}" fill="#cfc7b0"/></g>`; }
 function bzSun(x: number, y: number, r = 110, c = '#ffd27a') { return `<circle cx="${x}" cy="${y}" r="${r * 1.6}" fill="${c}" opacity="0.25"/><circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/>`; }
-function bzFog(y: number, c = BZ.fog, op = 0.35) { return `<g class="fog" opacity="${op}">${[0, 1, 2, 3, 4].map((i) => `<ellipse cx="${-100 + i * 300}" cy="${y + (i % 2) * 40}" rx="320" ry="70" fill="${c}"/>`).join('')}</g>`; }
+function bzFog(y: number, c = BZ.fog, op = 0.35) { return `<g class="fog" opacity="${op}">${[...Array(Math.ceil(FW / 300) + 2)].map((_, i) => `<ellipse cx="${-100 + i * 300}" cy="${y + (i % 2) * 40}" rx="320" ry="70" fill="${c}"/>`).join('')}</g>`; }
 function bzLamp(x: number, y: number, h = 520, on = true, flip = false) { const f = flip ? -1 : 1;
   return `<g class="lamp"><path d="M${x} ${y} v${-h} q0 -30 ${f * 30} -30 h${f * 60}" stroke="${BZ.ink}" stroke-width="22" fill="none"/><path d="M${x} ${y} v${-h} q0 -30 ${f * 30} -30 h${f * 60}" stroke="#8a8f9e" stroke-width="10" fill="none"/>
     <rect x="${x + f * 60 - 40}" y="${y - h - 46}" width="80" height="24" rx="10" fill="${on ? '#fff1c2' : '#555'}" ${bzO()}/>${on ? `<circle cx="${x + f * 60}" cy="${y - h - 20}" r="120" fill="#fff4c8" opacity="0.13"/>` : ''}</g>`; }
-function bzGround(y: number, c = '#3c3f52', line = BZ.yellow) { return `<rect x="-20" y="${y}" width="1120" height="${1940 - y}" fill="${c}" ${bzO()}/>${line ? [...Array(9)].map((_, i) => `<rect x="${i * 130}" y="${y + 8}" width="70" height="20" fill="${line}"/>`).join('') : ''}`; }
+function bzGround(y: number, c = '#3c3f52', line = BZ.yellow) { return `<rect x="-20" y="${y}" width="${FW + 40}" height="${FH + 20 - y}" fill="${c}" ${bzO()}/>${line ? [...Array(Math.ceil(FW / 130))].map((_, i) => `<rect x="${i * 130}" y="${y + 8}" width="70" height="20" fill="${line}"/>`).join('') : ''}`; }
 // a row of flat buildings with lit windows
 function bzBuildings(y: number, seed = 1, cols = ['#3a3256', '#4a3a66', '#2f2a48'], lit = 0.5) { let s = '', x = -40, r = seed * 7919; const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
-  while (x < 1100) { const w = 140 + rnd() * 160, h = 220 + rnd() * 320, c = cols[Math.floor(rnd() * cols.length)];
+  while (x < FW + 20) { const w = 140 + rnd() * 160, h = 220 + rnd() * 320, c = cols[Math.floor(rnd() * cols.length)];
     s += `<rect x="${x}" y="${y - h}" width="${w}" height="${h + 40}" fill="${c}" ${bzO()}/>`;
     for (let wy = y - h + 30; wy < y - 40; wy += 60) for (let wx = x + 22; wx < x + w - 40; wx += 55) if (rnd() < lit) s += `<rect x="${wx}" y="${wy}" width="26" height="30" fill="#ffd97a"/>`;
     x += w + 10; }
@@ -169,12 +169,12 @@ function bzSign(id: string, text: string, x: number, y: number, rot = -4, bg = B
     <text x="0" y="${size * 0.35}" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="${size}" fill="${fg}">${text}</text>
     ${sub ? `<g transform="translate(0 ${size * 1.05}) rotate(${-rot * 0.6})"><rect x="${-sub.text.length * size * 0.3 - 30}" y="${-size * 0.45}" width="${sub.text.length * size * 0.6 + 60}" height="${size * 0.85}" rx="10" fill="${sub.bg}" ${bzO('stroke-width="7"')}/><text x="0" y="${size * 0.22}" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="${size * 0.65}" fill="${sub.fg}">${sub.text}</text></g>` : ''}</g></g>`; }
 // a vignette on top of everything (darker corners) and a flash for impacts
-const bzVignette = (k = 0.55) => `<defs><radialGradient id="bzvig${BZ_UID}" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="${k}"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#bzvig${BZ_UID++})"/>`;
-const bzFlash = (id: string, c = '#fff') => `<rect id="${id}" width="1080" height="1920" fill="${c}" opacity="0"/>`;
+const bzVignette = (k = 0.55) => `<defs><radialGradient id="bzvig${BZ_UID}" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="${k}"/></radialGradient></defs><rect width="${FW}" height="${FH}" fill="url(#bzvig${BZ_UID++})"/>`;
+const bzFlash = (id: string, c = '#fff') => `<rect id="${id}" width="${FW}" height="${FH}" fill="${c}" opacity="0"/>`;
 // ---- shot helpers (every shot draws inside #cam; overlays stay outside it)
 const bzShot = (body: string, over = '') => svg(`<g id="cam">${body}</g>${over}`);
 // a slow camera push (or pull: b < a) around (ox, oy)
-function bzPush(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a = 1, b = 1.07, ox = 540, oy = 900) {
+function bzPush(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a = 1, b = 1.07, ox = FW / 2, oy = FH * 0.47) {
   tl.fromTo(sel, { scale: a, svgOrigin: `${ox} ${oy}` }, { scale: b, svgOrigin: `${ox} ${oy}`, duration: t1 - t0, ease: 'none' }, t0);
 }
 // a flash overlay that fades out (an impact)
@@ -191,7 +191,7 @@ const bzQuake = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a 
 // ---- detail kit: depth, particles, light, a living camera
 // particles: fireflies (glowing dots that wander and blink), leaves (fall and spin), embers (rise), bubbles (rise and wobble),
 // dust (drifts), spores (float up slowly). Area [x0, y0, x1, y1]. Animate them with bzParticlesGo.
-function bzParticles(id: string, kind: 'fireflies' | 'leaves' | 'embers' | 'bubbles' | 'dust' | 'spores', n = 24, area = [0, 0, 1080, 1920], seed = 1) {
+function bzParticles(id: string, kind: 'fireflies' | 'leaves' | 'embers' | 'bubbles' | 'dust' | 'spores', n = 24, area = [0, 0, FW, FH], seed = 1) {
   let r = seed * 9301 + 49297; const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
   const [x0, y0, x1, y1] = area; let out = '';
   for (let i = 0; i < n; i++) {
@@ -236,7 +236,7 @@ function bzFrameLeaves(side = 'both', c = '#0e1a14', seed = 3) {
   const leaf = (x: number, y: number, rot: number, s: number) => `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><path d="M0 0 Q 120 -60 260 0 Q 120 60 0 0 Z" fill="${c}"/><path d="M0 0 Q 130 -6 250 0" stroke="#1a2e22" stroke-width="5" fill="none"/></g>`;
   let out = ''; const L: number[][] = [];
   if (side === 'both' || side === 'left') L.push([-130, 260, 20, 1.25], [-150, 760, -10, 1.45], [-120, 1250, 25, 1.2], [-140, 1720, -20, 1.4]);
-  if (side === 'both' || side === 'right') L.push([1210, 420, 160, 1.3], [1230, 900, 195, 1.45], [1200, 1400, 150, 1.25], [1220, 1800, 200, 1.4]);
+  if (side === 'both' || side === 'right') L.push([FW + 130, 420, 160, 1.3], [FW + 150, 900, 195, 1.45], [FW + 120, 1400, 150, 1.25], [FW + 140, 1800, 200, 1.4]);
   if (side === 'top') L.push([100, -130, 70, 1.3], [420, -150, 100, 1.45], [760, -130, 80, 1.35], [1000, -120, 120, 1.3]);
   for (const [x, y, r, s] of L) out += leaf(x, y, r + (seed % 7), s);
   return `<g class="frameleaves">${out}</g>`;

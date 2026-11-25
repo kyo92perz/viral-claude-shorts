@@ -1,0 +1,27 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "shots": [
+  {"id": "test-cast", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-et", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-town", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-storm", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-farm", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-truck", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-street", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-corridor", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-road", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-room", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-memorial", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-news", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-tourism", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-archive", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-archive-open", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-court", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-title", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "test-tags", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "thumb-a", "title": " ", "label": "", "duration": 2, "snap": [1.2]},
+  {"id": "thumb-b", "title": " ", "label": "", "duration": 2, "snap": [1.2]}
+ ]
+}

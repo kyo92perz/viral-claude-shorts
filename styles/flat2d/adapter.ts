@@ -39,7 +39,7 @@ const adapter: Adapter = {
     if (fs.existsSync(path.join(v, 'assets'))) fs.cpSync(path.join(v, 'assets'), path.join(PROJ, 'assets'), { recursive: true });
     const voice = ['mix.wav', 'audio.wav'].find((f) => fs.existsSync(path.join(v, f)));
     if (voice) fs.copyFileSync(path.join(v, voice), path.join(PROJ, 'voice.wav'));   // to hear it in the preview; the final render remixes it
-    const D = E.duration.toFixed(3);
+    const D = E.duration.toFixed(3), FW = E.format === '16:9' ? 1920 : 1080, FH = E.format === '16:9' ? 1080 : 1920;
     const sections = E.scenes.map((s, i) => `      <section id="sc-${esc(s.id)}" class="clip scene" data-start="${s.t0}" data-duration="${(s.t1 - s.t0).toFixed(3)}" data-track-index="0" style="z-index:${i + 1}">
         <div class="art"></div><div class="titles"></div>
       </section>`).join('\n');
@@ -47,19 +47,20 @@ const adapter: Adapter = {
 <html lang="${esc(P.language || 'es')}">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1080, height=1920" />
+    <meta name="viewport" content="width=${FW}, height=${FH}" />
     <title>${esc(path.basename(v))} (flat 2D)</title>
     <script src="gsap.min.js"></script>
     <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="${D}" data-width="1080" data-height="1920">
+    <div id="root"${FW > FH ? ' class="wide"' : ''} data-composition-id="main" data-start="0" data-duration="${D}" data-width="${FW}" data-height="${FH}">
 ${sections}
 ${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration="${D}" data-track-index="9"></audio>` : ''}
     </div>
     <script>
       const SCENES = ${JSON.stringify(E)};
       const WORDS = ${JSON.stringify(P.words)};
+      const FRAME = { w: ${FW}, h: ${FH} };
     </script>
     <script src="library.js"></script>
     <script src="toon.js"></script>

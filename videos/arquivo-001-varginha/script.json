@@ -1,0 +1,387 @@
+{
+ "lead": 0.4,
+ "tail": 2.0,
+ "lines": [
+  {
+   "id": "a01",
+   "who": "ap_narr",
+   "text": "20 de janeiro de 1996. Varginha, sul de Minas Gerais.",
+   "say": "Vinte de janeiro de mil novecentos e noventa e seis. Varginha, sul de Minas Gerais.",
+   "pause": 0.7,
+   "emo": 0.45
+  },
+  {
+   "id": "a02",
+   "who": "ap_narr",
+   "text": "Três jovens cortam caminho por um terreno baldio, no fim da tarde. E de repente... elas param.",
+   "pause": 1.0,
+   "emo": 0.55
+  },
+  {
+   "id": "a03",
+   "who": "ap_narr",
+   "text": "Agachado perto de um muro, tem alguma coisa. Pele marrom, brilhando como se fosse óleo. Três calombos na cabeça. E dois olhos vermelhos, enormes, olhando pra elas.",
+   "pause": 1.2,
+   "emo": 0.7
+  },
+  {
+   "id": "k01",
+   "who": "ap_lil",
+   "text": "Que bicho é esse?!",
+   "pause": 0.6,
+   "emo": 0.9
+  },
+  {
+   "id": "a04",
+   "who": "ap_narr",
+   "text": "Naquele mesmo dia, segundo vários relatos, bombeiros, policiais e militares teriam capturado criaturas pela cidade. Um policial morreu semanas depois. E o Exército abriu um inquérito secreto.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "a05",
+   "who": "ap_narr",
+   "text": "Esse documento ficou guardado por quase 30 anos. Em janeiro de 2026, ele foi liberado. E no fim deste vídeo, você vai ver o que está escrito nele.",
+   "say": "Esse documento ficou guardado por quase trinta anos. Em janeiro de dois mil e vinte e seis, ele foi liberado. E no fim deste vídeo, você vai ver o que está escrito nele.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "a06",
+   "who": "ap_narr",
+   "text": "Este é o Arquivo Proibido. Caso número 1: o ET de Varginha.",
+   "say": "Este é o Arquivo Proibido. Caso número um: o É Tê de Varginha.",
+   "pause": 1.6,
+   "emo": 0.5
+  },
+  {
+   "id": "b01",
+   "who": "ap_narr",
+   "text": "Varginha, em 1996, era uma cidade tranquila de uns cem mil habitantes. Terra de café, de praça com coreto, de vizinho que conhece vizinho.",
+   "say": "Varginha, em mil novecentos e noventa e seis, era uma cidade tranquila de uns cem mil habitantes. Terra de café, de praça com coreto, de vizinho que conhece vizinho.",
+   "pause": 0.6,
+   "emo": 0.35
+  },
+  {
+   "id": "b02",
+   "who": "ap_narr",
+   "text": "Mas os ufólogos que investigaram o caso dizem que aquele sábado começou estranho muito antes da tarde.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "b03",
+   "who": "ap_narr",
+   "text": "Na madrugada daquele mesmo dia, um casal que morava num sítio perto da cidade contou ter visto um objeto do tamanho de um ônibus, soltando fumaça, voando baixo e devagar sobre o pasto.",
+   "pause": 0.7,
+   "emo": 0.5
+  },
+  {
+   "id": "b04",
+   "who": "ap_narr",
+   "text": "E na manhã do dia 20, de acordo com esses relatos, o Corpo de Bombeiros recebeu uma ligação: tinha um animal estranho no Jardim Andere, um bairro novo, cheio de mato e terreno vazio.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "b05",
+   "who": "ap_narr",
+   "text": "Testemunhas disseram ter visto bombeiros descendo um barranco com redes, e saindo de lá com alguma coisa dentro de um caixote, coberta com uma lona. Nenhum documento oficial confirma essa captura.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "c01",
+   "who": "ap_narr",
+   "text": "Por volta das três e meia da tarde, as irmãs Liliane e Valquíria, de 16 e 14 anos, voltavam pra casa com a amiga Kátia, de 22.",
+   "say": "Por volta das três e meia da tarde, as irmãs Liliane e Valquíria, de dezesseis e quatorze anos, voltavam pra casa com a amiga Kátia, de vinte e dois.",
+   "pause": 0.6,
+   "emo": 0.4
+  },
+  {
+   "id": "c02",
+   "who": "ap_narr",
+   "text": "Pra chegar mais rápido, elas cortaram por um terreno baldio no Jardim Andere. Mato alto, um muro velho, nenhum adulto por perto.",
+   "pause": 0.8,
+   "emo": 0.45
+  },
+  {
+   "id": "c03",
+   "who": "ap_narr",
+   "text": "Foi a Liliane que viu primeiro.",
+   "pause": 1.4,
+   "emo": 0.55
+  },
+  {
+   "id": "c04",
+   "who": "ap_narr",
+   "text": "Encostado no muro, agachado, estava um ser de mais ou menos um metro e meio. Magro. A pele marrom e brilhante, como se estivesse molhada de óleo. Na cabeça, três saliências, como chifres pequenos.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
+   "id": "c05",
+   "who": "ap_narr",
+   "text": "Mas o que nenhuma das três esqueceu foram os olhos. Grandes, vermelhos, sem a parte branca. E a criatura parecia fraca. Tremendo. Como se estivesse doente.",
+   "pause": 1.2,
+   "emo": 0.65
+  },
+  {
+   "id": "k02",
+   "who": "ap_kat",
+   "text": "Corre! Corre que é o capeta!",
+   "pause": 0.8,
+   "emo": 1.0
+  },
+  {
+   "id": "c06",
+   "who": "ap_narr",
+   "text": "Elas correram sem olhar pra trás. Chegaram em casa chorando, tremendo, e contaram tudo pra mãe das irmãs.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "c07",
+   "who": "ap_narr",
+   "text": "A mãe foi até o terreno logo depois. Não encontrou nada. Só o mato amassado no lugar onde as meninas disseram que a coisa estava.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "c08",
+   "who": "ap_narr",
+   "text": "Até hoje, trinta anos depois, as três contam a mesma história. Já deram centenas de entrevistas. E nunca mudaram o essencial.",
+   "pause": 1.2,
+   "emo": 0.45
+  },
+  {
+   "id": "d01",
+   "who": "ap_narr",
+   "text": "No fim daquela tarde, uma tempestade de granizo caiu sobre Varginha. Faltou luz em vários bairros. E é no escuro que a parte mais sombria da história acontece.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "d02",
+   "who": "ap_narr",
+   "text": "Segundo os ufólogos, naquela noite dois policiais militares patrulhavam o Jardim Andere. Um deles era o soldado Marco Eli Chereze, de 23 anos.",
+   "say": "Segundo os ufólogos, naquela noite dois policiais militares patrulhavam o Jardim Andere. Um deles era o soldado Marco Eli Xerêze, de vinte e três anos.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "d03",
+   "who": "ap_narr",
+   "text": "A história contada é que uma segunda criatura atravessou na frente da viatura. E que Chereze desceu e agarrou o ser com as próprias mãos, sem luva, e colocou no banco de trás.",
+   "say": "A história contada é que uma segunda criatura atravessou na frente da viatura. E que Xerêze desceu e agarrou o ser com as próprias mãos, sem luva, e colocou no banco de trás.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
+   "id": "k03",
+   "who": "ap_pm",
+   "text": "Segura! Segura que ele tá vivo!",
+   "pause": 0.8,
+   "emo": 0.95
+  },
+  {
+   "id": "d04",
+   "who": "ap_narr",
+   "text": "Dali, segundo os ufólogos, a criatura teria passado pelo Hospital Regional e depois pelo Hospital Humanitas. Funcionários teriam visto corredores fechados e homens armados na porta.",
+   "pause": 0.7,
+   "emo": 0.55
+  },
+  {
+   "id": "d05",
+   "who": "ap_narr",
+   "text": "Outros moradores juram ter visto, de madrugada, caminhões do Exército saindo da cidade em direção à Escola de Sargentos, em Três Corações, a uns trinta quilômetros dali.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "d06",
+   "who": "ap_narr",
+   "text": "Tudo isso vem de depoimentos. Alguns com nome, outros anônimos. E até hoje nenhuma foto, nenhum vídeo, nenhum corpo apareceu.",
+   "pause": 1.4,
+   "emo": 0.45
+  },
+  {
+   "id": "e01",
+   "who": "ap_narr",
+   "text": "Mas tem uma parte dessa história que não é boato. É documento.",
+   "pause": 1.0,
+   "emo": 0.55
+  },
+  {
+   "id": "e02",
+   "who": "ap_narr",
+   "text": "No começo de fevereiro, o soldado Marco Eli Chereze começou a passar mal. Uma ferida pequena embaixo do braço infeccionou. Ele foi operado.",
+   "say": "No começo de fevereiro, o soldado Marco Eli Xerêze começou a passar mal. Uma ferida pequena embaixo do braço infeccionou. Ele foi operado.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "e03",
+   "who": "ap_narr",
+   "text": "Em poucos dias, a infecção tomou o corpo inteiro. No dia 15 de fevereiro de 1996, ele morreu. Tinha 23 anos.",
+   "say": "Em poucos dias, a infecção tomou o corpo inteiro. No dia quinze de fevereiro de mil novecentos e noventa e seis, ele morreu. Tinha vinte e três anos.",
+   "pause": 1.4,
+   "emo": 0.6
+  },
+  {
+   "id": "e04",
+   "who": "ap_narr",
+   "text": "A causa oficial foi uma infecção generalizada. Mas a família contou que ele era um rapaz saudável, e disse que demorou a receber os papéis do hospital. E que, quando receberam, achavam que faltava coisa.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "e05",
+   "who": "ap_narr",
+   "text": "Para quem acredita no caso, a explicação é uma só: ele tocou na criatura sem proteção. Para os céticos, foi uma tragédia comum, que acabou presa a uma lenda.",
+   "pause": 1.2,
+   "emo": 0.5
+  },
+  {
+   "id": "f01",
+   "who": "ap_narr",
+   "text": "Em poucas semanas, o caso explodiu. Dois ufólogos, Ubirajara Rodrigues e Vitório Pacaccini, passaram meses entrevistando moradores, bombeiros e militares.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "f02",
+   "who": "ap_narr",
+   "text": "A história foi parar na televisão no domingo à noite, nos jornais do mundo inteiro, e em congressos de ufologia fora do país. Varginha virou a Roswell brasileira.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "f03",
+   "who": "ap_narr",
+   "text": "E a cidade abraçou o seu ET. Hoje tem caixa d'água em forma de disco voador, ponto de ônibus de nave, ET em lembrancinha, em museu, em festa. Virou turismo.",
+   "pause": 0.8,
+   "emo": 0.4
+  },
+  {
+   "id": "f04",
+   "who": "ap_narr",
+   "text": "Mas por trás das lembrancinhas, uma pergunta continuava sem resposta. Se nada aconteceu... por que o Exército abriu uma investigação?",
+   "pause": 1.4,
+   "emo": 0.6
+  },
+  {
+   "id": "g01",
+   "who": "ap_narr",
+   "text": "Em março de 1997, a Escola de Sargentos das Armas abriu um Inquérito Policial Militar. O objetivo era saber se militares e viaturas do Exército tinham participado do tal recolhimento das criaturas.",
+   "say": "Em março de mil novecentos e noventa e sete, a Escola de Sargentos das Armas abriu um Inquérito Policial Militar. O objetivo era saber se militares e viaturas do Exército tinham participado do tal recolhimento das criaturas.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "g02",
+   "who": "ap_narr",
+   "text": "São dois volumes. Cerca de seiscentas páginas. Durante quase trinta anos, ficaram arquivados no Superior Tribunal Militar.",
+   "pause": 0.6,
+   "emo": 0.45
+  },
+  {
+   "id": "g03",
+   "who": "ap_narr",
+   "text": "Em janeiro de 2026, no aniversário de trinta anos do caso, o tribunal divulgou o conteúdo. E aqui está o que ele diz.",
+   "say": "Em janeiro de dois mil e vinte e seis, no aniversário de trinta anos do caso, o tribunal divulgou o conteúdo. E aqui está o que ele diz.",
+   "pause": 1.4,
+   "emo": 0.55
+  },
+  {
+   "id": "g04",
+   "who": "ap_doc",
+   "text": "Motoristas e superiores ouvidos negaram o transporte. Os trajetos das viaturas não batem com o deslocamento alegado. Não há indício de participação militar.",
+   "pause": 1.0
+  },
+  {
+   "id": "g05",
+   "who": "ap_narr",
+   "text": "E sobre a criatura do terreno baldio, o inquérito tem uma explicação. Segundo os autos, as jovens provavelmente viram um homem da cidade, conhecido como Mudinho. Um morador com deficiência mental, conhecido no bairro.",
+   "pause": 0.8,
+   "emo": 0.45
+  },
+  {
+   "id": "g06",
+   "who": "ap_narr",
+   "text": "Agachado, sujo, encostado no muro, no susto, ele teria parecido um monstro. Um bombeiro ouvido no inquérito reforçou essa leitura.",
+   "pause": 0.8,
+   "emo": 0.45
+  },
+  {
+   "id": "g07",
+   "who": "ap_doc",
+   "text": "Conclusão: caso fruto de engano e boatos.",
+   "pause": 1.6
+  },
+  {
+   "id": "h01",
+   "who": "ap_narr",
+   "text": "Caso encerrado? Não pra todo mundo.",
+   "pause": 1.0,
+   "emo": 0.55
+  },
+  {
+   "id": "h02",
+   "who": "ap_narr",
+   "text": "As três testemunhas responderam na hora: elas conheciam o Mudinho. Todo mundo no bairro conhecia. E dizem que a coisa que viram, com aqueles olhos vermelhos, não era ele.",
+   "pause": 1.0,
+   "emo": 0.6
+  },
+  {
+   "id": "k04",
+   "who": "ap_kat",
+   "text": "A gente conhecia o Mudinho. Não era ele.",
+   "pause": 1.0,
+   "emo": 0.6
+  },
+  {
+   "id": "h03",
+   "who": "ap_narr",
+   "text": "Do outro lado, os céticos apontam um problema sério: as versões dos ufólogos mudam com o tempo. Horários, número de pessoas, nomes. Uma história contada por centenas de bocas, durante trinta anos, vai ganhando detalhe.",
+   "pause": 0.8,
+   "emo": 0.45
+  },
+  {
+   "id": "h04",
+   "who": "ap_narr",
+   "text": "E o inquérito também não responde tudo. Ele investigou o Exército, não os bombeiros, nem a Polícia Militar, nem os hospitais. Um documentário recente mostrou um militar dizendo que mentiu na época, e outro confirmando tudo o que disse em 96.",
+   "say": "E o inquérito também não responde tudo. Ele investigou o Exército, não os bombeiros, nem a Polícia Militar, nem os hospitais. Um documentário recente mostrou um militar dizendo que mentiu na época, e outro confirmando tudo o que disse em noventa e seis.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "h05",
+   "who": "ap_narr",
+   "text": "Então ficam dois arquivos sobre a mesma tarde. Num deles, um homem agachado perto de um muro, e uma cidade que se assustou. No outro, uma criatura de olhos vermelhos, um policial que morreu cedo demais, e um segredo guardado por trinta anos.",
+   "pause": 1.2,
+   "emo": 0.55
+  },
+  {
+   "id": "h06",
+   "who": "ap_narr",
+   "text": "Qual dos dois é o verdadeiro? Escreve aqui embaixo o que você acha. Eu leio todos.",
+   "pause": 1.0,
+   "emo": 0.5
+  },
+  {
+   "id": "h07",
+   "who": "ap_narr",
+   "text": "Toda sexta, um arquivo novo. E o próximo é sobre luzes que caçavam pescadores no Pará, numa operação que a Aeronáutica escondeu por vinte anos. Se inscreve pra não perder.",
+   "pause": 0.8,
+   "emo": 0.55
+  },
+  {
+   "id": "h08",
+   "who": "ap_narr",
+   "text": "Este arquivo... está fechado.",
+   "pause": 0.5,
+   "emo": 0.6
+  }
+ ]
+}

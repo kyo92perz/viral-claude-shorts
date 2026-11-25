@@ -100,6 +100,12 @@ VOICES = {
     "ma_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
     "ma_vo": ("pm_santa", 0.9, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
     "ma_chico": ("piper:faber", 1.0, st(1)),
+    # ARQUIVO PROIBIDO (canal longo): narrador de documentário grave e próximo; falas reconstituídas; voz de documento
+    "ap_narr": ("pm_santa", 0.95, st(-1.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=140:t=q:w=1:g=2.5,equalizer=f=3500:t=q:w=1:g=1.5"),
+    "ap_lil": ("pf_dora", 1.05, st(3)),
+    "ap_kat": ("pf_dora", 1.0, st(1)),
+    "ap_pm": ("piper:faber", 1.0, st(-1) + ",highpass=f=250,lowpass=f=3800"),
+    "ap_doc": ("piper:cadu", 0.92, st(-1) + ",highpass=f=200,lowpass=f=5000,aecho=0.6:0.4:40:0.15"),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)

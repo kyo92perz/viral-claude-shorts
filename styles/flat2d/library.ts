@@ -14,7 +14,8 @@ const F2 = {
 // same numbers as SAFE in core/style.ts (the browser can't import it)
 const SAFE = { left: 80, right: 1000, top: 160, bottom: 1600 };
 const RAINBOW = ['#ff5a5f', '#ff8a3d', '#ffc83d', '#3ccf91', '#4c7dff', '#8b6cff'];
-const svg = (body: string, defs = '') => `<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><defs>${defs}</defs>${body}</svg>`;
+const FW: number = typeof FRAME === 'undefined' ? 1080 : FRAME.w, FH: number = typeof FRAME === 'undefined' ? 1920 : FRAME.h;   // frame size (16:9 videos: 1920 x 1080)
+const svg = (body: string, defs = '') => `<svg viewBox="0 0 ${FW} ${FH}" xmlns="http://www.w3.org/2000/svg"><defs>${defs}</defs>${body}</svg>`;
 function f2Sun(id: string, cx: number, cy: number, r: number, c = F2.yellow) {
   let rays = '';
   for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2; rays += `<rect x="${-10}" y="${-r - 70}" width="20" height="44" rx="10" fill="${c}" transform="rotate(${a * 180 / Math.PI})"/>`; }

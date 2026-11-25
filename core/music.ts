@@ -135,6 +135,9 @@ const AMB: Record<string, (t0: number, t1: number, g: (t: number) => number) => 
     for (let t = t0 + 0.3 + rnd() * 0.5; t < t1 - 0.2; t += 0.6 + rnd() * 1.1) { const f = 3000 + rnd() * 1500, pan = rnd() * 1.4 - 0.7; for (const d of [0, 0.11]) add(t + d, 0.09, (u) => Math.sin(TAU * (f * u + 6000 * u * u)) * Math.sin(Math.PI * u / 0.09), 0.035, pan, g); }
   },
   crowd: (t0, t1, g) => { let a = 0, b = 0; add(t0 - F, t1 - t0 + 2 * F, (u, t) => { const n = noise(); a += 0.09 * (n - a); b += 0.012 * (n - b); return (a - b) * (1 + 0.3 * Math.sin(TAU * 3.1 * t) + 0.2 * Math.sin(TAU * 5.3 * t + 1)); }, 1.3, 0.1, g); },
+  // rain on roofs and the ground: bright noise with a slow swell; 'hail' adds sharp ice ticks on top
+  rain: (t0, t1, g) => { let y = 0; add(t0 - F, t1 - t0 + 2 * F, (u, t) => { const n = noise(); y += 0.25 * (n - y); return (n - y) * (0.8 + 0.2 * Math.sin(TAU * 0.17 * t)); }, 0.55, 0, g); },
+  hail: (t0, t1, g) => { AMB.rain(t0, t1, g); for (let t = t0 + rnd() * 0.05; t < t1; t += 0.03 + rnd() * 0.06) { const f = 2500 + rnd() * 3000, pan = rnd() * 1.6 - 0.8; add(t, 0.025, (u) => Math.sin(TAU * f * u) * Math.exp(-u * 160), 0.09, pan, g); } },
   room: (t0, t1, g) => { let y = 0; add(t0 - F, t1 - t0 + 2 * F, () => { y += 0.004 * (noise() - y); return y; }, 2.2, 0, g); },
   // a woman's voice singing a slow wordless tune from under the water (the Iara): vowel-like tones with vibrato and an echo
   song: (t0, t1, g) => { const tune = [0, 3, 7, 5, 3, 2, 0, -2, 0, 3, 5, 3]; let k = 0;

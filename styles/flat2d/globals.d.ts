@@ -3,6 +3,8 @@
 type Scene = import('../../core/types.ts').Scene;
 declare const SCENES: import('../../core/types.ts').Plan;
 declare const WORDS: import('../../core/types.ts').Word[];
+// the frame size, written by the adapter from scenes.json "format": 1080 x 1920 (9:16) or 1920 x 1080 (16:9)
+declare const FRAME: { w: number; h: number };
 
 // a scene's art: background, title color, SVG and its animation on the shared timeline (absolute video times)
 interface Visual {
