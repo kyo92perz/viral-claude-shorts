@@ -112,7 +112,7 @@ defineVisuals({
   'test-kitchen': { bg: '#4a3424', html: () => svg(`${maKitchen()}${maLeo(400, 1700, 1.6)}${maOld(700, 1700, 1.5, true)}`),
     anim(tl, s) { bzFace(tl, '#sc-test-kitchen #leo', s.t0, 'wide', 'flat'); bzFace(tl, '#sc-test-kitchen #raiold', s.t0, 'wide', 'flat'); bzPose(tl, '#sc-test-kitchen #raiold', s.t0, { aR: -110 }, 0.01); } },
   // covers (clean frames for core/cover.py)
-  'cover-a': { bg: '#060c14', html: () => svg(`${maJungle()}${maGiant('mapi', 540, 1900, 1.15)}${bzVignette(0.6)}`), anim(tl, s) { maMouth(tl, '#sc-cover-a #mapi', s.t0); } },
+  'cover-a': { bg: '#060c14', html: () => svg(`${maJungle()}${maGiant('mapi', 540, 2250, 1.15)}${bzVignette(0.6)}`), anim(tl, s) { maMouth(tl, '#sc-cover-a #mapi', s.t0); } },
   'cover-b': { bg: '#4a3424', html: () => svg(`${maKitchen()}${maLeo(430, 1800, 1.8)}${maOld(720, 1860, 1.6, true)}${bzVignette(0.6)}`),
     anim(tl, s) { bzFace(tl, '#sc-cover-b #leo', s.t0, 'wide', 'flat'); bzFace(tl, '#sc-cover-b #raiold', s.t0, 'wide', 'flat'); bzPose(tl, '#sc-cover-b #raiold', s.t0, { aR: -125 }, 0.01); } },
 });
