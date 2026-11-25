@@ -1,0 +1,5 @@
+{ "style": "2.5d_cartoon", "fps": 30, "format": "16:9", "shots": [
+  { "id": "test-wide", "title": " ", "duration": 2, "snap": [1.0] },
+  { "id": "test-close", "title": " ", "duration": 2, "snap": [1.0] },
+  { "id": "test-golden", "title": " ", "duration": 2, "snap": [1.0] }
+] }
