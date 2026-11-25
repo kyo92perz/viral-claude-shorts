@@ -54,4 +54,5 @@ export const SFX: Record<string, string> = {
 // background sound of a scene's place
 export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat',
   hum: 'fluorescent tubes buzzing', drone: 'a low dissonant horror drone', heartbeat: 'a slow heartbeat',
-  night: 'crickets and a far dog at night', song: 'a woman singing a wordless tune from under the water', static: 'a soft radio hiss', powerline: 'the hum of high-voltage wires' };
+  night: 'crickets and a far dog at night', song: 'a woman singing a wordless tune from under the water', static: 'a soft radio hiss', powerline: 'the hum of high-voltage wires',
+  rain: 'rain on roofs and the ground', hail: 'a hailstorm: rain with sharp ice ticks' };

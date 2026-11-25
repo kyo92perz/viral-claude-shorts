@@ -1,0 +1,1530 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "captions": true,
+ "badge": {
+  "title": "ARQUIVO PROIBIDO",
+  "ep": "CASO Nº 001"
+ },
+ "music": {
+  "bpm": 70,
+  "key": "D"
+ },
+ "notes": "ARQUIVO PROIBIDO, Caso Nº 001: o ET de Varginha. A 16:9 animated documentary in the Brasil Z toon look: the town of coffee hills, the empty lot with the old brick wall, the creature as the girls described it, a hailstorm and a dark night, the inquiry folder in the archive. RELATO / DOCUMENTO / RECONSTITUIÇÃO tags keep facts and claims apart. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "o-date",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 5,
+     "sfx": "hit",
+     "t": 2.686
+    }
+   ],
+   "t0": 0,
+   "t1": 6.075
+  },
+  {
+   "id": "o-walk",
+   "from": 10,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 6.075,
+   "t1": 10.58
+  },
+  {
+   "id": "o-stop",
+   "from": 22,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 26,
+     "sfx": "sting",
+     "t": 11.752
+    }
+   ],
+   "t0": 10.58,
+   "t1": 12.89
+  },
+  {
+   "id": "o-wall",
+   "from": 27,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 12.89,
+   "t1": 15.973
+  },
+  {
+   "id": "o-skin",
+   "from": 35,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 15.973,
+   "t1": 18.306
+  },
+  {
+   "id": "o-head",
+   "from": 41,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 18.306,
+   "t1": 20.191
+  },
+  {
+   "id": "o-eyes",
+   "from": 46,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 48,
+     "sfx": "sting",
+     "t": 20.65
+    }
+   ],
+   "t0": 20.191,
+   "t1": 24.283
+  },
+  {
+   "id": "o-scream",
+   "from": 54,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "k",
+     "at": 54,
+     "sfx": "scream",
+     "t": 24.483
+    }
+   ],
+   "t0": 24.283,
+   "t1": 27.968
+  },
+  {
+   "id": "o-truck",
+   "from": 58,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "t",
+     "at": 64,
+     "sfx": "siren",
+     "t": 31.048
+    }
+   ],
+   "t0": 27.968,
+   "t1": 35.923
+  },
+  {
+   "id": "o-cop",
+   "from": 73,
+   "type": "object",
+   "mood": "sad",
+   "t0": 35.923,
+   "t1": 38.27
+  },
+  {
+   "id": "o-army",
+   "from": 78,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "f",
+     "at": 83,
+     "sfx": "impact",
+     "t": 39.826
+    }
+   ],
+   "t0": 38.27,
+   "t1": 41.598
+  },
+  {
+   "id": "o-30",
+   "from": 85,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 90,
+     "sfx": "hit",
+     "t": 44.447
+    }
+   ],
+   "t0": 41.598,
+   "t1": 45.571
+  },
+  {
+   "id": "o-2026",
+   "from": 93,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "y",
+     "at": 96,
+     "sfx": "click",
+     "t": 46.655
+    }
+   ],
+   "t0": 45.571,
+   "t1": 48.384
+  },
+  {
+   "id": "o-promise",
+   "from": 100,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 48.384,
+   "t1": 53.707
+  },
+  {
+   "id": "title",
+   "from": 113,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "t",
+     "at": 116,
+     "sfx": "impact",
+     "t": 54.704
+    },
+    {
+     "id": "c",
+     "at": 118,
+     "sfx": "hit",
+     "t": 55.984
+    }
+   ],
+   "t0": 53.707,
+   "t1": 59.738
+  },
+  {
+   "id": "town",
+   "from": 125,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 125,
+     "sfx": "whoosh",
+     "t": 60.038
+    }
+   ],
+   "t0": 59.738,
+   "t1": 65.234
+  },
+  {
+   "id": "cafe",
+   "from": 137,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 65.234,
+   "t1": 70.531
+  },
+  {
+   "id": "ufos",
+   "from": 149,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 70.531,
+   "t1": 77.296
+  },
+  {
+   "id": "farm",
+   "from": 166,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "t0": 77.296,
+   "t1": 83.944
+  },
+  {
+   "id": "ovni",
+   "from": 183,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 184,
+     "sfx": "riser",
+     "t": 84.142
+    }
+   ],
+   "t0": 83.944,
+   "t1": 87.336
+  },
+  {
+   "id": "cows",
+   "from": 192,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 87.336,
+   "t1": 90.286
+  },
+  {
+   "id": "call",
+   "from": 199,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "r",
+     "at": 216,
+     "sfx": "beep",
+     "t": 95.586
+    }
+   ],
+   "t0": 90.286,
+   "t1": 97.587
+  },
+  {
+   "id": "andere",
+   "from": 221,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 97.587,
+   "t1": 101.711
+  },
+  {
+   "id": "nets",
+   "from": 233,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 101.711,
+   "t1": 107.27
+  },
+  {
+   "id": "crate",
+   "from": 243,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "x",
+     "at": 253,
+     "sfx": "thump",
+     "t": 110.685
+    }
+   ],
+   "t0": 107.27,
+   "t1": 112.868
+  },
+  {
+   "id": "nodoc",
+   "from": 258,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "n",
+     "at": 261,
+     "sfx": "hit",
+     "t": 114.669
+    }
+   ],
+   "t0": 112.868,
+   "t1": 116.983
+  },
+  {
+   "id": "clock",
+   "from": 264,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 267,
+     "sfx": "tick",
+     "t": 118.495
+    }
+   ],
+   "t0": 116.983,
+   "t1": 120.352
+  },
+  {
+   "id": "girls",
+   "from": 272,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 120.352,
+   "t1": 128.226
+  },
+  {
+   "id": "shortcut",
+   "from": 291,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 128.226,
+   "t1": 133.98
+  },
+  {
+   "id": "lotwide",
+   "from": 304,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 133.98,
+   "t1": 138.05
+  },
+  {
+   "id": "lil",
+   "from": 313,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "s",
+     "at": 317,
+     "sfx": "sting",
+     "t": 140.016
+    }
+   ],
+   "t0": 138.05,
+   "t1": 142.253
+  },
+  {
+   "id": "reveal",
+   "from": 319,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.4,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 142.253,
+   "t1": 145.374
+  },
+  {
+   "id": "size",
+   "from": 326,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 331,
+     "sfx": "tick",
+     "t": 146.72
+    }
+   ],
+   "t0": 145.374,
+   "t1": 147.62
+  },
+  {
+   "id": "shine",
+   "from": 334,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 147.62,
+   "t1": 151.991
+  },
+  {
+   "id": "horns",
+   "from": 346,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 151.991,
+   "t1": 155.647
+  },
+  {
+   "id": "faces",
+   "from": 353,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 155.647,
+   "t1": 159.036
+  },
+  {
+   "id": "redeyes",
+   "from": 361,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 362,
+     "sfx": "sting",
+     "t": 159.253
+    }
+   ],
+   "t0": 159.036,
+   "t1": 162.426
+  },
+  {
+   "id": "weak",
+   "from": 369,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 162.426,
+   "t1": 167.781
+  },
+  {
+   "id": "corre",
+   "from": 379,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "k",
+     "at": 379,
+     "sfx": "scream",
+     "t": 168.081
+    }
+   ],
+   "t0": 167.781,
+   "t1": 172.115
+  },
+  {
+   "id": "run",
+   "from": 385,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 172.115,
+   "t1": 174.925
+  },
+  {
+   "id": "home",
+   "from": 391,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 174.925,
+   "t1": 180.548
+  },
+  {
+   "id": "mom",
+   "from": 403,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 180.548,
+   "t1": 183.189
+  },
+  {
+   "id": "empty",
+   "from": 411,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 183.189,
+   "t1": 189.767
+  },
+  {
+   "id": "today",
+   "from": 428,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "c",
+     "at": 430,
+     "sfx": "whoosh",
+     "t": 190.761
+    }
+   ],
+   "t0": 189.767,
+   "t1": 199.993
+  },
+  {
+   "id": "storm",
+   "from": 449,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "ambience": [
+    "hail"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 456,
+     "sfx": "boom",
+     "t": 202.775
+    }
+   ],
+   "t0": 199.993,
+   "t1": 203.944
+  },
+  {
+   "id": "blackout",
+   "from": 459,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "rain"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 461,
+     "sfx": "off",
+     "t": 204.876
+    }
+   ],
+   "t0": 203.944,
+   "t1": 206.241
+  },
+  {
+   "id": "darkst",
+   "from": 465,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "rain"
+   ],
+   "t0": 206.241,
+   "t1": 210.47
+  },
+  {
+   "id": "patrol",
+   "from": 477,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "rain"
+   ],
+   "t0": 210.47,
+   "t1": 216.961
+  },
+  {
+   "id": "chereze",
+   "from": 489,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "rain"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 493,
+     "sfx": "hit",
+     "t": 218.078
+    }
+   ],
+   "t0": 216.961,
+   "t1": 221.137
+  },
+  {
+   "id": "cross",
+   "from": 500,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "rain"
+   ],
+   "keys": [
+    {
+     "id": "x",
+     "at": 508,
+     "sfx": "sting",
+     "t": 224.311
+    }
+   ],
+   "t0": 221.137,
+   "t1": 226.349
+  },
+  {
+   "id": "grab",
+   "from": 513,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "rain"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 518,
+     "sfx": "grunt",
+     "t": 227.82
+    }
+   ],
+   "t0": 226.349,
+   "t1": 230.677
+  },
+  {
+   "id": "backseat",
+   "from": 527,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "rain"
+   ],
+   "t0": 230.677,
+   "t1": 233.011
+  },
+  {
+   "id": "segura",
+   "from": 533,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "rain"
+   ],
+   "t0": 233.011,
+   "t1": 237.349
+  },
+  {
+   "id": "hospital",
+   "from": 539,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 237.349,
+   "t1": 244.061
+  },
+  {
+   "id": "guards",
+   "from": 555,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 244.061,
+   "t1": 248.843
+  },
+  {
+   "id": "trucks",
+   "from": 565,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 248.843,
+   "t1": 256.13
+  },
+  {
+   "id": "sign",
+   "from": 581,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 256.13,
+   "t1": 261.61
+  },
+  {
+   "id": "noproof",
+   "from": 592,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 606,
+     "sfx": "hit",
+     "t": 268.011
+    },
+    {
+     "id": "b",
+     "at": 608,
+     "sfx": "hit",
+     "t": 268.922
+    },
+    {
+     "id": "c",
+     "at": 610,
+     "sfx": "hit",
+     "t": 269.904
+    }
+   ],
+   "t0": 261.61,
+   "t1": 272.126
+  },
+  {
+   "id": "notrumor",
+   "from": 612,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 623,
+     "sfx": "impact",
+     "t": 277.395
+    }
+   ],
+   "t0": 272.126,
+   "t1": 279.068
+  },
+  {
+   "id": "sick",
+   "from": 624,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 279.068,
+   "t1": 284.696
+  },
+  {
+   "id": "surgery",
+   "from": 637,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "heartbeat"
+   ],
+   "t0": 284.696,
+   "t1": 289.736
+  },
+  {
+   "id": "flat",
+   "from": 647,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "heartbeat"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 664,
+     "sfx": "beep",
+     "t": 298.356
+    }
+   ],
+   "t0": 289.736,
+   "t1": 299.062
+  },
+  {
+   "id": "candle",
+   "from": 665,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 299.062,
+   "t1": 301.61
+  },
+  {
+   "id": "papers",
+   "from": 668,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 701,
+     "sfx": "hit",
+     "t": 312.974
+    }
+   ],
+   "t0": 301.61,
+   "t1": 314.355
+  },
+  {
+   "id": "believe",
+   "from": 703,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 314.355,
+   "t1": 320.561
+  },
+  {
+   "id": "skeptic",
+   "from": 719,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 320.561,
+   "t1": 326.248
+  },
+  {
+   "id": "explode",
+   "from": 732,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "x",
+     "at": 733,
+     "sfx": "impact",
+     "t": 326.817
+    }
+   ],
+   "t0": 326.248,
+   "t1": 329.409
+  },
+  {
+   "id": "interview",
+   "from": 738,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 329.409,
+   "t1": 339.106
+  },
+  {
+   "id": "tv",
+   "from": 752,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "static"
+   ],
+   "t0": 339.106,
+   "t1": 347.58
+  },
+  {
+   "id": "roswell",
+   "from": 775,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "r",
+     "at": 778,
+     "sfx": "hit",
+     "t": 348.688
+    }
+   ],
+   "t0": 347.58,
+   "t1": 350.258
+  },
+  {
+   "id": "tourism",
+   "from": 780,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 350.258,
+   "t1": 357.672
+  },
+  {
+   "id": "souvenir",
+   "from": 801,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 357.672,
+   "t1": 361.907
+  },
+  {
+   "id": "why",
+   "from": 810,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "q",
+     "at": 826,
+     "sfx": "sting",
+     "t": 368.32
+    }
+   ],
+   "t0": 361.907,
+   "t1": 371.351
+  },
+  {
+   "id": "ipm",
+   "from": 830,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 831,
+     "sfx": "thump",
+     "t": 371.992
+    }
+   ],
+   "t0": 371.351,
+   "t1": 378.142
+  },
+  {
+   "id": "aim",
+   "from": 845,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 378.142,
+   "t1": 386.633
+  },
+  {
+   "id": "volumes",
+   "from": 862,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "v",
+     "at": 867,
+     "sfx": "thud",
+     "t": 388.625
+    }
+   ],
+   "t0": 386.633,
+   "t1": 391.579
+  },
+  {
+   "id": "court",
+   "from": 873,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 391.579,
+   "t1": 395.027
+  },
+  {
+   "id": "release",
+   "from": 879,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "y",
+     "at": 882,
+     "sfx": "hit",
+     "t": 396.32
+    }
+   ],
+   "t0": 395.027,
+   "t1": 401.755
+  },
+  {
+   "id": "open",
+   "from": 895,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 896,
+     "sfx": "impact",
+     "t": 401.904
+    }
+   ],
+   "t0": 401.755,
+   "t1": 404.92
+  },
+  {
+   "id": "read1",
+   "from": 902,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 404.92,
+   "t1": 408.589
+  },
+  {
+   "id": "read2",
+   "from": 909,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "x",
+     "at": 913,
+     "sfx": "hit",
+     "t": 410.217
+    }
+   ],
+   "t0": 408.589,
+   "t1": 412.678
+  },
+  {
+   "id": "read3",
+   "from": 919,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 922,
+     "sfx": "thump",
+     "t": 413.665
+    }
+   ],
+   "t0": 412.678,
+   "t1": 416.022
+  },
+  {
+   "id": "explain",
+   "from": 925,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 416.022,
+   "t1": 420.751
+  },
+  {
+   "id": "man",
+   "from": 937,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 420.751,
+   "t1": 430.664
+  },
+  {
+   "id": "shape",
+   "from": 959,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 969,
+     "sfx": "sting",
+     "t": 435.567
+    }
+   ],
+   "t0": 430.664,
+   "t1": 436.446
+  },
+  {
+   "id": "fireman",
+   "from": 971,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "t0": 436.446,
+   "t1": 441.178
+  },
+  {
+   "id": "verdict",
+   "from": 979,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "s",
+     "at": 983,
+     "sfx": "impact",
+     "t": 443.132
+    }
+   ],
+   "t0": 441.178,
+   "t1": 445.612
+  },
+  {
+   "id": "closed",
+   "from": 986,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "n",
+     "at": 988,
+     "sfx": "sting",
+     "t": 446.938
+    }
+   ],
+   "t0": 445.612,
+   "t1": 449.034
+  },
+  {
+   "id": "three",
+   "from": 992,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 449.034,
+   "t1": 457.357
+  },
+  {
+   "id": "eyes2",
+   "from": 1014,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 1015,
+     "sfx": "sting",
+     "t": 457.604
+    }
+   ],
+   "t0": 457.357,
+   "t1": 460.713
+  },
+  {
+   "id": "kat",
+   "from": 1021,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "t0": 460.713,
+   "t1": 463.889
+  },
+  {
+   "id": "versions",
+   "from": 1029,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 1046,
+     "sfx": "tick",
+     "t": 470.727
+    },
+    {
+     "id": "b",
+     "at": 1047,
+     "sfx": "tick",
+     "t": 471.349
+    },
+    {
+     "id": "c",
+     "at": 1049,
+     "sfx": "tick",
+     "t": 472.068
+    }
+   ],
+   "t0": 463.889,
+   "t1": 473.069
+  },
+  {
+   "id": "mouths",
+   "from": 1051,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 473.069,
+   "t1": 479.568
+  },
+  {
+   "id": "gaps",
+   "from": 1064,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 1077,
+     "sfx": "tick",
+     "t": 484.796
+    },
+    {
+     "id": "b",
+     "at": 1081,
+     "sfx": "tick",
+     "t": 486.461
+    },
+    {
+     "id": "c",
+     "at": 1083,
+     "sfx": "tick",
+     "t": 487.294
+    }
+   ],
+   "t0": 479.568,
+   "t1": 488.211
+  },
+  {
+   "id": "doc",
+   "from": 1085,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "static"
+   ],
+   "t0": 488.211,
+   "t1": 496.833
+  },
+  {
+   "id": "two",
+   "from": 1105,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 496.833,
+   "t1": 500.038
+  },
+  {
+   "id": "filea",
+   "from": 1113,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 500.038,
+   "t1": 503.991
+  },
+  {
+   "id": "fileb",
+   "from": 1126,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 1131,
+     "sfx": "sting",
+     "t": 505.558
+    }
+   ],
+   "t0": 503.991,
+   "t1": 512.776
+  },
+  {
+   "id": "ask",
+   "from": 1148,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "t0": 512.776,
+   "t1": 520.015
+  },
+  {
+   "id": "next",
+   "from": 1164,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 1174,
+     "sfx": "riser",
+     "t": 523.769
+    }
+   ],
+   "t0": 520.015,
+   "t1": 533.13
+  },
+  {
+   "id": "end",
+   "from": 1194,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 1197,
+     "sfx": "impact",
+     "t": 534.522
+    },
+    {
+     "id": "z",
+     "at": 1197,
+     "dt": 0.999,
+     "sfx": "sting",
+     "t": 535.521
+    }
+   ],
+   "t0": 533.13,
+   "t1": 537.541
+  }
+ ],
+ "duration": 537.541
+}

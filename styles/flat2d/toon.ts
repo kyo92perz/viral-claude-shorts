@@ -178,7 +178,7 @@ function bzPush(tl: gsap.core.Timeline, sel: string, t0: number, t1: number, a =
   tl.fromTo(sel, { scale: a, svgOrigin: `${ox} ${oy}` }, { scale: b, svgOrigin: `${ox} ${oy}`, duration: t1 - t0, ease: 'none' }, t0);
 }
 // a flash overlay that fades out (an impact)
-const bzHit = (tl: gsap.core.Timeline, sel: string, t: number, k = 0.7) => tl.fromTo(sel, { opacity: k }, { opacity: 0, duration: 0.3, ease: 'power2.out' }, t);
+const bzHit = (tl: gsap.core.Timeline, sel: string, t: number, k = 0.7) => tl.fromTo(sel, { opacity: k }, { opacity: 0, duration: 0.3, ease: 'power2.out', immediateRender: false }, t);   // not before t (a seek to an earlier frame must not show it)
 // show something at t with a pop (hidden before)
 const bzShow = (tl: gsap.core.Timeline, sel: string, t: number) => { tl.set(sel, { opacity: 1 }, t); bzPop(tl, sel, t, 0.3); };
 // the hook plate: visible from the very first frame, then a punch (the first frame of a Short must already hook)
