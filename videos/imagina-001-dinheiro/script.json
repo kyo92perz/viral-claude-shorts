@@ -27,6 +27,13 @@
    "emo": 0.55
   },
   {
+   "id": "a05",
+   "who": "im_narr",
+   "text": "Antes de começar: chuta aqui nos comentários em que dia você acha que o Tuco vira milionário. No meio do vídeo você descobre se acertou.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
    "id": "a04",
    "who": "im_narr",
    "text": "Valendo. Dia 1.",
@@ -88,6 +95,14 @@
    "emo": 0.6
   },
   {
+   "id": "b06",
+   "who": "im_narr",
+   "text": "Pra você ter uma ideia: se em vez de dobrar o dinheiro aumentasse 1 real por dia, no dia 30 você teria só 30 reais. É o dobrar que muda tudo.",
+   "pause": 0.5,
+   "emo": 0.55,
+   "say": "Pra você ter uma ideia: se em vez de dobrar o dinheiro aumentasse um real por dia, no dia trinta você teria só trinta reais. É o dobrar que muda tudo."
+  },
+  {
    "id": "c01",
    "who": "im_narr",
    "text": "Dia 10: 512 reais. Você compra um tênis novo e ainda sobra.",
@@ -139,6 +154,35 @@
    "text": "E na escola, todo mundo começa a reparar.",
    "pause": 0.8,
    "emo": 0.55
+  },
+  {
+   "id": "k03",
+   "who": "im_biel",
+   "text": "Tuco, cê tá vendendo o quê? Fala a verdade!",
+   "pause": 0.5,
+   "emo": 0.7
+  },
+  {
+   "id": "t05",
+   "who": "im_tuco",
+   "text": "Nada, mano! Eu juro!",
+   "pause": 0.5,
+   "emo": 0.75
+  },
+  {
+   "id": "c06",
+   "who": "im_narr",
+   "text": "E aqui você aprende a segunda regra do dinheiro: quanto mais você tem, mais gente quer saber de onde ele veio.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "c07",
+   "who": "im_narr",
+   "text": "Dia 19: 262 mil reais. Você paga pizza pra escola inteira. Mil e duzentos alunos. E vira o cara mais popular do colégio em uma tarde.",
+   "pause": 0.5,
+   "emo": 0.65,
+   "say": "Dia dezenove: duzentos e sessenta e dois mil reais. Você paga pizza pra escola inteira. Mil e duzentos alunos. E vira o cara mais popular do colégio em uma tarde."
   },
   {
    "id": "d01",
@@ -193,6 +237,21 @@
    "emo": 0.7
   },
   {
+   "id": "d06",
+   "who": "im_narr",
+   "text": "Mas ser milionário aos 14 tem um problema: no Brasil, quem cuida do dinheiro de um menor de idade são os pais. E pra vender uma casa no nome de um menor, por exemplo, precisa até de autorização de um juiz.",
+   "pause": 0.5,
+   "emo": 0.55,
+   "say": "Mas ser milionário aos quatorze tem um problema: no Brasil, quem cuida do dinheiro de um menor de idade são os pais. E pra vender uma casa no nome de um menor, por exemplo, precisa até de autorização de um juiz."
+  },
+  {
+   "id": "m04",
+   "who": "im_mae",
+   "text": "Ninguém mexe nesse dinheiro sem eu saber, entendeu, Tuco?",
+   "pause": 0.5,
+   "emo": 0.7
+  },
+  {
    "id": "e01",
    "who": "im_narr",
    "text": "Daqui pra frente, cada noite de sono vale mais que o salário de uma vida inteira.",
@@ -238,6 +297,14 @@
    "emo": 0.7
   },
   {
+   "id": "e05",
+   "who": "im_narr",
+   "text": "Só pra ter noção: 536 milhões em notas de 100 reais dariam uma pilha de mais de meio quilômetro de altura. Maior que qualquer prédio do Brasil.",
+   "say": "Só pra ter noção: quinhentos e trinta e seis milhões em notas de cem reais dariam uma pilha de mais de meio quilômetro de altura. Maior que qualquer prédio do Brasil.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
    "id": "f01",
    "who": "im_narr",
    "text": "Dia 31: um bilhão de reais. Você é bilionário. A essa altura, o dinheiro já parou de ser divertido.",
@@ -249,6 +316,13 @@
    "id": "f02",
    "who": "im_narr",
    "text": "Você precisa de seguranças. Advogados. Um prédio só pra guardar papel de imposto. E o Biel não te chama mais pra jogar bola, porque agora tem câmera em todo lugar que você vai.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "f06",
+   "who": "im_narr",
+   "text": "Até a diretora pede pra você estudar em casa, porque toda vez que você chega na escola tem fila na porta de gente pedindo dinheiro.",
    "pause": 0.5,
    "emo": 0.55
   },
@@ -274,6 +348,14 @@
    "say": "Dia quarenta e um: um trilhão. Você poderia dar um carro zero pra cada família da sua cidade, e na manhã seguinte ter o dobro de novo.",
    "pause": 0.8,
    "emo": 0.65
+  },
+  {
+   "id": "f05",
+   "who": "im_narr",
+   "text": "Dia 43: quatro trilhões. Você tenta doar. Hospitais, escolas, a quadra do bairro. Mas toda manhã o dinheiro dobra de novo. Você não consegue gastar mais rápido do que ele cresce.",
+   "pause": 0.5,
+   "emo": 0.6,
+   "say": "Dia quarenta e três: quatro trilhões. Você tenta doar. Hospitais, escolas, a quadra do bairro. Mas toda manhã o dinheiro dobra de novo. Você não consegue gastar mais rápido do que ele cresce."
   },
   {
    "id": "h01",
@@ -306,12 +388,26 @@
    "emo": 0.8
   },
   {
+   "id": "t06",
+   "who": "im_tuco",
+   "text": "Mãe... acho que a culpa é minha.",
+   "pause": 0.5,
+   "emo": 0.6
+  },
+  {
    "id": "h04",
    "who": "im_narr",
    "text": "Dia 51: mais de mil trilhões. Mais do que tudo que o planeta inteiro produz em um ano. Você tem mais dinheiro que o mundo. E o dinheiro do mundo inteiro... começa a não valer nada.",
    "say": "Dia cinquenta e um: mais de mil trilhões. Mais do que tudo que o planeta inteiro produz em um ano. Você tem mais dinheiro que o mundo. E o dinheiro do mundo inteiro... começa a não valer nada.",
    "pause": 1.0,
    "emo": 0.7
+  },
+  {
+   "id": "h05",
+   "who": "im_narr",
+   "text": "As pessoas param de aceitar dinheiro. Começam a trocar coisas: um saco de arroz por uma bicicleta, uma galinha por um par de tênis. Isso se chama escambo. Era assim antes do dinheiro existir.",
+   "pause": 0.5,
+   "emo": 0.6
   },
   {
    "id": "j01",
@@ -335,6 +431,13 @@
    "say": "No dia sessenta e quatro, você teria nove quintilhões de reais. Um número tão grande que nenhuma calculadora de celular mostra direito.",
    "pause": 1.0,
    "emo": 0.6
+  },
+  {
+   "id": "j04",
+   "who": "im_narr",
+   "text": "E na vida real? Dinheiro não dobra todo dia. Mas existe uma versão lenta desse poder: os juros compostos. Quando você guarda e investe, o dinheiro rende em cima do que já rendeu. A curva sobe igualzinho à do Tuco. Só que em vez de dias, leva anos.",
+   "pause": 0.5,
+   "emo": 0.5
   },
   {
    "id": "z01",
