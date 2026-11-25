@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """IMAGINA SÓ thumbnails (1280x720): side-by-side panels "DIA 1 | DIA 30" (or three), the Tuco big in each, one huge
 label on top of each panel, thin dark dividers, rounded corners. Panels come from the clean world-test frames
-thumb-p1/p2/p3 (world/storyboard/p17.png, p18.png, p19.png after `node core/world.ts videos/imagina-001-dinheiro`).
+thumb2-a/thumb2-b (world/storyboard/p04.png, p05.png after `node core/world.ts videos/imagina-001-dinheiro`).
   usage: python3 make-thumb.py"""
 import os
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__)); V = os.path.dirname(HERE)
 FONT = os.path.join(V, '..', '..', 'styles', 'flat2d', 'Anton.ttf'); W, H = 1280, 720
 F = lambda px: ImageFont.truetype(FONT, px)
-P = {k: os.path.join(V, 'world', 'storyboard', f) for k, f in (('p1', 'p17.png'), ('p2', 'p18.png'), ('p3', 'p19.png'))}
+P = {k: os.path.join(V, 'world', 'storyboard', f) for k, f in (('p1', 'p04.png'), ('p2', 'p05.png'))}
 
 def panel(key, w, zoom=1.0, cy=0.42):
     im = Image.open(P[key]).convert('RGB'); iw, ih = im.size
@@ -40,6 +40,5 @@ def build(keys, labels, chips, out):
 
 RED, GREEN, GOLD = (224, 48, 42), (47, 160, 74), (200, 150, 20)
 build(['p1', 'p2'], ['DIA 1', 'DIA 30'], [('R$ 1', RED), ('R$ 536 MI', GREEN)], 'thumbnail.jpg')
-build(['p1', 'p2', 'p3'], ['DIA 1', 'DIA 30', 'DIA 51'], [('R$ 1', RED), ('R$ 536 MI', GREEN), ('O MUNDO', GOLD)], 'thumbnail-b.jpg')
-build(['p1', 'p3'], ['1x', '1.000.000.000x'], [None, None], 'thumbnail-c.jpg')
+build(['p1', 'p2'], ['1x', '1.000.000.000x'], [None, None], 'thumbnail-b.jpg')
 print('ok')

@@ -4,9 +4,9 @@ TÍTULO (mesmo gancho do formato: "E se seu ___ DOBRASSE todo dia?", com a palav
 3. E se você ficasse MAIS RICO que o mundo em 51 dias?
 
 THUMBNAIL (1280×720, na pasta do vídeo)
-- thumbnail.jpg    DIA 1 | DIA 30  (recomendada: o mesmo esquema de antes e depois)
-- thumbnail-b.jpg  DIA 1 | DIA 30 | DIA 51
-- thumbnail-c.jpg  1x | 1.000.000.000x
+- thumbnail.jpg    DIA 1 (chuva, poça, R$ 1) | DIA 30 (aura dourada, olhos de cifrão, multidão)  (recomendada)
+- thumbnail-b.jpg  1x | 1.000.000.000x (mesmas cenas)
+- thumbnail-c.jpg  versão antiga em close (para teste)
 Suba as três em "Testar e comparar".
 
 DESCRIÇÃO
