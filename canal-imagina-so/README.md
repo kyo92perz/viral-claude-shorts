@@ -57,3 +57,15 @@ um mundo diferente. Com o Tuco, números de verdade e muita confusão no bairro.
 ## Postagem
 1 episódio por semana (quarta ou quinta, 18:00 de Brasília). No mesmo dia, um Short com o melhor momento ("DIA 30!")
 apontando para o vídeo longo.
+
+## Capas: ilustração por IA + montagem
+As capas usam ilustração pintada (gerada no ChatGPT/Gemini) e são montadas por `videos/<ep>/thumbnail/compose-ai.py`
+(painéis lado a lado, "DIA 1 | DIA N", etiqueta de valor). Gere **duas imagens verticais** por episódio com o prompt base:
+
+> Cartoon digital painting, YouTube thumbnail style, soft cel shading and dramatic lighting, highly detailed background.
+> A 14-year-old Brazilian boy named Tuco with curly black hair and brown skin, green zip track jacket with a yellow stripe
+> on the sleeves, black shorts, **unbranded** red sneakers. [CENA DO DIA 1 / DIA N]. Full body, dynamic pose, vertical
+> composition, no text, no logos.
+
+Na segunda imagem, escreva "mesmo personagem da imagem anterior". Peça tênis **sem marca** (logotipos de marcas na capa
+podem dar problema).
