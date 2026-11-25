@@ -137,6 +137,13 @@ defineVisuals({
       <g transform="translate(960 535) rotate(-3)"><text x="0" y="0" text-anchor="middle" font-family="Anton" font-size="150" fill="${BZ.ink}" stroke="${BZ.ink}" stroke-width="20" paint-order="stroke">IMAGINA SÓ</text><text x="0" y="0" text-anchor="middle" font-family="Anton" font-size="150" fill="#f6c744">IMAGINA SÓ</text></g>
       <g transform="translate(960 625) rotate(2)"><rect x="-400" y="-46" width="800" height="80" rx="14" fill="#2fa04a" ${bzO('stroke-width="7"')}/><text x="0" y="14" text-anchor="middle" font-family="Anton" font-size="48" fill="#fff">E SE... ACONTECESSE COM VOCÊ?</text></g>`),
     anim(tl, s) { tl.set('#sc-brand-banner #pile g', { opacity: 1 }, s.t0); bzFace(tl, '#sc-brand-banner #tuco', s.t0, 'wide', 'grin'); bzFace(tl, '#sc-brand-banner #biel', s.t0, 'wide', 'o'); bzPose(tl, '#sc-brand-banner #tuco', s.t0, { aR: -150 }, 0.01); } },
+  // thumbnail panels (full frames, the subject centered so make-thumb.py can cut a half or a third of each)
+  'thumb-p1': { bg: '#8a9ab0', html: () => svg(`${imRoom(false)}<rect width="1920" height="1080" fill="#5a6a88" opacity="0.35"/>${imChar('tuco', 't', 960, 1560, 2.5)}<g transform="translate(1180 760) rotate(-10)">${imCoin(0, 0, 70)}</g>`),
+    anim(tl, s) { bzFace(tl, '#sc-thumb-p1 #t', s.t0, 'half', 'frown'); bzPose(tl, '#sc-thumb-p1 #t', s.t0, { aR: -110 }, 0.01); } },
+  'thumb-p2': { bg: '#2fa04a', html: () => svg(`<rect width="1920" height="1080" fill="#2fa04a"/>${bzRays('r', 960, 520, 18, 1300, '#f6c744', 0.45)}${imPiles(960, 1080)}${imChar('tucoRich', 't', 960, 1560, 2.5)}${[[620, 300, -20], [1300, 260, 15], [700, 700, 10], [1240, 640, -15]].map(([x, y, r]) => imNote(x, y, r, 1.1)).join('')}`),
+    anim(tl, s) { tl.set('#sc-thumb-p2 #pile g', { opacity: 1 }, s.t0); bzFace(tl, '#sc-thumb-p2 #t', s.t0, 'wide', 'grin'); bzPose(tl, '#sc-thumb-p2 #t', s.t0, { aL: 150, aR: -150 }, 0.01); } },
+  'thumb-p3': { bg: '#0e1a33', html: () => svg(`<rect width="1920" height="1080" fill="#0e1a33"/>${bzStars(90, 4, 1080)}${imGlobe(960, 360, 240)}<rect width="1920" height="1080" fill="#e0302a" opacity="0.15"/>${imChar('tucoRich', 't', 960, 1560, 2.5)}`),
+    anim(tl, s) { bzFace(tl, '#sc-thumb-p3 #t', s.t0, 'wide', 'o'); bzPose(tl, '#sc-thumb-p3 #t', s.t0, { aL: 160, aR: -160 }, 0.01); } },
   // thumbnails (clean plates; text added by make-thumb.py)
   'thumb-a': { bg: '#5a7aa8', html: () => svg(`<rect width="960" height="1080" fill="#8a9ab0"/><rect x="960" width="960" height="1080" fill="#f6c744"/>${bzRays('r2', 1440, 600, 14, 900, '#fff', 0.3)}
       ${imPiles(1500, 1090)}${imChar('tuco', 't1', 480, 1300, 1.9)}${imCoin(700, 760, 60)}${imChar('tucoRich', 't2', 1400, 1300, 1.9)}<rect x="952" width="16" height="1080" fill="${BZ.ink}"/>`),

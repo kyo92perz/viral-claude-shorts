@@ -146,6 +146,33 @@
    "snap": [
     1.2
    ]
+  },
+  {
+   "id": "thumb-p1",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "thumb-p2",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "thumb-p3",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
   }
  ]
 }
