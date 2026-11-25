@@ -1,6 +1,6 @@
 ---
 name: youtube-crescimento
-description: "Estratégia para crescer, viralizar e monetizar canais do YouTube (Shorts e vídeos longos, qualquer nicho). Use ao planejar um canal novo, escolher nicho, escrever título, capa, gancho e descrição, montar calendário e horários de postagem, ler números do YouTube Studio (CTR, retenção, views), diagnosticar por que um vídeo não decolou, ligar um canal de Shorts a um de vídeos longos, ou planejar monetização (Programa de Parcerias, RPM, outras receitas) e evitar desmonetização. Gatilhos: viralizar, crescer o canal, monetizar, melhor horário pra postar, nicho, título, thumbnail, palavras-chave, analytics, por que não viralizou."
+description: "Estratégia para crescer, viralizar e monetizar canais do YouTube (Shorts e vídeos longos, qualquer nicho). Use ao planejar um canal novo, escolher nicho, criar thumbnail chamativa, escrever título, capa, gancho e descrição, montar calendário e horários de postagem, ler números do YouTube Studio (CTR, retenção, views), diagnosticar por que um vídeo não decolou, ligar um canal de Shorts a um de vídeos longos, ou planejar monetização (Programa de Parcerias, RPM, outras receitas) e evitar desmonetização. Gatilhos: viralizar, crescer o canal, monetizar, melhor horário pra postar, nicho, título, thumbnail, palavras-chave, analytics, por que não viralizou."
 ---
 
 # YouTube: crescer, viralizar e monetizar
@@ -18,6 +18,7 @@ algoritmo, da embalagem (título + capa + gancho), da retenção, do calendário
 1. **Entender o pedido:** em qual destas situações o usuário está?
    - **Canal novo** → nicho, nome, identidade, plano das 4 primeiras semanas (§1, §6)
    - **Vídeo a lançar** → embalagem: título, capa, gancho, descrição, horário (§2, §3, §5)
+   - **Capa/thumbnail** → `references/thumbnail.md` + `scripts/thumb_check.py` (prévia no feed do celular)
    - **"Por que não viralizou?" / números do Studio** → diagnóstico (§4; script `diagnostico.py`)
    - **Calendário / horários / frequência** → §5; script `calendario.py`
    - **Monetização / política / risco de desmonetizar** → §7
@@ -48,8 +49,10 @@ algoritmo, da embalagem (título + capa + gancho), da retenção, do calendário
 7. **Gancho pessoal vence aviso genérico** (dado do projeto: "Meu primo era o SÉTIMO filho" fez 18 mil views;
    avisos tipo "Não olhe" ficaram em 1–3 mil). Use a fórmula **parente/pessoa + regra + segredo**.
 8. **O primeiro segundo é o gancho:** imagem forte + frase que abre uma pergunta. Nada de logo ou "olá pessoal".
-9. **Teste capas:** use 3 capas no "Testar e comparar" do Studio (vídeos longos). Para Shorts, troque título e capa
-   depois de 48 h se o vídeo travar.
+9. **Capa que dá clique:** um assunto grande com emoção (rosto ou criatura, olhos visíveis), contraste alto (quente ×
+   frio), 0–4 palavras que completam o título, canto inferior direito livre, legível com 168 px. Teste 3 capas no
+   "Testar e comparar" e mude uma coisa por vez. Guia completo em `references/thumbnail.md`; confira com
+   `scripts/thumb_check.py`.
 
 **A retenção** (detalhes: `references/retencao.md`)
 10. **Shorts:** gancho em 1 s, uma ideia só, corte a cada 1,5–3 s, final que emenda no começo (loop) e uma
@@ -108,6 +111,9 @@ Rode `python3 scripts/diagnostico.py <export.csv>` com a exportação do Studio 
 python3 .claude/skills/youtube-crescimento/scripts/diagnostico.py caminho/Tabela.csv
 python3 .claude/skills/youtube-crescimento/scripts/diagnostico.py --demo        # exemplo com dados fictícios
 
+# conferir capas: nota, problemas e prévia no feed do celular (claro e escuro), lado a lado com concorrentes
+python3 .claude/skills/youtube-crescimento/scripts/thumb_check.py capa.jpg capa-b.jpg concorrente.jpg --out previa.png
+
 # calendário das próximas semanas (horário de Brasília)
 python3 .claude/skills/youtube-crescimento/scripts/calendario.py --shorts 5 --longos 1 --semanas 4
 python3 .claude/skills/youtube-crescimento/scripts/calendario.py --shorts 7 --longos 0 --inicio 2026-12-01 --json
@@ -115,6 +121,7 @@ python3 .claude/skills/youtube-crescimento/scripts/calendario.py --shorts 7 --lo
 
 **Arguments:**
 - `diagnostico.py`: o CSV exportado do Studio (colunas em português ou inglês) ou `--demo`; `--json` para saída de máquina.
+- `thumb_check.py`: uma ou mais imagens; `--out` (prévia, padrão `previa-feed.png`), `--json`.
 - `calendario.py`: `--shorts N` e `--longos N` por semana, `--semanas N` (padrão 4), `--inicio AAAA-MM-DD`
   (padrão: próxima segunda), `--json`.
 
@@ -151,6 +158,8 @@ mediana do próprio formato.
 
 - `references/algoritmo.md`: como a recomendação funciona, Shorts vs longo, originalidade, os primeiros dias.
 - `references/embalagem.md`: fórmulas de título, capa, gancho, descrição, palavras-chave, hashtags, testes A/B.
+- `references/thumbnail.md`: **capa chamativa**: dados de 2026, as 12 regras, fórmulas para terror e casos reais,
+  especificações, checklist.
 - `references/retencao.md`: estrutura de Shorts e de vídeo longo, reganchos, finais, loop.
 - `references/calendario.md`: horários no Brasil, frequência, séries, como testar horários.
 - `references/diagnostico.md`: métricas do Studio, valores de referência, perguntas de diagnóstico.
