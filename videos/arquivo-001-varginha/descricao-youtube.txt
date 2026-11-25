@@ -3,10 +3,10 @@ TÍTULO (escolha um; teste os outros no "Testar e comparar" do YouTube Studio)
 2. O ET de Varginha: o documento secreto que foi liberado
 3. Caso Varginha: elas viram um ET... ou um homem agachado?
 
-THUMBNAIL (1280×720, na pasta do vídeo)
-- thumbnail.jpg    "O QUE ELAS VIRAM?"  (recomendada: o rosto e os olhos vermelhos)
-- thumbnail-b.jpg  "30 ANOS ESCONDIDO" + carimbo LIBERADO
-- thumbnail-c.jpg  "ERA SÓ UM HOMEM?"
+THUMBNAIL (1280×720, ilustração pintada montada por thumbnail/compose-ai.py)
+- thumbnail.jpg    "O QUE ELAS VIRAM?" (a criatura no muro, as três meninas de costas)  (recomendada)
+- thumbnail-b.jpg  "30 ANOS ESCONDIDO" + carimbo LIBERADO (o arquivo secreto)
+- thumbnail-c.jpg  "ERA SÓ UM HOMEM?" (mesma cena do muro)
 Suba as três em "Testar e comparar".
 
 DESCRIÇÃO
