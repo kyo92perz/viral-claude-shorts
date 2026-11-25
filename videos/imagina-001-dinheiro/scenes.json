@@ -1,0 +1,1260 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "captions": true,
+ "badge": {
+  "title": "IMAGINA SÓ",
+  "ep": "EP.1"
+ },
+ "music": {
+  "bpm": 110,
+  "key": "C"
+ },
+ "notes": "IMAGINA SÓ EP1, a bright Brazil Z toon look in 16:9: Tuco (green jacket, yellow zip), his room, the canteen, the street pitch, the kitchen, the small house turning into a big one, the bank call, the exponential chart, Brazil and the world, the bakery, the chessboard with rice. The HUD (day + balance) is the signature. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 0,
+   "t1": 2.446
+  },
+  {
+   "id": "coin",
+   "from": 6,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 7,
+     "sfx": "pop",
+     "t": 2.699
+    }
+   ],
+   "t0": 2.446,
+   "t1": 4.572
+  },
+  {
+   "id": "double",
+   "from": 14,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 17,
+     "sfx": "shimmer",
+     "t": 5.494
+    }
+   ],
+   "t0": 4.572,
+   "t1": 7.232
+  },
+  {
+   "id": "big",
+   "from": 20,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "m",
+     "at": 32,
+     "sfx": "impact",
+     "t": 11.006
+    }
+   ],
+   "t0": 7.232,
+   "t1": 11.816
+  },
+  {
+   "id": "world",
+   "from": 34,
+   "type": "object",
+   "mood": "wonder",
+   "keys": [
+    {
+     "id": "w",
+     "at": 43,
+     "sfx": "riser",
+     "t": 14.256
+    }
+   ],
+   "t0": 11.816,
+   "t1": 17.826
+  },
+  {
+   "id": "rules",
+   "from": 51,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "r1",
+     "at": 55,
+     "sfx": "pop",
+     "t": 19.36
+    },
+    {
+     "id": "r2",
+     "at": 63,
+     "sfx": "pop",
+     "t": 21.66
+    },
+    {
+     "id": "r3",
+     "at": 68,
+     "sfx": "pop",
+     "t": 23.237
+    }
+   ],
+   "t0": 17.826,
+   "t1": 26.349
+  },
+  {
+   "id": "guess",
+   "from": 77,
+   "type": "object",
+   "mood": "playful",
+   "t0": 26.349,
+   "t1": 34.701
+  },
+  {
+   "id": "go",
+   "from": 102,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "g",
+     "at": 102,
+     "sfx": "whoosh",
+     "t": 34.901
+    },
+    {
+     "id": "d",
+     "at": 103,
+     "sfx": "impact",
+     "t": 35.738
+    }
+   ],
+   "t0": 34.701,
+   "t1": 37.028
+  },
+  {
+   "id": "day1",
+   "from": 105,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 37.028,
+   "t1": 39.986
+  },
+  {
+   "id": "candy",
+   "from": 113,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 39.986,
+   "t1": 42.689
+  },
+  {
+   "id": "serio",
+   "from": 120,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 42.689,
+   "t1": 45.195
+  },
+  {
+   "id": "days",
+   "from": 127,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 127,
+     "sfx": "tick",
+     "t": 45.445
+    },
+    {
+     "id": "b",
+     "at": 131,
+     "sfx": "tick",
+     "t": 46.732
+    },
+    {
+     "id": "c",
+     "at": 135,
+     "sfx": "tick",
+     "t": 48.018
+    }
+   ],
+   "t0": 45.195,
+   "t1": 49.405
+  },
+  {
+   "id": "cantina",
+   "from": 139,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 49.405,
+   "t1": 53.777
+  },
+  {
+   "id": "pays",
+   "from": 148,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 157,
+     "sfx": "pop",
+     "t": 56.579
+    }
+   ],
+   "t0": 53.777,
+   "t1": 59.262
+  },
+  {
+   "id": "rifa",
+   "from": 164,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 59.262,
+   "t1": 61.418
+  },
+  {
+   "id": "trap",
+   "from": 169,
+   "type": "object",
+   "mood": "curious",
+   "t0": 61.418,
+   "t1": 67.51
+  },
+  {
+   "id": "nada",
+   "from": 188,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "t0": 67.51,
+   "t1": 69.726
+  },
+  {
+   "id": "expo",
+   "from": 195,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "x",
+     "at": 209,
+     "sfx": "boom",
+     "t": 75.435
+    }
+   ],
+   "t0": 69.726,
+   "t1": 76.479
+  },
+  {
+   "id": "plus1",
+   "from": 210,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "a",
+     "at": 225,
+     "sfx": "pop",
+     "t": 80.901
+    },
+    {
+     "id": "b",
+     "at": 232,
+     "sfx": "impact",
+     "t": 82.606
+    }
+   ],
+   "t0": 76.479,
+   "t1": 84.984
+  },
+  {
+   "id": "d10",
+   "from": 241,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 248,
+     "sfx": "shimmer",
+     "t": 89.151
+    }
+   ],
+   "t0": 84.984,
+   "t1": 92.296
+  },
+  {
+   "id": "d11",
+   "from": 253,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 255,
+     "sfx": "pop",
+     "t": 92.987
+    }
+   ],
+   "t0": 92.296,
+   "t1": 98.068
+  },
+  {
+   "id": "bill",
+   "from": 272,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 278,
+     "sfx": "pop",
+     "t": 100.172
+    }
+   ],
+   "t0": 98.068,
+   "t1": 104.354
+  },
+  {
+   "id": "mae1",
+   "from": 290,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 104.354,
+   "t1": 107.575
+  },
+  {
+   "id": "milagre",
+   "from": 299,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 107.575,
+   "t1": 111.078
+  },
+  {
+   "id": "d16",
+   "from": 306,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 111.078,
+   "t1": 115.637
+  },
+  {
+   "id": "kid14",
+   "from": 317,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 115.637,
+   "t1": 117.453
+  },
+  {
+   "id": "buys",
+   "from": 322,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 325,
+     "sfx": "pop",
+     "t": 118.94
+    },
+    {
+     "id": "b",
+     "at": 328,
+     "sfx": "pop",
+     "t": 120.293
+    },
+    {
+     "id": "c",
+     "at": 332,
+     "sfx": "pop",
+     "t": 121.915
+    }
+   ],
+   "t0": 117.453,
+   "t1": 123.711
+  },
+  {
+   "id": "school",
+   "from": 334,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 123.711,
+   "t1": 128.933
+  },
+  {
+   "id": "bielask",
+   "from": 342,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 128.933,
+   "t1": 131.724
+  },
+  {
+   "id": "juro",
+   "from": 351,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 131.724,
+   "t1": 134.017
+  },
+  {
+   "id": "rule2",
+   "from": 355,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 134.017,
+   "t1": 140.401
+  },
+  {
+   "id": "pizza",
+   "from": 376,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 382,
+     "sfx": "pop",
+     "t": 142.59
+    }
+   ],
+   "t0": 140.401,
+   "t1": 150.538
+  },
+  {
+   "id": "d18",
+   "from": 402,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 408,
+     "sfx": "beep",
+     "t": 152.992
+    }
+   ],
+   "t0": 150.538,
+   "t1": 155.57
+  },
+  {
+   "id": "manager",
+   "from": 413,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 155.57,
+   "t1": 162.03
+  },
+  {
+   "id": "coaf",
+   "from": 427,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "c",
+     "at": 451,
+     "sfx": "hit",
+     "t": 171.071
+    }
+   ],
+   "t0": 162.03,
+   "t1": 174.474
+  },
+  {
+   "id": "process",
+   "from": 459,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "g",
+     "at": 473,
+     "sfx": "thump",
+     "t": 180.624
+    }
+   ],
+   "t0": 174.474,
+   "t1": 181.97
+  },
+  {
+   "id": "tellmom",
+   "from": 475,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "t0": 181.97,
+   "t1": 188.17
+  },
+  {
+   "id": "contador",
+   "from": 493,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 188.17,
+   "t1": 190.053
+  },
+  {
+   "id": "mae2",
+   "from": 498,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 190.053,
+   "t1": 193.273
+  },
+  {
+   "id": "million",
+   "from": 506,
+   "type": "object",
+   "mood": "triumphant",
+   "keys": [
+    {
+     "id": "m",
+     "at": 515,
+     "sfx": "impact",
+     "t": 196.54
+    }
+   ],
+   "t0": 193.273,
+   "t1": 201.509
+  },
+  {
+   "id": "minor",
+   "from": 525,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 558,
+     "sfx": "thump",
+     "t": 210.435
+    }
+   ],
+   "t0": 201.509,
+   "t1": 213.265
+  },
+  {
+   "id": "mae4",
+   "from": 566,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 213.265,
+   "t1": 216.964
+  },
+  {
+   "id": "sleep",
+   "from": 575,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 216.964,
+   "t1": 222.248
+  },
+  {
+   "id": "house",
+   "from": 591,
+   "type": "object",
+   "mood": "triumphant",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 597,
+     "sfx": "whoosh",
+     "t": 225.175
+    }
+   ],
+   "t0": 222.248,
+   "t1": 229.168
+  },
+  {
+   "id": "uncles",
+   "from": 606,
+   "type": "object",
+   "mood": "playful",
+   "keys": [
+    {
+     "id": "r",
+     "at": 610,
+     "sfx": "beep",
+     "t": 230.989
+    }
+   ],
+   "t0": 229.168,
+   "t1": 234.25
+  },
+  {
+   "id": "reporter",
+   "from": 616,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 234.25,
+   "t1": 240.19
+  },
+  {
+   "id": "live",
+   "from": 628,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 240.19,
+   "t1": 244.759
+  },
+  {
+   "id": "cedo",
+   "from": 642,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "t0": 244.759,
+   "t1": 247.298
+  },
+  {
+   "id": "d30",
+   "from": 646,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 247.298,
+   "t1": 250.171
+  },
+  {
+   "id": "mega",
+   "from": 655,
+   "type": "object",
+   "mood": "playful",
+   "t0": 250.171,
+   "t1": 253.776
+  },
+  {
+   "id": "twice",
+   "from": 668,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "t",
+     "at": 680,
+     "sfx": "impact",
+     "t": 256.966
+    }
+   ],
+   "t0": 253.776,
+   "t1": 258.198
+  },
+  {
+   "id": "tower",
+   "from": 682,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 258.198,
+   "t1": 267.425
+  },
+  {
+   "id": "billion",
+   "from": 709,
+   "type": "object",
+   "mood": "triumphant",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "b",
+     "at": 712,
+     "sfx": "impact",
+     "t": 268.49
+    }
+   ],
+   "t0": 267.425,
+   "t1": 271.292
+  },
+  {
+   "id": "notfun",
+   "from": 718,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "room"
+   ],
+   "t0": 271.292,
+   "t1": 275.733
+  },
+  {
+   "id": "guards",
+   "from": 728,
+   "type": "object",
+   "mood": "tense",
+   "t0": 275.733,
+   "t1": 278.047
+  },
+  {
+   "id": "papers",
+   "from": 733,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "t0": 278.047,
+   "t1": 280.428
+  },
+  {
+   "id": "biel2",
+   "from": 741,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 280.428,
+   "t1": 286.039
+  },
+  {
+   "id": "queue",
+   "from": 761,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 286.039,
+   "t1": 294.042
+  },
+  {
+   "id": "pobre",
+   "from": 786,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 294.042,
+   "t1": 296.84
+  },
+  {
+   "id": "richest",
+   "from": 794,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "n",
+     "at": 803,
+     "sfx": "impact",
+     "t": 300.504
+    }
+   ],
+   "t0": 296.84,
+   "t1": 303.132
+  },
+  {
+   "id": "onecoin",
+   "from": 809,
+   "type": "object",
+   "mood": "wonder",
+   "t0": 303.132,
+   "t1": 308.405
+  },
+  {
+   "id": "trillion",
+   "from": 821,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "t",
+     "at": 824,
+     "sfx": "impact",
+     "t": 309.293
+    }
+   ],
+   "t0": 308.405,
+   "t1": 317.134
+  },
+  {
+   "id": "donate",
+   "from": 846,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 317.134,
+   "t1": 328.384
+  },
+  {
+   "id": "strange",
+   "from": 877,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 328.384,
+   "t1": 332.006
+  },
+  {
+   "id": "scarce",
+   "from": 891,
+   "type": "object",
+   "mood": "curious",
+   "t0": 332.006,
+   "t1": 334.799
+  },
+  {
+   "id": "gdp",
+   "from": 901,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "p",
+     "at": 913,
+     "sfx": "hit",
+     "t": 338.221
+    }
+   ],
+   "t0": 334.799,
+   "t1": 340.189
+  },
+  {
+   "id": "chase",
+   "from": 919,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 340.189,
+   "t1": 345.066
+  },
+  {
+   "id": "inflation",
+   "from": 932,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "i",
+     "at": 943,
+     "sfx": "hit",
+     "t": 348.84
+    }
+   ],
+   "t0": 345.066,
+   "t1": 349.571
+  },
+  {
+   "id": "y1993",
+   "from": 945,
+   "type": "object",
+   "mood": "curious",
+   "t0": 349.571,
+   "t1": 355.791
+  },
+  {
+   "id": "bread",
+   "from": 965,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "b",
+     "at": 975,
+     "sfx": "tick",
+     "t": 358.614
+    }
+   ],
+   "t0": 355.791,
+   "t1": 360.032
+  },
+  {
+   "id": "mae3",
+   "from": 978,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 360.032,
+   "t1": 364.18
+  },
+  {
+   "id": "culpa",
+   "from": 991,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 364.18,
+   "t1": 370.37
+  },
+  {
+   "id": "planet",
+   "from": 998,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "t0": 370.37,
+   "t1": 378.008
+  },
+  {
+   "id": "worthless",
+   "from": 1023,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 378.008,
+   "t1": 382.145
+  },
+  {
+   "id": "barter",
+   "from": 1034,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 382.145,
+   "t1": 392.973
+  },
+  {
+   "id": "legend",
+   "from": 1068,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.4,
+   "t0": 392.973,
+   "t1": 401.253
+  },
+  {
+   "id": "grains",
+   "from": 1091,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "a",
+     "at": 1091,
+     "dt": 0.1,
+     "sfx": "pop",
+     "t": 401.333
+    },
+    {
+     "id": "b",
+     "at": 1094,
+     "sfx": "pop",
+     "t": 402.338
+    }
+   ],
+   "t0": 401.253,
+   "t1": 405.492
+  },
+  {
+   "id": "laugh",
+   "from": 1102,
+   "type": "object",
+   "mood": "playful",
+   "t0": 405.492,
+   "t1": 407.456
+  },
+  {
+   "id": "mountain",
+   "from": 1109,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "q",
+     "at": 1118,
+     "sfx": "boom",
+     "t": 409.686
+    }
+   ],
+   "t0": 407.456,
+   "t1": 414.358
+  },
+  {
+   "id": "d64",
+   "from": 1133,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "e",
+     "at": 1148,
+     "sfx": "fail",
+     "t": 419.66
+    }
+   ],
+   "t0": 414.358,
+   "t1": 422.805
+  },
+  {
+   "id": "compound",
+   "from": 1153,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "t0": 422.805,
+   "t1": 443.109
+  },
+  {
+   "id": "lesson",
+   "from": 1201,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "room"
+   ],
+   "t0": 443.109,
+   "t1": 448.532
+  },
+  {
+   "id": "jar",
+   "from": 1214,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "t0": 448.532,
+   "t1": 454.949
+  },
+  {
+   "id": "question",
+   "from": 1231,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "a",
+     "at": 1245,
+     "sfx": "pop",
+     "t": 459.872
+    },
+    {
+     "id": "b",
+     "at": 1253,
+     "sfx": "pop",
+     "t": 462.776
+    },
+    {
+     "id": "c",
+     "at": 1258,
+     "sfx": "pop",
+     "t": 464.513
+    }
+   ],
+   "t0": 454.949,
+   "t1": 465.489
+  },
+  {
+   "id": "comment",
+   "from": 1261,
+   "type": "object",
+   "mood": "playful",
+   "t0": 465.489,
+   "t1": 469.144
+  },
+  {
+   "id": "next",
+   "from": 1272,
+   "type": "object",
+   "mood": "playful",
+   "keys": [
+    {
+     "id": "s",
+     "at": 1278,
+     "sfx": "whoosh",
+     "t": 471.171
+    }
+   ],
+   "t0": 469.144,
+   "t1": 473.077
+  },
+  {
+   "id": "peraí",
+   "from": 1283,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "t0": 473.077,
+   "t1": 475.165
+  },
+  {
+   "id": "endcard",
+   "from": 1285,
+   "type": "object",
+   "mood": "playful",
+   "delay": 1.083,
+   "keys": [
+    {
+     "id": "z",
+     "at": 1285,
+     "dt": 1.383,
+     "sfx": "pop",
+     "t": 475.465
+    }
+   ],
+   "t0": 475.165,
+   "t1": 483.985
+  }
+ ],
+ "duration": 483.985
+}

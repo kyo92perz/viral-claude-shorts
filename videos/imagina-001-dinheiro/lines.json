@@ -1,5 +1,5 @@
 {
- "duration": 356.265,
+ "duration": 483.985,
  "lines": [
   {
    "id": "a01",
@@ -23,319 +23,417 @@
    "t1": 26.099
   },
   {
+   "id": "a05",
+   "who": "im_narr",
+   "text": "Antes de começar: chuta aqui nos comentários em que dia você acha que o Tuco vira milionário. No meio do vídeo você descobre se acertou.",
+   "t0": 26.599,
+   "t1": 34.401
+  },
+  {
    "id": "a04",
    "who": "im_narr",
    "text": "Valendo. Dia 1.",
-   "t0": 26.599,
-   "t1": 28.126
+   "t0": 34.901,
+   "t1": 36.428
   },
   {
    "id": "b01",
    "who": "im_narr",
    "text": "Você abre o aplicativo do banco: 1 real. Dá pra comprar... uma bala. Talvez duas.",
-   "t0": 29.026,
-   "t1": 34.087
+   "t0": 37.328,
+   "t1": 42.389
   },
   {
    "id": "t01",
    "who": "im_tuco",
    "text": "Sério que esse é o meu superpoder?",
-   "t0": 34.587,
-   "t1": 36.643
+   "t0": 42.889,
+   "t1": 44.945
   },
   {
    "id": "b02",
    "who": "im_narr",
    "text": "Dia 2: 2 reais. Dia 3: 4 reais. Dia 5: 16 reais. Dá pra um salgado e um refrigerante na cantina.",
-   "t0": 37.143,
-   "t1": 45.225
+   "t0": 45.445,
+   "t1": 53.527
   },
   {
    "id": "b03",
    "who": "im_narr",
    "text": "No dia 7 você tem 64 reais e já paga o lanche do seu amigo Biel.",
-   "t0": 45.725,
-   "t1": 50.76
+   "t0": 54.027,
+   "t1": 59.062
   },
   {
    "id": "k01",
    "who": "im_biel",
    "text": "Ué, ganhou na rifa, foi?",
-   "t0": 51.16,
-   "t1": 52.766
+   "t0": 59.462,
+   "t1": 61.068
   },
   {
    "id": "b04",
    "who": "im_narr",
    "text": "E aqui está a armadilha que quase todo mundo cai: a primeira semana inteira não deu nem 130 reais. Parece que não vai dar em nada.",
-   "t0": 53.366,
-   "t1": 61.075
+   "t0": 61.668,
+   "t1": 69.376
   },
   {
    "id": "b05",
    "who": "im_narr",
    "text": "Isso tem nome: crescimento exponencial. No começo é devagar, devagar, devagar... e de repente explode.",
-   "t0": 61.675,
-   "t1": 67.627
+   "t0": 69.976,
+   "t1": 75.929
+  },
+  {
+   "id": "b06",
+   "who": "im_narr",
+   "text": "Pra você ter uma ideia: se em vez de dobrar o dinheiro aumentasse 1 real por dia, no dia 30 você teria só 30 reais. É o dobrar que muda tudo.",
+   "t0": 76.729,
+   "t1": 84.784
   },
   {
    "id": "c01",
    "who": "im_narr",
    "text": "Dia 10: 512 reais. Você compra um tênis novo e ainda sobra.",
-   "t0": 68.427,
-   "t1": 75.289
+   "t0": 85.284,
+   "t1": 92.146
   },
   {
    "id": "c02",
    "who": "im_narr",
    "text": "Dia 11: mil e vinte e quatro reais. Pela primeira vez, você tem mais de mil reais na conta.",
-   "t0": 75.689,
-   "t1": 81.061
+   "t0": 92.546,
+   "t1": 97.918
   },
   {
    "id": "c03",
    "who": "im_narr",
    "text": "Dia 14: 8 mil reais. Você paga a conta de luz atrasada da sua mãe sem ela ver.",
-   "t0": 81.461,
-   "t1": 87.297
+   "t0": 98.318,
+   "t1": 104.154
   },
   {
    "id": "m01",
    "who": "im_mae",
    "text": "Tuco! A conta de luz apareceu paga! Foi você?",
-   "t0": 87.697,
-   "t1": 90.418
+   "t0": 104.554,
+   "t1": 107.275
   },
   {
    "id": "t02",
    "who": "im_tuco",
    "text": "Eu? Não, mãe. Deve ter sido... milagre.",
-   "t0": 90.918,
-   "t1": 93.871
+   "t0": 107.775,
+   "t1": 110.728
   },
   {
    "id": "c04",
    "who": "im_narr",
    "text": "Dia 16: 32 mil reais. Dá pra comprar um carro usado. Mas você tem 14 anos. Então você compra um videogame, um celular novo e uma bicicleta elétrica.",
-   "t0": 94.471,
-   "t1": 106.604
+   "t0": 111.328,
+   "t1": 123.461
   },
   {
    "id": "c05",
    "who": "im_narr",
    "text": "E na escola, todo mundo começa a reparar.",
-   "t0": 107.104,
-   "t1": 111.476
+   "t0": 123.961,
+   "t1": 128.333
+  },
+  {
+   "id": "k03",
+   "who": "im_biel",
+   "text": "Tuco, cê tá vendendo o quê? Fala a verdade!",
+   "t0": 129.133,
+   "t1": 131.424
+  },
+  {
+   "id": "t05",
+   "who": "im_tuco",
+   "text": "Nada, mano! Eu juro!",
+   "t0": 131.924,
+   "t1": 133.767
+  },
+  {
+   "id": "c06",
+   "who": "im_narr",
+   "text": "E aqui você aprende a segunda regra do dinheiro: quanto mais você tem, mais gente quer saber de onde ele veio.",
+   "t0": 134.267,
+   "t1": 140.101
+  },
+  {
+   "id": "c07",
+   "who": "im_narr",
+   "text": "Dia 19: 262 mil reais. Você paga pizza pra escola inteira. Mil e duzentos alunos. E vira o cara mais popular do colégio em uma tarde.",
+   "t0": 140.601,
+   "t1": 150.338
   },
   {
    "id": "d01",
    "who": "im_narr",
    "text": "Dia 18: 131 mil reais. O telefone toca. É do banco.",
-   "t0": 112.276,
-   "t1": 116.707
+   "t0": 150.838,
+   "t1": 155.27
   },
   {
    "id": "g01",
    "who": "im_ger",
    "text": "Boa tarde. Notamos movimentações fora do seu perfil. Pode explicar a origem desse dinheiro?",
-   "t0": 117.207,
-   "t1": 123.117
+   "t0": 155.77,
+   "t1": 161.68
   },
   {
    "id": "d02",
    "who": "im_narr",
    "text": "E isso é real: no Brasil, os bancos avisam o governo quando aparece dinheiro demais, rápido demais, sem explicação. Quem cuida disso é o COAF, um órgão que procura lavagem de dinheiro.",
-   "t0": 123.717,
-   "t1": 135.561
+   "t0": 162.28,
+   "t1": 174.124
   },
   {
    "id": "d03",
    "who": "im_narr",
    "text": "Ou seja: se você não tiver uma boa história, o seu superpoder vai virar um processo.",
-   "t0": 136.161,
-   "t1": 143.058
+   "t0": 174.724,
+   "t1": 181.62
   },
   {
    "id": "d04",
    "who": "im_narr",
    "text": "Então você faz o que qualquer gênio faria: conta pra sua mãe. Não o segredo, mas o dinheiro. E ela chama um contador.",
-   "t0": 143.658,
-   "t1": 151.19
+   "t0": 182.22,
+   "t1": 189.753
   },
   {
    "id": "m02",
    "who": "im_mae",
    "text": "Meu filho, de onde saiu esse dinheiro todo?!",
-   "t0": 151.69,
-   "t1": 154.361
+   "t0": 190.253,
+   "t1": 192.923
   },
   {
    "id": "d05",
    "who": "im_narr",
    "text": "Dia 20: 524 mil reais. Dia 21: mais de um milhão. Você é oficialmente um milionário de 14 anos.",
-   "t0": 154.961,
-   "t1": 162.446
+   "t0": 193.523,
+   "t1": 201.009
+  },
+  {
+   "id": "d06",
+   "who": "im_narr",
+   "text": "Mas ser milionário aos 14 tem um problema: no Brasil, quem cuida do dinheiro de um menor de idade são os pais. E pra vender uma casa no nome de um menor, por exemplo, precisa até de autorização de um juiz.",
+   "t0": 201.809,
+   "t1": 212.965
+  },
+  {
+   "id": "m04",
+   "who": "im_mae",
+   "text": "Ninguém mexe nesse dinheiro sem eu saber, entendeu, Tuco?",
+   "t0": 213.465,
+   "t1": 216.764
   },
   {
    "id": "e01",
    "who": "im_narr",
    "text": "Daqui pra frente, cada noite de sono vale mais que o salário de uma vida inteira.",
-   "t0": 163.246,
-   "t1": 167.98
+   "t0": 217.264,
+   "t1": 221.998
   },
   {
    "id": "e02",
    "who": "im_narr",
    "text": "Dia 23: 4 milhões. Você compra uma casa pra sua família. Dia 25: 16 milhões. Seus tios que nunca ligavam começam a ligar todo dia.",
-   "t0": 168.48,
-   "t1": 179.982
+   "t0": 222.498,
+   "t1": 234.0
   },
   {
    "id": "e03",
    "who": "im_narr",
    "text": "Dia 27: 67 milhões. Aparece um repórter na porta da casa nova.",
-   "t0": 180.482,
-   "t1": 185.973
+   "t0": 234.5,
+   "t1": 239.99
   },
   {
    "id": "r01",
    "who": "im_rep",
    "text": "Estamos aqui com o adolescente mais rico do bairro! Qual é o segredo, Tuco?",
-   "t0": 186.373,
-   "t1": 190.442
+   "t0": 240.39,
+   "t1": 244.459
   },
   {
    "id": "t03",
    "who": "im_tuco",
    "text": "É... eu durmo cedo?",
-   "t0": 190.942,
-   "t1": 192.981
+   "t0": 244.959,
+   "t1": 246.998
   },
   {
    "id": "e04",
    "who": "im_narr",
    "text": "Dia 30. Você acorda com 536 milhões de reais. Mais ou menos o tamanho de um prêmio enorme da Mega da Virada. Só que você ganha um desses... todo dia. E no dia seguinte, ganha dois.",
-   "t0": 193.581,
-   "t1": 203.58
+   "t0": 247.598,
+   "t1": 257.598
+  },
+  {
+   "id": "e05",
+   "who": "im_narr",
+   "text": "Só pra ter noção: 536 milhões em notas de 100 reais dariam uma pilha de mais de meio quilômetro de altura. Maior que qualquer prédio do Brasil.",
+   "t0": 258.398,
+   "t1": 267.025
   },
   {
    "id": "f01",
    "who": "im_narr",
    "text": "Dia 31: um bilhão de reais. Você é bilionário. A essa altura, o dinheiro já parou de ser divertido.",
-   "t0": 204.38,
-   "t1": 212.239
+   "t0": 267.625,
+   "t1": 275.483
   },
   {
    "id": "f02",
    "who": "im_narr",
    "text": "Você precisa de seguranças. Advogados. Um prédio só pra guardar papel de imposto. E o Biel não te chama mais pra jogar bola, porque agora tem câmera em todo lugar que você vai.",
-   "t0": 212.739,
-   "t1": 222.495
+   "t0": 275.983,
+   "t1": 285.739
+  },
+  {
+   "id": "f06",
+   "who": "im_narr",
+   "text": "Até a diretora pede pra você estudar em casa, porque toda vez que você chega na escola tem fila na porta de gente pedindo dinheiro.",
+   "t0": 286.239,
+   "t1": 293.742
   },
   {
    "id": "k02",
    "who": "im_biel",
    "text": "Mano, você era mais legal quando era pobre.",
-   "t0": 222.995,
-   "t1": 225.093
+   "t0": 294.242,
+   "t1": 296.34
   },
   {
    "id": "f03",
    "who": "im_narr",
    "text": "Dia 35: 17 bilhões. Dia 38: 137 bilhões. Você passa a maior fortuna do Brasil. Em menos de seis semanas, partindo de uma moeda de 1 real.",
-   "t0": 225.793,
-   "t1": 236.558
+   "t0": 297.04,
+   "t1": 307.805
   },
   {
    "id": "f04",
    "who": "im_narr",
    "text": "Dia 41: um trilhão. Você poderia dar um carro zero pra cada família da sua cidade, e na manhã seguinte ter o dobro de novo.",
-   "t0": 237.358,
-   "t1": 245.287
+   "t0": 308.605,
+   "t1": 316.534
+  },
+  {
+   "id": "f05",
+   "who": "im_narr",
+   "text": "Dia 43: quatro trilhões. Você tenta doar. Hospitais, escolas, a quadra do bairro. Mas toda manhã o dinheiro dobra de novo. Você não consegue gastar mais rápido do que ele cresce.",
+   "t0": 317.334,
+   "t1": 328.284
   },
   {
    "id": "h01",
    "who": "im_narr",
    "text": "Mas é aqui que a história fica estranha. Porque o dinheiro não é mágico. Ele só vale alguma coisa porque é difícil de conseguir.",
-   "t0": 246.087,
-   "t1": 251.752
+   "t0": 328.784,
+   "t1": 334.449
   },
   {
    "id": "h02",
    "who": "im_narr",
    "text": "Dia 45: 17 trilhões de reais. Mais do que tudo que o Brasil inteiro produz em um ano. Se você gastar isso, vai ter dinheiro demais correndo atrás das mesmas coisas.",
-   "t0": 252.352,
-   "t1": 262.119
+   "t0": 335.049,
+   "t1": 344.816
   },
   {
    "id": "h03",
    "who": "im_narr",
    "text": "E quando isso acontece, os preços sobem. O nome disso é inflação. O Brasil já viveu isso de verdade: em 1993 os preços subiram mais de dois mil por cento em um ano. O pão que custava um, no fim do ano custava vinte e cinco.",
-   "t0": 262.619,
-   "t1": 276.835
+   "t0": 345.316,
+   "t1": 359.532
   },
   {
    "id": "m03",
    "who": "im_mae",
    "text": "Tuco, o pão de queijo tá custando quinhentos reais! O que tá acontecendo?",
-   "t0": 277.535,
-   "t1": 281.082
+   "t0": 360.232,
+   "t1": 363.78
+  },
+  {
+   "id": "t06",
+   "who": "im_tuco",
+   "text": "Mãe... acho que a culpa é minha.",
+   "t0": 364.38,
+   "t1": 370.07
   },
   {
    "id": "h04",
    "who": "im_narr",
    "text": "Dia 51: mais de mil trilhões. Mais do que tudo que o planeta inteiro produz em um ano. Você tem mais dinheiro que o mundo. E o dinheiro do mundo inteiro... começa a não valer nada.",
-   "t0": 281.682,
-   "t1": 292.457
+   "t0": 370.57,
+   "t1": 381.345
+  },
+  {
+   "id": "h05",
+   "who": "im_narr",
+   "text": "As pessoas param de aceitar dinheiro. Começam a trocar coisas: um saco de arroz por uma bicicleta, uma galinha por um par de tênis. Isso se chama escambo. Era assim antes do dinheiro existir.",
+   "t0": 382.345,
+   "t1": 392.873
   },
   {
    "id": "j01",
    "who": "im_narr",
    "text": "Tem uma lenda antiga sobre isso. Um sábio pediu a um rei: um grão de arroz na primeira casa do tabuleiro de xadrez, dois na segunda, quatro na terceira... dobrando até a casa 64.",
-   "t0": 293.457,
-   "t1": 305.326
+   "t0": 393.373,
+   "t1": 405.242
   },
   {
    "id": "j02",
    "who": "im_narr",
    "text": "O rei riu. Achou que era pouco. Mas na última casa iam ser mais de nove quintilhões de grãos. Mais arroz do que o mundo inteiro colhe em cem mil anos.",
-   "t0": 305.826,
-   "t1": 314.042
+   "t0": 405.742,
+   "t1": 413.958
   },
   {
    "id": "j03",
    "who": "im_narr",
    "text": "No dia 64, você teria 9 quintilhões de reais. Um número tão grande que nenhuma calculadora de celular mostra direito.",
-   "t0": 314.642,
-   "t1": 322.188
+   "t0": 414.558,
+   "t1": 422.105
+  },
+  {
+   "id": "j04",
+   "who": "im_narr",
+   "text": "E na vida real? Dinheiro não dobra todo dia. Mas existe uma versão lenta desse poder: os juros compostos. Quando você guarda e investe, o dinheiro rende em cima do que já rendeu. A curva sobe igualzinho à do Tuco. Só que em vez de dias, leva anos.",
+   "t0": 423.105,
+   "t1": 443.009
   },
   {
    "id": "z01",
    "who": "im_narr",
    "text": "Então, qual é a lição? Coisas pequenas que dobram parecem bobas no começo. Um real. Uma página lida por dia. Um real guardado. Mas o tempo transforma pouco em muito.",
-   "t0": 323.188,
-   "t1": 334.279
+   "t0": 443.509,
+   "t1": 454.599
   },
   {
    "id": "z02",
    "who": "im_narr",
    "text": "E a pergunta mais importante: em que dia você parava o poder? No dia 21, milionário e sem chamar atenção? No dia 31, bilionário? Ou você ia até o fim?",
-   "t0": 334.879,
-   "t1": 344.919
+   "t0": 455.199,
+   "t1": 465.239
   },
   {
    "id": "z03",
    "who": "im_narr",
    "text": "Escreve o número do dia aqui nos comentários. E se inscreve, porque no próximo episódio... você vai encolher pela metade todo dia.",
-   "t0": 345.419,
-   "t1": 352.557
+   "t0": 465.739,
+   "t1": 472.877
   },
   {
    "id": "t04",
    "who": "im_tuco",
    "text": "Peraí... pela metade?!",
-   "t0": 352.957,
-   "t1": 354.265
+   "t0": 473.277,
+   "t1": 474.585
   }
  ]
 }
