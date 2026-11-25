@@ -1,4 +1,4 @@
-# Canal: IMAGINA SÓ
+# Canal: IMAGINA SÓ (@imaginasobr)
 
 Canal de vídeos longos (8–15 min, 16:9) no formato "E se…?": uma pergunta sobre **você**, um poder ou uma regra que cresce
 **a cada dia**, contado dia a dia (DIA 1, DIA 7, DIA 30) com números reais. Mascote original: **o Tuco** (14 anos,
