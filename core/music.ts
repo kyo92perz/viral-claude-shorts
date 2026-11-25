@@ -112,6 +112,14 @@ const SOUNDS: Record<string, (t: number) => void> = {
   bell: (t) => [[220, 1], [440 * 1.19, 0.5], [660 * 1.02, 0.35], [880 * 1.5, 0.2], [1100 * 1.3, 0.12]].forEach(([f, a]) => add(t, 3.5, (u) => Math.sin(TAU * f * u) * Math.exp(-u * (1.2 + f / 900)), 0.18 * a)),
   // a horse neigh: a fast tremolo on a falling-rising saw
   neigh: (t) => add(t, 1.6, (u) => osc('saw', TAU * (700 - 250 * Math.sin(Math.PI * u / 1.6)) * u) * (0.5 + 0.5 * Math.sin(TAU * 22 * u)) * Math.min(1, u / 0.08) * Math.min(1, (1.6 - u) / 0.4), 0.07),
+  // a long thin whistle (the Curupira): rises, wavers, falls
+  whistle: (t) => add(t, 1.4, (u) => Math.sin(TAU * (1700 + 600 * Math.sin(Math.PI * u / 1.4)) * u + 0.4 * Math.sin(TAU * 6 * u)) * Math.min(1, u / 0.08) * Math.min(1, (1.4 - u) / 0.3), 0.09),
+  // a huge roar (the Mapinguari): a low falling saw, a growl of noise and a rumble
+  roar: (t) => { let y = 0; add(t, 2.6, (u) => (osc('saw', TAU * (140 - 50 * u / 2.6) * u) * 0.6 + (y += 0.12 * (noise() - y)) * 4) * (0.6 + 0.4 * Math.sin(TAU * 14 * u)) * Math.min(1, u / 0.15) * Math.min(1, (2.6 - u) / 0.8), 0.32); kick(t, 0.8); },
+  // something falls into the water: a burst of bright noise, then drops
+  splash: (t) => { let y = 0; add(t, 0.7, (u) => { y += 0.6 * (noise() - y); return (noise() - y) * Math.exp(-u * 6); }, 0.5); for (let j = 0; j < 7; j++) add(t + 0.15 + rnd() * 0.5, 0.06, (u) => Math.sin(TAU * (600 + rnd() * 900) * u) * Math.exp(-u * 60), 0.12); },
+  // a wild pig grunt (two short snorts)
+  grunt: (t) => [0, 0.28].forEach((d) => add(t + d, 0.22, (u) => osc('saw', TAU * (220 - 80 * u / 0.22) * u) * (0.5 + 0.5 * Math.sin(TAU * 40 * u)) * Math.sin(Math.PI * u / 0.22), 0.14)),
   // a toilet flush: the lever clack, a rushing low noise that swells and drains, a few gurgles at the end
   flush: (t) => { SOUNDS.click(t); let y = 0; add(t + 0.05, 1.7, (u) => { y += 0.08 * (noise() - y); return y * 4 * Math.min(1, u / 0.15) * Math.exp(-Math.max(0, u - 0.5) * 2.2); }, 0.5);
     for (let j = 0; j < 5; j++) add(t + 1.0 + j * 0.13 + rnd() * 0.05, 0.09, (u) => Math.sin(TAU * (180 + 260 * u / 0.09) * u) * Math.sin(Math.PI * u / 0.09), 0.12); },
@@ -128,6 +136,10 @@ const AMB: Record<string, (t0: number, t1: number, g: (t: number) => number) => 
   },
   crowd: (t0, t1, g) => { let a = 0, b = 0; add(t0 - F, t1 - t0 + 2 * F, (u, t) => { const n = noise(); a += 0.09 * (n - a); b += 0.012 * (n - b); return (a - b) * (1 + 0.3 * Math.sin(TAU * 3.1 * t) + 0.2 * Math.sin(TAU * 5.3 * t + 1)); }, 1.3, 0.1, g); },
   room: (t0, t1, g) => { let y = 0; add(t0 - F, t1 - t0 + 2 * F, () => { y += 0.004 * (noise() - y); return y; }, 2.2, 0, g); },
+  // a woman's voice singing a slow wordless tune from under the water (the Iara): vowel-like tones with vibrato and an echo
+  song: (t0, t1, g) => { const tune = [0, 3, 7, 5, 3, 2, 0, -2, 0, 3, 5, 3]; let k = 0;
+    for (let t = t0; t < t1; t += 0.62, k++) { const f = 523.25 * Math.pow(2, tune[k % tune.length] / 12);
+      for (const [d, v] of [[0, 1], [0.21, 0.4], [0.47, 0.18]]) add(t + d, 0.75, (u) => (Math.sin(TAU * f * u + 0.35 * Math.sin(TAU * 5.5 * u)) + 0.3 * Math.sin(TAU * 2 * f * u) + 0.12 * Math.sin(TAU * 3 * f * u)) * Math.sin(Math.PI * Math.min(1, u / 0.75)), 0.035 * v, 0, g); } },
   hum: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u) => (Math.sin(TAU * 120 * u) * 0.6 + Math.sin(TAU * 240 * u) * 0.25 + Math.sin(TAU * 360 * u) * 0.1), 0.035, 0, g),
   drone: (t0, t1, g) => add(t0 - F, t1 - t0 + 2 * F, (u, t) => (Math.sin(TAU * hz(ROOT - 12) * u) + 0.6 * Math.sin(TAU * hz(ROOT - 11) * u + 0.3) + 0.3 * Math.sin(TAU * hz(ROOT - 6) * u)) * (0.75 + 0.25 * Math.sin(TAU * 0.13 * t)), 0.09, 0, g),
   heartbeat: (t0, t1, g) => { for (let t = t0; t < t1; t += 0.85) for (const d of [0, 0.25]) add(t + d, 0.2, (u) => Math.sin(TAU * (d ? 48 : 56) * u) * Math.exp(-u * 18), 0.5, 0, g); },

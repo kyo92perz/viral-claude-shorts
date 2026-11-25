@@ -48,9 +48,10 @@ export const SFX: Record<string, string> = {
   static: 'a radio bursting into static', feedback: 'a screaming audio feedback loop', beep: 'a pager beeping', chop: 'an axe biting into something', spark: 'electric sparks crackling',
   creak: 'a door or floorboard creaking', thud: 'a body hitting a wall or shelves', click: 'a switch or a radio turned off',
   flush: 'a toilet flush', pour: 'water or blood gushing from taps',
+  whistle: 'a long thin whistle in the woods', roar: 'a huge monster roar', splash: 'something falls into water', grunt: 'a wild pig grunting',
   howl: 'a wolf howling at the moon', growl: 'a low animal growl', bell: 'a church bell tolling once', neigh: 'a horse neighing',
 };
 // background sound of a scene's place
 export const AMBIENCE: Record<string, string> = { wind: 'open air', forest: 'trees and birds', crowd: 'many people', room: 'an indoor space', steps: 'running footsteps on the beat',
   hum: 'fluorescent tubes buzzing', drone: 'a low dissonant horror drone', heartbeat: 'a slow heartbeat',
-  night: 'crickets and a far dog at night', static: 'a soft radio hiss', powerline: 'the hum of high-voltage wires' };
+  night: 'crickets and a far dog at night', song: 'a woman singing a wordless tune from under the water', static: 'a soft radio hiss', powerline: 'the hum of high-voltage wires' };
