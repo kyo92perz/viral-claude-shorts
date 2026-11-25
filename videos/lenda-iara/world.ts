@@ -61,4 +61,7 @@ defineVisuals({
   'test-face': { bg: '#0b1028', html: () => svg(`${iaRiver(1000)}${iaSurfaceFace(540, 1000, 2.6)}`), anim(tl, s) { bzFace(tl, '#sc-test-face #iara', s.t0, 'glow', 'flat'); } },
   'test-under': { bg: '#06120e', html: () => svg(`${iaUnder()}${iaIara(540, 1500, 1.4)}${bzParticles('bb', 'bubbles', 26, [0, 400, 1080, 1900], 6)}`),
     anim(tl, s) { bzFace(tl, '#sc-test-under #iara', s.t0, 'glow', 'fangs'); bzParticlesGo(tl, '#sc-test-under #bb', 'bubbles', s.t0, s.t1); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#0b1028', html: () => svg(`${iaRiver(1050)}${iaSurfaceFace(540, 1050, 2.8)}${bzParticles('ff', 'fireflies', 14, [0, 500, 1000, 1000], 2)}${bzVignette(0.6)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #iara', s.t0, 'glow', 'flat'); } },
+  'cover-b': { bg: '#06120e', html: () => svg(`${iaUnder()}${iaIara(540, 1900, 2.0)}${bzParticles('bb', 'bubbles', 26, [0, 400, 1080, 1900], 6)}${bzVignette(0.6)}`), anim(tl, s) { bzFace(tl, '#sc-cover-b #iara', s.t0, 'glow', 'fangs'); } },
 });

@@ -1,0 +1,555 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.9"
+ },
+ "music": {
+  "bpm": 84,
+  "key": "E"
+ },
+ "notes": "O CURUPIRA, detailed Brasil Z toon look: a layered Pará jungle (parallax, mist, light rays, falling leaves, fireflies before dawn); the only fire colour is his hair. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.1,
+     "sfx": "whistle",
+     "t": 0.4
+    }
+   ],
+   "t0": 0,
+   "t1": 3.247
+  },
+  {
+   "id": "eyes",
+   "from": 11,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 11,
+     "dt": -0.15,
+     "sfx": "sting",
+     "t": 3.297
+    }
+   ],
+   "t0": 3.247,
+   "t1": 4.125
+  },
+  {
+   "id": "title",
+   "from": 14,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 15,
+     "sfx": "impact",
+     "t": 4.227
+    }
+   ],
+   "t0": 4.125,
+   "t1": 5.675
+  },
+  {
+   "id": "bento",
+   "from": 18,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 20,
+     "sfx": "hit",
+     "t": 6.423
+    }
+   ],
+   "t0": 5.675,
+   "t1": 8.739
+  },
+  {
+   "id": "brave",
+   "from": 27,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "night"
+   ],
+   "t0": 8.739,
+   "t1": 12.56
+  },
+  {
+   "id": "lanterna",
+   "from": 39,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "t0": 12.56,
+   "t1": 17.829
+  },
+  {
+   "id": "enter",
+   "from": 50,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night",
+    "forest"
+   ],
+   "t0": 17.829,
+   "t1": 20.726
+  },
+  {
+   "id": "mark",
+   "from": 59,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "c1",
+     "at": 65,
+     "sfx": "chop",
+     "t": 22.531
+    },
+    {
+     "id": "c2",
+     "at": 66,
+     "sfx": "chop",
+     "t": 22.835
+    },
+    {
+     "id": "c3",
+     "at": 67,
+     "sfx": "chop",
+     "t": 23.25
+    }
+   ],
+   "t0": 20.726,
+   "t1": 25.767
+  },
+  {
+   "id": "hours",
+   "from": 75,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 25.767,
+   "t1": 27.138
+  },
+  {
+   "id": "prints",
+   "from": 78,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 79,
+     "sfx": "thump",
+     "t": 27.597
+    }
+   ],
+   "t0": 27.138,
+   "t1": 29.734
+  },
+  {
+   "id": "back",
+   "from": 84,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 85,
+     "sfx": "sting",
+     "t": 29.855
+    }
+   ],
+   "t0": 29.734,
+   "t1": 31.199
+  },
+  {
+   "id": "seguir",
+   "from": 88,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 31.199,
+   "t1": 34.263
+  },
+  {
+   "id": "follow",
+   "from": 97,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 34.263,
+   "t1": 35.626
+  },
+  {
+   "id": "arrows",
+   "from": 100,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 106,
+     "sfx": "whoosh",
+     "t": 37.792
+    }
+   ],
+   "t0": 35.626,
+   "t1": 40.808
+  },
+  {
+   "id": "whistle",
+   "from": 113,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "w1",
+     "at": 116,
+     "sfx": "whistle",
+     "t": 41.904
+    },
+    {
+     "id": "w2",
+     "at": 119,
+     "sfx": "whistle",
+     "t": 43.193
+    },
+    {
+     "id": "w3",
+     "at": 123,
+     "sfx": "whistle",
+     "t": 44.291
+    }
+   ],
+   "t0": 40.808,
+   "t1": 46.103
+  },
+  {
+   "id": "walk",
+   "from": 127,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 46.103,
+   "t1": 48.504
+  },
+  {
+   "id": "same",
+   "from": 133,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 141,
+     "sfx": "sting",
+     "t": 51.117
+    }
+   ],
+   "t0": 48.504,
+   "t1": 53.831
+  },
+  {
+   "id": "naopode",
+   "from": 148,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 53.831,
+   "t1": 57.232
+  },
+  {
+   "id": "loop",
+   "from": 158,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "l1",
+     "at": 158,
+     "dt": 0.2,
+     "sfx": "hit",
+     "t": 57.682
+    },
+    {
+     "id": "l2",
+     "at": 161,
+     "sfx": "hit",
+     "t": 58.48
+    },
+    {
+     "id": "l3",
+     "at": 166,
+     "sfx": "impact",
+     "t": 59.706
+    }
+   ],
+   "t0": 57.232,
+   "t1": 63.314
+  },
+  {
+   "id": "saw",
+   "from": 175,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "ambience": [
+    "forest"
+   ],
+   "t0": 63.314,
+   "t1": 64.589
+  },
+  {
+   "id": "rider",
+   "from": 179,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 181,
+     "sfx": "grunt",
+     "t": 65.29
+    }
+   ],
+   "t0": 64.589,
+   "t1": 66.171
+  },
+  {
+   "id": "kid",
+   "from": 184,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 189,
+     "sfx": "whistle",
+     "t": 67.899
+    }
+   ],
+   "t0": 66.171,
+   "t1": 68.946
+  },
+  {
+   "id": "feet",
+   "from": 192,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 195,
+     "sfx": "sting",
+     "t": 69.62
+    }
+   ],
+   "t0": 68.946,
+   "t1": 70.997
+  },
+  {
+   "id": "vo",
+   "from": 198,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "t0": 70.997,
+   "t1": 73.204
+  },
+  {
+   "id": "knot",
+   "from": 204,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 73.204,
+   "t1": 75.438
+  },
+  {
+   "id": "untie",
+   "from": 213,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "forest"
+   ],
+   "t0": 75.438,
+   "t1": 78.036
+  },
+  {
+   "id": "run",
+   "from": 221,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "steps"
+   ],
+   "t0": 78.036,
+   "t1": 79.525
+  },
+  {
+   "id": "aim",
+   "from": 227,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 236,
+     "sfx": "whistle",
+     "t": 82.234
+    }
+   ],
+   "t0": 79.525,
+   "t1": 83.032
+  },
+  {
+   "id": "road",
+   "from": 237,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 83.032,
+   "t1": 85.311
+  },
+  {
+   "id": "never",
+   "from": 244,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 85.311,
+   "t1": 86.58
+  },
+  {
+   "id": "gun",
+   "from": 248,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 258,
+     "sfx": "sting",
+     "t": 89.76
+    }
+   ],
+   "t0": 86.58,
+   "t1": 91.888
+  },
+  {
+   "id": "you",
+   "from": 263,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "forest"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 267,
+     "dt": 0.841,
+     "sfx": "whistle",
+     "t": 94.44
+    }
+   ],
+   "t0": 91.888,
+   "t1": 95.81
+  }
+ ],
+ "duration": 95.81
+}

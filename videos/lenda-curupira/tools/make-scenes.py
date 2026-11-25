@@ -9,8 +9,8 @@ D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'si
 F = ['forest']; N = ['night']
 SHOTS = [
  ('hook', 'n01', 0, None, T, F, [('h', 'n01', 0, 0.1, 'whistle')]),
- ('eyes', 'n01', 11, None, D, ['drone'], [('e', 'n01', 11, 0, 'sting')]),
- ('title', 'n01', 13, None, D, F, [('t', 'n01', 15, 0, 'impact')]),
+ ('eyes', 'n01', 11, -0.2, D, ['drone'], [('e', 'n01', 11, -0.15, 'sting')]),
+ ('title', 'n01', 14, None, D, F, [('t', 'n01', 15, 0, 'impact')]),
  ('bento', 'n02', 0, None, C, N, [('n', 'n02', 2, 0, 'hit')]),
  ('brave', 'n02', 9, None, P, N, []),
  ('lanterna', 'b01', 0, -0.2, P, N, []),
@@ -29,7 +29,7 @@ SHOTS = [
  ('loop', 'n08', 0, None, D, ['drone'], [('l1', 'n08', 0, 0.2, 'hit'), ('l2', 'n08', 3, 0, 'hit'), ('l3', 'n08', 8, 0, 'impact')]),
  ('saw', 'n09', 0, -0.2, S0, F, []),
  ('rider', 'n09', 4, None, E, F, [('g', 'n09', 6, 0, 'grunt')]),
- ('kid', 'n09', 9, None, D, ['drone'], [('r', 'n09', 16, 0, 'whistle')]),
+ ('kid', 'n09', 9, None, D, ['drone'], [('r', 'n09', 14, 0, 'whistle')]),
  ('feet', 'n09', 17, None, D, ['drone'], [('f', 'n09', 20, 0, 'sting')]),
  ('vo', 'n10', 0, None, C, ['room'], []),
  ('knot', 'n10', 6, None, T, F, []),

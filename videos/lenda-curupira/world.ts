@@ -101,4 +101,7 @@ defineVisuals({
     anim(tl, s) { bzFace(tl, '#sc-test-rider #curupira', s.t0, 'glow', 'grin'); bzPose(tl, '#sc-test-rider #curupira', s.t0, { lL: 60, lR: -60, aR: -140 }, 0.01); cuTrot(tl, '#sc-test-rider #pig', s.t0, s.t1); } },
   'test-gun': { bg: '#3a4a2a', html: () => svg(`<rect width="1080" height="1920" fill="#3a4a2a"/>${cuGun('gun', 150, 1000, 1.8, -8, true)}`), anim() {} },
   'test-face': { bg: '#14283a', html: () => svg(`${cuBg(CU_PAL.day)}${cuKid(540, 2050, 3.2)}${bzFrameLeaves('both')}`), anim(tl, s) { bzFace(tl, '#sc-test-face #curupira', s.t0, 'glow', 'grin'); } },
+  // covers (clean frames for core/cover.py)
+  'cover-a': { bg: '#5a9a8a', html: () => svg(`${cuBg(CU_PAL.day, 13)}${bzRays('ry', 700, -120, 5, 1900, '#fff8c8', 0.12)}${cuKid(540, 2050, 3.2)}${bzFrameLeaves('both')}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #curupira', s.t0, 'glow', 'grin'); } },
+  'cover-b': { bg: '#3a4a2a', html: () => svg(`<rect width="1080" height="1920" fill="#3a4a2a"/>${[...Array(12)].map((_, i) => `<ellipse cx="${(i * 191) % 1080}" cy="${(i * 331) % 1920}" rx="90" ry="40" fill="#2f5a30" opacity="0.6"/>`).join('')}${cuGun('gun', 150, 1100, 1.8, -8, true)}${bzVignette(0.6)}`), anim() {} },
 });

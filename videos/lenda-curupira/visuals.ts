@@ -1,5 +1,5 @@
 // <lines>
-const CU_LINES: { who: string; t0: number; t1: number }[] = [];
+const CU_LINES = [{"who": "cu_eu", "t0": 0.3, "t1": 5.325}, {"who": "cu_eu", "t0": 5.925, "t1": 12.26}, {"who": "cu_bento", "t0": 12.76, "t1": 17.479}, {"who": "cu_eu", "t0": 18.079, "t1": 25.517}, {"who": "cu_eu", "t0": 26.017, "t1": 30.899}, {"who": "cu_bento", "t0": 31.399, "t1": 34.013}, {"who": "cu_eu", "t0": 34.513, "t1": 40.408}, {"who": "cu_eu", "t0": 41.108, "t1": 45.553}, {"who": "cu_eu", "t0": 46.353, "t1": 53.531}, {"who": "cu_bento", "t0": 54.031, "t1": 56.882}, {"who": "cu_eu", "t0": 57.482, "t1": 62.814}, {"who": "cu_eu", "t0": 63.514, "t1": 70.647}, {"who": "cu_eu", "t0": 71.247, "t1": 77.786}, {"who": "cu_eu", "t0": 78.286, "t1": 82.632}, {"who": "cu_eu", "t0": 83.332, "t1": 91.388}, {"who": "cu_eu", "t0": 92.088, "t1": 94.21}];
 // </lines>
 // =====================================================================
 //  O CURUPIRA: the shots (detailed Brasil Z toon look). Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -37,7 +37,7 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#curupira'), s.t0, 'glow', 'grin'); bzPose(tl, $('#curupira'), s.t0, { lL: 60, lR: -60, aR: -150 }, 0.01); cuTrot(tl, $('#pig'), s.t0, s.t1); tl.fromTo($('#rider'), { x: -260 }, { x: 200, duration: s.t1 - s.t0, ease: 'none' }, s.t0);
       bzParticlesGo(tl, $('#lv'), 'leaves', s.t0, s.t1); tl.set($('#tt'), { opacity: 0 }, s.t0); bzShow(tl, $('#tt'), K('t')); bzHit(tl, $('#fl'), K('t'), 0.4); bzParallax(tl, $, s.t0, s.t1, -120); } },
   // ---------------- tio Bento
-  bento: { bg: '#14283a', html: () => bzShot(cuScene(P_DAWN, 1, `${cuBento(560, 1560, 1.25)}${cuGun('gun', 470, 1000, 1.0, -55)}`, { parts: bzParticles('ff', 'fireflies', 18, [0, 600, 1080, 1400], 2) }), cuSay('nm', 'TIO BENTO', 540, 360, -4, BZ.yellow, BZ.ink, 110)),
+  bento: { bg: '#14283a', html: () => bzShot(cuScene(P_DAWN, 1, `${cuBento(560, 1560, 1.25)}${cuGun('gun', 700, 1420, 1.0, -78)}`, { parts: bzParticles('ff', 'fireflies', 18, [0, 600, 1080, 1400], 2) }), cuSay('nm', 'TIO BENTO', 540, 360, -4, BZ.yellow, BZ.ink, 110)),
     anim(tl, s, K, $) { bzFace(tl, $('#bento'), s.t0, 'half', 'smile'); bzIdle(tl, $('#bento'), s.t0, s.t1); bzParticlesGo(tl, $('#ff'), 'fireflies', s.t0, s.t1); tl.set($('#nm'), { opacity: 0 }, s.t0); bzShow(tl, $('#nm'), K('n')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08, 560, 950); } },
   brave: { bg: '#14283a', html: () => bzShot(cuScene(P_DAWN, 1, `${cuCaio(300, 1520, 1.15)}${cuBento(720, 1520, 1.2, true)}`, { parts: bzParticles('ff', 'fireflies', 18, [0, 600, 1080, 1400], 3) }), ''),
     anim(tl, s, K, $) { bzFace(tl, $('#bento'), s.t0, 'closed', 'grin'); bzShake(tl, $('#bento'), s.t0, s.t0 + 1.0, 3); bzFace(tl, $('#caio'), s.t0, 'half', 'flat'); bzIdle(tl, $('#caio'), s.t0, s.t1, 1); bzParticlesGo(tl, $('#ff'), 'fireflies', s.t0, s.t1); bzHandheld(tl, $('#cam'), s.t0, s.t1); } },
@@ -55,7 +55,7 @@ defineVisuals({
     anim(tl, s, K, $) { for (let i = 0; i < 8; i++) tl.to($('#fp' + i), { opacity: 1, duration: 0.12 }, K('p') + i * 0.22); bzParticlesGo(tl, $('#dt'), 'dust', s.t0, s.t1); tl.fromTo($('#cam'), { y: 300 }, { y: -300, duration: s.t1 - s.t0, ease: 'none' }, s.t0); } },
   back: { bg: '#6a4a30', html: () => bzShot(`<g transform="translate(-428 -2312) scale(2.2)">${cuPrints(P_DAY)}</g>`, `${cuSay('pt', 'VIRADAS PRA TRÁS', 540, 380, 4, BZ.red, '#fff', 90)}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { for (let i = 0; i < 8; i++) tl.set($('#fp' + i), { opacity: 1 }, s.t0); tl.set($('#pt'), { opacity: 0 }, s.t0); bzShow(tl, $('#pt'), K('b')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 950); } },
-  seguir: { bg: '#5a9a8a', html: () => bzShot(cuScene(P_DAY, 6, `${cuBento(540, 1900, 2.0)}${cuGun('gun', 300, 1300, 1.3, -70)}`, { rays: true }), ''),
+  seguir: { bg: '#5a9a8a', html: () => bzShot(cuScene(P_DAY, 6, `${cuBento(540, 1900, 2.0)}${cuGun('gun', 230, 1500, 1.3, -85)}`, { rays: true }), ''),
     anim(tl, s, K, $) { bzFace(tl, $('#bento'), s.t0, 'dot', 'grin'); bzTalk(tl, $('#bento'), 'cu_bento', s.t0, s.t1, 'grin', 'open'); bzPose(tl, $('#bento'), s.t0 + 0.3, { aR: -100 }, 0.3); bzBlink(tl, $('#bento'), s.t0, s.t1); bzHandheld(tl, $('#cam'), s.t0, s.t1, 3); } },
   follow: { bg: '#5a9a8a', html: () => bzShot(cuScene(P_DAY, 7, `${cuBento(400, 1540, 1.15)}${cuCaio(700, 1540, 1.1)}`, { rays: true, parts: bzParticles('dt', 'dust', 24, [0, 300, 1080, 1500], 9) }), ''),
     anim(tl, s, K, $) { bzWalk(tl, $('#caio'), s.t0, s.t1, 0, 0); bzWalk(tl, $('#bento'), s.t0, s.t1, 0, 0); bzFace(tl, $('#bento'), s.t0, 'angry', 'flat'); bzParallax(tl, $, s.t0, s.t1, -360); bzParticlesGo(tl, $('#dt'), 'dust', s.t0, s.t1); } },
