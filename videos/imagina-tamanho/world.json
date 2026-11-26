@@ -1,10 +1,19 @@
 {
- "style": "flat2d",
- "fps": 30,
+ "style": "2.5d_cartoon",
+ "fps": 24,
  "format": "16:9",
  "shots": [
   {
    "id": "test-room",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-street",
    "title": " ",
    "label": "",
    "duration": 2,
@@ -22,16 +31,7 @@
    ]
   },
   {
-   "id": "test-statue",
-   "title": " ",
-   "label": "",
-   "duration": 2,
-   "snap": [
-    1.2
-   ]
-  },
-  {
-   "id": "test-sea",
+   "id": "test-mini",
    "title": " ",
    "label": "",
    "duration": 2,
@@ -47,16 +47,6 @@
    "snap": [
     1.2
    ]
-  },
-  {
-   "id": "newtuco",
-   "title": " ",
-   "label": "",
-   "duration": 2,
-   "snap": [
-    1.2
-   ]
   }
- ],
- "look": "rich"
+ ]
 }

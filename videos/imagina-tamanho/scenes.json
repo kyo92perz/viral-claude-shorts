@@ -1,0 +1,1014 @@
+{
+ "style": "2.5d_cartoon",
+ "fps": 24,
+ "format": "16:9",
+ "renderScale": 0.6,
+ "captions": true,
+ "music": {
+  "bpm": 104,
+  "key": "G"
+ },
+ "notes": "IMAGINA SÓ: what if you DOUBLED in size every day? Bright Brazil Z toon look in 16:9: Tuco grows from 1.60 m to bigger than the planet; the square-cube law (8x weight, bones), the deep voice, the heat, landmarks (statue, tower), the sea, space, the Earth in his hand, Jupiter, and he becomes a star. HUD: day + height. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "wonder",
+   "label": "IMAGINA SÓ",
+   "title": "E se você DOBRASSE de tamanho todo dia?",
+   "highlight": "DOBRASSE"
+  },
+  {
+   "id": "grow",
+   "from": 11,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 17,
+     "sfx": "pop"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "fun",
+   "from": 18,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "building",
+   "from": 35,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 44,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "earthhand",
+   "from": 46,
+   "type": "object",
+   "mood": "wonder",
+   "keys": [
+    {
+     "id": "e",
+     "at": 52,
+     "sfx": "riser"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "real",
+   "from": 59,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "title": " "
+  },
+  {
+   "id": "guess",
+   "from": 81,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "g",
+     "at": 95,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "normal",
+   "from": 97,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "z",
+     "at": 111,
+     "sfx": "off"
+    }
+   ],
+   "label": "DIA 1",
+   "title": "1,60 metro"
+  },
+  {
+   "id": "wake",
+   "from": 114,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 114,
+     "dt": 0.2,
+     "sfx": "impact"
+    }
+   ],
+   "label": "DIA 2",
+   "title": "3,20 metros"
+  },
+  {
+   "id": "cama",
+   "from": 120,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "title": " "
+  },
+  {
+   "id": "mae",
+   "from": 126,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "title": " "
+  },
+  {
+   "id": "surprise",
+   "from": 134,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "o",
+     "at": 152,
+     "sfx": "hit"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "cube",
+   "from": 157,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "a",
+     "at": 166,
+     "sfx": "pop"
+    },
+    {
+     "id": "l",
+     "at": 170,
+     "sfx": "pop"
+    },
+    {
+     "id": "g",
+     "at": 175,
+     "sfx": "pop"
+    },
+    {
+     "id": "o",
+     "at": 181,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "door",
+   "from": 182,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 189,
+     "sfx": "thud"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "food",
+   "from": 192,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 207,
+     "sfx": "whoosh"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "dunk",
+   "from": 210,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "elephant",
+   "from": 219,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 234,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 3",
+   "title": "6,40 metros"
+  },
+  {
+   "id": "bones",
+   "from": 236,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "a",
+     "at": 259,
+     "sfx": "tick"
+    },
+    {
+     "id": "b",
+     "at": 266,
+     "sfx": "tick"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "crack",
+   "from": 271,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "c",
+     "at": 283,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "deal",
+   "from": 293,
+   "type": "object",
+   "mood": "playful",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 303,
+     "sfx": "pop"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "voice",
+   "from": 304,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "title": " "
+  },
+  {
+   "id": "olhando",
+   "from": 324,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "title": " "
+  },
+  {
+   "id": "day5",
+   "from": 332,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 350,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 5",
+   "title": "25,6 metros"
+  },
+  {
+   "id": "heat",
+   "from": 356,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "v",
+     "at": 372,
+     "sfx": "hit"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "lake",
+   "from": 387,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "infra",
+   "from": 404,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 432,
+     "sfx": "off"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "app",
+   "from": 436,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "fome",
+   "from": 449,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "cristo",
+   "from": 454,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "label": "DIA 6",
+   "title": "51 metros"
+  },
+  {
+   "id": "day7",
+   "from": 469,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 469,
+     "dt": 0.2,
+     "sfx": "impact"
+    }
+   ],
+   "label": "DIA 7",
+   "title": "102 metros"
+  },
+  {
+   "id": "steps",
+   "from": 480,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 495,
+     "sfx": "siren"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "carrier",
+   "from": 503,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 515,
+     "sfx": "hit"
+    }
+   ],
+   "label": "DIA 8",
+   "title": "205 metros"
+  },
+  {
+   "id": "news",
+   "from": 526,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "title": " "
+  },
+  {
+   "id": "citymeal",
+   "from": 540,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 554,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 9",
+   "title": "410 metros"
+  },
+  {
+   "id": "burj",
+   "from": 564,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 582,
+     "sfx": "impact"
+    }
+   ],
+   "label": "DIA 10",
+   "title": "819 metros"
+  },
+  {
+   "id": "tosea",
+   "from": 591,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "label": "DIA 13",
+   "title": "6,5 quilômetros"
+  },
+  {
+   "id": "ocean",
+   "from": 615,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 628,
+     "sfx": "pop"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "clouds",
+   "from": 643,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 652,
+     "sfx": "whoosh"
+    },
+    {
+     "id": "e",
+     "at": 656,
+     "sfx": "hit"
+    },
+    {
+     "id": "a",
+     "at": 659,
+     "sfx": "whoosh"
+    },
+    {
+     "id": "f",
+     "at": 669,
+     "sfx": "sting"
+    }
+   ],
+   "label": "DIA 14",
+   "title": "13 quilômetros"
+  },
+  {
+   "id": "frio",
+   "from": 672,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "island",
+   "from": 681,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "title": " "
+  },
+  {
+   "id": "science",
+   "from": 704,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "title": " "
+  },
+  {
+   "id": "karman",
+   "from": 720,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "k",
+     "at": 736,
+     "sfx": "riser"
+    }
+   ],
+   "label": "DIA 17",
+   "title": "105 quilômetros"
+  },
+  {
+   "id": "iss",
+   "from": 748,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "label": "DIA 19",
+   "title": "419 quilômetros"
+  },
+  {
+   "id": "selfie",
+   "from": 770,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "sink",
+   "from": 779,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 789,
+     "sfx": "hit"
+    },
+    {
+     "id": "a",
+     "at": 806,
+     "sfx": "thud"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "orbit",
+   "from": 809,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "l",
+     "at": 836,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 21",
+   "title": "1.678 quilômetros"
+  },
+  {
+   "id": "brazil",
+   "from": 840,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.4,
+   "label": "DIA 23",
+   "title": "6.710 quilômetros"
+  },
+  {
+   "id": "maecall",
+   "from": 873,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "title": " "
+  },
+  {
+   "id": "pilates",
+   "from": 882,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "b",
+     "at": 907,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 24",
+   "title": "13.422 quilômetros"
+  },
+  {
+   "id": "eye",
+   "from": 910,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 933,
+     "sfx": "hit"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "soccer",
+   "from": 934,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "b",
+     "at": 950,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 27",
+   "title": "107 mil quilômetros"
+  },
+  {
+   "id": "swap",
+   "from": 959,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "g",
+     "at": 977,
+     "sfx": "hit"
+    },
+    {
+     "id": "t",
+     "at": 993,
+     "sfx": "whoosh"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "hand",
+   "from": 1000,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "title": " "
+  },
+  {
+   "id": "moon",
+   "from": 1007,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "j",
+     "at": 1034,
+     "sfx": "pop"
+    }
+   ],
+   "label": "DIA 29",
+   "title": "429 mil quilômetros"
+  },
+  {
+   "id": "jupiter",
+   "from": 1036,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "j",
+     "at": 1052,
+     "sfx": "impact"
+    }
+   ],
+   "label": "DIA 30",
+   "title": "859 mil quilômetros"
+  },
+  {
+   "id": "ball",
+   "from": 1059,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 1088,
+     "sfx": "hit"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "fusion",
+   "from": 1089,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.4,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 1121,
+     "sfx": "riser"
+    },
+    {
+     "id": "e",
+     "at": 1126,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "star",
+   "from": 1128,
+   "type": "object",
+   "mood": "triumphant",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "a",
+     "at": 1133,
+     "sfx": "impact"
+    }
+   ],
+   "label": "DIA 32",
+   "title": "Uma estrela"
+  },
+  {
+   "id": "twosuns",
+   "from": 1137,
+   "type": "object",
+   "mood": "wonder",
+   "title": " "
+  },
+  {
+   "id": "chaos",
+   "from": 1146,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "title": " "
+  },
+  {
+   "id": "reallife",
+   "from": 1164,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "b",
+     "at": 1195,
+     "sfx": "whoosh"
+    },
+    {
+     "id": "a",
+     "at": 1201,
+     "sfx": "pop"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "ant",
+   "from": 1206,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 1212,
+     "sfx": "pop"
+    },
+    {
+     "id": "e",
+     "at": 1220,
+     "sfx": "thud"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "ask",
+   "from": 1230,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "a",
+     "at": 1240,
+     "sfx": "pop"
+    },
+    {
+     "id": "b",
+     "at": 1250,
+     "sfx": "pop"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "sub",
+   "from": 1257,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "i",
+     "at": 1266,
+     "sfx": "impact"
+    }
+   ],
+   "title": " "
+  },
+  {
+   "id": "endcard",
+   "from": 1275,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "title": " "
+  }
+ ]
+}

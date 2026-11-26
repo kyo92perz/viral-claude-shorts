@@ -11,12 +11,12 @@ SHOTS = [
  ('hook', 'a01', 0, None, W, [], []),
  ('grow', 'a01', 11, None, P, ST, [('d', 'a01', 17, 0, 'pop')]),
  ('fun', 'a02', 0, -0.2, P, ST, []),
- ('building', 'a02', 17, None, E, CR, [('p', 'a02', 27, 0, 'impact')]),
+ ('building', 'a02', 17, None, E, CR, [('p', 'a02', 26, -0.25, 'impact')]),
  ('earthhand', 'a02', 28, None, W, [], [('e', 'a02', 34, 0, 'riser')]),
  ('real', 'a03', 0, -0.2, Q, [], []),
  ('guess', 'a04', 0, -0.2, P, [], [('g', 'a04', 14, 0, 'impact')]),
  # ---- day 1-2
- ('normal', 'b01', 0, -0.4, C, RM, [('z', 'b01', 15, 0, 'off')]),
+ ('normal', 'b01', 0, -0.4, C, RM, [('z', 'b01', 14, 0, 'off')]),
  ('wake', 'b01', 17, None, E, RM, [('w', 'b01', 17, 0.2, 'impact')]),
  ('cama', 't01', 0, -0.2, E, RM, []),
  ('mae', 'm01', 0, -0.2, E, RM, []),
@@ -83,7 +83,22 @@ SHOTS = [
  ('sub', 'z04', 0, -0.2, P, [], [('i', 'z04', 9, 0, 'impact')]),
  ('endcard', 't06', 0, -0.2, P, RM, []),
 ]
-build(V, SHOTS, {'style': 'flat2d', 'fps': 30, 'format': '16:9', 'look': 'rich', 'captions': True, 'badge': {'title': 'IMAGINA SÓ'},
+build(V, SHOTS, {'style': '2.5d_cartoon', 'fps': 24, 'format': '16:9', 'renderScale': 0.6, 'captions': True,
       'music': {'bpm': 104, 'key': 'G'},
       'notes': 'IMAGINA SÓ: what if you DOUBLED in size every day? Bright Brazil Z toon look in 16:9: Tuco grows from 1.60 m to bigger than the planet; the square-cube law (8x weight, bones), the deep voice, the heat, landmarks (statue, tower), the sea, space, the Earth in his hand, Jupiter, and he becomes a star. HUD: day + height. Shot list in tools/make-scenes.py.'},
-      talk='IM_LINES', visuals='visuals.ts')
+      talk='IM_LINES', visuals='visuals-cartoon.ts')
+
+# the titles (HTML over the 2.5D): the day and the height, like a HUD
+import json
+TITLES = {'normal': ('DIA 1', '1,60 metro'), 'wake': ('DIA 2', '3,20 metros'), 'elephant': ('DIA 3', '6,40 metros'), 'day5': ('DIA 5', '25,6 metros'),
+  'cristo': ('DIA 6', '51 metros'), 'day7': ('DIA 7', '102 metros'), 'carrier': ('DIA 8', '205 metros'), 'citymeal': ('DIA 9', '410 metros'), 'burj': ('DIA 10', '819 metros'),
+  'tosea': ('DIA 13', '6,5 quilômetros'), 'clouds': ('DIA 14', '13 quilômetros'), 'karman': ('DIA 17', '105 quilômetros'), 'iss': ('DIA 19', '419 quilômetros'), 'orbit': ('DIA 21', '1.678 quilômetros'),
+  'brazil': ('DIA 23', '6.710 quilômetros'), 'pilates': ('DIA 24', '13.422 quilômetros'), 'soccer': ('DIA 27', '107 mil quilômetros'), 'moon': ('DIA 29', '429 mil quilômetros'),
+  'jupiter': ('DIA 30', '859 mil quilômetros'), 'star': ('DIA 32', 'Uma estrela'), 'hook': ('IMAGINA SÓ', 'E se você DOBRASSE de tamanho todo dia?')}
+sp = os.path.join(V, 'scenes.json'); d = json.load(open(sp))
+for sc in d['scenes']:
+  if sc['id'] in TITLES: sc['label'], sc['title'] = TITLES[sc['id']]
+  else: sc['title'] = ' '
+  if sc['id'] == 'hook': sc['highlight'] = 'DOBRASSE'
+json.dump(d, open(sp, 'w'), ensure_ascii=False, indent=1)
+
