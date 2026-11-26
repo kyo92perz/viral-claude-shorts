@@ -97,8 +97,6 @@ TITLES = {'normal': ('DIA 1', '1,60 metro'), 'wake': ('DIA 2', '3,20 metros'), '
   'jupiter': ('DIA 30', '859 mil quilômetros'), 'star': ('DIA 32', 'Uma estrela'), 'hook': ('IMAGINA SÓ', 'E se você DOBRASSE de tamanho todo dia?')}
 sp = os.path.join(V, 'scenes.json'); d = json.load(open(sp))
 for sc in d['scenes']:
-  if sc['id'] in TITLES: sc['label'], sc['title'] = TITLES[sc['id']]
-  else: sc['title'] = ' '
-  if sc['id'] == 'hook': sc['highlight'] = 'DOBRASSE'
+  sc['title'] = ' '
 json.dump(d, open(sp, 'w'), ensure_ascii=False, indent=1)
 

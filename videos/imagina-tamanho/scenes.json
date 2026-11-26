@@ -15,9 +15,7 @@
    "from": 0,
    "type": "object",
    "mood": "wonder",
-   "label": "IMAGINA SÓ",
-   "title": "E se você DOBRASSE de tamanho todo dia?",
-   "highlight": "DOBRASSE",
+   "title": " ",
    "t0": 0,
    "t1": 4.272
   },
@@ -137,8 +135,7 @@
      "t": 35.74
     }
    ],
-   "label": "DIA 1",
-   "title": "1,60 metro",
+   "title": " ",
    "t0": 31.228,
    "t1": 36.462
   },
@@ -159,8 +156,7 @@
      "t": 36.642
     }
    ],
-   "label": "DIA 2",
-   "title": "3,20 metros",
+   "title": " ",
    "t0": 36.462,
    "t1": 38.892
   },
@@ -315,8 +311,7 @@
      "t": 80.931
     }
    ],
-   "label": "DIA 3",
-   "title": "6,40 metros",
+   "title": " ",
    "t0": 75.982,
    "t1": 82.654
   },
@@ -422,8 +417,7 @@
      "t": 121.279
     }
    ],
-   "label": "DIA 5",
-   "title": "25,6 metros",
+   "title": " ",
    "t0": 115.262,
    "t1": 124.141
   },
@@ -514,8 +508,7 @@
    "ambience": [
     "wind"
    ],
-   "label": "DIA 6",
-   "title": "51 metros",
+   "title": " ",
    "t0": 160.73,
    "t1": 165.531
   },
@@ -536,8 +529,7 @@
      "t": 165.711
     }
    ],
-   "label": "DIA 7",
-   "title": "102 metros",
+   "title": " ",
    "t0": 165.531,
    "t1": 169.643
   },
@@ -579,8 +571,7 @@
      "t": 182.348
     }
    ],
-   "label": "DIA 8",
-   "title": "205 metros",
+   "title": " ",
    "t0": 178.486,
    "t1": 187.57
   },
@@ -614,8 +605,7 @@
      "t": 197.878
     }
    ],
-   "label": "DIA 9",
-   "title": "410 metros",
+   "title": " ",
    "t0": 193.264,
    "t1": 201.873
   },
@@ -636,8 +626,7 @@
      "t": 208.104
     }
    ],
-   "label": "DIA 10",
-   "title": "819 metros",
+   "title": " ",
    "t0": 201.873,
    "t1": 211.251
   },
@@ -650,8 +639,7 @@
    "ambience": [
     "wind"
    ],
-   "label": "DIA 13",
-   "title": "6,5 quilômetros",
+   "title": " ",
    "t0": 211.251,
    "t1": 220.204
   },
@@ -711,8 +699,7 @@
      "t": 238.833
     }
    ],
-   "label": "DIA 14",
-   "title": "13 quilômetros",
+   "title": " ",
    "t0": 229.947,
    "t1": 241.324
   },
@@ -769,8 +756,7 @@
      "t": 265.415
     }
    ],
-   "label": "DIA 17",
-   "title": "105 quilômetros",
+   "title": " ",
    "t0": 260.66,
    "t1": 270.032
   },
@@ -780,8 +766,7 @@
    "type": "object",
    "mood": "wonder",
    "delay": -0.3,
-   "label": "DIA 19",
-   "title": "419 quilômetros",
+   "title": " ",
    "t0": 270.032,
    "t1": 281.414
   },
@@ -839,8 +824,7 @@
      "t": 304.225
     }
    ],
-   "label": "DIA 21",
-   "title": "1.678 quilômetros",
+   "title": " ",
    "t0": 295.385,
    "t1": 306.403
   },
@@ -850,8 +834,7 @@
    "type": "object",
    "mood": "wonder",
    "delay": -0.4,
-   "label": "DIA 23",
-   "title": "6.710 quilômetros",
+   "title": " ",
    "t0": 306.403,
    "t1": 316.691
   },
@@ -882,8 +865,7 @@
      "t": 327.733
     }
    ],
-   "label": "DIA 24",
-   "title": "13.422 quilômetros",
+   "title": " ",
    "t0": 319.756,
    "t1": 329.592
   },
@@ -922,8 +904,7 @@
      "t": 344.137
     }
    ],
-   "label": "DIA 27",
-   "title": "107 mil quilômetros",
+   "title": " ",
    "t0": 338.062,
    "t1": 348.823
   },
@@ -975,8 +956,7 @@
      "t": 374.431
     }
    ],
-   "label": "DIA 29",
-   "title": "429 mil quilômetros",
+   "title": " ",
    "t0": 366.024,
    "t1": 375.785
   },
@@ -994,8 +974,7 @@
      "t": 380.785
     }
    ],
-   "label": "DIA 30",
-   "title": "859 mil quilômetros",
+   "title": " ",
    "t0": 375.785,
    "t1": 383.667
   },
@@ -1061,8 +1040,7 @@
      "t": 408.584
     }
    ],
-   "label": "DIA 32",
-   "title": "Uma estrela",
+   "title": " ",
    "t0": 406.833,
    "t1": 410.465
   },

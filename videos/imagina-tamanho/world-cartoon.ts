@@ -121,7 +121,7 @@ const tmPlanetTex = (kind: string) => tmTex('tm-pl-' + kind, 1024, 512, (g, r) =
 
 // ---------------------------------------------------------------- the world, built once
 const tmInit = (w: World) => {
-  const st = TM.st = CT.stage(w, { light: 'day', fog: false, far: 3000 });
+  const st = TM.st = CT.stage(w, { light: 'day', fog: false, far: 3000, clouds: false });
   CT.ground(st, { kind: 'grass', size: 1400, tile: 10, at: [400, 0] });
   const b = CT.batch();
   // ROOM: floor, two walls, the bed, a desk, a window card (see tmRoomFx), the ceiling
