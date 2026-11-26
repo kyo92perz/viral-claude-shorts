@@ -20,74 +20,101 @@ const STU: tm_V3 = [700, 0, 400], TM_ROOM: tm_V3 = [0, 0, 0], TM_KIT: tm_V3 = [4
 const tmAdd = (a: tm_V3, b: tm_V3): tm_V3 => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
 
 // ---------------------------------------------------------------- the cast: drawn in the 600 x 1000 card (soles y 975)
+// thick black outline, big outlined eyes, white 4-finger gloves, chunky sleeves, baggy pants, white sneakers.
+const TM_INK = '#141014', TM_HEAD = '#ecebfa';
+type tmP = [number, number];
+const tmRad = (d: number) => (d * Math.PI) / 180;
+const tmCurve = (pts: tmP[], n = 8): tmP[] => { if (pts.length < 3) return pts; const P = [pts[0], ...pts, pts[pts.length - 1]], o: tmP[] = [];
+  for (let i = 1; i < P.length - 2; i++) for (let k = 0; k < n; k++) { const t = k / n, t2 = t * t, t3 = t2 * t, f = (j: 0 | 1) => 0.5 * (2 * P[i][j] + (-P[i - 1][j] + P[i + 1][j]) * t + (2 * P[i - 1][j] - 5 * P[i][j] + 4 * P[i + 1][j] - P[i + 2][j]) * t2 + (-P[i - 1][j] + 3 * P[i][j] - 3 * P[i + 1][j] + P[i + 2][j]) * t3); o.push([f(0), f(1)]); }
+  o.push(pts[pts.length - 1]); return o; };
+const tmPath = (g: CanvasRenderingContext2D, pts: tmP[], close = true) => { const P = tmCurve(close ? [...pts, pts[0], pts[1]] : pts); g.beginPath(); P.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); if (close) g.closePath(); };
+function tmShape(g: CanvasRenderingContext2D, pts: tmP[], base: string, shade: string, ol = 11) {
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9; for (const [x, y] of pts) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }
+  tmPath(g, pts); const gr = g.createLinearGradient(x0, y0, x1, y1); gr.addColorStop(0.45, base); gr.addColorStop(1, shade); g.fillStyle = gr; g.fill();
+  if (ol) { g.lineWidth = ol; g.strokeStyle = TM_INK; g.lineJoin = 'round'; g.stroke(); } }
+const tmLn = (g: CanvasRenderingContext2D, pts: tmP[], w: number, col = TM_INK) => { tmPath(g, pts, false); g.lineWidth = w; g.strokeStyle = col; g.lineCap = 'round'; g.lineJoin = 'round'; g.stroke(); };
+const tmDark = (hex: string, k = 0.62) => { const n = parseInt(hex.slice(1, 7), 16); const c = (v: number) => Math.round(v * k).toString(16).padStart(2, '0'); return '#' + c(n >> 16) + c((n >> 8) & 255) + c(n & 255); };
+function tmGlove(g: CanvasRenderingContext2D, x: number, y: number, ang: number, s = 1) {
+  const c = Math.cos(ang), sn = Math.sin(ang), T = (u: number, v: number): tmP => [x + (u * c - v * sn) * s, y + (u * sn + v * c) * s];
+  for (const [v, L] of [[-24, 52], [-8, 60], [8, 58], [24, 48]]) { tmLn(g, [T(8, v), T(L, v)], 24); tmLn(g, [T(8, v), T(L, v)], 13, '#fbfbfd'); }
+  tmLn(g, [T(-6, -30), T(22, -50)], 24); tmLn(g, [T(-6, -30), T(22, -50)], 13, '#fbfbfd');
+  tmShape(g, [T(-30, -30), T(14, -34), T(24, 0), T(14, 34), T(-30, 30), T(-40, 0)], '#ffffff', '#d8d8e2', 9); }
 // pose: e = eyes (dot wide closed half angry glow), m = mouth (smile flat open grin wavy o), a = [left, right] arm angles
 // in degrees from straight down (90 = sideways, 170 = up), w = walk phase (radians), t = head tilt (degrees)
 interface TmPose { e?: string; m?: string; a?: [number, number]; w?: number; t?: number }
 interface TmLook { top: string; top2?: string; pants?: string; shoes?: string; hair: string; hairC?: string; hat?: string; dress?: string; glasses?: boolean; stache?: string }
 const TM_LOOK: Record<string, TmLook> = {
-  tuco: { top: '#2fa04a', top2: '#f6c744', pants: '#26304e', shoes: '#e0302a', hair: 'curly', hairC: '#1c1410' },
-  mae: { top: '#c84a8a', pants: '#c84a8a', shoes: '#3a2a1a', hair: 'bun', hairC: '#1c1410', dress: '#c84a8a' },
-  biel: { top: '#f29a4a', pants: '#3a3a4a', shoes: '#f0ece2', hair: 'short', hairC: '#5a3a20', hat: '#d0342c' },
+  tuco: { top: '#e0342c', top2: '#f6c744', pants: '#26305a', shoes: '#ffffff', hair: 'spiky', hairC: '#18141a' },
+  mae: { top: '#c84a8a', pants: '#c84a8a', shoes: '#3a2a1a', hair: 'bun', hairC: '#3a2216', dress: '#c84a8a' },
+  biel: { top: '#f29a4a', pants: '#3a3a4a', shoes: '#ffffff', hair: 'short', hairC: '#5a3a20', hat: '#2f6ad0' },
   rep: { top: '#3a6ad8', pants: '#2a2a3a', shoes: '#1c1410', hair: 'long', hairC: '#6a3a20' },
   ger: { top: '#f4f2ee', top2: '#2a3a5a', pants: '#2a3a5a', shoes: '#1c1410', hair: 'short', hairC: '#9a9aa4', glasses: true },
   tio: { top: '#e8c86a', pants: '#4a4a5a', shoes: '#3a2a1a', hair: 'short', hairC: '#3a2216', stache: '#3a2216' },
 };
-const TM_HEAD = '#ecebfa', TM_HEADS = '#c4c2ea';
-const tmRad = (d: number) => (d * Math.PI) / 180;
 function tmDraw(k: string, P: TmPose = {}) {
   const L = TM_LOOK[k], e = P.e ?? 'dot', m = P.m ?? 'smile', a = P.a ?? [8, 8], w = P.w ?? 0, tilt = P.t ?? 0;
-  const key = `tm-${k}-${e}-${m}-${Math.round(a[0] / 5)}-${Math.round(a[1] / 5)}-${Math.round(Math.sin(w) * 6)}-${Math.round(tilt)}`;
-  return { key, draw: (p: any, light: number) => {
-    const ws = Math.sin(w);
-    // legs (thin) and sneakers
-    for (const [lx, d] of [[262, -1], [338, 1]] as [number, number][]) {
-      const sw = ws * 26 * d, fx = lx + sw, fy = 952 - Math.max(0, -ws * d) * 18;
-      p.line([[lx, 720], [fx, fy]], L.dress ? TM_HEAD : (L.pants ?? '#26304e'), 26);
-      p.ell(fx + d * 10, fy + 8, 46, 22, L.shoes ?? '#e8e8f4', 9);
+  const key = `tk-${k}-${e}-${m}-${Math.round(a[0] / 5)}-${Math.round(a[1] / 5)}-${Math.round(Math.sin(w) * 6)}-${Math.round(tilt)}`;
+  return { key, draw: (p: any, light: number) => { const g: CanvasRenderingContext2D = p.g; g.save();
+    if (p.rot) { const r = p.rot; g.translate(r[1] + (r[3] ?? 0), r[2] + (r[4] ?? 0)); g.rotate(r[0]); g.translate(-r[1], -r[2]); }
+    const ws = Math.sin(w), top = L.top, topS = tmDark(top);
+    // legs: baggy pants (or bare legs under a dress) + sneakers
+    for (const [lx, d] of [[255, -1], [345, 1]] as [number, number][]) {
+      const sw = ws * 34 * d, fx = lx + sw + d * 6, fy = 930 - Math.max(0, -ws * d) * 22, kx = (lx + fx) / 2 + d * 6;
+      const col = L.dress ? TM_HEAD : (L.pants ?? '#26305a'), wid = L.dress ? 34 : 70;
+      tmLn(g, [[lx, 680], [kx, 810], [fx, fy]], wid + 20); tmLn(g, [[lx, 680], [kx, 810], [fx, fy]], wid, col);
+      const sx = fx + d * 14, sh: tmP[] = [[sx - 54, fy + 20], [sx - 46, fy - 16], [sx + 18, fy - 22], [sx + 60, fy + 10], [sx + 58, fy + 38], [sx - 54, fy + 40]];
+      tmShape(g, sh, L.shoes ?? '#ffffff', tmDark(L.shoes ?? '#ffffff', 0.8), 10); tmLn(g, [[sx - 52, fy + 28], [sx + 58, fy + 28]], 6, '#9a9aa8');
     }
-    // the body (hoodie / blazer / coat), a skirt for a dress
-    const body: [number, number][] = [[198, 492], [402, 492], [412, 600], [408, 732], [192, 732], [188, 600]];
-    p.gradFill(body, L.top, '#00000033', light, 0.4); p.poly(body, null, 10);
-    if (L.dress) { const sk: [number, number][] = [[200, 690], [400, 690], [440, 800], [160, 800]]; p.gradFill(sk, L.dress, '#00000033', light, 0.4); p.poly(sk, null, 10); }
-    if (k === 'tuco') { p.poly([[226, 640], [374, 640], [362, 712], [238, 712]], '#25843c', 7); p.ell(300, 494, 86, 26, L.top2, 8); p.stroke([[282, 500], [278, 590]], 7, '#ffffff'); p.stroke([[318, 500], [322, 590]], 7, '#ffffff'); }
-    else if (L.top2) p.stroke([[300, 500], [300, 728]], 14, L.top2);
-    // arms (from the shoulders) and round hands
-    for (const [sx, ang, d] of [[208, a[0], -1], [392, a[1], 1]] as [number, number, number][]) {
-      const r = tmRad(ang), hx = sx + d * Math.sin(r) * 200, hy = 510 + Math.cos(r) * 200;
-      p.line([[sx, 510], [(sx + hx) / 2 + d * 8, (510 + hy) / 2], [hx, hy]], L.top, 30);
-      p.ell(hx, hy, 26, 26, '#ffffff', 8);
+    // body
+    const body: tmP[] = [[205, 415], [300, 398], [395, 415], [432, 540], [424, 696], [300, 710], [176, 696], [168, 540]];
+    tmShape(g, body, top, topS, 12);
+    if (L.dress) { const sk: tmP[] = [[178, 640], [422, 640], [470, 790], [130, 790]]; tmShape(g, sk, L.dress, tmDark(L.dress), 11); }
+    if (k === 'tuco') { tmPath(g, [[222, 600], [378, 600], [400, 676], [200, 676]]); g.fillStyle = tmDark(top, 0.85); g.fill(); g.lineWidth = 8; g.strokeStyle = TM_INK; g.stroke();
+      tmShape(g, [[210, 428], [250, 386], [300, 380], [350, 386], [390, 428], [300, 458]], tmDark(top, 0.85), tmDark(top, 0.6), 10);
+      for (const [x0, x1] of [[278, 270], [322, 330]]) { tmLn(g, [[x0, 450], [x1, 530]], 15); tmLn(g, [[x0, 450], [x1, 530]], 8, L.top2!); g.fillStyle = L.top2!; g.strokeStyle = TM_INK; g.lineWidth = 6; g.beginPath(); g.ellipse(x1, 542, 8, 13, 0, 0, 7); g.fill(); g.stroke(); } }
+    else if (k === 'ger') { tmShape(g, [[262, 404], [338, 404], [318, 600], [282, 600]], L.top2!, tmDark(L.top2!), 8); tmShape(g, [[300, 420], [314, 440], [300, 520], [286, 440]], '#c83a3a', '#8a2020', 6); }
+    else if (k === 'rep') { tmShape(g, [[262, 404], [338, 404], [300, 500]], '#fbfbfd', '#d8d8e2', 8); }
+    else if (L.top2) tmLn(g, [[300, 420], [300, 690]], 14, L.top2);
+    // arms: chunky sleeves from the shoulders, gloves at the ends
+    for (const [sx, ang, d] of [[214, a[0], -1], [386, a[1], 1]] as [number, number, number][]) {
+      const r = tmRad(ang), hx = sx + d * Math.sin(r) * 140, hy = 450 + Math.cos(r) * 150, mx = (sx + hx) / 2 + d * 10 * Math.cos(r), my = (450 + hy) / 2;
+      tmLn(g, [[sx, 450], [mx, my], [hx, hy]], 98); tmLn(g, [[sx, 450], [mx, my], [hx, hy]], 76, top);
+      const ga = Math.atan2(hy - my, hx - mx); tmGlove(g, hx + Math.cos(ga) * 19, hy + Math.sin(ga) * 19, ga, 0.85);
     }
-    // neck and head
-    p.line([[300, 432], [300, 492]], TM_HEAD, 18);
-    const hr = 182, hx0 = 300 + Math.sin(tmRad(tilt)) * 20, hy0 = 252;
-    const head: [number, number][] = []; for (let i = 0; i < 48; i++) { const t = (i / 48) * Math.PI * 2; head.push([hx0 + Math.cos(t) * hr, hy0 + Math.sin(t) * hr]); }
-    // hair behind
-    if (L.hair === 'curly') for (const [cx, cy] of [[-0.78, -0.55], [-0.42, -0.86], [0.02, -0.98], [0.44, -0.86], [0.78, -0.55]] as [number, number][]) p.ell(hx0 + cx * hr, hy0 + cy * hr, hr * 0.34, hr * 0.32, L.hairC, 9);
-    if (L.hair === 'bun') p.ell(hx0, hy0 - hr * 1.02, hr * 0.34, hr * 0.32, L.hairC, 9);
-    if (L.hair === 'long') p.poly([[hx0 - hr * 1.06, hy0 - 20], [hx0 - hr * 1.12, hy0 + hr * 1.45], [hx0 + hr * 1.12, hy0 + hr * 1.45], [hx0 + hr * 1.06, hy0 - 20]], L.hairC, 9);
-    p.shadedFill(head, TM_HEAD, TM_HEADS, light, hr); p.inkRing(head, 12, light + Math.PI, 0.35);
-    // hair in front / hats
-    if (L.hair === 'curly') p.poly([[hx0 - hr * 0.88, hy0 - hr * 0.42], [hx0 - hr * 0.5, hy0 - hr * 0.95], [hx0, hy0 - hr * 1.04], [hx0 + hr * 0.5, hy0 - hr * 0.95], [hx0 + hr * 0.88, hy0 - hr * 0.42], [hx0 + hr * 0.45, hy0 - hr * 0.6], [hx0 + hr * 0.15, hy0 - hr * 0.46], [hx0 - hr * 0.15, hy0 - hr * 0.62], [hx0 - hr * 0.5, hy0 - hr * 0.48]], L.hairC, 9);
-    else if (L.hair === 'bun' || L.hair === 'short' || L.hair === 'long') p.poly([[hx0 - hr * 0.98, hy0 - hr * 0.15], [hx0 - hr * 0.8, hy0 - hr * 0.8], [hx0, hy0 - hr * 1.03], [hx0 + hr * 0.8, hy0 - hr * 0.8], [hx0 + hr * 0.98, hy0 - hr * 0.15], [hx0 + hr * 0.4, hy0 - hr * 0.55], [hx0 - hr * 0.4, hy0 - hr * 0.55]], L.hairC, 9);
-    if (L.hat) { p.poly([[hx0 - hr * 0.98, hy0 - hr * 0.3], [hx0 - hr * 0.8, hy0 - hr * 0.9], [hx0, hy0 - hr * 1.06], [hx0 + hr * 0.8, hy0 - hr * 0.9], [hx0 + hr * 0.98, hy0 - hr * 0.3]], L.hat, 9); p.poly([[hx0 + hr * 0.2, hy0 - hr * 0.34], [hx0 + hr * 1.45, hy0 - hr * 0.3], [hx0 + hr * 1.3, hy0 - hr * 0.5], [hx0 + hr * 0.2, hy0 - hr * 0.55]], L.hat, 9); }
-    // the face
-    const ex = 64, ey = hy0 + 10;
-    if (e === 'dot') for (const d of [-1, 1]) { p.ell(hx0 + d * ex, ey, 17, 23, '#1e2350', 0); p.dot(hx0 + d * ex + 5, ey - 8, 6, '#ffffff'); }
-    if (e === 'wide') for (const d of [-1, 1]) { p.ell(hx0 + d * ex, ey, 34, 34, '#ffffff', 9); p.dot(hx0 + d * ex, ey + 3, 11, '#1e2350'); }
-    if (e === 'closed') for (const d of [-1, 1]) p.stroke([[hx0 + d * ex - 30, ey], [hx0 + d * ex + 30, ey]], 12, '#1e2350');
-    if (e === 'half') for (const d of [-1, 1]) { p.stroke([[hx0 + d * ex - 30, ey - 10], [hx0 + d * ex + 30, ey - 10]], 11, '#1e2350'); p.ell(hx0 + d * ex, ey + 8, 15, 13, '#1e2350', 0); }
-    if (e === 'angry') for (const d of [-1, 1]) { p.ell(hx0 + d * ex, ey + 6, 16, 20, '#1e2350', 0); p.stroke([[hx0 + d * (ex + 36), ey - 46], [hx0 + d * (ex - 26), ey - 22]], 13, '#1e2350'); }
-    if (e === 'glow') for (const d of [-1, 1]) { p.ell(hx0 + d * ex, ey, 30, 34, '#ffe27a', 8); p.dot(hx0 + d * ex, ey, 8, '#ffffff'); }
-    if (e !== 'angry') for (const d of [-1, 1]) p.stroke([[hx0 + d * ex - 34, ey - 60], [hx0 + d * ex + 34, ey - 60]], 13, '#1e2350');
-    if (L.glasses) for (const d of [-1, 1]) p.ell(hx0 + d * ex, ey, 40, 40, null, 8);
-    if (L.stache) p.poly([[hx0 - 50, ey + 82], [hx0, ey + 66], [hx0 + 50, ey + 82], [hx0, ey + 96]], L.stache, 6);
-    const my = hy0 + 112;
-    if (m === 'smile') p.arc(hx0, my - 18, 40, 26, 20, 160, 11, '#1e2350');
-    if (m === 'flat') p.stroke([[hx0 - 28, my], [hx0 + 28, my]], 11, '#1e2350');
-    if (m === 'wavy') p.stroke([[hx0 - 42, my], [hx0 - 28, my - 12], [hx0 - 14, my], [hx0, my - 12], [hx0 + 14, my], [hx0 + 28, my - 12], [hx0 + 42, my]], 10, '#1e2350');
-    if (m === 'open') p.poly([[hx0 - 40, my - 14], [hx0 + 40, my - 14], [hx0 + 28, my + 34], [hx0, my + 42], [hx0 - 28, my + 34]], '#c8384a', 9);
-    if (m === 'grin') { p.poly([[hx0 - 58, my - 18], [hx0 + 58, my - 18], [hx0 + 40, my + 30], [hx0, my + 40], [hx0 - 40, my + 30]], '#ffffff', 9); }
-    if (m === 'o') p.ell(hx0, my + 6, 18, 24, '#c8384a', 8);
+    // head
+    const R = 150, HX = 300 + Math.sin(tmRad(tilt)) * 26, HY = 238;
+    if (L.hair === 'long') tmShape(g, [[HX - 162, HY - 30], [HX - 176, HY + 210], [HX + 176, HY + 210], [HX + 162, HY - 30], [HX, HY - 170]], L.hairC!, tmDark(L.hairC!), 10);
+    if (L.hair === 'bun') { g.beginPath(); g.arc(HX, HY - R - 30, 56, 0, 7); g.fillStyle = L.hairC!; g.fill(); g.lineWidth = 10; g.strokeStyle = TM_INK; g.stroke(); }
+    g.beginPath(); g.arc(HX, HY, R, 0, Math.PI * 2); const hg = g.createRadialGradient(HX - 55, HY - 62, 16, HX, HY, R); hg.addColorStop(0, '#ffffff'); hg.addColorStop(0.7, '#f3f2f7'); hg.addColorStop(1, '#c9c8d6'); g.fillStyle = hg; g.fill(); g.lineWidth = 12; g.strokeStyle = TM_INK; g.stroke();
+    // hair / hats
+    const hc = L.hairC ?? '#18141a';
+    if (L.hair === 'spiky') { const sp: tmP[] = [[-108, -100], [-136, -150], [-78, -134], [-72, -196], [-26, -150], [4, -212], [32, -150], [86, -190], [80, -130], [140, -144], [106, -94], [36, -126], [-36, -124]];
+      g.beginPath(); sp.forEach(([x, y], i) => (i ? g.lineTo(HX + x, HY + y) : g.moveTo(HX + x, HY + y))); g.closePath(); g.fillStyle = hc; g.fill(); g.lineWidth = 8; g.strokeStyle = TM_INK; g.lineJoin = 'round'; g.stroke(); }
+    else if (L.hair !== 'none') { const cap: tmP[] = [[HX - 148, HY - 20], [HX - 120, HY - 110], [HX, HY - 156], [HX + 120, HY - 110], [HX + 148, HY - 20], [HX + 90, HY - 74], [HX, HY - 90], [HX - 90, HY - 74]]; tmShape(g, cap, L.hat ?? hc, tmDark(L.hat ?? hc), 9);
+      if (L.hat) tmShape(g, [[HX + 40, HY - 74], [HX + 196, HY - 66], [HX + 180, HY - 40], [HX + 40, HY - 46]], L.hat, tmDark(L.hat), 9); }
+    // eyes
+    const ey = HY + 4;
+    for (const [ex, d] of [[-52, -1], [56, 1]] as [number, number][]) { const cx = HX + ex;
+      if (e === 'closed') { tmLn(g, [[cx - 36, ey + 6], [cx, ey - 10], [cx + 36, ey + 6]], 10); continue; }
+      const big = e === 'wide' ? 1.12 : 1; g.beginPath(); g.ellipse(cx, ey, 44 * big, 54 * big, 0, 0, 7); g.fillStyle = e === 'glow' ? '#ffe27a' : '#ffffff'; g.fill(); g.lineWidth = 8; g.strokeStyle = TM_INK; g.stroke();
+      const pr = e === 'wide' ? 13 : 18; g.beginPath(); g.ellipse(cx + 4, ey + (e === 'half' ? 14 : 4), pr, pr * 1.25, 0, 0, 7); g.fillStyle = '#111016'; g.fill();
+      g.beginPath(); g.arc(cx + 9, ey - 4 + (e === 'half' ? 10 : 0), 5, 0, 7); g.fillStyle = '#ffffff'; g.fill();
+      if (e === 'half') { g.save(); g.beginPath(); g.ellipse(cx, ey, 44, 54, 0, 0, 7); g.clip(); g.fillStyle = '#e8e7f0'; g.fillRect(cx - 50, ey - 60, 100, 56); g.restore(); tmLn(g, [[cx - 44, ey - 4], [cx + 44, ey - 4]], 9); }
+      if (e === 'angry') tmLn(g, [[cx - d * 44, ey - 76], [cx + d * 30, ey - 50]], 11);
+      else tmLn(g, [[cx - 36, ey - 72 - (e === 'wide' ? 10 : 0)], [cx, ey - 82 - (e === 'wide' ? 10 : 0)], [cx + 36, ey - 72 - (e === 'wide' ? 10 : 0)]], 10);
+      if (L.glasses) { g.beginPath(); g.ellipse(cx, ey, 52, 60, 0, 0, 7); g.lineWidth = 7; g.strokeStyle = TM_INK; g.stroke(); }
+    }
+    if (L.stache) tmShape(g, [[HX - 50, HY + 82], [HX, HY + 66], [HX + 50, HY + 82], [HX, HY + 96]], L.stache, L.stache, 6);
+    // mouth
+    const my = HY + 96;
+    const open = (pts: tmP[]) => { tmPath(g, pts); g.fillStyle = '#6a1424'; g.fill(); g.save(); g.clip(); g.fillStyle = '#ee6a7a'; g.beginPath(); g.ellipse(HX + 2, my + 44, 30, 18, 0, 0, 7); g.fill(); g.restore(); tmPath(g, pts); g.lineWidth = 8; g.strokeStyle = TM_INK; g.stroke(); };
+    if (m === 'smile') tmLn(g, [[HX - 36, my - 8], [HX, my + 14], [HX + 36, my - 8]], 9);
+    if (m === 'flat') tmLn(g, [[HX - 26, my + 4], [HX + 26, my + 4]], 9);
+    if (m === 'wavy') tmLn(g, [[HX - 38, my + 4], [HX - 24, my - 6], [HX - 10, my + 4], [HX + 4, my - 6], [HX + 18, my + 4], [HX + 32, my - 6]], 8);
+    if (m === 'open') open([[HX - 38, my - 8], [HX + 40, my - 10], [HX + 30, my + 36], [HX, my + 48], [HX - 28, my + 36]]);
+    if (m === 'grin') { open([[HX - 52, my - 14], [HX + 54, my - 14], [HX + 38, my + 30], [HX, my + 42], [HX - 38, my + 30]]); tmShape(g, [[HX - 46, my - 12], [HX + 48, my - 12], [HX + 44, my + 2], [HX - 42, my + 2]], '#ffffff', '#e8e8ee', 0); }
+    if (m === 'o') open([[HX - 20, my - 6], [HX + 20, my - 6], [HX + 24, my + 30], [HX, my + 42], [HX - 24, my + 30]]);
+    g.restore();
   } };
 }
 // put a character in the frame: k = cast name, h = height in metres, pose
