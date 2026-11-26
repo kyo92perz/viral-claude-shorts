@@ -64,4 +64,5 @@ defineVisuals({
   'test-bath': { bg: '#7a9aa8', html: () => svg(`${rgBath(rgChar('refl', 540, 1400, 1.0, true))}${rgChar('davi', 540, 1900, 1.15)}${rgPrint('hp', 400, 500)}`), anim(tl, s) { bzFace(tl, '#sc-test-bath #refl', s.t0, 'glow', 'grin'); } },
   'test-car': { bg: '#070b1c', html: () => svg(rgCar()), anim() {} },
   'test-bed': { bg: '#141a2e', html: () => svg(`${rgBed()}${rgClock('ck', '2:59', 540, 760, 0.8)}`), anim() {} },
+  'cover-a': { bg: '#2a3440', html: () => svg(`<g transform="translate(-540 -540) scale(2)">${rgBath(rgChar('davi', 540, 1330, 1.5, true, 'rf'))}${rgCloth('cl', 240, 300, 600, 700)}</g><g id="nuca"><circle cx="540" cy="1820" r="330" fill="#1c1410"/>${[...Array(9)].map((_, i) => `<circle cx="${250 + i * 72}" cy="${1560 + (i % 2) * 30}" r="70" fill="#1c1410"/>`).join('')}</g>${bzSign('t1', 'NUNCA OLHE O', 540, 230, -4, '#fff', BZ.ink, 96)}${bzSign('t2', 'ESPELHO ÀS 3H', 540, 380, 3, BZ.red, '#fff', 110)}${bzVignette(0.6)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #rf', s.t0, 'glow', 'grin'); tl.set('#sc-cover-a #cl', { y: -560 }, s.t0); } },
 });
