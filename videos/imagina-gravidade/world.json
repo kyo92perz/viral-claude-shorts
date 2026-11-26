@@ -1,0 +1,70 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "shots": [
+  {
+   "id": "test-suits",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-hoop",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-mask",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-boil",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-above",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-space",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-ropes",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  }
+ ]
+}
