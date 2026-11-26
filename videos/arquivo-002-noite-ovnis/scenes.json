@@ -1,0 +1,1241 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "look": "rich",
+ "captions": true,
+ "badge": {
+  "title": "ARQUIVO PROIBIDO",
+  "ep": "CASO Nº 002"
+ },
+ "music": {
+  "bpm": 72,
+  "key": "E"
+ },
+ "notes": "ARQUIVO PROIBIDO, Caso Nº 002: the Official UFO Night (19 May 1986). A documentary: real photos (Wikimedia Commons, credits in assets/CREDITOS.txt) with slow camera moves, an animated radar scope, the map of the bases and routes, time cards, the official report, the radio waveforms, and animated reconstructions of the jets at night (tagged). Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "o-sky",
+   "from": 0,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 0,
+     "dt": 0.3,
+     "sfx": "hit",
+     "t": 0.7
+    }
+   ],
+   "t0": 0,
+   "t1": 8.458
+  },
+  {
+   "id": "o-radar",
+   "from": 15,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 23,
+     "sfx": "beep",
+     "t": 12.491
+    }
+   ],
+   "t0": 8.458,
+   "t1": 17.118
+  },
+  {
+   "id": "o-jets",
+   "from": 31,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "j",
+     "at": 31,
+     "dt": 0.15,
+     "sfx": "whoosh",
+     "t": 17.248
+    }
+   ],
+   "t0": 17.118,
+   "t1": 21.778
+  },
+  {
+   "id": "o-press",
+   "from": 38,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 21.778,
+   "t1": 30.582
+  },
+  {
+   "id": "o-quote",
+   "from": 59,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "t0": 30.582,
+   "t1": 36.001
+  },
+  {
+   "id": "o-archive",
+   "from": 69,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "t0": 36.001,
+   "t1": 41.487
+  },
+  {
+   "id": "o-docs",
+   "from": 83,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 91,
+     "sfx": "thump",
+     "t": 44.829
+    }
+   ],
+   "t0": 41.487,
+   "t1": 46.193
+  },
+  {
+   "id": "title",
+   "from": 94,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "t",
+     "at": 97,
+     "sfx": "impact",
+     "t": 47.282
+    },
+    {
+     "id": "c",
+     "at": 100,
+     "sfx": "hit",
+     "t": 49.159
+    }
+   ],
+   "t0": 46.193,
+   "t1": 53.535
+  },
+  {
+   "id": "cindacta",
+   "from": 107,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 53.535,
+   "t1": 57.252
+  },
+  {
+   "id": "echo",
+   "from": 114,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 114,
+     "dt": 0.6,
+     "sfx": "beep",
+     "t": 57.832
+    },
+    {
+     "id": "b",
+     "at": 119,
+     "sfx": "beep",
+     "t": 59.03
+    }
+   ],
+   "t0": 57.252,
+   "t1": 63.07
+  },
+  {
+   "id": "cmap",
+   "from": 128,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 63.07,
+   "t1": 68.025
+  },
+  {
+   "id": "network",
+   "from": 140,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 68.025,
+   "t1": 75.443
+  },
+  {
+   "id": "bases",
+   "from": 159,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "s",
+     "at": 171,
+     "sfx": "tick",
+     "t": 80.472
+    },
+    {
+     "id": "a",
+     "at": 172,
+     "sfx": "tick",
+     "t": 81.006
+    }
+   ],
+   "t0": 75.443,
+   "t1": 83.487
+  },
+  {
+   "id": "santacruz",
+   "from": 177,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 83.487,
+   "t1": 85.698
+  },
+  {
+   "id": "f5photo",
+   "from": 183,
+   "type": "object",
+   "mood": "tense",
+   "t0": 85.698,
+   "t1": 87.374
+  },
+  {
+   "id": "anapolis",
+   "from": 188,
+   "type": "object",
+   "mood": "tense",
+   "t0": 87.374,
+   "t1": 89.906
+  },
+  {
+   "id": "miragephoto",
+   "from": 195,
+   "type": "object",
+   "mood": "tense",
+   "t0": 89.906,
+   "t1": 93.317
+  },
+  {
+   "id": "sjc",
+   "from": 202,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 202,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 94.117
+    }
+   ],
+   "t0": 93.317,
+   "t1": 101.309
+  },
+  {
+   "id": "tower",
+   "from": 222,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "night"
+   ],
+   "t0": 101.309,
+   "t1": 107.168
+  },
+  {
+   "id": "q-torre",
+   "from": 238,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "t0": 107.168,
+   "t1": 116.288
+  },
+  {
+   "id": "colors",
+   "from": 259,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "night"
+   ],
+   "t0": 116.288,
+   "t1": 123.063
+  },
+  {
+   "id": "runway",
+   "from": 275,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 276,
+     "sfx": "off",
+     "t": 123.291
+    },
+    {
+     "id": "b",
+     "at": 289,
+     "sfx": "hit",
+     "t": 128.417
+    }
+   ],
+   "t0": 123.063,
+   "t1": 131.76
+  },
+  {
+   "id": "gru",
+   "from": 296,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 131.76,
+   "t1": 138.249
+  },
+  {
+   "id": "atcscreen",
+   "from": 314,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 138.249,
+   "t1": 144.13
+  },
+  {
+   "id": "xingu",
+   "from": 329,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 329,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 144.93
+    }
+   ],
+   "t0": 144.13,
+   "t1": 149.644
+  },
+  {
+   "id": "ozires",
+   "from": 346,
+   "type": "object",
+   "mood": "curious",
+   "t0": 149.644,
+   "t1": 157.296
+  },
+  {
+   "id": "redstars",
+   "from": 367,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "night"
+   ],
+   "t0": 157.296,
+   "t1": 171.049
+  },
+  {
+   "id": "ozquote",
+   "from": 394,
+   "type": "object",
+   "mood": "curious",
+   "t0": 171.049,
+   "t1": 180.436
+  },
+  {
+   "id": "alert",
+   "from": 416,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 416,
+     "dt": 0.4,
+     "sfx": "siren",
+     "t": 181.236
+    }
+   ],
+   "t0": 180.436,
+   "t1": 185.749
+  },
+  {
+   "id": "anaradar",
+   "from": 431,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 185.749,
+   "t1": 193.695
+  },
+  {
+   "id": "cerqueira",
+   "from": 450,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "i",
+     "at": 465,
+     "sfx": "impact",
+     "t": 199.445
+    }
+   ],
+   "t0": 193.695,
+   "t1": 200.86
+  },
+  {
+   "id": "jb17",
+   "from": 467,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "h",
+     "at": 467,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 201.66
+    }
+   ],
+   "t0": 200.86,
+   "t1": 213.349
+  },
+  {
+   "id": "takeoff",
+   "from": 495,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "t",
+     "at": 495,
+     "dt": 0.15,
+     "sfx": "whoosh",
+     "t": 213.479
+    }
+   ],
+   "t0": 213.349,
+   "t1": 217.947
+  },
+  {
+   "id": "chase1",
+   "from": 503,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "v",
+     "at": 509,
+     "sfx": "sting",
+     "t": 219.989
+    }
+   ],
+   "t0": 217.947,
+   "t1": 224.488
+  },
+  {
+   "id": "machexp",
+   "from": 522,
+   "type": "object",
+   "mood": "curious",
+   "t0": 224.488,
+   "t1": 227.146
+  },
+  {
+   "id": "chase1b",
+   "from": 530,
+   "type": "object",
+   "mood": "energetic",
+   "t0": 227.146,
+   "t1": 231.566
+  },
+  {
+   "id": "sea",
+   "from": 543,
+   "type": "object",
+   "mood": "tense",
+   "t0": 231.566,
+   "t1": 233.726
+  },
+  {
+   "id": "f5sea",
+   "from": 548,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 233.726,
+   "t1": 237.621
+  },
+  {
+   "id": "q-pil1",
+   "from": 558,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "t0": 237.621,
+   "t1": 246.58
+  },
+  {
+   "id": "africa",
+   "from": 578,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "night"
+   ],
+   "t0": 246.58,
+   "t1": 256.19
+  },
+  {
+   "id": "jg116",
+   "from": 601,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "h",
+     "at": 601,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 256.99
+    }
+   ],
+   "t0": 256.19,
+   "t1": 264.373
+  },
+  {
+   "id": "lock",
+   "from": 621,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 625,
+     "sfx": "beep",
+     "t": 265.569
+    }
+   ],
+   "t0": 264.373,
+   "t1": 269.059
+  },
+  {
+   "id": "vanish",
+   "from": 633,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "v",
+     "at": 645,
+     "sfx": "off",
+     "t": 273.171
+    }
+   ],
+   "t0": 269.059,
+   "t1": 277.667
+  },
+  {
+   "id": "zip",
+   "from": 657,
+   "type": "object",
+   "mood": "energetic",
+   "keys": [
+    {
+     "id": "z",
+     "at": 669,
+     "sfx": "whoosh",
+     "t": 281.754
+    }
+   ],
+   "t0": 277.667,
+   "t1": 285.568
+  },
+  {
+   "id": "mach15",
+   "from": 678,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "m",
+     "at": 688,
+     "sfx": "impact",
+     "t": 289.964
+    }
+   ],
+   "t0": 285.568,
+   "t1": 290.714
+  },
+  {
+   "id": "machcmp",
+   "from": 691,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "a",
+     "at": 691,
+     "dt": 0.5,
+     "sfx": "tick",
+     "t": 291.194
+    },
+    {
+     "id": "b",
+     "at": 691,
+     "dt": 1.4,
+     "sfx": "tick",
+     "t": 292.094
+    },
+    {
+     "id": "c",
+     "at": 691,
+     "dt": 2.3,
+     "sfx": "tick",
+     "t": 292.994
+    },
+    {
+     "id": "d",
+     "at": 697,
+     "sfx": "impact",
+     "t": 292.796
+    }
+   ],
+   "t0": 290.714,
+   "t1": 295.036
+  },
+  {
+   "id": "noeye",
+   "from": 703,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night"
+   ],
+   "t0": 295.036,
+   "t1": 299.207
+  },
+  {
+   "id": "jb07",
+   "from": 716,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "h",
+     "at": 716,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 300.007
+    }
+   ],
+   "t0": 299.207,
+   "t1": 310.525
+  },
+  {
+   "id": "tail13",
+   "from": 744,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 754,
+     "sfx": "sting",
+     "t": 314.025
+    }
+   ],
+   "t0": 310.525,
+   "t1": 318.301
+  },
+  {
+   "id": "turn",
+   "from": 764,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 318.301,
+   "t1": 327.244
+  },
+  {
+   "id": "q-pil2",
+   "from": 792,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "t0": 327.244,
+   "t1": 334.199
+  },
+  {
+   "id": "jg98",
+   "from": 806,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "h",
+     "at": 806,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 334.999
+    }
+   ],
+   "t0": 334.199,
+   "t1": 343.854
+  },
+  {
+   "id": "pattern",
+   "from": 830,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "hum"
+   ],
+   "t0": 343.854,
+   "t1": 352.207
+  },
+  {
+   "id": "q-ctrl",
+   "from": 850,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "static"
+   ],
+   "t0": 352.207,
+   "t1": 359.771
+  },
+  {
+   "id": "sixoclock",
+   "from": 872,
+   "type": "object",
+   "mood": "dark",
+   "t0": 359.771,
+   "t1": 371.858
+  },
+  {
+   "id": "hangar",
+   "from": 908,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "wind"
+   ],
+   "t0": 371.858,
+   "t1": 375.458
+  },
+  {
+   "id": "mechanics",
+   "from": 915,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "night"
+   ],
+   "t0": 375.458,
+   "t1": 384.802
+  },
+  {
+   "id": "last",
+   "from": 935,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "keys": [
+    {
+     "id": "h",
+     "at": 935,
+     "dt": 0.4,
+     "sfx": "tick",
+     "t": 385.602
+    }
+   ],
+   "t0": 384.802,
+   "t1": 390.582
+  },
+  {
+   "id": "three",
+   "from": 951,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 952,
+     "sfx": "beep",
+     "t": 390.898
+    },
+    {
+     "id": "b",
+     "at": 963,
+     "sfx": "beep",
+     "t": 394.766
+    },
+    {
+     "id": "c",
+     "at": 971,
+     "sfx": "beep",
+     "t": 397.568
+    }
+   ],
+   "t0": 390.582,
+   "t1": 399.471
+  },
+  {
+   "id": "landing",
+   "from": 976,
+   "type": "object",
+   "mood": "sad",
+   "keys": [
+    {
+     "id": "s",
+     "at": 1000,
+     "sfx": "hit",
+     "t": 408.574
+    }
+   ],
+   "t0": 399.471,
+   "t1": 412.836
+  },
+  {
+   "id": "press",
+   "from": 1006,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.4,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 1018,
+     "sfx": "hit",
+     "t": 418.261
+    }
+   ],
+   "t0": 412.836,
+   "t1": 428.817
+  },
+  {
+   "id": "q-min",
+   "from": 1047,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "t0": 428.817,
+   "t1": 436.099
+  },
+  {
+   "id": "oficial",
+   "from": 1063,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "s",
+     "at": 1087,
+     "sfx": "impact",
+     "t": 444.309
+    }
+   ],
+   "t0": 436.099,
+   "t1": 447.67
+  },
+  {
+   "id": "nopaper",
+   "from": 1093,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "y",
+     "at": 1105,
+     "sfx": "hit",
+     "t": 453.332
+    }
+   ],
+   "t0": 447.67,
+   "t1": 455.652
+  },
+  {
+   "id": "release",
+   "from": 1109,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.4,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 1110,
+     "sfx": "hit",
+     "t": 456.292
+    }
+   ],
+   "t0": 455.652,
+   "t1": 467.533
+  },
+  {
+   "id": "report",
+   "from": 1137,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "t0": 467.533,
+   "t1": 471.647
+  },
+  {
+   "id": "q-doc",
+   "from": 1146,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 1155,
+     "sfx": "sting",
+     "t": 474.65
+    }
+   ],
+   "t0": 471.647,
+   "t1": 485.508
+  },
+  {
+   "id": "solid",
+   "from": 1179,
+   "type": "object",
+   "mood": "epic",
+   "keys": [
+    {
+     "id": "a",
+     "at": 1179,
+     "sfx": "impact",
+     "t": 485.758
+    },
+    {
+     "id": "b",
+     "at": 1180,
+     "sfx": "impact",
+     "t": 486.343
+    },
+    {
+     "id": "c",
+     "at": 1182,
+     "sfx": "impact",
+     "t": 487.789
+    }
+   ],
+   "t0": 485.508,
+   "t1": 495.432
+  },
+  {
+   "id": "list",
+   "from": 1200,
+   "type": "object",
+   "mood": "curious",
+   "keys": [
+    {
+     "id": "a",
+     "at": 1208,
+     "sfx": "tick",
+     "t": 498.672
+    },
+    {
+     "id": "b",
+     "at": 1220,
+     "sfx": "tick",
+     "t": 502.928
+    },
+    {
+     "id": "c",
+     "at": 1228,
+     "sfx": "tick",
+     "t": 505.516
+    },
+    {
+     "id": "d",
+     "at": 1240,
+     "sfx": "tick",
+     "t": 509.656
+    }
+   ],
+   "t0": 495.432,
+   "t1": 511.875
+  },
+  {
+   "id": "audio",
+   "from": 1245,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "static"
+   ],
+   "t0": 511.875,
+   "t1": 525.094
+  },
+  {
+   "id": "skradar",
+   "from": 1271,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.4,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 525.094,
+   "t1": 528.723
+  },
+  {
+   "id": "skeptic",
+   "from": 1281,
+   "type": "object",
+   "mood": "calm",
+   "t0": 528.723,
+   "t1": 534.195
+  },
+  {
+   "id": "planets",
+   "from": 1298,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 1304,
+     "sfx": "pop",
+     "t": 536.18
+    }
+   ],
+   "t0": 534.195,
+   "t1": 537.59
+  },
+  {
+   "id": "double",
+   "from": 1307,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "v",
+     "at": 1331,
+     "sfx": "hit",
+     "t": 546.594
+    }
+   ],
+   "t0": 537.59,
+   "t1": 553.672
+  },
+  {
+   "id": "coast",
+   "from": 1347,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "night"
+   ],
+   "t0": 553.672,
+   "t1": 559.101
+  },
+  {
+   "id": "open",
+   "from": 1360,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "room"
+   ],
+   "t0": 559.101,
+   "t1": 565.198
+  },
+  {
+   "id": "ask",
+   "from": 1375,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "a",
+     "at": 1388,
+     "sfx": "pop",
+     "t": 569.792
+    },
+    {
+     "id": "b",
+     "at": 1390,
+     "sfx": "pop",
+     "t": 570.551
+    },
+    {
+     "id": "c",
+     "at": 1393,
+     "sfx": "pop",
+     "t": 571.69
+    }
+   ],
+   "t0": 565.198,
+   "t1": 575.662
+  },
+  {
+   "id": "next",
+   "from": 1403,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 575.662,
+   "t1": 587.655
+  },
+  {
+   "id": "end",
+   "from": 1430,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 1433,
+     "sfx": "impact",
+     "t": 590.725
+    },
+    {
+     "id": "z",
+     "at": 1433,
+     "dt": 1.496,
+     "sfx": "sting",
+     "t": 592.221
+    }
+   ],
+   "t0": 587.655,
+   "t1": 602.141
+  }
+ ],
+ "duration": 602.141
+}

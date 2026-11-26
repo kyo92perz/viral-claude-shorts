@@ -1,0 +1,355 @@
+{
+ "duration": 602.141,
+ "lines": [
+  {
+   "id": "a01",
+   "who": "ap_narr",
+   "text": "19 de maio de 1986. Uma segunda-feira de lua cheia, céu limpo, sem nenhuma nuvem.",
+   "t0": 0.4,
+   "t1": 8.008
+  },
+  {
+   "id": "a02",
+   "who": "ap_narr",
+   "text": "Naquela noite, os radares da Força Aérea Brasileira registraram 21 objetos que ninguém conseguia identificar. Cinco caças decolaram pra interceptar. Nenhum conseguiu alcançar.",
+   "t0": 8.708,
+   "t1": 21.328
+  },
+  {
+   "id": "a03",
+   "who": "ap_narr",
+   "text": "E quatro dias depois, o próprio Ministro da Aeronáutica chamou a imprensa e disse uma frase que nenhum governo costuma dizer.",
+   "t0": 22.028,
+   "t1": 30.182
+  },
+  {
+   "id": "q01",
+   "who": "ap_min",
+   "text": "Tecnicamente, eu diria aos senhores que nós não temos explicação.",
+   "t0": 30.782,
+   "t1": 35.251
+  },
+  {
+   "id": "a04",
+   "who": "ap_narr",
+   "text": "Hoje, com o relatório oficial da Aeronáutica e as gravações de rádio liberadas pelo Arquivo Nacional, a gente vai reconstruir aquela noite, minuto a minuto.",
+   "t0": 36.251,
+   "t1": 45.843
+  },
+  {
+   "id": "a05",
+   "who": "ap_narr",
+   "text": "Este é o Arquivo Proibido. Caso número 2: a Noite Oficial dos OVNIs.",
+   "t0": 46.443,
+   "t1": 52.235
+  },
+  {
+   "id": "b01",
+   "who": "ap_narr",
+   "text": "Pra entender o tamanho disso, é preciso saber como o céu do Brasil era vigiado em 1986.",
+   "t0": 53.835,
+   "t1": 61.388
+  },
+  {
+   "id": "b02",
+   "who": "ap_narr",
+   "text": "Desde os anos 70, uma rede chamada CINDACTA juntava radares civis e militares num sistema só. De Brasília, o Centro de Operações de Defesa Aérea acompanhava cada avião que cruzava o espaço aéreo do país.",
+   "t0": 61.888,
+   "t1": 75.193
+  },
+  {
+   "id": "b03",
+   "who": "ap_narr",
+   "text": "Se alguma coisa voasse sem plano de voo, a Defesa Aérea podia mandar caças armados em poucos minutos. Na Base Aérea de Santa Cruz, no Rio, ficavam os F-5. Na Base de Anápolis, em Goiás, os Mirage, os caças mais rápidos do Brasil.",
+   "t0": 75.693,
+   "t1": 92.917
+  },
+  {
+   "id": "c01",
+   "who": "ap_narr",
+   "text": "São José dos Campos, interior de São Paulo, por volta das oito da noite. Na torre de controle do aeroporto, o sargento Sérgio Mota da Silva olha pela janela e vê uma luz parada no céu.",
+   "t0": 93.717,
+   "t1": 106.868
+  },
+  {
+   "id": "q02",
+   "who": "ap_torre",
+   "text": "Tem alguma coisa aqui no setor noroeste. Um farolzinho... o bicho tá parado, nem sobe nem desce. Não é estrela não.",
+   "t0": 107.368,
+   "t1": 115.938
+  },
+  {
+   "id": "c02",
+   "who": "ap_narr",
+   "text": "Pelo binóculo, ele vê que as luzes mudam de cor: vermelho, amarelo, verde, laranja. E faz um teste. Diminui as luzes da pista. As luzes no céu chegam mais perto. Ele aumenta de novo. Elas se afastam.",
+   "t0": 116.538,
+   "t1": 131.21
+  },
+  {
+   "id": "c03",
+   "who": "ap_narr",
+   "text": "Ao mesmo tempo, o radar do Aeroporto de Guarulhos registra ecos na região de São José dos Campos. Ecos de alguma coisa que estava lá, mas que nenhum avião tinha avisado que estaria.",
+   "t0": 132.01,
+   "t1": 143.53
+  },
+  {
+   "id": "d01",
+   "who": "ap_narr",
+   "text": "Às nove e oito da noite, um bimotor Xingu vem de Brasília em direção a São José. No avião está o coronel Ozires Silva, o fundador da Embraer, que no dia seguinte ia assumir a presidência da Petrobras.",
+   "t0": 144.53,
+   "t1": 157.046
+  },
+  {
+   "id": "d02",
+   "who": "ap_narr",
+   "text": "O piloto e ele veem luzes vermelhas fortes perto do litoral. Ozires descreveria depois: pareciam grandes estrelas vermelhas. Por conta própria, eles tentam chegar perto. Não conseguem.",
+   "t0": 157.546,
+   "t1": 170.699
+  },
+  {
+   "id": "d03",
+   "who": "ap_narr",
+   "text": "Anos mais tarde, Ozires diria que, se os radares não tivessem confirmado o que ele viu, ele preferia nunca ter falado nada.",
+   "t0": 171.299,
+   "t1": 179.836
+  },
+  {
+   "id": "e01",
+   "who": "ap_narr",
+   "text": "Às nove e trinta e nove, a Base Aérea de Santa Cruz entra em alerta. Logo depois, o radar de Anápolis também começa a pegar ecos estranhos, que o centro de Brasília nem enxergava.",
+   "t0": 180.836,
+   "t1": 193.445
+  },
+  {
+   "id": "e02",
+   "who": "ap_narr",
+   "text": "O chefe da Defesa Aérea naquela noite, o major Ney Cerqueira, toma a decisão: mandar os caças.",
+   "t0": 193.945,
+   "t1": 200.06
+  },
+  {
+   "id": "f01",
+   "who": "ap_narr",
+   "text": "Dez e trinta e quatro da noite. Da Base de Santa Cruz decola o primeiro F-5, código Jambock 17, pilotado pelo tenente Kleber Caldas Marinho. Ele sobe com as luzes de navegação apagadas, guiado pelo controlador.",
+   "t0": 201.26,
+   "t1": 217.697
+  },
+  {
+   "id": "f02",
+   "who": "ap_narr",
+   "text": "Em menos de dez minutos, ele vê. Uma luz cintilante, branca, que às vezes fica vermelha, às vezes verde. Ele acelera quase até a velocidade do som. A luz se mantém sempre a uns dezoito quilômetros na frente. E sobe.",
+   "t0": 218.197,
+   "t1": 231.316
+  },
+  {
+   "id": "f03",
+   "who": "ap_narr",
+   "text": "A perseguição vai pro mar. Meia hora depois, o tenente fala com a Defesa Aérea.",
+   "t0": 231.816,
+   "t1": 237.421
+  },
+  {
+   "id": "q03",
+   "who": "ap_pil1",
+   "text": "Eu estou informando que, aparentemente, não deve ser uma aeronave. Devido à performance dele no que diz respeito à velocidade.",
+   "t0": 237.821,
+   "t1": 246.23
+  },
+  {
+   "id": "f04",
+   "who": "ap_narr",
+   "text": "O combustível acaba. O objeto se afasta em direção ao Atlântico, rumo à África. E o Jambock 17 volta pra base sem resposta.",
+   "t0": 246.83,
+   "t1": 255.59
+  },
+  {
+   "id": "g01",
+   "who": "ap_narr",
+   "text": "Dez e quarenta e oito. Em Anápolis, decola um Mirage, o Jaguar 116, com o capitão Armindo Viriato de Freitas. O radar do caça trava num alvo, a vinte e quatro quilômetros.",
+   "t0": 256.59,
+   "t1": 268.809
+  },
+  {
+   "id": "g02",
+   "who": "ap_narr",
+   "text": "Ele apaga as luzes e chega a menos de dois quilômetros. E o alvo simplesmente some da tela. Reaparece mais longe. Ele passa da velocidade do som. Chega perto de novo. E em segundos, o objeto abre mais de trinta e oito quilômetros de distância.",
+   "t0": 269.309,
+   "t1": 285.218
+  },
+  {
+   "id": "g03",
+   "who": "ap_narr",
+   "text": "Numa entrevista anos depois, o piloto estimou a velocidade daquilo em Mach 15. Quinze vezes a velocidade do som. Nenhum avião do planeta fazia isso. E apesar de estar tão perto, ele não viu nada a olho nu.",
+   "t0": 285.818,
+   "t1": 298.607
+  },
+  {
+   "id": "h01",
+   "who": "ap_narr",
+   "text": "Dez e cinquenta. O segundo F-5, Jambock 07, decola de Santa Cruz com o capitão Márcio Brisolla Jordão. Com menos de dez minutos de voo, o controlador vê na tela uma coisa que deixa a sala em silêncio: treze ecos de radar, parados, colados na cauda do caça.",
+   "t0": 299.607,
+   "t1": 317.951
+  },
+  {
+   "id": "h02",
+   "who": "ap_narr",
+   "text": "Ele manda o piloto fazer uma curva de cento e oitenta graus. O F-5 vira. E não tem nada lá. Nem no radar de bordo, nem na janela.",
+   "t0": 318.551,
+   "t1": 326.844
+  },
+  {
+   "id": "q04",
+   "who": "ap_pil2",
+   "text": "Na tela do radar, aparecem uns riscos, meio em diagonal. Não é normal, assim.",
+   "t0": 327.444,
+   "t1": 333.599
+  },
+  {
+   "id": "i01",
+   "who": "ap_narr",
+   "text": "Onze e dezessete. Terceiro caça de Anápolis: o Jaguar 98, com o capitão Rodolfo da Silva Souza. E aqui a noite fica ainda mais estranha. Toda vez que ele tenta interceptar, o alvo faz a mesma coisa. O controlador percebe o padrão e avisa.",
+   "t0": 334.599,
+   "t1": 351.907
+  },
+  {
+   "id": "q05",
+   "who": "ap_ctrl",
+   "text": "O plote está sempre às suas seis horas. Quando você faz curva, ele some da posição e aparece sempre na sua frente.",
+   "t0": 352.407,
+   "t1": 359.421
+  },
+  {
+   "id": "i02",
+   "who": "ap_narr",
+   "text": "Às seis horas, em linguagem de piloto, quer dizer bem atrás de você. Na sua cauda. O objeto parecia saber exatamente onde o caça estava. E, quando o caça virava, ele já estava em outro lugar.",
+   "t0": 360.021,
+   "t1": 371.508
+  },
+  {
+   "id": "i03",
+   "who": "ap_narr",
+   "text": "Depois de pousar, o capitão Rodolfo pergunta aos mecânicos da pista se eles tinham visto ou ouvido alguma coisa diferente sobrevoando a base. A resposta foi não.",
+   "t0": 372.108,
+   "t1": 384.202
+  },
+  {
+   "id": "j01",
+   "who": "ap_narr",
+   "text": "Às onze e trinta e seis, sai o último Mirage, com o capitão Júlio Cézar Rozenberg. Três vezes ele é mandado contra um alvo perto de Anápolis. Três vezes chega a menos de dois quilômetros. E três vezes não vê nada.",
+   "t0": 385.202,
+   "t1": 399.121
+  },
+  {
+   "id": "j02",
+   "who": "ap_narr",
+   "text": "Meia-noite e meia. O último caça pousa. No total, cinco aviões de combate no ar, quase duas horas de perseguição, e vinte e um registros de radar. Nenhum objeto identificado.",
+   "t0": 399.721,
+   "t1": 411.836
+  },
+  {
+   "id": "k01",
+   "who": "ap_narr",
+   "text": "Normalmente, uma história dessas ficaria nos corredores dos quartéis. Mas no dia 23 de maio, às quatro e meia da tarde, o Ministro da Aeronáutica, o brigadeiro Octávio Moreira Lima, chamou a imprensa. E levou junto os pilotos e os controladores.",
+   "t0": 413.236,
+   "t1": 428.517
+  },
+  {
+   "id": "q06",
+   "who": "ap_min",
+   "text": "Não se trata de acreditar ou não. Nós só podemos dar informações técnicas. Existem várias hipóteses.",
+   "t0": 429.017,
+   "t1": 435.749
+  },
+  {
+   "id": "k02",
+   "who": "ap_narr",
+   "text": "Foi por causa dessa entrevista que o caso ganhou o nome que tem até hoje. Não foi uma noite de boatos. Foi a Noite Oficial dos OVNIs. O governo confirmou.",
+   "t0": 436.349,
+   "t1": 446.92
+  },
+  {
+   "id": "k03",
+   "who": "ap_narr",
+   "text": "A Aeronáutica prometeu um relatório completo. E o relatório não apareceu. Por vinte e três anos.",
+   "t0": 447.92,
+   "t1": 454.652
+  },
+  {
+   "id": "l01",
+   "who": "ap_narr",
+   "text": "Em 2009, depois de um pedido baseado em acesso à informação, o relatório foi finalmente liberado. Ele tinha sido escrito em 2 de junho de 1986, duas semanas depois daquela noite. E a conclusão dele é esta.",
+   "t0": 456.052,
+   "t1": 471.047
+  },
+  {
+   "id": "q07",
+   "who": "ap_doc",
+   "text": "Este Comando é de parecer que os fenômenos são sólidos e refletem de certa forma inteligência, pela capacidade de acompanhar e manter distância dos observadores, como também voar em formação, não forçosamente tripulados.",
+   "t0": 471.847,
+   "t1": 484.558
+  },
+  {
+   "id": "l02",
+   "who": "ap_narr",
+   "text": "Sólidos. Inteligentes. Voando em formação. Esse não é o texto de um ufólogo. É um documento oficial da Força Aérea Brasileira.",
+   "t0": 485.758,
+   "t1": 494.882
+  },
+  {
+   "id": "l03",
+   "who": "ap_narr",
+   "text": "O relatório lista o que aqueles objetos fizeram: variar a velocidade de parado até supersônico, subir de menos de mil e quinhentos metros pra mais de doze mil, acender luzes brancas, verdes e vermelhas, ou não ter luz nenhuma, e fazer curvas de noventa graus.",
+   "t0": 495.682,
+   "t1": 511.525
+  },
+  {
+   "id": "l04",
+   "who": "ap_narr",
+   "text": "E em 2015, o Arquivo Nacional liberou as gravações de áudio daquela noite: as conversas reais entre os pilotos e os controladores. Qualquer pessoa pode ouvir.",
+   "t0": 512.125,
+   "t1": 524.294
+  },
+  {
+   "id": "m01",
+   "who": "ap_narr",
+   "text": "Então, o que eram? Os céticos lembram que radar erra. Uma camada de ar quente sobre ar frio pode fazer o radar enxergar ecos que não existem. Luzes no céu podem ser planetas, aviões ou balões.",
+   "t0": 525.494,
+   "t1": 537.24
+  },
+  {
+   "id": "m02",
+   "who": "ap_narr",
+   "text": "Mas tem um problema. Naquela noite, várias vezes, um piloto viu uma luz no mesmo lugar onde o radar de terra marcava um alvo. Visão e radar, juntos. E a própria Aeronáutica só considerou os casos com essa dupla confirmação.",
+   "t0": 537.84,
+   "t1": 553.322
+  },
+  {
+   "id": "m03",
+   "who": "ap_narr",
+   "text": "Quase quarenta anos depois, ninguém apresentou uma explicação que dê conta de tudo. E o acervo de OVNIs continua sendo o mais procurado do Arquivo Nacional do Brasil.",
+   "t0": 553.922,
+   "t1": 564.298
+  },
+  {
+   "id": "n01",
+   "who": "ap_narr",
+   "text": "E você? O que acha que os pilotos perseguiram naquela noite? Erro de radar, avião secreto, ou alguma coisa que a gente ainda não entende? Escreve aqui embaixo.",
+   "t0": 565.498,
+   "t1": 575.312
+  },
+  {
+   "id": "n02",
+   "who": "ap_narr",
+   "text": "No próximo arquivo: dois homens encontrados mortos num morro de Niterói, com máscaras de chumbo no rosto e um bilhete com instruções. Se inscreve pra não perder.",
+   "t0": 575.912,
+   "t1": 587.255
+  },
+  {
+   "id": "n03",
+   "who": "ap_narr",
+   "text": "Este arquivo... continua aberto.",
+   "t0": 587.855,
+   "t1": 591.641
+  }
+ ]
+}

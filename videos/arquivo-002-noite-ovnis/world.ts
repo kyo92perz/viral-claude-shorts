@@ -50,7 +50,7 @@ function vgFolder(id: string, x: number, y: number, s = 1, title = 'IPM • 1997
       ${[7, 8].map((i) => `<rect class="redact" x="-434" y="${-256 + i * 44}" width="320" height="26" fill="#1a1418" opacity="0"/>`).join('')}</g>
     <g class="cover"><rect x="-300" y="-380" width="600" height="760" rx="14" fill="#d8b46a" ${bzO('stroke-width="9"')}/><rect x="-300" y="-430" width="230" height="70" rx="12" fill="#c8a058" ${bzO()}/>
       <text x="0" y="-180" text-anchor="middle" font-family="Anton" font-size="78" fill="#2b2433">${title}</text><rect x="-200" y="-140" width="400" height="10" fill="#2b2433"/>
-      <text x="0" y="-60" text-anchor="middle" font-family="Anton" font-size="40" fill="#5a4a30">ESCOLA DE SARGENTOS DAS ARMAS</text>
+      <text x="0" y="-60" text-anchor="middle" font-family="Anton" font-size="40" fill="#5a4a30">COMANDO DE DEFESA AÉREA</text>
       <g class="stamp" transform="translate(0 140) rotate(-10)"><rect x="-250" y="-70" width="500" height="130" rx="14" fill="none" stroke="#e0302a" stroke-width="12"/><text x="0" y="30" text-anchor="middle" font-family="Anton" font-size="92" fill="#e0302a">${stamp}</text></g></g></g></g>`;
 }
 // the court building by day (columns) with a banner year
@@ -114,7 +114,7 @@ function opMap(routes: [string, string][] = []) {
 const opTime = (id: string, t: string, sub = '') => `<g id="${id}"><rect x="660" y="330" width="600" height="${sub ? 300 : 220}" rx="20" fill="#0c0a10" opacity="0.88" stroke="#e0302a" stroke-width="6"/><text x="960" y="490" text-anchor="middle" font-family="Anton" font-size="150" fill="#ff4a3a">${t}</text>${sub ? `<text x="960" y="590" text-anchor="middle" font-family="Anton" font-size="46" fill="#efe9d6">${sub}</text>` : ''}</g>`;
 // the radio waveform (.wb bars) with a transcript box
 const opWave = (who: string) => `<rect width="1920" height="1080" fill="#07090c"/><g id="wave">${[...Array(64)].map((_, i) => `<rect class="wb" x="${300 + i * 21}" y="460" width="12" height="80" rx="6" fill="#3aff8a"/>`).join('')}</g><text x="960" y="300" text-anchor="middle" font-family="Anton" font-size="60" fill="#efe9d6">${who}</text><text x="960" y="370" text-anchor="middle" font-family="monospace" font-size="30" fill="#3aff8a">● REC  19/05/1986</text>`;
-const opWaveGo = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number) => tl.fromTo(`${sel} .wb`, { scaleY: 0.2 }, { scaleY: 1.8, svgOrigin: '0 500', duration: 0.12, yoyo: true, repeat: Math.max(1, Math.floor((t1 - t0) / 0.12)), stagger: { each: 0.02, from: 'random', repeat: 0 }, ease: 'sine.inOut' }, t0);
+const opWaveGo = (tl: gsap.core.Timeline, sel: string, t0: number, t1: number) => tl.fromTo(`${sel} .wb`, { scaleY: 0.2 }, { scaleY: 1.3, svgOrigin: '0 500', duration: 0.12, yoyo: true, repeat: Math.max(1, Math.floor((t1 - t0) / 0.12)), stagger: { each: 0.02, from: 'random', repeat: 0 }, ease: 'sine.inOut' }, t0);
 // a fighter jet seen from the side (F-5 / Mirage shapes), nose to the right; #id
 const opJet = (id: string, x: number, y: number, s = 1, delta = false, lights = true) => `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})">${delta
   ? `<path d="M-200 10 L 160 0 L 230 6 L 160 16 L -200 20 Z" fill="#7a8494" stroke="#2b2433" stroke-width="5"/><path d="M-160 14 L 40 14 L -120 70 Z" fill="#6a7484" stroke="#2b2433" stroke-width="5"/><path d="M-200 10 L -230 -50 L -170 -50 L -140 10 Z" fill="#6a7484" stroke="#2b2433" stroke-width="5"/><path d="M60 0 Q 90 -26 130 0 Z" fill="#8ac0e8" stroke="#2b2433" stroke-width="4"/>`
