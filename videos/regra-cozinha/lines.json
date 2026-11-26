@@ -1,0 +1,89 @@
+{
+ "duration": 56.48,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "rg_eu",
+   "text": "Minha vó tinha uma regra: se de madrugada você ouvir a minha voz te chamando da cozinha... não vai.",
+   "t0": 0.3,
+   "t1": 5.112
+  },
+  {
+   "id": "n02",
+   "who": "rg_eu",
+   "text": "Eu perguntei por quê. Ela só disse:",
+   "t0": 5.612,
+   "t1": 7.916
+  },
+  {
+   "id": "v01",
+   "who": "rg_vo",
+   "text": "Porque de madrugada eu tô dormindo, meu filho.",
+   "t0": 8.216,
+   "t1": 10.713
+  },
+  {
+   "id": "n03",
+   "who": "rg_eu",
+   "text": "Uma noite, eu acordei com cheiro de café. E a voz dela, lá da cozinha.",
+   "t0": 11.313,
+   "t1": 16.462
+  },
+  {
+   "id": "f01",
+   "who": "rg_falsa",
+   "text": "Davi... vem cá, meu filho. Eu fiz um bolo pra você.",
+   "t0": 16.862,
+   "t1": 20.157
+  },
+  {
+   "id": "n04",
+   "who": "rg_eu",
+   "text": "Eu levantei. Já tava na porta do quarto quando uma mão segurou meu braço.",
+   "t0": 20.757,
+   "t1": 24.736
+  },
+  {
+   "id": "n05",
+   "who": "rg_eu",
+   "text": "Era a minha vó. Do meu lado. De camisola. Tremendo. Ela pôs o dedo na boca e sussurrou:",
+   "t0": 25.336,
+   "t1": 30.606
+  },
+  {
+   "id": "v02",
+   "who": "rg_vo",
+   "text": "Eu também ouvi.",
+   "t0": 31.006,
+   "t1": 33.281
+  },
+  {
+   "id": "n06",
+   "who": "rg_eu",
+   "text": "A voz da cozinha parou. Aí veio um barulho de cadeira arrastando. E passos. Vindo pro quarto.",
+   "t0": 34.081,
+   "t1": 39.582
+  },
+  {
+   "id": "n07",
+   "who": "rg_eu",
+   "text": "A gente se trancou no guarda-roupa até o sol nascer. De manhã, tinha duas xícaras de café na mesa. Ainda quentes.",
+   "t0": 40.182,
+   "t1": 47.548
+  },
+  {
+   "id": "n08",
+   "who": "rg_eu",
+   "text": "Minha vó morreu ano passado. E ontem, de madrugada... ela me chamou da cozinha.",
+   "t0": 48.148,
+   "t1": 52.844
+  },
+  {
+   "id": "n09",
+   "who": "rg_eu",
+   "text": "Você ia? Comenta aí.",
+   "t0": 53.444,
+   "t1": 54.98
+  }
+ ]
+}

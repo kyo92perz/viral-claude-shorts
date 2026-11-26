@@ -59,4 +59,5 @@ defineVisuals({
   'test-kitchen': { bg: '#e8d8b0', html: () => svg(rgKitchen()), anim() {} },
   'test-wardrobe': { bg: '#08070c', html: () => svg(rgWardrobe()), anim() {} },
   'test-photo': { bg: '#5a4a3a', html: () => svg(rgPhoto()), anim() {} },
+  'cover-a': { bg: '#0e0c14', html: () => svg(`<g transform="translate(-540 -760) scale(2)">${rgHallK()}${rgChar('falsa', 540, 1000, 0.5)}</g>${bzSign('t1', 'SE ELA TE CHAMAR', 540, 1380, -4, '#fff', BZ.ink, 92)}${bzSign('t2', 'NÃO VAI', 540, 1560, 3, BZ.red, '#fff', 150)}${bzVignette(0.75)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #falsa', s.t0, 'glow', 'flat'); bzPose(tl, '#sc-cover-a #falsa', s.t0, { aR: -120 }, 0.01); } },
 });

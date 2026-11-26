@@ -1,0 +1,314 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "A REGRA DA VÓ",
+  "ep": "Nº 2"
+ },
+ "music": {
+  "bpm": 60,
+  "key": "C"
+ },
+ "notes": "A REGRA DA VÓ Nº 2, Brasil Z toon look: the grandmother's voice calls from the kitchen at night; the real grandmother holds Davi back and whispers that she heard it too; a too-tall back-lit shape in the kitchen doorway; the wardrobe; two cups still warm in the morning; she died last year and called him again. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.2,
+     "sfx": "sting",
+     "t": 0.5
+    }
+   ],
+   "t0": 0,
+   "t1": 2.645
+  },
+  {
+   "id": "rule",
+   "from": 9,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 17,
+     "sfx": "hit",
+     "t": 4.698
+    }
+   ],
+   "t0": 2.645,
+   "t1": 5.412
+  },
+  {
+   "id": "why",
+   "from": 19,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 5.412,
+   "t1": 8.016
+  },
+  {
+   "id": "sleep",
+   "from": 26,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 8.016,
+   "t1": 11.013
+  },
+  {
+   "id": "coffee",
+   "from": 34,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 39,
+     "sfx": "whoosh",
+     "t": 13.214
+    }
+   ],
+   "t0": 11.013,
+   "t1": 14.374
+  },
+  {
+   "id": "voice",
+   "from": 42,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 14.374,
+   "t1": 16.662
+  },
+  {
+   "id": "fake",
+   "from": 49,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 57,
+     "sfx": "sting",
+     "t": 19.165
+    }
+   ],
+   "t0": 16.662,
+   "t1": 20.557
+  },
+  {
+   "id": "getup",
+   "from": 60,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 20.557,
+   "t1": 23.321
+  },
+  {
+   "id": "grab",
+   "from": 69,
+   "type": "object",
+   "mood": "dark",
+   "keys": [
+    {
+     "id": "g",
+     "at": 70,
+     "sfx": "impact",
+     "t": 23.527
+    }
+   ],
+   "t0": 23.321,
+   "t1": 25.136
+  },
+  {
+   "id": "real",
+   "from": 74,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 87,
+     "sfx": "hit",
+     "t": 29.031
+    }
+   ],
+   "t0": 25.136,
+   "t1": 30.806
+  },
+  {
+   "id": "heard",
+   "from": 92,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "w",
+     "at": 94,
+     "sfx": "sting",
+     "t": 32.523
+    }
+   ],
+   "t0": 30.806,
+   "t1": 33.881
+  },
+  {
+   "id": "steps",
+   "from": 95,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 105,
+     "sfx": "thud",
+     "t": 36.873
+    },
+    {
+     "id": "p",
+     "at": 108,
+     "sfx": "thump",
+     "t": 38.13
+    }
+   ],
+   "t0": 33.881,
+   "t1": 39.882
+  },
+  {
+   "id": "wardrobe",
+   "from": 112,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 117,
+     "sfx": "thump",
+     "t": 41.692
+    }
+   ],
+   "t0": 39.882,
+   "t1": 43.654
+  },
+  {
+   "id": "cups",
+   "from": 122,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 125,
+     "sfx": "pop",
+     "t": 44.651
+    }
+   ],
+   "t0": 43.654,
+   "t1": 47.748
+  },
+  {
+   "id": "dead",
+   "from": 133,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.4,
+   "ambience": [
+    "room"
+   ],
+   "t0": 47.748,
+   "t1": 49.936
+  },
+  {
+   "id": "call",
+   "from": 138,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 144,
+     "sfx": "sting",
+     "t": 51.713
+    }
+   ],
+   "t0": 49.936,
+   "t1": 53.244
+  },
+  {
+   "id": "ask",
+   "from": 147,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 150,
+     "dt": 0.536,
+     "sfx": "sting",
+     "t": 55.26
+    }
+   ],
+   "t0": 53.244,
+   "t1": 56.48
+  }
+ ],
+ "duration": 56.48
+}

@@ -1,5 +1,5 @@
 // <lines>
-const RG_LINES = [];
+const RG_LINES = [{"who": "rg_eu", "t0": 0.3, "t1": 5.112}, {"who": "rg_eu", "t0": 5.612, "t1": 7.916}, {"who": "rg_vo", "t0": 8.216, "t1": 10.713}, {"who": "rg_eu", "t0": 11.313, "t1": 16.462}, {"who": "rg_falsa", "t0": 16.862, "t1": 20.157}, {"who": "rg_eu", "t0": 20.757, "t1": 24.736}, {"who": "rg_eu", "t0": 25.336, "t1": 30.606}, {"who": "rg_vo", "t0": 31.006, "t1": 33.281}, {"who": "rg_eu", "t0": 34.081, "t1": 39.582}, {"who": "rg_eu", "t0": 40.182, "t1": 47.548}, {"who": "rg_eu", "t0": 48.148, "t1": 52.844}, {"who": "rg_eu", "t0": 53.444, "t1": 54.98}];
 // </lines>
 // =====================================================================
 //  A REGRA DA VÓ Nº 2: A VOZ DA COZINHA — the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -30,7 +30,7 @@ defineVisuals({
     anim(tl, s, K, $) { bzTalk(tl, $('#vo'), 'rg_vo', s.t0, s.t1, 'flat'); bzFace(tl, $('#vo'), s.t0, 'half'); rgHide(tl, $('#dm'), s.t0, s.t0 + 1.2); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 640); } },
   // ---------------- the night: coffee smell, the voice
   coffee: { bg: '#141a2e', html: () => bzShot(`${rgRoom()}${rgChar('davi', 340, 1150, 1.0)}${rgSmell()}`, `${rgSay('cf', 'CHEIRO DE CAFÉ', 540, 380, -3, '#fff', BZ.ink, 90)}${bzVignette(0.6)}`),
-    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '340 1150', y: -60 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'closed', 'flat'); bzFace(tl, $('#davi'), K('c'), 'wide', 'flat');
+    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '340 1150', y: -60, x: 260 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'closed', 'flat'); bzFace(tl, $('#davi'), K('c'), 'wide', 'flat');
       tl.fromTo($('.sl'), { opacity: 0, x: 0 }, { opacity: 0.8, x: -300, duration: 1.6, stagger: 0.3, ease: 'sine.inOut' }, K('c') - 0.4); rgHide(tl, $('#cf'), s.t0, K('c')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 1000); } },
   voice: { bg: '#0e0c14', html: () => bzShot(`${rgHallK()}${rgWaves('wv')}`, bzVignette(0.8)),
     anim(tl, s, K, $) { rgWavesGo(tl, $('#wv'), s.t0 + 0.3, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 780); } },
@@ -57,7 +57,7 @@ defineVisuals({
   dead: { bg: '#5a4a3a', html: () => bzShot(rgPhoto(), bzVignette(0.6)),
     anim(tl, s, K, $) { bzFace(tl, $('#pvo'), s.t0, 'dot', 'smile'); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 660); } },
   call: { bg: '#141a2e', html: () => bzShot(`${rgRoom()}${rgChar('davi', 380, 1150, 1.1)}${rgWaves('wv', 900, 700)}`, `${rgSay('dv', 'DAVI...', 540, 380, -3, '#fff', BZ.ink, 110)}${bzVignette(0.75)}`),
-    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '380 1150', y: -60 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'closed', 'flat'); bzFace(tl, $('#davi'), K('c') - 0.3, 'wide', 'o'); rgWavesGo(tl, $('#wv'), K('c') - 0.3, s.t1); rgHide(tl, $('#dv'), s.t0, K('c'));
+    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '380 1150', y: -60, x: 240 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'closed', 'flat'); bzFace(tl, $('#davi'), K('c') - 0.3, 'wide', 'o'); rgWavesGo(tl, $('#wv'), K('c') - 0.3, s.t1); rgHide(tl, $('#dv'), s.t0, K('c'));
       tl.fromTo($('#crack'), { scaleX: 1 }, { scaleX: 3, svgOrigin: '773 900', duration: s.t1 - s.t0, ease: 'none' }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 760, 900); } },
   ask: { bg: '#0e0c14', html: () => bzShot(`<g transform="translate(-540 -760) scale(2)">${rgHallK()}${rgChar('falsa', 540, 1000, 0.5)}</g>`, `${rgSay('q', 'VOCÊ IA?', 540, 1560, -3, BZ.yellow, BZ.ink, 130)}${bzVignette(0.85)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#falsa'), s.t0, 'glow', 'flat'); rgHide(tl, $('#q'), s.t0, s.t0 + 0.4); bzPose(tl, $('#falsa'), s.t0 + 0.8, { aR: -120 }, 1.2); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 640); } },
