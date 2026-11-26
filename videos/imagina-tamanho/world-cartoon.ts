@@ -149,56 +149,140 @@ const tmPlanetTex = (kind: string) => tmTex('tm-pl-' + kind, 1024, 512, (g, r) =
     neb(300, 200, 'rgba(110,60,170,0.35)'); neb(760, 330, 'rgba(40,90,180,0.3)'); }
 });
 
+// ---------------------------------------------------------------- painted textures (the look of the approved 10 s test)
+// plaster/paint: base + soft blotches + vertical brush streaks
+const tmPlaster = (key: string, base: string, dark: string) => tmTex('tm-pl-' + key, 512, 512, (g, r) => {
+  g.fillStyle = base; g.fillRect(0, 0, 512, 512);
+  for (let i = 0; i < 40; i++) { const x = r() * 512, y = r() * 512, R = 40 + r() * 110, gr = g.createRadialGradient(x, y, 0, x, y, R); gr.addColorStop(0, dark + '28'); gr.addColorStop(1, dark + '00'); g.fillStyle = gr; g.fillRect(0, 0, 512, 512); }
+  g.globalAlpha = 0.05; g.fillStyle = dark; for (let i = 0; i < 260; i++) g.fillRect(r() * 512, r() * 512, 2 + r() * 3, 30 + r() * 90); g.globalAlpha = 1; });
+// wooden planks (one texture = 8 planks)
+const tmPlanks = (key: string, cols: string[]) => tmTex('tm-pk-' + key, 512, 512, (g, r) => { for (let i = 0; i < 8; i++) { g.fillStyle = cols[i % cols.length]; g.fillRect(0, i * 64, 512, 64);
+  g.strokeStyle = 'rgba(110,64,30,.35)'; g.lineWidth = 2; for (let k = 0; k < 3; k++) { const y = i * 64 + 10 + r() * 44; g.beginPath(); g.moveTo(0, y); g.bezierCurveTo(170, y + 5, 340, y - 5, 512, y); g.stroke(); }
+  g.fillStyle = '#4a2f1c'; g.fillRect(0, i * 64, 512, 4); g.fillRect(r() * 512, i * 64, 4, 64); } });
+// square tiles with grout
+const tmTiles = (key: string, a: string, b: string, n = 4) => tmTex('tm-ti-' + key, 256, 256, (g, r) => { const s = 256 / n;
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) { g.fillStyle = (x + y) % 2 ? a : b; g.fillRect(x * s, y * s, s, s); g.fillStyle = 'rgba(255,255,255,.12)'; g.fillRect(x * s + 4, y * s + 4, s * 0.5, 4); }
+  g.strokeStyle = 'rgba(60,50,50,.45)'; g.lineWidth = 3; for (let i = 0; i <= n; i++) { g.beginPath(); g.moveTo(i * s, 0); g.lineTo(i * s, 256); g.moveTo(0, i * s); g.lineTo(256, i * s); g.stroke(); } });
+// asphalt (with grain); lane dashes are separate boxes
+const tmAsphalt = tmTex('tm-asph', 256, 256, (g, r) => { g.fillStyle = '#5e6068'; g.fillRect(0, 0, 256, 256); for (let i = 0; i < 1400; i++) { g.fillStyle = r() < 0.5 ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.08)'; g.fillRect(r() * 256, r() * 256, 2, 2); }
+  g.strokeStyle = 'rgba(30,30,36,.35)'; g.lineWidth = 2; g.beginPath(); g.moveTo(20, 40); g.lineTo(90, 70); g.lineTo(120, 60); g.stroke(); });
+const tmSidewalk = tmTiles('walk', '#c9c2b4', '#bdb5a6', 4);
+// a facade: floors of framed windows (some lit), a darker base band; one texture tile = 3 m wide x 3 m tall (one floor)
+const tmFacade = (key: string, wall: string, glass: string, frame: string) => tmTex('tm-fa-' + key, 256, 256, (g, r) => {
+  g.fillStyle = wall; g.fillRect(0, 0, 256, 256); g.globalAlpha = 0.1; g.fillStyle = '#000'; for (let i = 0; i < 80; i++) g.fillRect(r() * 256, r() * 256, 2, 20 + r() * 40); g.globalAlpha = 1;
+  for (const x of [28, 140]) { const lit = r() < 0.3; g.fillStyle = frame; g.fillRect(x - 6, 60, 100, 136); g.fillStyle = lit ? '#ffe7a0' : glass; g.fillRect(x, 66, 88, 124);
+    g.fillStyle = 'rgba(255,255,255,.35)'; g.beginPath(); g.moveTo(x, 66); g.lineTo(x + 40, 66); g.lineTo(x, 130); g.fill(); g.fillStyle = frame; g.fillRect(x + 41, 66, 6, 124); g.fillRect(x - 10, 196, 108, 10); }
+  g.fillStyle = 'rgba(0,0,0,.12)'; g.fillRect(0, 248, 256, 8); });
+const tmWater = tmTex('tm-water', 512, 512, (g, r) => { const gr = g.createLinearGradient(0, 0, 0, 512); gr.addColorStop(0, '#3f9ee6'); gr.addColorStop(1, '#2a74c0'); g.fillStyle = gr; g.fillRect(0, 0, 512, 512);
+  g.strokeStyle = 'rgba(255,255,255,.45)'; g.lineWidth = 3; for (let i = 0; i < 70; i++) { const x = r() * 512, y = r() * 512, w = 14 + r() * 30; g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + w / 2, y - 6, x + w, y); g.stroke(); } });
+const tmGrassT = tmTex('tm-grass2', 256, 256, (g, r) => { g.fillStyle = '#6aa84a'; g.fillRect(0, 0, 256, 256); for (let i = 0; i < 600; i++) { g.strokeStyle = r() < 0.5 ? '#5a9640' : '#7cba58'; g.lineWidth = 2; const x = r() * 256, y = r() * 256; g.beginPath(); g.moveTo(x, y); g.lineTo(x + (r() - 0.5) * 6, y - 8); g.stroke(); } });
+const tmPoster = tmTex('tm-poster', 256, 340, (g) => { g.fillStyle = '#2f5aa8'; g.fillRect(0, 0, 256, 340); g.fillStyle = '#fbf7ee'; g.beginPath(); g.arc(128, 150, 70, 0, 7); g.fill(); g.fillStyle = '#231a1e';
+  const pent = (x: number, y: number, rr: number) => { g.beginPath(); for (let k = 0; k < 5; k++) { const a = k * 1.2566 - 1.5708; g.lineTo(x + rr * Math.cos(a), y + rr * Math.sin(a)); } g.fill(); }; pent(128, 150, 22);
+  for (let k = 0; k < 5; k++) { const a = k * 1.2566 - 1.5708; pent(128 + 58 * Math.cos(a), 150 + 58 * Math.sin(a), 13); }
+  g.lineWidth = 6; g.strokeStyle = '#231a1e'; g.beginPath(); g.arc(128, 150, 70, 0, 7); g.stroke(); g.fillStyle = '#f6c744'; g.fillRect(40, 260, 176, 20); g.lineWidth = 10; g.strokeRect(5, 5, 246, 330); });
+const tmSkyWin = tmTex('tm-skywin', 256, 256, (g) => { const gr = g.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, '#6cb6ea'); gr.addColorStop(1, '#d8eef6'); g.fillStyle = gr; g.fillRect(0, 0, 256, 256);
+  g.fillStyle = '#ffffff'; for (const [x, y, q] of [[60, 80, 30], [100, 70, 40], [150, 84, 28], [190, 150, 24], [220, 144, 32]]) { g.beginPath(); g.arc(x, y, q, 0, 7); g.fill(); } g.fillStyle = '#7aa860'; g.fillRect(0, 220, 256, 36); });
+const tmRug = tmTex('tm-rug', 256, 256, (g) => { g.fillStyle = '#d65a46'; g.fillRect(0, 0, 256, 256); g.strokeStyle = '#f6c744'; g.lineWidth = 12; g.strokeRect(18, 18, 220, 220); g.strokeStyle = '#fbf7ee'; g.lineWidth = 5; g.strokeRect(40, 40, 176, 176); });
+const tmBlanket = tmTex('tm-blanket', 256, 256, (g) => { g.fillStyle = '#3f6aa8'; g.fillRect(0, 0, 256, 256); g.strokeStyle = '#f6c744'; g.lineWidth = 6; for (let i = 0; i < 6; i++) { g.beginPath(); g.moveTo(0, 30 + i * 44); g.lineTo(256, 30 + i * 44); g.stroke(); } });
+// a framed window on a wall (frame bars + sill + glass with sky); x0..x1, y0..y1 on the plane z (wall face), facing +z
+const tmWindow = (b: ReturnType<typeof CT.batch>, x0: number, x1: number, y0: number, y1: number, z: number, sky = tmSkyWin) => {
+  tmBox(b, 'tm-wsky', sky, [x0, y0, z - 0.02], [x1, y1, z]); const f = 0.07, mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+  for (const [a, c] of [[[x0 - f, y0 - f], [x1 + f, y0]], [[x0 - f, y1], [x1 + f, y1 + f]], [[x0 - f, y0], [x0, y1]], [[x1, y0], [x1 + f, y1]], [[mx - 0.03, y0], [mx + 0.03, y1]], [[x0, my - 0.03], [x1, my + 0.03]]] as [number, number][][])
+    tmBox(b, 'tm-wframe', '#fbf7ee', [a[0], a[1], z], [c[0], c[1], z + 0.08]);
+  tmBox(b, 'tm-wframe', '#fbf7ee', [x0 - 0.15, y0 - 0.1, z], [x1 + 0.15, y0 - 0.04, z + 0.2]); };
+// a street lamp
+const tmLamp = (b: ReturnType<typeof CT.batch>, x: number, z: number, h = 4.6) => { tmBox(b, 'tm-lpole', '#3a3f4a', [x - 0.07, 0, z - 0.07], [x + 0.07, h, z + 0.07]);
+  tmBox(b, 'tm-lpole', '#3a3f4a', [x - 0.07, h - 0.1, z - 0.07], [x + 0.07, h, z + 0.8]); tmBox(b, 'tm-lhead', '#ffe9a8', [x - 0.18, h - 0.22, z + 0.6], [x + 0.18, h - 0.1, z + 1.0]); };
+
 // ---------------------------------------------------------------- the world, built once
 const tmInit = (w: World) => {
   const st = TM.st = CT.stage(w, { light: 'day', fog: false, far: 3000, clouds: false });
   CT.ground(st, { kind: 'grass', size: 1400, tile: 10, at: [400, 0] });
   const b = CT.batch();
-  // ROOM: floor, two walls, the bed, a desk, a window card (see tmRoomFx), the ceiling
-  tmBox(b, 'tm-floor', '#b88a5a', [-4, 0, -3], [4, 0.05, 3]);
-  tmBox(b, 'tm-wall', '#f0d8a0', [-4, 0, -3.2], [4, 2.6, -3]); tmBox(b, 'tm-wall', '#f0d8a0', [-4.2, 0, -3.2], [-4, 2.6, 3]);
-  tmBox(b, 'tm-wall2', '#e8c890', [4, 0, -3.2], [4.2, 2.6, 3]);
-  tmBox(b, 'tm-bedf', '#8a5a30', [-3.8, 0, -2.9], [-1.6, 0.45, -1.0]); tmBox(b, 'tm-bed', '#2f8a4a', [-3.8, 0.45, -2.9], [-1.6, 0.6, -1.0]); tmBox(b, 'tm-pil', '#fbf7ef', [-3.7, 0.6, -2.8], [-3.0, 0.75, -2.2]);
-  tmBox(b, 'tm-desk', '#a87a4a', [2.2, 0, -2.9], [3.8, 0.75, -2.2]);
-  tmBox(b, 'tm-win', '#9ad0f0', [-0.6, 1.1, -3.05], [0.9, 2.1, -3.0]);
-  tmBox(b, 'tm-ruler', '#f6c744', [-1.25, 0, -2.98], [-1.15, 2.0, -2.95]);
-  for (let i = 0; i <= 10; i++) tmBox(b, 'tm-tick', '#2b2433', [-1.3, i * 0.2, -2.97], [-1.15 - (i % 5 ? 0 : 0.08), i * 0.2 + 0.015, -2.94]);
-  // KITCHEN
-  const K = TM_KIT;
-  tmBox(b, 'tm-kfloor', '#c8b8a0', [K[0] - 5, 0, -4], [K[0] + 5, 0.05, 4]);
-  tmBox(b, 'tm-kwall', '#e8d8b0', [K[0] - 5, 0, -4.2], [K[0] + 5, 3, -4]);
-  tmBox(b, 'tm-door', '#5a3a20', [K[0] - 4, 0, -4.05], [K[0] - 2.8, 2.1, -3.98]);
-  tmBox(b, 'tm-table', '#8a5a30', [K[0] - 1, 0.72, -2.5], [K[0] + 1.6, 0.8, -1.2]); tmBox(b, 'tm-tleg', '#6a4020', [K[0] - 0.9, 0, -2.4], [K[0] - 0.8, 0.72, -2.3]); tmBox(b, 'tm-tleg', '#6a4020', [K[0] + 1.4, 0, -2.4], [K[0] + 1.5, 0.72, -2.3]);
-  tmBox(b, 'tm-fridge', '#f0f0f4', [K[0] + 3, 0, -3.9], [K[0] + 4, 1.9, -3.1]);
-  // STREET: road, houses both sides, trees, the lake
+  // ROOM (x 0): planks, painted walls with a wainscot, framed window + curtains, poster, bed with a blanket, desk with lamp and
+  // books, shelf with toys, rug, door, the height ruler. (no ceiling: high cameras look in from above)
+  const wall = tmPlaster('wall', '#f2dcb2', '#b88a5a'), wains = tmPlaster('wains', '#8fb4a0', '#3e6a58');
+  tmBox(b, 'tm-floor', tmPlanks('room', ['#c68a52', '#b97c46', '#d39a5f', '#bf8550']), [-4, 0, -3], [4, 0.05, 3], 2.4);
+  tmBox(b, 'tm-wall', wall, [-4, 0.9, -3.2], [4, 2.6, -3], 3); tmBox(b, 'tm-wains', wains, [-4, 0, -3.15], [4, 0.9, -2.95], 3);
+  tmBox(b, 'tm-wall', wall, [-4.2, 0.9, -3.2], [-4, 2.6, 3], 3); tmBox(b, 'tm-wains', wains, [-4.15, 0, -3.2], [-3.95, 0.9, 3], 3);
+  tmBox(b, 'tm-wall', wall, [4, 0.9, -3.2], [4.2, 2.6, 3], 3); tmBox(b, 'tm-wains', wains, [3.95, 0, -3.2], [4.15, 0.9, 3], 3);
+  tmBox(b, 'tm-rail', '#6a8a78', [-4, 0.88, -2.96], [4, 0.95, -2.9]); tmBox(b, 'tm-crown', '#fbf4e6', [-4, 2.52, -3.0], [4, 2.6, -2.92]);
+  tmWindow(b, -0.6, 0.9, 1.1, 2.1, -2.95);
+  const cur = tmPlaster('cur', '#3e8a76', '#173e34'); tmBox(b, 'tm-cur', cur, [-1.0, 0.8, -2.94], [-0.66, 2.42, -2.84], 1); tmBox(b, 'tm-cur', cur, [0.96, 0.8, -2.94], [1.3, 2.42, -2.84], 1);
+  tmBox(b, 'tm-rod', '#6a4a30', [-1.1, 2.4, -2.92], [1.4, 2.44, -2.88]);
+  tmBox(b, 'tm-poster', tmPoster, [-3.2, 1.3, -2.95], [-2.4, 2.35, -2.92]);
+  tmBox(b, 'tm-bedf', '#8a5632', [-3.8, 0, -2.9], [-1.6, 0.45, -1.0]); tmBox(b, 'tm-bedh', '#7a4a2a', [-3.8, 0, -2.95], [-1.6, 1.05, -2.85]);
+  tmBox(b, 'tm-matt', '#f4efe4', [-3.77, 0.45, -2.85], [-1.63, 0.56, -1.03]); tmBox(b, 'tm-bed', tmBlanket, [-3.79, 0.56, -2.1], [-1.61, 0.64, -1.0], 1.2);
+  tmBox(b, 'tm-pil', '#fbf7ef', [-3.6, 0.56, -2.8], [-1.8, 0.74, -2.35]);
+  tmBox(b, 'tm-desk', '#a8743e', [2.2, 0.7, -2.9], [3.8, 0.78, -2.2]); for (const x of [2.25, 3.65]) tmBox(b, 'tm-dleg', '#7a5028', [x, 0, -2.85], [x + 0.08, 0.7, -2.25]);
+  tmBox(b, 'tm-lampb', '#d03a30', [3.3, 0.78, -2.75], [3.46, 0.82, -2.6]); tmBox(b, 'tm-lamps', '#2e2024', [3.36, 0.82, -2.7], [3.4, 1.2, -2.66]); tmBox(b, 'tm-lamph', '#d03a30', [3.22, 1.16, -2.76], [3.48, 1.3, -2.55]);
+  [['#d03a30', 0], ['#2f5aa8', 0.08], ['#f6c744', 0.16]].forEach(([c, dx], i) => tmBox(b, 'tm-book' + i, c as string, [2.35 + (dx as number), 0.78, -2.8], [2.42 + (dx as number), 1.04 - i * 0.03, -2.55]));
+  tmBox(b, 'tm-shelf', '#8a5632', [1.6, 1.85, -2.98], [2.6, 1.9, -2.75]); tmBox(b, 'tm-toy', '#fbf7ee', [1.7, 1.9, -2.92], [1.9, 2.1, -2.8]); tmBox(b, 'tm-toy2', '#f6c744', [2.2, 1.9, -2.92], [2.4, 2.24, -2.82]);
+  tmBox(b, 'tm-rug', tmRug, [-1.4, 0.05, -1.6], [1.6, 0.06, 1.2], 0);
+  tmBox(b, 'tm-door', '#9a6038', [3.97, 0, -1.6], [4.0, 2.1, -0.5]); tmBox(b, 'tm-knob', '#f6c744', [3.93, 1.0, -1.5], [3.97, 1.06, -1.44]);
+  tmBox(b, 'tm-ruler', '#f6c744', [-1.25, 0, -2.94], [-1.15, 2.0, -2.9]);
+  for (let i = 0; i <= 10; i++) tmBox(b, 'tm-tick', '#2b2433', [-1.3, i * 0.2, -2.92], [-1.15 - (i % 5 ? 0 : 0.08), i * 0.2 + 0.015, -2.89]);
+  // KITCHEN (x 40): checker tiles, plaster + tiled backsplash, counter run with cabinets and a stove, upper cabinets, window, table, fridge, door
+  const K = TM_KIT, kw = tmPlaster('kwall', '#f4e4c0', '#b89a6a');
+  tmBox(b, 'tm-kfloor', tmTiles('kfloor', '#e8e0d0', '#c84a3a', 2), [K[0] - 5, 0, -4], [K[0] + 5, 0.05, 4], 1.2);
+  tmBox(b, 'tm-kwall', kw, [K[0] - 5, 0, -4.2], [K[0] + 5, 3, -4], 3);
+  tmBox(b, 'tm-ksplash', tmTiles('splash', '#ffffff', '#e8f0f4', 4), [K[0] - 1.6, 0.9, -4.0], [K[0] + 2.8, 1.5, -3.98], 0.6);
+  tmBox(b, 'tm-kcab', '#5a9a8a', [K[0] - 1.6, 0, -4.0], [K[0] + 2.8, 0.86, -3.4]); tmBox(b, 'tm-ktop', '#efe6d6', [K[0] - 1.65, 0.86, -4.0], [K[0] + 2.85, 0.92, -3.35]);
+  for (let i = 0; i < 5; i++) tmBox(b, 'tm-khandle', '#2e2024', [K[0] - 1.4 + i * 0.88, 0.62, -3.39], [K[0] - 1.2 + i * 0.88, 0.66, -3.36]);
+  tmBox(b, 'tm-stove', '#2e2024', [K[0] + 0.4, 0.92, -3.9], [K[0] + 1.2, 0.95, -3.45]); tmBox(b, 'tm-ucab', '#5a9a8a', [K[0] - 1.6, 1.7, -4.0], [K[0] - 0.2, 2.5, -3.65]); tmBox(b, 'tm-ucab', '#5a9a8a', [K[0] + 1.6, 1.7, -4.0], [K[0] + 2.8, 2.5, -3.65]);
+  tmWindow(b, K[0] - 0.05, K[0] + 1.25, 1.6, 2.5, -3.98);
+  tmBox(b, 'tm-door', '#5a3a20', [K[0] - 4, 0, -4.05], [K[0] - 2.8, 2.1, -3.98]); tmBox(b, 'tm-dframe', '#fbf7ee', [K[0] - 4.1, 2.1, -4.05], [K[0] - 2.7, 2.2, -3.95]); tmBox(b, 'tm-knob', '#f6c744', [K[0] - 3.0, 1.0, -3.98], [K[0] - 2.94, 1.06, -3.94]);
+  tmBox(b, 'tm-table', '#8a5a30', [K[0] - 1, 0.72, -2.5], [K[0] + 1.6, 0.8, -1.2]); for (const [x, z] of [[-0.9, -2.4], [1.4, -2.4], [-0.9, -1.4], [1.4, -1.4]]) tmBox(b, 'tm-tleg', '#6a4020', [K[0] + x, 0, z], [K[0] + x + 0.1, 0.72, z + 0.1]);
+  tmBox(b, 'tm-cloth', '#e8504a', [K[0] - 0.4, 0.8, -2.2], [K[0] + 1.0, 0.81, -1.5]); tmBox(b, 'tm-fruit', '#f6c744', [K[0] + 0.2, 0.81, -1.95], [K[0] + 0.4, 0.95, -1.75]);
+  tmBox(b, 'tm-fridge', '#f0f0f4', [K[0] + 3, 0, -3.9], [K[0] + 4, 1.9, -3.1]); tmBox(b, 'tm-fline', '#b8b8c4', [K[0] + 3, 1.2, -3.1], [K[0] + 4, 1.23, -3.08]); tmBox(b, 'tm-fh', '#2e2024', [K[0] + 3.1, 1.35, -3.08], [K[0] + 3.14, 1.7, -3.05]);
+  tmBox(b, 'tm-plant', '#3a8a4a', [K[0] + 2.4, 0.92, -3.8], [K[0] + 2.7, 1.3, -3.5]); tmBox(b, 'tm-pot', '#c86a3a', [K[0] + 2.42, 0.92, -3.78], [K[0] + 2.68, 1.05, -3.52]);
+  // STREET (x 100): asphalt with dashes, curbs and sidewalks, houses both sides, trees, lamps, fences, a hydrant, the lake
   const S = TM_ST;
   [-30, -18, -6, 6, 18, 30].forEach((x, i) => { CT.house(b, S[0] + x, -9, { yaw: 0, w: 9, d: 7, h: [7, 8.4, 9.8][i % 3], style: i }); CT.house(b, S[0] + x + 6, 11, { yaw: Math.PI, w: 9, d: 7, h: [8.4, 7, 9.8][i % 3], style: i + 2 }); });
   for (let i = 0; i < 8; i++) CT.tree(b, S[0] - 34 + i * 10, i % 2 ? 4.5 : -4.5, { kind: i % 3 === 2 ? 'cone' : 'round', h: 5 + (i % 3), seed: i + 2 });
-  tmBox(b, 'tm-road', '#7a7a84', [S[0] - 60, 0, -3.5], [S[0] + 60, 0.03, 3.5]);
+  tmBox(b, 'tm-road', tmAsphalt, [S[0] - 60, 0, -3.5], [S[0] + 60, 0.03, 3.5], 4);
+  for (let x = -58; x < 60; x += 4) tmBox(b, 'tm-dash', '#f4f0e0', [S[0] + x, 0.03, -0.08], [S[0] + x + 2, 0.04, 0.08]);
+  for (const z of [-1, 1]) { tmBox(b, 'tm-curb', '#9a9488', [S[0] - 60, 0, z < 0 ? -3.7 : 3.5], [S[0] + 60, 0.16, z < 0 ? -3.5 : 3.7]); tmBox(b, 'tm-walk', tmSidewalk, [S[0] - 60, 0, z < 0 ? -5.4 : 3.7], [S[0] + 60, 0.14, z < 0 ? -3.7 : 5.4], 1); }
+  for (let x = -54; x < 60; x += 14) { tmLamp(b, S[0] + x, -5.0); }
+  for (let x = -36; x < 40; x += 2) { tmBox(b, 'tm-fence', '#fbf7ee', [S[0] + x, 0, -5.6], [S[0] + x + 0.12, 0.9, -5.5]); } tmBox(b, 'tm-fence', '#fbf7ee', [S[0] - 36, 0.6, -5.6], [S[0] + 40, 0.68, -5.5]);
+  tmBox(b, 'tm-hyd', '#e0302a', [S[0] - 3, 0.14, 4.2], [S[0] - 2.7, 0.8, 4.5]);
   tmBox(b, 'tm-pole', '#8a8f9e', [S[0] + 12, 0, -3.3], [S[0] + 12.15, 3.05, -3.15]); tmBox(b, 'tm-board', '#fbf7ef', [S[0] + 11.4, 2.9, -3.2], [S[0] + 12.8, 3.8, -3.1]);
-  // the lake (z 40)
-  const lake = new THREE.Mesh(new THREE.CircleGeometry(16, 48).rotateX(-Math.PI / 2), CT.mat('tm-lake', '#3a8ae0')); lake.position.set(S[0], 0.06, 40); st.add(lake);
+  tmBox(b, 'tm-court', tmAsphalt, [S[0] + 8, 0.01, -3.5], [S[0] + 16, 0.035, 3.5], 4);
+  // the lake (z 40) with a sandy rim and a little dock
+  const rim = new THREE.Mesh(new THREE.CircleGeometry(17.5, 48).rotateX(-Math.PI / 2), CT.mat('tm-sand', '#e6d29a')); rim.position.set(S[0], 0.04, 40); st.add(rim);
+  const lake = new THREE.Mesh(new THREE.CircleGeometry(16, 48).rotateX(-Math.PI / 2), CT.mat('tm-lake', { map: CT.paint.rep(tmWater, 3, 3) })); lake.position.set(S[0], 0.06, 40); st.add(lake);
+  tmBox(b, 'tm-dock', tmPlanks('dock', ['#a8744a', '#9a6a40']), [S[0] - 1, 0.1, 22], [S[0] + 1, 0.2, 28], 1);
   for (let i = 0; i < 6; i++) CT.tree(b, S[0] - 24 + i * 10, 22 + (i % 2) * 3, { kind: 'round', h: 6, seed: 20 + i });
-  // CITY: blocks around an avenue along x, the hill with the statue, the needle tower
-  const C = TM_CITY;
+  // CITY (x 400): facades with framed windows (one texture repeat = 3 m), roof caps, the avenue with lanes and crosswalks,
+  // sidewalks, lamps and trees, the hill with the statue, the needle tower
+  const C = TM_CITY, fac = [tmFacade('a', '#e8d8b8', '#5c7aa0', '#fbf7ee'), tmFacade('b', '#c8a888', '#4a6a90', '#3a3040'), tmFacade('c', '#a8b8c8', '#3a5a80', '#e8eef4'), tmFacade('d', '#d8c0a0', '#6a88aa', '#7a4a2a')];
   for (let i = 0; i < 26; i++) for (const side of [-1, 1]) {
     const x = C[0] - 130 + i * 10, h = 12 + ((i * 37 + (side + 1) * 11) % 48), d = 8 + (i % 3) * 2, z0 = side < 0 ? -10 - d : 10;
-    tmBox(b, `tm-blk${i % 4}`, tmWin(['#e8d8b8', '#c8b8a0', '#a8b8c8', '#d8c0a0'][i % 4]), [x, 0, z0], [x + 8, h, z0 + d], 4);
+    tmBox(b, `tm-fac${i % 4}`, fac[(i + (side > 0 ? 1 : 0)) % 4], [x, 0, z0], [x + 8, h, z0 + d], 3);
+    tmBox(b, 'tm-roofcap', '#5a5560', [x - 0.2, h, z0 - 0.2], [x + 8.2, h + 0.5, z0 + d + 0.2]);
+    tmBox(b, 'tm-shop', ['#e0302a', '#2f6ad0', '#f6c744', '#3aa05a'][(i + side + 2) % 4], [x + 0.5, 2.8, side < 0 ? z0 + d : z0 - 0.6], [x + 7.5, 3.3, side < 0 ? z0 + d + 0.6 : z0]);
   }
-  tmBox(b, 'tm-ave', '#5a5c66', [C[0] - 140, 0, -10], [C[0] + 140, 0.04, 10]);
-  const hill = new THREE.Mesh(new THREE.SphereGeometry(30, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2), CT.mat('tm-hill', '#4a8a4a')); hill.scale.set(1, 0.45, 1); hill.position.set(C[0] - 60, 0, -70); st.add(hill);
+  tmBox(b, 'tm-ave', tmAsphalt, [C[0] - 140, 0, -8], [C[0] + 140, 0.04, 8], 6);
+  for (const z of [-4, 0, 4]) for (let x = -138; x < 140; x += 6) tmBox(b, z ? 'tm-dash' : 'tm-dashY', z ? '#f4f0e0' : '#f6c744', [C[0] + x, 0.04, z - 0.1], [C[0] + x + (z ? 3 : 6), 0.05, z + 0.1]);
+  for (const x of [-100, -40, 20, 80]) for (let k = 0; k < 8; k++) tmBox(b, 'tm-dash', '#f4f0e0', [C[0] + x + k * 0.9, 0.045, -7.5], [C[0] + x + k * 0.9 + 0.5, 0.055, 7.5]);
+  for (const z of [-1, 1]) tmBox(b, 'tm-walk', tmSidewalk, [C[0] - 140, 0, z < 0 ? -10 : 8], [C[0] + 140, 0.16, z < 0 ? -8 : 10], 1.5);
+  for (let x = -130; x < 140; x += 20) { tmLamp(b, C[0] + x, -9, 6); CT.tree(b, C[0] + x + 10, 9, { kind: 'round', h: 4.5, seed: 40 + x }); }
+  const hill = new THREE.Mesh(new THREE.SphereGeometry(30, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2), CT.mat('tm-hill', { map: CT.paint.rep(tmGrassT, 6, 6) })); hill.scale.set(1, 0.45, 1); hill.position.set(C[0] - 60, 0, -70); st.add(hill);
   tmBox(b, 'tm-statue', '#f0ece2', [C[0] - 61, 13.5, -71], [C[0] - 59, 17, -69]); tmBox(b, 'tm-statue', '#f0ece2', [C[0] - 60.6, 17, -70.6], [C[0] - 59.4, 27, -69.4]);
   tmBox(b, 'tm-statue', '#f0ece2', [C[0] - 65, 24.5, -70.4], [C[0] - 55, 25.7, -69.6]);
   const head = new THREE.Mesh(new THREE.SphereGeometry(0.9, 16, 12), CT.mat('tm-statue', '#f0ece2')); head.position.set(C[0] - 60, 28, -70); st.add(head);
   const tower = new THREE.Mesh(new THREE.ConeGeometry(9, 120, 6), CT.mat('tm-tower', '#c8d8e8')); tower.position.set(C[0] + 120, 60, -60); tower.castShadow = true; st.add(tower);
-  // MINI city (for the giant days) by the sea; the sea itself; a mountain; ships
+  for (const y of [30, 60, 90]) { const ring = new THREE.Mesh(new THREE.CylinderGeometry(9 * (1 - y / 120) + 0.6, 9 * (1 - y / 120) + 0.6, 1.2, 6), CT.mat('tm-ring', '#7a8aa0')); ring.position.set(C[0] + 120, y, -60); st.add(ring); }
+  // MINI city (x 900; blocks 0.3-1.5 m): facades scaled down, little streets, the sea with waves, a mountain, ships
   const M = TM_MINI;
-  for (let i = 0; i < 60; i++) { const x = M[0] - 30 + (i % 12) * 2.6, z = -12 + Math.floor(i / 12) * 2.6, h = 0.4 + ((i * 37) % 13) / 10; tmBox(b, `tm-mb${i % 4}`, ['#e8d8b8', '#c8b8a0', '#a8b8c8', '#d8c0a0'][i % 4], [x, 0, z], [x + 1.6, h, z + 1.6]); }
-  const sea = new THREE.Mesh(new THREE.PlaneGeometry(900, 900).rotateX(-Math.PI / 2), CT.mat('tm-sea', '#2a7ab8')); sea.position.set(M[0] + 470, 0.05, 0); st.add(sea);
+  tmBox(b, 'tm-mground', tmAsphalt, [M[0] - 31, 0.005, -13], [M[0] + 1, 0.02, 19], 0.6);
+  for (let i = 0; i < 60; i++) { const x = M[0] - 30 + (i % 12) * 2.6, z = -12 + Math.floor(i / 12) * 2.6, h = 0.4 + ((i * 37) % 13) / 10; tmBox(b, `tm-mfac${i % 4}`, fac[i % 4], [x, 0, z], [x + 1.6, h, z + 1.6], 0.5); tmBox(b, 'tm-roofcap', '#5a5560', [x - 0.03, h, z - 0.03], [x + 1.63, h + 0.06, z + 1.63]); }
+  const sea = new THREE.Mesh(new THREE.PlaneGeometry(900, 900).rotateX(-Math.PI / 2), CT.mat('tm-sea', { map: CT.paint.rep(tmWater, 90, 90) })); sea.position.set(M[0] + 470, 0.05, 0); st.add(sea);
+  tmBox(b, 'tm-beach', '#e6d29a', [M[0] + 1, 0.01, -14], [M[0] + 21, 0.04, 20]);
   TM.mtn = new THREE.Group(); const mtn = new THREE.Mesh(new THREE.ConeGeometry(0.68, 1, 7), CT.mat('tm-mtn', '#8a8f9e')); mtn.position.y = 0.5; const snow = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.3, 7), CT.mat('tm-snow', '#fbfbff')); snow.position.y = 0.86; TM.mtn.add(mtn, snow); TM.mtn.position.set(M[0] - 10, 0, -80); TM.mtn.scale.setScalar(44); st.add(TM.mtn);
   TM.mtower = new THREE.Mesh(new THREE.ConeGeometry(1.2, 16.6, 6), CT.mat('tm-tower', '#c8d8e8')); TM.mtower.position.set(M[0] + 2, 8.3, -4); TM.mtower.castShadow = true; st.add(TM.mtower);
-  // the STUDIO (diagrams): a navy floor and back wall at x 840, z 30
-  tmBox(b, 'tm-stf', '#1b2a44', [STU[0] - 30, 0, STU[2] - 14], [STU[0] + 30, 0.06, STU[2] + 14]); tmBox(b, 'tm-stw', '#22335a', [STU[0] - 30, 0, STU[2] - 14.5], [STU[0] + 30, 24, STU[2] - 14]);
+  // the STUDIO (diagrams): a navy floor with a grid and a back wall
+  tmBox(b, 'tm-stf', tmTiles('stu', '#1b2a44', '#1f3050', 4), [STU[0] - 30, 0, STU[2] - 14], [STU[0] + 30, 0.06, STU[2] + 14], 4); tmBox(b, 'tm-stw', tmPlaster('stw', '#22335a', '#0e1830'), [STU[0] - 30, 0, STU[2] - 14.5], [STU[0] + 30, 24, STU[2] - 14], 8);
   CT.build(b, st);
   // moving pieces
   TM.cars = [0, 1, 2, 3, 4, 5].map((i) => { const g = new THREE.Group(); const c = new THREE.Mesh(new THREE.BoxGeometry(4, 1.4, 1.9), CT.mat('tm-car' + (i % 4), ['#e0302a', '#3a7aff', '#f6c744', '#f0ece2'][i % 4])); c.position.y = 0.9; c.castShadow = true;
@@ -210,7 +294,7 @@ const tmInit = (w: World) => {
   TM.chair.position.set(K[0] + 2.4, 0, -1.6); st.add(TM.chair);
   TM.ball = tmMesh(st, new THREE.SphereGeometry(0.24, 16, 12), '#e86a20', [S[0] + 12, 3.2, -2.6]);
   // the cube of eight (unit cubes), shown in the room's corner for the diagram
-  TM.cube = new THREE.Group(); for (let i = 0; i < 8; i++) { const m = new THREE.Mesh(new THREE.BoxGeometry(0.98, 0.98, 0.98), CT.mat('tm-cube', '#2fa04a')); m.position.set((i & 1) - 0.5, ((i >> 1) & 1) + 0.5, ((i >> 2) & 1) - 0.5); m.castShadow = true; TM.cube.add(m); }
+  TM.cube = new THREE.Group(); for (let i = 0; i < 8; i++) { const m = new THREE.Mesh(new THREE.BoxGeometry(0.98, 0.98, 0.98), CT.mat('tm-cube', '#e0342c')); m.position.set((i & 1) - 0.5, ((i >> 1) & 1) + 0.5, ((i >> 2) & 1) - 0.5); m.castShadow = true; TM.cube.add(m); }
   TM.cube.position.set(STU[0] + 6, 0.06, STU[2] - 2); st.add(TM.cube);
   // SPACE: a starry shell (no fog) around z 3000, the planets
   const SP = TM_SP;
@@ -222,7 +306,7 @@ const tmInit = (w: World) => {
   TM.moon = tmBasic(st, new THREE.SphereGeometry(5.4, 32, 24), pmat('moon'), tmAdd(SP, [60, 10, 0]));
   TM.jup = tmBasic(st, new THREE.SphereGeometry(40, 48, 32), pmat('jupiter'), tmAdd(SP, [-140, 0, 120]));
   TM.sun = tmBasic(st, new THREE.SphereGeometry(30, 32, 24), new THREE.MeshBasicMaterial({ color: new THREE.Color(3.2, 2.6, 1.2), fog: false }), tmAdd(SP, [160, 30, 250]));
-  TM.star = tmBasic(st, new THREE.SphereGeometry(30, 32, 24), new THREE.MeshBasicMaterial({ color: '#2fa04a', fog: false }), tmAdd(SP, [0, 0, -200]));
+  TM.star = tmBasic(st, new THREE.SphereGeometry(30, 32, 24), new THREE.MeshBasicMaterial({ color: '#e0342c', fog: false }), tmAdd(SP, [0, 0, -200]));
   TM.iss = new THREE.Group(); TM.iss.add(new THREE.Mesh(new THREE.BoxGeometry(6, 0.3, 0.3), new THREE.MeshBasicMaterial({ color: '#d8d8e0', fog: false })));
   for (const x of [-2.6, -1.6, 1.6, 2.6]) for (const z of [-1, 1]) { const pn = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.05, 1.6), new THREE.MeshBasicMaterial({ color: '#3a5a9a', fog: false })); pn.position.set(x, 0, z * 1.1); TM.iss.add(pn); }
   TM.iss.position.set(...tmAdd(SP, [20, 22, -10])); st.add(TM.iss);

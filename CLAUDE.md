@@ -17,6 +17,8 @@ Make it in one go: design and test the video's world first (`plan.md`, the world
 
 After `final.mp4`, an optional editing pass adds DIA stingers with punch zooms, a chapter bar and a subscribe pop: `node remotion/render.mjs videos/<topic>` (see `remotion/README.md`; `cd remotion && npm install` once).
 
+Motion, rhythm and sound direction for any video: `.claude/skills/direcao-de-movimento/SKILL.md` (distilled from nexu-io/openmotion). The official HyperFrames skills (`.claude/skills/hyperframes*`, Apache-2.0) document the engine under `styles/` (pinned at hyperframes 0.8.166); the production flow stays `prompts/production.md` and `core/`. Do not run their usage-note beacon (`events`) without the user's yes.
+
 ## If something is missing
 
 If `node_modules`, `.venv` or a tool (Node 22.18+, ffmpeg, Python 3.10 to 3.14) is missing, the project isn't set up yet: tell the user and offer to run the steps in `prompts/setup-<style>.md` first. The same goes for a style they ask for whose `styles/<style>/node_modules` is missing.
