@@ -242,4 +242,10 @@ defineVisuals({
   'test-statue': { bg: '#5ab0f0', html: () => svg(`${bzSky('#5ab0f0', '#d8f0ff')}${imStatue(600, 1000, 0.9)}${imTower(1500, 1000, 820)}`), anim() {} },
   'test-sea': { bg: '#2a7ab8', html: () => svg(`${imSea(560)}${imShip(400, 800, 0.6)}${imShip(1500, 700, 0.4)}`), anim() {} },
   'test-space': { bg: '#05060e', html: () => svg(`${imSpace()}${imEarth(500, 600, 220)}${imMoon(1000, 300, 60)}${imJupiter(1500, 700, 160)}${imISS('iss', 1000, 800, 0.8)}${imStarTuco('st', 1600, 250, 120, 1)}`), anim() {} },
+  'mascots': { bg: '#f6c744', html: () => svg(`<rect width="1920" height="1080" fill="#f6c744"/>${[
+    ['A', { kid: true, tall: 1.22, skin: '#a8683e', hair: { style: 'afro', color: '#1c1410' }, top: '#2fa04a', top2: '#f6c744', pants: '#2a3a5a', shoes: '#e0302a' }],
+    ['B', { kid: true, tall: 1.22, skin: '#f0c8a0', hair: { style: 'spiky', color: '#f07a1a' }, top: '#2a6ad8', top2: '#fbf7ef', pants: '#2a2a3a', shoes: '#f6c744' }],
+    ['C', { kid: true, tall: 1.22, skin: '#8a5a3a', hat: { kind: 'cap', color: '#f6c744' }, hair: { style: 'short', color: '#1c1410' }, top: '#7a3ac8', top2: '#f6c744', pants: '#1c1c24', shoes: '#fbf7ef' }],
+    ['D', { kid: true, tall: 1.22, skin: '#c98757', hat: { kind: 'beanie', color: '#e0302a' }, hair: { style: 'messy', color: '#3a2216' }, top: '#1aa0a0', top2: '#fbf7ef', pants: '#3a3a4a', shoes: '#e0302a', glasses: true }],
+  ].map(([n, sp]: any, i: number) => `${bzChar('m' + n, sp, 280 + i * 460, 960, 1.35)}<text x="${280 + i * 460}" y="1050" text-anchor="middle" font-family="Anton" font-size="70" fill="${BZ.ink}">${n}</text>`).join('')}`), anim(tl, s) { for (const n of ['A', 'B', 'C', 'D']) bzFace(tl, '#sc-mascots #m' + n, s.t0, 'dot', 'grin'); } },
 });
