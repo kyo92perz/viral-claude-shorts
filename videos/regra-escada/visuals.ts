@@ -1,5 +1,5 @@
 // <lines>
-const RG_LINES = [];
+const RG_LINES = [{"who": "rg_eu", "t0": 0.3, "t1": 5.863}, {"who": "rg_eu", "t0": 6.263, "t1": 10.176}, {"who": "rg_vo", "t0": 10.576, "t1": 14.462}, {"who": "rg_eu", "t0": 15.062, "t1": 20.69}, {"who": "rg_eu", "t0": 21.09, "t1": 25.824}, {"who": "rg_eu", "t0": 26.124, "t1": 28.869}, {"who": "rg_eu", "t0": 29.869, "t1": 34.66}, {"who": "rg_eu", "t0": 35.26, "t1": 41.472}, {"who": "rg_eu", "t0": 42.072, "t1": 58.674}, {"who": "rg_eu", "t0": 59.274, "t1": 65.733}, {"who": "rg_eu", "t0": 66.333, "t1": 70.993}];
 // </lines>
 // =====================================================================
 //  A REGRA DA VÓ Nº 3: O DEGRAU CATORZE — the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -17,7 +17,7 @@ const rgCreak = (id: string, y: number) => `<g id="${id}" opacity="0">${[-1, 1].
 
 defineVisuals({
   // ---------------- the hook: the stairs in the dark, the 14th step breathing, a red 14
-  hook: { bg: '#000', html: () => bzShot(`<g transform="translate(-540 -400) scale(2)">${rgStairs(14)}${rgDark(0.8, stepY(14))}${rgNums(14)}</g>`, `${rgSay('hk', 'NÃO SUBA', 540, 1560, -4, BZ.red, '#fff', 120)}${bzVignette(0.85)}`),
+  hook: { bg: '#000', html: () => bzShot(`<g transform="translate(-540 -400) scale(2)">${rgStairs(14)}${rgDark(0.75, stepY(14))}${bzGlow('rh14', 540, stepY(14), 300, '#ff2a1a', 0.3)}${rgNums(14)}</g>`, `${rgSay('hk', 'NÃO SUBA', 540, 1560, -4, BZ.red, '#fff', 120)}${bzVignette(0.85)}`),
     anim(tl, s, K, $) { tl.set($('#n14'), { opacity: 1 }, s.t0); rgBreathe(tl, $('#s14 .tr'), s.t0, s.t1, 0.35); bzHook(tl, $('#hk'), s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 600); } },
   // ---------------- the rule: grandma and Davi at the foot of the stairs, counting
   rule: { bg: '#3a2a30', html: () => bzShot(`${rgStairs(13)}${rgNums(13)}${rgChar('vo', 300, 1900, 1.2)}${rgChar('davi', 760, 1900, 1.1, true)}`, bzVignette(0.55)),
@@ -35,7 +35,7 @@ defineVisuals({
   count: { bg: '#000', html: () => bzShot(`${rgStairs(14)}${rgDark(0.86)}${rgNums(14)}`, bzVignette(0.85)),
     anim(tl, s, K, $) { for (const [k, i] of [['a', 11], ['b', 12], ['c', 13], ['d', 14]] as [string, number][]) { tl.set($('#n' + i), { opacity: 1 }, K(k)); tl.to($('#spot'), { y: stepY(i) - 1700, duration: 0.3 }, K(k)); }
       bzPush(tl, $('#cam'), s.t0, K('d'), 1, 1.5, 540, 500); tl.to($('#cam'), { scale: 1.9, svgOrigin: '540 450', duration: 0.25, ease: 'power3.out' }, K('d')); } },
-  breath: { bg: '#000', html: () => bzShot(`<g transform="translate(-1080 -300) scale(3)">${rgStairs(14)}${rgDark(0.7, stepY(14))}</g>`, `${rgSay('rs', 'RESPIRANDO', 540, 1560, 3, BZ.red, '#fff', 110)}${bzVignette(0.85)}`),
+  breath: { bg: '#000', html: () => bzShot(`<g transform="translate(-1080 -300) scale(3)">${rgStairs(14)}${rgDark(0.45, stepY(14))}${bzGlow('rg14', 540, stepY(14), 360, '#ff2a1a', 0.35)}</g>`, `${rgSay('rs', 'RESPIRANDO', 540, 1560, 3, BZ.red, '#fff', 110)}${bzVignette(0.85)}`),
     anim(tl, s, K, $) { rgBreathe(tl, $('#s14 .tr'), s.t0, s.t1, 0.45); rgHide(tl, $('#rs'), s.t0, K('r')); bzHandheld(tl, $('#cam'), s.t0, s.t1, 5); } },
   // ---------------- the sofa; the creaks coming down
   sofa: { bg: '#1a1626', html: () => bzShot(`${rgSofa()}${rgChar('vo', 260, 1500, 1.1)}${rgChar('davi', 560, 1500, 1.0)}<rect x="160" y="1180" width="560" height="200" rx="60" fill="#3a6a5a" ${bzO()}/>`, bzVignette(0.7)),

@@ -53,4 +53,5 @@ defineVisuals({
   'test-building': { bg: '#4a4a52', html: () => svg(`${rgStairs(17, true)}${rgChar('daviadulto', 540, 1900, 1.0)}`), anim(tl, s) { tl.set('#sc-test-building .num', { opacity: 1 }, s.t0); } },
   'test-sofa': { bg: '#1a1626', html: () => svg(rgSofa()), anim() {} },
   'test-rug': { bg: '#c8a878', html: () => svg(rgRug()), anim(tl, s) { tl.set('#sc-test-rug .fp', { opacity: 1 }, s.t0); } },
+  'cover-a': { bg: '#000', html: () => svg(`<g transform="translate(-540 -300) scale(2)">${rgStairs(14)}${rgDark(0.6, 1760 - 13 * 104 - 50)}${bzGlow('cv14', 540, 1760 - 13 * 104 - 50, 320, '#ff2a1a', 0.4)}${rgNums(14)}</g>${bzSign('t1', 'SE DER 14', 540, 1380, -4, '#fff', BZ.ink, 110)}${bzSign('t2', 'NÃO SUBA', 540, 1560, 3, BZ.red, '#fff', 140)}${bzVignette(0.7)}`), anim(tl, s) { tl.set('#sc-cover-a #n14, #sc-cover-a #n13, #sc-cover-a #n12', { opacity: 1 }, s.t0); } },
 });

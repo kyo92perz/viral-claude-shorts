@@ -1,0 +1,82 @@
+{
+ "duration": 72.493,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "rg_eu",
+   "text": "Na casa da minha vó tinha uma regra: antes de subir pra dormir, a gente contava os degraus da escada.",
+   "t0": 0.3,
+   "t1": 5.863
+  },
+  {
+   "id": "n02",
+   "who": "rg_eu",
+   "text": "Eram treze. Sempre treze.",
+   "t0": 6.263,
+   "t1": 10.176
+  },
+  {
+   "id": "v01",
+   "who": "rg_vo",
+   "text": "Se der catorze, ninguém sobe. Dorme na sala e não olha pra escada.",
+   "t0": 10.576,
+   "t1": 14.462
+  },
+  {
+   "id": "n03",
+   "who": "rg_eu",
+   "text": "Eu achava que era brincadeira de vó. Até a noite que a luz acabou.",
+   "t0": 15.062,
+   "t1": 20.69
+  },
+  {
+   "id": "n04",
+   "who": "rg_eu",
+   "text": "Eu fui contando no escuro, com a lanterna do celular. Um, dois, três...",
+   "t0": 21.09,
+   "t1": 25.824
+  },
+  {
+   "id": "n05",
+   "who": "rg_eu",
+   "text": "Onze. Doze. Treze. Catorze.",
+   "t0": 26.124,
+   "t1": 28.869
+  },
+  {
+   "id": "n06",
+   "who": "rg_eu",
+   "text": "Eu iluminei o degrau catorze. Ele era mais escuro que os outros. E tava respirando.",
+   "t0": 29.869,
+   "t1": 34.66
+  },
+  {
+   "id": "n07",
+   "who": "rg_eu",
+   "text": "Minha vó me puxou pro sofá. A gente passou a noite ouvindo a madeira estalar. Degrau por degrau. Descendo.",
+   "t0": 35.26,
+   "t1": 41.472
+  },
+  {
+   "id": "n08",
+   "who": "rg_eu",
+   "text": "De manhã, a escada tinha treze degraus de novo. Mas o tapete da sala tava molhado. Com marcas de pé. Que não eram de gente.",
+   "t0": 42.072,
+   "t1": 58.674
+  },
+  {
+   "id": "n09",
+   "who": "rg_eu",
+   "text": "Hoje eu moro em prédio. A escada tem dezesseis degraus. Ontem, quando eu voltei pra casa... contei dezessete.",
+   "t0": 59.274,
+   "t1": 65.733
+  },
+  {
+   "id": "n10",
+   "who": "rg_eu",
+   "text": "Quantos degraus tem a escada da sua casa? Vai lá contar.",
+   "t0": 66.333,
+   "t1": 70.993
+  }
+ ]
+}

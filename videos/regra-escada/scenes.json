@@ -1,0 +1,319 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "A REGRA DA VÓ",
+  "ep": "Nº 3"
+ },
+ "music": {
+  "bpm": 64,
+  "key": "E"
+ },
+ "notes": "A REGRA DA VÓ Nº 3, Brasil Z toon look: counting the 13 steps of the grandmother's staircase every night; the power goes out, the phone flashlight, a 14th dark step that breathes; the sofa, the creaks coming down; wet three-toed footprints on the rug; years later, 17 steps in a 16-step stairwell. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.2,
+     "sfx": "sting",
+     "t": 0.5
+    }
+   ],
+   "t0": 0,
+   "t1": 2.361
+  },
+  {
+   "id": "rule",
+   "from": 8,
+   "type": "object",
+   "mood": "calm",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 15,
+     "sfx": "tick",
+     "t": 4.255
+    }
+   ],
+   "t0": 2.361,
+   "t1": 6.063
+  },
+  {
+   "id": "thirteen",
+   "from": 20,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 21,
+     "sfx": "hit",
+     "t": 7.091
+    }
+   ],
+   "t0": 6.063,
+   "t1": 10.376
+  },
+  {
+   "id": "warn",
+   "from": 24,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 26,
+     "sfx": "sting",
+     "t": 11.017
+    }
+   ],
+   "t0": 10.376,
+   "t1": 14.762
+  },
+  {
+   "id": "joke",
+   "from": 37,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 49,
+     "sfx": "off",
+     "t": 19.752
+    }
+   ],
+   "t0": 14.762,
+   "t1": 20.89
+  },
+  {
+   "id": "dark",
+   "from": 51,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 61,
+     "sfx": "tick",
+     "t": 24.864
+    },
+    {
+     "id": "b",
+     "at": 62,
+     "sfx": "tick",
+     "t": 25.096
+    },
+    {
+     "id": "c",
+     "at": 63,
+     "dt": -0.3,
+     "sfx": "tick",
+     "t": 25.16
+    }
+   ],
+   "t0": 20.89,
+   "t1": 25.874
+  },
+  {
+   "id": "count",
+   "from": 64,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 64,
+     "sfx": "tick",
+     "t": 26.124
+    },
+    {
+     "id": "b",
+     "at": 65,
+     "sfx": "tick",
+     "t": 26.705
+    },
+    {
+     "id": "c",
+     "at": 66,
+     "sfx": "tick",
+     "t": 27.285
+    },
+    {
+     "id": "d",
+     "at": 67,
+     "sfx": "sting",
+     "t": 27.972
+    }
+   ],
+   "t0": 25.874,
+   "t1": 29.569
+  },
+  {
+   "id": "breath",
+   "from": 68,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 82,
+     "sfx": "riser",
+     "t": 34.037
+    }
+   ],
+   "t0": 29.569,
+   "t1": 34.96
+  },
+  {
+   "id": "sofa",
+   "from": 83,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 86,
+     "sfx": "whoosh",
+     "t": 36.005
+    }
+   ],
+   "t0": 34.96,
+   "t1": 39.891
+  },
+  {
+   "id": "creak",
+   "from": 98,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 98,
+     "dt": 0.2,
+     "sfx": "thud",
+     "t": 40.071
+    }
+   ],
+   "t0": 39.891,
+   "t1": 41.772
+  },
+  {
+   "id": "morning",
+   "from": 102,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 41.772,
+   "t1": 48.468
+  },
+  {
+   "id": "rug",
+   "from": 111,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 119,
+     "sfx": "sting",
+     "t": 53.75
+    }
+   ],
+   "t0": 48.468,
+   "t1": 58.974
+  },
+  {
+   "id": "building",
+   "from": 127,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 144,
+     "sfx": "sting",
+     "t": 65.127
+    }
+   ],
+   "t0": 58.974,
+   "t1": 66.133
+  },
+  {
+   "id": "ask",
+   "from": 145,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 155,
+     "dt": 0.858,
+     "sfx": "sting",
+     "t": 71.273
+    }
+   ],
+   "t0": 66.133,
+   "t1": 72.493
+  }
+ ],
+ "duration": 72.493
+}
