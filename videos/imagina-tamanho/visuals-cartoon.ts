@@ -192,7 +192,7 @@ CT.shots([
     for (let i = 0; i < 2; i++) tPic(st, 'heli', tP(M, 30 + ((t * 6 + i * 20) % 40), 18 + i * 3, 4), 4, 300, 160, (g) => { g.fillStyle = '#3a4a3a'; g.strokeStyle = '#1e2350'; g.lineWidth = 8; g.beginPath(); g.ellipse(120, 100, 80, 40, 0, 0, 7); g.fill(); g.stroke(); g.fillRect(180, 92, 110, 16); g.fillStyle = '#1e2350'; g.fillRect(20, 40, 220, 10); g.fillRect(116, 40, 8, 30); }); } },
   { id: 'news', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [-1, 0], az: 25, el: 12 }); tCam(st, u, tP(C, 104, 1.6, 6), tP(C, 102, 1.7, 5.6), tP(C, 96, 2.6, 2), tP(C, 96, 2.7, 2), 40, 3); st.dof(10, tP(C, 96, 1.6, 2));
     tmPerson(st, 2, 'rep', tP(C, 96, 0, 2), 1.7, { e: 'wide', m: tTalk('im_rep', t, 'flat'), a: [10, 100] }); const ph = (t - s.t0) * 3; tmPerson(st, 1, 'tuco', tP(C, -220 + (t - s.t0) * 8, 0, -2), 102, { e: 'dot', m: 'flat', w: ph }); } },
-  { id: 'citymeal', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(C, 160, 260, 420), tP(C, 140, 240, 380), tP(C, 0, 160, 0), tP(C, 0, 170, 0), 44, 3); tHud(st, '9', '410 METROS');
+  { id: 'citymeal', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(C, 260, 300, 700), tP(C, 240, 280, 660), tP(C, 0, 190, 0), tP(C, 0, 200, 0), 44, 3); tHud(st, '9', '410 METROS');
     tmPerson(st, 1, 'tuco', tP(C, 0, 0, 0), 410, { e: 'half', m: 'wavy' }); } },
   { id: 'burj', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(M, 8, 6, 34), tP(M, 9, 7, 30), tP(M, 6, 8, -4), tP(M, 6, 8.5, -4), 40, 3, [t, tK(s, 't'), 0.25]); tSpeed(st, tBurst(t, tK(s, 't'))); tHud(st, '10', '819 METROS');
     tmPerson(st, 1, 'tuco', tP(M, 9, 0, -4), 16.4, { e: 'dot', m: 'grin', a: [10, 40] }); } },
@@ -213,7 +213,7 @@ CT.shots([
     tLying(st, tP(M, 110, 4, 0), 80, { e: 'closed', m: 'o' }); (TM.ships ?? []).forEach((sh, i) => { sh.scale.setScalar(3); sh.position.set(M[0] + 60 + i * 50, 0, 40 - i * 8 + Math.sin(t + i) * 2); });
     for (let i = 0; i < 3; i++) { const k = (t * 0.6 + i / 3) % 1; tSign(st, 'z' + i, 'Z', tP(M, 74 + i * 6, 14 + k * 10, 4), 5 + i * 2, '#fbf7ef'); } } },
   { id: 'science', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 52, 1.6, 8), tP(M, 50, 1.7, 7), tP(M, 50, 1.6, 0), tP(M, 50, 1.6, 0), 40, 2); st.dof(10, tP(M, 50, 1.6, 0));
-    tmPerson(st, 2, 'ger', tP(M, 49, 0, 0), 1.7, { e: 'wide', m: 'grin', a: [10, 100] }); tmPerson(st, 3, 'rep', tP(M, 51.4, 0, 0.4), 1.7, { e: 'wide', m: 'o', a: [10, 100] }); tLying(st, tP(M, 90, 3, -140), 90, { e: 'closed', m: 'smile' }); } },
+    tmPerson(st, 2, 'ger', tP(M, 49, 0, 0), 1.7, { e: 'wide', m: 'grin', a: [10, 100] }); tmPerson(st, 3, 'rep', tP(M, 51.4, 0, 0.4), 1.7, { e: 'wide', m: 'o', a: [10, 100] }); } },
   // ================================================ day 17-21
   { id: 'karman', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 120, 60, 170), tP(M, 120, 80, 150), tP(M, 110, 70, 0), tP(M, 110, 95, 0), 46, 2); tHud(st, '17', '105 KM');
     tmPerson(st, 1, 'tuco', tP(M, 110, 0, 0), 105, { e: 'wide', m: 'o' }); tPic(st, 'kline', tP(M, 110, 100, 4), 260, 1600, 40, (g) => { g.fillStyle = '#fbf7ef'; for (let x = 0; x < 1600; x += 60) g.fillRect(x, 10, 36, 20); });
@@ -242,7 +242,7 @@ CT.shots([
     tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -80, -10), 120, { e: 'wide', m: 'o', a: [20, 78] }, false); tSign(st, 'bola', 'BOLA DE FUTEBOL', tP(TM_SP, 28, 6, 6), 16, '#f6c744', '#1e2350', tK(s, 'b')); } },
   { id: 'swap', fn(t: number, u: number, s: Scene, st: tmS) { const T0 = tK(s, 't'), a = t > T0 ? (t - T0) * 0.8 : 0; tSpace({ earth: [[Math.cos(a) * 40, 10 + Math.sin(a) * 4, Math.sin(a) * 24], 2.4], spin: t }); st.light('day', { view: [0, -1] });
     tCam(st, u, tP(TM_SP, 0, 30, 110), tP(TM_SP, 0, 28, 100), tP(TM_SP, 0, 10, 0), tP(TM_SP, 0, 10, 0), 44, 2); tSpeed(st, tBurst(t, tK(s, 'g'), 0.8)); tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -20, 0), 60, { e: 'dot', m: 'grin' }, false);
-    tSign(st, 'massa', 'TUCO = 2,5 TERRAS', tP(TM_SP, 30, 30, 10), 40, '#2fa04a', '#fff', tK(s, 'g')); } },
+    tSign(st, 'massa', 'TUCO = 2,5 TERRAS', tP(TM_SP, 46, 34, 10), 34, '#2fa04a', '#fff', tK(s, 'g')); } },
   { id: 'hand', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[18, 12, 4], 6], spin: t * 0.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 4, 16, 40), tP(TM_SP, 6, 16, 34), tP(TM_SP, 6, 14, 0), tP(TM_SP, 8, 14, 0), 40, -3); st.dof(12, tP(TM_SP, 0, 16, -8));
     tmPerson(st, 1, 'tuco', tP(TM_SP, -2, -80, -8), 120, { e: 'wide', m: tTalk('im_tuco', t, 'o'), a: [20, 78], t: 10 }, false); } },
   // ================================================ day 29-32
