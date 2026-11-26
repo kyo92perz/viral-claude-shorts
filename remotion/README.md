@@ -10,6 +10,8 @@ What it adds automatically:
 
 `videos/<topic>/edits.json` can replace or extend any of these: `{ "punches": [{ "t": 12.4, "scale": 1.15 }], "stingers": [{ "t": 30, "text": "DIA 1", "sub": "1,6 METRO" }], "chapters": [...], "subscribe": 45, "captions": false, "brand": "IMAGINA SÓ", "auto": false }`.
 
+Every component follows the `remotion-motion-graphics` skill (`.claude/skills/remotion-motion-graphics/`, MIT, from haidrrrry/claude-remotion-skill): one theme (`src/theme.ts`), no linear easing, staggered spring entrances, faster exits, idle breathing, synthesized SFX (`node remotion/scripts/gen-sfx.mjs` → `public/sfx/`), and render → extract frames → look → fix before delivery.
+
 ## Setup (once)
 
 ```bash

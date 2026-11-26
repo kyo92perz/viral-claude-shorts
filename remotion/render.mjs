@@ -57,6 +57,8 @@ const link = (a, b) => { try { fs.linkSync(a, b); } catch { fs.copyFileSync(a, b
 link(src, path.join(pub, "final.mp4"));
 const font = [path.join(here, "fonts", "ArchivoBlack.ttf")].find((f) => fs.existsSync(f));
 if (font) link(font, path.join(pub, "font.ttf")); else delete props.font;
+fs.mkdirSync(path.join(pub, "sfx"));
+for (const f of fs.readdirSync(path.join(here, "public", "sfx"))) link(path.join(here, "public", "sfx", f), path.join(pub, "sfx", f));
 
 const browserExecutable = process.env.REMOTION_CHROME ?? ["/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell"].find((f) => fs.existsSync(f)) ?? null;
 log("bundling…");
