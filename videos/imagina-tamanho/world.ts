@@ -19,46 +19,57 @@ const IM_SPEC: Record<string, BzSpec> = {
   seg: { skin: '#8a5a3a', hair: { style: 'bald', color: '#1c1410' }, glasses: true, top: '#1c1c24', pants: '#1c1c24', shoes: '#0c0c10', wide: 1.3 },
   tio: { skin: '#c98757', hair: { style: 'short', color: '#3a2216' }, mustache: '#3a2216', top: '#e8c86a', pants: '#4a4a5a', shoes: '#3a2a1a', wide: 1.2 },
 };
-// ---- TUCO, new "big head" style (the channel's main character): a big round cream head, huge eyes and thick brows,
-// messy black curly hair, a GREEN hoodie with YELLOW drawstrings and a pocket, navy joggers, chunky RED sneakers,
-// round cream hands. Same parts and classes as bzChar (.mv .pos .lL .lR .aL .aR .bd .hd, eyes .ey-*, mouths .mo-*),
-// so bzFace / bzTalk / bzBlink / bzWalk / bzPose work on him. Feet at (x, y); head centre ~427*s above the feet.
-function tgKid(id: string, x: number, y: number, s = 1, flip = false) {
-  const INK = BZ.ink, skin = '#fbf1e4', hoodie = '#2fa04a', hoodD = '#1f7a36', cord = '#f6c744', pants = '#26304e', shoe = '#e0302a', hr = 132, hy = -427;
-  const o = (w = 8) => `stroke="${INK}" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"`;
-  const leg = (cls: string, lx: number) => `<g transform="translate(${lx} -150)"><g class="${cls}"><path d="M0 0 V 118" ${o(40)}/><path d="M0 0 V 118" stroke="${pants}" stroke-width="26" stroke-linecap="round"/>
-    <path d="M${-34 + (lx > 0 ? 12 : -12)} 140 Q ${-36 + (lx > 0 ? 12 : -12)} 104 ${(lx > 0 ? 12 : -12)} 102 Q ${44 + (lx > 0 ? 12 : -12)} 104 ${50 + (lx > 0 ? 12 : -12)} 140 Z" fill="${shoe}" ${o(7)}/><path d="M${-34 + (lx > 0 ? 12 : -12)} 140 H ${50 + (lx > 0 ? 12 : -12)}" stroke="#fbf7ef" stroke-width="10"/></g></g>`;
-  const arm = (cls: string, ax: number) => { const d = ax < 0 ? -1 : 1; return `<g transform="translate(${ax} -300)"><g class="${cls}"><path d="M0 0 Q ${d * 14} 60 ${d * 10} 120" fill="none" ${o(44)}/><path d="M0 0 Q ${d * 14} 60 ${d * 10} 120" fill="none" stroke="${hoodie}" stroke-width="30" stroke-linecap="round"/>
-    <circle cx="${d * 10}" cy="140" r="26" fill="${skin}" ${o(7)}/><circle cx="${d * 26}" cy="128" r="11" fill="${skin}" ${o(5)}/></g></g>`; };
-  const body = `<g class="bd"><path d="M-92 -310 Q -110 -250 -96 -148 Q 0 -128 96 -148 Q 110 -250 92 -310 Q 0 -340 -92 -310 Z" fill="${hoodie}" ${o()}/><path d="M30 -306 Q 60 -230 92 -160 Q 104 -230 92 -300 Z" fill="${hoodD}" opacity="0.6"/>
-    <path d="M-56 -210 H 56 L 46 -160 H -46 Z" fill="${hoodD}" ${o(5)}/><path d="M-22 -312 V -250 M22 -312 V -250" stroke="${cord}" stroke-width="7" stroke-linecap="round"/><circle cx="-22" cy="-246" r="7" fill="${cord}" ${o(3)}/><circle cx="22" cy="-246" r="7" fill="${cord}" ${o(3)}/></g>`;
-  const hood = `<path d="M-120 -300 Q -130 -360 -70 -370 L 70 -370 Q 130 -360 120 -300 Q 0 -280 -120 -300 Z" fill="${hoodie}" ${o()}/>`;
-  const curls = [[-1.0, -0.35], [-0.88, -0.72], [-0.55, -0.98], [-0.15, -1.1], [0.25, -1.06], [0.62, -0.9], [0.92, -0.55], [1.02, -0.2]];
-  const hairB = curls.map(([a, b]) => `<circle cx="${a * hr}" cy="${b * hr}" r="${hr * 0.3}" fill="#1c1410" ${o(7)}/>`).join('');
-  const hairF = `<path d="M${-hr * 0.92} ${-hr * 0.3} Q ${-hr * 0.7} ${-hr * 0.95} ${-hr * 0.1} ${-hr * 0.98} Q ${hr * 0.6} ${-hr * 1.0} ${hr * 0.92} ${-hr * 0.35} Q ${hr * 0.55} ${-hr * 0.62} ${hr * 0.28} ${-hr * 0.5} Q ${hr * 0.1} ${-hr * 0.72} ${-hr * 0.12} ${-hr * 0.52} Q ${-hr * 0.45} ${-hr * 0.68} ${-hr * 0.6} ${-hr * 0.45} Q ${-hr * 0.8} ${-hr * 0.5} ${-hr * 0.92} ${-hr * 0.3} Z" fill="#1c1410" ${o(7)}/>`;
-  const e = 46, ey = -4, er = 34;
-  const eye = (ex: number, inner: string) => `<ellipse cx="${ex}" cy="${ey}" rx="${er}" ry="${er * 1.18}" fill="#fff" ${o(7)}/>${inner}`;
-  const eyes = `<g class="ey ey-dot">${eye(-e, `<circle cx="${-e + 6}" cy="${ey + 6}" r="15" fill="${INK}"/><circle cx="${-e + 11}" cy="${ey}" r="5" fill="#fff"/>`)}${eye(e, `<circle cx="${e - 6}" cy="${ey + 6}" r="15" fill="${INK}"/><circle cx="${e - 1}" cy="${ey}" r="5" fill="#fff"/>`)}</g>
-    <g class="ey ey-wide" opacity="0"><ellipse cx="${-e}" cy="${ey}" rx="${er * 1.2}" ry="${er * 1.4}" fill="#fff" ${o(7)}/><ellipse cx="${e}" cy="${ey}" rx="${er * 1.2}" ry="${er * 1.4}" fill="#fff" ${o(7)}/><circle cx="${-e + 4}" cy="${ey + 4}" r="8" fill="${INK}"/><circle cx="${e - 4}" cy="${ey + 4}" r="8" fill="${INK}"/></g>
-    <g class="ey ey-closed" opacity="0"><path d="M${-e - 26} ${ey + 6} Q ${-e} ${ey - 20} ${-e + 26} ${ey + 6}" fill="none" ${o(9)}/><path d="M${e - 26} ${ey + 6} Q ${e} ${ey - 20} ${e + 26} ${ey + 6}" fill="none" ${o(9)}/></g>
-    <g class="ey ey-half" opacity="0">${eye(-e, `<circle cx="${-e + 4}" cy="${ey + 10}" r="13" fill="${INK}"/><path d="M${-e - er} ${ey - 2} Q ${-e} ${ey - er * 1.3} ${-e + er} ${ey - 2} Z" fill="${skin}" ${o(7)}/>`)}${eye(e, `<circle cx="${e - 4}" cy="${ey + 10}" r="13" fill="${INK}"/><path d="M${e - er} ${ey - 2} Q ${e} ${ey - er * 1.3} ${e + er} ${ey - 2} Z" fill="${skin}" ${o(7)}/>`)}</g>
-    <g class="ey ey-angry" opacity="0">${eye(-e, `<circle cx="${-e + 4}" cy="${ey + 8}" r="14" fill="${INK}"/><path d="M${-e - er} ${ey - 20} L ${-e + er} ${ey - 4} L ${-e + er} ${ey - 50} L ${-e - er} ${ey - 50} Z" fill="${skin}"/>`)}${eye(e, `<circle cx="${e - 4}" cy="${ey + 8}" r="14" fill="${INK}"/><path d="M${e + er} ${ey - 20} L ${e - er} ${ey - 4} L ${e - er} ${ey - 50} L ${e + er} ${ey - 50} Z" fill="${skin}"/>`)}</g>
-    <g class="ey ey-dead" opacity="0"><path d="M${-e - 18} ${ey - 18} l36 36 M${-e + 18} ${ey - 18} l-36 36 M${e - 18} ${ey - 18} l36 36 M${e + 18} ${ey - 18} l-36 36" ${o(9)}/></g>
-    <g class="ey ey-glow" opacity="0"><ellipse cx="${-e}" cy="${ey}" rx="${er}" ry="${er * 1.18}" fill="#ffe27a" ${o(7)}/><ellipse cx="${e}" cy="${ey}" rx="${er}" ry="${er * 1.18}" fill="#ffe27a" ${o(7)}/><path d="M${-e} ${ey - 22} l6 16 l16 6 l-16 6 l-6 16 l-6 -16 l-16 -6 l16 -6 z M${e} ${ey - 22} l6 16 l16 6 l-16 6 l-6 16 l-6 -16 l-16 -6 l16 -6 z" fill="#fff"/></g>`;
-  const brows = `<g class="brows"><path d="M${-e - 30} ${ey - 52} Q ${-e} ${ey - 66} ${-e + 26} ${ey - 50}" fill="none" ${o(12)}/><path d="M${e - 26} ${ey - 50} Q ${e} ${ey - 66} ${e + 30} ${ey - 52}" fill="none" ${o(12)}/></g>`;
-  const my = 66, mouths = `<g class="mo mo-smile"><path d="M-36 ${my - 10} Q 0 ${my + 22} 36 ${my - 10}" fill="none" ${o(9)}/></g>
-    <g class="mo mo-flat" opacity="0"><path d="M-24 ${my} h48" ${o(9)}/></g>
-    <g class="mo mo-open" opacity="0"><path d="M-40 ${my - 16} Q 0 ${my - 24} 40 ${my - 16} Q 36 ${my + 40} 0 ${my + 42} Q -36 ${my + 40} -40 ${my - 16} Z" fill="#8a1a24" ${o(7)}/><path d="M-22 ${my + 30} Q 0 ${my + 8} 22 ${my + 30} Q 0 ${my + 40} -22 ${my + 30} Z" fill="#f2707a"/></g>
-    <g class="mo mo-grin" opacity="0"><path d="M-50 ${my - 18} Q 0 ${my - 10} 50 ${my - 18} Q 40 ${my + 34} 0 ${my + 36} Q -40 ${my + 34} -50 ${my - 18} Z" fill="#8a1a24" ${o(7)}/><path d="M-46 ${my - 14} Q 0 ${my - 6} 46 ${my - 14} L 42 ${my + 2} Q 0 ${my + 8} -42 ${my + 2} Z" fill="#fff"/><path d="M-20 ${my + 28} Q 0 ${my + 14} 20 ${my + 28}" fill="#f2707a"/></g>
-    <g class="mo mo-frown" opacity="0"><path d="M-30 ${my + 12} Q 0 ${my - 14} 30 ${my + 12}" fill="none" ${o(9)}/></g>
-    <g class="mo mo-o" opacity="0"><ellipse cx="0" cy="${my + 6}" rx="18" ry="22" fill="#8a1a24" ${o(7)}/></g>
-    <g class="mo mo-fangs" opacity="0"><path d="M-50 ${my - 18} Q 0 ${my + 40} 50 ${my - 18} Z" fill="#8a1a24" ${o(7)}/></g>`;
-  const head = `<g transform="translate(0 ${hy})"><g class="hd">${hairB}<circle r="${hr}" fill="${skin}" ${o(9)}/><path d="M${hr * 0.25} ${-hr * 0.96} A ${hr} ${hr} 0 0 1 ${hr * 0.25} ${hr * 0.96} A ${hr * 0.75} ${hr} 0 0 0 ${hr * 0.25} ${-hr * 0.96} Z" fill="#d8c8b4" opacity="0.5"/>${hairF}
-    <ellipse cx="${-hr * 0.62}" cy="${hr * 0.32}" rx="20" ry="11" fill="#ff9a8a" opacity="0.5"/><ellipse cx="${hr * 0.62}" cy="${hr * 0.32}" rx="20" ry="11" fill="#ff9a8a" opacity="0.5"/>${eyes}${brows}${mouths}</g></g>`;
-  return `<g id="${id}" class="bzc"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})"><ellipse class="shadow" cx="0" cy="12" rx="110" ry="20" fill="#000" opacity="0.25"/>
-    ${leg('lL', -40)}${leg('lR', 40)}${arm('aL', -86)}${hood}${body}${arm('aR', 86)}${head}</g></g></g>`;
+// ---- the "soft" style (this channel's look from now on): round white-lavender heads on a thin neck, small bodies, thin
+// legs, navy outlines, simple faces (oval eyes, line brows, a wavy nervous mouth). Every character goes through softChar.
+// Same parts and classes as bzChar (.mv .pos .lL .lR .aL .aR .bd .hd, eyes .ey-*, mouths .mo-*), so bzFace / bzTalk /
+// bzBlink / bzWalk / bzPose work. Feet at (x, y); head centre ~420*s above the feet; about 540*s tall.
+// TUCO (the main character): messy black curls on top, GREEN hoodie with a YELLOW collar and drawstrings, RED sneakers.
+const SOFT = { ink: '#1e2350', head: '#ecebfa', shade: '#c9c8ee' };
+function softChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = false) {
+  const N = SOFT.ink, kid = !!sp.kid, top = sp.top, top2 = sp.top2 || '#ffffff', pants = sp.dress ? sp.dress : (sp.pants || '#2a2e52'), shoe = sp.shoes || '#e8e8f4';
+  const o = (w = 7) => `stroke="${N}" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"`;
+  const hr = 118, hy = -420, legT = -150;
+  const leg = (cls: string, lx: number) => `<g transform="translate(${lx} ${legT})"><g class="${cls}"><path d="M0 0 V 132" ${o(22)}/><path d="M0 0 V 132" stroke="${pants}" stroke-width="12" stroke-linecap="round"/><ellipse cx="${lx > 0 ? 8 : -8}" cy="140" rx="24" ry="12" fill="${shoe}" ${o(6)}/></g></g>`;
+  const arm = (cls: string, ax: number) => { const d = ax < 0 ? -1 : 1; return `<g transform="translate(${ax} -272)"><g class="${cls}"><path d="M0 0 Q ${d * 10} 60 ${d * 6} 112" fill="none" ${o(24)}/><path d="M0 0 Q ${d * 10} 60 ${d * 6} 112" fill="none" stroke="${top}" stroke-width="14" stroke-linecap="round"/><circle cx="${d * 6}" cy="120" r="14" fill="#ffffff" ${o(6)}/></g></g>`; };
+  const skirt = sp.dress ? `<path d="M-60 -170 L -84 -110 H 84 L 60 -170 Z" fill="${sp.dress}" ${o(6)}/>` : '';
+  const body = `<g class="bd"><path d="M-60 -282 Q -66 -220 -60 -150 Q 0 -140 60 -150 Q 66 -220 60 -282 Q 0 -296 -60 -282 Z" fill="${top}" ${o()}/>${skirt}
+    <path d="M-34 -286 Q 0 -262 34 -286 Q 0 -302 -34 -286 Z" fill="${top2}" ${o(5)}/><path d="M-12 -278 V -230 M12 -278 V -230" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>${sp.top2 ? `<path d="M-60 -168 H 60" stroke="${top2}" stroke-width="10"/>` : ''}${sp.belt ? `<path d="M-58 -160 H 58" stroke="${sp.belt}" stroke-width="10"/>` : ''}</g>`;
+  const neck = `<path d="M0 -300 V -268" stroke="${N}" stroke-width="16" stroke-linecap="round"/><path d="M0 -300 V -268" stroke="${SOFT.head}" stroke-width="8" stroke-linecap="round"/>`;
+  // hair / hats
+  const hc = sp.hair?.color || N, st = sp.hair?.style || 'short';
+  let back = '', front = '';
+  if (st === 'afro') { back = [[-0.72, -0.62], [-0.36, -0.9], [0.06, -1.0], [0.46, -0.88], [0.78, -0.58]].map(([a, b]) => `<circle cx="${a * hr}" cy="${b * hr}" r="${hr * 0.3}" fill="${hc}" ${o(6)}/>`).join('');
+    front = `<path d="M${-hr * 0.86} ${-hr * 0.42} Q ${-hr * 0.4} ${-hr * 0.72} ${-hr * 0.05} ${-hr * 0.5} Q ${hr * 0.35} ${-hr * 0.74} ${hr * 0.86} ${-hr * 0.42} Q ${hr * 0.6} ${-hr * 1.0} 0 ${-hr * 1.0} Q ${-hr * 0.6} ${-hr * 1.0} ${-hr * 0.86} ${-hr * 0.42} Z" fill="${hc}" ${o(6)}/>`; }
+  else if (st === 'bun') { back = `<circle cx="0" cy="${-hr * 1.05}" r="${hr * 0.32}" fill="${hc}" ${o(6)}/>`; front = `<path d="M${-hr * 0.98} ${-hr * 0.1} Q ${-hr} ${-hr * 1.02} 0 ${-hr} Q ${hr} ${-hr * 1.02} ${hr * 0.98} ${-hr * 0.1} Q ${hr * 0.5} ${-hr * 0.62} 0 ${-hr * 0.58} Q ${-hr * 0.5} ${-hr * 0.62} ${-hr * 0.98} ${-hr * 0.1} Z" fill="${hc}" ${o(6)}/>`; }
+  else if (st === 'long') { back = `<path d="M${-hr * 1.05} ${-hr * 0.2} Q ${-hr * 1.15} ${hr * 1.6} ${-hr * 0.6} ${hr * 1.9} H ${hr * 0.6} Q ${hr * 1.15} ${hr * 1.6} ${hr * 1.05} ${-hr * 0.2} Z" fill="${hc}" ${o(6)}/>`; front = `<path d="M${-hr} ${-hr * 0.05} Q ${-hr} ${-hr * 1.05} 0 ${-hr * 1.02} Q ${hr} ${-hr * 1.05} ${hr} ${-hr * 0.05} L ${hr * 0.7} ${-hr * 0.5} L ${hr * 0.4} ${-hr * 0.3} L ${hr * 0.1} ${-hr * 0.55} L ${-hr * 0.2} ${-hr * 0.32} L ${-hr * 0.5} ${-hr * 0.56} L ${-hr * 0.78} ${-hr * 0.3} Z" fill="${hc}" ${o(6)}/>`; }
+  else if (st !== 'bald') front = `<path d="M${-hr * 0.97} ${-hr * 0.25} Q ${-hr} ${-hr * 1.03} 0 ${-hr * 1.0} Q ${hr} ${-hr * 1.03} ${hr * 0.97} ${-hr * 0.25} Q ${hr * 0.4} ${-hr * 0.62} ${-hr * 0.97} ${-hr * 0.25} Z" fill="${hc}" ${o(6)}/>`;
+  let hat = '';
+  if (sp.hat?.kind === 'cap') hat = `<path d="M${-hr * 0.98} ${-hr * 0.3} Q ${-hr} ${-hr * 1.08} 0 ${-hr * 1.05} Q ${hr} ${-hr * 1.08} ${hr * 0.98} ${-hr * 0.3} Z" fill="${sp.hat.color}" ${o(6)}/><path d="M${hr * 0.3} ${-hr * 0.34} Q ${hr * 1.1} ${-hr * 0.38} ${hr * 1.4} ${-hr * 0.3} Q ${hr * 1.0} ${-hr * 0.5} ${hr * 0.3} ${-hr * 0.5} Z" fill="${sp.hat.color}" ${o(6)}/>`;
+  else if (sp.hat?.kind === 'beanie') hat = `<path d="M${-hr * 0.98} ${-hr * 0.25} Q ${-hr} ${-hr * 1.1} 0 ${-hr * 1.05} Q ${hr} ${-hr * 1.1} ${hr * 0.98} ${-hr * 0.25} Z" fill="${sp.hat.color}" ${o(6)}/>`;
+  const e = 40, ey = 4;
+  const eyes = `<g class="ey ey-dot"><ellipse cx="${-e}" cy="${ey}" rx="11" ry="15" fill="${N}"/><ellipse cx="${e}" cy="${ey}" rx="11" ry="15" fill="${N}"/><circle cx="${-e + 3}" cy="${ey - 5}" r="3.5" fill="#fff"/><circle cx="${e + 3}" cy="${ey - 5}" r="3.5" fill="#fff"/></g>
+    <g class="ey ey-wide" opacity="0"><circle cx="${-e}" cy="${ey}" r="22" fill="#fff" ${o(6)}/><circle cx="${e}" cy="${ey}" r="22" fill="#fff" ${o(6)}/><circle cx="${-e}" cy="${ey + 2}" r="7" fill="${N}"/><circle cx="${e}" cy="${ey + 2}" r="7" fill="${N}"/></g>
+    <g class="ey ey-closed" opacity="0"><path d="M${-e - 20} ${ey} H ${-e + 20} M${e - 20} ${ey} H ${e + 20}" ${o(8)}/></g>
+    <g class="ey ey-half" opacity="0"><path d="M${-e - 20} ${ey - 6} H ${-e + 20} M${e - 20} ${ey - 6} H ${e + 20}" ${o(7)}/><ellipse cx="${-e}" cy="${ey + 6}" rx="10" ry="9" fill="${N}"/><ellipse cx="${e}" cy="${ey + 6}" rx="10" ry="9" fill="${N}"/></g>
+    <g class="ey ey-angry" opacity="0"><ellipse cx="${-e}" cy="${ey + 4}" rx="11" ry="13" fill="${N}"/><ellipse cx="${e}" cy="${ey + 4}" rx="11" ry="13" fill="${N}"/><path d="M${-e - 22} ${ey - 30} L ${-e + 16} ${ey - 16} M${e + 22} ${ey - 30} L ${e - 16} ${ey - 16}" ${o(8)}/></g>
+    <g class="ey ey-dead" opacity="0"><path d="M${-e - 14} ${ey - 14} l28 28 M${-e + 14} ${ey - 14} l-28 28 M${e - 14} ${ey - 14} l28 28 M${e + 14} ${ey - 14} l-28 28" ${o(7)}/></g>
+    <g class="ey ey-glow" opacity="0"><circle cx="${-e}" cy="${ey}" r="26" fill="${sp.glow || '#ffe27a'}" opacity="0.35"/><circle cx="${e}" cy="${ey}" r="26" fill="${sp.glow || '#ffe27a'}" opacity="0.35"/><ellipse cx="${-e}" cy="${ey}" rx="13" ry="16" fill="${sp.glow || '#ffe27a'}" ${o(5)}/><ellipse cx="${e}" cy="${ey}" rx="13" ry="16" fill="${sp.glow || '#ffe27a'}" ${o(5)}/></g>`;
+  const brows = `<g class="brows"><path d="M${-e - 24} ${ey - 40} H ${-e + 20} M${e - 20} ${ey - 40} H ${e + 24}" ${o(9)}/></g>`;
+  const my = 60, mouths = `<g class="mo mo-smile"><path d="M-22 ${my - 6} Q 0 ${my + 12} 22 ${my - 6}" fill="none" ${o(7)}/></g>
+    <g class="mo mo-flat" opacity="0"><path d="M-16 ${my} H 16" ${o(7)}/></g>
+    <g class="mo mo-open" opacity="0"><path d="M-24 ${my - 10} Q 0 ${my - 14} 24 ${my - 10} Q 20 ${my + 26} 0 ${my + 28} Q -20 ${my + 26} -24 ${my - 10} Z" fill="#c8384a" ${o(6)}/></g>
+    <g class="mo mo-grin" opacity="0"><path d="M-34 ${my - 10} Q 0 ${my - 6} 34 ${my - 10} Q 28 ${my + 24} 0 ${my + 26} Q -28 ${my + 24} -34 ${my - 10} Z" fill="#fff" ${o(6)}/></g>
+    <g class="mo mo-frown" opacity="0"><path d="M-28 ${my} l 9 -8 l 9 8 l 10 -8 l 10 8 l 9 -8 l 9 8" fill="none" ${o(6)}/></g>
+    <g class="mo mo-o" opacity="0"><ellipse cx="0" cy="${my + 2}" rx="11" ry="14" fill="#c8384a" ${o(5)}/></g>
+    <g class="mo mo-fangs" opacity="0"><path d="M-34 ${my - 10} Q 0 ${my + 30} 34 ${my - 10} Z" fill="#c8384a" ${o(6)}/></g>`;
+  const glasses = sp.glasses ? `<g fill="none" ${o(5)}><circle cx="${-e}" cy="${ey}" r="26"/><circle cx="${e}" cy="${ey}" r="26"/><path d="M${-e + 26} ${ey} H ${e - 26}"/></g>` : '';
+  const stache = sp.mustache ? `<path d="M-30 ${my - 18} Q -14 ${my - 30} 0 ${my - 18} Q 14 ${my - 30} 30 ${my - 18} Q 14 ${my - 8} 0 ${my - 14} Q -14 ${my - 8} -30 ${my - 18} Z" fill="${sp.mustache}" ${o(4)}/>` : '';
+  const head = `<g transform="translate(0 ${hy})"><g class="hd">${back}<circle r="${hr}" fill="${SOFT.head}" ${o(8)}/><path d="M${hr * 0.2} ${-hr * 0.97} A ${hr} ${hr} 0 0 1 ${hr * 0.2} ${hr * 0.97} A ${hr * 0.8} ${hr} 0 0 0 ${hr * 0.2} ${-hr * 0.97} Z" fill="${SOFT.shade}" opacity="0.55"/><path d="M${-hr * 0.55} ${-hr * 0.72} Q ${-hr * 0.2} ${-hr * 0.92} ${hr * 0.2} ${-hr * 0.86}" stroke="#fff" stroke-width="8" fill="none" opacity="0.7" stroke-linecap="round"/>
+    ${front}${hat}${kid ? '' : ''}${eyes}${brows}${glasses}${stache}${mouths}</g></g>`;
+  return `<g id="${id}" class="bzc"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">${sp.noShadow ? '' : `<ellipse class="shadow" cx="0" cy="8" rx="80" ry="16" fill="${N}" opacity="0.25"/>`}
+    ${leg('lL', -26)}${leg('lR', 26)}${arm('aL', -58)}${body}${arm('aR', 58)}${neck}${head}</g></g></g>`;
 }
-const imChar = (k: string, id: string, x: number, y: number, s = 1, flip = false) => (k === 'tuco' ? tgKid(id, x, y, s, flip) : bzChar(id, IM_SPEC[k], x, y, s, flip));
+const imChar = (k: string, id: string, x: number, y: number, s = 1, flip = false) => softChar(id, k === 'tuco' ? { kid: true, top: '#2fa04a', top2: '#f6c744', hair: { style: 'afro', color: '#1c1410' }, pants: '#26304e', shoes: '#e0302a' } : IM_SPEC[k], x, y, s, flip);
 
 // ---- the HUD: "DIA n" + the balance (top center). ids: #hud, #hud-day text, #hud-val text
 const imHud = (day: string, val: string, c = '#3aa05a') => `<g id="hud"><rect x="560" y="26" width="800" height="104" rx="22" fill="#fbf7ef" ${bzO('stroke-width="8"')}/>
@@ -287,5 +298,5 @@ defineVisuals({
     ['C', { kid: true, tall: 1.22, skin: '#8a5a3a', hat: { kind: 'cap', color: '#f6c744' }, hair: { style: 'short', color: '#1c1410' }, top: '#7a3ac8', top2: '#f6c744', pants: '#1c1c24', shoes: '#fbf7ef' }],
     ['D', { kid: true, tall: 1.22, skin: '#c98757', hat: { kind: 'beanie', color: '#e0302a' }, hair: { style: 'messy', color: '#3a2216' }, top: '#1aa0a0', top2: '#fbf7ef', pants: '#3a3a4a', shoes: '#e0302a', glasses: true }],
   ].map(([n, sp]: any, i: number) => `${bzChar('m' + n, sp, 280 + i * 460, 960, 1.35)}<text x="${280 + i * 460}" y="1050" text-anchor="middle" font-family="Anton" font-size="70" fill="${BZ.ink}">${n}</text>`).join('')}`), anim(tl, s) { for (const n of ['A', 'B', 'C', 'D']) bzFace(tl, '#sc-mascots #m' + n, s.t0, 'dot', 'grin'); } },
-  'newtuco': { bg: '#5ab0f0', html: () => svg(`${bzSky('#5ab0f0', '#d8f0ff')}<rect y="980" width="1920" height="100" fill="#7ac06a"/>${['a', 'b', 'c', 'd'].map((n, i) => imChar('tuco', 'n' + n, 300 + i * 440, 980, 1.25)).join('')}`), anim(tl, s) { const f = [['dot', 'smile'], ['wide', 'open'], ['half', 'frown'], ['closed', 'grin']]; ['a', 'b', 'c', 'd'].forEach((n, i) => bzFace(tl, '#sc-newtuco #n' + n, s.t0, f[i][0], f[i][1])); } },
+  'newtuco': { bg: '#5ab0f0', html: () => svg(`${bzSky('#5ab0f0', '#d8f0ff')}<rect y="980" width="1920" height="100" fill="#7ac06a"/>${['a', 'b', 'c', 'd'].map((n, i) => imChar('tuco', 'n' + n, 300 + i * 440, 980, 1.25)).join('')}${imChar('mae', 'xm', 1500, 980, 0.8)}${imChar('biel', 'xb', 1700, 980, 0.8)}${imChar('rep', 'xr', 1860, 980, 0.8)}`), anim(tl, s) { const f = [['dot', 'smile'], ['wide', 'open'], ['half', 'frown'], ['angry', 'grin']]; ['a', 'b', 'c', 'd'].forEach((n, i) => bzFace(tl, '#sc-newtuco #n' + n, s.t0, f[i][0], f[i][1])); } },
 });
