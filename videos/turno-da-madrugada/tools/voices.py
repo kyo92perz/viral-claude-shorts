@@ -109,6 +109,12 @@ VOICES = {
     "mt_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
     "mt_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
     "mt_matinta": ("pf_dora", 0.82, st(-4) + ",aecho=0.6:0.5:45:0.25,highpass=f=150,lowpass=f=5200"),
+    # ARQUIVO PROIBIDO Caso 002: o ministro (entrevista, som de 1986), a torre, os pilotos e o controlador no rádio
+    "ap_min": ("piper:cadu", 0.9, st(-2) + ",highpass=f=180,lowpass=f=5500,aecho=0.5:0.3:30:0.1"),
+    "ap_torre": ("piper:faber", 1.0, st(0) + ",highpass=f=400,lowpass=f=3000,acompressor=threshold=0.15:ratio=4:makeup=3"),
+    "ap_pil1": ("pm_alex", 1.0, st(-1) + ",highpass=f=400,lowpass=f=3000,acompressor=threshold=0.15:ratio=4:makeup=3"),
+    "ap_pil2": ("piper:jeff", 1.0, st(-1) + ",highpass=f=400,lowpass=f=3000,acompressor=threshold=0.15:ratio=4:makeup=3"),
+    "ap_ctrl": ("pm_santa", 1.0, st(0.5) + ",highpass=f=400,lowpass=f=3000,acompressor=threshold=0.15:ratio=4:makeup=3"),
     # IMAGINA SÓ (canal "E se"): narrador animado e próximo; Tuco (14), Biel, a mãe, o gerente do banco, uma repórter
     "im_narr": ("pm_alex", 1.05, st(0.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=3000:t=q:w=1:g=2"),
     "im_tuco": ("pm_alex", 1.05, st(4)),

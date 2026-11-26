@@ -1,6 +1,6 @@
-aeroporto-sjc.jpg | PD-self | ? | https://commons.wikimedia.org/wiki/File:Aeroporto_de_s%C3%A3o_jos%C3%A9_dos_campos.jpg
-mirage-f103.jpg | CC BY-SA 2.0 | ? | https://commons.wikimedia.org/wiki/File:F-103_(12978615984).jpg
-f5-fab.jpg | CC BY 3.0 | ? | https://commons.wikimedia.org/wiki/File:Northrop_F-5_(Forca_Aerea_Brasileira)_Seguran%C3%A7a_Rio_2016_(3).jpg
-ozires-silva.jpg | CC BY 3.0 | ? | https://commons.wikimedia.org/wiki/File:Ozires_Silva.jpg
-xingu.jpg | CC BY-SA 4.0 | ? | https://commons.wikimedia.org/wiki/File:EMB_Xingu_-_Parc_Royal_-_2017.jpg
-arquivo-nacional.jpg | CC BY-SA 2.5 | ? | https://commons.wikimedia.org/wiki/File:Arquivo_Nacional_(exterior).jpg
+Imagens reais usadas no vídeo (Wikimedia Commons). Cite na descrição do YouTube.
+aeroporto-sjc.jpg   | Domínio público (PD-self) | https://commons.wikimedia.org/wiki/File:Aeroporto_de_s%C3%A3o_jos%C3%A9_dos_campos.jpg
+f5-fab.jpg          | CC BY 3.0                 | https://commons.wikimedia.org/wiki/File:Northrop_F-5_(Forca_Aerea_Brasileira)_Seguran%C3%A7a_Rio_2016_(3).jpg
+xingu.jpg           | CC BY-SA 4.0              | https://commons.wikimedia.org/wiki/File:EMB_Xingu_-_Parc_Royal_-_2017.jpg
+arquivo-nacional.jpg| CC BY-SA 2.5              | https://commons.wikimedia.org/wiki/File:Arquivo_Nacional_(exterior).jpg
+mirage-fab.jpg      | CC BY-SA 3.0              | https://commons.wikimedia.org/wiki/File:Academia_da_For%C3%A7a_A%C3%A9rea_(AFA)_em_Pirassununga-SP._Mirage_III_EBR_monoplacce_(FAB-4925)._Para_a_defesa_do_Planalto_Central,_o_bra%C3%A7o_armado_do_Sistema_de_Defesa_A_-_panoramio.jpg

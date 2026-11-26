@@ -1,0 +1,98 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "16:9",
+ "look": "rich",
+ "shots": [
+  {
+   "id": "test-photo",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-prints",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-radar",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-map",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-sky",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-cockpit",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-wave",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-report",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-press",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-title",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  }
+ ]
+}
