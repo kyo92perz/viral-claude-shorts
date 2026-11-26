@@ -68,11 +68,11 @@ function tkGlove(g: CanvasRenderingContext2D, x: number, y: number, ang: number,
   for (const [v, L] of [[-27, 58], [-9, 66], [9, 64], [27, 54]]) { tkLine(g, [T(10, v), T(L, v)], 26); tkLine(g, [T(10, v), T(L, v)], 15, '#fbfbfd'); }
   tkLine(g, [T(-6, -34), T(26, -56)], 26); tkLine(g, [T(-6, -34), T(26, -56)], 15, '#fbfbfd');   // thumb
   const palm = [T(-34, -32), T(16, -38), T(26, 0), T(16, 38), T(-34, 32), T(-44, 0)]; tkShape(g, palm, '#ffffff', '#d8d8e2', 9);
-  tkLine(g, [T(-40, -30), T(-40, 30)], 30, '#2f9e52'); tkLine(g, [T(-40, -30), T(-40, 30)], 30, '#2f9e52');   // cuff edge
+     // cuff edge
 }
 function b6Tuco(blink = false) {
   return { key: `tk-tuco-hunch-${blink ? 1 : 0}`, draw: (p: any) => { const g: CanvasRenderingContext2D = p.g;
-    const HOOD = '#2fa04e', HOODS = '#1b6a34';
+    const HOOD = '#e0342c', HOODS = '#9a1c1c';
     // jeans (baggy) + white sneakers
     for (const [s, top, knee, foot] of [[0, [252, 700], [222, 830], [210, 930]], [1, [348, 700], [390, 830], [398, 930]]] as [number, b6_P, b6_P, b6_P][]) {
       tkLine(g, [top, knee, foot], 92); tkLine(g, [top, knee, foot], 72, s ? '#26305a' : '#2c3766');
@@ -84,12 +84,14 @@ function b6Tuco(blink = false) {
     // hoodie body
     const body: b6_P[] = [[200, 420], [300, 400], [400, 420], [440, 560], [430, 712], [300, 726], [170, 712], [160, 560]];
     tkShape(g, body, HOOD, HOODS, 12, [0.6, 0.8]);
-    const pocket: b6_P[] = [[222, 610], [378, 610], [400, 690], [200, 690]]; tkPath(g, pocket); g.fillStyle = '#28904a'; g.fill(); g.lineWidth = 8; g.strokeStyle = TK; g.stroke();
-    tkLine(g, [[176, 704], [424, 704]], 7, '#1b6a34');
+    const pocket: b6_P[] = [[222, 610], [378, 610], [400, 690], [200, 690]]; tkPath(g, pocket); g.fillStyle = '#c42a24'; g.fill(); g.lineWidth = 8; g.strokeStyle = TK; g.stroke();
+    tkLine(g, [[176, 704], [424, 704]], 7, '#9a1c1c');
     // hood behind the neck
-    const hood: b6_P[] = [[208, 430], [250, 386], [300, 380], [350, 386], [392, 430], [300, 462]]; tkShape(g, hood, '#278a44', '#1b6a34', 10);
+    const hood: b6_P[] = [[208, 430], [250, 386], [300, 380], [350, 386], [392, 430], [300, 462]]; tkShape(g, hood, '#c42a24', '#8a1818', 10);
     // white strings with tips
-    for (const [x0, x1] of [[278, 268], [322, 330]]) { tkLine(g, [[x0, 452], [x1, 540]], 16); tkLine(g, [[x0, 452], [x1, 540]], 8, '#fbfbfd'); g.fillStyle = '#ffffff'; g.strokeStyle = TK; g.lineWidth = 6; g.beginPath(); g.ellipse(x1, 552, 8, 14, 0, 0, 7); g.fill(); g.stroke(); }
+    for (const [x0, x1] of [[278, 268], [322, 330]]) { tkLine(g, [[x0, 452], [x1, 540]], 16); tkLine(g, [[x0, 452], [x1, 540]], 8, '#f6c744'); g.fillStyle = '#f6c744'; g.strokeStyle = TK; g.lineWidth = 6; g.beginPath(); g.ellipse(x1, 552, 8, 14, 0, 0, 7); g.fill(); g.stroke(); }
+    g.beginPath(); g.arc(360, 500, 26, 0, 7); g.fillStyle = '#f6c744'; g.fill(); g.lineWidth = 7; g.strokeStyle = TK; g.stroke();
+    g.fillStyle = TK; g.font = 'bold 40px sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('?', 360, 502);
     // arm pushing the ceiling
     tkSleeve(g, [206, 450], [130, 300], [124, 120], 40, HOOD); tkGlove(g, 124, 86, -1.57, 1.0);
     // head: white sphere, soft grey shade bottom-right, thick outline
