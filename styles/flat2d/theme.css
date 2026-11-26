@@ -41,3 +41,12 @@ html, body { margin: 0; background: #000; }
 /* a series badge at the top left (scenes.json "badge": { "title": "...", "ep": "EP.1" }) */
 .badge { position: absolute; top: 120px; left: 70px; z-index: 500; font: 400 64px/1 "Anton", Impact, sans-serif; color: #e9e4f2; -webkit-text-stroke: 8px #1b1424; paint-order: stroke fill; letter-spacing: 1px; }
 .badge .ep { color: #f6c744; font-size: 44px; margin-left: 22px; vertical-align: 8px; }
+
+/* "look": "rich" (scenes.json): a cinematic finish over the flat drawing — soft character shadows and a warm rim, the far
+   layer (#lay-bg) out of focus, a little more contrast and colour, a light-and-shade grade and film grain */
+.rich .bzc { filter: drop-shadow(0 16px 12px rgba(0, 0, 0, 0.32)) drop-shadow(-4px -3px 0 rgba(255, 236, 200, 0.28)); }
+.rich #lay-bg { filter: blur(3px) saturate(1.1); }
+.rich .art > svg { filter: contrast(1.07) saturate(1.14); }
+.rich .grade { position: absolute; inset: 0; z-index: 400; pointer-events: none; mix-blend-mode: soft-light;
+  background: radial-gradient(ellipse at 50% 32%, rgba(255, 240, 210, 0.55), rgba(0, 0, 0, 0) 58%), linear-gradient(180deg, rgba(255, 200, 150, 0.14), rgba(20, 30, 80, 0.38)); }
+.rich .grain { position: absolute; inset: 0; z-index: 401; pointer-events: none; opacity: 0.09; mix-blend-mode: overlay; background-image: url("grain.png"); background-size: 512px 512px; }

@@ -58,9 +58,9 @@ function imCanteen() {   // the school canteen: counter, menu board with prices,
     <g transform="translate(1500 620)"><rect x="-120" y="-120" width="240" height="120" rx="10" fill="#bfe0f0" opacity="0.7" ${bzO()}/>${[-70, 0, 70].map((dx) => `<path d="M${dx - 30} -20 q 30 -70 60 0 z" fill="#e8a040" ${bzO('stroke-width="4"')}/>`).join('')}</g>`;
 }
 function imStreet() {   // the street pitch in the neighbourhood: houses, a goal made of sandals, sunny
-  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}${bzSun(260, 160, 70)}
+  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}${bzSun(260, 160, 70)}${imClouds(120, 3)}
       ${[[40, 260, 220, '#f0a0a0'], [330, 240, 200, '#a0d0f0'], [600, 280, 240, '#f0e0a0'], [1240, 260, 220, '#c0f0a0'], [1530, 300, 250, '#f0c0e0']].map(([x, w, h, c]) => `<rect x="${x}" y="${760 - (h as number)}" width="${w}" height="${h}" fill="${c}" ${bzO()}/><rect x="${(x as number) + 30}" y="${760 - (h as number) + 50}" width="70" height="70" fill="#5a7aa8" ${bzO('stroke-width="5"')}/><rect x="${(x as number) + (w as number) - 100}" y="${700 - 60}" width="70" height="120" fill="#8a5a3a" ${bzO('stroke-width="5"')}/>`).join('')}</g>
-    <g id="lay-mid"><rect x="-20" y="740" width="1960" height="360" fill="#9a9aa8" ${bzO()}/><path d="M-20 760 H 1940" stroke="#c8c8d0" stroke-width="16"/>
+    <g id="lay-mid">${imTree(1120, 760, 0.9)}${imPole(180)}${imPole(1060)}${imPole(1880)}${imWires(180, 1060, 250)}${imWires(1060, 1880, 250)}<rect x="-20" y="740" width="1960" height="360" fill="#9a9aa8" ${bzO()}/>${imSidewalk(740)}${[...Array(12)].map((_, i) => `<rect x="${i * 170 + 40}" y="905" width="90" height="10" fill="#e8e0b0" opacity="0.7"/>`).join('')}
       ${[640, 1260].map((x) => `<g transform="translate(${x} 900)"><ellipse cx="-50" cy="0" rx="40" ry="16" fill="#3a7aff" ${bzO('stroke-width="4"')}/><ellipse cx="50" cy="0" rx="40" ry="16" fill="#3a7aff" ${bzO('stroke-width="4"')}/></g>`).join('')}</g>`;
 }
 function imHouse(big = false) {   // the family house: small and simple, or big and new
@@ -162,14 +162,14 @@ function imNight(moonR = 80, mx = 1500, my = 230, daySky = false) {
 }
 // the street with a basketball hoop on a pole (rim at x 1500, y 430)
 function imHoop() {
-  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}${bzSun(260, 160, 70)}</g>
-    <g id="lay-mid"><rect x="-20" y="740" width="1960" height="360" fill="#9a9aa8" ${bzO()}/><rect x="1580" y="300" width="24" height="460" fill="#8a8f9e" ${bzO('stroke-width="5"')}/>
+  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}${bzSun(260, 160, 70)}${imClouds(140, 5)}${imTree(400, 760, 1.1)}${imTree(800, 760, 0.8)}</g>
+    <g id="lay-mid"><rect x="-20" y="740" width="1960" height="360" fill="#9a9aa8" ${bzO()}/>${imSidewalk(740)}<rect x="1580" y="300" width="24" height="460" fill="#8a8f9e" ${bzO('stroke-width="5"')}/>
       <rect x="1480" y="290" width="180" height="120" fill="#fbf7ef" ${bzO()}/><rect x="1540" y="330" width="60" height="50" fill="none" stroke="#e0302a" stroke-width="6"/><ellipse cx="1500" cy="430" rx="60" ry="14" fill="none" stroke="#e86a20" stroke-width="10"/>
       <path d="M1445 432 L 1465 500 M1500 444 V 510 M1555 432 L 1535 500" stroke="#fbf7ef" stroke-width="5"/></g>`;
 }
 // the school wall (2 m) with the school behind
 function imSchool() {
-  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}<rect x="300" y="300" width="1300" height="460" fill="#f0d8a0" ${bzO()}/>${[...Array(8)].map((_, i) => `<rect x="${360 + i * 150}" y="360" width="90" height="110" fill="#8ac0e8" ${bzO('stroke-width="5"')}/>`).join('')}<text x="950" y="560" text-anchor="middle" font-family="Anton" font-size="64" fill="#3a5a9a">ESCOLA ESTADUAL</text></g>
+  return `<g id="lay-bg">${bzSky('#5ab0f0', '#d8f0ff')}${imClouds(80, 9)}${imTree(200, 560, 1.0)}${imTree(1750, 560, 1.1)}<rect x="300" y="300" width="1300" height="460" fill="#f0d8a0" ${bzO()}/>${[...Array(8)].map((_, i) => `<rect x="${360 + i * 150}" y="360" width="90" height="110" fill="#8ac0e8" ${bzO('stroke-width="5"')}/>`).join('')}<text x="950" y="560" text-anchor="middle" font-family="Anton" font-size="64" fill="#3a5a9a">ESCOLA ESTADUAL</text></g>
     <g id="lay-mid"><rect x="-20" y="560" width="1960" height="220" fill="#c8c0b0" ${bzO()}/><rect x="-20" y="760" width="1960" height="340" fill="#9a9aa8" ${bzO()}/></g>`;
 }
 // a glass of water with a thermometer showing t degrees; bubbles (.bb) when boiling
@@ -192,6 +192,15 @@ const imBall = (id: string, x: number, y: number, r = 40) => `<g id="${id}"><cir
 // Earth from space (a big curved horizon at the bottom with a thin blue rim)
 const imEarthLimb = () => `<rect width="1920" height="1080" fill="#05060e"/>${bzStars(120, 13, 1080)}<circle cx="960" cy="2900" r="2200" fill="#3a8ae0" ${bzO('stroke-width="10"')}/><path d="M300 900 q 200 -80 420 -40 q 160 30 300 -30 q 200 -60 400 10" stroke="#3aa05a" stroke-width="80" fill="none" stroke-linecap="round"/><circle cx="960" cy="2900" r="2220" fill="none" stroke="#8ac0ff" stroke-width="14" opacity="0.4"/>`;
 
+
+// ---- detail kit: painted clouds, a Brazilian power pole with sagging wires, a leafy tree, sidewalk tiles
+const imClouds = (y = 160, seed = 1) => { let r = seed * 7919; const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
+  return `<g opacity="0.92">${[...Array(5)].map(() => { const x = rnd() * 1900, yy = y + rnd() * 160, s = 0.7 + rnd() * 0.7;
+    return `<g transform="translate(${x.toFixed(0)} ${yy.toFixed(0)}) scale(${s.toFixed(2)})"><ellipse cx="0" cy="0" rx="130" ry="46" fill="#fbf7ef"/><ellipse cx="-70" cy="-24" rx="70" ry="50" fill="#fbf7ef"/><ellipse cx="50" cy="-40" rx="80" ry="60" fill="#fbf7ef"/><ellipse cx="0" cy="22" rx="130" ry="20" fill="#d8e4f0"/></g>`; }).join('')}</g>`; };
+const imPole = (x: number, y = 760, h = 520) => `<g><rect x="${x - 10}" y="${y - h}" width="20" height="${h}" fill="#8a8a8a" ${bzO('stroke-width="5"')}/><rect x="${x - 70}" y="${y - h + 30}" width="140" height="14" fill="#6a6a6a" ${bzO('stroke-width="4"')}/>${[-55, 0, 55].map((dx) => `<rect x="${x + dx - 5}" y="${y - h + 18}" width="10" height="14" fill="#e8e0c8"/>`).join('')}<rect x="${x + 12}" y="${y - h + 90}" width="40" height="60" rx="6" fill="#5a6a5a" ${bzO('stroke-width="4"')}/></g>`;
+const imWires = (x0: number, x1: number, y: number) => `<g fill="none" stroke="#2b2433" stroke-width="3" opacity="0.8">${[0, 14, 28].map((d) => `<path d="M${x0} ${y + d} Q ${(x0 + x1) / 2} ${y + d + 70} ${x1} ${y + d}"/>`).join('')}</g>`;
+const imTree = (x: number, y: number, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-14 0 Q -20 -120 -6 -200 L 10 -200 Q 18 -120 14 0 Z" fill="#6a4a30" ${bzO('stroke-width="5"')}/>${[[-70, -240, 80], [40, -260, 90], [-10, -320, 90], [80, -200, 60], [-100, -190, 60]].map(([cx, cy, r]) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#3a8a3a" ${bzO('stroke-width="5"')}/>`).join('')}${[[-40, -280], [50, -230], [-80, -220]].map(([cx, cy]) => `<circle cx="${cx}" cy="${cy}" r="22" fill="#5aaa4a" opacity="0.7"/>`).join('')}</g>`;
+const imSidewalk = (y = 760) => `<rect x="-20" y="${y}" width="1960" height="50" fill="#c8c0b0" ${bzO('stroke-width="5"')}/>${[...Array(26)].map((_, i) => `<path d="M${i * 80} ${y} v50" stroke="#a8a090" stroke-width="3"/>`).join('')}`;
 // ---------------------------------------------------------------- world test
 defineVisuals({
   'test-suits': { bg: '#0a0c1a', html: () => svg(`${imNight(30, 1600, 200, true)}<rect y="760" width="1920" height="320" fill="#4a4a58" ${bzO()}/>${imChar('tucoSuit', 't', 700, 980, 1.1)}${imChar('bielSuit', 'b', 1000, 980, 1.05)}${imChar('maeSuit', 'm', 1300, 980, 1.0)}`), anim() {} },

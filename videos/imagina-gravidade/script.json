@@ -110,6 +110,27 @@
    "say": "Os aviões gastam menos combustível, os ônibus levam o dobro de gente, e o pedreiro do bairro carrega o dobro de tijolos por viagem. No dia um, o Brasil comemora."
   },
   {
+   "id": "t06",
+   "who": "im_tuco",
+   "text": "Biel, aposta quem pula mais alto?",
+   "pause": 0.5,
+   "emo": 0.75
+  },
+  {
+   "id": "k06",
+   "who": "im_biel",
+   "text": "Fechou! Quem perder paga o açaí!",
+   "pause": 0.5,
+   "emo": 0.8
+  },
+  {
+   "id": "b08",
+   "who": "im_narr",
+   "text": "O Tuco pula um metro e meio. O Biel pula quase dois. E ninguém percebe que, a cada pulo, o fôlego volta um pouco mais devagar.",
+   "pause": 0.8,
+   "emo": 0.6
+  },
+  {
    "id": "c01",
    "who": "im_narr",
    "text": "Dia 2. A gravidade agora é um quarto do normal. Menos do que em Marte. Você pula dois metros de altura e passa por cima do muro da escola.",
@@ -181,6 +202,13 @@
    "text": "A chuva cai em câmera lenta: uma gota que levava dois segundos pra chegar no chão agora leva quase seis. Os rios correm devagar, preguiçosos.",
    "pause": 0.5,
    "emo": 0.55
+  },
+  {
+   "id": "d04",
+   "who": "im_narr",
+   "text": "Os jogadores tentam treinar, mas a bola não desce. Um chutão sobe centenas de metros e fica quase um minuto no ar. O campeonato é cancelado.",
+   "pause": 0.7,
+   "emo": 0.6
   },
   {
    "id": "m02",
@@ -261,6 +289,13 @@
    "who": "im_narr",
    "text": "As moléculas do ar estão sempre se mexendo, rápido, a centenas de metros por segundo. Com a gravidade tão fraca, elas começam a escapar pro espaço. A Terra está perdendo o seu céu.",
    "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "f06",
+   "who": "im_narr",
+   "text": "E sem ar, também não tem som. O Tuco grita pro Biel do outro lado da rua, e nada. Agora eles só conversam pelo rádio do capacete.",
+   "pause": 0.7,
    "emo": 0.6
   },
   {
@@ -360,6 +395,14 @@
    "text": "E o Tuco, preso na corda, olha pra cima. Lá longe, um pontinho branco brilha no céu escuro. É a bola do Biel, que ainda está subindo. Um dia, ela pode estar girando em volta do Sol, como um planeta minúsculo.",
    "pause": 1.0,
    "emo": 0.55
+  },
+  {
+   "id": "h06",
+   "who": "im_narr",
+   "text": "Dia 30. A gravidade é um bilhão de vezes menor do que era. Até a poeira do chão começa a flutuar pra longe.",
+   "pause": 1.0,
+   "emo": 0.6,
+   "say": "Dia trinta. A gravidade é um bilhão de vezes menor do que era. Até a poeira do chão começa a flutuar pra longe."
   },
   {
    "id": "z01",

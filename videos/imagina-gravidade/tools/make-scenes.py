@@ -31,6 +31,9 @@ SHOTS = [
  ('moonaway', 'b04', 0, None, Q, ['drone'], [('e', 'b04', 25, 0, 'riser')]),
  ('tides', 'b05', 0, None, SAD, N, []),
  ('brasil', 'b07', 0, -0.2, TR, CR, [('c', 'b07', 28, 0, 'impact')]),
+ ('aposta', 't06', 0, -0.2, P, ST, []),
+ ('acai', 'k06', 0, -0.2, E, ST, []),
+ ('contest', 'b08', 0, -0.2, P, ST, []),
  # ---- day 2
  ('wall', 'c01', 0, -0.3, E, ST, [('w', 'c01', 21, 0, 'whoosh')]),
  ('tired', 'c02', 0, None, T, [], []),
@@ -44,6 +47,7 @@ SHOTS = [
  ('cup', 'd01', 17, None, Q, RM, []),
  ('masks', 'd02', 0, None, T, [], []),
  ('rain', 'd03', 0, None, W, ['rain'], []),
+ ('bigkick', 'd04', 0, -0.2, W, ST, []),
  ('mae2', 'm02', 0, -0.2, T, [], []),
  # ---- day 4
  ('boil100', 'e01', 0, -0.3, Q, [], []),
@@ -57,6 +61,7 @@ SHOTS = [
  ('bairro', 't02', 0, -0.2, E, ST, []),
  ('darksky', 'f02', 0, -0.2, D, ['drone'], []),
  ('molecules', 'f03', 0, None, Q, [], []),
+ ('nosound', 'f06', 0, -0.2, SAD, [], []),
  ('bullet', 'f04', 0, -0.2, T, [], [('b', 'f04', 4, 0, 'gun')]),
  ('car', 'f05', 0, -0.3, E, [], [('c', 'f05', 14, 0, 'whoosh')]),
  # ---- day 18: the ball
@@ -74,6 +79,7 @@ SHOTS = [
  ('ropes', 'h04', 0, -0.2, T, [], []),
  ('dot', 'h05', 0, -0.3, W, [], []),
  ('sunorbit', 'h05', 27, None, W, [], []),
+ ('dust', 'h06', 0, -0.3, W, [], []),
  # ---- the end
  ('realife', 'z01', 0, -0.4, C, ST, []),
  ('holds', 'z02', 0, None, C, ST, []),
@@ -82,7 +88,7 @@ SHOTS = [
  ('ball', 't04', 0, -0.2, P, ST, []),
  ('endcard', 't04', 99, 0.6, P, [], [('z', 't04', 99, 0.9, 'pop')]),
 ]
-build(V, SHOTS, {'style': 'flat2d', 'fps': 30, 'format': '16:9', 'captions': True, 'badge': {'title': 'IMAGINA SÓ'},
+build(V, SHOTS, {'style': 'flat2d', 'fps': 30, 'format': '16:9', 'look': 'rich', 'captions': True, 'badge': {'title': 'IMAGINA SÓ'},
       'music': {'bpm': 104, 'key': 'D'},
       'notes': 'IMAGINA SÓ: what if gravity halved every day? Bright Brazil Z toon look in 16:9: Tuco and Biel jumping, the moon drifting away, oxygen masks, water boiling at 37°C, space suits, the sky turning black, the ball kicked into space, ropes on day 24. HUD: day + gravity %. Shot list in tools/make-scenes.py.'},
       talk='IM_LINES', visuals='visuals.ts')

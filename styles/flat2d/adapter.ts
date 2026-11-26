@@ -32,7 +32,8 @@ const adapter: Adapter = {
     fs.mkdirSync(PROJ, { recursive: true });
     fs.copyFileSync(path.join(HERE, 'node_modules', 'gsap', 'dist', 'gsap.min.js'), path.join(PROJ, 'gsap.min.js'));
     fs.copyFileSync(path.join(HERE, 'theme.css'), path.join(PROJ, 'theme.css'));
-    fs.copyFileSync(path.join(HERE, 'Anton.ttf'), path.join(PROJ, 'Anton.ttf'));   // the condensed display font of the toon signs and captions (SIL OFL)
+    fs.copyFileSync(path.join(HERE, 'Anton.ttf'), path.join(PROJ, 'Anton.ttf'));
+    fs.copyFileSync(path.join(HERE, 'grain.png'), path.join(PROJ, 'grain.png'));   // film grain for the "rich" look   // the condensed display font of the toon signs and captions (SIL OFL)
     for (const f of ['engine', 'library', 'toon']) fs.writeFileSync(path.join(PROJ, `${f}.js`), toJs(path.join(HERE, `${f}.ts`)));
     // the video's world (reusable pieces, their states, sets) and its scenes
     for (const [src, out] of [['world.ts', 'world.js'], ['visuals.ts', 'visuals.js']]) { const f = path.join(v, src); fs.writeFileSync(path.join(PROJ, out), fs.existsSync(f) ? toJs(f) : ''); }
@@ -53,9 +54,9 @@ const adapter: Adapter = {
     <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <div id="root"${FW > FH ? ' class="wide"' : ''} data-composition-id="main" data-start="0" data-duration="${D}" data-width="${FW}" data-height="${FH}">
+    <div id="root" class="${[FW > FH ? 'wide' : '', (E as { look?: string }).look === 'rich' ? 'rich' : ''].join(' ').trim()}" data-composition-id="main" data-start="0" data-duration="${D}" data-width="${FW}" data-height="${FH}">
 ${sections}
-${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration="${D}" data-track-index="9"></audio>` : ''}
+${(E as { look?: string }).look === 'rich' ? '      <div class="grade"></div><div class="grain"></div>\n' : ''}${voice ? `      <audio id="voice" src="voice.wav" data-start="0" data-duration="${D}" data-track-index="9"></audio>` : ''}
     </div>
     <script>
       const SCENES = ${JSON.stringify(E)};

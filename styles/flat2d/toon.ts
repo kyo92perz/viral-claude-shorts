@@ -98,7 +98,7 @@ function bzChar(id: string, sp: BzSpec, x: number, y: number, s = 1, flip = fals
   const bodyShade = sp.flat ? '' : sp.dress
     ? `<path d="M${bodyW * 0.12} ${bodyTop + 12} Q ${bodyW * 0.4} ${bodyTop + 20} ${bodyW * 0.68} ${hipY + 58} Q ${bodyW * 0.45} ${hipY + 76} ${bodyW * 0.22} ${hipY + 80} Z" fill="#000" opacity="0.13"/>`
     : `<rect x="${bodyW * 0.1}" y="${bodyTop + 8}" width="${bodyW * 0.36}" height="${bodyH - 16}" rx="${bodyW * 0.18}" fill="#000" opacity="0.13"/>`;
-  return `<g id="${id}"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">${shadow}
+  return `<g id="${id}" class="bzc"><g class="mv"><g class="pos" transform="translate(${x} ${y}) scale(${flip ? -s : s} ${s})">${shadow}
     ${leg('lL', -bodyW * 0.22)}${leg('lR', bodyW * 0.22)}${arm('aL', -bodyW * 0.42)}
     <g class="bd">${body}${bodyShade}${stripe}${belt}${badge}${ribs}${sp.extra || ''}</g>${arm('aR', bodyW * 0.42)}${head}</g></g></g>`;
 }
