@@ -1,0 +1,23 @@
+{
+  "name": "viral-claude-shorts-remotion",
+  "private": true,
+  "type": "module",
+  "description": "Post-production pass (Remotion) over a rendered videos/<topic>/final.mp4: punch zooms, DIA stingers, chapter bar, subscribe pop, optional word captions.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "edit": "node render.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.423",
+    "@remotion/cli": "4.0.423",
+    "@remotion/renderer": "4.0.423",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.423",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}
