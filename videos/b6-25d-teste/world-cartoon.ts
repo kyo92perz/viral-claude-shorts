@@ -90,8 +90,6 @@ function b6Tuco(blink = false) {
     const hood: b6_P[] = [[208, 430], [250, 386], [300, 380], [350, 386], [392, 430], [300, 462]]; tkShape(g, hood, '#c42a24', '#8a1818', 10);
     // white strings with tips
     for (const [x0, x1] of [[278, 268], [322, 330]]) { tkLine(g, [[x0, 452], [x1, 540]], 16); tkLine(g, [[x0, 452], [x1, 540]], 8, '#f6c744'); g.fillStyle = '#f6c744'; g.strokeStyle = TK; g.lineWidth = 6; g.beginPath(); g.ellipse(x1, 552, 8, 14, 0, 0, 7); g.fill(); g.stroke(); }
-    g.beginPath(); g.arc(360, 500, 26, 0, 7); g.fillStyle = '#f6c744'; g.fill(); g.lineWidth = 7; g.strokeStyle = TK; g.stroke();
-    g.fillStyle = TK; g.font = 'bold 40px sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('?', 360, 502);
     // arm pushing the ceiling
     tkSleeve(g, [206, 450], [130, 300], [124, 120], 40, HOOD); tkGlove(g, 124, 86, -1.57, 1.0);
     // head: white sphere, soft grey shade bottom-right, thick outline
