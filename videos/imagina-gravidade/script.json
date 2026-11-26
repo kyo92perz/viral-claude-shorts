@@ -1,33 +1,33 @@
 {
  "lead": 0.3,
- "tail": 9.0,
+ "tail": 10.0,
  "lines": [
   {
    "id": "a01",
    "who": "im_narr",
    "text": "Imagina só: amanhã você acorda e a gravidade da Terra caiu pela metade. E todo dia, ela cai pela metade de novo.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
    "id": "a02",
    "who": "im_narr",
    "text": "No começo parece um superpoder: você pula o dobro, corre leve, enterra na cesta de basquete. Mas em poucos dias, a coisa que mais vai fazer falta não é o chão. É o ar.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.65
   },
   {
    "id": "a03",
    "who": "im_narr",
    "text": "E no fim deste vídeo, um simples pulo vai te mandar pro espaço. Pra sempre.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.7
   },
   {
    "id": "a05",
    "who": "im_narr",
    "text": "E não é ficção científica qualquer: tudo que você vai ver aqui é física de verdade, com os números de verdade.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
@@ -35,77 +35,77 @@
    "who": "im_narr",
    "text": "Chuta aqui nos comentários: em que dia você acha que um pulo te tira da Terra? Valendo. Dia 1.",
    "say": "Chuta aqui nos comentários: em que dia você acha que um pulo te tira da Terra? Valendo. Dia um.",
-   "pause": 0.9,
+   "pause": 1.12,
    "emo": 0.6
   },
   {
    "id": "b01",
    "who": "im_narr",
    "text": "Você levanta da cama e quase bate a cabeça no teto. Seu corpo pesa metade do que pesava ontem.",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.6
   },
   {
    "id": "t01",
    "who": "im_tuco",
    "text": "Mãe! Eu tô voando!",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.85
   },
   {
    "id": "m01",
    "who": "im_mae",
    "text": "Desce daí, Tuco! Vai se atrasar pra escola!",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.7
   },
   {
    "id": "b02",
    "who": "im_narr",
    "text": "Na rua, todo mundo está pulando. Um pulo normal, que subia meio metro, agora sobe um metro inteiro. O Biel, que nunca conseguiu enterrar, enterra na cesta de primeira.",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.65
   },
   {
    "id": "b06",
    "who": "im_narr",
    "text": "E tem um detalhe: você não ficou mais forte. Sua força é a mesma. O mundo é que ficou mais leve. O Tuco levanta a geladeira da cantina com uma mão só.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.65
   },
   {
    "id": "k01",
    "who": "im_biel",
    "text": "Olha isso! Eu sou o melhor do mundo!",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.85
   },
   {
    "id": "b03",
    "who": "im_narr",
    "text": "Mas tem uma coisa que ninguém percebeu. Lá no céu, a Lua começou a ir embora.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.6
   },
   {
    "id": "b04",
    "who": "im_narr",
    "text": "A Lua só fica perto da Terra porque a gravidade segura ela. Com a gravidade pela metade, a velocidade dela vira a velocidade exata pra escapar. E ela vai se afastando, devagarinho, pra nunca mais voltar.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
    "id": "b05",
    "who": "im_narr",
    "text": "As marés ficam fracas. As noites ficam mais escuras. E o Tuco nem olhou pra cima.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.55
   },
   {
    "id": "b07",
    "who": "im_narr",
    "text": "Os aviões gastam menos combustível, os ônibus levam o dobro de gente, e o pedreiro do bairro carrega o dobro de tijolos por viagem. No dia 1, o Brasil comemora.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6,
    "say": "Os aviões gastam menos combustível, os ônibus levam o dobro de gente, e o pedreiro do bairro carrega o dobro de tijolos por viagem. No dia um, o Brasil comemora."
   },
@@ -113,21 +113,21 @@
    "id": "t06",
    "who": "im_tuco",
    "text": "Biel, aposta quem pula mais alto?",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.75
   },
   {
    "id": "k06",
    "who": "im_biel",
    "text": "Fechou! Quem perder paga o açaí!",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.8
   },
   {
    "id": "b08",
    "who": "im_narr",
    "text": "O Tuco pula um metro e meio. O Biel pula quase dois. E ninguém percebe que, a cada pulo, o fôlego volta um pouco mais devagar.",
-   "pause": 0.8,
+   "pause": 1.02,
    "emo": 0.6
   },
   {
@@ -135,28 +135,28 @@
    "who": "im_narr",
    "text": "Dia 2. A gravidade agora é um quarto do normal. Menos do que em Marte. Você pula dois metros de altura e passa por cima do muro da escola.",
    "say": "Dia dois. A gravidade agora é um quarto do normal. Menos do que em Marte. Você pula dois metros de altura e passa por cima do muro da escola.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.65
   },
   {
    "id": "c02",
    "who": "im_narr",
    "text": "Mas no meio da aula de educação física, o Biel senta no chão, sem fôlego. A cabeça dói. A boca fica seca.",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.6
   },
   {
    "id": "k02",
    "who": "im_biel",
    "text": "Tuco... por que tá tão difícil respirar?",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.7
   },
   {
    "id": "c03",
    "who": "im_narr",
    "text": "Aqui está a parte que quase ninguém imagina. O ar fica grudado na Terra por causa da gravidade. O peso de todo esse ar em cima da gente é o que faz a pressão do ar.",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.55
   },
   {
@@ -164,21 +164,21 @@
    "who": "im_narr",
    "text": "Gravidade pela metade, pressão pela metade. No dia 2, respirar na sua rua é como respirar no topo do Monte Everest.",
    "say": "Gravidade pela metade, pressão pela metade. No dia dois, respirar na sua rua é como respirar no topo do Monte Éverest.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.65
   },
   {
    "id": "c05",
    "who": "im_narr",
    "text": "Os hospitais lotam. O governo distribui cilindros de oxigênio. E o futebol na rua acaba.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.6
   },
   {
    "id": "c06",
    "who": "im_narr",
    "text": "E os aviões param de voar. A asa de um avião precisa de ar pra se sustentar, e o ar está ficando ralo demais.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
@@ -186,35 +186,35 @@
    "who": "im_narr",
    "text": "Dia 3. A gravidade é parecida com a da Lua. Cada passo vira um pulo de canguru. Um copo d'água que cai da mesa leva quase um segundo e meio pra chegar no chão.",
    "say": "Dia três. A gravidade é parecida com a da Lua. Cada passo vira um pulo de canguru. Um copo d'água que cai da mesa leva quase um segundo e meio pra chegar no chão.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
    "id": "d02",
    "who": "im_narr",
    "text": "Mas ninguém está brincando. Todo mundo anda de máscara de oxigênio, porque o ar agora tem um oitavo da pressão normal. Mais alto que qualquer montanha do planeta.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.6
   },
   {
    "id": "d03",
    "who": "im_narr",
    "text": "A chuva cai em câmera lenta: uma gota que levava dois segundos pra chegar no chão agora leva quase seis. Os rios correm devagar, preguiçosos.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.55
   },
   {
    "id": "d04",
    "who": "im_narr",
    "text": "Os jogadores tentam treinar, mas a bola não desce. Um chutão sobe centenas de metros e fica quase um minuto no ar. O campeonato é cancelado.",
-   "pause": 0.7,
+   "pause": 0.92,
    "emo": 0.6
   },
   {
    "id": "m02",
    "who": "im_mae",
    "text": "Não tira essa máscara por nada, ouviu? Por nada!",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.8
   },
   {
@@ -222,7 +222,7 @@
    "who": "im_narr",
    "text": "Dia 4. E aqui a física fica assustadora. Quanto menor a pressão, mais fácil a água ferver. No nível do mar, ela ferve a cem graus.",
    "say": "Dia quatro. E aqui a física fica assustadora. Quanto menor a pressão, mais fácil a água ferver. No nível do mar, ela ferve a cem graus.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
@@ -230,14 +230,14 @@
    "who": "im_narr",
    "text": "No dia 4, a pressão é tão baixa que a água ferve a trinta e sete graus. A temperatura do seu corpo. A saliva e as lágrimas de quem estiver sem proteção começam a borbulhar.",
    "say": "No dia quatro, a pressão é tão baixa que a água ferve a trinta e sete graus. A temperatura do seu corpo. A saliva e as lágrimas de quem estiver sem proteção começam a borbulhar.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.7
   },
   {
    "id": "e03",
    "who": "im_narr",
    "text": "Isso tem nome: limite de Armstrong. É a altura em que nenhum ser humano sobrevive sem roupa pressurizada. E agora ela chegou no chão da sua casa.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.65
   },
   {
@@ -245,21 +245,21 @@
    "who": "im_narr",
    "text": "Do dia 4 em diante, ninguém sai na rua sem traje de astronauta. A cidade inteira parece uma estação espacial.",
    "say": "Do dia quatro em diante, ninguém sai na rua sem traje de astronauta. A cidade inteira parece uma estação espacial.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.6
   },
   {
    "id": "k05",
    "who": "im_biel",
    "text": "Tuco, isso aqui coça demais. Até quando a gente vai ficar de astronauta?",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.65
   },
   {
    "id": "t05",
    "who": "im_tuco",
    "text": "Até a gravidade voltar... se ela voltar.",
-   "pause": 0.8,
+   "pause": 1.02,
    "emo": 0.6
   },
   {
@@ -267,35 +267,35 @@
    "who": "im_narr",
    "text": "Dia 7. Dentro do traje, você pula e sobe sessenta metros. Mais alto que um prédio de vinte andares. E fica mais de um minuto no ar até descer.",
    "say": "Dia sete. Dentro do traje, você pula e sobe sessenta metros. Mais alto que um prédio de vinte andares. E fica mais de um minuto no ar até descer.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.65
   },
   {
    "id": "t02",
    "who": "im_tuco",
    "text": "Biel! Tô vendo o bairro inteiro daqui de cima!",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.8
   },
   {
    "id": "f02",
    "who": "im_narr",
    "text": "Mas o céu, que era azul, está ficando escuro. Preto. Mesmo de dia.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.6
   },
   {
    "id": "f03",
    "who": "im_narr",
    "text": "As moléculas do ar estão sempre se mexendo, rápido, a centenas de metros por segundo. Com a gravidade tão fraca, elas começam a escapar pro espaço. A Terra está perdendo o seu céu.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.6
   },
   {
    "id": "f06",
    "who": "im_narr",
    "text": "E sem ar, também não tem som. O Tuco grita pro Biel do outro lado da rua, e nada. Agora eles só conversam pelo rádio do capacete.",
-   "pause": 0.7,
+   "pause": 0.92,
    "emo": 0.6
   },
   {
@@ -303,14 +303,14 @@
    "who": "im_narr",
    "text": "No dia 10, uma bala de revólver disparada pra cima não volta mais. A velocidade pra escapar da Terra, que era de onze quilômetros por segundo, caiu pra uns trezentos e cinquenta metros por segundo.",
    "say": "No dia dez, uma bala de revólver disparada pra cima não volta mais. A velocidade pra escapar da Terra, que era de onze quilômetros por segundo, caiu pra uns trezentos e cinquenta metros por segundo.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.6
   },
   {
    "id": "f05",
    "who": "im_narr",
    "text": "Dia 14. Um carro de corrida subindo uma rampa a trezentos quilômetros por hora sairia da Terra. As notícias no rádio só falam de carros e aviões perdidos no espaço.",
-   "pause": 0.8,
+   "pause": 1.02,
    "emo": 0.6,
    "say": "Dia quatorze. Um carro de corrida subindo uma rampa a trezentos quilômetros por hora sairia da Terra. As notícias no rádio só falam de carros e aviões perdidos no espaço."
   },
@@ -319,14 +319,14 @@
    "who": "im_narr",
    "text": "Dia 18. A Terra quase não tem mais ar. E o Biel, de traje, encontra uma bola velha na garagem.",
    "say": "Dia dezoito. A Terra quase não tem mais ar. E o Biel, de traje, encontra uma bola velha na garagem.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.55
   },
   {
    "id": "k03",
    "who": "im_biel",
    "text": "Bora? Só um chutinho.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
@@ -334,21 +334,21 @@
    "who": "im_narr",
    "text": "Ele chuta. Um chute forte faz a bola sair a uns trinta metros por segundo. E no dia 18, pra escapar da Terra, só precisa de vinte e dois. A bola sobe... sobe... e não volta nunca mais.",
    "say": "Ele chuta. Um chute forte faz a bola sair a uns trinta metros por segundo. E no dia dezoito, pra escapar da Terra, só precisa de vinte e dois. A bola sobe... sobe... e não volta nunca mais.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.7
   },
   {
    "id": "k04",
    "who": "im_biel",
    "text": "Mano... eu chutei a bola pro espaço.",
-   "pause": 0.7,
+   "pause": 0.92,
    "emo": 0.6
   },
   {
    "id": "g03",
    "who": "im_narr",
    "text": "O primeiro gol do Brasil fora da Terra.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.55
   },
   {
@@ -356,14 +356,14 @@
    "who": "im_narr",
    "text": "Dia 24. A gravidade é dezesseis milhões de vezes mais fraca do que era. E a velocidade pra escapar da Terra é menos de três metros por segundo.",
    "say": "Dia vinte e quatro. A gravidade é dezesseis milhões de vezes mais fraca do que era. E a velocidade pra escapar da Terra é menos de três metros por segundo.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
    "id": "h02",
    "who": "im_narr",
    "text": "Sabe quanto é isso? É a velocidade de um pulo. Um pulo comum, de criança brincando.",
-   "pause": 0.8,
+   "pause": 1.02,
    "emo": 0.65
   },
   {
@@ -371,14 +371,14 @@
    "who": "im_narr",
    "text": "Se o Tuco pular agora... ele vira um satélite. Ou pior: vai embora pro espaço, igual a Lua no dia 1.",
    "say": "Se o Tuco pular agora... ele vira um satélite. Ou pior: vai embora pro espaço, igual a Lua no dia um.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.7
   },
   {
    "id": "t03",
    "who": "im_tuco",
    "text": "Então ninguém pula. Ninguém!",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.85
   },
   {
@@ -386,21 +386,21 @@
    "who": "im_narr",
    "text": "Por isso, no dia 24, todo mundo no planeta anda preso por cordas, como alpinista. Um tropeção pode ser uma viagem sem volta.",
    "say": "Por isso, no dia vinte e quatro, todo mundo no planeta anda preso por cordas, como alpinista. Um tropeção pode ser uma viagem sem volta.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.6
   },
   {
    "id": "h05",
    "who": "im_narr",
    "text": "E o Tuco, preso na corda, olha pra cima. Lá longe, um pontinho branco brilha no céu escuro. É a bola do Biel, que ainda está subindo. Um dia, ela pode estar girando em volta do Sol, como um planeta minúsculo.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.55
   },
   {
    "id": "h06",
    "who": "im_narr",
    "text": "Dia 30. A gravidade é um bilhão de vezes menor do que era. Até a poeira do chão começa a flutuar pra longe.",
-   "pause": 1.0,
+   "pause": 1.22,
    "emo": 0.6,
    "say": "Dia trinta. A gravidade é um bilhão de vezes menor do que era. Até a poeira do chão começa a flutuar pra longe."
   },
@@ -408,14 +408,14 @@
    "id": "z01",
    "who": "im_narr",
    "text": "E na vida real? A gravidade da Terra depende da massa dela. Pra cair pela metade, metade do planeta teria que sumir. Então pode pular tranquilo.",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.5
   },
   {
    "id": "z02",
    "who": "im_narr",
    "text": "Mas é bom lembrar: a gravidade que te prende no chão também prende o ar que você respira, a água dos rios e a Lua no céu. Ela é chata, mas é ela que mantém tudo junto.",
-   "pause": 0.6,
+   "pause": 0.82,
    "emo": 0.5
   },
   {
@@ -423,21 +423,21 @@
    "who": "im_narr",
    "text": "E você? Em que dia você ia querer parar? No dia 1, pulando o dobro? Ou ia até o fim, pra ver a Terra lá de cima?",
    "say": "E você? Em que dia você ia querer parar? No dia um, pulando o dobro? Ou ia até o fim, pra ver a Terra lá de cima?",
-   "pause": 0.5,
+   "pause": 0.72,
    "emo": 0.6
   },
   {
    "id": "z04",
    "who": "im_narr",
    "text": "Escreve o número do dia aqui embaixo. E se inscreve, porque toda semana tem um novo E se.",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.6
   },
   {
    "id": "t04",
    "who": "im_tuco",
    "text": "Alguém viu minha bola?",
-   "pause": 0.4,
+   "pause": 0.62,
    "emo": 0.6
   }
  ]

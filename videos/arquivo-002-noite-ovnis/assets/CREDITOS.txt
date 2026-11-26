@@ -1,0 +1,6 @@
+aeroporto-sjc.jpg | PD-self | ? | https://commons.wikimedia.org/wiki/File:Aeroporto_de_s%C3%A3o_jos%C3%A9_dos_campos.jpg
+mirage-f103.jpg | CC BY-SA 2.0 | ? | https://commons.wikimedia.org/wiki/File:F-103_(12978615984).jpg
+f5-fab.jpg | CC BY 3.0 | ? | https://commons.wikimedia.org/wiki/File:Northrop_F-5_(Forca_Aerea_Brasileira)_Seguran%C3%A7a_Rio_2016_(3).jpg
+ozires-silva.jpg | CC BY 3.0 | ? | https://commons.wikimedia.org/wiki/File:Ozires_Silva.jpg
+xingu.jpg | CC BY-SA 4.0 | ? | https://commons.wikimedia.org/wiki/File:EMB_Xingu_-_Parc_Royal_-_2017.jpg
+arquivo-nacional.jpg | CC BY-SA 2.5 | ? | https://commons.wikimedia.org/wiki/File:Arquivo_Nacional_(exterior).jpg

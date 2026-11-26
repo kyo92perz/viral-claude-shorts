@@ -1,5 +1,5 @@
 {
- "duration": 422.978,
+ "duration": 483.067,
  "lines": [
   {
    "id": "a01",
@@ -12,372 +12,414 @@
    "id": "a02",
    "who": "im_narr",
    "text": "No começo parece um superpoder: você pula o dobro, corre leve, enterra na cesta de basquete. Mas em poucos dias, a coisa que mais vai fazer falta não é o chão. É o ar.",
-   "t0": 8.552,
-   "t1": 17.964
+   "t0": 8.772,
+   "t1": 18.184
   },
   {
    "id": "a03",
    "who": "im_narr",
    "text": "E no fim deste vídeo, um simples pulo vai te mandar pro espaço. Pra sempre.",
-   "t0": 18.564,
-   "t1": 22.844
+   "t0": 19.004,
+   "t1": 23.284
   },
   {
    "id": "a05",
    "who": "im_narr",
    "text": "E não é ficção científica qualquer: tudo que você vai ver aqui é física de verdade, com os números de verdade.",
-   "t0": 23.444,
-   "t1": 29.441
+   "t0": 24.104,
+   "t1": 30.101
   },
   {
    "id": "a04",
    "who": "im_narr",
    "text": "Chuta aqui nos comentários: em que dia você acha que um pulo te tira da Terra? Valendo. Dia 1.",
-   "t0": 29.941,
-   "t1": 35.388
+   "t0": 30.821,
+   "t1": 36.268
   },
   {
    "id": "b01",
    "who": "im_narr",
    "text": "Você levanta da cama e quase bate a cabeça no teto. Seu corpo pesa metade do que pesava ontem.",
-   "t0": 36.288,
-   "t1": 41.854
+   "t0": 37.388,
+   "t1": 42.954
   },
   {
    "id": "t01",
    "who": "im_tuco",
    "text": "Mãe! Eu tô voando!",
-   "t0": 42.254,
-   "t1": 43.617
+   "t0": 43.574,
+   "t1": 44.937
   },
   {
    "id": "m01",
    "who": "im_mae",
    "text": "Desce daí, Tuco! Vai se atrasar pra escola!",
-   "t0": 44.117,
-   "t1": 48.028
+   "t0": 45.657,
+   "t1": 49.568
   },
   {
    "id": "b02",
    "who": "im_narr",
    "text": "Na rua, todo mundo está pulando. Um pulo normal, que subia meio metro, agora sobe um metro inteiro. O Biel, que nunca conseguiu enterrar, enterra na cesta de primeira.",
-   "t0": 48.528,
-   "t1": 59.586
+   "t0": 50.288,
+   "t1": 61.346
   },
   {
    "id": "b06",
    "who": "im_narr",
    "text": "E tem um detalhe: você não ficou mais forte. Sua força é a mesma. O mundo é que ficou mais leve. O Tuco levanta a geladeira da cantina com uma mão só.",
-   "t0": 59.986,
-   "t1": 79.325
+   "t0": 61.966,
+   "t1": 81.305
   },
   {
    "id": "k01",
    "who": "im_biel",
    "text": "Olha isso! Eu sou o melhor do mundo!",
-   "t0": 79.825,
-   "t1": 82.08
+   "t0": 82.025,
+   "t1": 84.28
   },
   {
    "id": "b03",
    "who": "im_narr",
    "text": "Mas tem uma coisa que ninguém percebeu. Lá no céu, a Lua começou a ir embora.",
-   "t0": 82.58,
-   "t1": 88.497
+   "t0": 85.0,
+   "t1": 90.917
   },
   {
    "id": "b04",
    "who": "im_narr",
    "text": "A Lua só fica perto da Terra porque a gravidade segura ela. Com a gravidade pela metade, a velocidade dela vira a velocidade exata pra escapar. E ela vai se afastando, devagarinho, pra nunca mais voltar.",
-   "t0": 89.097,
-   "t1": 100.878
+   "t0": 91.737,
+   "t1": 103.518
   },
   {
    "id": "b05",
    "who": "im_narr",
    "text": "As marés ficam fracas. As noites ficam mais escuras. E o Tuco nem olhou pra cima.",
-   "t0": 101.378,
-   "t1": 106.58
+   "t0": 104.238,
+   "t1": 109.44
   },
   {
    "id": "b07",
    "who": "im_narr",
    "text": "Os aviões gastam menos combustível, os ônibus levam o dobro de gente, e o pedreiro do bairro carrega o dobro de tijolos por viagem. No dia 1, o Brasil comemora.",
-   "t0": 107.58,
-   "t1": 116.978
+   "t0": 110.66,
+   "t1": 120.058
+  },
+  {
+   "id": "t06",
+   "who": "im_tuco",
+   "text": "Biel, aposta quem pula mais alto?",
+   "t0": 120.778,
+   "t1": 123.125
+  },
+  {
+   "id": "k06",
+   "who": "im_biel",
+   "text": "Fechou! Quem perder paga o açaí!",
+   "t0": 123.845,
+   "t1": 126.163
+  },
+  {
+   "id": "b08",
+   "who": "im_narr",
+   "text": "O Tuco pula um metro e meio. O Biel pula quase dois. E ninguém percebe que, a cada pulo, o fôlego volta um pouco mais devagar.",
+   "t0": 126.883,
+   "t1": 135.082
   },
   {
    "id": "c01",
    "who": "im_narr",
    "text": "Dia 2. A gravidade agora é um quarto do normal. Menos do que em Marte. Você pula dois metros de altura e passa por cima do muro da escola.",
-   "t0": 117.478,
-   "t1": 126.749
+   "t0": 136.102,
+   "t1": 145.373
   },
   {
    "id": "c02",
    "who": "im_narr",
    "text": "Mas no meio da aula de educação física, o Biel senta no chão, sem fôlego. A cabeça dói. A boca fica seca.",
-   "t0": 127.249,
-   "t1": 133.278
+   "t0": 146.093,
+   "t1": 152.122
   },
   {
    "id": "k02",
    "who": "im_biel",
    "text": "Tuco... por que tá tão difícil respirar?",
-   "t0": 133.678,
-   "t1": 135.953
+   "t0": 152.742,
+   "t1": 155.017
   },
   {
    "id": "c03",
    "who": "im_narr",
    "text": "Aqui está a parte que quase ninguém imagina. O ar fica grudado na Terra por causa da gravidade. O peso de todo esse ar em cima da gente é o que faz a pressão do ar.",
-   "t0": 136.553,
-   "t1": 145.464
+   "t0": 155.837,
+   "t1": 164.748
   },
   {
    "id": "c04",
    "who": "im_narr",
    "text": "Gravidade pela metade, pressão pela metade. No dia 2, respirar na sua rua é como respirar no topo do Monte Everest.",
-   "t0": 145.864,
-   "t1": 153.461
+   "t0": 165.368,
+   "t1": 172.966
   },
   {
    "id": "c05",
    "who": "im_narr",
    "text": "Os hospitais lotam. O governo distribui cilindros de oxigênio. E o futebol na rua acaba.",
-   "t0": 153.961,
-   "t1": 160.065
+   "t0": 173.686,
+   "t1": 179.789
   },
   {
    "id": "c06",
    "who": "im_narr",
    "text": "E os aviões param de voar. A asa de um avião precisa de ar pra se sustentar, e o ar está ficando ralo demais.",
-   "t0": 161.065,
-   "t1": 167.62
+   "t0": 181.009,
+   "t1": 187.564
   },
   {
    "id": "d01",
    "who": "im_narr",
    "text": "Dia 3. A gravidade é parecida com a da Lua. Cada passo vira um pulo de canguru. Um copo d'água que cai da mesa leva quase um segundo e meio pra chegar no chão.",
-   "t0": 168.12,
-   "t1": 177.729
+   "t0": 188.284,
+   "t1": 197.893
   },
   {
    "id": "d02",
    "who": "im_narr",
    "text": "Mas ninguém está brincando. Todo mundo anda de máscara de oxigênio, porque o ar agora tem um oitavo da pressão normal. Mais alto que qualquer montanha do planeta.",
-   "t0": 178.229,
-   "t1": 185.593
+   "t0": 198.613,
+   "t1": 205.977
   },
   {
    "id": "d03",
    "who": "im_narr",
    "text": "A chuva cai em câmera lenta: uma gota que levava dois segundos pra chegar no chão agora leva quase seis. Os rios correm devagar, preguiçosos.",
-   "t0": 186.193,
-   "t1": 194.631
+   "t0": 206.797,
+   "t1": 215.235
+  },
+  {
+   "id": "d04",
+   "who": "im_narr",
+   "text": "Os jogadores tentam treinar, mas a bola não desce. Um chutão sobe centenas de metros e fica quase um minuto no ar. O campeonato é cancelado.",
+   "t0": 215.955,
+   "t1": 224.345
   },
   {
    "id": "m02",
    "who": "im_mae",
    "text": "Não tira essa máscara por nada, ouviu? Por nada!",
-   "t0": 195.131,
-   "t1": 198.156
+   "t0": 225.265,
+   "t1": 228.291
   },
   {
    "id": "e01",
    "who": "im_narr",
    "text": "Dia 4. E aqui a física fica assustadora. Quanto menor a pressão, mais fácil a água ferver. No nível do mar, ela ferve a cem graus.",
-   "t0": 198.756,
-   "t1": 207.241
+   "t0": 229.111,
+   "t1": 237.596
   },
   {
    "id": "e02",
    "who": "im_narr",
    "text": "No dia 4, a pressão é tão baixa que a água ferve a trinta e sete graus. A temperatura do seu corpo. A saliva e as lágrimas de quem estiver sem proteção começam a borbulhar.",
-   "t0": 207.741,
-   "t1": 218.202
+   "t0": 238.316,
+   "t1": 248.776
   },
   {
    "id": "e03",
    "who": "im_narr",
    "text": "Isso tem nome: limite de Armstrong. É a altura em que nenhum ser humano sobrevive sem roupa pressurizada. E agora ela chegou no chão da sua casa.",
-   "t0": 218.802,
-   "t1": 226.936
+   "t0": 249.596,
+   "t1": 257.731
   },
   {
    "id": "e04",
    "who": "im_narr",
    "text": "Do dia 4 em diante, ninguém sai na rua sem traje de astronauta. A cidade inteira parece uma estação espacial.",
-   "t0": 227.536,
-   "t1": 234.555
+   "t0": 258.551,
+   "t1": 265.57
   },
   {
    "id": "k05",
    "who": "im_biel",
    "text": "Tuco, isso aqui coça demais. Até quando a gente vai ficar de astronauta?",
-   "t0": 235.555,
-   "t1": 240.491
+   "t0": 266.79,
+   "t1": 271.725
   },
   {
    "id": "t05",
    "who": "im_tuco",
    "text": "Até a gravidade voltar... se ela voltar.",
-   "t0": 240.991,
-   "t1": 243.357
+   "t0": 272.445,
+   "t1": 274.812
   },
   {
    "id": "f01",
    "who": "im_narr",
    "text": "Dia 7. Dentro do traje, você pula e sobe sessenta metros. Mais alto que um prédio de vinte andares. E fica mais de um minuto no ar até descer.",
-   "t0": 244.157,
-   "t1": 254.187
+   "t0": 275.832,
+   "t1": 285.861
   },
   {
    "id": "t02",
    "who": "im_tuco",
    "text": "Biel! Tô vendo o bairro inteiro daqui de cima!",
-   "t0": 254.687,
-   "t1": 257.17
+   "t0": 286.581,
+   "t1": 289.065
   },
   {
    "id": "f02",
    "who": "im_narr",
    "text": "Mas o céu, que era azul, está ficando escuro. Preto. Mesmo de dia.",
-   "t0": 257.67,
-   "t1": 263.603
+   "t0": 289.785,
+   "t1": 295.718
   },
   {
    "id": "f03",
    "who": "im_narr",
    "text": "As moléculas do ar estão sempre se mexendo, rápido, a centenas de metros por segundo. Com a gravidade tão fraca, elas começam a escapar pro espaço. A Terra está perdendo o seu céu.",
-   "t0": 264.203,
-   "t1": 274.473
+   "t0": 296.538,
+   "t1": 306.808
+  },
+  {
+   "id": "f06",
+   "who": "im_narr",
+   "text": "E sem ar, também não tem som. O Tuco grita pro Biel do outro lado da rua, e nada. Agora eles só conversam pelo rádio do capacete.",
+   "t0": 307.628,
+   "t1": 321.118
   },
   {
    "id": "f04",
    "who": "im_narr",
    "text": "No dia 10, uma bala de revólver disparada pra cima não volta mais. A velocidade pra escapar da Terra, que era de onze quilômetros por segundo, caiu pra uns trezentos e cinquenta metros por segundo.",
-   "t0": 275.073,
-   "t1": 287.461
+   "t0": 322.038,
+   "t1": 334.426
   },
   {
    "id": "f05",
    "who": "im_narr",
    "text": "Dia 14. Um carro de corrida subindo uma rampa a trezentos quilômetros por hora sairia da Terra. As notícias no rádio só falam de carros e aviões perdidos no espaço.",
-   "t0": 288.461,
-   "t1": 298.78
+   "t0": 335.646,
+   "t1": 345.965
   },
   {
    "id": "g01",
    "who": "im_narr",
    "text": "Dia 18. A Terra quase não tem mais ar. E o Biel, de traje, encontra uma bola velha na garagem.",
-   "t0": 299.58,
-   "t1": 308.403
+   "t0": 346.985,
+   "t1": 355.808
   },
   {
    "id": "k03",
    "who": "im_biel",
    "text": "Bora? Só um chutinho.",
-   "t0": 308.903,
-   "t1": 310.577
+   "t0": 356.528,
+   "t1": 358.202
   },
   {
    "id": "g02",
    "who": "im_narr",
    "text": "Ele chuta. Um chute forte faz a bola sair a uns trinta metros por segundo. E no dia 18, pra escapar da Terra, só precisa de vinte e dois. A bola sobe... sobe... e não volta nunca mais.",
-   "t0": 311.077,
-   "t1": 321.319
+   "t0": 358.922,
+   "t1": 369.164
   },
   {
    "id": "k04",
    "who": "im_biel",
    "text": "Mano... eu chutei a bola pro espaço.",
-   "t0": 321.919,
-   "t1": 324.206
+   "t0": 369.984,
+   "t1": 372.271
   },
   {
    "id": "g03",
    "who": "im_narr",
    "text": "O primeiro gol do Brasil fora da Terra.",
-   "t0": 324.906,
-   "t1": 327.963
+   "t0": 373.191,
+   "t1": 376.248
   },
   {
    "id": "h01",
    "who": "im_narr",
    "text": "Dia 24. A gravidade é dezesseis milhões de vezes mais fraca do que era. E a velocidade pra escapar da Terra é menos de três metros por segundo.",
-   "t0": 328.963,
-   "t1": 338.356
+   "t0": 377.468,
+   "t1": 386.861
   },
   {
    "id": "h02",
    "who": "im_narr",
    "text": "Sabe quanto é isso? É a velocidade de um pulo. Um pulo comum, de criança brincando.",
-   "t0": 338.856,
-   "t1": 344.532
+   "t0": 387.581,
+   "t1": 393.257
   },
   {
    "id": "h03",
    "who": "im_narr",
    "text": "Se o Tuco pular agora... ele vira um satélite. Ou pior: vai embora pro espaço, igual a Lua no dia 1.",
-   "t0": 345.332,
-   "t1": 351.034
+   "t0": 394.277,
+   "t1": 399.979
   },
   {
    "id": "t03",
    "who": "im_tuco",
    "text": "Então ninguém pula. Ninguém!",
-   "t0": 351.634,
-   "t1": 353.668
+   "t0": 400.799,
+   "t1": 402.833
   },
   {
    "id": "h04",
    "who": "im_narr",
    "text": "Por isso, no dia 24, todo mundo no planeta anda preso por cordas, como alpinista. Um tropeção pode ser uma viagem sem volta.",
-   "t0": 354.268,
-   "t1": 362.057
+   "t0": 403.653,
+   "t1": 411.442
   },
   {
    "id": "h05",
    "who": "im_narr",
    "text": "E o Tuco, preso na corda, olha pra cima. Lá longe, um pontinho branco brilha no céu escuro. É a bola do Biel, que ainda está subindo. Um dia, ela pode estar girando em volta do Sol, como um planeta minúsculo.",
-   "t0": 363.057,
-   "t1": 376.557
+   "t0": 412.662,
+   "t1": 426.162
+  },
+  {
+   "id": "h06",
+   "who": "im_narr",
+   "text": "Dia 30. A gravidade é um bilhão de vezes menor do que era. Até a poeira do chão começa a flutuar pra longe.",
+   "t0": 427.382,
+   "t1": 434.326
   },
   {
    "id": "z01",
    "who": "im_narr",
    "text": "E na vida real? A gravidade da Terra depende da massa dela. Pra cair pela metade, metade do planeta teria que sumir. Então pode pular tranquilo.",
-   "t0": 377.557,
-   "t1": 387.842
+   "t0": 435.546,
+   "t1": 445.831
   },
   {
    "id": "z02",
    "who": "im_narr",
    "text": "Mas é bom lembrar: a gravidade que te prende no chão também prende o ar que você respira, a água dos rios e a Lua no céu. Ela é chata, mas é ela que mantém tudo junto.",
-   "t0": 388.342,
-   "t1": 397.913
+   "t0": 446.551,
+   "t1": 456.121
   },
   {
    "id": "z03",
    "who": "im_narr",
    "text": "E você? Em que dia você ia querer parar? No dia 1, pulando o dobro? Ou ia até o fim, pra ver a Terra lá de cima?",
-   "t0": 398.513,
-   "t1": 405.19
+   "t0": 456.941,
+   "t1": 463.619
   },
   {
    "id": "z04",
    "who": "im_narr",
    "text": "Escreve o número do dia aqui embaixo. E se inscreve, porque toda semana tem um novo E se.",
-   "t0": 405.69,
-   "t1": 410.676
+   "t0": 464.339,
+   "t1": 469.325
   },
   {
    "id": "t04",
    "who": "im_tuco",
    "text": "Alguém viu minha bola?",
-   "t0": 411.076,
-   "t1": 413.578
+   "t0": 469.945,
+   "t1": 472.447
   }
  ]
 }

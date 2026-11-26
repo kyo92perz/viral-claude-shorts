@@ -24,7 +24,7 @@ const imChar = (k: string, id: string, x: number, y: number, s = 1, flip = false
 // ---- the HUD: "DIA n" + the balance (top center). ids: #hud, #hud-day text, #hud-val text
 const imHud = (day: string, val: string, c = '#3aa05a') => `<g id="hud"><rect x="560" y="26" width="800" height="104" rx="22" fill="#fbf7ef" ${bzO('stroke-width="8"')}/>
   <rect x="560" y="26" width="250" height="104" rx="22" fill="${BZ.ink}"/><text id="hud-day" x="685" y="102" text-anchor="middle" font-family="Anton" font-size="62" fill="#f6c744">${day}</text>
-  <text id="hud-val" x="1085" y="104" text-anchor="middle" font-family="Anton" font-size="72" fill="${c}">${val}</text></g>`;
+  <text id="hud-val" x="1085" y="${val.length > 15 ? 96 : 104}" text-anchor="middle" font-family="Anton" font-size="${val.length > 18 ? 46 : val.length > 15 ? 56 : 72}" fill="${c}">${val}</text></g>`;
 // a coin, a note, a stack (local origin at the bottom center)
 const imCoin = (x: number, y: number, r = 40) => `<g transform="translate(${x} ${y})"><circle r="${r}" fill="#f6c744" ${bzO()}/><circle r="${r * 0.7}" fill="none" stroke="#d8a830" stroke-width="5"/><text y="${r * 0.36}" text-anchor="middle" font-family="Anton" font-size="${r}" fill="#a87a20">1</text></g>`;
 const imNote = (x: number, y: number, rot = 0, s = 1) => `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><rect x="-90" y="-44" width="180" height="88" rx="8" fill="#8ad0a0" ${bzO('stroke-width="5"')}/><circle r="26" fill="#5aa070"/><text x="-60" y="-12" font-family="Anton" font-size="24" fill="#2a6a40">R$</text></g>`;
