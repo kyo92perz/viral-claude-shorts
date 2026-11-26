@@ -1,0 +1,339 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "A REGRA DA VÓ",
+  "ep": "Nº 1"
+ },
+ "music": {
+  "bpm": 62,
+  "key": "D"
+ },
+ "notes": "A REGRA DA VÓ Nº 1, Brasil Z toon look: the grandmother covers every mirror at 3 a.m.; Davi pulls the cloth off the bathroom mirror at 2:59, his reflection blinks when he does not, smiles when he does not; the twist: the narrator is the reflection, and the real Davi knocks from inside the mirror. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 0,
+     "dt": 0.2,
+     "sfx": "sting",
+     "t": 0.5
+    }
+   ],
+   "t0": 0,
+   "t1": 2.282
+  },
+  {
+   "id": "rule",
+   "from": 8,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 9,
+     "sfx": "whoosh",
+     "t": 2.581
+    }
+   ],
+   "t0": 2.282,
+   "t1": 5.284
+  },
+  {
+   "id": "cloths",
+   "from": 17,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 5.284,
+   "t1": 7.974
+  },
+  {
+   "id": "car",
+   "from": 27,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 30,
+     "sfx": "pop",
+     "t": 8.5
+    }
+   ],
+   "t0": 7.974,
+   "t1": 9.721
+  },
+  {
+   "id": "awake",
+   "from": 33,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 36,
+     "sfx": "hit",
+     "t": 11.338
+    }
+   ],
+   "t0": 9.721,
+   "t1": 14.822
+  },
+  {
+   "id": "clock259",
+   "from": 45,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 45,
+     "dt": 0.3,
+     "sfx": "tick",
+     "t": 15.422
+    }
+   ],
+   "t0": 14.822,
+   "t1": 16.686
+  },
+  {
+   "id": "pull",
+   "from": 51,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 53,
+     "sfx": "whoosh",
+     "t": 17.129
+    }
+   ],
+   "t0": 16.686,
+   "t1": 19.198
+  },
+  {
+   "id": "three",
+   "from": 58,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "k",
+     "at": 58,
+     "dt": 0.3,
+     "sfx": "impact",
+     "t": 19.798
+    }
+   ],
+   "t0": 19.198,
+   "t1": 20.678
+  },
+  {
+   "id": "blink",
+   "from": 61,
+   "type": "object",
+   "mood": "silence",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 62,
+     "sfx": "sting",
+     "t": 21.256
+    }
+   ],
+   "t0": 20.678,
+   "t1": 23.046
+  },
+  {
+   "id": "vo",
+   "from": 65,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "t0": 23.046,
+   "t1": 25.638
+  },
+  {
+   "id": "cover",
+   "from": 73,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 74,
+     "sfx": "whoosh",
+     "t": 26.034
+    },
+    {
+     "id": "g",
+     "at": 84,
+     "sfx": "sting",
+     "t": 28.773
+    }
+   ],
+   "t0": 25.638,
+   "t1": 31.018
+  },
+  {
+   "id": "explain",
+   "from": 90,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 31.018,
+   "t1": 34.196
+  },
+  {
+   "id": "swap",
+   "from": 100,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 101,
+     "sfx": "impact",
+     "t": 34.472
+    }
+   ],
+   "t0": 34.196,
+   "t1": 38.007
+  },
+  {
+   "id": "diff",
+   "from": 111,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "t0": 38.007,
+   "t1": 41.248
+  },
+  {
+   "id": "lefthand",
+   "from": 121,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 126,
+     "sfx": "sting",
+     "t": 42.558
+    }
+   ],
+   "t0": 41.248,
+   "t1": 43.588
+  },
+  {
+   "id": "knock",
+   "from": 128,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 141,
+     "sfx": "knock",
+     "t": 47.349
+    }
+   ],
+   "t0": 43.588,
+   "t1": 48.551
+  },
+  {
+   "id": "reveal",
+   "from": 145,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "r",
+     "at": 146,
+     "sfx": "sting",
+     "t": 49.065
+    }
+   ],
+   "t0": 48.551,
+   "t1": 50.619
+  },
+  {
+   "id": "ask",
+   "from": 149,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "end",
+     "at": 158,
+     "dt": 0.532,
+     "sfx": "sting",
+     "t": 54.847
+    }
+   ],
+   "t0": 50.619,
+   "t1": 56.067
+  }
+ ],
+ "duration": 56.067
+}

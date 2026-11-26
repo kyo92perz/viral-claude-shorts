@@ -43,11 +43,11 @@ function rgBathWall(dark = false) {
   return `<rect width="1080" height="1920" fill="${t}"/>${[...Array(16)].map((_, i) => `<path d="M0 ${i * 120} H1080" stroke="${l}" stroke-width="5"/>`).join('')}${[...Array(10)].map((_, i) => `<path d="M${i * 120} 0 V1920" stroke="${l}" stroke-width="5"/>`).join('')}`;
 }
 function rgBath(inside = '', dark = false) {
-  const g = RG_GLASS;
+  const g = RG_GLASS, cid = 'rgclip' + (BZ_UID++);
   return `${rgBathWall(dark)}${bzGlow('bl', 540, 160, 520, '#e8f0ff', dark ? 0.08 : 0.25)}
     <rect x="${g.x - 30}" y="${g.y - 30}" width="${g.w + 60}" height="${g.h + 60}" rx="20" fill="#c8c0b0" ${bzO()}/>
-    <defs><clipPath id="rgclip"><rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}"/></clipPath></defs>
-    <g clip-path="url(#rgclip)"><rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" fill="#1a2430"/><g id="mir"><g opacity="0.55">${rgBathWall(true)}</g>${inside}</g>
+    <defs><clipPath id="${cid}"><rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}"/></clipPath></defs>
+    <g clip-path="url(#${cid})"><rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" fill="#1a2430"/><g id="mir"><g opacity="0.55">${rgBathWall(true)}</g>${inside}</g>
       <rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" fill="#6ab0ff" opacity="0.08"/><path d="M${g.x + 40} ${g.y + g.h - 60} L ${g.x + g.w * 0.4} ${g.y + 60}" stroke="#ffffff" stroke-width="22" opacity="0.07"/></g>
     <rect x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" fill="none" ${bzO('stroke-width="8"')}/>
     <rect x="180" y="1160" width="720" height="120" rx="20" fill="#e8e4dc" ${bzO()}/><ellipse cx="540" cy="1180" rx="200" ry="34" fill="#b8c0c8" ${bzO('stroke-width="5"')}/><path d="M540 1100 v60" stroke="#9a9aa8" stroke-width="20"/>

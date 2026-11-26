@@ -1,5 +1,5 @@
 // <lines>
-const RG_LINES = [];
+const RG_LINES = [{"who": "rg_eu", "t0": 0.3, "t1": 4.984}, {"who": "rg_eu", "t0": 5.484, "t1": 9.521}, {"who": "rg_eu", "t0": 9.921, "t1": 14.622}, {"who": "rg_eu", "t0": 15.122, "t1": 18.698}, {"who": "rg_eu", "t0": 19.498, "t1": 22.346}, {"who": "rg_vo", "t0": 23.246, "t1": 25.338}, {"who": "rg_eu", "t0": 25.838, "t1": 30.618}, {"who": "rg_eu", "t0": 31.318, "t1": 37.707}, {"who": "rg_eu", "t0": 38.307, "t1": 43.288}, {"who": "rg_eu", "t0": 43.888, "t1": 50.219}, {"who": "rg_eu", "t0": 50.819, "t1": 54.567}];
 // </lines>
 // =====================================================================
 //  A REGRA DA VÓ Nº 1: O ESPELHO DAS TRÊS — the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -23,9 +23,9 @@ const rgWrite = () => `<rect width="1080" height="1920" fill="#5a3e2a"/><rect x=
 defineVisuals({
   // ---------------- the hook: a covered mirror, the cloth slipping; one pale eye glows behind it
   hook: { bg: '#2a3440', html: () => bzShot(`<g transform="translate(-540 -540) scale(2)">${rgBath(rgChar('refl', 540, 1330, 1.5, true, 'rf'), true)}${rgCloth('cl', 240, 300, 600, 700)}</g>`, `${rgSay('hk', 'NUNCA TIRE O PANO', 540, 1560, -4, BZ.red, '#fff', 100)}${bzVignette(0.8)}`),
-    anim(tl, s, K, $) { bzFace(tl, $('#rf'), s.t0, 'glow', 'flat'); bzHook(tl, $('#hk'), s.t0); tl.fromTo($('#cl'), { x: 0, y: 0, rotation: 0 }, { x: 160, y: 60, rotation: 8, svgOrigin: '540 300', duration: s.t1 - s.t0, ease: 'power1.in' }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 700); } },
+    anim(tl, s, K, $) { bzFace(tl, $('#rf'), s.t0, 'glow', 'flat'); bzHook(tl, $('#hk'), s.t0); tl.fromTo($('#cl'), { x: 150, y: 50, rotation: 7 }, { x: 330, y: 120, rotation: 14, svgOrigin: '540 300', duration: s.t1 - s.t0, ease: 'power1.in' }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 700); } },
   // ---------------- the rule: the grandmother covers a mirror in the hallway; 3:00
-  rule: { bg: '#4a3a4a', html: () => bzShot(`${rgHall()}${rgChar('vo', 420, 1640, 1.25)}`, `${rgClock('ck', '3:00', 540, 300, 0.6)}${bzVignette(0.6)}`),
+  rule: { bg: '#4a3a4a', html: () => bzShot(`${rgHall()}${rgChar('vo', 420, 1640, 1.25)}`, `${rgClock('ck', '3:00', 540, 420, 0.6)}${bzVignette(0.6)}`),
     anim(tl, s, K, $) { tl.fromTo($('#c2'), { y: -520, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out', immediateRender: true }, K('c')); bzPose(tl, $('#vo'), K('c') - 0.3, { aR: -150 }, 0.3); bzPose(tl, $('#vo'), K('c') + 0.4, { aR: 0 }, 0.4);
       bzFace(tl, $('#vo'), s.t0, 'half', 'flat'); rgHide(tl, $('#ck'), s.t0, s.t0 + 0.6); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.06, 540, 800); } },
   cloths: { bg: '#4a3a4a', html: () => bzShot(`${rgHall()}${rgChar('vo', 200, 1640, 1.1)}`, bzVignette(0.6)),
@@ -34,7 +34,7 @@ defineVisuals({
     anim(tl, s, K, $) { tl.fromTo($('#cc'), { y: -300, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', immediateRender: true }, K('c') - 0.2); rgHide(tl, $('#rt'), s.t0, K('c')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08, 540, 460); } },
   // ---------------- Davi stays awake
   awake: { bg: '#141a2e', html: () => bzShot(`${rgBed()}${rgChar('davi', 520, 1200, 1.0)}<g id="ph"><rect x="690" y="1060" width="70" height="120" rx="12" fill="#1a1a22" ${bzO('stroke-width="5"')}/><rect x="700" y="1072" width="50" height="90" fill="#9ad8ff"/>${bzGlow('pg', 725, 1110, 200, '#9ad8ff', 0.35)}</g>`, `${rgSay('fr', 'FRESCURA...', 540, 360, -3, '#fff', BZ.ink, 90)}${bzVignette(0.6)}`),
-    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '520 1200', y: -60, x: -120 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'half', 'flat'); rgHide(tl, $('#fr'), s.t0, s.t0 + 0.4); tl.to($('#fr'), { opacity: 0, duration: 0.2 }, K('a') - 0.2); bzFace(tl, $('#davi'), K('a'), 'wide', 'flat'); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 1100); } },
+    anim(tl, s, K, $) { tl.set($('#davi'), { rotation: -90, svgOrigin: '520 1200', y: -60, x: 60 }, s.t0); bzFace(tl, $('#davi'), s.t0, 'half', 'flat'); rgHide(tl, $('#fr'), s.t0, s.t0 + 0.4); tl.to($('#fr'), { opacity: 0, duration: 0.2 }, K('a') - 0.2); bzFace(tl, $('#davi'), K('a'), 'wide', 'flat'); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 1100); } },
   clock259: { bg: '#141018', html: () => bzShot(`<rect width="1080" height="1920" fill="#0c0a10"/>${rgClock('ck', '2:59', 540, 760, 1.4)}`, bzVignette(0.6)),
     anim(tl, s, K, $) { tl.fromTo($('#ck'), { opacity: 0.6 }, { opacity: 1, duration: 0.5, yoyo: true, repeat: 3 }, K('k')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 760); } },
   // ---------------- he pulls the cloth off the bathroom mirror
@@ -64,7 +64,7 @@ defineVisuals({
   lefthand: { bg: '#5a3e2a', html: () => bzShot(rgWrite(), rgSay('me', 'MÃO ESQUERDA', 540, 360, -3, BZ.red, '#fff', 96)),
     anim(tl, s, K, $) { tl.to($('#ink'), { strokeDashoffset: 0, duration: s.t1 - s.t0, ease: 'none' }, s.t0); tl.to($('#lh'), { x: 480, duration: s.t1 - s.t0, ease: 'none' }, s.t0); tl.fromTo($('#lh'), { y: 0 }, { y: -20, duration: 0.2, yoyo: true, repeat: Math.floor((s.t1 - s.t0) / 0.2) }, s.t0); rgHide(tl, $('#me'), s.t0, K('l')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 900); } },
   // ---------------- the twist: at 3 a.m. somebody knocks on the mirror from inside
-  knock: { bg: '#2a3440', html: () => bzShot(`${rgBath(rgChar('davi', 540, 1330, 1.5, true, 'rf'), true)}${rgCloth('cl', 240, 300, 600, 700, '#a8a090')}`, `${rgClock('ck', '3:00', 540, 250, 0.5)}${bzVignette(0.8)}`),
+  knock: { bg: '#2a3440', html: () => bzShot(`${rgBath(rgChar('davi', 540, 1330, 1.5, true, 'rf'), true)}${rgCloth('cl', 240, 300, 600, 700, '#a8a090')}`, `${rgClock('ck', '3:00', 540, 400, 0.5)}${bzVignette(0.8)}`),
     anim(tl, s, K, $) { for (let i = 0; i < 3; i++) { tl.fromTo($('#cl'), { scale: 1 }, { scale: 1.03, svgOrigin: '540 650', duration: 0.08, yoyo: true, repeat: 1 }, K('k') + i * 0.5); bzQuake(tl, $('#cam'), K('k') + i * 0.5, K('k') + i * 0.5 + 0.12, 6); } bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 650); } },
   reveal: { bg: '#2a3440', html: () => bzShot(`<g transform="translate(-540 -540) scale(2)">${rgBath(rgChar('davi', 540, 1330, 1.5, true, 'rf'), true)}${rgPrint('p1', 330, 520, 0.8)}${rgPrint('p2', 760, 600, 0.8)}${rgCloth('cl', 240, 300, 600, 700, '#a8a090')}</g>`, `${rgSay('vt', 'ME DEIXA VOLTAR', 540, 1560, -4, BZ.red, '#fff', 96)}${bzVignette(0.8)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#rf'), s.t0, 'wide', 'open'); tl.to($('#cl'), { y: 900, duration: 0.6, ease: 'power2.in' }, K('r')); bzShake(tl, $('#rf'), s.t0, s.t1, 5); tl.fromTo($('#p1, #p2'), { opacity: 0 }, { opacity: 1, duration: 0.2, stagger: 0.4 }, K('r') + 0.5); rgHide(tl, $('#vt'), s.t0, K('r') + 0.8); } },
