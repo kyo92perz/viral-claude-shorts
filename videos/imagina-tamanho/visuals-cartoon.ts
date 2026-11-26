@@ -16,6 +16,7 @@ const tTalk = (who: string, t: number, rest = 'smile') => (IM_LINES.some((l: any
 // camera: from (p0, q0) to (p1, q1) through the scene; shake after an impact (sign flips every frame, 7 frames)
 const tCam = (st: tmS, u: number, p0: tm_V3, p1: tm_V3, q0: tm_V3, q1: tm_V3, fov = 40, roll = 2, shake: [number, number, number] | null = null) => {
   let p = tL(p0, p1, tE(u)), q = tL(q0, q1, tE(u));
+  if (shake) { const d0 = shake[0] - shake[1]; if (d0 >= 0) fov -= 7 * (d0 < 0.15 ? d0 / 0.15 : Math.max(0, 1 - (d0 - 0.15) / 0.7)); }
   if (shake) { const [t, t0, a] = shake, d = t - t0; if (d >= 0 && d < 0.3) { const sg = Math.floor(d * 24) % 2 ? 1 : -1, k = a * (1 - d / 0.3); p = [p[0] + sg * k, p[1] + sg * k * 0.5, p[2]]; q = [q[0] + sg * k, q[1] + sg * k * 0.5, q[2]]; } }
   tFov = fov; st.look(p, q, fov, roll);
 };
@@ -28,10 +29,17 @@ const tHud = (st: tmS, d: string, h: string) => { const cam = st.cam; cam.update
     g.fillStyle = '#1e2350'; g.beginPath(); (g as any).roundRect(4, 4, cw - 8, ch - 8, 40); g.fill(); g.fillStyle = '#fbf7ef'; g.beginPath(); (g as any).roundRect(14, 14, cw - 28, ch - 28, 32); g.fill();
     g.fillStyle = '#1e2350'; g.beginPath(); (g as any).roundRect(14, 14, 380, ch - 28, 32); g.fill(); g.font = '900 96px "Arial Black", Arial, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'center';
     g.fillStyle = '#f6c744'; g.fillText(`DIA ${d}`, 204, ch / 2 + 4); g.fillStyle = '#e0302a'; g.fillText(h, 400 + (cw - 414) / 2, ch / 2 + 4); } }); };
+// speed lines in front of the camera (growth, impacts): k = strength 0..1 (call after tCam)
+const tSpeed = (st: tmS, k: number) => { if (k <= 0.02) return; const cam = st.cam; cam.updateMatrixWorld(); const D = 2.0, hh = D * Math.tan((tFov * Math.PI) / 360), ww = hh * (16 / 9);
+  const f = new THREE.Vector3(); cam.getWorldDirection(f); const at = cam.position.clone().addScaledVector(f, D); const q = Math.round(k * 8) / 8;
+  st.card({ key: 'tm-speed-' + q, cw: 960, ch: 540, at: [at.x, at.y, at.z], w: ww * 2, h: hh * 2, draw: (p: any) => { const g: CanvasRenderingContext2D = p.g; g.clearRect(0, 0, 960, 540);
+    for (let i = 0; i < 46; i++) { const a = (i / 46) * Math.PI * 2 + (i % 3) * 0.05, r0 = 300 - q * 60 + (i % 4) * 18, r1 = 620; g.strokeStyle = `rgba(255,255,255,${0.55 * q})`; g.lineWidth = 3 + (i % 3) * 3;
+      g.beginPath(); g.moveTo(480 + Math.cos(a) * r0, 270 + Math.sin(a) * r0 * 0.62); g.lineTo(480 + Math.cos(a) * r1, 270 + Math.sin(a) * r1 * 0.62); g.stroke(); } } }); };
+const tBurst = (t: number, t0: number, len = 0.9) => (t < t0 ? 0 : Math.max(0, 1 - (t - t0) / len));
 const tP = (B: tm_V3, x: number, y: number, z: number): tm_V3 => [B[0] + x, B[1] + y, B[2] + z];
 // a text sign card (rounded plate, big letters)
-const tSign = (st: tmS, key: string, text: string, at: tm_V3, w: number, bg = '#f6c744', fg = '#1e2350', on = true) => {
-  if (!on) return;
+const tSign = (st: tmS, key: string, text: string, at: tm_V3, w: number, bg = '#f6c744', fg = '#1e2350', on: boolean | number = true) => {
+  if (on === false) return; if (typeof on === 'number') { const d = (st as any).t - on; if (d < 0) return; if (d < 0.35) { const k = d / 0.35; w *= Math.round((1 + 0.25 * Math.sin(k * Math.PI)) * Math.min(1, k * 2.2) * 20) / 20 || 0.05; } }
   const cw = Math.max(400, text.length * 64 + 120), ch = 200;
   st.card({ key: `tm-sign-${key}-${text}`, cw, ch, at, w, h: (w * ch) / cw, draw: (p: any) => {
     const g: CanvasRenderingContext2D = p.g; g.fillStyle = '#1e2350'; g.beginPath(); (g as any).roundRect(6, 6, cw - 12, ch - 12, 40); g.fill();
@@ -91,38 +99,38 @@ const S = TM_ST, C = TM_CITY, M = TM_MINI, R = TM_ROOM, K = TM_KIT, U = STU;
 CT.shots([
   // ================================================ hook and intro
   { id: 'hook', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[24, 18, 0], 6], spin: t * 0.2 }); st.light('day', { view: [0, -1] });
-    tCam(st, u, tP(TM_SP, 0, 20, 90), tP(TM_SP, 6, 18, 70), tP(TM_SP, 6, 14, 0), tP(TM_SP, 10, 16, 0), 44, 3);
+    tCam(st, u, tP(TM_SP, 0, 20, 90), tP(TM_SP, 6, 18, 70), tP(TM_SP, 6, 14, 0), tP(TM_SP, 10, 16, 0), 44, 3); tSpeed(st, tBurst(t, s.t0, 1.2));
     tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -70, -12), 110, { e: 'wide', m: 'open', a: [20, 75] }, false); } },
   { id: 'grow', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(S, 2, 4, 90), tP(S, 2, 5, 86), tP(S, 2, 4.5, 62), tP(S, 2, 5, 62), 40, 2);
     [1.6, 3.2, 6.4, 12.8].forEach((h, i) => { if (t > s.t0 + 0.2 + i * (s.t1 - s.t0 - 0.5) / 4) tmPerson(st, 10 + i, 'tuco', tP(S, -8 + [0, 2, 5.5, 11.5][i], 0, 62), h, { e: i > 2 ? 'wide' : 'dot', m: i > 2 ? 'open' : 'smile' }); }); } },
-  { id: 'fun', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(S, 16, 2.4, 6), tP(S, 15, 2.6, 5.4), tP(S, 12, 2.6, -2.6), tP(S, 12, 2.8, -2.6), 40, 3); st.dof(10, tP(S, 12, 2.8, -2.6));
+  { id: 'fun', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(S, 15, 2.2, 3.4), tP(S, 14.6, 2.4, 3.0), tP(S, 12, 2.6, -2.6), tP(S, 12, 2.8, -2.6), 42, 3); st.dof(10, tP(S, 12, 2.8, -2.6));
     const up = tC((t - s.t0 - 0.3) / 0.8); if (TM.ball) TM.ball.position.set(...tL(tP(S, 12, 4.0, -3.2), tP(S, 12.3, 2.9, -2.4), up));
     tmPerson(st, 1, 'tuco', tP(S, 11.5, 0, -2.4), 3.2, { e: 'dot', m: 'grin', a: [10, 150 - up * 40] }); } },
-  { id: 'building', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-1, 0] }); tCam(st, u, tP(C, 110, 8, 4), tP(C, 96, 10, 4), tP(C, 0, 26, 0), tP(C, 0, 30, 0), 44, 3, [t, tK(s, 'p'), 1.5]);
+  { id: 'building', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-1, 0] }); tCam(st, u, tP(C, 110, 8, 4), tP(C, 96, 10, 4), tP(C, 0, 26, 0), tP(C, 0, 30, 0), 44, 3, [t, tK(s, 'p'), 1.5]); tSpeed(st, tBurst(t, tK(s, 'p')));
     tmPerson(st, 1, 'tuco', tP(C, 0, 0, 0), 56, { e: 'wide', m: 'o' }); } },
-  { id: 'earthhand', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[30, 16, 4], 7], spin: t * 0.3 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, -10, 18, 80), tP(TM_SP, 0, 18, 66), tP(TM_SP, 10, 12, 0), tP(TM_SP, 18, 14, 0), 44, -3);
+  { id: 'earthhand', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[30, 16, 4], 7], spin: t * 0.3 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, -10, 18, 80), tP(TM_SP, 0, 18, 66), tP(TM_SP, 10, 12, 0), tP(TM_SP, 18, 14, 0), 44, -3); tSpeed(st, tBurst(t, s.t0, 0.8));
     tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -80, -10), 120, { e: 'wide', m: 'grin', a: [20, 80] }, false); } },
   { id: 'real', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); tCam(st, u, tP(U, 0, 6, 26), tP(U, 0, 6, 22), tP(U, 0, 6, 0), tP(U, 0, 6, 0), 40, 0);
-    ['1,6 m', '6,4 m', '819 m', '13 km', '429 MIL KM'].forEach((v, i) => tSign(st, 'n' + i, v, tP(U, -14 + i * 7, 4 + (i % 2) * 4, -2), 6.2, ['#fbf7ef', '#f6c744', '#3aa05a', '#5ab0ff', '#e0302a'][i], '#1e2350', t > s.t0 + 0.2 + i * 0.5)); } },
+    ['1,6 m', '6,4 m', '819 m', '13 km', '429 MIL KM'].forEach((v, i) => tSign(st, 'n' + i, v, tP(U, -14 + i * 7, 4 + (i % 2) * 4, -2), 6.2, ['#fbf7ef', '#f6c744', '#3aa05a', '#5ab0ff', '#e0302a'][i], '#1e2350', s.t0 + 0.2 + i * 0.5)); } },
   { id: 'guess', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); tCam(st, u, tP(U, 0, 7, 28), tP(U, 0, 7, 24), tP(U, 0, 7, 0), tP(U, 0, 7, 0), 40, 0, [t, tK(s, 'g'), 0.6]);
     const n = Math.min(30, Math.floor((t - s.t0) * 18)); tPic(st, 'grid' + n, tP(U, 0, 6, -4), 24, 1220, 380, (g) => tGrid(g, n)); } },
   // ================================================ day 1-2
   { id: 'normal', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); const z = tK(s, 'z'); st.light(t > z ? 'night' : 'day', { view: [-0.3, -1] }); tCam(st, u, tP(R, 0.6, 1.3, 3.4), tP(R, 0.4, 1.2, 3.0), tP(R, -1.0, 1.0, -2.2), tP(R, -1.0, 1.0, -2.2), 44, 2); tHud(st, '1', '1,6 METRO');
     tmPerson(st, 1, 'tuco', tP(R, -0.8, 0, -2.4), 1.6, { e: t > z ? 'closed' : 'dot', m: 'smile' }); } },
-  { id: 'wake', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '2', '3,2 METROS'); tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.rotation.y = t * 12; const w = tK(s, 'w'), gr = tC((t - w + 0.2) / 0.35);
-    tCam(st, u, tP(R, 1.6, 1.0, 3.6), tP(R, 1.3, 1.2, 3.2), tP(R, 0.2, 2.0, -0.8), tP(R, 0.2, 2.2, -0.8), 50, 4, [t, w, 0.08]);
+  { id: 'wake', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.rotation.y = t * 12; const w = tK(s, 'w'), gr = tC((t - w + 0.2) / 0.35);
+    tCam(st, u, tP(R, 1.6, 1.0, 3.6), tP(R, 1.3, 1.2, 3.2), tP(R, 0.2, 2.0, -0.8), tP(R, 0.2, 2.2, -0.8), 50, 4, [t, w, 0.08]); tSpeed(st, tBurst(t, tK(s, 'w') - 0.2)); tHud(st, '2', '3,2 METROS');
     tmPerson(st, 1, 'tuco', tP(R, 0.2, 0, -0.9), 1.6 + 1.6 * gr, { e: 'wide', m: 'o', t: -8 }); } },
-  { id: 'cama', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.rotation.y = t * 12; tCam(st, u, tP(R, 0.4, 2.4, 1.6), tP(R, 0.4, 2.45, 1.3), tP(R, 0.2, 2.5, -0.9), tP(R, 0.2, 2.5, -0.9), 40, -3); st.dof(14, tP(R, 0.2, 2.6, -0.9));
+  { id: 'cama', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.visible = false; tCam(st, u, tP(R, 0.4, 2.4, 1.6), tP(R, 0.4, 2.45, 1.3), tP(R, 0.2, 2.5, -0.9), tP(R, 0.2, 2.5, -0.9), 40, -3); st.dof(14, tP(R, 0.2, 2.6, -0.9));
     tmPerson(st, 1, 'tuco', tP(R, 0.2, 0, -0.9), 3.2, { e: 'wide', m: tTalk('im_tuco', t, 'o'), a: [60, 60] }); } },
-  { id: 'mae', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.rotation.y = t * 12; tCam(st, u, tP(R, 3.2, 1.5, 3.6), tP(R, 3.0, 1.5, 3.2), tP(R, 0.6, 1.6, -0.8), tP(R, 0.6, 1.6, -0.8), 48, 2); st.dof(9, tP(R, 2.2, 1.4, 0.6));
+  { id: 'mae', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-0.3, -1] }); if (TM.fan) TM.fan.visible = false; tCam(st, u, tP(R, 3.2, 1.5, 3.6), tP(R, 3.0, 1.5, 3.2), tP(R, 0.6, 1.6, -0.8), tP(R, 0.6, 1.6, -0.8), 48, 2); st.dof(9, tP(R, 2.2, 1.4, 0.6));
     tmPerson(st, 1, 'tuco', tP(R, 0.2, 0, -0.9), 3.2, { e: 'wide', m: 'o', t: t > s.t0 + 1 ? 10 : 0 }); tmPerson(st, 2, 'mae', tP(R, 2.2, 0, 0.6), 1.7, { e: 'wide', m: tTalk('im_mae', t, 'o'), a: [150, 150] }); } },
   { id: 'surprise', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); const o = tK(s, 'o'); tCam(st, u, tP(U, 0, 2.4, 11), tP(U, 0, 2.6, 9.6), tP(U, 0, 1.8, 0), tP(U, 0, 1.8, 0), 40, 0, [t, o, 0.2]);
     tmPerson(st, 1, 'tuco', tP(U, -2.4, 0.06, 0), 1.6, { e: 'dot', m: 'smile' }); tmPerson(st, 2, 'tuco', tP(U, 1.6, 0.06, 0), 3.2, { e: 'wide', m: 'o' });
-    tSign(st, 'kg50', '50 KG', tP(U, -2.4, 2.1, 0.5), 2.2, '#fbf7ef'); tSign(st, 'kg400', '400 KG', tP(U, 1.6, 3.9, 0.5), 2.8, '#e0302a', '#ffffff', t > o + 0.5); tSign(st, 'x8', '×8', tP(U, 4.4, 2.4, 0.5), 1.6, '#f6c744', '#1e2350', t > o); } },
+    tSign(st, 'kg50', '50 KG', tP(U, -2.4, 2.1, 0.5), 2.2, '#fbf7ef'); tSign(st, 'kg400', '400 KG', tP(U, 1.6, 3.9, 0.5), 2.8, '#e0302a', '#ffffff', o + 0.5); tSign(st, 'x8', '×8', tP(U, 4.4, 2.4, 0.5), 1.6, '#f6c744', '#1e2350', o); } },
   { id: 'cube', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const a = tK(s, 'a'), l = tK(s, 'l'), g = tK(s, 'g'), o = tK(s, 'o');
     if (TM.cube) { TM.cube.visible = true; TM.cube.children.forEach((c, i) => { c.visible = i === 0 || (i === 1 && t > a) || (i < 4 && t > l) || t > g; }); }
-    const ang = 0.5 + u * 0.6; tCam(st, u, tP(U, 6 + Math.sin(ang) * 10, 4.2, -2 + Math.cos(ang) * 10), tP(U, 6 + Math.sin(ang + 0.2) * 9, 3.8, -2 + Math.cos(ang + 0.2) * 9), tP(U, 6, 1.2, -2), tP(U, 6, 1.2, -2), 40, 0, [t, o, 0.12]);
-    tSign(st, 'eight', '2 × 2 × 2 = 8', tP(U, 6, 3.4, -2), 4.4, '#f6c744', '#1e2350', t > o); } },
+    const ang = 0.5 + u * 0.6; tCam(st, u, tP(U, 6 + Math.sin(ang) * 10, 4.2, -2 + Math.cos(ang) * 10), tP(U, 6 + Math.sin(ang + 0.2) * 9, 3.8, -2 + Math.cos(ang + 0.2) * 9), tP(U, 6, 1.2, -2), tP(U, 6, 1.2, -2), 40, 0, [t, o, 0.12]); tSpeed(st, tBurst(t, tK(s, 'o'), 0.7));
+    tSign(st, 'eight', '2 × 2 × 2 = 8', tP(U, 6, 3.4, -2), 4.4, '#f6c744', '#1e2350', o); } },
   { id: 'door', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); const c = tK(s, 'c'); if (TM.chair) { const k = tC((t - c) / 0.25); TM.chair.rotation.z = -k * 1.3; TM.chair.position.y = k * 0.1; }
     tCam(st, u, tP(K, 2.6, 1.5, 3.4), tP(K, 2.2, 1.6, 3.0), tP(K, -0.6, 1.4, -2.4), tP(K, -0.6, 1.5, -2.4), 50, 2, [t, c, 0.1]);
     tmPerson(st, 1, 'tuco', tP(K, -3.0, 0, -3.3), 3.2, { e: 'half', m: 'wavy', t: 14 }); } },
@@ -138,14 +146,14 @@ CT.shots([
   { id: 'elephant', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const e = tK(s, 'e'); tCam(st, u, tP(S, 2, 3.2, 82), tP(S, 3, 3.6, 79), tP(S, 2, 3.4, 62), tP(S, 2, 3.6, 62), 40, 2); tHud(st, '3', '6,4 METROS');
     tmPerson(st, 1, 'tuco', tP(S, -1.5, 0, 62), 6.4, { e: 'dot', m: 'smile' }); if (t > e) tPic(st, 'eleph', tP(S, 5.5, 1.6, 62.6), 4.6, 560, 380, tElephant); } },
   { id: 'bones', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); const a = tK(s, 'a'), b = tK(s, 'b'); tCam(st, u, tP(U, 0, 6, 24), tP(U, 0, 6, 21), tP(U, 0, 6, 0), tP(U, 0, 6, 0), 40, 0);
-    const ka = tC((t - a) / 0.6), kb = tC((t - b) / 1.0);
+    const ka = 0.08 + 0.92 * tC((t - a) / 0.6), kb = 0.08 + 0.92 * tC((t - b) / 1.0);
     if (ka > 0) { tPic(st, 'barA' + Math.round(ka * 20), tP(U, -12 + 8 * ka, 9, -4), 16 * ka + 0.01, 400, 60, (g) => { g.fillStyle = '#3aa05a'; g.fillRect(0, 0, 400, 60); }); tSign(st, 'forca', 'OSSO ×16', tP(U, -8, 11.2, -3.8), 7, '#3aa05a', '#fff'); }
     if (kb > 0) { tPic(st, 'barB' + Math.round(kb * 20), tP(U, -12 + 32 * kb / 2, 4, -4), 32 * kb + 0.01, 800, 60, (g) => { g.fillStyle = '#e0302a'; g.fillRect(0, 0, 800, 60); }); tSign(st, 'peso', 'PESO ×64', tP(U, -8, 6.2, -3.8), 7, '#e0302a', '#fff'); } } },
   { id: 'crack', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); const c = tK(s, 'c'), k = Math.round(tC((t - c) / 0.4) * 5) / 5;
-    tCam(st, u, tP(U, 0, 6, 16), tP(U, 0, 6, 12), tP(U, 0, 6, 0), tP(U, 0, 6, 0), 40, 0, [t, c, 0.25]); tPic(st, 'crack' + k, tP(U, 0, 6, -3), 6, 400, 800, (g) => tCrack(g, k));
+    tCam(st, u, tP(U, 0, 6, 16), tP(U, 0, 6, 12), tP(U, 0, 6, 0), tP(U, 0, 6, 0), 40, 0, [t, c, 0.25]); tSpeed(st, tBurst(t, tK(s, 'c'), 0.6)); tPic(st, 'crack' + k, tP(U, 0, 6, -3), 6, 400, 800, (g) => tCrack(g, k));
     if (t > c && t < c + 0.4) st.effect('burst', tP(U, 0.4, 6.2, -2.5), 4, tC((t - c) / 0.4)); } },
   { id: 'deal', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const k = tK(s, 'k'); tCam(st, u, tP(S, 1, 5.4, 9), tP(S, 1, 5.5, 8), tP(S, -1.5, 5.4, 0), tP(S, -1.5, 5.5, 0), 40, -3); st.dof(13, tP(S, -1.5, 5.4, 0));
-    tmPerson(st, 1, 'tuco', tP(S, -1.5, 0, 0), 6.4, { e: 'dot', m: 'grin', a: [10, 120] }); tSign(st, 'comb', 'COMBINADO?', tP(S, 1.6, 6.6, 1), 3.4, '#f6c744', '#1e2350', t > k - 0.2); } },
+    tmPerson(st, 1, 'tuco', tP(S, -1.5, 0, 0), 6.4, { e: 'dot', m: 'grin', a: [10, 120] }); tSign(st, 'comb', 'COMBINADO?', tP(S, 1.6, 6.6, 1), 3.4, '#f6c744', '#1e2350', k - 0.2); } },
   { id: 'voice', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); tCam(st, u, tP(U, 0, 7, 24), tP(U, 0, 7, 22), tP(U, 0, 7, 0), tP(U, 0, 7, 0), 40, 0);
     const ph = Math.round((t * 4) % 1 * 12) / 12; tPic(st, 'wS' + ph, tP(U, 0, 10, -4), 26, 1200, 300, (g) => tWave(g, ph, false)); tPic(st, 'wB' + ph, tP(U, 0, 4, -4), 26, 1200, 300, (g) => tWave(g, ph * 0.12, true));
     tSign(st, 'ag', 'AGUDO', tP(U, -10, 12.4, -3.8), 4, '#3aa05a', '#fff'); tSign(st, 'gr', 'GRAVE', tP(U, -10, 6.6, -3.8), 4, '#e0302a', '#fff'); } },
@@ -172,29 +180,29 @@ CT.shots([
   // ================================================ day 6-10
   { id: 'cristo', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, 1] }); tCam(st, u, tP(C, -42, 22, -200), tP(C, -44, 24, -190), tP(C, -44, 26, -70), tP(C, -44, 27, -70), 42, 2); tHud(st, '6', '51 METROS');
     tmPerson(st, 1, 'tuco', tP(C, -22, 0, -74), 51, { e: 'wide', m: 'grin', a: [10, 70] }); } },
-  { id: 'day7', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-1, 0] }); tCam(st, u, tP(C, 170, 6, 3), tP(C, 150, 10, 3), tP(C, 0, 48, 0), tP(C, 0, 52, 0), 44, 3, [t, tK(s, 'd'), 2]); tHud(st, '7', '102 METROS');
+  { id: 'day7', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-1, 0] }); tCam(st, u, tP(C, 170, 6, 3), tP(C, 150, 10, 3), tP(C, 0, 48, 0), tP(C, 0, 52, 0), 44, 3, [t, tK(s, 'd'), 2]); tSpeed(st, tBurst(t, tK(s, 'd'))); tHud(st, '7', '102 METROS');
     tmPerson(st, 1, 'tuco', tP(C, 0, 0, 0), 102, { e: 'dot', m: 'smile' }); } },
   { id: 'steps', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [-1, 0] }); const ph = (t - s.t0) * 3.2, x = -40 + (t - s.t0) * 10, stepT = s.t0 + Math.floor((t - s.t0) / 0.98) * 0.98;
     tCam(st, u, tP(C, 200, 5, 4), tP(C, 190, 6, 4), tP(C, x, 48, 0), tP(C, x, 48, 0), 46, 2, [t, stepT, 1.2]);
     tmPerson(st, 1, 'tuco', tP(C, x, 0, 0), 102, { e: 'dot', m: 'flat', w: ph, a: [10 + Math.sin(ph) * 20, 10 - Math.sin(ph) * 20] });
     (TM.cars ?? []).forEach((c, i) => { c.position.x = C[0] - 20 + i * 18 + ((t * (i % 2 ? 6 : -6)) % 30); });
     if (t > tK(s, 'a')) for (let i = 0; i < 3; i++) st.effect('burst', tP(C, 40 + i * 20, 2, -6 + i * 6), 3, (t * 2 + i / 3) % 1); } },
-  { id: 'carrier', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '8', '205 METROS'); tNoSpace(); st.light('day', { view: [0.2, -1] }); const sh = TM.ships?.[0]; if (sh) { sh.scale.setScalar(11); sh.position.set(M[0] + 60, 0, 6); }
-    tCam(st, u, tP(M, 60, 8, 70), tP(M, 56, 9, 62), tP(M, 50, 9, 0), tP(M, 50, 10, 0), 44, 2); tmPerson(st, 1, 'tuco', tP(M, 38, 0, 0), 20.5, { e: 'dot', m: 'grin', a: [10, 40] });
+  { id: 'carrier', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); const sh = TM.ships?.[0]; if (sh) { sh.scale.setScalar(11); sh.position.set(M[0] + 60, 0, 6); }
+    tCam(st, u, tP(M, 60, 8, 70), tP(M, 56, 9, 62), tP(M, 50, 9, 0), tP(M, 50, 10, 0), 44, 2); tHud(st, '8', '205 METROS'); tmPerson(st, 1, 'tuco', tP(M, 38, 0, 0), 20.5, { e: 'dot', m: 'grin', a: [10, 40] });
     for (let i = 0; i < 2; i++) tPic(st, 'heli', tP(M, 30 + ((t * 6 + i * 20) % 40), 18 + i * 3, 4), 4, 300, 160, (g) => { g.fillStyle = '#3a4a3a'; g.strokeStyle = '#1e2350'; g.lineWidth = 8; g.beginPath(); g.ellipse(120, 100, 80, 40, 0, 0, 7); g.fill(); g.stroke(); g.fillRect(180, 92, 110, 16); g.fillStyle = '#1e2350'; g.fillRect(20, 40, 220, 10); g.fillRect(116, 40, 8, 30); }); } },
-  { id: 'news', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [-1, 0], az: 25, el: 12 }); tCam(st, u, tP(C, 104, 1.6, 6), tP(C, 102, 1.7, 5.6), tP(C, 96, 1.6, 2), tP(C, 96, 1.7, 2), 40, 3); st.dof(10, tP(C, 96, 1.6, 2));
-    tmPerson(st, 2, 'rep', tP(C, 96, 0, 2), 1.7, { e: 'wide', m: tTalk('im_rep', t, 'flat'), a: [10, 100] }); const ph = (t - s.t0) * 3; tmPerson(st, 1, 'tuco', tP(C, -40 + (t - s.t0) * 8, 0, -2), 102, { e: 'dot', m: 'flat', w: ph }); } },
-  { id: 'citymeal', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '9', '410 METROS'); tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(C, 160, 260, 420), tP(C, 140, 240, 380), tP(C, 0, 160, 0), tP(C, 0, 170, 0), 44, 3);
+  { id: 'news', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [-1, 0], az: 25, el: 12 }); tCam(st, u, tP(C, 104, 1.6, 6), tP(C, 102, 1.7, 5.6), tP(C, 96, 2.6, 2), tP(C, 96, 2.7, 2), 40, 3); st.dof(10, tP(C, 96, 1.6, 2));
+    tmPerson(st, 2, 'rep', tP(C, 96, 0, 2), 1.7, { e: 'wide', m: tTalk('im_rep', t, 'flat'), a: [10, 100] }); const ph = (t - s.t0) * 3; tmPerson(st, 1, 'tuco', tP(C, -220 + (t - s.t0) * 8, 0, -2), 102, { e: 'dot', m: 'flat', w: ph }); } },
+  { id: 'citymeal', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(C, 160, 260, 420), tP(C, 140, 240, 380), tP(C, 0, 160, 0), tP(C, 0, 170, 0), 44, 3); tHud(st, '9', '410 METROS');
     tmPerson(st, 1, 'tuco', tP(C, 0, 0, 0), 410, { e: 'half', m: 'wavy' }); } },
-  { id: 'burj', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '10', '819 METROS'); tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(M, 8, 6, 34), tP(M, 9, 7, 30), tP(M, 6, 8, -4), tP(M, 6, 8.5, -4), 40, 3, [t, tK(s, 't'), 0.25]);
+  { id: 'burj', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.2, -1] }); tCam(st, u, tP(M, 8, 6, 34), tP(M, 9, 7, 30), tP(M, 6, 8, -4), tP(M, 6, 8.5, -4), 40, 3, [t, tK(s, 't'), 0.25]); tSpeed(st, tBurst(t, tK(s, 't'))); tHud(st, '10', '819 METROS');
     tmPerson(st, 1, 'tuco', tP(M, 9, 0, -4), 16.4, { e: 'dot', m: 'grin', a: [10, 40] }); } },
   // ================================================ day 13-14
-  { id: 'tosea', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '13', '6,5 KM'); tNoSpace(); st.light('day', { view: [0.3, -1] }); const ph = (t - s.t0) * 2.4; tCam(st, u, tP(M, -10, 30, 150), tP(M, 0, 34, 140), tP(M, 10, 30, 0), tP(M, 40, 30, 0), 44, 2);
+  { id: 'tosea', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const ph = (t - s.t0) * 2.4; tCam(st, u, tP(M, -10, 30, 150), tP(M, 0, 34, 140), tP(M, 10, 30, 0), tP(M, 40, 30, 0), 44, 2); tHud(st, '13', '6,5 KM');
     tmPerson(st, 1, 'tuco', tP(M, -20 + (t - s.t0) * 10, 0, -6), 65, { e: 'half', m: 'flat', w: ph }); } },
   { id: 'ocean', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 120, 30, 130), tP(M, 116, 32, 120), tP(M, 110, 24, 0), tP(M, 110, 26, 0), 44, 2);
-    tmPerson(st, 1, 'tuco', tP(M, 110, -40, 0), 65, { e: 'closed', m: 'smile', a: [60, 60] }, false); tSign(st, 'pisc', 'PISCINA RASA', tP(M, 132, 36, 10), 18, '#f6c744', '#1e2350', t > tK(s, 'p')); } },
-  { id: 'clouds', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '14', '13 KM'); tNoSpace(); st.light('day', { view: [0.3, -1] }); if (TM.mtn) { TM.mtn.position.set(M[0] + 150, 0, -60); TM.mtn.scale.setScalar(88); }
-    tCam(st, u, tP(M, 140, 50, 230), tP(M, 140, 70, 210), tP(M, 120, 60, 0), tP(M, 120, 90, 0), 46, 2);
+    tmPerson(st, 1, 'tuco', tP(M, 110, -40, 0), 65, { e: 'closed', m: 'smile', a: [60, 60] }, false); tSign(st, 'pisc', 'PISCINA RASA', tP(M, 132, 40, 10), 40, '#f6c744', '#1e2350', tK(s, 'p')); } },
+  { id: 'clouds', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); if (TM.mtn) { TM.mtn.position.set(M[0] + 150, 0, -60); TM.mtn.scale.setScalar(88); }
+    tCam(st, u, tP(M, 140, 50, 230), tP(M, 140, 70, 210), tP(M, 120, 60, 0), tP(M, 120, 90, 0), 46, 2); tHud(st, '14', '13 KM');
     tmPerson(st, 1, 'tuco', tP(M, 110, 0, 0), 131, { e: t > tK(s, 'f') ? 'half' : 'dot', m: t > tK(s, 'f') ? 'wavy' : 'smile' });
     if (t > tK(s, 'n')) for (let i = 0; i < 6; i++) tPic(st, 'cloud', tP(M, 40 + i * 34, 20 + (i % 2) * 4, 20 + (i % 3) * 6), 34, 460, 240, tCloud);
     if (t > tK(s, 'a')) tPic(st, 'plane', tP(M, 190 - (t - tK(s, 'a')) * 14, 110, 20), 14, 400, 160, tPlane); } },
@@ -205,60 +213,60 @@ CT.shots([
     tLying(st, tP(M, 110, 4, 0), 80, { e: 'closed', m: 'o' }); (TM.ships ?? []).forEach((sh, i) => { sh.scale.setScalar(3); sh.position.set(M[0] + 60 + i * 50, 0, 40 - i * 8 + Math.sin(t + i) * 2); });
     for (let i = 0; i < 3; i++) { const k = (t * 0.6 + i / 3) % 1; tSign(st, 'z' + i, 'Z', tP(M, 74 + i * 6, 14 + k * 10, 4), 5 + i * 2, '#fbf7ef'); } } },
   { id: 'science', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 52, 1.6, 8), tP(M, 50, 1.7, 7), tP(M, 50, 1.6, 0), tP(M, 50, 1.6, 0), 40, 2); st.dof(10, tP(M, 50, 1.6, 0));
-    tmPerson(st, 2, 'ger', tP(M, 49, 0, 0), 1.7, { e: 'wide', m: 'grin', a: [10, 100] }); tmPerson(st, 3, 'rep', tP(M, 51.4, 0, 0.4), 1.7, { e: 'wide', m: 'o', a: [10, 100] }); tLying(st, tP(M, 110, 6, -60), 130, { e: 'closed', m: 'smile' }); } },
+    tmPerson(st, 2, 'ger', tP(M, 49, 0, 0), 1.7, { e: 'wide', m: 'grin', a: [10, 100] }); tmPerson(st, 3, 'rep', tP(M, 51.4, 0, 0.4), 1.7, { e: 'wide', m: 'o', a: [10, 100] }); tLying(st, tP(M, 90, 3, -140), 90, { e: 'closed', m: 'smile' }); } },
   // ================================================ day 17-21
-  { id: 'karman', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '17', '105 KM'); tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 120, 60, 170), tP(M, 120, 80, 150), tP(M, 110, 70, 0), tP(M, 110, 95, 0), 46, 2);
+  { id: 'karman', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(M, 120, 60, 170), tP(M, 120, 80, 150), tP(M, 110, 70, 0), tP(M, 110, 95, 0), 46, 2); tHud(st, '17', '105 KM');
     tmPerson(st, 1, 'tuco', tP(M, 110, 0, 0), 105, { e: 'wide', m: 'o' }); tPic(st, 'kline', tP(M, 110, 100, 4), 260, 1600, 40, (g) => { g.fillStyle = '#fbf7ef'; for (let x = 0; x < 1600; x += 60) g.fillRect(x, 10, 36, 20); });
-    tSign(st, 'espaco', 'COMEÇA O ESPAÇO', tP(M, 40, 106, 6), 40, '#1e2350', '#fbf7ef', t > tK(s, 'k') - 0.5); } },
-  { id: 'iss', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '19', '419 KM'); tSpace({ earth: [[0, -20, 0], 20], iss: [6 - (t - s.t0) * 0.6, 4.2, 2], spin: t * 0.05 }); st.light('day', { view: [0, -1] });
-    tCam(st, u, tP(TM_SP, 4, 4.5, 12), tP(TM_SP, 3, 4.5, 10), tP(TM_SP, 2, 3.6, 0), tP(TM_SP, 2, 3.8, 0), 40, 2); tmPerson(st, 1, 'tuco', tP(TM_SP, 0, 0, 0), 4.4, { e: 'wide', m: 'grin', a: [10, 150] }, false); } },
+    tSign(st, 'espaco', 'COMEÇA O ESPAÇO', tP(M, 40, 106, 6), 40, '#1e2350', '#fbf7ef', tK(s, 'k') - 0.5); } },
+  { id: 'iss', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[0, -20, 0], 20], iss: [9 - (t - s.t0) * 0.5, 4.6, 0], spin: t * 0.05 }); st.light('day', { view: [0, -1] });
+    tCam(st, u, tP(TM_SP, 4, 4.5, 12), tP(TM_SP, 3, 4.5, 10), tP(TM_SP, 2, 3.6, 0), tP(TM_SP, 2, 3.8, 0), 40, 2); tHud(st, '19', '419 KM'); tmPerson(st, 1, 'tuco', tP(TM_SP, 0, 0, 0), 4.4, { e: 'wide', m: 'grin', a: [10, 150] }, false); } },
   { id: 'selfie', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [0.3, -1], az: 25, el: 12 }); tCam(st, u, tP(S, 3, 0.9, 3.2), tP(S, 3, 0.95, 2.8), tP(S, 3.4, 1.4, 0), tP(S, 3.4, 1.45, 0), 40, 4); st.dof(14, tP(S, 3.4, 1.3, 0));
     tmPerson(st, 2, 'biel', tP(S, 3.4, 0, 0), 1.5, { e: 'wide', m: tTalk('im_biel', t, 'grin'), a: [10, 165] }); } },
   { id: 'sink', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [-1, 0], az: 20, el: 10 }); const a = tK(s, 'a'), k = tC((t - a) / (s.t1 - a)); tCam(st, u, tP(C, 640, 40, 3), tP(C, 600, 36, 3), tP(C, 0, 170, 0), tP(C, 0, 160, 0), 46, 3, [t, a, 6]);
     tmPerson(st, 1, 'tuco', tP(C, 0, -k * 10, 0), 400, { e: 'wide', m: 'o' }); if (t > a) for (let i = 0; i < 3; i++) st.effect('puff', tP(C, 20, 4, -8 + i * 8), 40, (t * 1.3 + i / 3) % 1); } },
-  { id: 'orbit', fn(t: number, u: number, s: Scene, st: tmS) { const ang = 1.2 + (t - s.t0) * 0.35; tSpace({ earth: [[0, 0, 0], 20], spin: t * 0.1 }); st.light('day', { view: [0, -1] }); tHud(st, '21', '1.678 KM');
-    tCam(st, u, tP(TM_SP, 0, 24, 96), tP(TM_SP, 0, 22, 88), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2);
+  { id: 'orbit', fn(t: number, u: number, s: Scene, st: tmS) { const ang = 1.2 + (t - s.t0) * 0.35; tSpace({ earth: [[0, 0, 0], 20], spin: t * 0.1 }); st.light('day', { view: [0, -1] });
+    tCam(st, u, tP(TM_SP, 0, 24, 96), tP(TM_SP, 0, 22, 88), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2); tHud(st, '21', '1.678 KM');
     tmPerson(st, 1, 'tuco', tP(TM_SP, Math.cos(ang) * 38, -9 + Math.sin(ang) * 8, Math.sin(ang) * 20), 18, { e: 'wide', m: 'grin', a: [120, 120] }, false); } },
   // ================================================ day 23-27
-  { id: 'brazil', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '23', '6.710 KM'); tSpace({ earth: [[-14, 0, 0], 20], spin: 4.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 0, 6, 90), tP(TM_SP, 2, 6, 80), tP(TM_SP, 0, 2, 0), tP(TM_SP, 2, 2, 0), 44, 2);
+  { id: 'brazil', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[-14, 0, 0], 20], spin: 4.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 0, 6, 90), tP(TM_SP, 2, 6, 80), tP(TM_SP, 0, 2, 0), tP(TM_SP, 2, 2, 0), 44, 2); tHud(st, '23', '6.710 KM');
     tmPerson(st, 1, 'tuco', tP(TM_SP, 22, -10, 4), 21, { e: 'wide', m: 'grin', t: -10 }, false); } },
   { id: 'maecall', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [0.3, -1], az: 25, el: 12 }); tCam(st, u, tP(S, 1, 1.0, 3.6), tP(S, 1, 1.05, 3.2), tP(S, 0.4, 1.6, 0), tP(S, 0.4, 1.65, 0), 40, 3); st.dof(14, tP(S, 0.4, 1.6, 0));
     tmPerson(st, 2, 'mae', tP(S, 0.4, 0, 0), 1.7, { e: 'wide', m: tTalk('im_mae', t, 'smile'), a: [10, 150], t: -8 }); } },
-  { id: 'pilates', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '24', '13.422 KM'); tSpace({ earth: [[-16, 6, 6], 20], spin: t * 0.2 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 0, 14, 110), tP(TM_SP, 0, 14, 98), tP(TM_SP, 0, 8, 0), tP(TM_SP, 0, 8, 0), 44, 2);
-    tmPerson(st, 1, 'tuco', tP(TM_SP, 22, -14, 0), 42, { e: 'dot', m: 'grin', a: [60, 10] }, false); tSign(st, 'pil', 'BOLA DE PILATES', tP(TM_SP, -16, 34, 8), 24, '#f6c744', '#1e2350', t > tK(s, 'b')); } },
+  { id: 'pilates', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[-16, 6, 6], 20], spin: t * 0.2 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 0, 14, 110), tP(TM_SP, 0, 14, 98), tP(TM_SP, 0, 8, 0), tP(TM_SP, 0, 8, 0), 44, 2); tHud(st, '24', '13.422 KM');
+    tmPerson(st, 1, 'tuco', tP(TM_SP, 22, -14, 0), 42, { e: 'dot', m: 'grin', a: [60, 10] }, false); tSign(st, 'pil', 'BOLA DE PILATES', tP(TM_SP, -16, 34, 8), 24, '#f6c744', '#1e2350', tK(s, 'b')); } },
   { id: 'eye', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); tCam(st, u, tP(S, 0, 1.2, 80), tP(S, 0, 1.4, 78), tP(S, 0, 6, 60), tP(S, 0, 7, 60), 46, 2);
     const look = Math.round(Math.sin(t * 2) * 4) / 4; tPic(st, 'eye' + look, tP(S, 0, 26, 30), 40, 800, 400, (g) => tEye(g, look));
     ['biel', 'mae', 'rep', 'tio', 'ger', 'biel', 'mae'].forEach((k, i) => tmPerson(st, 20 + i, k, tP(S, -6 + i * 2, 0, 66 + (i % 2)), k === 'biel' ? 1.5 : 1.7, { e: 'wide', m: 'o', a: [20, 20], t: -10 }));
-    tSign(st, 'serg', 'TAMANHO DE SERGIPE', tP(S, 0, 14, 40), 14, '#f6c744', '#1e2350', t > tK(s, 's')); } },
-  { id: 'soccer', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '27', '107 MIL KM'); tSpace({ earth: [[28, 18, 4], 6], spin: t * 0.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 10, 22, 70), tP(TM_SP, 14, 20, 60), tP(TM_SP, 14, 14, 0), tP(TM_SP, 20, 15, 0), 44, -3);
-    tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -80, -10), 120, { e: 'wide', m: 'o', a: [20, 78] }, false); tSign(st, 'bola', 'BOLA DE FUTEBOL', tP(TM_SP, 28, 6, 6), 16, '#f6c744', '#1e2350', t > tK(s, 'b')); } },
+    tSign(st, 'serg', 'TAMANHO DE SERGIPE', tP(S, 0, 14, 40), 14, '#f6c744', '#1e2350', tK(s, 's')); } },
+  { id: 'soccer', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[28, 18, 4], 6], spin: t * 0.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 10, 22, 70), tP(TM_SP, 14, 20, 60), tP(TM_SP, 14, 14, 0), tP(TM_SP, 20, 15, 0), 44, -3); tSpeed(st, tBurst(t, s.t0, 0.8)); tHud(st, '27', '107 MIL KM');
+    tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -80, -10), 120, { e: 'wide', m: 'o', a: [20, 78] }, false); tSign(st, 'bola', 'BOLA DE FUTEBOL', tP(TM_SP, 28, 6, 6), 16, '#f6c744', '#1e2350', tK(s, 'b')); } },
   { id: 'swap', fn(t: number, u: number, s: Scene, st: tmS) { const T0 = tK(s, 't'), a = t > T0 ? (t - T0) * 0.8 : 0; tSpace({ earth: [[Math.cos(a) * 40, 10 + Math.sin(a) * 4, Math.sin(a) * 24], 2.4], spin: t }); st.light('day', { view: [0, -1] });
-    tCam(st, u, tP(TM_SP, 0, 30, 110), tP(TM_SP, 0, 28, 100), tP(TM_SP, 0, 10, 0), tP(TM_SP, 0, 10, 0), 44, 2); tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -20, 0), 60, { e: 'dot', m: 'grin' }, false);
-    tSign(st, 'massa', 'TUCO = 2,5 TERRAS', tP(TM_SP, 0, 46, 10), 34, '#2fa04a', '#fff', t > tK(s, 'g')); } },
+    tCam(st, u, tP(TM_SP, 0, 30, 110), tP(TM_SP, 0, 28, 100), tP(TM_SP, 0, 10, 0), tP(TM_SP, 0, 10, 0), 44, 2); tSpeed(st, tBurst(t, tK(s, 'g'), 0.8)); tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -20, 0), 60, { e: 'dot', m: 'grin' }, false);
+    tSign(st, 'massa', 'TUCO = 2,5 TERRAS', tP(TM_SP, 30, 30, 10), 40, '#2fa04a', '#fff', tK(s, 'g')); } },
   { id: 'hand', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ earth: [[18, 12, 4], 6], spin: t * 0.4 }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 4, 16, 40), tP(TM_SP, 6, 16, 34), tP(TM_SP, 6, 14, 0), tP(TM_SP, 8, 14, 0), 40, -3); st.dof(12, tP(TM_SP, 0, 16, -8));
     tmPerson(st, 1, 'tuco', tP(TM_SP, -2, -80, -8), 120, { e: 'wide', m: tTalk('im_tuco', t, 'o'), a: [20, 78], t: 10 }, false); } },
   // ================================================ day 29-32
-  { id: 'moon', fn(t: number, u: number, s: Scene, st: tmS) { const a = (t - s.t0) * 0.5; tSpace({ earth: [[-24, -52, 4], 8], moon: [[-24 + Math.cos(a) * 30, -30 + Math.sin(a) * 6, 4 + Math.sin(a) * 10], 4] }); st.light('day', { view: [0, -1] }); tHud(st, '29', '429 MIL KM');
-    tCam(st, u, tP(TM_SP, 0, 0, 220), tP(TM_SP, 0, -4, 200), tP(TM_SP, -6, 0, 0), tP(TM_SP, -6, -4, 0), 44, 2); tmPerson(st, 1, 'tuco', tP(TM_SP, 6, -62, -6), 120, { e: 'wide', m: 'o' }, false);
-    tSign(st, 'joelho', 'A LUA NO JOELHO', tP(TM_SP, -46, -6, 8), 26, '#f6c744', '#1e2350', t > tK(s, 'j')); } },
-  { id: 'jupiter', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ jup: [[-50, 0, 10], 12] }); st.light('day', { view: [0, -1] }); tHud(st, '30', '859 MIL KM'); tCam(st, u, tP(TM_SP, -10, 4, 210), tP(TM_SP, -8, 4, 196), tP(TM_SP, -6, 2, 0), tP(TM_SP, -6, 2, 0), 44, 2);
-    tmPerson(st, 1, 'tuco', tP(TM_SP, 26, -62, 0), 120, { e: 'wide', m: 'o' }, false); tSign(st, 'jup', '4 × JÚPITER', tP(TM_SP, -50, 24, 12), 24, '#f6c744', '#1e2350', t > tK(s, 'j')); } },
+  { id: 'moon', fn(t: number, u: number, s: Scene, st: tmS) { const a = (t - s.t0) * 0.5; tSpace({ earth: [[-26, -50, 4], 12], moon: [[-26 + Math.cos(a) * 34, -28 + Math.sin(a) * 6, 4 + Math.sin(a) * 10], 6] }); st.light('day', { view: [0, -1] });
+    tCam(st, u, tP(TM_SP, 0, 0, 220), tP(TM_SP, 0, -4, 200), tP(TM_SP, -6, 0, 0), tP(TM_SP, -6, -4, 0), 44, 2); tHud(st, '29', '429 MIL KM'); tmPerson(st, 1, 'tuco', tP(TM_SP, 6, -62, -6), 120, { e: 'wide', m: 'o' }, false);
+    tSign(st, 'joelho', 'A LUA NO JOELHO', tP(TM_SP, -46, -6, 8), 26, '#f6c744', '#1e2350', tK(s, 'j')); } },
+  { id: 'jupiter', fn(t: number, u: number, s: Scene, st: tmS) { tSpace({ jup: [[-50, 0, 10], 12] }); st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, -10, 4, 210), tP(TM_SP, -8, 4, 196), tP(TM_SP, -6, 2, 0), tP(TM_SP, -6, 2, 0), 44, 2); tSpeed(st, tBurst(t, tK(s, 'j'), 0.8)); tHud(st, '30', '859 MIL KM');
+    tmPerson(st, 1, 'tuco', tP(TM_SP, 26, -62, 0), 120, { e: 'wide', m: 'o' }, false); tSign(st, 'jup', '4 × JÚPITER', tP(TM_SP, -50, 24, 12), 24, '#f6c744', '#1e2350', tK(s, 'j')); } },
   { id: 'ball', fn(t: number, u: number, s: Scene, st: tmS) { const b = tK(s, 'b'), k = tC((t - (b - 1.6)) / 1.6); tSpace({ star: [[0, 0, -10], 1 + 26 * k, '#2fa04a'] }); st.light('day', { view: [0, -1] });
     tCam(st, u, tP(TM_SP, 0, 4, 110), tP(TM_SP, 0, 2, 100), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2, [t, b, 0.6]);
     if (k < 1) tmPerson(st, 1, 'tuco', tP(TM_SP, 0, -60 * (1 - k * 0.6), -10), 120 * (1 - k * 0.8), { e: 'wide', m: 'o', a: [90 + k * 60, 90 + k * 60] }, false); } },
   { id: 'fusion', fn(t: number, u: number, s: Scene, st: tmS) { const f = tK(s, 'f'), k = tC((t - f) / 1.2); const col = new THREE.Color('#2fa04a').lerp(new THREE.Color('#ffcf3a'), k); tSpace({ star: [[0, 0, -10], 27, '#' + col.getHexString()] }); st.light('day', { view: [0, -1] });
     tCam(st, u, tP(TM_SP, 0, 2, 90), tP(TM_SP, 0, 2, 78), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2); tGlow(st, tP(TM_SP, 0, 0, 0), 120, k);
     for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2, d = 18 * (1 - tC((t - f) / 0.6)); if (t < f + 0.6) { st.effect('stars', tP(TM_SP, Math.cos(a) * 20 - d * 0.3, Math.sin(a) * 20, 20), 6, (t * 2) % 1); } }
-    tSign(st, 'estrela', 'NASCE UMA ESTRELA', tP(TM_SP, 0, -34, 20), 40, '#f6c744', '#1e2350', t > tK(s, 'e')); } },
-  { id: 'star', fn(t: number, u: number, s: Scene, st: tmS) { tHud(st, '32', 'UMA ESTRELA'); const a = tK(s, 'a'), on = t > a; tSpace({ star: [[0, 0, -10], 27 + (on ? Math.sin(t * 6) * 1.2 : 0), on ? '#ffe27a' : '#2fa04a'] }); st.light('day', { view: [0, -1] });
-    tCam(st, u, tP(TM_SP, 0, 2, 110), tP(TM_SP, 0, 2, 96), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2, [t, a, 2]); if (on) { tGlow(st, tP(TM_SP, 0, 0, 0), 150, 1); st.effect('burst', tP(TM_SP, 0, 0, 20), 90, tC((t - a) / 0.6)); } } },
+    tSign(st, 'estrela', 'NASCE UMA ESTRELA', tP(TM_SP, 0, -34, 20), 40, '#f6c744', '#1e2350', tK(s, 'e')); } },
+  { id: 'star', fn(t: number, u: number, s: Scene, st: tmS) { const a = tK(s, 'a'), on = t > a; tSpace({ star: [[0, 0, -10], 27 + (on ? Math.sin(t * 6) * 1.2 : 0), on ? '#ffe27a' : '#2fa04a'] }); st.light('day', { view: [0, -1] });
+    tCam(st, u, tP(TM_SP, 0, 2, 110), tP(TM_SP, 0, 2, 96), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2, [t, a, 2]); tSpeed(st, tBurst(t, tK(s, 'a'), 1.4)); tHud(st, '32', 'UMA ESTRELA'); if (on) { tGlow(st, tP(TM_SP, 0, 0, 0), 150, 1); st.effect('burst', tP(TM_SP, 0, 0, 20), 90, tC((t - a) / 0.6)); } } },
   { id: 'twosuns', fn(t: number, u: number, s: Scene, st: tmS) { const a = (t - s.t0) * 0.5; tSpace({ sun: [[-50, 0, 0], 18], star: [[50, 0, 0], 12, '#ffe27a'], earth: [[-50 + Math.cos(a) * 34, Math.sin(a) * 4, Math.sin(a) * 20], 2.2] }); st.light('day', { view: [0, -1] });
     tCam(st, u, tP(TM_SP, 0, 30, 140), tP(TM_SP, 0, 26, 126), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, 2); tGlow(st, tP(TM_SP, 50, 0, 0), 60, 1); } },
   { id: 'chaos', fn(t: number, u: number, s: Scene, st: tmS) { const a = (t - s.t0) * 0.9, wob = Math.sin(t * 3) * 10; tSpace({ sun: [[-40, 0, 0], 16], star: [[40, 0, 0], 10, '#ffe27a'], earth: [[-40 + Math.cos(a) * (30 + wob), Math.sin(a) * 6, Math.sin(a) * (16 + wob)], 2.2], jup: [[-40 + Math.cos(a * 0.6 + 2) * 70, 0, Math.sin(a * 0.6 + 2) * 30 + wob], 4] });
     st.light('day', { view: [0, -1] }); tCam(st, u, tP(TM_SP, 0, 40, 150), tP(TM_SP, 0, 36, 140), tP(TM_SP, 0, 0, 0), tP(TM_SP, 0, 0, 0), 44, Math.sin(t * 4) * 3); tGlow(st, tP(TM_SP, 40, 0, 0), 50, 1); } },
   // ================================================ real life, the end
   { id: 'reallife', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const b = tK(s, 'b'); tCam(st, u, tP(M, 70, 8, 40), tP(M, 72, 8, 34), tP(M, 80, 2, 0), tP(M, 80, 2, 0), 40, 2);
-    if (t > b) tPic(st, 'whale', tP(M, 92 - (t - b) * 3, 2.2, 4), 22, 940, 340, tWhale); tSign(st, 'agua', 'A ÁGUA SEGURA O PESO', tP(M, 80, 12, 4), 22, '#f6c744', '#1e2350', t > tK(s, 'a')); } },
+    tPic(st, 'whale', tP(M, 96 - (t - s.t0) * 2.2, 2.2, 4), 22, 940, 340, tWhale); tSign(st, 'agua', 'A ÁGUA SEGURA O PESO', tP(M, 80, 12, 4), 22, '#f6c744', '#1e2350', tK(s, 'a')); } },
   { id: 'ant', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0.3, -1] }); const f = tK(s, 'f'), e = tK(s, 'e'); tCam(st, u, tP(S, 0, 2.2, 12), tP(S, 0, 2.4, 10), tP(S, 0, 1.6, 0), tP(S, 0, 1.6, 0), 40, 2);
     if (t > f) { tPic(st, 'ant', tP(S, -3 + (t - f) * 0.3, 1.4, 0), 3.6, 480, 400, tAnt); tSign(st, 'x50', '×50', tP(S, -3, 3.6, 0.4), 2, '#3aa05a', '#fff'); }
     if (t > e) { tPic(st, 'eleph2', tP(S, 3.6, 1.6, 0), 4.6, 560, 380, tElephant); tSign(st, 'npula', 'NÃO PULA', tP(S, 3.6, 3.8, 0.4), 3, '#e0302a', '#fff'); } } },
@@ -267,13 +275,14 @@ CT.shots([
     if (t > tK(s, 'b')) tPic(st, 'cal27', tP(U, 7, 7, -2), 10, 600, 440, (g) => tCal(g, 'DIA 27', 'TERRA NA MÃO', '#e0302a'));
     tmPerson(st, 1, 'tuco', tP(U, 0, 0.06, 2), 3.2, { e: 'dot', m: 'smile', a: [100, 100] }); } },
   { id: 'sub', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('day', { view: [0, -1] }); const i = tK(s, 'i'); tCam(st, u, tP(U, 0, 5, 20), tP(U, 0, 5, 17), tP(U, 0, 5, 0), tP(U, 0, 5, 0), 40, 0, [t, i, 0.3]);
-    tSign(st, 'insc', 'INSCREVA-SE', tP(U, 0, 7.4, 0), 12, '#e0302a', '#fff', t > i); tmPerson(st, 1, 'tuco', tP(U, -6, 0.06, 2), 3.2, { e: 'dot', m: 'grin', a: [10, 150] }); } },
+    tSign(st, 'insc', 'INSCREVA-SE', tP(U, 0, 7.4, 0), 12, '#e0302a', '#fff', i); tmPerson(st, 1, 'tuco', tP(U, -6, 0.06, 2), 3.2, { e: 'dot', m: 'grin', a: [10, 150] }); } },
   { id: 'endcard', fn(t: number, u: number, s: Scene, st: tmS) { tNoSpace(); st.light('golden', { view: [0.2, -1], az: 20, el: 14 }); if (TM.chair) { TM.chair.rotation.z = 0; TM.chair.position.y = 0; }
     tCam(st, u, tP(K, 1.2, 1.4, 4.2), tP(K, 1.0, 1.4, 3.6), tP(K, 0.6, 1.1, -1.0), tP(K, 0.6, 1.1, -1.0), 42, 2); st.dof(9, tP(K, 0.6, 1.2, -1.0));
     tmPerson(st, 1, 'tuco', tP(K, 1.6, 0, -1.0), 1.6, { e: 'dot', m: tTalk('im_tuco', t, 'grin'), a: [10, 40] }); tmPerson(st, 2, 'mae', tP(K, -0.6, 0, -1.4), 1.7, { e: 'closed', m: 'smile', a: [10, 10] }); } },
 ], tmInit, (t, u, shot, s) => { const st = TM.st!; if (TM.ships) TM.ships.forEach((sh, i) => { if (shot.id !== 'carrier' && shot.id !== 'island') { sh.scale.setScalar(1); sh.position.set(TM_MINI[0] + 40 + i * 25, 0, -20 + i * 18); } });
   if (TM.mtn && shot.id !== 'clouds') { TM.mtn.position.set(TM_MINI[0] - 10, 0, -80); TM.mtn.scale.setScalar(44); }
   if (TM.cube) TM.cube.visible = shot.id === 'cube';
+  if (TM.fan) { TM.fan.visible = ['normal', 'wake'].includes(shot.id); TM.fan.position.set(0.4, 2.5, -2.0); }
   if (TM.chair && !['door', 'food', 'endcard'].includes(shot.id)) { TM.chair.rotation.z = 0; TM.chair.position.y = 0; }
   if (TM.ball && !['fun', 'dunk'].includes(shot.id)) TM.ball.position.set(TM_ST[0] + 12, 3.2, -2.6);
   shot.fn(t, u, s, st); });

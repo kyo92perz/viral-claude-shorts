@@ -16,7 +16,7 @@
 type tm_V3 = [number, number, number];
 const TM: { st?: ReturnType<typeof CT.stage>; earth?: THREE.Mesh; moon?: THREE.Mesh; jup?: THREE.Mesh; sun?: THREE.Mesh; star?: THREE.Mesh; starGlow?: THREE.Sprite;
   iss?: THREE.Group; mtn?: THREE.Group; mtower?: THREE.Mesh; fan?: THREE.Group; chair?: THREE.Group; cars?: THREE.Group[]; ships?: THREE.Group[]; cube?: THREE.Group; ball?: THREE.Mesh; truckJets?: THREE.Mesh[] } = {};
-const STU: tm_V3 = [840, 0, 30], TM_ROOM: tm_V3 = [0, 0, 0], TM_KIT: tm_V3 = [40, 0, 0], TM_ST: tm_V3 = [100, 0, 0], TM_CITY: tm_V3 = [400, 0, 0], TM_MINI: tm_V3 = [900, 0, 0], TM_SP: tm_V3 = [0, 0, 3000];
+const STU: tm_V3 = [700, 0, 400], TM_ROOM: tm_V3 = [0, 0, 0], TM_KIT: tm_V3 = [40, 0, 0], TM_ST: tm_V3 = [100, 0, 0], TM_CITY: tm_V3 = [400, 0, 0], TM_MINI: tm_V3 = [900, 0, 0], TM_SP: tm_V3 = [0, 0, 3000];
 const tmAdd = (a: tm_V3, b: tm_V3): tm_V3 => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
 
 // ---------------------------------------------------------------- the cast: drawn in the 600 x 1000 card (soles y 975)
@@ -91,8 +91,11 @@ function tmDraw(k: string, P: TmPose = {}) {
   } };
 }
 // put a character in the frame: k = cast name, h = height in metres, pose
-const tmPerson = (st: ReturnType<typeof CT.stage>, id: number, k: string, at: tm_V3, h: number, P: TmPose = {}, shadow = true) =>
-  st.person({ id, who: tmDraw(k, P), at, scale: h / 1.97, shadow, blink: false } as any);
+const tmPerson = (st: ReturnType<typeof CT.stage>, id: number, k: string, at: tm_V3, h: number, P: TmPose = {}, shadow = true) => {
+  const tt = (st as any).t ?? 0, e = P.e ?? 'dot', blink = (e === 'dot' || e === 'wide') && ((tt + id * 0.77) % 3.3) < 0.13;
+  const Q: TmPose = { ...P, e: blink ? 'closed' : e, t: (P.t ?? 0) + Math.round(Math.sin(tt * 1.7 + id) * 3), a: P.a ? [P.a[0] + Math.round(Math.sin(tt * 2 + id) * 3), P.a[1] - Math.round(Math.sin(tt * 2 + id) * 3)] : [8 + Math.round(Math.sin(tt * 2 + id) * 3), 8 - Math.round(Math.sin(tt * 2 + id) * 3)] };
+  st.person({ id, who: tmDraw(k, Q), at, scale: h / 1.97, shadow, blink: false } as any);
+};
 
 // ---------------------------------------------------------------- textures and small builders
 const tmTex = (key: string, w: number, h: number, fn: (g: CanvasRenderingContext2D, r: () => number) => void) => CT.paint.ctex(key, w, h, fn);
