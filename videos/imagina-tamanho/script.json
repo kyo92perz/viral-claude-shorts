@@ -1,0 +1,405 @@
+{
+ "lead": 0.3,
+ "tail": 12.0,
+ "lines": [
+  {
+   "id": "a01",
+   "who": "im_narr",
+   "text": "Imagina só: amanhã você acorda com o dobro do seu tamanho. E todo dia, de novo, você dobra.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "a02",
+   "who": "im_narr",
+   "text": "Nos primeiros dias, parece divertido: você pega a bola do telhado, vira o mais alto da escola. Mas em uma semana você vai ser maior que um prédio. E no fim deste vídeo, a Terra inteira vai caber na sua mão.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "a03",
+   "who": "im_narr",
+   "text": "E tudo aqui é com os números de verdade. A física de ficar gigante é muito mais estranha do que nos filmes.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "a04",
+   "who": "im_narr",
+   "text": "Chuta aqui nos comentários: em que dia você fica maior que o planeta? Valendo. Dia 1.",
+   "pause": 1.12,
+   "emo": 0.6
+  },
+  {
+   "id": "b01",
+   "who": "im_narr",
+   "text": "O Tuco tem um metro e sessenta e pesa cinquenta quilos. Um menino normal. Ele dorme, e acorda com três metros e vinte.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "t01",
+   "who": "im_tuco",
+   "text": "Mãe! Eu não caibo na cama!",
+   "pause": 0.62,
+   "emo": 0.85
+  },
+  {
+   "id": "m01",
+   "who": "im_mae",
+   "text": "Tuco?! Meu Deus, abaixa a cabeça! O ventilador!",
+   "pause": 0.72,
+   "emo": 0.85
+  },
+  {
+   "id": "b02",
+   "who": "im_narr",
+   "text": "E aqui vem a primeira surpresa. Ele ficou duas vezes mais alto, mas não pesa o dobro. Pesa oito vezes mais. Quatrocentos quilos.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "b03",
+   "who": "im_narr",
+   "text": "Porque ele cresceu pra todo lado: o dobro de altura, o dobro de largura e o dobro de grossura. Dois vezes dois vezes dois. Oito.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "b04",
+   "who": "im_narr",
+   "text": "Ele não passa pela porta, quebra a cadeira da cozinha e come o almoço de cinco pessoas. A mãe dele já está assustada com a conta do mercado.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "k01",
+   "who": "im_biel",
+   "text": "Mano, você agora enterra na cesta sem nem pular!",
+   "pause": 0.72,
+   "emo": 0.8
+  },
+  {
+   "id": "c01",
+   "who": "im_narr",
+   "text": "Dia 3. Seis metros e quarenta. O Tuco pesa três toneladas, o mesmo que um elefante pequeno.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "c02",
+   "who": "im_narr",
+   "text": "E agora, um segredo que os filmes de monstro nunca contam. A força de um osso depende da grossura dele, que só ficou dezesseis vezes maior. Mas o peso ficou sessenta e quatro vezes maior.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "c03",
+   "who": "im_narr",
+   "text": "Na vida real, no dia 3 as pernas do Tuco já estariam rachando. É por isso que não existe gigante de verdade. Mas a gente vai imaginar que os ossos dele aguentam. Combinado?",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "c04",
+   "who": "im_narr",
+   "text": "Outra coisa estranha: a voz. Quanto maior a garganta, mais grave o som. A voz do Tuco ficou grossa, grossa.",
+   "pause": 0.62,
+   "emo": 0.6
+  },
+  {
+   "id": "t02",
+   "who": "im_tucog",
+   "text": "Biel... por que tá todo mundo me olhando?",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "d01",
+   "who": "im_narr",
+   "text": "Dia 5. Vinte e cinco metros. Um prédio de oito andares. Ele pesa duzentas toneladas e precisa da comida de quinhentas pessoas por dia.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "d02",
+   "who": "im_narr",
+   "text": "E ele está fervendo. O corpo produz calor por dentro, e solta pela pele. Mas o volume cresceu muito mais rápido que a pele. O calor não tem por onde sair.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "d03",
+   "who": "im_narr",
+   "text": "O Tuco passa o dia sentado na lagoa, se refrescando, com caminhões-pipa jogando água nas costas dele.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "d04",
+   "who": "im_narr",
+   "text": "E a voz dele ficou tão grave que virou infrassom. Um som mais grave do que o ouvido humano consegue ouvir. As janelas tremem, os cachorros uivam, mas ninguém escuta uma palavra.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "k02",
+   "who": "im_biel",
+   "text": "Calma! Eu fiz um aplicativo que acelera a sua voz. Fala de novo.",
+   "pause": 0.62,
+   "emo": 0.75
+  },
+  {
+   "id": "t03",
+   "who": "im_tuco",
+   "text": "Biel... eu tô com fome.",
+   "pause": 0.92,
+   "emo": 0.6
+  },
+  {
+   "id": "e01",
+   "who": "im_narr",
+   "text": "Dia 6. Cinquenta e um metros. O Tuco já é maior que o Cristo Redentor. Dia 7, cento e dois metros, um prédio de trinta andares.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "e02",
+   "who": "im_narr",
+   "text": "Cada passo dele pesa treze mil toneladas. Os copos tremem a quilômetros de distância. Os alarmes dos carros disparam por onde ele passa.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "e05",
+   "who": "im_narr",
+   "text": "Dia 8. Duzentos e cinco metros. O Tuco pesa mais que um porta-aviões. O exército manda helicópteros só pra levar marmita pra ele.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "r01",
+   "who": "im_rep",
+   "text": "Atenção: o menino gigante está atravessando a avenida. Repito: tirem os carros da rua!",
+   "pause": 0.82,
+   "emo": 0.8
+  },
+  {
+   "id": "e03",
+   "who": "im_narr",
+   "text": "Dia 9. Quatrocentos metros. Pra se alimentar, o Tuco precisa da comida de uma cidade inteira de duzentas e sessenta mil pessoas. Por dia.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "e04",
+   "who": "im_narr",
+   "text": "Dia 10. Oitocentos e dezenove metros. Quase a altura do Burj Khalifa, o prédio mais alto do mundo. O Tuco é o prédio mais alto do mundo.",
+   "pause": 1.02,
+   "emo": 0.65
+  },
+  {
+   "id": "f01",
+   "who": "im_narr",
+   "text": "Dia 13. Seis quilômetros e meio. Não existe mais lugar onde ele caiba de pé sem destruir alguma coisa. Então ele vai pro mar.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "f02",
+   "who": "im_narr",
+   "text": "O Oceano Atlântico tem uns quatro quilômetros de fundura. Pro Tuco, é uma piscina rasa. Ele senta no fundo do mar, e a água bate na cintura dele.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "f03",
+   "who": "im_narr",
+   "text": "Dia 14. Treze quilômetros. A cabeça dele passa das nuvens, passa do Monte Everest, passa dos aviões. Lá em cima o ar é ralo e faz cinquenta graus negativos.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "t04",
+   "who": "im_tuco",
+   "text": "Tá frio aqui em cima... e tá difícil respirar.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "f04",
+   "who": "im_narr",
+   "text": "Então ele dorme deitado, boiando no Atlântico, como uma ilha. Uma ilha de treze quilômetros que ronca. Os navios desviam do nariz dele.",
+   "pause": 1.02,
+   "emo": 0.6
+  },
+  {
+   "id": "f05",
+   "who": "im_narr",
+   "text": "Cientistas do mundo inteiro vêm estudar o Tuco. Ele vira o assunto mais falado do planeta.",
+   "pause": 0.72,
+   "emo": 0.6
+  },
+  {
+   "id": "g01",
+   "who": "im_narr",
+   "text": "Dia 17. Cento e cinco quilômetros. Se ele ficar de pé, a cabeça dele está no espaço. A fronteira oficial do espaço fica a cem quilômetros de altura.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "g02",
+   "who": "im_narr",
+   "text": "Dia 19. Quatrocentos e dezenove quilômetros. A cabeça do Tuco chega na altura da Estação Espacial Internacional. Os astronautas acenam da janela.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "k03",
+   "who": "im_biel",
+   "text": "Tuco! Tira uma foto com os astronautas pra mim!",
+   "pause": 0.72,
+   "emo": 0.8
+  },
+  {
+   "id": "g03",
+   "who": "im_narr",
+   "text": "Mas agora o problema é o planeta. O Tuco pesa sete trilhões de milhões de quilos. Nenhuma rocha da Terra aguenta esse peso. O chão embaixo dele começa a afundar.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "g04",
+   "who": "im_narr",
+   "text": "Dia 21. Pra não quebrar a Terra, o Tuco dá um pulo pequeno e sai flutuando no espaço. E fica girando em volta do planeta, como uma Lua de jaqueta verde.",
+   "pause": 1.02,
+   "emo": 0.65
+  },
+  {
+   "id": "h01",
+   "who": "im_narr",
+   "text": "Dia 23. Seis mil e setecentos quilômetros. O Tuco é maior que o Brasil de ponta a ponta. Ele olha pra Terra lá embaixo e consegue ver o país inteiro de uma vez.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "m02",
+   "who": "im_mae",
+   "text": "Tuco, meu filho... você tá vendo a nossa casa?",
+   "pause": 0.82,
+   "emo": 0.7
+  },
+  {
+   "id": "h02",
+   "who": "im_narr",
+   "text": "Dia 24. Treze mil quilômetros. Agora o Tuco é mais alto que a Terra é larga. Pra ele, o planeta é do tamanho de uma bola de pilates.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "h05",
+   "who": "im_narr",
+   "text": "Quem olha pro céu vê um olho enorme olhando de volta. Só o olho do Tuco tem duzentos quilômetros. É do tamanho de Sergipe.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "h03",
+   "who": "im_narr",
+   "text": "Dia 27. Cento e sete mil quilômetros. A Terra, pra ele, é do tamanho de uma bola de futebol. E aqui acontece uma coisa incrível.",
+   "pause": 0.72,
+   "emo": 0.7
+  },
+  {
+   "id": "h04",
+   "who": "im_narr",
+   "text": "O Tuco pesa duas vezes e meia mais que o planeta inteiro. Quem tem mais massa manda na gravidade. Então agora não é mais o Tuco que gira em volta da Terra. É a Terra que gira em volta do Tuco.",
+   "pause": 1.02,
+   "emo": 0.7
+  },
+  {
+   "id": "t05",
+   "who": "im_tuco",
+   "text": "Biel... a Terra tá na minha mão.",
+   "pause": 1.02,
+   "emo": 0.6
+  },
+  {
+   "id": "i01",
+   "who": "im_narr",
+   "text": "Dia 29. Quatrocentos e vinte e nove mil quilômetros. A Lua, que fica a trezentos e oitenta e quatro mil quilômetros da Terra, passa na altura do joelho dele.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "i02",
+   "who": "im_narr",
+   "text": "Dia 30. Oitocentos e cinquenta e nove mil quilômetros. O Tuco pesa quatro vezes mais que Júpiter, o maior planeta do Sistema Solar.",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "i03",
+   "who": "im_narr",
+   "text": "E com tanta massa, a gravidade do próprio corpo começa a apertar ele por dentro. É o mesmo motivo de todo planeta ser redondo. O Tuco vai virando uma bola.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "i04",
+   "who": "im_narr",
+   "text": "Dia 32. A massa dele chega a um quarto da massa do Sol. E no centro dessa bola, a pressão e o calor ficam tão grandes que os átomos começam a se fundir. É assim que nasce uma estrela.",
+   "pause": 1.02,
+   "emo": 0.7
+  },
+  {
+   "id": "i05",
+   "who": "im_narr",
+   "text": "No dia 32, o Tuco acende. O Sistema Solar ganha um segundo sol. Um sol de jaqueta verde.",
+   "pause": 1.42,
+   "emo": 0.7
+  },
+  {
+   "id": "i06",
+   "who": "im_narr",
+   "text": "E um segundo sol, de verdade, ia bagunçar a órbita de todos os planetas. Inclusive a da Terra.",
+   "pause": 0.82,
+   "emo": 0.65
+  },
+  {
+   "id": "z01",
+   "who": "im_narr",
+   "text": "E na vida real? Lembra dos ossos? Um ser humano do tamanho de um prédio desabaria com o próprio peso. É por isso que o maior animal que já existiu, a baleia-azul, vive na água. A água ajuda a segurar o peso.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "z02",
+   "who": "im_narr",
+   "text": "E é por isso também que formiga carrega cinquenta vezes o próprio peso, e elefante não consegue pular. Na natureza, o tamanho muda tudo.",
+   "pause": 0.82,
+   "emo": 0.6
+  },
+  {
+   "id": "z03",
+   "who": "im_narr",
+   "text": "E você? Em que dia você ia querer parar? No dia 2, com três metros, enterrando na cesta? Ou no dia 27, com a Terra na mão?",
+   "pause": 0.72,
+   "emo": 0.65
+  },
+  {
+   "id": "z04",
+   "who": "im_narr",
+   "text": "Escreve o número do dia aqui embaixo. E se inscreve, porque toda semana tem um novo E se.",
+   "pause": 0.62,
+   "emo": 0.6
+  },
+  {
+   "id": "t06",
+   "who": "im_tuco",
+   "text": "Mãe... a comida tá pronta?",
+   "pause": 0.62,
+   "emo": 0.7
+  }
+ ]
+}

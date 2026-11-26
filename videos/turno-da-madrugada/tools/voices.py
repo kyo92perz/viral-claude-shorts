@@ -122,6 +122,7 @@ VOICES = {
     # IMAGINA SÓ (canal "E se"): narrador animado e próximo; Tuco (14), Biel, a mãe, o gerente do banco, uma repórter
     "im_narr": ("pm_alex", 1.05, st(0.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=3000:t=q:w=1:g=2"),
     "im_tuco": ("pm_alex", 1.05, st(4)),
+    "im_tucog": ("pm_alex", 0.92, st(-8) + ",equalizer=f=90:t=q:w=1:g=4"),
     "im_biel": ("piper:jeff", 1.05, st(3)),
     "im_mae": ("pf_dora", 1.0, st(-0.5)),
     "im_ger": ("piper:cadu", 0.95, st(-1) + ",highpass=f=300,lowpass=f=3400"),
