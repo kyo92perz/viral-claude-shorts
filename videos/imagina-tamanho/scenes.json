@@ -17,7 +17,9 @@
    "mood": "wonder",
    "label": "IMAGINA SÓ",
    "title": "E se você DOBRASSE de tamanho todo dia?",
-   "highlight": "DOBRASSE"
+   "highlight": "DOBRASSE",
+   "t0": 0,
+   "t1": 4.272
   },
   {
    "id": "grow",
@@ -31,10 +33,13 @@
     {
      "id": "d",
      "at": 17,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 5.959
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 4.272,
+   "t1": 7.05
   },
   {
    "id": "fun",
@@ -45,7 +50,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 7.05,
+   "t1": 12.105
   },
   {
    "id": "building",
@@ -59,10 +66,14 @@
     {
      "id": "p",
      "at": 44,
-     "sfx": "impact"
+     "dt": -0.25,
+     "sfx": "impact",
+     "t": 14.045
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 12.105,
+   "t1": 14.85
   },
   {
    "id": "earthhand",
@@ -73,10 +84,13 @@
     {
      "id": "e",
      "at": 52,
-     "sfx": "riser"
+     "sfx": "riser",
+     "t": 16.093
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 14.85,
+   "t1": 18.744
   },
   {
    "id": "real",
@@ -84,7 +98,9 @@
    "type": "object",
    "mood": "curious",
    "delay": -0.2,
-   "title": " "
+   "title": " ",
+   "t0": 18.744,
+   "t1": 25.215
   },
   {
    "id": "guess",
@@ -96,10 +112,13 @@
     {
      "id": "g",
      "at": 95,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 29.964
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 25.215,
+   "t1": 31.228
   },
   {
    "id": "normal",
@@ -114,11 +133,14 @@
     {
      "id": "z",
      "at": 111,
-     "sfx": "off"
+     "sfx": "off",
+     "t": 35.74
     }
    ],
    "label": "DIA 1",
-   "title": "1,60 metro"
+   "title": "1,60 metro",
+   "t0": 31.228,
+   "t1": 36.462
   },
   {
    "id": "wake",
@@ -133,11 +155,14 @@
      "id": "w",
      "at": 114,
      "dt": 0.2,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 36.642
     }
    ],
    "label": "DIA 2",
-   "title": "3,20 metros"
+   "title": "3,20 metros",
+   "t0": 36.462,
+   "t1": 38.892
   },
   {
    "id": "cama",
@@ -148,7 +173,9 @@
    "ambience": [
     "room"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 38.892,
+   "t1": 41.687
   },
   {
    "id": "mae",
@@ -159,7 +186,9 @@
    "ambience": [
     "room"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 41.687,
+   "t1": 45.381
   },
   {
    "id": "surprise",
@@ -171,10 +200,13 @@
     {
      "id": "o",
      "at": 152,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 51.569
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 45.381,
+   "t1": 54.625
   },
   {
    "id": "cube",
@@ -186,25 +218,31 @@
     {
      "id": "a",
      "at": 166,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 57.6
     },
     {
      "id": "l",
      "at": 170,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 58.744
     },
     {
      "id": "g",
      "at": 175,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 60.089
     },
     {
      "id": "o",
      "at": 181,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 62.32
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 54.625,
+   "t1": 63.415
   },
   {
    "id": "door",
@@ -219,10 +257,13 @@
     {
      "id": "c",
      "at": 189,
-     "sfx": "thud"
+     "sfx": "thud",
+     "t": 65.408
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 63.415,
+   "t1": 66.408
   },
   {
    "id": "food",
@@ -236,10 +277,13 @@
     {
      "id": "b",
      "at": 207,
-     "sfx": "whoosh"
+     "sfx": "whoosh",
+     "t": 69.998
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 66.408,
+   "t1": 71.662
   },
   {
    "id": "dunk",
@@ -250,7 +294,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 71.662,
+   "t1": 75.982
   },
   {
    "id": "elephant",
@@ -265,11 +311,14 @@
     {
      "id": "e",
      "at": 234,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 80.931
     }
    ],
    "label": "DIA 3",
-   "title": "6,40 metros"
+   "title": "6,40 metros",
+   "t0": 75.982,
+   "t1": 82.654
   },
   {
    "id": "bones",
@@ -281,15 +330,19 @@
     {
      "id": "a",
      "at": 259,
-     "sfx": "tick"
+     "sfx": "tick",
+     "t": 88.948
     },
     {
      "id": "b",
      "at": 266,
-     "sfx": "tick"
+     "sfx": "tick",
+     "t": 91.012
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 82.654,
+   "t1": 93.37
   },
   {
    "id": "crack",
@@ -301,10 +354,13 @@
     {
      "id": "c",
      "at": 283,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 96.563
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 93.37,
+   "t1": 99.627
   },
   {
    "id": "deal",
@@ -318,10 +374,13 @@
     {
      "id": "k",
      "at": 303,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 102.548
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 99.627,
+   "t1": 103.87
   },
   {
    "id": "voice",
@@ -329,7 +388,9 @@
    "type": "object",
    "mood": "curious",
    "delay": -0.2,
-   "title": " "
+   "title": " ",
+   "t0": 103.87,
+   "t1": 111.402
   },
   {
    "id": "olhando",
@@ -340,7 +401,9 @@
    "ambience": [
     "crowd"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 111.402,
+   "t1": 115.262
   },
   {
    "id": "day5",
@@ -355,11 +418,14 @@
     {
      "id": "c",
      "at": 350,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 121.279
     }
    ],
    "label": "DIA 5",
-   "title": "25,6 metros"
+   "title": "25,6 metros",
+   "t0": 115.262,
+   "t1": 124.141
   },
   {
    "id": "heat",
@@ -371,10 +437,13 @@
     {
      "id": "v",
      "at": 372,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 129.414
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 124.141,
+   "t1": 135.117
   },
   {
    "id": "lake",
@@ -385,7 +454,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 135.117,
+   "t1": 141.299
   },
   {
    "id": "infra",
@@ -400,10 +471,13 @@
     {
      "id": "n",
      "at": 432,
-     "sfx": "off"
+     "sfx": "off",
+     "t": 149.87
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 141.299,
+   "t1": 152.167
   },
   {
    "id": "app",
@@ -414,7 +488,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 152.167,
+   "t1": 157.886
   },
   {
    "id": "fome",
@@ -425,7 +501,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 157.886,
+   "t1": 160.73
   },
   {
    "id": "cristo",
@@ -437,7 +515,9 @@
     "wind"
    ],
    "label": "DIA 6",
-   "title": "51 metros"
+   "title": "51 metros",
+   "t0": 160.73,
+   "t1": 165.531
   },
   {
    "id": "day7",
@@ -452,11 +532,14 @@
      "id": "d",
      "at": 469,
      "dt": 0.2,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 165.711
     }
    ],
    "label": "DIA 7",
-   "title": "102 metros"
+   "title": "102 metros",
+   "t0": 165.531,
+   "t1": 169.643
   },
   {
    "id": "steps",
@@ -471,10 +554,13 @@
     {
      "id": "a",
      "at": 495,
-     "sfx": "siren"
+     "sfx": "siren",
+     "t": 175.08
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 169.643,
+   "t1": 178.486
   },
   {
    "id": "carrier",
@@ -489,11 +575,14 @@
     {
      "id": "p",
      "at": 515,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 182.348
     }
    ],
    "label": "DIA 8",
-   "title": "205 metros"
+   "title": "205 metros",
+   "t0": 178.486,
+   "t1": 187.57
   },
   {
    "id": "news",
@@ -504,7 +593,9 @@
    "ambience": [
     "crowd"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 187.57,
+   "t1": 193.264
   },
   {
    "id": "citymeal",
@@ -519,11 +610,14 @@
     {
      "id": "c",
      "at": 554,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 197.878
     }
    ],
    "label": "DIA 9",
-   "title": "410 metros"
+   "title": "410 metros",
+   "t0": 193.264,
+   "t1": 201.873
   },
   {
    "id": "burj",
@@ -538,11 +632,14 @@
     {
      "id": "t",
      "at": 582,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 208.104
     }
    ],
    "label": "DIA 10",
-   "title": "819 metros"
+   "title": "819 metros",
+   "t0": 201.873,
+   "t1": 211.251
   },
   {
    "id": "tosea",
@@ -554,7 +651,9 @@
     "wind"
    ],
    "label": "DIA 13",
-   "title": "6,5 quilômetros"
+   "title": "6,5 quilômetros",
+   "t0": 211.251,
+   "t1": 220.204
   },
   {
    "id": "ocean",
@@ -569,10 +668,13 @@
     {
      "id": "p",
      "at": 628,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 224.893
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 220.204,
+   "t1": 229.947
   },
   {
    "id": "clouds",
@@ -587,26 +689,32 @@
     {
      "id": "n",
      "at": 652,
-     "sfx": "whoosh"
+     "sfx": "whoosh",
+     "t": 233.576
     },
     {
      "id": "e",
      "at": 656,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 235.069
     },
     {
      "id": "a",
      "at": 659,
-     "sfx": "whoosh"
+     "sfx": "whoosh",
+     "t": 236.282
     },
     {
      "id": "f",
      "at": 669,
-     "sfx": "sting"
+     "sfx": "sting",
+     "t": 238.833
     }
    ],
    "label": "DIA 14",
-   "title": "13 quilômetros"
+   "title": "13 quilômetros",
+   "t0": 229.947,
+   "t1": 241.324
   },
   {
    "id": "frio",
@@ -617,7 +725,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 241.324,
+   "t1": 244.945
   },
   {
    "id": "island",
@@ -628,7 +738,9 @@
    "ambience": [
     "night"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 244.945,
+   "t1": 254.752
   },
   {
    "id": "science",
@@ -639,7 +751,9 @@
    "ambience": [
     "crowd"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 254.752,
+   "t1": 260.66
   },
   {
    "id": "karman",
@@ -651,11 +765,14 @@
     {
      "id": "k",
      "at": 736,
-     "sfx": "riser"
+     "sfx": "riser",
+     "t": 265.415
     }
    ],
    "label": "DIA 17",
-   "title": "105 quilômetros"
+   "title": "105 quilômetros",
+   "t0": 260.66,
+   "t1": 270.032
   },
   {
    "id": "iss",
@@ -664,7 +781,9 @@
    "mood": "wonder",
    "delay": -0.3,
    "label": "DIA 19",
-   "title": "419 quilômetros"
+   "title": "419 quilômetros",
+   "t0": 270.032,
+   "t1": 281.414
   },
   {
    "id": "selfie",
@@ -675,7 +794,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 281.414,
+   "t1": 285.467
   },
   {
    "id": "sink",
@@ -690,15 +811,19 @@
     {
      "id": "p",
      "at": 789,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 288.35
     },
     {
      "id": "a",
      "at": 806,
-     "sfx": "thud"
+     "sfx": "thud",
+     "t": 293.749
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 285.467,
+   "t1": 295.385
   },
   {
    "id": "orbit",
@@ -710,11 +835,14 @@
     {
      "id": "l",
      "at": 836,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 304.225
     }
    ],
    "label": "DIA 21",
-   "title": "1.678 quilômetros"
+   "title": "1.678 quilômetros",
+   "t0": 295.385,
+   "t1": 306.403
   },
   {
    "id": "brazil",
@@ -723,7 +851,9 @@
    "mood": "wonder",
    "delay": -0.4,
    "label": "DIA 23",
-   "title": "6.710 quilômetros"
+   "title": "6.710 quilômetros",
+   "t0": 306.403,
+   "t1": 316.691
   },
   {
    "id": "maecall",
@@ -734,7 +864,9 @@
    "ambience": [
     "wind"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 316.691,
+   "t1": 319.756
   },
   {
    "id": "pilates",
@@ -746,11 +878,14 @@
     {
      "id": "b",
      "at": 907,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 327.733
     }
    ],
    "label": "DIA 24",
-   "title": "13.422 quilômetros"
+   "title": "13.422 quilômetros",
+   "t0": 319.756,
+   "t1": 329.592
   },
   {
    "id": "eye",
@@ -765,10 +900,13 @@
     {
      "id": "s",
      "at": 933,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 336.893
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 329.592,
+   "t1": 338.062
   },
   {
    "id": "soccer",
@@ -780,11 +918,14 @@
     {
      "id": "b",
      "at": 950,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 344.137
     }
    ],
    "label": "DIA 27",
-   "title": "107 mil quilômetros"
+   "title": "107 mil quilômetros",
+   "t0": 338.062,
+   "t1": 348.823
   },
   {
    "id": "swap",
@@ -796,15 +937,19 @@
     {
      "id": "g",
      "at": 977,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 353.551
     },
     {
      "id": "t",
      "at": 993,
-     "sfx": "whoosh"
+     "sfx": "whoosh",
+     "t": 357.317
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 348.823,
+   "t1": 359.989
   },
   {
    "id": "hand",
@@ -812,7 +957,9 @@
    "type": "object",
    "mood": "wonder",
    "delay": -0.2,
-   "title": " "
+   "title": " ",
+   "t0": 359.989,
+   "t1": 366.024
   },
   {
    "id": "moon",
@@ -824,11 +971,14 @@
     {
      "id": "j",
      "at": 1034,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 374.431
     }
    ],
    "label": "DIA 29",
-   "title": "429 mil quilômetros"
+   "title": "429 mil quilômetros",
+   "t0": 366.024,
+   "t1": 375.785
   },
   {
    "id": "jupiter",
@@ -840,11 +990,14 @@
     {
      "id": "j",
      "at": 1052,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 380.785
     }
    ],
    "label": "DIA 30",
-   "title": "859 mil quilômetros"
+   "title": "859 mil quilômetros",
+   "t0": 375.785,
+   "t1": 383.667
   },
   {
    "id": "ball",
@@ -859,10 +1012,13 @@
     {
      "id": "b",
      "at": 1088,
-     "sfx": "hit"
+     "sfx": "hit",
+     "t": 393.177
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 383.667,
+   "t1": 394.074
   },
   {
    "id": "fusion",
@@ -877,15 +1033,19 @@
     {
      "id": "f",
      "at": 1121,
-     "sfx": "riser"
+     "sfx": "riser",
+     "t": 403.611
     },
     {
      "id": "e",
      "at": 1126,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 405.201
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 394.074,
+   "t1": 406.833
   },
   {
    "id": "star",
@@ -897,18 +1057,23 @@
     {
      "id": "a",
      "at": 1133,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 408.584
     }
    ],
    "label": "DIA 32",
-   "title": "Uma estrela"
+   "title": "Uma estrela",
+   "t0": 406.833,
+   "t1": 410.465
   },
   {
    "id": "twosuns",
    "from": 1137,
    "type": "object",
    "mood": "wonder",
-   "title": " "
+   "title": " ",
+   "t0": 410.465,
+   "t1": 415.509
   },
   {
    "id": "chaos",
@@ -919,7 +1084,9 @@
    "ambience": [
     "drone"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 415.509,
+   "t1": 423.738
   },
   {
    "id": "reallife",
@@ -931,15 +1098,19 @@
     {
      "id": "b",
      "at": 1195,
-     "sfx": "whoosh"
+     "sfx": "whoosh",
+     "t": 434.093
     },
     {
      "id": "a",
      "at": 1201,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 436.188
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 423.738,
+   "t1": 438.54
   },
   {
    "id": "ant",
@@ -954,15 +1125,19 @@
     {
      "id": "f",
      "at": 1212,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 440.297
     },
     {
      "id": "e",
      "at": 1220,
-     "sfx": "thud"
+     "sfx": "thud",
+     "t": 443.354
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 438.54,
+   "t1": 447.882
   },
   {
    "id": "ask",
@@ -974,15 +1149,19 @@
     {
      "id": "a",
      "at": 1240,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 451.184
     },
     {
      "id": "b",
      "at": 1250,
-     "sfx": "pop"
+     "sfx": "pop",
+     "t": 454.681
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 447.882,
+   "t1": 457.308
   },
   {
    "id": "sub",
@@ -994,10 +1173,13 @@
     {
      "id": "i",
      "at": 1266,
-     "sfx": "impact"
+     "sfx": "impact",
+     "t": 459.839
     }
    ],
-   "title": " "
+   "title": " ",
+   "t0": 457.308,
+   "t1": 462.9
   },
   {
    "id": "endcard",
@@ -1008,7 +1190,10 @@
    "ambience": [
     "room"
    ],
-   "title": " "
+   "title": " ",
+   "t0": 462.9,
+   "t1": 482.57
   }
- ]
+ ],
+ "duration": 482.57
 }
