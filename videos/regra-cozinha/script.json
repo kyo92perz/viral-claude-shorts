@@ -1,0 +1,18 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {"id": "n01", "who": "rg_eu", "text": "Minha vó tinha uma regra: se de madrugada você ouvir a minha voz te chamando da cozinha... não vai.", "pause": 0.5, "emo": 0.6},
+  {"id": "n02", "who": "rg_eu", "text": "Eu perguntei por quê. Ela só disse:", "pause": 0.3, "emo": 0.45},
+  {"id": "v01", "who": "rg_vo", "text": "Porque de madrugada eu tô dormindo, meu filho.", "pause": 0.6, "emo": 0.5},
+  {"id": "n03", "who": "rg_eu", "text": "Uma noite, eu acordei com cheiro de café. E a voz dela, lá da cozinha.", "pause": 0.4, "emo": 0.55},
+  {"id": "f01", "who": "rg_falsa", "text": "Davi... vem cá, meu filho. Eu fiz um bolo pra você.", "pause": 0.6, "emo": 0.5},
+  {"id": "n04", "who": "rg_eu", "text": "Eu levantei. Já tava na porta do quarto quando uma mão segurou meu braço.", "pause": 0.6, "emo": 0.65},
+  {"id": "n05", "who": "rg_eu", "text": "Era a minha vó. Do meu lado. De camisola. Tremendo. Ela pôs o dedo na boca e sussurrou:", "pause": 0.4, "emo": 0.6},
+  {"id": "v02", "who": "rg_vo", "text": "Eu também ouvi.", "pause": 0.8, "emo": 0.35},
+  {"id": "n06", "who": "rg_eu", "text": "A voz da cozinha parou. Aí veio um barulho de cadeira arrastando. E passos. Vindo pro quarto.", "pause": 0.6, "emo": 0.7},
+  {"id": "n07", "who": "rg_eu", "text": "A gente se trancou no guarda-roupa até o sol nascer. De manhã, tinha duas xícaras de café na mesa. Ainda quentes.", "pause": 0.6, "emo": 0.6},
+  {"id": "n08", "who": "rg_eu", "text": "Minha vó morreu ano passado. E ontem, de madrugada... ela me chamou da cozinha.", "pause": 0.6, "emo": 0.65},
+  {"id": "n09", "who": "rg_eu", "text": "Você ia? Comenta aí.", "pause": 0.3, "emo": 0.5}
+ ]
+}

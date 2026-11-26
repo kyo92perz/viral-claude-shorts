@@ -1,0 +1,17 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {"id": "n01", "who": "rg_eu", "text": "Minha vó tinha uma regra: às três da manhã, todo espelho da casa tinha que estar coberto.", "pause": 0.5, "emo": 0.6},
+  {"id": "n02", "who": "rg_eu", "text": "Toda noite ela passava um pano em cima de cada um. Até no retrovisor do carro.", "pause": 0.4, "emo": 0.45},
+  {"id": "n03", "who": "rg_eu", "text": "Eu achava frescura. Até a noite que eu fiquei acordado pra ver.", "pause": 0.5, "emo": 0.5},
+  {"id": "n04", "who": "rg_eu", "text": "Duas e cinquenta e nove. Eu tirei o pano do espelho do banheiro.", "pause": 0.8, "emo": 0.55},
+  {"id": "n05", "who": "rg_eu", "text": "Três horas. Meu reflexo piscou. Eu não.", "pause": 0.9, "emo": 0.7},
+  {"id": "v01", "who": "rg_vo", "text": "Cobre isso, menino! Não olha no olho dele!", "pause": 0.5, "emo": 0.85},
+  {"id": "n06", "who": "rg_eu", "text": "Eu joguei o pano. Mas antes de cobrir, eu vi. Ele sorriu. E eu não tava sorrindo.", "pause": 0.7, "emo": 0.7},
+  {"id": "n07", "who": "rg_eu", "text": "Minha vó explicou: às três, quem tá do outro lado pode trocar de lugar com você. Basta você olhar tempo demais.", "pause": 0.6, "emo": 0.6},
+  {"id": "n08", "who": "rg_eu", "text": "Desde aquela noite, ela diz que eu tô diferente. Que agora eu escrevo com a mão esquerda.", "pause": 0.6, "emo": 0.6},
+  {"id": "n09", "who": "rg_eu", "text": "Mas o que ela não sabe... é que toda noite, às três, alguém bate no espelho do banheiro. Pedindo pra voltar.", "pause": 0.6, "emo": 0.7},
+  {"id": "n10", "who": "rg_eu", "text": "Qual era a regra estranha da sua vó? Comenta aí.", "pause": 0.3, "emo": 0.5}
+ ]
+}

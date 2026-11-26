@@ -108,6 +108,10 @@ VOICES = {
     # LENDA DA MATINTA PERERA: o neto (narra), a avó, a velha (Matinta)
     "mt_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
     "mt_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    # A REGRA DA VÓ (Shorts): o neto (narra) e a avó
+    "rg_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "rg_vo": ("pf_dora", 0.92, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    "rg_falsa": ("pf_dora", 0.86, st(-3.5) + ",aecho=0.6:0.55:60:0.3,highpass=f=200,lowpass=f=4800"),
     "mt_matinta": ("pf_dora", 0.82, st(-4) + ",aecho=0.6:0.5:45:0.25,highpass=f=150,lowpass=f=5200"),
     # ARQUIVO PROIBIDO Caso 002: o ministro (entrevista, som de 1986), a torre, os pilotos e o controlador no rádio
     "ap_min": ("piper:cadu", 0.9, st(-2) + ",highpass=f=180,lowpass=f=5500,aecho=0.5:0.3:30:0.1"),
