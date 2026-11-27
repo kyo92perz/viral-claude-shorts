@@ -1,0 +1,75 @@
+{
+ "duration": 50.238,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if you fell into a black hole?",
+   "t0": 0.3,
+   "t1": 1.831
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "If it's a small one, you'd never even make it inside. Gravity pulls your feet so much harder than your head, you'd be stretched like a noodle.",
+   "t0": 2.331,
+   "t1": 10.419
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "Scientists really call it spaghettification.",
+   "t0": 10.819,
+   "t1": 13.071
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "So let's pick a giant one. Like the black hole in the center of our galaxy. Four million times heavier than the Sun.",
+   "t0": 13.571,
+   "t1": 20.382
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "You cross the edge, the event horizon, and you feel... nothing. No wall. No bump.",
+   "t0": 20.782,
+   "t1": 25.478
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "But your friend, watching from far away, sees something creepy. You slow down, turn red, and freeze at the edge. Forever.",
+   "t0": 25.978,
+   "t1": 33.14
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "Inside, every direction points to the center. Nothing gets out. Not even light.",
+   "t0": 33.54,
+   "t1": 38.296
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "From there, you'd have about one minute left.",
+   "t0": 38.696,
+   "t1": 40.87
+  },
+  {
+   "id": "n09",
+   "who": "us_wi",
+   "text": "And what's at the very center? Nobody knows. Not even the smartest scientists alive.",
+   "t0": 41.37,
+   "t1": 46.52
+  },
+  {
+   "id": "n10",
+   "who": "us_wi",
+   "text": "So, would you jump in, just to find out?",
+   "t0": 46.92,
+   "t1": 48.938
+  }
+ ]
+}

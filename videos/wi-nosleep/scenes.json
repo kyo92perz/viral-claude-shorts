@@ -1,0 +1,213 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "WHAT IF?",
+  "ep": "EP.4"
+ },
+ "music": {
+  "bpm": 100,
+  "key": "F"
+ },
+ "notes": "WHAT IF EP.4, English: you stop sleeping. The kid awake at 3 AM, wobbly like drunk, micro-naps in class, breathing walls, the 1964 newspaper (11 days awake), jumbled words, a lab rat, the brain taking out the trash. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 4,
+     "sfx": "tick",
+     "t": 1.236
+    }
+   ],
+   "t0": 0,
+   "t1": 2.423
+  },
+  {
+   "id": "drunk",
+   "from": 6,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 24,
+     "sfx": "hit",
+     "t": 8.937
+    }
+   ],
+   "t0": 2.423,
+   "t1": 10.031
+  },
+  {
+   "id": "naps",
+   "from": 26,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 32,
+     "sfx": "pop",
+     "t": 12.348
+    },
+    {
+     "id": "e",
+     "at": 39,
+     "sfx": "click",
+     "t": 14.965
+    }
+   ],
+   "t0": 10.031,
+   "t1": 17.429
+  },
+  {
+   "id": "halluc",
+   "from": 46,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 49,
+     "sfx": "whoosh",
+     "t": 18.595
+    },
+    {
+     "id": "b",
+     "at": 60,
+     "sfx": "heart",
+     "t": 21.44
+    },
+    {
+     "id": "h",
+     "at": 64,
+     "sfx": "sting",
+     "t": 22.64
+    }
+   ],
+   "t0": 17.429,
+   "t1": 23.493
+  },
+  {
+   "id": "randy",
+   "from": 65,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "r",
+     "at": 81,
+     "sfx": "impact",
+     "t": 29.92
+    }
+   ],
+   "t0": 23.493,
+   "t1": 31.904
+  },
+  {
+   "id": "words",
+   "from": 86,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 92,
+     "sfx": "scratch",
+     "t": 33.875
+    }
+   ],
+   "t0": 31.904,
+   "t1": 38.039
+  },
+  {
+   "id": "rats",
+   "from": 104,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "d",
+     "at": 116,
+     "sfx": "sting",
+     "t": 42.258
+    }
+   ],
+   "t0": 38.039,
+   "t1": 43.249
+  },
+  {
+   "id": "trash",
+   "from": 118,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "t",
+     "at": 126,
+     "sfx": "pop",
+     "t": 45.684
+    },
+    {
+     "id": "p",
+     "at": 132,
+     "sfx": "thud",
+     "t": 47.296
+    }
+   ],
+   "t0": 43.249,
+   "t1": 48.016
+  },
+  {
+   "id": "end",
+   "from": 134,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 144,
+     "dt": 0.574,
+     "sfx": "tick",
+     "t": 51.543
+    }
+   ],
+   "t0": 48.016,
+   "t1": 52.613
+  }
+ ],
+ "duration": 52.613
+}

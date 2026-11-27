@@ -1,0 +1,184 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "WHAT IF?",
+  "ep": "EP.5"
+ },
+ "music": {
+  "bpm": 108,
+  "key": "G"
+ },
+ "notes": "WHAT IF EP.5, English: the Earth stops spinning. Spinning Earth that brakes, a 1,000 mph speedometer, the street flying east, supersonic winds, the oceans sliding to the poles, a new continent at the equator, half the planet in day and half in night. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "keys": [
+    {
+     "id": "s",
+     "at": 5,
+     "sfx": "scratch",
+     "t": 1.478
+    }
+   ],
+   "t0": 0,
+   "t1": 2.497
+  },
+  {
+   "id": "speed",
+   "from": 7,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 20,
+     "sfx": "whoosh",
+     "t": 6.31
+    }
+   ],
+   "t0": 2.497,
+   "t1": 9.061
+  },
+  {
+   "id": "fly",
+   "from": 29,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 32,
+     "sfx": "scratch",
+     "t": 10.083
+    },
+    {
+     "id": "f",
+     "at": 40,
+     "sfx": "whoosh",
+     "t": 12.804
+    },
+    {
+     "id": "c",
+     "at": 50,
+     "sfx": "boom",
+     "t": 15.922
+    }
+   ],
+   "t0": 9.061,
+   "t1": 18.163
+  },
+  {
+   "id": "winds",
+   "from": 56,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 60,
+     "sfx": "boom",
+     "t": 19.483
+    }
+   ],
+   "t0": 18.163,
+   "t1": 22.272
+  },
+  {
+   "id": "poles",
+   "from": 69,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "o",
+     "at": 78,
+     "sfx": "whoosh",
+     "t": 25.317
+    }
+   ],
+   "t0": 22.272,
+   "t1": 28.589
+  },
+  {
+   "id": "belt",
+   "from": 87,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "r",
+     "at": 93,
+     "sfx": "riser",
+     "t": 30.517
+    }
+   ],
+   "t0": 28.589,
+   "t1": 34.172
+  },
+  {
+   "id": "daynight",
+   "from": 107,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 118,
+     "sfx": "hit",
+     "t": 37.473
+    },
+    {
+     "id": "n",
+     "at": 124,
+     "sfx": "hit",
+     "t": 39.614
+    }
+   ],
+   "t0": 34.172,
+   "t1": 40.692
+  },
+  {
+   "id": "end",
+   "from": 126,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "end",
+     "at": 135,
+     "dt": 0.547,
+     "sfx": "pop",
+     "t": 43.563
+    }
+   ],
+   "t0": 40.692,
+   "t1": 44.633
+  }
+ ],
+ "duration": 44.633
+}

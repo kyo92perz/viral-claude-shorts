@@ -1,0 +1,17 @@
+// ---- WHAT IF EP.1: you doubled in size every day. Props: the harbor statue, the tallest tower, a mountain, a plane.
+const wdStatue = (x: number, y: number, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-90" y="-200" width="180" height="200" fill="#c8b89a" ${bzO()}/><rect x="-60" y="-300" width="120" height="100" fill="#d8c8aa" ${bzO()}/>
+  <path d="M-50 -300 L -40 -560 Q 0 -600 40 -560 L 50 -300 Z" fill="#5ab89a" ${bzO()}/><circle cx="0" cy="-610" r="44" fill="#5ab89a" ${bzO()}/><path d="M-40 -650 l -20 -40 l 30 20 l 10 -44 l 20 40 l 20 -44 l 10 44 l 30 -20 l -20 40 z" fill="#5ab89a" ${bzO('stroke-width="5"')}/>
+  <path d="M30 -540 L 70 -700" stroke="${BZ.ink}" stroke-width="30" stroke-linecap="round"/><path d="M30 -540 L 70 -700" stroke="#5ab89a" stroke-width="16" stroke-linecap="round"/><path d="M70 -700 q -20 -40 0 -70 q 20 30 0 70 z" fill="#ffc860" ${bzO('stroke-width="5"')}/></g>`;
+const wdTower = (x: number, y: number, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-90 0 L -60 -500 L -30 -900 L -12 -1300 L 0 -1600 L 12 -1300 L 30 -900 L 60 -500 L 90 0 Z" fill="#a8b8d0" ${bzO()}/>${[-400, -800, -1150].map((h) => `<path d="M${-80 + Math.abs(h) / 25} ${h} h${160 - Math.abs(h) / 12.5}" stroke="${BZ.ink}" stroke-width="5"/>`).join('')}</g>`;
+const wdMountain = (x: number, y: number, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-500 0 L -60 -620 L 40 -520 L 120 -640 L 520 0 Z" fill="#7a7088" ${bzO()}/><path d="M-160 -480 L -60 -620 L 40 -520 L 120 -640 L 210 -520 L 120 -540 L 40 -460 L -60 -540 Z" fill="#f4f2ea"/></g>`;
+const wdPlane = (id: string, x: number, y: number, s = 1) => `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})"><rect x="-120" y="-20" width="240" height="40" rx="20" fill="#f4f2ea" ${bzO()}/><path d="M-20 0 L -70 70 L -20 70 L 30 0 Z M-20 0 L -70 -70 L -20 -70 L 30 0 Z M-110 -10 L -140 -60 L -100 -60 L -80 -10 Z" fill="#c8d0e0" ${bzO('stroke-width="5"')}/></g></g>`;
+const wdHouse = (x: number, y: number, s = 1, c = '#e8a070') => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-80" y="-120" width="160" height="120" fill="${c}" ${bzO()}/><path d="M-100 -110 L 0 -190 L 100 -110 Z" fill="#a8402a" ${bzO()}/><rect x="-20" y="-60" width="40" height="60" fill="#5a3a22"/></g>`;
+// a crack drawn on a leg (local, kid coords)
+const wdCracks = (id: string, x: number, y: number, s = 1) => `<g id="${id}" opacity="0"><path d="M${x - 30 * s} ${y} l ${10 * s} ${-30 * s} l ${-14 * s} ${-20 * s} l ${12 * s} ${-30 * s} M${x + 30 * s} ${y + 10 * s} l ${-10 * s} ${-26 * s} l ${14 * s} ${-24 * s}" stroke="${BZ.ink}" stroke-width="${7 * s}" fill="none" stroke-linecap="round"/></g>`;
+
+defineVisuals({
+  'test-cast': { bg: '#5ab0f0', html: () => svg(`${wiCity()}${wiChar('kid', 250, 1700, 1.0)}${wiChar('pal', 540, 1700, 1.0)}${wiChar('doc', 830, 1700, 1.0)}${wiHud('DAY 7', '300 FT')}`), anim() {} },
+  'test-props': { bg: '#5ab0f0', html: () => svg(`${bzSky('#5ab0f0', '#d8f0ff')}${wdMountain(540, 1500, 1)}${wdStatue(250, 1600, 0.8)}${wdTower(800, 1650, 0.7)}${wdPlane('pl', 560, 500, 1)}`), anim() {} },
+  'test-space': { bg: '#05061a', html: () => svg(`${wiSpace()}${wiEarth('ea', 540, 1300, 300)}${wiMoon('mo', 850, 400, 80)}${wiSun('su', 200, 300, 110)}`), anim() {} },
+  'cover-a': { bg: '#05061a', html: () => svg(`${wiSpace(4)}${wiEarth('ea', 330, 1500, 90)}${wiChar('kid', 600, 2300, 3.0)}${bzVignette(0.4)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #kid', s.t0, 'wide', 'grin'); } },
+});

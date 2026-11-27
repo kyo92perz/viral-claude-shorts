@@ -1,0 +1,242 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "WHAT IF?",
+  "ep": "EP.1"
+ },
+ "music": {
+  "bpm": 112,
+  "key": "C"
+ },
+ "notes": "WHAT IF EP.1, English: you double in size every day. Bright Brazil Z toon look; the HUD (day + height) is the signature; the kid outgrows his room, the town, the statue, the tower, the sky, Earth, and becomes a star. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 5,
+     "sfx": "pop",
+     "t": 1.494
+    }
+   ],
+   "t0": 0,
+   "t1": 3.446
+  },
+  {
+   "id": "day2",
+   "from": 11,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 20,
+     "sfx": "thud",
+     "t": 6.165
+    },
+    {
+     "id": "b",
+     "at": 31,
+     "sfx": "crack",
+     "t": 9.822
+    }
+   ],
+   "t0": 3.446,
+   "t1": 10.672
+  },
+  {
+   "id": "day5",
+   "from": 33,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 40,
+     "sfx": "crack",
+     "t": 13.095
+    }
+   ],
+   "t0": 10.672,
+   "t1": 15.09
+  },
+  {
+   "id": "day7",
+   "from": 45,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 54,
+     "sfx": "impact",
+     "t": 18.341
+    }
+   ],
+   "t0": 15.09,
+   "t1": 19.613
+  },
+  {
+   "id": "day10",
+   "from": 57,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 66,
+     "sfx": "hit",
+     "t": 22.138
+    }
+   ],
+   "t0": 19.613,
+   "t1": 23.986
+  },
+  {
+   "id": "day14",
+   "from": 70,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 79,
+     "sfx": "whoosh",
+     "t": 27.174
+    },
+    {
+     "id": "e",
+     "at": 82,
+     "sfx": "pop",
+     "t": 28.34
+    },
+    {
+     "id": "b",
+     "at": 86,
+     "sfx": "hit",
+     "t": 29.592
+    }
+   ],
+   "t0": 23.986,
+   "t1": 30.703
+  },
+  {
+   "id": "day17",
+   "from": 88,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "s",
+     "at": 96,
+     "sfx": "riser",
+     "t": 34.087
+    }
+   ],
+   "t0": 30.703,
+   "t1": 35.115
+  },
+  {
+   "id": "day27",
+   "from": 98,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "b",
+     "at": 106,
+     "sfx": "pop",
+     "t": 37.717
+    },
+    {
+     "id": "o",
+     "at": 118,
+     "sfx": "whoosh",
+     "t": 41.684
+    }
+   ],
+   "t0": 35.115,
+   "t1": 42.554
+  },
+  {
+   "id": "day32",
+   "from": 120,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 125,
+     "sfx": "riser",
+     "t": 44.702
+    },
+    {
+     "id": "i",
+     "at": 131,
+     "sfx": "impact",
+     "t": 46.564
+    }
+   ],
+   "t0": 42.554,
+   "t1": 48.463
+  },
+  {
+   "id": "end",
+   "from": 136,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 146,
+     "dt": 0.684,
+     "sfx": "pop",
+     "t": 51.593
+    }
+   ],
+   "t0": 48.463,
+   "t1": 52.663
+  }
+ ],
+ "duration": 52.663
+}

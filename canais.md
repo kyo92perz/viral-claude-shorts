@@ -16,4 +16,6 @@ Cada pedido do usuário vai para um canal só. Antes de escrever, veja qual é o
 
 O que é igual nos dois: Short 9:16 de 60 a 75 s no estilo `flat2d` (Brasil Z), personagens originais, a criatura revelada em partes, o perigo já no primeiro quadro, a última frase emendando no começo (loop), o manual `.claude/skills/diretor-de-terror/SKILL.md` e a mesma checagem (`check-speech.py`, storyboard, revisão dos quadros).
 
+**Mudança (27/nov/2026):** as 3 lendas dos EUA ficaram em ~8 views; o canal em inglês passou a testar o nicho **WHAT IF?** (ciência animada: "What if you doubled in size every day?"). Pastas `videos/wi-<tema>`, selo `WHAT IF?` + `EP.N`, voz `us_wi`, kit de personagens e cenários compartilhado em `videos/wi-kit.ts` (o `world.ts` de cada episódio é gerado por `python3 videos/wi-build-world.py videos/wi-<tema>` a partir de `world-ep.ts`). Episódios: EP.1–5 (dobrar de tamanho, Lua some, buraco negro, sem dormir, Terra para). Quando o usuário pedir "what if" ou "canal em inglês", é este.
+
 Lendas dos EUA: use as de domínio público e folclore (Bloody Mary, Jersey Devil, Resurrection Mary, Mothman, The Hook, Bell Witch, Pope Lick Monster, Goatman, Bunnyman...). Não use criações com dono (Slender Man, Creepypastas com autor) nem lendas sagradas de povos indígenas (Skinwalker, Wendigo).

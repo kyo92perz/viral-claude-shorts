@@ -148,6 +148,8 @@ VOICES = {
     "us_woman": ("af_nicole", 1.0, st(0)),
     "us_old": ("am_onyx", 0.9, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
     "us_ghost": ("af_bella", 0.85, st(-3) + ",aecho=0.6:0.55:60:0.3,highpass=f=200,lowpass=f=4800"),
+    # WHAT IF? (canal EUA, ciência): narrador animado e próximo
+    "us_wi": ("am_michael", 1.06, "acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=3000:t=q:w=1:g=2"),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)

@@ -1,0 +1,67 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.0,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if you fell into a black hole?",
+   "pause": 0.5
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "If it's a small one, you'd never even make it inside. Gravity pulls your feet so much harder than your head, you'd be stretched like a noodle.",
+   "pause": 0.4
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "Scientists really call it spaghettification.",
+   "pause": 0.5
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "So let's pick a giant one. Like the black hole in the center of our galaxy. Four million times heavier than the Sun.",
+   "pause": 0.4
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "You cross the edge, the event horizon, and you feel... nothing. No wall. No bump.",
+   "pause": 0.5
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "But your friend, watching from far away, sees something creepy. You slow down, turn red, and freeze at the edge. Forever.",
+   "pause": 0.4
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "Inside, every direction points to the center. Nothing gets out. Not even light.",
+   "pause": 0.4
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "From there, you'd have about one minute left.",
+   "pause": 0.5
+  },
+  {
+   "id": "n09",
+   "who": "us_wi",
+   "text": "And what's at the very center? Nobody knows. Not even the smartest scientists alive.",
+   "pause": 0.4
+  },
+  {
+   "id": "n10",
+   "who": "us_wi",
+   "text": "So, would you jump in, just to find out?",
+   "pause": 0.3
+  }
+ ]
+}

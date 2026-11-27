@@ -1,0 +1,221 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "WHAT IF?",
+  "ep": "EP.3"
+ },
+ "music": {
+  "bpm": 90,
+  "key": "E"
+ },
+ "notes": "WHAT IF EP.3, English: falling into a black hole. Deep space, a black hole with a glowing orange disk, the kid stretched like a noodle, the giant one at the galaxy center, the friend in a spaceship watching the kid freeze at the edge, a one-minute timer. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "wonder",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 6,
+     "sfx": "riser",
+     "t": 1.36
+    }
+   ],
+   "t0": 0,
+   "t1": 2.131
+  },
+  {
+   "id": "small",
+   "from": 8,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 19,
+     "sfx": "whoosh",
+     "t": 5.334
+    },
+    {
+     "id": "s",
+     "at": 31,
+     "sfx": "zip",
+     "t": 9.012
+    }
+   ],
+   "t0": 2.131,
+   "t1": 10.619
+  },
+  {
+   "id": "noodle",
+   "from": 35,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "w",
+     "at": 39,
+     "sfx": "pop",
+     "t": 12.175
+    }
+   ],
+   "t0": 10.619,
+   "t1": 13.371
+  },
+  {
+   "id": "giant",
+   "from": 40,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 44,
+     "sfx": "boom",
+     "t": 14.501
+    },
+    {
+     "id": "m",
+     "at": 56,
+     "sfx": "hit",
+     "t": 18.002
+    }
+   ],
+   "t0": 13.371,
+   "t1": 20.582
+  },
+  {
+   "id": "horizon",
+   "from": 63,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "c",
+     "at": 68,
+     "sfx": "shimmer",
+     "t": 22.251
+    }
+   ],
+   "t0": 20.582,
+   "t1": 25.778
+  },
+  {
+   "id": "friend",
+   "from": 78,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 94,
+     "sfx": "sting",
+     "t": 31.457
+    }
+   ],
+   "t0": 25.778,
+   "t1": 33.34
+  },
+  {
+   "id": "inside",
+   "from": 99,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 109,
+     "sfx": "off",
+     "t": 37.345
+    }
+   ],
+   "t0": 33.34,
+   "t1": 38.496
+  },
+  {
+   "id": "timer",
+   "from": 112,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 117,
+     "sfx": "tick",
+     "t": 40.061
+    }
+   ],
+   "t0": 38.496,
+   "t1": 41.17
+  },
+  {
+   "id": "center",
+   "from": 120,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "n",
+     "at": 126,
+     "sfx": "hit",
+     "t": 43.243
+    }
+   ],
+   "t0": 41.17,
+   "t1": 46.72
+  },
+  {
+   "id": "end",
+   "from": 134,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 142,
+     "dt": 0.444,
+     "sfx": "riser",
+     "t": 49.168
+    }
+   ],
+   "t0": 46.72,
+   "t1": 50.238
+  }
+ ],
+ "duration": 50.238
+}

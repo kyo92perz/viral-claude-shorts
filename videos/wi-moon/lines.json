@@ -1,0 +1,68 @@
+{
+ "duration": 50.75,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if, tonight, the Moon just... disappeared?",
+   "t0": 0.3,
+   "t1": 2.643
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "First, the nights go dark. Really dark. The Moon is the brightest thing in our night sky, and now it's gone.",
+   "t0": 3.143,
+   "t1": 9.521
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "Then, the oceans. The Moon pulls on the sea and makes the tides. Without it, tides shrink to about a third.",
+   "t0": 9.921,
+   "t1": 16.119
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "Coral reefs that spawn under the full Moon lose their signal. Baby sea turtles that crawl toward the bright sea get lost.",
+   "t0": 16.519,
+   "t1": 24.005
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "Animals that hunt by moonlight, and animals that hide from it, lose a rhythm they've had for millions of years.",
+   "t0": 24.405,
+   "t1": 30.961
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "But the scariest part is slow. The Moon keeps Earth's tilt steady, like a hand on a spinning top.",
+   "t0": 31.361,
+   "t1": 37.257
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "Without it, over millions of years, Earth could start to wobble, and the seasons would go wild. Ice ages. Scorching summers.",
+   "t0": 37.657,
+   "t1": 44.92
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "And no more solar eclipses. Ever.",
+   "t0": 45.32,
+   "t1": 47.372
+  },
+  {
+   "id": "n09",
+   "who": "us_wi",
+   "text": "Look up tonight. Would you miss it?",
+   "t0": 47.872,
+   "t1": 49.45
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "duration": 44.633,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if the Earth suddenly stopped spinning?",
+   "t0": 0.3,
+   "t1": 2.197
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "Right now, if you live near the equator, you're spinning at about a thousand miles per hour. You just don't feel it.",
+   "t0": 2.697,
+   "t1": 8.861
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "If the Earth stopped in an instant, you wouldn't. You'd keep flying east at a thousand miles per hour. So would cars, houses, trees, and the oceans.",
+   "t0": 9.261,
+   "t1": 17.963
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "Winds faster than the speed of sound would sweep across the whole planet.",
+   "t0": 18.363,
+   "t1": 22.072
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "But say it stopped slowly, and we survived. The oceans would slide toward the North and South Poles.",
+   "t0": 22.572,
+   "t1": 28.389
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "And a giant new continent would rise out of the sea, all the way around the middle of the world.",
+   "t0": 28.789,
+   "t1": 33.972
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "A single day would last a whole year. Six months of burning sunlight, then six months of freezing night.",
+   "t0": 34.372,
+   "t1": 40.492
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "So, which side would you live on? Day, or night?",
+   "t0": 40.892,
+   "t1": 43.333
+  }
+ ]
+}

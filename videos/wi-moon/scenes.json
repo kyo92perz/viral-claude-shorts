@@ -1,0 +1,228 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "WHAT IF?",
+  "ep": "EP.2"
+ },
+ "music": {
+  "bpm": 96,
+  "key": "A"
+ },
+ "notes": "WHAT IF EP.2, English: the Moon disappears. Night beach and sea, the tide line dropping, baby turtles lost, an owl, Earth as a spinning top that starts to wobble, the last eclipse. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "curious",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 6,
+     "sfx": "pop",
+     "t": 1.999
+    }
+   ],
+   "t0": 0,
+   "t1": 2.943
+  },
+  {
+   "id": "dark",
+   "from": 7,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 11,
+     "sfx": "off",
+     "t": 4.379
+    },
+    {
+     "id": "g",
+     "at": 25,
+     "sfx": "hit",
+     "t": 8.706
+    }
+   ],
+   "t0": 2.943,
+   "t1": 9.721
+  },
+  {
+   "id": "tides",
+   "from": 28,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 33,
+     "sfx": "whoosh",
+     "t": 11.423
+    },
+    {
+     "id": "s",
+     "at": 44,
+     "sfx": "tick",
+     "t": 14.672
+    }
+   ],
+   "t0": 9.721,
+   "t1": 16.319
+  },
+  {
+   "id": "turtles",
+   "from": 49,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 49,
+     "sfx": "shimmer",
+     "t": 16.519
+    },
+    {
+     "id": "t",
+     "at": 62,
+     "sfx": "pop",
+     "t": 20.891
+    }
+   ],
+   "t0": 16.319,
+   "t1": 24.205
+  },
+  {
+   "id": "owl",
+   "from": 71,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 79,
+     "sfx": "hit",
+     "t": 27.294
+    }
+   ],
+   "t0": 24.205,
+   "t1": 31.161
+  },
+  {
+   "id": "top",
+   "from": 91,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "t",
+     "at": 108,
+     "sfx": "whoosh",
+     "t": 36.459
+    }
+   ],
+   "t0": 31.161,
+   "t1": 37.457
+  },
+  {
+   "id": "wobble",
+   "from": 110,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 120,
+     "sfx": "riser",
+     "t": 41.022
+    },
+    {
+     "id": "i",
+     "at": 127,
+     "sfx": "impact",
+     "t": 43.294
+    },
+    {
+     "id": "s",
+     "at": 129,
+     "sfx": "impact",
+     "t": 43.854
+    }
+   ],
+   "t0": 37.457,
+   "t1": 45.02
+  },
+  {
+   "id": "eclipse",
+   "from": 131,
+   "type": "object",
+   "mood": "epic",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "e",
+     "at": 133,
+     "sfx": "shimmer",
+     "t": 45.789
+    },
+    {
+     "id": "v",
+     "at": 135,
+     "sfx": "hit",
+     "t": 46.493
+    }
+   ],
+   "t0": 45.02,
+   "t1": 47.672
+  },
+  {
+   "id": "end",
+   "from": 137,
+   "type": "object",
+   "mood": "wonder",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 143,
+     "dt": 0.377,
+     "sfx": "shimmer",
+     "t": 49.68
+    }
+   ],
+   "t0": 47.672,
+   "t1": 50.75
+  }
+ ],
+ "duration": 50.75
+}

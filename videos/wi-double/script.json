@@ -1,0 +1,67 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.0,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if you woke up twice as big... every single day?",
+   "pause": 0.4
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "Day two. You're ten feet tall, and you weigh eight times more, because you grew in every direction. Your bed is history.",
+   "pause": 0.4
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "Day five. Eighty feet. Your bones start cracking under your own weight.",
+   "pause": 0.4
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "Day seven. Three hundred feet. You're taller than the Statue of Liberty.",
+   "pause": 0.4
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "Day ten. Half a mile. As tall as the tallest building on Earth.",
+   "pause": 0.4
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "Day fourteen. Eight miles. Your head is above the clouds, above Mount Everest, and you can barely breathe.",
+   "pause": 0.4
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "Day seventeen. Sixty-five miles. Your head is in outer space.",
+   "pause": 0.4
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "Day twenty-seven. Earth is the size of a soccer ball, and you're heavier than the whole planet. So now, Earth orbits you.",
+   "pause": 0.4
+  },
+  {
+   "id": "n09",
+   "who": "us_wi",
+   "text": "Day thirty-two. Your own gravity crushes you so hard that you ignite. You become a star.",
+   "pause": 0.5
+  },
+  {
+   "id": "n10",
+   "who": "us_wi",
+   "text": "So, what day would you stop? Tell me in the comments.",
+   "pause": 0.3
+  }
+ ]
+}

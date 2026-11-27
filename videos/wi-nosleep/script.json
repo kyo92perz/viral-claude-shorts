@@ -1,0 +1,61 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.0,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_wi",
+   "text": "What if you just... stopped sleeping?",
+   "pause": 0.5
+  },
+  {
+   "id": "n02",
+   "who": "us_wi",
+   "text": "Night one. You feel fine. Kind of wired. But after twenty-four hours awake, your brain works like it's legally drunk.",
+   "pause": 0.4
+  },
+  {
+   "id": "n03",
+   "who": "us_wi",
+   "text": "Day two. Your brain starts taking micro-naps. A few seconds asleep, with your eyes open, and you don't even notice.",
+   "pause": 0.4
+  },
+  {
+   "id": "n04",
+   "who": "us_wi",
+   "text": "Day three. Things move in the corner of your eye. The walls seem to breathe. You start to hallucinate.",
+   "pause": 0.4
+  },
+  {
+   "id": "n05",
+   "who": "us_wi",
+   "text": "In nineteen sixty-four, a high school student named Randy Gardner tried this. He stayed awake for eleven days. A world record.",
+   "pause": 0.4
+  },
+  {
+   "id": "n06",
+   "who": "us_wi",
+   "text": "By the end, he couldn't remember simple words, couldn't finish a sentence, and saw things that weren't there.",
+   "pause": 0.4
+  },
+  {
+   "id": "n07",
+   "who": "us_wi",
+   "text": "And in lab experiments, rats kept awake for about two to three weeks... died.",
+   "pause": 0.5
+  },
+  {
+   "id": "n08",
+   "who": "us_wi",
+   "text": "Sleep is when your brain takes out the trash. Skip it, and the trash piles up.",
+   "pause": 0.4
+  },
+  {
+   "id": "n09",
+   "who": "us_wi",
+   "text": "So, be honest. How many hours did you sleep last night?",
+   "pause": 0.3
+  }
+ ]
+}

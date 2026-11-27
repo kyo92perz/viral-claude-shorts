@@ -1,0 +1,14 @@
+// ---- WHAT IF EP.2: the Moon disappeared. Props: baby turtles, an owl, coral, a spinning top Earth with its axis, an eclipse.
+const wmTurtle = (id: string, x: number, y: number, s = 1, rot = 0) => `<g id="${id}"><g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><ellipse cx="0" cy="0" rx="40" ry="30" fill="#3a8a5a" ${bzO('stroke-width="5"')}/><path d="M-20 -10 h40 M0 -26 v52" stroke="#2a6a4a" stroke-width="5"/>
+  <circle cx="48" cy="0" r="14" fill="#7ab86a" ${bzO('stroke-width="5"')}/><circle cx="52" cy="-4" r="3" fill="${BZ.ink}"/>${[[-26, -28], [26, -28], [-26, 28], [26, 28]].map(([fx, fy]) => `<ellipse cx="${fx}" cy="${fy}" rx="14" ry="7" fill="#7ab86a" ${bzO('stroke-width="4"')}/>`).join('')}</g></g>`;
+const wmOwl = (id: string, x: number, y: number, s = 1) => `<g id="${id}"><g transform="translate(${x} ${y}) scale(${s})"><ellipse cx="0" cy="0" rx="70" ry="95" fill="#8a6a4a" ${bzO()}/><path d="M-60 -70 l -10 -50 l 40 30 z M60 -70 l 10 -50 l -40 30 z" fill="#8a6a4a" ${bzO('stroke-width="5"')}/>
+  <g class="eyes"><circle cx="-28" cy="-30" r="24" fill="#ffd23a" ${bzO('stroke-width="5"')}/><circle cx="28" cy="-30" r="24" fill="#ffd23a" ${bzO('stroke-width="5"')}/><circle cx="-28" cy="-30" r="9" fill="${BZ.ink}"/><circle cx="28" cy="-30" r="9" fill="${BZ.ink}"/></g><path d="M-8 -10 l 8 14 l 8 -14 z" fill="#f6a43a"/></g></g>`;
+const wmCoral = (x: number, y: number, s = 1, c = '#f08ab0') => `<g transform="translate(${x} ${y}) scale(${s})">${[-40, 0, 40].map((cx, i) => `<path d="M${cx} 0 q ${-20 + i * 10} -80 ${-10 + i * 10} -160 M${cx} -80 q 30 -20 40 -60" stroke="${BZ.ink}" stroke-width="30" fill="none" stroke-linecap="round"/><path d="M${cx} 0 q ${-20 + i * 10} -80 ${-10 + i * 10} -160 M${cx} -80 q 30 -20 40 -60" stroke="${c}" stroke-width="18" fill="none" stroke-linecap="round"/>`).join('')}</g>`;
+// Earth with its axis (a pole line through it), used as a spinning top (#top)
+const wmTop = (id: string, x: number, y: number, r: number) => `<g id="${id}"><path d="M${x} ${y - r - 160} V${y + r + 160}" stroke="${BZ.ink}" stroke-width="16" stroke-linecap="round"/><path d="M${x} ${y - r - 160} V${y + r + 160}" stroke="#f6c744" stroke-width="8" stroke-linecap="round"/>${wiEarth(id + 'e', x, y, r)}</g>`;
+
+defineVisuals({
+  'test-props': { bg: '#05081c', html: () => svg(`${wiBeach(true)}${wmTurtle('t1', 300, 1600, 1.2, -30)}${wmOwl('ow', 800, 700, 1.2)}${wmCoral(500, 1350, 0.8)}`), anim() {} },
+  'test-top': { bg: '#05061a', html: () => svg(`${wiSpace(2)}${wmTop('tp', 540, 900, 260)}`), anim(tl, s) { tl.set('#sc-test-top #tp', { rotation: 23, svgOrigin: '540 900' }, s.t0); } },
+  'cover-a': { bg: '#05081c', html: () => svg(`${wiBeach(true)}<g opacity="0.4">${wiMoon('mo', 540, 700, 220)}</g>${wiChar('kid', 540, 2300, 2.6)}${bzVignette(0.5)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #kid', s.t0, 'wide', 'o'); } },
+});
