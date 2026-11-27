@@ -28,3 +28,14 @@ Estes dados valem mais que qualquer média da internet.
 ## Canal longo "ARQUIVO PROIBIDO"
 Criado em nov/2026 (identidade em `canal-longo/`). Primeiro vídeo planejado: Caso Nº 001, Varginha (1996). Sem dados
 ainda.
+
+## Canal de Shorts em inglês "AMERICAN LEGENDS" (lendas dos EUA) — relato do usuário, 27/nov/2026
+| Ep. | Vídeo | Views | Observação |
+|---|---|---|---|
+| EP.1–3 | Bloody Mary, Jersey Devil, Resurrection Mary | ~8 cada | canal novo, recém-criado; o canal BR do mesmo formato faz 100+ no mínimo |
+
+**O que aprendemos (hipóteses a conferir no Studio):** canal novo em inglês, criado e operado do Brasil, travou no
+teste inicial. Antes de culpar o nicho, conferir: país do canal = Estados Unidos, idioma do vídeo = inglês, "não é
+conteúdo para crianças", vídeos públicos sem restrição, e de quais países vieram as poucas views (Studio → Público).
+Próxima aposta discutida: nicho "What if / ciência" em inglês (Shorts de ciência, espaço e história têm as maiores
+medianas entre canais sem rosto, segundo análise de 1.790 canais de nov/2026).
