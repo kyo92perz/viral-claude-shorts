@@ -1,4 +1,5 @@
 // <lines>
+const BM_LINES = [{"who": "us_narrf", "t0": 0.3, "t1": 8.013}, {"who": "us_narrf", "t0": 8.613, "t1": 13.961}, {"who": "us_girl", "t0": 14.461, "t1": 19.162}, {"who": "us_narrf", "t0": 19.762, "t1": 23.917}, {"who": "us_narrf", "t0": 24.417, "t1": 27.192}, {"who": "us_narrf", "t0": 28.092, "t1": 31.64}, {"who": "us_narrf", "t0": 32.34, "t1": 37.708}, {"who": "us_narrf", "t0": 38.408, "t1": 42.347}, {"who": "us_ghost", "t0": 43.147, "t1": 45.547}, {"who": "us_narrf", "t0": 46.247, "t1": 51.037}, {"who": "us_narrf", "t0": 51.637, "t1": 55.7}, {"who": "us_narrf", "t0": 56.4, "t1": 59.623}];
 // </lines>
 // =====================================================================
 //  BLOODY MARY: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -42,16 +43,16 @@ defineVisuals({
   // ---------------- the lights, the reflection
   laugh: { bg: '#05060a', html: () => bzShot(`<rect width="1080" height="1920" fill="#14141e"/>${bmChar('kayla', 260, 1640, 1.05)}${bmChar('zoe', 820, 1640, 1.05, true)}`, bzVignette(0.75)),
     anim(tl, s, K, $) { ['kayla', 'zoe'].forEach((k) => { bzFace(tl, $('#' + k), s.t0, 'closed', 'grin'); bzShake(tl, $('#' + k), s.t0, s.t1, 3); }); } },
-  lit: { bg: '#1a2230', html: () => bzShot(`${bmBath()}${bmGlass('l', `${bmChar('emma', 540, 1900, 2.0)}${bmCandle('cr', 680, 1380, 1.2)}`)}${bmCandle('cd', 840, 1820, 1.3, false)}`, `${bmSay('st', 'STILL LIT', 540, 1560, -3, '#b0101a', '#fff', 90)}${bzVignette(0.7)}`),
+  lit: { bg: '#1a2230', html: () => bzShot(`${bmBath()}${bmGlass('l', `${bmChar('emma', 540, 1500, 2.0)}${bmCandle('cr', 690, 1180, 1.0)}`)}${bmCandle('cd', 840, 1820, 1.3, false)}`, `${bmSay('st', 'STILL LIT', 540, 1560, -3, '#b0101a', '#fff', 90)}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#emma'), s.t0, 'half', 'flat'); bmFlicker(tl, $('#cr'), s.t0, s.t1); tl.set($('#st'), { opacity: 0 }, s.t0); bzShow(tl, $('#st'), K('l'));
       bzPush(tl, $('#cam'), s.t0, K('l'), 1, 1.0); tl.to($('#cam'), { scale: 1.35, svgOrigin: '680 1100', duration: 0.5, ease: 'power2.inOut' }, K('l') - 0.2); } },
-  smile: { bg: '#0e141e', html: () => bzShot(`${bmBath()}${bmGlass('s', `${bmChar('emma', 540, 1900, 2.0)}${bmCandle('cr', 680, 1380, 1.2)}`)}`, `${bzFlash('fl', '#b0101a')}${bzVignette(0.75)}`),
+  smile: { bg: '#0e141e', html: () => bzShot(`${bmBath()}${bmGlass('s', `${bmChar('emma', 540, 1500, 2.0)}${bmCandle('cr', 690, 1180, 1.0)}`)}`, `${bzFlash('fl', '#b0101a')}${bzVignette(0.75)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#emma'), s.t0, 'half', 'flat'); bmFlicker(tl, $('#cr'), s.t0, s.t1); tl.fromTo($('#cam'), { scale: 1.2, svgOrigin: '540 800' }, { scale: 1.45, duration: K('s') - s.t0, ease: 'none' }, s.t0);
       bzFace(tl, $('#emma'), K('s'), 'dead', 'grin'); bzHit(tl, $('#fl'), K('s'), 0.35); } },
   again: { bg: '#0e141e', html: () => bzShot(`${bmBath()}${bmGlass('a', bmChar('mary', 540, 2050, 2.4))}`, bzVignette(0.75)),
     anim(tl, s, K, $) { bzFace(tl, $('#mary'), s.t0, 'glow', 'grin'); bzTalk(tl, $('#mary'), 'us_ghost', s.t0, s.t1, 'grin', 'fangs'); tl.fromTo($('#mary .hd'), { rotation: 0, transformOrigin: '50% 90%' }, { rotation: 12, duration: s.t1 - s.t0, ease: 'none' }, s.t0);
       bzPush(tl, $('#cam'), s.t0, s.t1, 1.1, 1.3, 540, 750); } },
-  lights: { bg: '#cfe0e4', html: () => bzShot(`${bmBath(true)}${bmGlass('x', bmChar('emma', 540, 1900, 2.0))}`, `<rect id="dk" width="1080" height="1920" fill="#000" opacity="1"/>`),
+  lights: { bg: '#cfe0e4', html: () => bzShot(`${bmBath(true)}${bmGlass('x', bmChar('emma', 540, 1500, 2.0))}`, `<rect id="dk" width="1080" height="1920" fill="#000" opacity="1"/>`),
     anim(tl, s, K, $) { bzFace(tl, $('#emma'), s.t0, 'wide', 'open'); tl.to($('#dk'), { opacity: 0, duration: 0.05 }, K('c')); bzShake(tl, $('#cam'), K('c'), K('c') + 0.4, 5); bzFace(tl, $('#emma'), K('c') + 1.0, 'wide', 'flat'); } },
   // ---------------- the morning, the words
   morning: { bg: '#cfe0e4', html: () => bzShot(`${bmBath(true)}${bmWords('wd')}`, bmSay('nx', 'NEXT MORNING', 540, 1540, -3, '#fff', BZ.ink, 80)),

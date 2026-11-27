@@ -1,0 +1,289 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "AMERICAN LEGENDS",
+  "ep": "EP.1"
+ },
+ "music": {
+  "bpm": 68,
+  "key": "D"
+ },
+ "notes": "BLOODY MARY, Brasil Z toon look, English: a 13th birthday sleepover, the dark bathroom mirror, the candle, the reflection that keeps the candle lit and smiles, Mary behind the glass, the words written from the other side. The only threat colour is red. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 12,
+     "sfx": "sting",
+     "t": 4.729
+    }
+   ],
+   "t0": 0,
+   "t1": 6.114
+  },
+  {
+   "id": "title",
+   "from": 15,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 17,
+     "sfx": "impact",
+     "t": 7.127
+    }
+   ],
+   "t0": 6.114,
+   "t1": 8.313
+  },
+  {
+   "id": "party",
+   "from": 19,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 31,
+     "sfx": "hit",
+     "t": 13.197
+    }
+   ],
+   "t0": 8.313,
+   "t1": 14.261
+  },
+  {
+   "id": "dare",
+   "from": 33,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 34,
+     "sfx": "click",
+     "t": 14.999
+    }
+   ],
+   "t0": 14.261,
+   "t1": 19.562
+  },
+  {
+   "id": "stand",
+   "from": 44,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 19.562,
+   "t1": 24.217
+  },
+  {
+   "id": "chant",
+   "from": 61,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "a",
+     "at": 61,
+     "sfx": "heart",
+     "t": 24.417
+    },
+    {
+     "id": "b",
+     "at": 63,
+     "sfx": "heart",
+     "t": 25.805
+    }
+   ],
+   "t0": 24.217,
+   "t1": 27.792
+  },
+  {
+   "id": "out",
+   "from": 65,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "o",
+     "at": 76,
+     "sfx": "off",
+     "t": 30.897
+    }
+   ],
+   "t0": 27.792,
+   "t1": 32.14
+  },
+  {
+   "id": "laugh",
+   "from": 79,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "t0": 32.14,
+   "t1": 33.809
+  },
+  {
+   "id": "lit",
+   "from": 83,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 93,
+     "sfx": "sting",
+     "t": 37.064
+    }
+   ],
+   "t0": 33.809,
+   "t1": 38.108
+  },
+  {
+   "id": "smile",
+   "from": 95,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "s",
+     "at": 98,
+     "sfx": "impact",
+     "t": 40.183
+    }
+   ],
+   "t0": 38.108,
+   "t1": 42.947
+  },
+  {
+   "id": "again",
+   "from": 102,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 42.947,
+   "t1": 46.047
+  },
+  {
+   "id": "lights",
+   "from": 108,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "x",
+     "at": 109,
+     "sfx": "scream",
+     "t": 46.375
+    },
+    {
+     "id": "c",
+     "at": 114,
+     "sfx": "click",
+     "t": 47.886
+    }
+   ],
+   "t0": 46.047,
+   "t1": 51.337
+  },
+  {
+   "id": "morning",
+   "from": 125,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 132,
+     "sfx": "sting",
+     "t": 53.45
+    }
+   ],
+   "t0": 51.337,
+   "t1": 54.388
+  },
+  {
+   "id": "words",
+   "from": 136,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 54.388,
+   "t1": 56.2
+  },
+  {
+   "id": "end",
+   "from": 141,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 153,
+     "dt": 0.509,
+     "sfx": "sting",
+     "t": 59.853
+    }
+   ],
+   "t0": 56.2,
+   "t1": 61.223
+  }
+ ],
+ "duration": 61.223
+}

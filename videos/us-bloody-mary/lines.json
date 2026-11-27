@@ -1,0 +1,89 @@
+{
+ "duration": 61.223,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_narrf",
+   "text": "If you ever say her name three times in a dark mirror... don't turn around. She's already behind you.",
+   "t0": 0.3,
+   "t1": 8.013
+  },
+  {
+   "id": "n02",
+   "who": "us_narrf",
+   "text": "It was my thirteenth birthday sleepover. Five girls, one bathroom, and one stupid dare.",
+   "t0": 8.613,
+   "t1": 13.961
+  },
+  {
+   "id": "k01",
+   "who": "us_girl",
+   "text": "Lights off. Candle on. Say it three times. Unless you're scared.",
+   "t0": 14.461,
+   "t1": 19.162
+  },
+  {
+   "id": "n03",
+   "who": "us_narrf",
+   "text": "I wasn't scared. I stood in front of the mirror, with the candle shaking in my hand.",
+   "t0": 19.762,
+   "t1": 23.917
+  },
+  {
+   "id": "n04",
+   "who": "us_narrf",
+   "text": "Bloody Mary. Bloody Mary.",
+   "t0": 24.417,
+   "t1": 27.192
+  },
+  {
+   "id": "n05",
+   "who": "us_narrf",
+   "text": "Before I could say it the third time... the candle went out by itself.",
+   "t0": 28.092,
+   "t1": 31.64
+  },
+  {
+   "id": "n06",
+   "who": "us_narrf",
+   "text": "Everyone laughed. I didn't. Because in the mirror, my reflection was still holding a lit candle.",
+   "t0": 32.34,
+   "t1": 37.708
+  },
+  {
+   "id": "n07",
+   "who": "us_narrf",
+   "text": "Then my reflection smiled. I wasn't smiling.",
+   "t0": 38.408,
+   "t1": 42.347
+  },
+  {
+   "id": "m01",
+   "who": "us_ghost",
+   "text": "You didn't finish. Say it again.",
+   "t0": 43.147,
+   "t1": 45.547
+  },
+  {
+   "id": "n08",
+   "who": "us_narrf",
+   "text": "I screamed and turned on the lights. The mirror was normal. Everyone said I made it up.",
+   "t0": 46.247,
+   "t1": 51.037
+  },
+  {
+   "id": "n09",
+   "who": "us_narrf",
+   "text": "But the next morning, there were three words on the glass. Written from the other side.",
+   "t0": 51.637,
+   "t1": 55.7
+  },
+  {
+   "id": "n10",
+   "who": "us_narrf",
+   "text": "So... how many times did you just say her name in your head?",
+   "t0": 56.4,
+   "t1": 59.623
+  }
+ ]
+}
