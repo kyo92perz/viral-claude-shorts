@@ -1,4 +1,5 @@
 // <lines>
+const SA_LINES = [{"who": "sa_eu", "t0": 0.3, "t1": 7.49}, {"who": "sa_eu", "t0": 8.09, "t1": 12.787}, {"who": "sa_eu", "t0": 13.287, "t1": 18.67}, {"who": "sa_vo", "t0": 19.17, "t1": 24.296}, {"who": "sa_eu", "t0": 24.896, "t1": 30.201}, {"who": "sa_eu", "t0": 30.701, "t1": 36.672}, {"who": "sa_eu", "t0": 37.472, "t1": 42.647}, {"who": "sa_eu", "t0": 43.247, "t1": 47.77}, {"who": "sa_eu", "t0": 48.37, "t1": 54.431}, {"who": "sa_eu", "t0": 55.131, "t1": 59.402}, {"who": "sa_vo", "t0": 60.002, "t1": 64.266}, {"who": "sa_eu", "t0": 64.866, "t1": 67.821}];
 // </lines>
 // =====================================================================
 //  O SACI: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -20,7 +21,7 @@ const saClose = (k: string, s: number, bg: string, id = k) => `${bg}${saChar(k, 
 
 defineVisuals({
   // ---------------- the hook: a braided mane in frame 1 and the red cap tip behind the fence
-  hook: { bg: '#5aa8e0', html: () => bzShot(`<g transform="translate(-700 -2700) scale(2.6)">${saFarm(P_DAY, false)}${saMare('mare', 560, 1700, 1.0, true)}</g>
+  hook: { bg: '#5aa8e0', html: () => bzShot(`<g transform="translate(-539 -2710) scale(2.6)">${saFarm(P_DAY, false)}${saMare('mare', 560, 1700, 1.0, true)}</g>
       <g id="tip" transform="translate(900 1200) rotate(-20)"><path d="M0 0 Q 60 -120 150 -60 Q 110 -20 60 -10 Z" fill="#d8302a" ${bzO()}/><circle cx="150" cy="-60" r="18" fill="#d8302a" ${bzO('stroke-width="6"')}/></g>${bzParticles('dt', 'dust', 22, [0, 0, 1080, 1800], 3)}`,
       `${saSay('hk', 'NÃO DESMANCHE', 540, 1560, -4, BZ.red, '#fff', 100)}${bzVignette(0.6)}`),
     anim(tl, s, K, $) { bzHook(tl, $('#hk'), s.t0); bzParticlesGo(tl, $('#dt'), 'dust', s.t0, s.t1); tl.fromTo($('#tip'), { y: 0 }, { y: 160, duration: 0.25, ease: 'power2.in' }, K('h') + 0.6);
@@ -72,8 +73,8 @@ defineVisuals({
   shelf: { bg: '#e8d8b8', html: () => bzShot(`${saRoom(false)}${saBottle('bt', 810, 840, 0.5)}`, ''),
     anim(tl, s, K, $) { bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.25, 810, 700); } },
   // ---------------- the night, the morning
-  night: { bg: '#2a2a4a', html: () => bzShot(`${saRoom()}${saBottle('bt', 810, 840, 0.5)}${bzGlow('bg', 810, 700, 200, '#d8302a', 0.3)}<g id="lia0">${saChar('lia', 300, 1180, 0.9)}</g>`, `${saSay('fi', 'FIIIU', 760, 420, 8, '#fff', BZ.ink, 80)}${bzVignette(0.75)}`),
-    anim(tl, s, K, $) { bzFace(tl, $('#lia'), s.t0, 'closed', 'flat'); tl.set($('#lia0'), { rotation: -90, svgOrigin: '300 1180', x: 60, y: -40 }, s.t0); bzShake(tl, $('#bt'), K('a'), s.t1, 4);
+  night: { bg: '#2a2a4a', html: () => bzShot(`${saRoom()}${saBottle('bt', 810, 840, 0.5)}${bzGlow('bg', 810, 700, 200, '#d8302a', 0.3)}<g id="lia0">${saChar('lia', 620, 1130, 0.9)}</g>`, `${saSay('fi', 'FIIIU', 760, 420, 8, '#fff', BZ.ink, 80)}${bzVignette(0.75)}`),
+    anim(tl, s, K, $) { bzFace(tl, $('#lia'), s.t0, 'closed', 'flat'); tl.set($('#lia0'), { rotation: -90, svgOrigin: '620 1130' }, s.t0); bzShake(tl, $('#bt'), K('a'), s.t1, 4);
       tl.set($('#fi'), { opacity: 0 }, s.t0); bzShow(tl, $('#fi'), K('a')); bzFace(tl, $('#lia'), K('a') + 0.4, 'wide', 'o'); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 700, 900); } },
   morning: { bg: '#e8d8b8', html: () => bzShot(`${saRoom(false)}${saBottle('bt', 810, 840, 0.5, false)}<g id="cork"><rect x="560" y="1500" width="56" height="48" rx="10" fill="#c8945a" ${bzO()} transform="rotate(30 588 1524)"/></g>`, `${saSay('vz', 'VAZIA', 810, 560, -4, BZ.red, '#fff', 90)}${bzVignette(0.55)}`),
     anim(tl, s, K, $) { tl.set($('#bt .smk'), { opacity: 0 }, s.t0); tl.set($('#vz'), { opacity: 0 }, s.t0); bzPush(tl, $('#cam'), s.t0, K('c'), 1, 1.0); tl.fromTo($('#cam'), { scale: 1 }, { scale: 1.5, svgOrigin: '588 1524', duration: 0.6, ease: 'power2.inOut' }, K('c'));
