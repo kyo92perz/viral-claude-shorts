@@ -22,7 +22,7 @@ const saClose = (k: string, s: number, bg: string, id = k) => `${bg}${saChar(k, 
 defineVisuals({
   // ---------------- the hook: a braided mane in frame 1 and the red cap tip behind the fence
   hook: { bg: '#5aa8e0', html: () => bzShot(`<g transform="translate(-539 -2710) scale(2.6)">${saFarm(P_DAY, false)}${saMare('mare', 560, 1700, 1.0, true)}</g>
-      <g id="tip" transform="translate(900 1200) rotate(-20)"><path d="M0 0 Q 60 -120 150 -60 Q 110 -20 60 -10 Z" fill="#d8302a" ${bzO()}/><circle cx="150" cy="-60" r="18" fill="#d8302a" ${bzO('stroke-width="6"')}/></g>${bzParticles('dt', 'dust', 22, [0, 0, 1080, 1800], 3)}`,
+      <g id="tip" transform="translate(860 980) rotate(-20)"><path d="M0 0 Q 60 -120 150 -60 Q 110 -20 60 -10 Z" fill="#d8302a" ${bzO()}/><circle cx="150" cy="-60" r="18" fill="#d8302a" ${bzO('stroke-width="6"')}/></g>${bzParticles('dt', 'dust', 22, [0, 0, 1080, 1800], 3)}`,
       `${saSay('hk', 'NÃO DESMANCHE', 540, 1560, -4, BZ.red, '#fff', 100)}${bzVignette(0.6)}`),
     anim(tl, s, K, $) { bzHook(tl, $('#hk'), s.t0); bzParticlesGo(tl, $('#dt'), 'dust', s.t0, s.t1); tl.fromTo($('#tip'), { y: 0 }, { y: 160, duration: 0.25, ease: 'power2.in' }, K('h') + 0.6);
       bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 900); bzHandheld(tl, $('#cam'), s.t0, s.t1, 4); } },
@@ -38,7 +38,7 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#lia'), s.t0, 'dot', 'smile'); bzFace(tl, $('#lia'), K('w') - 0.4, 'wide', 'o'); bzBlink(tl, $('#lia'), s.t0, K('w') - 0.5); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 700); } },
   // ---------------- what goes wrong
   milk: { bg: '#e8d4b0', html: () => bzShot(saKitchen(), `${saSay('az', 'AZEDO', 390, 640, -6, '#7aa83a', '#fff', 80)}${saSay('vz', 'VAZIO', 740, 860, 5, BZ.red, '#fff', 80)}`),
-    anim(tl, s, K, $) { tl.fromTo($('#milk .stk'), { y: 20, opacity: 0.3 }, { y: -30, opacity: 1, duration: 0.8, yoyo: true, repeat: 5, ease: 'sine.inOut' }, s.t0); tl.set($('#az, #vz'), { opacity: 0 }, s.t0); bzShow(tl, $('#az'), s.t0 + 0.6);
+    anim(tl, s, K, $) { tl.fromTo($('#milk .stk'), { y: 20, opacity: 0.3 }, { y: -30, opacity: 1, duration: 0.8, yoyo: true, repeat: 5, ease: 'sine.inOut' }, s.t0); tl.set($('#az') + ', ' + $('#vz'), { opacity: 0 }, s.t0); bzShow(tl, $('#az'), s.t0 + 0.6);
       tl.to($('#salt'), { rotation: 160, svgOrigin: '740 1100', duration: 0.35, ease: 'back.out(2)' }, K('s')); bzShow(tl, $('#vz'), K('s') + 0.3); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08, 560, 1050); } },
   mane: { bg: '#5aa8e0', html: () => bzShot(`<g transform="translate(-560 -1900) scale(2.2)">${saFarm(P_DAY, false)}${saMare('mare', 560, 1700, 1.0)}</g>`, bzVignette(0.5)),
     anim(tl, s, K, $) { tl.to($('#mare .br'), { opacity: 1, duration: 0.15, stagger: 0.28 }, K('m') + 0.3); tl.fromTo($('#mare'), { rotation: 0 }, { rotation: -2, svgOrigin: '560 1700', duration: 0.2, yoyo: true, repeat: 3 }, K('m'));
@@ -48,7 +48,7 @@ defineVisuals({
   whirlsmall: { bg: '#5aa8e0', html: () => bzShot(`${saFarm(P_DAY)}${saWhirl('wh', 760, 1600, 0.8)}${bzParticles('dt', 'dust', 20, [400, 1000, 1080, 1700], 4)}`, ''),
     anim(tl, s, K, $) { saSpin(tl, $('#wh'), s.t0, s.t1); tl.fromTo($('#wh'), { x: 0 }, { x: -420, duration: s.t1 - s.t0, ease: 'sine.inOut' }, s.t0); bzParticlesGo(tl, $('#dt'), 'dust', s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08); } },
   teach: { bg: '#e8d4b0', html: () => bzShot(`${saKitchen().replace(/<g id="milk">[\s\S]*?<\/g><\/g>/, '').replace(/<g id="salt">[\s\S]*?<\/g>/, '')}${saChar('vo', 540, 1700, 1.3)}${saSieve('sv', 280, 1080, 0.7, 1)}${saBottle('bt', 820, 1180, 0.5)}`, ''),
-    anim(tl, s, K, $) { bzFace(tl, $('#vo'), s.t0, 'dot', 'flat'); bzPose(tl, $('#vo'), s.t0 + 0.3, { aL: 60 }, 0.3); tl.set($('#sv, #bt'), { opacity: 0 }, s.t0);
+    anim(tl, s, K, $) { bzFace(tl, $('#vo'), s.t0, 'dot', 'flat'); bzPose(tl, $('#vo'), s.t0 + 0.3, { aL: 60 }, 0.3); tl.set($('#sv') + ', ' + $('#bt'), { opacity: 0 }, s.t0);
       bzShow(tl, $('#sv'), K('p')); bzShow(tl, $('#bt'), K('g')); bzPose(tl, $('#vo'), K('g'), { aR: -60 }, 0.3); bzIdle(tl, $('#vo'), s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.06); } },
   // ---------------- the whirlwind and the sieve
   whirl: { bg: '#5aa8e0', html: () => bzShot(`${saFarm(P_DAY)}${saWhirl('wh', 900, 1700, 1.2)}${saChar('lia', 240, 1640, 1.1)}${saSieve('sv', 330, 1420, 0.5, 1)}${bzParticles('dt', 'dust', 30, [0, 900, 1080, 1800], 6)}`, ''),
@@ -56,7 +56,7 @@ defineVisuals({
       bzFace(tl, $('#lia'), s.t0, 'wide', 'flat'); bzPose(tl, $('#lia'), s.t0, { aR: -60 }, 0.01); bzShake(tl, $('#cam'), K('r'), K('r') + 1, 3); } },
   throw: { bg: '#5aa8e0', html: () => bzShot(`${saFarm(P_DAY)}${saWhirl('wh', 600, 1720, 1.2)}${saSieve('sv', 260, 1400, 0.6, 0.5)}${bzParticles('dt', 'dust', 30, [0, 900, 1080, 1800], 7)}`, bzFlash('fl', '#fff')),
     anim(tl, s, K, $) { saSpin(tl, $('#wh'), s.t0, K('p')); tl.fromTo($('#sv'), { x: 0, y: 0, rotation: 0 }, { x: 340, y: 300, rotation: 400, svgOrigin: '260 1400', duration: 0.5, ease: 'power2.in' }, K('j'));
-      bzHit(tl, $('#fl'), K('x'), 0.5); tl.to($('#wh .ring, #wh .dbit'), { opacity: 0, duration: 0.25 }, K('p')); tl.to($('#dt'), { opacity: 0, duration: 0.25 }, K('p')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 600, 1500); } },
+      bzHit(tl, $('#fl'), K('x'), 0.5); tl.to($('#wh .ring') + ', ' + $('#wh .dbit'), { opacity: 0, duration: 0.25 }, K('p')); tl.to($('#dt'), { opacity: 0, duration: 0.25 }, K('p')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 600, 1500); } },
   // ---------------- the reveal, in parts: one leg under the sieve, then the face
   under: { bg: '#c8784a', html: () => bzShot(`<g transform="translate(-540 -1700) scale(2)">${saFarm(P_DAY, false)}</g><g id="leg" opacity="0"><rect x="500" y="1120" width="80" height="330" rx="30" fill="#5a3a28" ${bzO('stroke-width="9"')}/><ellipse cx="530" cy="1450" rx="80" ry="34" fill="#5a3a28" ${bzO('stroke-width="9"')}/><rect x="470" y="1040" width="140" height="120" rx="30" fill="#c8342c" ${bzO('stroke-width="9"')}/></g>
       ${saSieve('sv', 540, 1040, 1.6, 0.4)}`, `${saSay('um', 'UMA PERNA SÓ', 540, 380, -3, '#fff', BZ.ink, 90)}${bzVignette(0.7)}`),

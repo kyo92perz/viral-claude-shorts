@@ -37,8 +37,8 @@ defineVisuals({
   arrive: { bg: '#0a0e28', html: () => bzShot(`${btParty()}${btChar('tio', 200, 1700, 0.95)}${btChar('tia', 340, 1700, 0.95)}${btChar('boto', 860, 1720, 1.05)}<g id="smell">${[0, 1, 2].map((i) => `<path d="M${780 + i * 60} 1000 q -20 -40 0 -80 q 20 -40 0 -80" stroke="#7ac8c8" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.8"/>`).join('')}</g>`,
       `${btSay('rio', 'CHEIRO DE RIO', 700, 640, 5, '#7ac8c8', BZ.ink, 70)}${bzVignette(0.6)}`),
     anim(tl, s, K, $) { btLive(tl, $, s.t0, s.t1); bzWalk(tl, $('#boto'), s.t0, K('a') + 0.8, 400, 0); bzFace(tl, $('#boto'), s.t0, 'half', 'smile'); bzFace(tl, $('#tio'), s.t0, 'closed', 'grin'); bzFace(tl, $('#tia'), s.t0, 'closed', 'grin');
-      bzFace(tl, $('#tio'), K('a') + 0.4, 'wide', 'o'); bzFace(tl, $('#tia'), K('a') + 0.5, 'wide', 'o'); tl.to($('#tio .hd, #tia .hd'), { rotation: 14, transformOrigin: '50% 90%', duration: 0.25 }, K('a') + 0.4);
-      tl.set($('#smell, #rio'), { opacity: 0 }, s.t0); tl.to($('#smell'), { opacity: 1, duration: 0.4 }, K('s') - 0.3); bzShow(tl, $('#rio'), K('s')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 820, 1100); } },
+      bzFace(tl, $('#tio'), K('a') + 0.4, 'wide', 'o'); bzFace(tl, $('#tia'), K('a') + 0.5, 'wide', 'o'); tl.to($('#tio .hd') + ', ' + $('#tia .hd'), { rotation: 14, transformOrigin: '50% 90%', duration: 0.25 }, K('a') + 0.4);
+      tl.set($('#smell') + ', ' + $('#rio'), { opacity: 0 }, s.t0); tl.to($('#smell'), { opacity: 1, duration: 0.4 }, K('s') - 0.3); bzShow(tl, $('#rio'), K('s')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 820, 1100); } },
   ask: { bg: '#0a0e28', html: () => bzShot(btClose('boto', 2.1, btParty()), bzVignette(0.6)),
     anim(tl, s, K, $) { btLive(tl, $, s.t0, s.t1); bzFace(tl, $('#boto'), s.t0, 'half', 'smile'); bzTalk(tl, $('#boto'), 'bt_boto', s.t0, s.t1, 'smile', 'open'); bzPose(tl, $('#boto'), s.t0 + 0.2, { aR: -100 }, 0.4);
       bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.1, 540, 650); } },
