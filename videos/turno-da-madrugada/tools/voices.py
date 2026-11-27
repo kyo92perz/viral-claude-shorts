@@ -139,6 +139,15 @@ VOICES = {
     "cc_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
     "cc_maria": ("pf_dora", 1.05, st(2.5)),
     "cc_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    # AMERICAN LEGENDS (canal dos EUA, em inglês; ver canais.md): narradores e papéis comuns. Episódios novos podem somar ids "us_<ep>_<papel>".
+    "us_narr": ("am_michael", 0.98, "acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=160:t=q:w=1:g=1.5"),
+    "us_narrf": ("af_heart", 1.0, "equalizer=f=220:t=q:w=1:g=1.5"),
+    "us_kid": ("am_michael", 1.05, st(3)),
+    "us_girl": ("af_bella", 1.05, st(2)),
+    "us_man": ("am_fenrir", 0.95, st(-1) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "us_woman": ("af_nicole", 1.0, st(0)),
+    "us_old": ("am_onyx", 0.9, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
+    "us_ghost": ("af_bella", 0.85, st(-3) + ",aecho=0.6:0.55:60:0.3,highpass=f=200,lowpass=f=4800"),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)
@@ -146,7 +155,7 @@ _PIPERS = {}
 
 class Pipe:
     """both engines behind one call: raw(text, voice, speed) -> (samples, sample_rate)"""
-    def __init__(self): self.k = None
+    def __init__(self): self.k = {}
     def raw(self, text, voice, speed):
         if voice.startswith("piper:"):
             from piper import PiperVoice, SynthesisConfig
@@ -155,10 +164,11 @@ class Pipe:
             v = _PIPERS[name]; cfg = SynthesisConfig(length_scale=1 / speed)
             audio = np.concatenate([c.audio_float_array for c in v.synthesize(text, syn_config=cfg)])
             return audio, v.config.sample_rate
-        if self.k is None:
+        lc = voice[0]   # the Kokoro voice prefix is its language: p (pt-BR: pf_/pm_), a (US English: af_/am_), b (UK English)
+        if lc not in self.k:
             from kokoro import KPipeline
-            self.k = KPipeline(lang_code="p", repo_id="hexgrad/Kokoro-82M")
-        return np.concatenate([np.asarray(a) for _, _, a in self.k(text, voice=voice, speed=speed)]), 24000
+            self.k[lc] = KPipeline(lang_code=lc, repo_id="hexgrad/Kokoro-82M")
+        return np.concatenate([np.asarray(a) for _, _, a in self.k[lc](text, voice=voice, speed=speed)]), 24000
 
 def load_pipe(): return Pipe()
 
@@ -171,6 +181,8 @@ def synth(pipe, text, who, out):
 HERE = os.path.dirname(os.path.abspath(__file__))
 BATCH = os.path.join(HERE, "..", "..", "..", ".claude", "skills", "diretor-de-terror", "scripts", "chatterbox-batch.py")
 REF_TEXT = "Boa noite. Eu trabalho aqui faz muito tempo, e conheço cada canto deste lugar, cada barulho e cada sombra."
+REF_TEXT_EN = "Good evening. I have worked here for a very long time, and I know every corner of this place, every sound and every shadow."
+LANG = "pt"   # script.json "lang": "pt" (default) or "en"; English voices are Kokoro af_/am_ voices
 
 def finish(raw, who, out):
     """resample, the character's effect chain and trim, shared by both engines"""
@@ -184,7 +196,7 @@ def ref_for(pipe, who, vdir):
     ref = os.path.join(vdir, f"_ref_{VOICES[who][0].replace(':', '-')}_{VOICES[who][1]}.wav")
     if not os.path.exists(ref):
         voice, speed, _ = VOICES[who]
-        audio, sr = pipe.raw(REF_TEXT, voice, speed)
+        audio, sr = pipe.raw(REF_TEXT_EN if VOICES[who][0][0] in "ab" else REF_TEXT, voice, speed)
         sf.write(ref, audio, sr)
     return ref
 
@@ -195,7 +207,7 @@ def act(jobs):
     with tempfile.TemporaryDirectory() as d:
         for k, j in enumerate(jobs): j["raw"] = os.path.join(d, f"{k}.wav")
         spec = os.path.join(d, "jobs.json")
-        json.dump([{"text": j["say"], "ref": j["ref"], "out": j["raw"], "exaggeration": j["emo"], "cfg": j["cfg"], "lang": "pt"} for j in jobs], open(spec, "w", encoding="utf8"), ensure_ascii=False)
+        json.dump([{"text": j["say"], "ref": j["ref"], "out": j["raw"], "exaggeration": j["emo"], "cfg": j["cfg"], "lang": LANG} for j in jobs], open(spec, "w", encoding="utf8"), ensure_ascii=False)
         subprocess.run([py, BATCH, spec], check=True, stdout=subprocess.DEVNULL)
         for j in jobs:
             finish(j["raw"], j["who"], j["wav"]); open(j["txt"], "w", encoding="utf8").write(j["key"])
@@ -203,6 +215,7 @@ def act(jobs):
 def main():
     root = os.path.abspath(sys.argv[1]); vdir = os.path.join(root, "voice"); os.makedirs(vdir, exist_ok=True)
     S = json.load(open(os.path.join(root, "script.json"), encoding="utf8"))
+    global LANG; LANG = S.get("lang", "pt")
     pipe = None; acted = []
     parts, t, lines = [], S.get("lead", 0.5), []
     parts.append(np.zeros(int(t * SR), dtype=np.float32))

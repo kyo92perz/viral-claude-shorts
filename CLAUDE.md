@@ -13,6 +13,10 @@ A short message is enough: "anima este audio", "make a video from this", a dragg
 
 Make it in one go: design and test the video's world first (`plan.md`, the world file and `core/world.ts`: characters with their states, sets, camera shots), then cut the audio into scenes that use it. The world test and the storyboard are your own working tools, so check them yourself, fix what's wrong and don't stop to ask for approval. Characters from existing series, movies, games, comics or brands are never drawn, not even "similar" versions: design original ones of the same genre (step 3 of `prompts/production.md`). At the end, open (or reuse) the live preview with `node core/preview.ts videos/<topic>` and deliver `final.mp4`, the preview link and the storyboard; the user asks for changes by panel number.
 
+## Os canais de lendas (BR e EUA)
+
+Há dois canais de lendas urbanas: **Lendas Urbanas BR** (português, `videos/lenda-*`, selo LENDAS DO BRASIL) e **Lendas Urbanas Estadunidense** (inglês, `videos/us-*`, selo AMERICAN LEGENDS). Quando o usuário pedir uma lenda, veja em `canais.md` para qual canal ela vai: idioma, pasta, selo, número do episódio, vozes e descrição vêm de lá. Ao terminar um episódio, atualize a linha "Episódios feitos" de `canais.md`.
+
 ## Advanced editing (Remotion)
 
 After `final.mp4`, an optional editing pass adds DIA stingers with punch zooms, a chapter bar and a subscribe pop: `node remotion/render.mjs videos/<topic>` (see `remotion/README.md`; `cd remotion && npm install` once).
