@@ -46,3 +46,4 @@ videos/*/final-*.mp4
 .DS_Store
 videos/*/final-youtube.mp4
 videos/*/mix.raw.wav
+videos/*/shorts/*.mp4
