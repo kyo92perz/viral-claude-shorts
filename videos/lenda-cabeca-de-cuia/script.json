@@ -1,0 +1,90 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "cc_eu",
+   "text": "Se o seu nome é Maria... nunca nade no rio Parnaíba. Ele tá procurando você.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "cc_eu",
+   "text": "Eu moro em Teresina, no Piauí, onde o rio Poti encontra o Parnaíba. E a minha melhor amiga se chama Maria.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "n03",
+   "who": "cc_eu",
+   "text": "Minha vó contava que ali vive o Crispim. Um pescador que bateu na própria mãe, e foi amaldiçoado por ela.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "v01",
+   "who": "cc_vo",
+   "text": "Virou um bicho de cabeça enorme, igual uma cuia. E só se liberta quando pegar sete Marias.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n04",
+   "who": "cc_eu",
+   "text": "A gente riu. Num domingo de calor, a Maria pulou no rio. Eu fiquei na margem.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "m01",
+   "who": "cc_maria",
+   "text": "Pedro, vem! A água tá uma delícia!",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n05",
+   "who": "cc_eu",
+   "text": "Aí eu vi. No meio do rio, uma cuia boiando. Grande. Rodando devagar. Indo na direção dela.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "cc_eu",
+   "text": "A cuia virou. E tinha dois olhos. Amarelos. Olhando pra Maria.",
+   "pause": 0.6,
+   "emo": 0.75
+  },
+  {
+   "id": "n07",
+   "who": "cc_eu",
+   "text": "Ela afundou de uma vez. Eu me joguei na água, agarrei o braço dela e puxei com toda a força.",
+   "pause": 0.6,
+   "emo": 0.8
+  },
+  {
+   "id": "n08",
+   "who": "cc_eu",
+   "text": "A gente chegou na areia. No tornozelo da Maria tinha cinco marcas roxas. De dedos.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n09",
+   "who": "cc_eu",
+   "text": "Dizem que ele já pegou seis Marias. Só falta uma.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n10",
+   "who": "cc_eu",
+   "text": "Qual é o nome da pessoa que tá do seu lado agora?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

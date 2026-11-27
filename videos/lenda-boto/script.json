@@ -1,0 +1,83 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "bt_eu",
+   "text": "Se um moço de terno branco aparecer na festa... e não tirar o chapéu nem pra dançar... fica longe dele.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "bt_eu",
+   "text": "Foi na festa de São João, numa vila na beira do rio Amazonas. Minha prima Rosa tinha dezessete anos.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "n03",
+   "who": "bt_eu",
+   "text": "Perto da meia-noite, chegou um moço que ninguém conhecia. Terno branco, chapéu branco, e um cheiro de rio.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "b01",
+   "who": "bt_boto",
+   "text": "Me concede essa dança, moça bonita?",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "n04",
+   "who": "bt_eu",
+   "text": "A Rosa dançou com ele a noite toda. E ele não tirou o chapéu nenhuma vez. Nem quando suava.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "r01",
+   "who": "bt_rosa",
+   "text": "Davi, eu vou ali na beira do rio com ele. Já volto.",
+   "pause": 0.6,
+   "emo": 0.5
+  },
+  {
+   "id": "n05",
+   "who": "bt_eu",
+   "text": "Eu fui atrás, escondido. Na beira do rio, um vento forte levou o chapéu dele.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "bt_eu",
+   "text": "No alto da cabeça dele... tinha um furo. Um buraco que abria e fechava. Respirando.",
+   "pause": 0.7,
+   "emo": 0.75
+  },
+  {
+   "id": "n07",
+   "who": "bt_eu",
+   "text": "Ele me viu. Sorriu. E pulou no rio. Na água escura, só subiu uma barbatana cor-de-rosa.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n08",
+   "who": "bt_eu",
+   "text": "A Rosa ficou parada na margem, de olho vidrado. Desde aquele dia, toda noite de lua cheia, ela vai sozinha pro rio.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n09",
+   "who": "bt_eu",
+   "text": "Então, se um moço de chapéu te chamar pra dançar... olha a cabeça dele.",
+   "pause": 0.4,
+   "emo": 0.65
+  }
+ ]
+}

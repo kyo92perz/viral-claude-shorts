@@ -1,0 +1,90 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "sa_eu",
+   "text": "Se a crina do cavalo amanhecer toda trançada... não desmancha. É o Saci avisando que mora ali.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "sa_eu",
+   "text": "Nas férias, eu fui pro sítio do meu vô, no interior de Minas. E tudo começou a dar errado.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "n03",
+   "who": "sa_eu",
+   "text": "O leite azedava. O sal sumia do pote. E toda manhã, a crina da égua amanhecia cheia de trancinhas.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "v01",
+   "who": "sa_vo",
+   "text": "Isso é coisa do Saci, menina. Ele anda dentro do redemoinho.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "sa_eu",
+   "text": "Meu vô ensinou: joga uma peneira no meio do redemoinho, e prende o Saci numa garrafa com rolha.",
+   "pause": 0.5,
+   "emo": 0.5
+  },
+  {
+   "id": "n05",
+   "who": "sa_eu",
+   "text": "No outro dia, um redemoinho de poeira atravessou o terreiro. Eu joguei a peneira. E o vento... parou.",
+   "pause": 0.8,
+   "emo": 0.65
+  },
+  {
+   "id": "n06",
+   "who": "sa_eu",
+   "text": "Embaixo da peneira tinha um menino de uma perna só. Gorro vermelho. Olhando pra mim. Rindo.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n07",
+   "who": "sa_eu",
+   "text": "Ele virou fumaça e entrou na garrafa. Eu tampei com a rolha e guardei no meu quarto.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n08",
+   "who": "sa_eu",
+   "text": "Naquela noite, a garrafa não parava de assobiar. E de manhã... a rolha tava no chão. A garrafa, vazia.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n09",
+   "who": "sa_eu",
+   "text": "Eu corri pro espelho. Meu cabelo tava todo trançado. Trancinha por trancinha.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "v02",
+   "who": "sa_vo",
+   "text": "Agora ele gostou de você. Não vai embora nunca mais.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n10",
+   "who": "sa_eu",
+   "text": "E você? Já viu um redemoinho passar bem do seu lado?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

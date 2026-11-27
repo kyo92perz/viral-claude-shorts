@@ -128,6 +128,17 @@ VOICES = {
     "im_ger": ("piper:cadu", 0.95, st(-1) + ",highpass=f=300,lowpass=f=3400"),
     "im_rep": ("pf_dora", 1.08, st(1.5) + ",equalizer=f=2500:t=q:w=1:g=2"),
     "ap_doc": ("piper:cadu", 0.92, st(-1) + ",highpass=f=200,lowpass=f=5000,aecho=0.6:0.4:40:0.15"),
+    # LENDAS EP.13 O SACI: Lia (12, narra) e o vô Zé
+    "sa_eu": ("pf_dora", 1.0, st(2) + ",equalizer=f=220:t=q:w=1:g=1.5"),
+    "sa_vo": ("pm_santa", 0.92, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
+    # LENDAS EP.14 O BOTO: Davi (narra), a prima Rosa, o moço de branco
+    "bt_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "bt_rosa": ("pf_dora", 1.0, st(1)),
+    "bt_boto": ("piper:cadu", 0.9, st(-1.5) + ",aecho=0.7:0.5:60:0.2,lowpass=f=6000"),
+    # LENDAS EP.15 CABEÇA DE CUIA: Pedro (narra), Maria, a vó
+    "cc_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "cc_maria": ("pf_dora", 1.05, st(2.5)),
+    "cc_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
 }
 
 PIPER_DIR = os.environ.get("PIPER_VOICES", os.path.expanduser("~/.piper-voices"))   # pt_BR-<name>-medium.onnx (+ .json)
