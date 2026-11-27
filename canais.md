@@ -8,7 +8,7 @@ Cada pedido do usuário vai para um canal só. Antes de escrever, veja qual é o
 | Idioma do vídeo | português do Brasil | inglês (dos EUA); a conversa com o usuário continua em português |
 | Selo no vídeo e na capa | `LENDAS DO BRASIL` + `EP.N` | `AMERICAN LEGENDS` + `EP.N` (nome provisório: troque aqui e no `badge` se o usuário escolher outro) |
 | Pasta | `videos/lenda-<nome>` | `videos/us-<name>` (nome em inglês, kebab-case) |
-| Episódios feitos | EP.1–15 (último: EP.15 O Cabeça de Cuia) | nenhum ainda (o primeiro é EP.1) |
+| Episódios feitos | EP.1–15 (último: EP.15 O Cabeça de Cuia) | EP.1–3 (último: EP.3 Resurrection Mary) |
 | Vozes (`videos/turno-da-madrugada/tools/voices.py`) | Kokoro `pf_`/`pm_` + Piper pt_BR, ids `<pref>_eu`, `<pref>_vo`... | Kokoro `af_`/`am_` (inglês dos EUA), ids `us_narr`, `us_narrf`, `us_kid`, `us_girl`, `us_man`, `us_woman`, `us_old`, `us_ghost` (ou novos `us_<ep>_<papel>`) |
 | `script.json` | normal (`lang` é `pt` por padrão) | com `"lang": "en"` (a atuação do Chatterbox fala inglês) |
 | Transcrição | `core/transcribe.py ... --language pt` | `core/transcribe.py ... --language en` |
