@@ -1,0 +1,89 @@
+{
+ "duration": 65.091,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_man",
+   "text": "If a girl in a white dress asks you for a ride on Archer Avenue... don't stop. Just don't.",
+   "t0": 0.3,
+   "t1": 6.087
+  },
+  {
+   "id": "n02",
+   "who": "us_man",
+   "text": "Chicago, winter, two in the morning. I was driving home from a dance on Archer Avenue.",
+   "t0": 6.687,
+   "t1": 12.732
+  },
+  {
+   "id": "n03",
+   "who": "us_man",
+   "text": "Then I saw her. On the side of the road, in the snow. A girl in a white dress. No coat.",
+   "t0": 13.232,
+   "t1": 19.193
+  },
+  {
+   "id": "m01",
+   "who": "us_ghost",
+   "text": "Can you take me home? It's not far.",
+   "t0": 19.793,
+   "t1": 22.357
+  },
+  {
+   "id": "n04",
+   "who": "us_man",
+   "text": "She got in. Her hand touched mine. It was cold. Ice cold.",
+   "t0": 22.957,
+   "t1": 26.824
+  },
+  {
+   "id": "n05",
+   "who": "us_man",
+   "text": "She didn't talk. She just stared out the window. And she smelled like flowers. Old flowers.",
+   "t0": 27.424,
+   "t1": 33.0
+  },
+  {
+   "id": "m02",
+   "who": "us_ghost",
+   "text": "Stop here. This is where I live.",
+   "t0": 33.6,
+   "t1": 36.49
+  },
+  {
+   "id": "n06",
+   "who": "us_man",
+   "text": "We were in front of the gates of Resurrection Cemetery.",
+   "t0": 37.29,
+   "t1": 40.571
+  },
+  {
+   "id": "n07",
+   "who": "us_man",
+   "text": "I turned to ask what she meant... and the seat was empty. The door was still closed.",
+   "t0": 41.271,
+   "t1": 46.045
+  },
+  {
+   "id": "n08",
+   "who": "us_man",
+   "text": "Through the bars of the gate, I saw a white dress, walking between the graves.",
+   "t0": 46.745,
+   "t1": 51.106
+  },
+  {
+   "id": "n09",
+   "who": "us_man",
+   "text": "They say her name is Mary. She died on her way home from a dance, almost a hundred years ago. And she's still trying to get home.",
+   "t0": 51.706,
+   "t1": 58.823
+  },
+  {
+   "id": "n10",
+   "who": "us_man",
+   "text": "So if a girl in white waves at you on Archer Avenue... keep driving.",
+   "t0": 59.423,
+   "t1": 63.491
+  }
+ ]
+}

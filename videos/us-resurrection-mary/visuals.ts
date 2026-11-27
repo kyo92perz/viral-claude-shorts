@@ -1,4 +1,5 @@
 // <lines>
+const RM_LINES = [{"who": "us_man", "t0": 0.3, "t1": 6.087}, {"who": "us_man", "t0": 6.687, "t1": 12.732}, {"who": "us_man", "t0": 13.232, "t1": 19.193}, {"who": "us_ghost", "t0": 19.793, "t1": 22.357}, {"who": "us_man", "t0": 22.957, "t1": 26.824}, {"who": "us_man", "t0": 27.424, "t1": 33.0}, {"who": "us_ghost", "t0": 33.6, "t1": 36.49}, {"who": "us_man", "t0": 37.29, "t1": 40.571}, {"who": "us_man", "t0": 41.271, "t1": 46.045}, {"who": "us_man", "t0": 46.745, "t1": 51.106}, {"who": "us_man", "t0": 51.706, "t1": 58.823}, {"who": "us_man", "t0": 59.423, "t1": 63.491}];
 // </lines>
 // =====================================================================
 //  RESURRECTION MARY: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -39,12 +40,12 @@ defineVisuals({
   smell: { bg: '#14161e', html: () => bzShot(`${rmInside('both')}${bzParticles('pt', 'spores', 22, [560, 700, 1080, 1400], 3)}`, `${rmSay('of', 'OLD FLOWERS', 780, 600, 4, '#fff', BZ.ink, 80)}${bzVignette(0.6)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#nick'), s.t0, 'half', 'flat'); bzFace(tl, $('#mary'), s.t0, 'half', 'flat'); tl.to($('#mary .hd'), { rotation: 20, transformOrigin: '50% 90%', duration: 0.6 }, s.t0 + 0.3);
       bzParticlesGo(tl, $('#pt'), 'spores', s.t0, s.t1); tl.set($('#of'), { opacity: 0 }, s.t0); bzShow(tl, $('#of'), K('f')); rmWipe(tl, $, s.t0, s.t1); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.08, 800, 1000); } },
-  stop: { bg: '#14161e', html: () => bzShot(rmClose('mary', 2.2, `<rect width="1080" height="1920" fill="#14161e"/><rect y="1440" width="1080" height="500" fill="#6a2a2a"/>`), `${bzGlow('bl', 540, 700, 420, '#9ad8ff', 0.2)}${bzVignette(0.8)}`),
+  stop: { bg: '#14161e', html: () => bzShot(rmClose('mary', 2.2, `<rect width="1080" height="1920" fill="#14161e"/>`) + `<rect x="-20" y="1440" width="1120" height="520" fill="#6a2a2a" stroke="#2b2433" stroke-width="7"/><path d="M80 1460 h920" stroke="#8a3a3a" stroke-width="14"/>`, `${bzGlow('bl', 540, 700, 420, '#9ad8ff', 0.2)}${bzVignette(0.8)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#mary'), s.t0, 'dead', 'flat'); bzTalk(tl, $('#mary'), 'us_ghost', s.t0, s.t1, 'flat', 'o'); tl.fromTo($('#mary .hd'), { rotation: 25, transformOrigin: '50% 90%' }, { rotation: 0, duration: 0.8 }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 650); } },
   gates: { bg: '#060812', html: () => bzShot(`${rmGates()}${rmSnow('sn', 6)}`, `${bzFlash('fl', '#9ad8ff')}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { bzParticlesGo(tl, $('#sn'), 'dust', s.t0, s.t1); tl.fromTo($('#cam'), { scale: 1, svgOrigin: '540 420' }, { scale: 1.05, duration: K('g') - s.t0 }, s.t0); tl.to($('#cam'), { scale: 1.5, svgOrigin: '540 420', duration: 0.4, ease: 'power3.out' }, K('g')); bzHit(tl, $('#fl'), K('g'), 0.35); } },
   // ---------------- the empty seat
-  turn: { bg: '#14161e', html: () => bzShot(rmClose('nick', 2.2, `<rect width="1080" height="1920" fill="#14161e"/><rect y="1440" width="1080" height="500" fill="#6a2a2a"/>`), bzVignette(0.7)),
+  turn: { bg: '#14161e', html: () => bzShot(rmClose('nick', 2.2, `<rect width="1080" height="1920" fill="#14161e"/>`) + `<rect x="-20" y="1440" width="1120" height="520" fill="#6a2a2a" stroke="#2b2433" stroke-width="7"/><path d="M80 1460 h920" stroke="#8a3a3a" stroke-width="14"/>`, bzVignette(0.7)),
     anim(tl, s, K, $) { bzFace(tl, $('#nick'), s.t0, 'dot', 'flat'); tl.to($('#nick .hd'), { rotation: 18, transformOrigin: '50% 90%', duration: 0.3 }, s.t0 + 0.6); bzFace(tl, $('#nick'), K('e'), 'wide', 'open'); bzShake(tl, $('#cam'), K('e'), K('e') + 0.4, 5); } },
   empty: { bg: '#14161e', html: () => bzShot(`${rmInside('empty', true)}<g id="door"><rect x="1000" y="900" width="80" height="1040" fill="#2a2a34" ${bzO()}/><rect x="1010" y="1300" width="30" height="80" rx="10" fill="#8a8a94"/></g>`, `${rmSay('cl', 'DOOR CLOSED', 760, 640, 4, '#fff', BZ.ink, 80)}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { tl.set($('#cl'), { opacity: 0 }, s.t0); bzShow(tl, $('#cl'), s.t0 + 0.8); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 800, 1400); } },

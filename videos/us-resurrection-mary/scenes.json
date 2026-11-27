@@ -1,0 +1,290 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "AMERICAN LEGENDS",
+  "ep": "EP.3"
+ },
+ "music": {
+  "bpm": 64,
+  "key": "B"
+ },
+ "notes": "RESURRECTION MARY, Brasil Z toon look, English: Archer Avenue in Chicago on a snowy night, a girl in a white dress at the roadside, the inside of the car, her ice-cold hand, the cemetery gates, the empty seat, the white dress walking between the graves. Threat colour cold pale blue. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 12,
+     "sfx": "sting",
+     "t": 3.58
+    }
+   ],
+   "t0": 0,
+   "t1": 4.745
+  },
+  {
+   "id": "title",
+   "from": 15,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 17,
+     "sfx": "impact",
+     "t": 5.406
+    }
+   ],
+   "t0": 4.745,
+   "t1": 6.387
+  },
+  {
+   "id": "drive",
+   "from": 19,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "hum"
+   ],
+   "t0": 6.387,
+   "t1": 13.032
+  },
+  {
+   "id": "see",
+   "from": 35,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 37,
+     "sfx": "hit",
+     "t": 13.742
+    },
+    {
+     "id": "g",
+     "at": 48,
+     "sfx": "sting",
+     "t": 16.898
+    }
+   ],
+   "t0": 13.032,
+   "t1": 19.593
+  },
+  {
+   "id": "ask",
+   "from": 56,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "t0": 19.593,
+   "t1": 22.757
+  },
+  {
+   "id": "cold",
+   "from": 64,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 73,
+     "sfx": "sting",
+     "t": 25.825
+    }
+   ],
+   "t0": 22.757,
+   "t1": 27.224
+  },
+  {
+   "id": "smell",
+   "from": 76,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 89,
+     "sfx": "shimmer",
+     "t": 31.738
+    }
+   ],
+   "t0": 27.224,
+   "t1": 33.3
+  },
+  {
+   "id": "stop",
+   "from": 92,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 33.3,
+   "t1": 37.09
+  },
+  {
+   "id": "gates",
+   "from": 99,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 107,
+     "sfx": "impact",
+     "t": 39.313
+    }
+   ],
+   "t0": 37.09,
+   "t1": 41.071
+  },
+  {
+   "id": "turn",
+   "from": 109,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "hum"
+   ],
+   "keys": [
+    {
+     "id": "e",
+     "at": 118,
+     "sfx": "sting",
+     "t": 43.618
+    }
+   ],
+   "t0": 41.071,
+   "t1": 44.528
+  },
+  {
+   "id": "empty",
+   "from": 121,
+   "type": "object",
+   "mood": "silence",
+   "t0": 44.528,
+   "t1": 46.445
+  },
+  {
+   "id": "walk",
+   "from": 126,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 135,
+     "sfx": "shimmer",
+     "t": 48.912
+    }
+   ],
+   "t0": 46.445,
+   "t1": 51.406
+  },
+  {
+   "id": "legend",
+   "from": 141,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "y",
+     "at": 156,
+     "sfx": "hit",
+     "t": 55.38
+    }
+   ],
+   "t0": 51.406,
+   "t1": 56.916
+  },
+  {
+   "id": "home",
+   "from": 161,
+   "type": "object",
+   "mood": "sad",
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "t0": 56.916,
+   "t1": 59.223
+  },
+  {
+   "id": "end",
+   "from": 168,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 174,
+     "sfx": "sting",
+     "t": 60.835
+    },
+    {
+     "id": "end",
+     "at": 181,
+     "dt": 0.71,
+     "sfx": "impact",
+     "t": 63.721
+    }
+   ],
+   "t0": 59.223,
+   "t1": 65.091
+  }
+ ],
+ "duration": 65.091
+}
