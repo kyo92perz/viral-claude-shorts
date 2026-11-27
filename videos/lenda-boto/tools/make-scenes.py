@@ -9,7 +9,7 @@ D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'si
 N, CR = ['night'], ['crowd', 'night']
 SHOTS = [
  ('hook', 'n01', 0, None, T, CR, [('h', 'n01', 13, 0, 'sting')]),
- ('title', 'n01', 17, None, D, N, [('t', 'n01', 17, 0, 'splash')]),
+ ('title', 'n01', 16, None, D, N, [('t', 'n01', 17, 0.05, 'splash')]),
  ('party', 'n02', 0, -0.3, P, CR, [('r', 'n02', 15, 0, 'pop')]),
  ('arrive', 'n03', 0, -0.2, T, CR, [('a', 'n03', 3, 0, 'off'), ('s', 'n03', 15, 0, 'sting')]),
  ('ask', 'b01', 0, -0.2, D, N, []),
@@ -18,9 +18,9 @@ SHOTS = [
  ('follow', 'n05', 0, -0.2, T, N, [('w', 'n05', 9, 0, 'whoosh')]),
  ('hat', 'n05', 11, None, E, N, [('f', 'n05', 13, 0, 'whoosh')]),
  ('hole', 'n06', 0, -0.2, S0, ['drone'], [('h', 'n06', 7, 0, 'sting'), ('b', 'n06', 14, 0, 'heart')]),
- ('saw', 'n07', 0, -0.2, D, ['drone'], [('s', 'n07', 3, 0, 'sting')]),
+ ('saw', 'n07', 0, -0.2, D, ['drone'], [('s', 'n07', 2, 0, 'sting')]),
  ('jump', 'n07', 4, None, E, N, [('j', 'n07', 6, 0, 'splash')]),
- ('fin', 'n07', 8, None, D, N, [('f', 'n07', 14, 0, 'shimmer')]),
+ ('fin', 'n07', 10, None, D, N, [('f', 'n07', 14, 0, 'shimmer')]),
  ('glazed', 'n08', 0, -0.3, SAD, N, []),
  ('moon', 'n08', 9, None, D, N, [('m', 'n08', 15, 0, 'sting')]),
  ('end', 'n09', 0, -0.2, D, CR, [('l', 'n09', 10, 0, 'impact'), ('end', 'n09', 99, 0.25, 'splash')]),
