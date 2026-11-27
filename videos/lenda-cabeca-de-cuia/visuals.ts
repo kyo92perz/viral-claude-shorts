@@ -17,7 +17,7 @@ const ccSwim = (x: number, y: number, s = 1) => `<g id="swim">${ccChar('maria', 
 
 defineVisuals({
   // ---------------- the hook: yellow eyes just above the water, frame 1
-  hook: { bg: '#3a5a5a', html: () => bzShot(`${ccRiver(CC_PAL.dusk, false)}${ccHead('cc', 540, 1180, 1.6)}${ccWater(1150)}`, `${ccSay('hk', 'SE VOCÊ É MARIA...', 540, 1560, -4, BZ.yellow, BZ.ink, 92)}${bzVignette(0.65)}`),
+  hook: { bg: '#3a5a5a', html: () => bzShot(`${ccRiver(CC_PAL.dusk, false)}${ccHead('cc', 540, 1050, 1.6)}${ccWater(1150)}`, `${ccSay('hk', 'SE VOCÊ É MARIA...', 540, 1560, -4, BZ.yellow, BZ.ink, 92)}${bzVignette(0.65)}`),
     anim(tl, s, K, $) { bzHook(tl, $('#hk'), s.t0); ccWaves(tl, $, s.t0, s.t1); tl.fromTo($('#cc'), { y: 60 }, { y: 0, duration: s.t1 - s.t0, ease: 'sine.out' }, s.t0);
       tl.fromTo($('#cc .eyes'), { scaleY: 1, transformOrigin: '50% 50%' }, { scaleY: 0.1, duration: 0.08, yoyo: true, repeat: 1 }, K('h')); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 1100); } },
   title: { bg: '#3a5a5a', html: () => bzShot(`${ccRiver(CC_PAL.dusk)}${ccDome('dm', 640, 1160, 0.55)}`, `${ccSay('tt', 'O CABEÇA DE CUIA', 540, 380, -4, BZ.yellow, BZ.ink, 110)}${bzFlash('fl', '#ffd23a')}`),
@@ -79,6 +79,6 @@ defineVisuals({
     anim(tl, s, K, $) { ccWaves(tl, $, s.t0, s.t1); for (let i = 0; i < 7; i++) tl.from($(`#seven .m${i}`), { scale: 0, transformOrigin: '50% 50%', duration: 0.2 }, s.t0 + 0.3 + i * 0.15); bzPop(tl, $('#seven .m6'), K('u'));
       tl.fromTo($('#dm'), { rotation: -4 }, { rotation: 4, svgOrigin: '540 1150', duration: 1.2, yoyo: true, repeat: 3, ease: 'sine.inOut' }, s.t0); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 1150); } },
   // ---------------- the end: the eyes rise right behind you (loops into the hook)
-  end: { bg: '#3a5a5a', html: () => bzShot(`${ccRiver(CC_PAL.dusk, false)}${ccHead('cc', 540, 1180, 1.6, false)}${ccWater(1150)}`, bzVignette(0.75)),
-    anim(tl, s, K, $) { ccWaves(tl, $, s.t0, s.t1); tl.fromTo($('#cc'), { y: 300 }, { y: 0, duration: s.t1 - s.t0, ease: 'power1.out' }, s.t0); tl.to($('#cc .eyes'), { opacity: 1, duration: 0.1 }, K('end') - 0.3); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 1100); } },
+  end: { bg: '#3a5a5a', html: () => bzShot(`${ccRiver(CC_PAL.dusk, false)}${ccHead('cc', 540, 1050, 1.6, false)}${ccWater(1150)}`, bzVignette(0.75)),
+    anim(tl, s, K, $) { ccWaves(tl, $, s.t0, s.t1); tl.fromTo($('#cc'), { y: 300 }, { y: 0, duration: s.t1 - s.t0, ease: 'power1.out' }, s.t0); tl.to($('#cc .eyes'), { opacity: 1, duration: 0.1 }, s.t0 + (s.t1 - s.t0) * 0.6); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 1100); } },
 });
