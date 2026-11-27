@@ -1,4 +1,5 @@
 // <lines>
+const JD_LINES = [{"who": "us_narr", "t0": 0.3, "t1": 6.163}, {"who": "us_narr", "t0": 6.763, "t1": 14.04}, {"who": "us_man", "t0": 14.54, "t1": 20.073}, {"who": "us_narr", "t0": 20.673, "t1": 24.626}, {"who": "us_narr", "t0": 25.126, "t1": 30.52}, {"who": "us_narr", "t0": 31.32, "t1": 36.1}, {"who": "us_narr", "t0": 36.6, "t1": 43.998}, {"who": "us_narr", "t0": 44.598, "t1": 47.62}, {"who": "us_man", "t0": 48.32, "t1": 51.624}, {"who": "us_narr", "t0": 52.224, "t1": 57.848}, {"who": "us_narr", "t0": 58.448, "t1": 64.489}, {"who": "us_narr", "t0": 65.189, "t1": 70.335}];
 // </lines>
 // =====================================================================
 //  THE JERSEY DEVIL: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -48,7 +49,7 @@ defineVisuals({
       tl.to($('#dk'), { opacity: 0.2, duration: 0.3 }, K('h')); tl.fromTo($('#cam'), { x: 0, y: 0 }, { x: -60, y: 260, duration: 0.4 }, K('h') - 0.2);
       tl.to($('#jd .body') + ', ' + $('#jd .tail'), { opacity: 1, duration: 0.2 }, K('t')); tl.to($('#cam'), { x: -200, y: 160, duration: 0.4 }, K('t') - 0.2);
       tl.to($('#jd .wingL') + ', ' + $('#jd .wingR'), { opacity: 1, duration: 0.2 }, K('w')); tl.to($('#cam'), { x: 0, y: 0, scale: 0.85, svgOrigin: '540 900', duration: 0.5 }, K('w') - 0.2); jdFlap(tl, $('#jd'), K('w'), s.t1, 0.5); } },
-  head: { bg: '#060a1a', html: () => bzShot(`${jdWoods(7, false)}<g transform="translate(-160 -150)">${jdDevil('jd', 640, 2300, 2.4)}</g>`, `${bzFlash('fl', '#c8201a')}${bzVignette(0.75)}`),
+  head: { bg: '#060a1a', html: () => bzShot(`${jdWoods(7, false)}<g transform="translate(80 -150)">${jdDevil('jd', 640, 2300, 2.4)}</g>`, `${bzFlash('fl', '#c8201a')}${bzVignette(0.75)}`),
     anim(tl, s, K, $) { tl.set($('#jd .eyes'), { opacity: 0 }, s.t0); tl.fromTo($('#cam'), { y: 400 }, { y: 0, duration: K('h') - s.t0 + 0.6, ease: 'power1.inOut' }, s.t0); tl.to($('#jd .eyes'), { opacity: 1, duration: 0.08 }, K('e'));
       bzHit(tl, $('#fl'), K('e'), 0.4); tl.to($('#cam'), { scale: 1.3, svgOrigin: '500 800', duration: 0.3, ease: 'power3.out' }, K('e')); jdFlap(tl, $('#jd'), s.t0, s.t1, 0.6); } },
   inside: { bg: '#060a1a', html: () => bzShot(jdClose('ray', 2.2, `${jdWoods(8)}`), `${bzGlow('fl2', 760, 1200, 300, '#fff8d8', 0.3)}${bzVignette(0.7)}`),

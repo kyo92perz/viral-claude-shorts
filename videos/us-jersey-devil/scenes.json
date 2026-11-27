@@ -1,0 +1,320 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "AMERICAN LEGENDS",
+  "ep": "EP.2"
+ },
+ "music": {
+  "bpm": 72,
+  "key": "E"
+ },
+ "notes": "THE JERSEY DEVIL, Brasil Z toon look, English: a cabin in the snowy Pine Barrens at night, the dog growling at the window, a scream, the flashlight on the shed roof revealing hooves, tail, wings and a horse head with red eyes, hoof prints on the roof in the morning. Threat colour red. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 5,
+     "sfx": "scream",
+     "t": 1.696
+    }
+   ],
+   "t0": 0,
+   "t1": 5.066
+  },
+  {
+   "id": "title",
+   "from": 15,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 17,
+     "sfx": "impact",
+     "t": 5.605
+    }
+   ],
+   "t0": 5.066,
+   "t1": 6.463
+  },
+  {
+   "id": "cabin",
+   "from": 19,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "n",
+     "at": 37,
+     "sfx": "pop",
+     "t": 13.285
+    }
+   ],
+   "t0": 6.463,
+   "t1": 14.34
+  },
+  {
+   "id": "ray",
+   "from": 39,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "w",
+     "at": 52,
+     "sfx": "whoosh",
+     "t": 18.292
+    }
+   ],
+   "t0": 14.34,
+   "t1": 20.473
+  },
+  {
+   "id": "dog",
+   "from": 58,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 67,
+     "sfx": "growl",
+     "t": 23.334
+    }
+   ],
+   "t0": 20.473,
+   "t1": 24.826
+  },
+  {
+   "id": "scream",
+   "from": 71,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 76,
+     "sfx": "scream",
+     "t": 26.783
+    }
+   ],
+   "t0": 24.826,
+   "t1": 31.12
+  },
+  {
+   "id": "flash",
+   "from": 85,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 89,
+     "sfx": "click",
+     "t": 32.728
+    }
+   ],
+   "t0": 31.12,
+   "t1": 36.4
+  },
+  {
+   "id": "parts",
+   "from": 98,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 108,
+     "sfx": "thud",
+     "t": 40.148
+    },
+    {
+     "id": "t",
+     "at": 112,
+     "sfx": "whoosh",
+     "t": 41.554
+    },
+    {
+     "id": "w",
+     "at": 114,
+     "sfx": "whoosh",
+     "t": 42.291
+    }
+   ],
+   "t0": 36.4,
+   "t1": 44.298
+  },
+  {
+   "id": "head",
+   "from": 119,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 123,
+     "sfx": "sting",
+     "t": 45.615
+    },
+    {
+     "id": "e",
+     "at": 128,
+     "sfx": "impact",
+     "t": 47.022
+    }
+   ],
+   "t0": 44.298,
+   "t1": 48.22
+  },
+  {
+   "id": "inside",
+   "from": 130,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.1,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 133,
+     "sfx": "thud",
+     "t": 50.072
+    }
+   ],
+   "t0": 48.22,
+   "t1": 52.024
+  },
+  {
+   "id": "fly",
+   "from": 136,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 137,
+     "sfx": "boom",
+     "t": 52.429
+    },
+    {
+     "id": "w",
+     "at": 148,
+     "sfx": "whoosh",
+     "t": 55.915
+    }
+   ],
+   "t0": 52.024,
+   "t1": 58.148
+  },
+  {
+   "id": "roof",
+   "from": 154,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 159,
+     "sfx": "tick",
+     "t": 60.205
+    },
+    {
+     "id": "c",
+     "at": 171,
+     "sfx": "sting",
+     "t": 63.965
+    }
+   ],
+   "t0": 58.148,
+   "t1": 64.989
+  },
+  {
+   "id": "end",
+   "from": 172,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 187,
+     "sfx": "scream",
+     "t": 69.225
+    },
+    {
+     "id": "end",
+     "at": 189,
+     "dt": 0.636,
+     "sfx": "impact",
+     "t": 70.565
+    }
+   ],
+   "t0": 64.989,
+   "t1": 71.935
+  }
+ ],
+ "duration": 71.935
+}
