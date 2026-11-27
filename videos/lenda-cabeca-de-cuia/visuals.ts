@@ -1,4 +1,5 @@
 // <lines>
+const CC_LINES = [{"who": "cc_eu", "t0": 0.3, "t1": 6.93}, {"who": "cc_eu", "t0": 7.53, "t1": 13.897}, {"who": "cc_eu", "t0": 14.397, "t1": 20.102}, {"who": "cc_vo", "t0": 20.602, "t1": 27.051}, {"who": "cc_eu", "t0": 27.651, "t1": 32.384}, {"who": "cc_maria", "t0": 32.884, "t1": 35.291}, {"who": "cc_eu", "t0": 35.891, "t1": 43.295}, {"who": "cc_eu", "t0": 44.095, "t1": 47.967}, {"who": "cc_eu", "t0": 48.567, "t1": 54.058}, {"who": "cc_eu", "t0": 54.658, "t1": 59.6}, {"who": "cc_eu", "t0": 60.3, "t1": 63.667}, {"who": "cc_eu", "t0": 64.367, "t1": 67.278}];
 // </lines>
 // =====================================================================
 //  O CABEÇA DE CUIA: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.

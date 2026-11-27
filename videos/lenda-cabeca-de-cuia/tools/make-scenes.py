@@ -9,10 +9,10 @@ D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'si
 W, N = ['wind'], ['night']
 SHOTS = [
  ('hook', 'n01', 0, None, T, W, [('h', 'n01', 5, 0, 'sting')]),
- ('title', 'n01', 11, None, D, ['drone'], [('t', 'n01', 11, 0, 'impact')]),
- ('city', 'n02', 0, -0.3, C, W, [('m', 'n02', 20, 0, 'pop')]),
- ('vo', 'n03', 0, -0.2, T, N, [('c', 'n03', 7, 0, 'hit')]),
- ('crispim', 'n03', 8, None, D, ['drone'], [('b', 'n03', 11, 0, 'thud'), ('a', 'n03', 17, 0, 'sting')]),
+ ('title', 'n01', 11, None, D, ['drone'], [('t', 'n01', 11, 0.1, 'impact')]),
+ ('city', 'n02', 0, -0.3, C, W, [('m', 'n02', 19, 0, 'pop')]),
+ ('vo', 'n03', 0, -0.2, T, N, [('c', 'n03', 6, 0, 'hit')]),
+ ('crispim', 'n03', 9, None, D, ['drone'], [('b', 'n03', 11, 0, 'thud'), ('a', 'n03', 17, 0, 'sting')]),
  ('curse', 'v01', 0, -0.2, D, ['drone'], [('c', 'v01', 4, 0, 'impact'), ('n', 'v01', 15, 0, 'tick')]),
  ('laugh', 'n04', 0, -0.2, P, W, [('j', 'n04', 9, 0, 'splash')]),
  ('vem', 'm01', 0, -0.2, P, W, []),

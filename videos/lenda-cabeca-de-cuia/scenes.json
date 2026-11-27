@@ -1,0 +1,348 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.15"
+ },
+ "music": {
+  "bpm": 66,
+  "key": "C"
+ },
+ "notes": "O CABEÇA DE CUIA, Brasil Z toon look: the meeting of the Poti and the Parnaíba rivers in Teresina (sand bank, two water colours, carnaúba palms), the grandmother's porch, the floating gourd that turns out to be a head with yellow eyes, underwater, the five purple finger marks. The only threat colour is yellow. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 5,
+     "sfx": "sting",
+     "t": 1.843
+    }
+   ],
+   "t0": 0,
+   "t1": 4.865
+  },
+  {
+   "id": "title",
+   "from": 11,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 11,
+     "dt": 0.1,
+     "sfx": "impact",
+     "t": 4.945
+    }
+   ],
+   "t0": 4.865,
+   "t1": 7.23
+  },
+  {
+   "id": "city",
+   "from": 15,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 34,
+     "sfx": "pop",
+     "t": 13.168
+    }
+   ],
+   "t0": 7.23,
+   "t1": 14.197
+  },
+  {
+   "id": "vo",
+   "from": 36,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 42,
+     "sfx": "hit",
+     "t": 16.063
+    }
+   ],
+   "t0": 14.197,
+   "t1": 16.815
+  },
+  {
+   "id": "crispim",
+   "from": 45,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 47,
+     "sfx": "thud",
+     "t": 17.502
+    },
+    {
+     "id": "a",
+     "at": 53,
+     "sfx": "sting",
+     "t": 19.017
+    }
+   ],
+   "t0": 16.815,
+   "t1": 20.402
+  },
+  {
+   "id": "curse",
+   "from": 56,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 60,
+     "sfx": "impact",
+     "t": 21.939
+    },
+    {
+     "id": "n",
+     "at": 71,
+     "sfx": "tick",
+     "t": 26.182
+    }
+   ],
+   "t0": 20.402,
+   "t1": 27.451
+  },
+  {
+   "id": "laugh",
+   "from": 73,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 82,
+     "sfx": "splash",
+     "t": 30.277
+    }
+   ],
+   "t0": 27.451,
+   "t1": 32.684
+  },
+  {
+   "id": "vem",
+   "from": 89,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 32.684,
+   "t1": 35.691
+  },
+  {
+   "id": "dome",
+   "from": 96,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "d",
+     "at": 104,
+     "sfx": "sting",
+     "t": 38.425
+    }
+   ],
+   "t0": 35.691,
+   "t1": 39.554
+  },
+  {
+   "id": "spin",
+   "from": 106,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "drone"
+   ],
+   "t0": 39.554,
+   "t1": 43.895
+  },
+  {
+   "id": "eyes",
+   "from": 113,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "v",
+     "at": 115,
+     "sfx": "impact",
+     "t": 44.575
+    },
+    {
+     "id": "o",
+     "at": 119,
+     "sfx": "sting",
+     "t": 45.836
+    }
+   ],
+   "t0": 43.895,
+   "t1": 48.367
+  },
+  {
+   "id": "sink",
+   "from": 124,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "s",
+     "at": 125,
+     "sfx": "splash",
+     "t": 48.814
+    },
+    {
+     "id": "j",
+     "at": 131,
+     "sfx": "splash",
+     "t": 50.352
+    }
+   ],
+   "t0": 48.367,
+   "t1": 51.278
+  },
+  {
+   "id": "under",
+   "from": 134,
+   "type": "object",
+   "mood": "energetic",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 139,
+     "sfx": "hit",
+     "t": 52.658
+    }
+   ],
+   "t0": 51.278,
+   "t1": 54.358
+  },
+  {
+   "id": "sand",
+   "from": 144,
+   "type": "object",
+   "mood": "sad",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "t0": 54.358,
+   "t1": 56.175
+  },
+  {
+   "id": "marks",
+   "from": 149,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 155,
+     "sfx": "sting",
+     "t": 58.244
+    }
+   ],
+   "t0": 56.175,
+   "t1": 60
+  },
+  {
+   "id": "six",
+   "from": 159,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "u",
+     "at": 168,
+     "sfx": "impact",
+     "t": 63.381
+    }
+   ],
+   "t0": 60,
+   "t1": 64.167
+  },
+  {
+   "id": "end",
+   "from": 169,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 180,
+     "dt": 0.574,
+     "sfx": "sting",
+     "t": 67.508
+    }
+   ],
+   "t0": 64.167,
+   "t1": 68.878
+  }
+ ],
+ "duration": 68.878
+}

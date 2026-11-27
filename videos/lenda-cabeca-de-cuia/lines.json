@@ -1,0 +1,89 @@
+{
+ "duration": 68.878,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "cc_eu",
+   "text": "Se o seu nome é Maria... nunca nade no rio Parnaíba. Ele tá procurando você.",
+   "t0": 0.3,
+   "t1": 6.93
+  },
+  {
+   "id": "n02",
+   "who": "cc_eu",
+   "text": "Eu moro em Teresina, no Piauí, onde o rio Poti encontra o Parnaíba. E a minha melhor amiga se chama Maria.",
+   "t0": 7.53,
+   "t1": 13.897
+  },
+  {
+   "id": "n03",
+   "who": "cc_eu",
+   "text": "Minha vó contava que ali vive o Crispim. Um pescador que bateu na própria mãe, e foi amaldiçoado por ela.",
+   "t0": 14.397,
+   "t1": 20.102
+  },
+  {
+   "id": "v01",
+   "who": "cc_vo",
+   "text": "Virou um bicho de cabeça enorme, igual uma cuia. E só se liberta quando pegar sete Marias.",
+   "t0": 20.602,
+   "t1": 27.051
+  },
+  {
+   "id": "n04",
+   "who": "cc_eu",
+   "text": "A gente riu. Num domingo de calor, a Maria pulou no rio. Eu fiquei na margem.",
+   "t0": 27.651,
+   "t1": 32.384
+  },
+  {
+   "id": "m01",
+   "who": "cc_maria",
+   "text": "Pedro, vem! A água tá uma delícia!",
+   "t0": 32.884,
+   "t1": 35.291
+  },
+  {
+   "id": "n05",
+   "who": "cc_eu",
+   "text": "Aí eu vi. No meio do rio, uma cuia boiando. Grande. Rodando devagar. Indo na direção dela.",
+   "t0": 35.891,
+   "t1": 43.295
+  },
+  {
+   "id": "n06",
+   "who": "cc_eu",
+   "text": "A cuia virou. E tinha dois olhos. Amarelos. Olhando pra Maria.",
+   "t0": 44.095,
+   "t1": 47.967
+  },
+  {
+   "id": "n07",
+   "who": "cc_eu",
+   "text": "Ela afundou de uma vez. Eu me joguei na água, agarrei o braço dela e puxei com toda a força.",
+   "t0": 48.567,
+   "t1": 54.058
+  },
+  {
+   "id": "n08",
+   "who": "cc_eu",
+   "text": "A gente chegou na areia. No tornozelo da Maria tinha cinco marcas roxas. De dedos.",
+   "t0": 54.658,
+   "t1": 59.6
+  },
+  {
+   "id": "n09",
+   "who": "cc_eu",
+   "text": "Dizem que ele já pegou seis Marias. Só falta uma.",
+   "t0": 60.3,
+   "t1": 63.667
+  },
+  {
+   "id": "n10",
+   "who": "cc_eu",
+   "text": "Qual é o nome da pessoa que tá do seu lado agora?",
+   "t0": 64.367,
+   "t1": 67.278
+  }
+ ]
+}
