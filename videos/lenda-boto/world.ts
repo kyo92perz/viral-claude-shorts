@@ -61,6 +61,6 @@ defineVisuals({
   'test-party': { bg: '#0a0e28', html: () => svg(`${btParty()}${btChar('tio', 220, 1700, 1.0)}${btChar('tia', 860, 1700, 1.0)}`), anim() {} },
   'test-river': { bg: '#05081c', html: () => svg(`${btRiver()}${btFin('fin', 620, 1100, 0.8)}${btSplash('spl', 420, 1100, 0.7)}`), anim() {} },
   'test-hole': { bg: '#05081c', html: () => svg(`${btRiver()}${btChar('botoh', 540, 1250 + 507 * 2.8 - 620, 2.8)}`), anim(tl, s) { bzFace(tl, '#sc-test-hole #botoh', s.t0, 'glow', 'grin'); } },
-  'cover-a': { bg: '#0a0e28', html: () => svg(`${btParty()}${btChar('boto', 540, 2150, 3.0)}${bzVignette(0.5)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #boto', s.t0, 'glow', 'grin'); } },
+  'cover-a': { bg: '#0a0e28', html: () => svg(`${btParty()}${btChar('boto', 540, 2560, 3.0)}${bzVignette(0.5)}`), anim(tl, s) { bzFace(tl, '#sc-cover-a #boto', s.t0, 'glow', 'grin'); } },
   'cover-b': { bg: '#05081c', html: () => svg(`${btRiver()}${btFin('fin', 540, 1150, 1.4)}${bzVignette(0.5)}`), anim() {} },
 });
