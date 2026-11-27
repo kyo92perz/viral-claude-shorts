@@ -1,0 +1,91 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_narrf",
+   "text": "If you ever say her name three times in a dark mirror... don't turn around. She's already behind you.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "us_narrf",
+   "text": "It was my thirteenth birthday sleepover. Five girls, one bathroom, and one stupid dare.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "k01",
+   "who": "us_girl",
+   "text": "Lights off. Candle on. Say it three times. Unless you're scared.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "us_narrf",
+   "text": "I wasn't scared. I stood in front of the mirror, with the candle shaking in my hand.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "us_narrf",
+   "text": "Bloody Mary. Bloody Mary.",
+   "pause": 0.9,
+   "emo": 0.7
+  },
+  {
+   "id": "n05",
+   "who": "us_narrf",
+   "text": "Before I could say it the third time... the candle went out by itself.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "us_narrf",
+   "text": "Everyone laughed. I didn't. Because in the mirror, my reflection was still holding a lit candle.",
+   "pause": 0.7,
+   "emo": 0.75
+  },
+  {
+   "id": "n07",
+   "who": "us_narrf",
+   "text": "Then my reflection smiled. I wasn't smiling.",
+   "pause": 0.8,
+   "emo": 0.8
+  },
+  {
+   "id": "m01",
+   "who": "us_ghost",
+   "text": "You didn't finish. Say it again.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n08",
+   "who": "us_narrf",
+   "text": "I screamed and turned on the lights. The mirror was normal. Everyone said I made it up.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n09",
+   "who": "us_narrf",
+   "text": "But the next morning, there were three words on the glass. Written from the other side.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n10",
+   "who": "us_narrf",
+   "text": "So... how many times did you just say her name in your head?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

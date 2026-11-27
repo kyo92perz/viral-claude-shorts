@@ -1,0 +1,91 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_narr",
+   "text": "If you hear a woman scream in the Pine Barrens at night... don't go look. It's not a woman.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "us_narr",
+   "text": "My uncle Ray had a cabin deep in the Pine Barrens, in South Jersey. Miles of pine trees. No signal.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "r01",
+   "who": "us_man",
+   "text": "Folks say a woman had thirteen kids out here. The last one grew wings and flew up the chimney.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n03",
+   "who": "us_narr",
+   "text": "He laughed. But that night, the dog wouldn't stop growling at the window.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "us_narr",
+   "text": "Then we heard it. A scream. High and long. Like a woman, but wrong.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n05",
+   "who": "us_narr",
+   "text": "Uncle Ray grabbed his flashlight and went outside. I watched from the porch.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n06",
+   "who": "us_narr",
+   "text": "The light hit something on the roof of the shed. Hooves. Then a long tail. Then wings, like a giant bat.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n07",
+   "who": "us_narr",
+   "text": "And on top... the head of a horse. With red eyes.",
+   "pause": 0.7,
+   "emo": 0.75
+  },
+  {
+   "id": "r02",
+   "who": "us_man",
+   "text": "Jake! Get inside! Lock the door!",
+   "pause": 0.6,
+   "emo": 0.9
+  },
+  {
+   "id": "n08",
+   "who": "us_narr",
+   "text": "It jumped into the sky, and the whole shed shook. We heard wings over the roof all night.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n09",
+   "who": "us_narr",
+   "text": "In the morning, there were hoof prints in the snow. On our roof. Going right to the chimney.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "us_narr",
+   "text": "So if you're ever in the Pine Barrens at night, and you hear a woman scream... stay inside.",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}

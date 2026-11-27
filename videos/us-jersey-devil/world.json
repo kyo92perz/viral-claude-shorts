@@ -1,0 +1,69 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "shots": [
+  {
+   "id": "test-cast",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-cabin",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-inside",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-roof",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "test-devil",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "cover-a",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  },
+  {
+   "id": "cover-b",
+   "title": " ",
+   "label": "",
+   "duration": 2,
+   "snap": [
+    1.2
+   ]
+  }
+ ]
+}

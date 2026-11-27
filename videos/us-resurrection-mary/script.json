@@ -1,0 +1,91 @@
+{
+ "lang": "en",
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "us_man",
+   "text": "If a girl in a white dress asks you for a ride on Archer Avenue... don't stop. Just don't.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n02",
+   "who": "us_man",
+   "text": "Chicago, winter, two in the morning. I was driving home from a dance on Archer Avenue.",
+   "pause": 0.5,
+   "emo": 0.45
+  },
+  {
+   "id": "n03",
+   "who": "us_man",
+   "text": "Then I saw her. On the side of the road, in the snow. A girl in a white dress. No coat.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "m01",
+   "who": "us_ghost",
+   "text": "Can you take me home? It's not far.",
+   "pause": 0.6,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "us_man",
+   "text": "She got in. Her hand touched mine. It was cold. Ice cold.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "n05",
+   "who": "us_man",
+   "text": "She didn't talk. She just stared out the window. And she smelled like flowers. Old flowers.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "m02",
+   "who": "us_ghost",
+   "text": "Stop here. This is where I live.",
+   "pause": 0.8,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "us_man",
+   "text": "We were in front of the gates of Resurrection Cemetery.",
+   "pause": 0.7,
+   "emo": 0.75
+  },
+  {
+   "id": "n07",
+   "who": "us_man",
+   "text": "I turned to ask what she meant... and the seat was empty. The door was still closed.",
+   "pause": 0.7,
+   "emo": 0.75
+  },
+  {
+   "id": "n08",
+   "who": "us_man",
+   "text": "Through the bars of the gate, I saw a white dress, walking between the graves.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n09",
+   "who": "us_man",
+   "text": "They say her name is Mary. She died on her way home from a dance, almost a hundred years ago. And she's still trying to get home.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n10",
+   "who": "us_man",
+   "text": "So if a girl in white waves at you on Archer Avenue... keep driving.",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}
