@@ -1,0 +1,8 @@
+{ "auto": false,
+  "stingers": [ { "t": 21.4, "text": "MEIA-NOITE E DEZ", "sub": "E EU SOZINHO NA ESTRADA", "top": 11 },
+                { "t": 37.1, "text": "CORRE!", "sub": "ELA VEIO ATRÁS", "top": 11 },
+                { "t": 43.2, "text": "PULEI NO CÓRREGO", "sub": "E ELA PAROU", "top": 11 } ],
+  "punches": [ { "t": 26.03, "scale": 1.1 }, { "t": 33.01, "scale": 1.15 }, { "t": 37.12, "scale": 1.1 }, { "t": 45.36, "scale": 1.12 },
+               { "t": 51.01, "scale": 1.12 }, { "t": 55.45, "scale": 1.18 }, { "t": 59.18, "scale": 1.2 }, { "t": 60.76, "scale": 1.12 } ],
+  "chapters": [ { "t": 0, "title": "A regra do vô" }, { "t": 19.5, "title": "Noite de São João" }, { "t": 30.76, "title": "A estrada" }, { "t": 52.7, "title": "A contagem" } ],
+  "subscribe": 16.5 }

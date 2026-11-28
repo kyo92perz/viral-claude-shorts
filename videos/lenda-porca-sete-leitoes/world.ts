@@ -57,6 +57,6 @@ defineVisuals({
   'test-farm': { bg: '#060a18', html: () => svg(`${psFarm()}`), anim() {} },
   'test-cross': { bg: '#060a18', html: () => svg(`${psRoad(true)}${psPig('pg', 520, 1640, 0.8)}${[0, 1, 2, 3, 4, 5, 6].map((i) => psPig('l' + i, 120 + i * 60, 1660 + (i % 2) * 20, 0.22)).join('')}`), anim() {} },
   'test-stream': { bg: '#060a18', html: () => svg(`${psStream()}${psPig('pg', 540, 1150, 0.6)}`), anim() {} },
-  'cover-a': { bg: '#060a18', html: () => svg(`${psRoad(true)}${psPig('pg', 300, 2100, 2.2)}${bzVignette(0.5)}`), anim() {} },
+  'cover-a': { bg: '#060a18', html: () => svg(`${psRoad(true)}${psPig('pg', 200, 1800, 2.0)}${bzVignette(0.5)}`), anim() {} },
   'cover-b': { bg: '#060a18', html: () => svg(`${psStream()}${[0, 1, 2, 3, 4, 5, 6].map((i) => psPig('l' + i, 60 + i * 120, 1170, 0.28)).join('')}${psPig('l7', 940, 1170, 0.28, true)}${bzVignette(0.5)}`), anim() {} },
 });
