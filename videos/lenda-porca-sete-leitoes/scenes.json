@@ -1,0 +1,333 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.18"
+ },
+ "music": {
+  "bpm": 72,
+  "key": "C"
+ },
+ "notes": "A PORCA DOS SETE LEITÕES, Brasil Z toon look: a farm in Minas on São João night, the dirt road under the moon, the crossroads with a wooden cross, the huge black sow and her piglets with red eyes, the stream, the eighth piglet wearing the cousin's red cap. Threat colour red. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 13,
+     "sfx": "grunt",
+     "t": 4.605
+    }
+   ],
+   "t0": 0,
+   "t1": 5.365
+  },
+  {
+   "id": "title",
+   "from": 14,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 14,
+     "dt": 0.1,
+     "sfx": "impact",
+     "t": 5.445
+    }
+   ],
+   "t0": 5.365,
+   "t1": 6.211
+  },
+  {
+   "id": "lore",
+   "from": 15,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 25,
+     "sfx": "pop",
+     "t": 9.745
+    },
+    {
+     "id": "o",
+     "at": 30,
+     "sfx": "sting",
+     "t": 11.786
+    }
+   ],
+   "t0": 6.211,
+   "t1": 12.948
+  },
+  {
+   "id": "vo",
+   "from": 32,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 43,
+     "sfx": "grunt",
+     "t": 16.713
+    }
+   ],
+   "t0": 12.948,
+   "t1": 19.302
+  },
+  {
+   "id": "party",
+   "from": 49,
+   "type": "object",
+   "mood": "playful",
+   "delay": -0.2,
+   "ambience": [
+    "crowd",
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "m",
+     "at": 56,
+     "sfx": "bell",
+     "t": 21.401
+    }
+   ],
+   "t0": 19.302,
+   "t1": 22.308
+  },
+  {
+   "id": "road",
+   "from": 59,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "night"
+   ],
+   "t0": 22.308,
+   "t1": 24.488
+  },
+  {
+   "id": "sound",
+   "from": 66,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "g",
+     "at": 70,
+     "sfx": "grunt",
+     "t": 26.028
+    },
+    {
+     "id": "q",
+     "at": 74,
+     "sfx": "whistle",
+     "t": 27.662
+    }
+   ],
+   "t0": 24.488,
+   "t1": 30.557
+  },
+  {
+   "id": "reveal",
+   "from": 79,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 87,
+     "sfx": "impact",
+     "t": 33.012
+    },
+    {
+     "id": "l",
+     "at": 90,
+     "sfx": "pop",
+     "t": 33.635
+    }
+   ],
+   "t0": 30.557,
+   "t1": 36.112
+  },
+  {
+   "id": "chase",
+   "from": 96,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 100,
+     "sfx": "thud",
+     "t": 37.121
+    },
+    {
+     "id": "r",
+     "at": 105,
+     "sfx": "whoosh",
+     "t": 38.549
+    }
+   ],
+   "t0": 36.112,
+   "t1": 42.784
+  },
+  {
+   "id": "water",
+   "from": 117,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 118,
+     "sfx": "splash",
+     "t": 43.192
+    },
+    {
+     "id": "b",
+     "at": 125,
+     "sfx": "grunt",
+     "t": 45.364
+    }
+   ],
+   "t0": 42.784,
+   "t1": 49.085
+  },
+  {
+   "id": "rule",
+   "from": 136,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 49.085,
+   "t1": 52.424
+  },
+  {
+   "id": "count",
+   "from": 142,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "a",
+     "at": 144,
+     "sfx": "tick",
+     "t": 53.693
+    },
+    {
+     "id": "b",
+     "at": 145,
+     "sfx": "tick",
+     "t": 54.001
+    },
+    {
+     "id": "c",
+     "at": 146,
+     "sfx": "tick",
+     "t": 54.485
+    },
+    {
+     "id": "s",
+     "at": 147,
+     "sfx": "tick",
+     "t": 54.97
+    },
+    {
+     "id": "o",
+     "at": 148,
+     "sfx": "sting",
+     "t": 55.454
+    }
+   ],
+   "t0": 52.424,
+   "t1": 57.495
+  },
+  {
+   "id": "cap",
+   "from": 151,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "z",
+     "at": 157,
+     "sfx": "impact",
+     "t": 59.176
+    }
+   ],
+   "t0": 57.495,
+   "t1": 63.095
+  },
+  {
+   "id": "end",
+   "from": 170,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "night"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 182,
+     "dt": 0.485,
+     "sfx": "grunt",
+     "t": 67.123
+    }
+   ],
+   "t0": 63.095,
+   "t1": 68.493
+  }
+ ],
+ "duration": 68.493
+}

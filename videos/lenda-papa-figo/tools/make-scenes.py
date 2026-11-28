@@ -8,8 +8,8 @@ from shots import build
 D, T, C, P, E, S0, Q, SAD = 'dark', 'tense', 'calm', 'playful', 'energetic', 'silence', 'curious', 'sad'
 W, N, R, CR = ['wind'], ['night'], ['room'], ['crowd']
 SHOTS = [
- ('hook', 'n01', 0, None, T, W, [('h', 'n01', 13, 0, 'sting')]),
- ('title', 'n01', 15, None, D, ['drone'], [('t', 'n01', 16, 0, 'impact')]),
+ ('hook', 'n01', 0, None, T, W, [('h', 'n01', 11, 0, 'sting')]),
+ ('title', 'n01', 15, None, D, ['drone'], [('t', 'n01', 16, -0.1, 'impact')]),
  ('street', 'n02', 0, -0.3, C, W, [('b', 'n02', 12, 0, 'pop')]),
  ('vo', 'v01', 0, -0.2, D, R, [('f', 'v01', 12, 0, 'sting')]),
  ('square', 'n03', 0, -0.2, Q, CR, [('s', 'n03', 18, 0, 'off')]),

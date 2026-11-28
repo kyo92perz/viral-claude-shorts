@@ -1,4 +1,5 @@
 // <lines>
+const PF_LINES = [{"who": "pf_eu", "t0": 0.3, "t1": 6.04}, {"who": "pf_eu", "t0": 6.64, "t1": 11.414}, {"who": "pf_vo", "t0": 11.914, "t1": 16.316}, {"who": "pf_eu", "t0": 16.916, "t1": 22.611}, {"who": "pf_eu", "t0": 23.111, "t1": 30.741}, {"who": "pf_velho", "t0": 31.341, "t1": 34.198}, {"who": "pf_eu", "t0": 34.798, "t1": 41.012}, {"who": "pf_eu", "t0": 41.612, "t1": 46.497}, {"who": "pf_eu", "t0": 46.997, "t1": 51.53}, {"who": "pf_eu", "t0": 52.23, "t1": 56.659}, {"who": "pf_caio", "t0": 57.159, "t1": 59.018}, {"who": "pf_eu", "t0": 59.818, "t1": 63.198}, {"who": "pf_eu", "t0": 63.798, "t1": 66.423}];
 // </lines>
 // =====================================================================
 //  O PAPA-FIGO: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -33,7 +34,7 @@ defineVisuals({
     anim(tl, s, K, $) { bzFace(tl, $('#papa'), s.t0, 'half', 'grin'); bzTalk(tl, $('#papa'), 'pf_velho', s.t0, s.t1, 'grin', 'open'); bzPose(tl, $('#papa'), s.t0 + 0.2, { aR: -100 }, 0.4);
       tl.to($('#papa .aR'), { rotation: -70, duration: 0.3, yoyo: true, repeat: 4 }, s.t0 + 0.8); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.12, 540, 650); } },
   // ---------------- close: revealed in parts
-  close: { bg: '#e86a3a', html: () => bzShot(`<g transform="translate(-980 -2300) scale(2.6)">${pfStreet()}${pfChar('papa', 760, 1650, 1.25, true)}${pfSack('sk', 960, 1650, 0.9)}</g>`, `${pfSay('am', 'AMARELA', 300, 1560, -4, '#e8d23a', BZ.ink, 80)}${pfSay('or', 'ORELHAS', 780, 1640, 4, '#fff', BZ.ink, 70)}${bzFlash('fl', '#e8d23a')}${bzVignette(0.7)}`),
+  close: { bg: '#e86a3a', html: () => bzShot(`<g transform="translate(-1436 -1794) scale(2.6)">${pfStreet()}${pfChar('papa', 760, 1650, 1.25, true)}${pfSack('sk', 960, 1650, 0.9)}</g>`, `${pfSay('am', 'AMARELA', 300, 1560, -4, '#e8d23a', BZ.ink, 80)}${pfSay('or', 'ORELHAS', 780, 1640, 4, '#fff', BZ.ink, 70)}${bzFlash('fl', '#e8d23a')}${bzVignette(0.7)}`),
     anim(tl, s, K, $) { bzFace(tl, $('#papa'), s.t0, 'glow', 'grin'); tl.set($('#am') + ', ' + $('#or'), { opacity: 0 }, s.t0); bzShow(tl, $('#am'), K('a')); bzShow(tl, $('#or'), K('o'));
       tl.to($('#cam'), { x: -300, y: -500, duration: 0.6, ease: 'power2.inOut' }, K('m') - 0.4); pfWiggle(tl, $('#sk'), K('m'), s.t1); bzHit(tl, $('#fl'), K('m'), 0.3); } },
   // ---------------- the run, the room

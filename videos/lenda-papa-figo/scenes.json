@@ -1,0 +1,309 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.16"
+ },
+ "music": {
+  "bpm": 70,
+  "key": "E"
+ },
+ "notes": "O PAPA-FIGO, Brasil Z toon look: an old Recife street at dusk (pastel colonial houses, church tower), the square, the old man in a black cape with sickly yellow skin and a moving sack, the grandmother's room, under the bed with the light under the door. Threat colour sickly yellow. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 11,
+     "sfx": "sting",
+     "t": 3.958
+    }
+   ],
+   "t0": 0,
+   "t1": 5.227
+  },
+  {
+   "id": "title",
+   "from": 15,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 16,
+     "dt": -0.1,
+     "sfx": "impact",
+     "t": 5.553
+    }
+   ],
+   "t0": 5.227,
+   "t1": 6.34
+  },
+  {
+   "id": "street",
+   "from": 17,
+   "type": "object",
+   "mood": "calm",
+   "delay": -0.3,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "b",
+     "at": 29,
+     "sfx": "pop",
+     "t": 10.201
+    }
+   ],
+   "t0": 6.34,
+   "t1": 11.714
+  },
+  {
+   "id": "vo",
+   "from": 32,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "f",
+     "at": 44,
+     "sfx": "sting",
+     "t": 15.3
+    }
+   ],
+   "t0": 11.714,
+   "t1": 16.716
+  },
+  {
+   "id": "square",
+   "from": 47,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "crowd"
+   ],
+   "keys": [
+    {
+     "id": "s",
+     "at": 65,
+     "sfx": "off",
+     "t": 21.761
+    }
+   ],
+   "t0": 16.716,
+   "t1": 22.911
+  },
+  {
+   "id": "corner",
+   "from": 68,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "v",
+     "at": 74,
+     "sfx": "hit",
+     "t": 25.094
+    },
+    {
+     "id": "c",
+     "at": 86,
+     "sfx": "sting",
+     "t": 28.638
+    }
+   ],
+   "t0": 22.911,
+   "t1": 31.141
+  },
+  {
+   "id": "offer",
+   "from": 92,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 31.141,
+   "t1": 34.498
+  },
+  {
+   "id": "close",
+   "from": 100,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "keys": [
+    {
+     "id": "a",
+     "at": 106,
+     "sfx": "hit",
+     "t": 36.61
+    },
+    {
+     "id": "o",
+     "at": 111,
+     "sfx": "hit",
+     "t": 38.585
+    },
+    {
+     "id": "m",
+     "at": 116,
+     "sfx": "sting",
+     "t": 40.365
+    }
+   ],
+   "t0": 34.498,
+   "t1": 41.412
+  },
+  {
+   "id": "run",
+   "from": 118,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "steps"
+   ],
+   "keys": [
+    {
+     "id": "p",
+     "at": 119,
+     "sfx": "whoosh",
+     "t": 41.79
+    }
+   ],
+   "t0": 41.412,
+   "t1": 46.797
+  },
+  {
+   "id": "lock",
+   "from": 138,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 139,
+     "sfx": "click",
+     "t": 47.282
+    },
+    {
+     "id": "b",
+     "at": 148,
+     "sfx": "whoosh",
+     "t": 50.421
+    }
+   ],
+   "t0": 46.797,
+   "t1": 51.93
+  },
+  {
+   "id": "knock",
+   "from": 151,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.3,
+   "ambience": [
+    "room"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 153,
+     "sfx": "knock",
+     "t": 52.939
+    }
+   ],
+   "t0": 51.93,
+   "t1": 56.959
+  },
+  {
+   "id": "voice",
+   "from": 165,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 56.959,
+   "t1": 59.518
+  },
+  {
+   "id": "under",
+   "from": 173,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.3,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "c",
+     "at": 175,
+     "sfx": "sting",
+     "t": 60.222
+    },
+    {
+     "id": "t",
+     "at": 183,
+     "sfx": "heart",
+     "t": 62.649
+    }
+   ],
+   "t0": 59.518,
+   "t1": 63.598
+  },
+  {
+   "id": "end",
+   "from": 184,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 192,
+     "dt": 0.528,
+     "sfx": "knock",
+     "t": 66.653
+    }
+   ],
+   "t0": 63.598,
+   "t1": 68.023
+  }
+ ],
+ "duration": 68.023
+}

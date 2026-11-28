@@ -6,7 +6,7 @@ export const EditSchema = z.object({
   words: z.array(z.object({ w: z.string(), t0: z.number(), t1: z.number() })),
   captions: z.boolean(),                   // word-by-word captions (off when the engine already burned them in)
   punches: z.array(z.object({ t: z.number(), scale: z.number().optional(), dur: z.number().optional() })),
-  stingers: z.array(z.object({ t: z.number(), text: z.string(), sub: z.string().optional(), dur: z.number().optional() })),
+  stingers: z.array(z.object({ t: z.number(), text: z.string(), sub: z.string().optional(), dur: z.number().optional(), top: z.number().optional() })),
   chapters: z.array(z.object({ t: z.number(), title: z.string() })),
   subscribe: z.number().nullable(),        // time of the subscribe pop, or null
   brand: z.string().optional(),            // small channel tag, top-left

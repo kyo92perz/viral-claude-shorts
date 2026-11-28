@@ -1,5 +1,5 @@
 {
- "duration": 69.218,
+ "duration": 68.023,
  "lines": [
   {
    "id": "n01",
@@ -74,23 +74,23 @@
   {
    "id": "c01",
    "who": "pf_caio",
-   "text": "Abre, vó. Sou eu.",
+   "text": "Abre a porta, vó. Sou eu, o Caio.",
    "t0": 57.159,
-   "t1": 60.213
+   "t1": 59.018
   },
   {
    "id": "n09",
    "who": "pf_eu",
    "text": "Mas o Caio tava do meu lado. Debaixo da cama. Tremendo.",
-   "t0": 61.013,
-   "t1": 64.393
+   "t0": 59.818,
+   "t1": 63.198
   },
   {
    "id": "n10",
    "who": "pf_eu",
    "text": "Na sua cidade, também tinha um velho do saco?",
-   "t0": 64.993,
-   "t1": 67.618
+   "t0": 63.798,
+   "t1": 66.423
   }
  ]
 }

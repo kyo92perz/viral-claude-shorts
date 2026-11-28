@@ -1,4 +1,5 @@
 // <lines>
+const PS_LINES = [{"who": "ps_eu", "t0": 0.3, "t1": 5.811}, {"who": "ps_eu", "t0": 6.411, "t1": 12.648}, {"who": "ps_vo", "t0": 13.148, "t1": 18.902}, {"who": "ps_eu", "t0": 19.502, "t1": 24.288}, {"who": "ps_eu", "t0": 24.788, "t1": 30.057}, {"who": "ps_eu", "t0": 30.757, "t1": 35.712}, {"who": "ps_eu", "t0": 36.312, "t1": 42.484}, {"who": "ps_eu", "t0": 42.984, "t1": 48.785}, {"who": "ps_vo", "t0": 49.385, "t1": 52.024}, {"who": "ps_eu", "t0": 52.724, "t1": 56.995}, {"who": "ps_eu", "t0": 57.695, "t1": 62.695}, {"who": "ps_eu", "t0": 63.295, "t1": 66.893}];
 // </lines>
 // =====================================================================
 //  A PORCA DOS SETE LEITÕES: the shots. Cast and sets in world.ts, the shot list in tools/make-scenes.py.
@@ -47,7 +48,7 @@ defineVisuals({
   count: { bg: '#060a18', html: () => bzShot(`<g transform="translate(-540 -1200) scale(2)">${psStream()}${psLine(1170, 120, 110, 0.2, 7)}</g>`, `${['1', '2', '3', '7', '8'].map((n, i) => psSay('c' + i, n, 200 + i * 170, 600, (i % 2 ? 6 : -6), i === 4 ? BZ.red : '#fff', i === 4 ? '#fff' : BZ.ink, 110)).join('')}${bzVignette(0.75)}`),
     anim(tl, s, K, $) { ['a', 'b', 'c', 's', 'o'].forEach((k, i) => { tl.set($('#c' + i), { opacity: 0 }, s.t0); bzShow(tl, $('#c' + i), K(k)); }); tl.set($('#l7'), { opacity: 0 }, s.t0); tl.to($('#l7'), { opacity: 1, duration: 0.2 }, K('o'));
       tl.fromTo($('#cam'), { x: 300 }, { x: -260, duration: K('o') - s.t0, ease: 'power1.inOut' }, s.t0); } },
-  cap: { bg: '#060a18', html: () => bzShot(`<g transform="translate(-2360 -4300) scale(4)">${psStream()}${psPig('l7', 940, 1170, 0.28, true)}</g>`, `${psSay('zc', 'O BONÉ DO ZECA', 540, 380, -3, BZ.red, '#fff', 84)}${bzFlash('fl', '#ff2a1a')}${bzVignette(0.8)}`),
+  cap: { bg: '#060a18', html: () => bzShot(`${psStream()}${psPig('l7', 330, 1150, 1.25, true)}`, `${psSay('zc', 'O BONÉ DO ZECA', 540, 380, -3, BZ.red, '#fff', 84)}${bzFlash('fl', '#ff2a1a')}${bzVignette(0.8)}`),
     anim(tl, s, K, $) { tl.set($('#zc'), { opacity: 0 }, s.t0); bzShow(tl, $('#zc'), K('z')); bzHit(tl, $('#fl'), K('z'), 0.35); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 900); } },
   end: { bg: '#060a18', html: () => bzShot(`${psRoad(true)}${psEyes('e0', 540, 1430, 14)}`, bzVignette(0.75)),
     anim(tl, s, K, $) { tl.fromTo($('#e0'), { opacity: 0 }, { opacity: 1, duration: 0.6 }, s.t0 + (s.t1 - s.t0) * 0.5); bzPush(tl, $('#cam'), s.t0, s.t1, 1, 1.15, 540, 1430); } },

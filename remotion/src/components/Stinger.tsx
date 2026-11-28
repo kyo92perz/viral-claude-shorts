@@ -1,7 +1,8 @@
 import { Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme, ez } from "../theme";
+// top: % from the top (default 6; use ~12 on videos that burn a series badge at the top)
 // "DIA 7" slam: letters spring in staggered (scale + rise + tilt), the sub line slides in after, a faster exit up; whoosh + pop
-export const Stinger: React.FC<{ t: number; text: string; sub?: string; dur?: number }> = ({ t, text, sub, dur = 1.2 }) => {
+export const Stinger: React.FC<{ t: number; text: string; sub?: string; dur?: number; top?: number }> = ({ t, text, sub, dur = 1.2, top = 6 }) => {
   const f = useCurrentFrame(), { fps, width } = useVideoConfig(), start = Math.round(t * fps), lf = f - start, end = Math.round(dur * fps);
   const exitF = Math.round(0.33 * fps), big = width * 0.085, C = theme.colors;
   const sfx = <Sequence from={start - 4} durationInFrames={Math.round(0.5 * fps)}><Audio src={staticFile("sfx/whoosh.wav")} volume={theme.sfxVolume} /></Sequence>;
@@ -11,7 +12,7 @@ export const Stinger: React.FC<{ t: number; text: string; sub?: string; dur?: nu
   return (<>
     {sfx}
     <Sequence from={start} durationInFrames={Math.round(0.2 * fps)}><Audio src={staticFile("sfx/pop.wav")} volume={theme.sfxVolume} /></Sequence>
-    <div style={{ position: "absolute", left: 0, right: 0, top: "6%", display: "flex", flexDirection: "column", alignItems: "center",
+    <div style={{ position: "absolute", left: 0, right: 0, top: `${top}%`, display: "flex", flexDirection: "column", alignItems: "center",
       transform: `translateY(${-out * 260}px) scale(${breathe * (1 - out * 0.2)}) rotate(-3deg)`, opacity: 1 - out }}>
       <div style={{ display: "flex", fontSize: big, color: C.text, WebkitTextStroke: `${big * 0.14}px ${C.ink}`, paintOrder: "stroke", textShadow: "0 10px 0 rgba(0,0,0,.35)" }}>
         {[...text].map((ch, i) => { const s = spring({ frame: lf - i * 2, fps, config: theme.spring.bouncy });
