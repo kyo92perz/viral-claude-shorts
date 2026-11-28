@@ -1,0 +1,82 @@
+{
+ "duration": 61.784,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "al_eu",
+   "text": "Meu tio era pescador em Fernando de Noronha. E tinha uma regra: se uma moça loira te chamar na praia de noite... não vai.",
+   "t0": 0.3,
+   "t1": 7.367
+  },
+  {
+   "id": "n02",
+   "who": "al_eu",
+   "text": "Ele dizia que ela aparece quando tem relâmpago no mar. Cabelo dourado, vestido branco, e os pés nem tocam a areia.",
+   "t0": 7.967,
+   "t1": 14.888
+  },
+  {
+   "id": "t01",
+   "who": "al_tio",
+   "text": "É a Alamoa, menina. Quem vai atrás dela não volta do Pico.",
+   "t0": 15.388,
+   "t1": 19.328
+  },
+  {
+   "id": "n03",
+   "who": "al_eu",
+   "text": "Numa noite de tempestade, ele tava voltando do barco. E viu uma luz descendo o morro.",
+   "t0": 19.928,
+   "t1": 24.976
+  },
+  {
+   "id": "n04",
+   "who": "al_eu",
+   "text": "Era ela. A moça mais bonita que ele já tinha visto. Sorrindo. Chamando com a mão.",
+   "t0": 25.476,
+   "t1": 30.236
+  },
+  {
+   "id": "a01",
+   "who": "al_moa",
+   "text": "Vem comigo, pescador. Eu te mostro o meu tesouro.",
+   "t0": 30.836,
+   "t1": 34.044
+  },
+  {
+   "id": "n05",
+   "who": "al_eu",
+   "text": "Ele foi. Subiu atrás dela até a pedra do Pico. E a pedra abriu uma porta.",
+   "t0": 34.744,
+   "t1": 39.364
+  },
+  {
+   "id": "n06",
+   "who": "al_eu",
+   "text": "Lá dentro brilhava ouro. Mas quando ele olhou pra ela de novo... o rosto dela começou a cair. Pedaço por pedaço.",
+   "t0": 39.964,
+   "t1": 46.154
+  },
+  {
+   "id": "n07",
+   "who": "al_eu",
+   "text": "Ela virou um esqueleto. E a porta começou a fechar.",
+   "t0": 46.854,
+   "t1": 49.676
+  },
+  {
+   "id": "n08",
+   "who": "al_eu",
+   "text": "Meu tio se jogou pra fora e rolou morro abaixo. Acordou na praia com o cabelo todo branco. Com trinta anos.",
+   "t0": 50.276,
+   "t1": 56.891
+  },
+  {
+   "id": "n09",
+   "who": "al_eu",
+   "text": "E você? Ia atrás da moça, ou ficava no barco?",
+   "t0": 57.491,
+   "t1": 60.184
+  }
+ ]
+}

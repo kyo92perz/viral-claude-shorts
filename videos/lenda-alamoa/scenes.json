@@ -1,0 +1,270 @@
+{
+ "style": "flat2d",
+ "fps": 30,
+ "format": "9:16",
+ "captions": true,
+ "badge": {
+  "title": "LENDAS DO BRASIL",
+  "ep": "EP.17"
+ },
+ "music": {
+  "bpm": 66,
+  "key": "D"
+ },
+ "notes": "A ALAMOA, Brasil Z toon look: Fernando de Noronha in a night storm (the rock needle of the Pico, black sea, lightning, a fishing boat), the blonde woman in white who becomes a skeleton, the rock door full of gold, the fisherman with white hair at dawn. Threat colour gold. Shot list in tools/make-scenes.py.",
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "type": "object",
+   "mood": "tense",
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "h",
+     "at": 14,
+     "sfx": "sting",
+     "t": 4.496
+    }
+   ],
+   "t0": 0,
+   "t1": 6.531
+  },
+  {
+   "id": "title",
+   "from": 21,
+   "type": "object",
+   "mood": "dark",
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "t",
+     "at": 22,
+     "sfx": "boom",
+     "t": 6.87
+    }
+   ],
+   "t0": 6.531,
+   "t1": 7.767
+  },
+  {
+   "id": "lore",
+   "from": 24,
+   "type": "object",
+   "mood": "curious",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 31,
+     "sfx": "boom",
+     "t": 10.274
+    },
+    {
+     "id": "p",
+     "at": 40,
+     "sfx": "shimmer",
+     "t": 13.492
+    }
+   ],
+   "t0": 7.767,
+   "t1": 15.188
+  },
+  {
+   "id": "tio",
+   "from": 45,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "t0": 15.188,
+   "t1": 19.728
+  },
+  {
+   "id": "boat",
+   "from": 57,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "l",
+     "at": 69,
+     "sfx": "shimmer",
+     "t": 23.7
+    }
+   ],
+   "t0": 19.728,
+   "t1": 25.276
+  },
+  {
+   "id": "her",
+   "from": 73,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "keys": [
+    {
+     "id": "s",
+     "at": 84,
+     "sfx": "shimmer",
+     "t": 28.548
+    }
+   ],
+   "t0": 25.276,
+   "t1": 30.636
+  },
+  {
+   "id": "call",
+   "from": 89,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "t0": 30.636,
+   "t1": 34.544
+  },
+  {
+   "id": "climb",
+   "from": 98,
+   "type": "object",
+   "mood": "tense",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "d",
+     "at": 111,
+     "sfx": "creak",
+     "t": 38.341
+    }
+   ],
+   "t0": 34.544,
+   "t1": 39.764
+  },
+  {
+   "id": "gold",
+   "from": 114,
+   "type": "object",
+   "mood": "silence",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "o",
+     "at": 117,
+     "sfx": "shimmer",
+     "t": 41.044
+    },
+    {
+     "id": "f",
+     "at": 129,
+     "sfx": "sting",
+     "t": 44.257
+    }
+   ],
+   "t0": 39.764,
+   "t1": 46.654
+  },
+  {
+   "id": "skull",
+   "from": 135,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "drone"
+   ],
+   "keys": [
+    {
+     "id": "k",
+     "at": 138,
+     "sfx": "impact",
+     "t": 47.598
+    },
+    {
+     "id": "c",
+     "at": 142,
+     "sfx": "thud",
+     "t": 48.727
+    }
+   ],
+   "t0": 46.654,
+   "t1": 50.076
+  },
+  {
+   "id": "fall",
+   "from": 145,
+   "type": "object",
+   "mood": "energetic",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "j",
+     "at": 148,
+     "sfx": "whoosh",
+     "t": 50.992
+    },
+    {
+     "id": "w",
+     "at": 160,
+     "sfx": "sting",
+     "t": 54.715
+    }
+   ],
+   "t0": 50.076,
+   "t1": 57.291
+  },
+  {
+   "id": "end",
+   "from": 166,
+   "type": "object",
+   "mood": "dark",
+   "delay": -0.2,
+   "ambience": [
+    "rain",
+    "wind"
+   ],
+   "keys": [
+    {
+     "id": "end",
+     "at": 175,
+     "dt": 0.595,
+     "sfx": "boom",
+     "t": 60.414
+    }
+   ],
+   "t0": 57.291,
+   "t1": 61.784
+  }
+ ],
+ "duration": 61.784
+}
