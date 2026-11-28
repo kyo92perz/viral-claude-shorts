@@ -1,0 +1,9 @@
+{ "auto": false,
+  "stingers": [ { "t": 20.6, "text": "TEMPESTADE", "sub": "E UMA LUZ NO MORRO" },
+                { "t": 33.3, "text": "O TESOURO", "sub": "VEM COMIGO..." },
+                { "t": 38.8, "text": "A PEDRA ABRIU", "sub": "UMA PORTA" },
+                { "t": 47.4, "text": "ESQUELETO", "sub": "E A PORTA FECHANDO" } ],
+  "punches": [ { "t": 10.27, "scale": 1.1 }, { "t": 25.48, "scale": 1.12 }, { "t": 30.84, "scale": 1.1 }, { "t": 44.84, "scale": 1.15 },
+               { "t": 47.6, "scale": 1.18 }, { "t": 50.99, "scale": 1.12 }, { "t": 56.15, "scale": 1.15 } ],
+  "chapters": [ { "t": 0, "title": "A regra do meu tio" }, { "t": 19.7, "title": "A noite da tempestade" }, { "t": 37.3, "title": "Dentro do Pico" }, { "t": 50.9, "title": "O que sobrou" } ],
+  "subscribe": 16.5 }
