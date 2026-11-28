@@ -139,6 +139,18 @@ VOICES = {
     "cc_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
     "cc_maria": ("pf_dora", 1.05, st(2.5)),
     "cc_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    # LENDAS EP.16 PAPA-FIGO: o neto (narra), a vó, o velho, a voz falsa do primo Caio
+    "pf_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "pf_vo": ("pf_dora", 0.9, st(-2.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=180:t=q:w=1:g=2"),
+    "pf_velho": ("pm_santa", 0.85, st(-3) + ",aecho=0.6:0.45:40:0.2,highpass=f=120,lowpass=f=5000"),
+    "pf_caio": ("pm_alex", 1.0, st(5) + ",highpass=f=250,lowpass=f=3800,aecho=0.7:0.6:90|180:0.35|0.2"),
+    # LENDAS EP.17 ALAMOA: a sobrinha (narra), o tio pescador, a Alamoa
+    "al_eu": ("pf_dora", 1.0, st(1.5) + ",equalizer=f=220:t=q:w=1:g=1.5"),
+    "al_tio": ("piper:jeff", 0.95, st(-1.5) + ",acompressor=threshold=0.1:ratio=3:makeup=2"),
+    "al_moa": ("pf_dora", 0.86, st(1) + ",aecho=0.8:0.6:70|140:0.35|0.2,lowpass=f=6000"),
+    # LENDAS EP.18 PORCA DOS SETE LEITÕES: o neto (narra) e o avô
+    "ps_eu": ("pm_alex", 1.0, st(1.5) + ",equalizer=f=200:t=q:w=1:g=1.5"),
+    "ps_vo": ("pm_santa", 0.92, st(-2) + ",acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=150:t=q:w=1:g=2"),
     # AMERICAN LEGENDS (canal dos EUA, em inglês; ver canais.md): narradores e papéis comuns. Episódios novos podem somar ids "us_<ep>_<papel>".
     "us_narr": ("am_michael", 0.98, "acompressor=threshold=0.1:ratio=3:makeup=2,equalizer=f=160:t=q:w=1:g=1.5"),
     "us_narrf": ("af_heart", 1.0, "equalizer=f=220:t=q:w=1:g=1.5"),

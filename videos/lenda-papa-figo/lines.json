@@ -1,0 +1,96 @@
+{
+ "duration": 69.218,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "pf_eu",
+   "text": "Minha vó tinha uma regra em Recife: nunca aceita doce de velho com saco nas costas. Nunca.",
+   "t0": 0.3,
+   "t1": 6.04
+  },
+  {
+   "id": "n02",
+   "who": "pf_eu",
+   "text": "Ela dizia que ele andava pelas ruas no fim da tarde, oferecendo balinha pras crianças.",
+   "t0": 6.64,
+   "t1": 11.414
+  },
+  {
+   "id": "v01",
+   "who": "pf_vo",
+   "text": "É o Papa-Figo, menino. Ele tem uma doença que só sara comendo fígado de criança.",
+   "t0": 11.914,
+   "t1": 16.316
+  },
+  {
+   "id": "n03",
+   "who": "pf_eu",
+   "text": "Eu achava que era história pra gente voltar cedo. Até a tarde em que o meu primo Caio sumiu da praça.",
+   "t0": 16.916,
+   "t1": 22.611
+  },
+  {
+   "id": "n04",
+   "who": "pf_eu",
+   "text": "Eu fui procurar. Na esquina, um velho magro, de capa preta, com um saco nas costas. E o Caio do lado dele, chupando bala.",
+   "t0": 23.111,
+   "t1": 30.741
+  },
+  {
+   "id": "p01",
+   "who": "pf_velho",
+   "text": "Tem bala pra você também. Vem cá. Vem.",
+   "t0": 31.341,
+   "t1": 34.198
+  },
+  {
+   "id": "n05",
+   "who": "pf_eu",
+   "text": "De perto, a pele dele era amarela, cheia de feridas. As orelhas, enormes. E o saco... se mexia.",
+   "t0": 34.798,
+   "t1": 41.012
+  },
+  {
+   "id": "n06",
+   "who": "pf_eu",
+   "text": "Eu puxei o Caio pelo braço e corri, sem olhar pra trás, até a porta da casa da minha vó.",
+   "t0": 41.612,
+   "t1": 46.497
+  },
+  {
+   "id": "n07",
+   "who": "pf_eu",
+   "text": "Ela trancou a porta e mandou a gente se esconder debaixo da cama.",
+   "t0": 46.997,
+   "t1": 51.53
+  },
+  {
+   "id": "n08",
+   "who": "pf_eu",
+   "text": "Aí bateram três vezes na porta. E uma voz igualzinha à do Caio falou:",
+   "t0": 52.23,
+   "t1": 56.659
+  },
+  {
+   "id": "c01",
+   "who": "pf_caio",
+   "text": "Abre, vó. Sou eu.",
+   "t0": 57.159,
+   "t1": 60.213
+  },
+  {
+   "id": "n09",
+   "who": "pf_eu",
+   "text": "Mas o Caio tava do meu lado. Debaixo da cama. Tremendo.",
+   "t0": 61.013,
+   "t1": 64.393
+  },
+  {
+   "id": "n10",
+   "who": "pf_eu",
+   "text": "Na sua cidade, também tinha um velho do saco?",
+   "t0": 64.993,
+   "t1": 67.618
+  }
+ ]
+}

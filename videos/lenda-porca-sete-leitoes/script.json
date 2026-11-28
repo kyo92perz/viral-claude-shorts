@@ -1,0 +1,90 @@
+{
+ "lead": 0.3,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "n01",
+   "who": "ps_eu",
+   "text": "Meu avô tinha uma regra no sítio: depois da meia-noite, ninguém passa pela encruzilhada. Ninguém.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n02",
+   "who": "ps_eu",
+   "text": "Ele dizia que ali aparece uma porca enorme, preta, com sete leitõezinhos atrás. Todos de olho vermelho.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "v01",
+   "who": "ps_vo",
+   "text": "É a Porca dos Sete Leitões. Se ela te ver, ela corre atrás. E ela não cansa.",
+   "pause": 0.6,
+   "emo": 0.6
+  },
+  {
+   "id": "n03",
+   "who": "ps_eu",
+   "text": "Numa festa junina, eu perdi a hora. Meia-noite e dez, eu tava sozinho na estrada de terra.",
+   "pause": 0.5,
+   "emo": 0.55
+  },
+  {
+   "id": "n04",
+   "who": "ps_eu",
+   "text": "Primeiro eu ouvi um grunhido grosso. Depois uns guinchos fininhos. Vindo da encruzilhada.",
+   "pause": 0.7,
+   "emo": 0.65
+  },
+  {
+   "id": "n05",
+   "who": "ps_eu",
+   "text": "Ela saiu do mato. Do tamanho de um boi. E os sete leitões em fila atrás dela.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n06",
+   "who": "ps_eu",
+   "text": "Ela me viu e correu. O chão tremia. Eu corri pro córrego, porque meu avô falava que ela não atravessa água.",
+   "pause": 0.5,
+   "emo": 0.75
+  },
+  {
+   "id": "n07",
+   "who": "ps_eu",
+   "text": "Eu pulei na água. Ela parou na beira, bufando. E os leitões, um do lado do outro, me olhando.",
+   "pause": 0.6,
+   "emo": 0.65
+  },
+  {
+   "id": "v02",
+   "who": "ps_vo",
+   "text": "Quem ela alcança, vira leitão também.",
+   "pause": 0.7,
+   "emo": 0.6
+  },
+  {
+   "id": "n08",
+   "who": "ps_eu",
+   "text": "Eu contei. Um, dois, três... sete. Oito. Tinha oito.",
+   "pause": 0.7,
+   "emo": 0.7
+  },
+  {
+   "id": "n09",
+   "who": "ps_eu",
+   "text": "E o oitavo tava usando o boné do meu primo Zeca. Que sumiu no São João do ano passado.",
+   "pause": 0.6,
+   "emo": 0.7
+  },
+  {
+   "id": "n10",
+   "who": "ps_eu",
+   "text": "Na sua cidade, qual é a hora que ninguém pode sair na rua?",
+   "pause": 0.4,
+   "emo": 0.6
+  }
+ ]
+}
