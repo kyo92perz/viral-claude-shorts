@@ -17,6 +17,15 @@ Make it in one go: design and test the video's world first (`plan.md`, the world
 
 Há dois canais de lendas urbanas: **Lendas Urbanas BR** (português, `videos/lenda-*`, selo LENDAS DO BRASIL) e **Lendas Urbanas Estadunidense** (inglês, `videos/us-*`, selo AMERICAN LEGENDS). Quando o usuário pedir uma lenda, veja em `canais.md` para qual canal ela vai: idioma, pasta, selo, número do episódio, vozes e descrição vêm de lá. Ao terminar um episódio, atualize a linha "Episódios feitos" de `canais.md`.
 
+## Economia de tokens
+
+Medido com `headroom audit-reads` (nov/2026): **81% dos tokens gastos neste projeto são saída de comandos** (render, vozes, transcrição, ffmpeg); leituras de arquivo são só 3%. Por isso:
+
+- Rode comandos longos (render, `voices.py`, `transcribe.py`, `world.ts`, `storyboard.ts`, ffmpeg) com `bash tools/q.sh <comando>`: o log inteiro vai para um arquivo e só aparecem os erros/avisos e as últimas linhas (`Q_TAIL=15` para mais). Nada se perde: o caminho do log é impresso.
+- Em logs já gravados, leia com `grep -E "FAIL|ERROR|length"` ou `tail`, nunca o arquivo inteiro.
+- Para conferir vídeos, olhe uma folha de quadros (contact sheet) em vez de quadros soltos.
+- `headroom-ai` (pip) comprime saídas de ferramentas antes de irem para a IA, mas **perde informação**: num teste, apagou a única linha de ERROR de um log de 1.500 linhas. Use só em dados repetitivos (JSON, listas), nunca em logs onde um erro importa. No computador do usuário, `headroom init claude` liga o proxy dele no Claude Code local.
+
 ## Advanced editing (Remotion)
 
 After `final.mp4`, an optional editing pass adds DIA stingers with punch zooms, a chapter bar and a subscribe pop: `node remotion/render.mjs videos/<topic>` (see `remotion/README.md`; `cd remotion && npm install` once).
